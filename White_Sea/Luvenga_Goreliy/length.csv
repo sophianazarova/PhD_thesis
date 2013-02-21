@@ -314,7 +314,7 @@ year;tidal_zone;sample;Length.mm
 2004;high;mg1-2;8,4
 2004;high;mg1-2;9,2
 2004;high;mg1-2;5,2
-2004;high;mg1-2;б/и
+2004;high;mg1-2;NA
 2004;high;mg1-2;3,2
 2004;high;mg1-2;5
 2004;high;mg1-2;10,3
@@ -733,9 +733,9 @@ year;tidal_zone;sample;Length.mm
 2004;Mid-low;mg3-3;12,5
 2004;Mid-low;mg3-3;7,5
 2004;Mid-low;mg3-3;9,5
-2004;Mid-low;mg3-3;б/и
+2004;Mid-low;mg3-3;NA
 2004;Mid-low;mg3-3;8,5
-2004;Mid-low;mg3-3;б/и
+2004;Mid-low;mg3-3;NA
 2004;low;mg4-1;8,5
 2004;low;mg4-1;1,2
 2004;low;mg4-1;2,5
@@ -4814,7 +4814,7 @@ year;tidal_zone;sample;Length.mm
 2012;Mid-low;mg3;6,2
 2012;Mid-low;mg3;8,9
 2012;Mid-low;mg3;7,7
-2012;Mid-low;mg3;б/и
+2012;Mid-low;mg3;NA
 2012;Mid-low;mg3;9,9
 2012;Mid-low;mg3;10,2
 2012;Mid-low;mg3;7,8
@@ -4911,7 +4911,7 @@ year;tidal_zone;sample;Length.mm
 2012;low;mg4;11
 2012;low;mg4;9
 2012;low;mg4;11,2
-2012;low;mg4;б/и
+2012;low;mg4;NA
 2012;low;mg4;10,4
 2012;low;mg4;8,2
 2012;low;mg4;8
