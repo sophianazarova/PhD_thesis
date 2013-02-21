@@ -4,14 +4,28 @@ samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
 samples.names<-read.table(file="sample.csv", sep=";", dec=",", head=T)
 attach(ishodnik)
 year<-factor(year)
+
 Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 (size.str.table<-table(Length.int,year,sample))
-size.str.df<-as.data.frame(size.str.table)
+
+size.str.df<-as.data.frame(size.str.table) # как таблица данных
+
 # все что не сушествует надо сделать NA
-# если в * год нет такой пробы то NA
+for (i in 1:length(levels(size.str.df$year)))
+{
+  size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i] & size.str.df$sample!=samples.names$sample[samples.names$year==levels(size.str.df$year)[i]]]<-NA
+}
+
+#теперь на квадратный метр
+size.str.sqmeter<-size.str.df
+for (i in 1:length(levels(size.str.sqmeter$year)))
+{
+  size.str.sqmeter$Freq<-size.str.sqmeter$Freq[size.str.sqmeter$Freq!=NA & size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]]*samples.squares$square[samples.squares$year==levels(size.str.sqmeter$year)[i]]
+}
+
+#и среднее??
 
 
-(size.str.sqmeter<-
  
 mean.size.str<-apply(size.str.table,c(1,2),mean)
 
