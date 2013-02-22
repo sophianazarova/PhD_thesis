@@ -6,6 +6,7 @@ attach(ishodnik)
 year<-factor(year)
 
 Length.int<-cut(Length.mm, breaks=seq(0,20,1))
+
 (size.str.table<-table(Length.int,year,sample))
 
 size.str.df<-as.data.frame(size.str.table) # как таблица данных
@@ -13,33 +14,30 @@ size.str.df<-as.data.frame(size.str.table) # как таблица данных
 # SUBSET - для фильтрации таблицы данных
 # APPLY - кто-то из них для средней и СД по фрейму
 # все что не сушествует надо сделать NA
-for (i in 1:length(levels(size.str.df$year)))
-{
-size.subset<-data.frame()
-xxx<-subset(size.str.df, subset=size.str.df$year==levels(size.str.df$year)[i] & size.str.df$sample==samples.names$sample[samples.names$year==levels(size.str.df$year)[i]])
-size.subset<-c(size.subset,xxx)
-}
+# ЭТО НЕ РАБОТАЕТ??
+#for (i in 1:length(levels(size.str.df$year)))
+#{
+#  size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i] & size.str.df$sample!=samples.names$sample[samples.names$year==levels(size.str.df$year)[i]]]<-NA
+#}
 
-for (i in 1:length(levels(size.str.df$year)))
-{
-  size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i] & size.str.df$sample!=samples.names$sample[samples.names$year==levels(size.str.df$year)[i]]]<-NA
-}
-subset(size.str.df, size.str.df$Freq==NA)
+size.str.df<-subset(size.str.df, size.str.df$Freq!="NA")
 
 #теперь на квадратный метр
 size.str.sqmeter<-size.str.df
 for (i in 1:length(levels(size.str.sqmeter$year)))
 {
-  size.str.sqmeter$Freq<-size.str.sqmeter$Freq[size.str.sqmeter$Freq!=NA & size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]]*samples.squares$square[samples.squares$year==levels(size.str.sqmeter$year)[i]]
+  size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]]<-size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]] * samples.squares$square[samples.squares$year==levels(size.str.sqmeter$year)[i]]
 }
 
+subset(size.str.sqmeter,subset=size.str.sqmeter$year=="1992")
 #и среднее??
+# tapply выдает как резудьтат матрицу
+(mean.sizestr.sqmeter<-tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=mean))
 
+  (sd.sizestr.sqmeter<-tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=))
 
- 
-mean.size.str<-apply(size.str.table,c(1,2),mean)
+sem.sizestr.sqmeter <-sd.sizestr.sqmeter
 
-sd.size.str<-apply(size.str.table,c(1,2),sd)
 
 (mean.size.str.df<-as.data.frame(size.str.table))
 length.class<-seq(1,20,1)
