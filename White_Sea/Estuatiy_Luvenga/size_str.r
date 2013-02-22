@@ -10,11 +10,21 @@ Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 
 size.str.df<-as.data.frame(size.str.table) # как таблица данных
 
+# SUBSET - для фильтрации таблицы данных
+# APPLY - кто-то из них для средней и СД по фрейму
 # все что не сушествует надо сделать NA
+for (i in 1:length(levels(size.str.df$year)))
+{
+size.subset<-data.frame()
+xxx<-subset(size.str.df, subset=size.str.df$year==levels(size.str.df$year)[i] & size.str.df$sample==samples.names$sample[samples.names$year==levels(size.str.df$year)[i]])
+size.subset<-c(size.subset,xxx)
+}
+
 for (i in 1:length(levels(size.str.df$year)))
 {
   size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i] & size.str.df$sample!=samples.names$sample[samples.names$year==levels(size.str.df$year)[i]]]<-NA
 }
+subset(size.str.df, size.str.df$Freq==NA)
 
 #теперь на квадратный метр
 size.str.sqmeter<-size.str.df
