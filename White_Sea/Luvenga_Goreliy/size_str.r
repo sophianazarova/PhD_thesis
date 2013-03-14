@@ -75,44 +75,44 @@ for (i in 1: length(levels(size.str.sqmeter$tidal_level)))
 #              FUN=mean, na.rm=T))
 #КАК АВТОМАТИЗИРОВАТЬ ТЕМУ ПРО НЕСКОЛЬКО УЧАСТКОВ Я НЕ ПРИДУМАЛА :( ПИШУ РУЧКАМИ 4 РАЗА...
 
-(n.samples<-tapply(samples.names$sample,list(samples.names$year,samples.names$tidal.level), length ))
+(n.samples<-tapply(samples.names$sample,list(samples.names$year,samples.names$tidal_level), length ))
 (n.samples.df<-as.data.frame(n.samples))
 
-#Верхний пляж
-(mean.sqmeter.high_beatch<-t(tapply(high_beatch$Freq,INDEX=list(high_beatch$year,  high_beatch$Length.int),FUN=sd, na.rm=T)))
-mean.sqmeter.high_beatch.df<-as.data.frame(mean.sqmeter.high_beatch)
+#верхний горизонт
+(mean.sqmeter.high<-t(tapply(high$Freq,INDEX=list(high$year,  high$Length.int),FUN=sd, na.rm=T)))
+mean.sqmeter.high.df<-as.data.frame(mean.sqmeter.high)
 
-(sd.sqmeter.high_beatch<-tapply(high_beatch$Freq,INDEX=list(high_beatch$year,  high_beatch$Length.int),FUN=sd, na.rm=T))
+(sd.sqmeter.high<-tapply(high$Freq,INDEX=list(high$year,  high$Length.int),FUN=sd, na.rm=T))
 
-(sem.sqmeter.high_beatch <-t(sd.sqmeter.high_beatch/sqrt(n.samples.df$high_beatch)))
-sem.sqmeter.high_beatch.df<-as.data.frame(sem.sqmeter.high_beatch)
+(sem.sqmeter.high <-t(sd.sqmeter.high/sqrt(n.samples.df$high)))
+sem.sqmeter.high.df<-as.data.frame(sem.sqmeter.high)
 
-#пояс фукоидов
-mean.sqmeter.fucus_zone<-t(tapply(fucus_zone$Freq,INDEX=list(fucus_zone$year,  fucus_zone$Length.int),FUN=sd, na.rm=T))
-mean.sqmeter.fucus_zone.df<-as.data.frame(mean.sqmeter.fucus_zone)
+#средний горизонт
+mean.sqmeter.middle<-t(tapply(middle$Freq,INDEX=list(middle$year,  middle$Length.int),FUN=sd, na.rm=T))
+mean.sqmeter.middle.df<-as.data.frame(mean.sqmeter.middle)
 
-sd.sqmeter.fucus_zone<-tapply(fucus_zone$Freq,INDEX=list(fucus_zone$year,  fucus_zone$Length.int),FUN=sd, na.rm=T)
+sd.sqmeter.middle<-tapply(middle$Freq,INDEX=list(middle$year,  middle$Length.int),FUN=sd, na.rm=T)
 
-sem.sqmeter.fucus_zone <-t(sd.sqmeter.fucus_zone/sqrt(n.samples.df$fucus_zone))
-sem.sqmeter.fucus_zone.df<-as.data.frame(sem.sqmeter.fucus_zone)
+sem.sqmeter.middle <-t(sd.sqmeter.middle/sqrt(n.samples.df$middle))
+sem.sqmeter.middle.df<-as.data.frame(sem.sqmeter.middle)
 
-#пояс зостеры
-mean.sqmeter.zostera_zone<-t(tapply(zostera_zone$Freq,INDEX=list(zostera_zone$year,  zostera_zone$Length.int),FUN=sd, na.rm=T))
-mean.sqmeter.zostera_zone.df<-as.data.frame(mean.sqmeter.zostera_zone)
+#граница среднего и нижнего горизонта, в фукусах
+mean.sqmeter.midlow<-t(tapply(midlow$Freq,INDEX=list(midlow$year,  midlow$Length.int),FUN=sd, na.rm=T))
+mean.sqmeter.midlow.df<-as.data.frame(mean.sqmeter.midlow)
 
-sd.sqmeter.zostera_zone<-tapply(zostera_zone$Freq,INDEX=list(zostera_zone$year,  zostera_zone$Length.int),FUN=sd, na.rm=T)
+sd.sqmeter.midlow<-tapply(midlow$Freq,INDEX=list(midlow$year,  midlow$Length.int),FUN=sd, na.rm=T)
 
-sem.sqmeter.zostera_zone <-t(sd.sqmeter.zostera_zone/sqrt(n.samples.df$zostera_zone))
-sem.sqmeter.zostera_zone.df<-as.data.frame(sem.sqmeter.zostera_zone)
+sem.sqmeter.midlow <-t(sd.sqmeter.midlow/sqrt(n.samples.df$midlow))
+sem.sqmeter.midlow.df<-as.data.frame(sem.sqmeter.midlow)
 
-#нижний пляж
-(mean.sqmeter.low_beatch<-t(tapply(low_beatch$Freq,INDEX=list(low_beatch$year,  low_beatch$Length.int),FUN=sd, na.rm=T)))
-mean.sqmeter.low_beatch.df<-as.data.frame(mean.sqmeter.low_beatch)
+#нижний горизонт, у нуля глубин
+(mean.sqmeter.low<-t(tapply(low$Freq,INDEX=list(low$year,  low$Length.int),FUN=sd, na.rm=T)))
+mean.sqmeter.low.df<-as.data.frame(mean.sqmeter.low)
 
-sd.sqmeter.low_beatch<-tapply(low_beatch$Freq,INDEX=list(low_beatch$year,  low_beatch$Length.int),FUN=sd, na.rm=T)
+sd.sqmeter.low<-tapply(low$Freq,INDEX=list(low$year,  low$Length.int),FUN=sd, na.rm=T)
 
-sem.sqmeter.low_beatch <-t(sd.sqmeter.low_beatch/sqrt(n.samples.df$low_beatch))
-sem.sqmeter.low_beatch.df<-as.data.frame(sem.sqmeter.low_beatch)
+sem.sqmeter.low <-t(sd.sqmeter.low/sqrt(n.samples.df$low))
+sem.sqmeter.low.df<-as.data.frame(sem.sqmeter.low)
 
 
 length.class<-seq(1,20,1)
@@ -129,39 +129,39 @@ error.bars<-function(yv,z,nn){
   }}
 
 
-#верхний пляж
-for (j in 1:length(colnames(mean.sqmeter.high_beatch)))
+#верхний горизонт
+for (j in 1:length(colnames(mean.sqmeter.high)))
 {
-  pdf(file=paste("high_beatch", colnames(mean.sqmeter.high_beatch)[j], ".pdf",sep="_"), paper="a4")
-  error.bars(yv=mean.sqmeter.high_beatch[,j], nn=length.class,  z=sem.sqmeter.high_beatch[,j])
-  title(main=colnames(mean.sqmeter.high_beatch)[j], xlab="", ylab="")
+  pdf(file=paste("high", colnames(mean.sqmeter.high)[j], ".pdf",sep="_"), paper="a4")
+  error.bars(yv=mean.sqmeter.high[,j], nn=length.class,  z=sem.sqmeter.high[,j])
+  title(main=colnames(mean.sqmeter.high)[j], xlab="", ylab="")
   dev.off()
 }
 
-#пояс фукоидов
-for (j in 1:length(colnames(mean.sqmeter.fucus_zone)))
+#средний горизонт
+for (j in 1:length(colnames(mean.sqmeter.middle)))
 {
-  pdf(file=paste("fucus_zone", colnames(mean.sqmeter.fucus_zone)[j], ".pdf",sep="_"), paper="a4")
-  error.bars(yv=mean.sqmeter.fucus_zone[,j], nn=length.class,  z=sem.sqmeter.fucus_zone[,j])
-  title(main=colnames(mean.sqmeter.fucus_zone)[j], xlab="", ylab="")
+  pdf(file=paste("middle", colnames(mean.sqmeter.middle)[j], ".pdf",sep="_"), paper="a4")
+  error.bars(yv=mean.sqmeter.middle[,j], nn=length.class,  z=sem.sqmeter.middle[,j])
+  title(main=colnames(mean.sqmeter.middle)[j], xlab="", ylab="")
   dev.off()
 }
 
-#пояс зостеры
-for (j in 1:length(colnames(mean.sqmeter.zostera_zone)))
+#граница среднего и нижнего горизонтов, в фукоидах
+for (j in 1:length(colnames(mean.sqmeter.midlow)))
 {
-  pdf(file=paste("zostera_zone", colnames(mean.sqmeter.zostera_zone)[j], ".pdf",sep="_"), paper="a4")
-  error.bars(yv=mean.sqmeter.zostera_zone[,j], nn=length.class,  z=sem.sqmeter.zostera_zone[,j])
-  title(main=colnames(mean.sqmeter.zostera_zone)[j], xlab="", ylab="")
+  pdf(file=paste("midlow", colnames(mean.sqmeter.midlow)[j], ".pdf",sep="_"), paper="a4")
+  error.bars(yv=mean.sqmeter.midlow[,j], nn=length.class,  z=sem.sqmeter.midlow[,j])
+  title(main=colnames(mean.sqmeter.midlow)[j], xlab="", ylab="")
   dev.off()
 }
 
-#нижний пляж
-for (j in 1:length(colnames(mean.sqmeter.low_beatch)))
+#нижний горизонт, у нуля глубин
+for (j in 1:length(colnames(mean.sqmeter.low)))
 {
-  pdf(file=paste("low_beatch", colnames(mean.sqmeter.low_beatch)[j], ".pdf",sep="_"), paper="a4")
-  error.bars(yv=mean.sqmeter.low_beatch[,j], nn=length.class,  z=sem.sqmeter.low_beatch[,j])
-  title(main=colnames(mean.sqmeter.low_beatch)[j], xlab="", ylab="")
+  pdf(file=paste("low", colnames(mean.sqmeter.low)[j], ".pdf",sep="_"), paper="a4")
+  error.bars(yv=mean.sqmeter.low[,j], nn=length.class,  z=sem.sqmeter.low[,j])
+  title(main=colnames(mean.sqmeter.low)[j], xlab="", ylab="")
   dev.off()
 }
 
