@@ -85,7 +85,10 @@ mean.sqmeter.high.df<-as.data.frame(mean.sqmeter.high)
 (sd.sqmeter.high<-tapply(high$Freq,INDEX=list(high$year,  high$Length.int),FUN=sd, na.rm=T))
 
 (sem.sqmeter.high <-t(sd.sqmeter.high/sqrt(n.samples.df$high)))
+#TODO надо те строки где по одной пробе сделать вместо ошибки NA!!
 sem.sqmeter.high.df<-as.data.frame(sem.sqmeter.high)
+
+
 
 #средний горизонт
 mean.sqmeter.middle<-t(tapply(middle$Freq,INDEX=list(middle$year,  middle$Length.int),FUN=sd, na.rm=T))
