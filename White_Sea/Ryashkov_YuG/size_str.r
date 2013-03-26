@@ -75,3 +75,21 @@ error.bars<-function(yv,z,nn){
 #  title(main=colnames(mean.sizestr.sqmeter)[j], xlab="", ylab="")
 #  dev.off()
 #}
+
+#динамика обилия
+(N.sqmeter<-(t(tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum))))
+(N.mean.sqmeter<-colMeans(N.sqmeter, na.rm=T))
+N.sd.sqmeter<-apply(N.sqmeter, 2, sd, na.rm=T)
+N.sem.sqmeter<-N.sd.sqmeter/sqrt(n.samples)
+
+pdf(file="N_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N.mean.sqmeter, x=names(N.mean.sqmeter),pch=15, 
+     #ylim=c(min(N.mean.sqmeter)-max(N.sem.sqmeter), max(N.mean.sqmeter)+max(N.sem.sqmeter)),
+     ylim=c(0, max(N.mean.sqmeter)+max(N.sem.sqmeter)),
+     xlab="год", ylab="N, экз./кв.м")
+lines(seq(as.numeric(min(names(N.mean.sqmeter))),as.numeric(max(names(N.mean.sqmeter))),1), N.mean.sqmeter, pch=1, type="b")
+arrows(x0=seq(as.numeric(min(names(N.mean.sqmeter))),as.numeric(max(names(N.mean.sqmeter))),1), 
+       x1=seq(as.numeric(min(names(N.mean.sqmeter))),as.numeric(max(names(N.mean.sqmeter))),1),
+       y0=N.mean.sqmeter-N.sem.sqmeter, y1=N.mean.sqmeter+N.sem.sqmeter, angle=90, code=3, length=0.1)
+dev.off()
+embedFonts("N_dynamic.pdf") #встройка шрифтов в файл

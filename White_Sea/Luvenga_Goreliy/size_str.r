@@ -135,7 +135,7 @@ error.bars<-function(yv,z,nn){
 #верхний горизонт
 for (j in 1:length(colnames(mean.sqmeter.high)))
 {
-  pdf(file=paste("high", colnames(mean.sqmeter.high)[j], ".pdf",sep="_"), paper="a4")
+  pdf(file=paste("high", colnames(mean.sqmeter.high)[j], ".pdf",sep="_"))
   error.bars(yv=mean.sqmeter.high[,j], nn=length.class,  z=sem.sqmeter.high[,j])
   title(main=colnames(mean.sqmeter.high)[j], xlab="", ylab="")
   dev.off()
@@ -144,7 +144,7 @@ for (j in 1:length(colnames(mean.sqmeter.high)))
 #средний горизонт
 for (j in 1:length(colnames(mean.sqmeter.middle)))
 {
-  pdf(file=paste("middle", colnames(mean.sqmeter.middle)[j], ".pdf",sep="_"), paper="a4")
+  pdf(file=paste("middle", colnames(mean.sqmeter.middle)[j], ".pdf",sep="_"))
   error.bars(yv=mean.sqmeter.middle[,j], nn=length.class,  z=sem.sqmeter.middle[,j])
   title(main=colnames(mean.sqmeter.middle)[j], xlab="", ylab="")
   dev.off()
@@ -153,7 +153,7 @@ for (j in 1:length(colnames(mean.sqmeter.middle)))
 #граница среднего и нижнего горизонтов, в фукоидах
 for (j in 1:length(colnames(mean.sqmeter.midlow)))
 {
-  pdf(file=paste("midlow", colnames(mean.sqmeter.midlow)[j], ".pdf",sep="_"), paper="a4")
+  pdf(file=paste("midlow", colnames(mean.sqmeter.midlow)[j], ".pdf",sep="_"))
   error.bars(yv=mean.sqmeter.midlow[,j], nn=length.class,  z=sem.sqmeter.midlow[,j])
   title(main=colnames(mean.sqmeter.midlow)[j], xlab="", ylab="")
   dev.off()
@@ -162,17 +162,18 @@ for (j in 1:length(colnames(mean.sqmeter.midlow)))
 #нижний горизонт, у нуля глубин
 for (j in 1:length(colnames(mean.sqmeter.low)))
 {
-  pdf(file=paste("low", colnames(mean.sqmeter.low)[j], ".pdf",sep="_"), paper="a4")
+  pdf(file=paste("low", colnames(mean.sqmeter.low)[j], ".pdf",sep="_"))
   error.bars(yv=mean.sqmeter.low[,j], nn=length.class,  z=sem.sqmeter.low[,j])
   title(main=colnames(mean.sqmeter.low)[j], xlab="", ylab="")
   dev.off()
 }
 
 
+
 # все 4 на одном графике
 for (j in 1:length(colnames(mean.sqmeter.low_beatch)))
 {
-  pdf(file=paste("all_tidal", colnames(mean.sqmeter.low_beatch)[j], ".pdf",sep="_"), paper="a4")
+  pdf(file=paste("all_tidal", colnames(mean.sqmeter.low_beatch)[j], ".pdf",sep="_"))
   error.bars(yv=matrix(mean.sqmeter.high_beatch[,j], mean.sqmeter.fucus_zone[,j], 
                        mean.sqmeter.zostera_zone[,j],mean.sqmeter.low_beatch[,j]), 
              nn=length.class,  
@@ -184,3 +185,25 @@ for (j in 1:length(colnames(mean.sqmeter.low_beatch)))
 
 barplot(matrix(mean.sqmeter.high_beatch[,1], mean.sqmeter.fucus_zone[,1], 
                mean.sqmeter.zostera_zone[,1],mean.sqmeter.low_beatch[,1]))
+
+
+#динамика обилия
+(N.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample, size.str.df$tidal_level), sum))
+(N.mean.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=mean))
+N.mean.sqmeter[11,3]<-NA
+(N.sd.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=sd))
+(N.sem.sqmeter<-N.sd.sqmeter/sqrt(n.samples))
+
+pdf(file="N_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N.mean.sqmeter[,1], x=as.numeric(rownames(N.mean.sqmeter)), type="n",
+     #     ylim=c(min(N.mean.sqmeter, na.rm=T)-max(N.sem.sqmeter, na.rm=T), max(N.mean.sqmeter, na.rm=T)+max(N.sem.sqmeter, na.rm=T)),
+     ylim=c(0, max(N.mean.sqmeter, na.rm=T)+max(N.sem.sqmeter, na.rm=T)), 
+     xlab="год", ylab="N, экз./кв.м")
+for (i in 1:ncol(N.mean.sqmeter))
+{lines(as.numeric(rownames(N.mean.sqmeter)), N.mean.sqmeter[,i], pch=14+i, col=0+i, type="b")
+ arrows(x0=as.numeric(rownames(N.mean.sqmeter)), x1=as.numeric(rownames(N.mean.sqmeter)),
+        y0=N.mean.sqmeter[,i]-N.sem.sqmeter[,i], y1=N.mean.sqmeter[,i]+N.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
+}
+legend(legend=colnames(N.mean.sqmeter),x=2000, y=7996, pch=seq(15,15+ncol(N.mean.sqmeter),1), col=seq(1,1+ncol(N.mean.sqmeter),1))
+dev.off()
+embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
