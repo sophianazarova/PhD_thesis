@@ -1,8 +1,13 @@
+% для компиляции в lualatex!!
 \documentclass[12pt, a4paper]{article}
 \usepackage[english,russian]{babel}
 \usepackage[warn]{mathtext}
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}
+%\usepackage[T2A]{fontenc}
+%\usepackage[utf8]{inputenc}
+
+\usepackage{xecyr} % Продукт Вашего покорного слуги ;)
+
+\setmainfont{DejaVu Serif}
 
 \usepackage{color}
 \usepackage{amssymb,amsmath}
@@ -59,5 +64,40 @@
 \label{ris:dynamic_Kandalaksha_all}
 \end{figure}
 
+
+\begin{figure}[h]
+
+\begin{multicols}{2}
+\hfill
+\includegraphics[width=65mm]{../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf}
+\hfill
+\includegraphics[width=65mm]{../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf}
+\end{multicols}
+
+%\smallskip
+
+
+\begin{multicols}{2}
+\hfill
+\includegraphics[width=65mm]{../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf}
+\hfill
+\includegraphics[width=65mm]{../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf}
+\end{multicols}
+
+%\smallskip
+
+\begin{multicols}{2}
+\hfill
+\includegraphics[width=65mm]{../White_Sea/Ryashkov_YuG/N2_dynamic.pdf}
+\hfill
+\includegraphics[width=65mm]{../White_Sea/Lomnishniy/N2_dynamic.pdf}
+\end{multicols}
+
+%\smallskip
+
+
+\caption{Динамика численности {\it Macoma balthica} с длиной раковины более $1$~мм в поселениях вершины Кандалакшского залива}
+\label{ris:dynamic_Kandalaksha_all}
+\end{figure}
 
 \end{document}
