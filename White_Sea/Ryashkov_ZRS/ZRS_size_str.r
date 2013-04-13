@@ -72,6 +72,7 @@ error.bars<-function(yv,z,nn){
 (N.mean.sqmeter<-colMeans(N.sqmeter, na.rm=T))
 N.sd.sqmeter<-apply(N.sqmeter, 2, sd, na.rm=T)
 N.sem.sqmeter<-N.sd.sqmeter/sqrt(n.samples)
+(D.n<-N.sem.sqmeter/N.mean.sqmeter*100)
 
 pdf(file="N_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N.mean.sqmeter, x=names(N.mean.sqmeter),pch=15, main="литораль Западной Ряшковой салмы о. Ряшкова",
