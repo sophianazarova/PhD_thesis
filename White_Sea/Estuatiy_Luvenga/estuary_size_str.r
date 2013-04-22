@@ -1,4 +1,5 @@
 setwd("~/Dropbox/PhD_thesis/White_Sea/Estuatiy_Luvenga")
+setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Estuatiy_Luvenga")
 
 # размерная структура суммарно по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
@@ -256,5 +257,137 @@ plot(sizestr.h, labels=colnames(sum.sizestr.sqmeter), main="")
 sizestr2.h <- hclust(sizestr2.dist, method="ward")
 plot(sizestr2.h, labels=colnames(sum.sizestr.sqmeter2), main="")
 
-#cluster with bootstrap
-install.packages
+
+#динамика максимального размера
+str(ishodnik)
+(Length.max<-tapply(Length.mm, year, max, na.rm=T))
+plot(x=names(Length.max), y=Length.max, type=none)
+
+
+pdf(file="L_max.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(x=names(Length.max), y=Length.max, type="none", main="Эстуарий р. Лувеньги", xlab="год", ylab="L max, мм")
+lines(x=names(Length.max), y=Length.max, pch=1, type="b")
+dev.off()
+embedFonts("L_max.pdf") #встройка шрифтов в файл
+
+
+
+#динамика молоди <2mm и половозрелых  >8mm
+
+
+(young.old.int<-cut(Length.mm, breaks=c(1,2.5,7.9,max(Length.mm, na.rm=T))))
+
+(young.old.table<-table(young.old.int,year,sample))
+
+young.old.df<-as.data.frame(young.old.table) # как таблица данных
+
+#убираем те пробы которых на самом деле нету
+for (i in 1:length(levels(young.old.df$year)))
+{ (xxx<-young.old.df$sample[young.old.df$year==levels(young.old.df$year)[i] ]%in%
+     samples.names$sample[samples.names$year==levels(young.old.df$year)[i]])
+  antixxx<-as.logical(1-xxx)
+  size.str.df$Freq[young.old.df$year==levels(young.old.df$year)[i]][antixxx]<-NA
+}
+
+#теперь на квадратный метр
+young.old.sqmeter<-young.old.df
+for (i in 1:length(levels(young.old.sqmeter$year)))
+{
+  young.old.sqmeter$Freq[young.old.sqmeter$year==levels(young.old.sqmeter$year)[i]]<-
+    young.old.sqmeter$Freq[young.old.sqmeter$year==levels(young.old.sqmeter$year)[i]] * 
+    samples.squares$square[samples.squares$year==levels(young.old.sqmeter$year)[i]]
+}
+str(yong.old.sqmeter)
+
+
+(mean.young.old.sqmeter<-t(tapply(young.old.sqmeter$Freq,INDEX=list(young.old.sqmeter$year, young.old.sqmeter$young.old.int),FUN=mean, na.rm=T)))
+
+(sd.young.old.sqmeter<-tapply(young.old.sqmeter$Freq,INDEX=list(young.old.sqmeter$year, young.old.sqmeter$young.old.int),FUN=sd, na.rm=T))
+
+n.samples<-tapply(samples.names$sample,samples.names$year, length )
+
+(sem.young.old.sqmeter <-t(sd.young.old.sqmeter/sqrt(as.vector(n.samples))))
+
+#корреляция - молодь и половозрелые
+(spearman.young.old.mean<-cor.test(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,], method="spearman"))
+
+
+# молодь и половозрелые - график
+pdf(file="young_old.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.young.old.sqmeter[1,], x=colnames(mean.young.old.sqmeter),pch=15, type="n", main="Эстуарий р. Лувеньги", 
+#     ylim=c(min(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,])-max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,]), 
+#            max(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,])+max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,])),
+     ylim=c(0, 
+            max(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,])+max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,])),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
+      mean.young.old.sqmeter[1,], pch=15, type="b", col=2)
+arrows(x0=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
+       x1=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1),
+       y0=mean.young.old.sqmeter[1,]-sem.young.old.sqmeter[1,], 
+       y1=mean.young.old.sqmeter[1,]+sem.young.old.sqmeter[1,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
+      mean.young.old.sqmeter[3,], pch=16, type="b", col=4)
+arrows(x0=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
+       x1=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1),
+       y0=mean.young.old.sqmeter[3,]-sem.young.old.sqmeter[3,], 
+       y1=mean.young.old.sqmeter[3,]+sem.young.old.sqmeter[3,], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_old.pdf") #встройка шрифтов в файл
+
+#динамика молоди и половозрелых в %
+(sum.young.old<-t(tapply(young.old.sqmeter$Freq[young.old.sqmeter$young.old.int!="(0,1]"],
+                                INDEX=list(young.old.sqmeter$year[young.old.sqmeter$young.old.int!="(0,1]"], 
+                                           young.old.sqmeter$young.old.int[young.old.sqmeter$young.old.int!="(0,1]"]),
+                                FUN=sum, na.rm=T)))
+(young.old.percents<-t(t(sum.young.old)/colSums(sum.young.old, na.rm=T))*100)
+
+#корреляция - молодь и половозрелые в %
+(spearman.young.old.sum.percent<-cor.test(young.old.percents[1,], young.old.percents[3,], method="spearman"))
+
+#и график в %
+pdf(file="young_old_percents.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=young.old.percents[1,], x=colnames(young.old.percents),pch=15, type="n", main="Эстуарий р. Лувеньги", 
+     #     ylim=c(min(young.old.percents[1,], young.old.percents[3,])-max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,]), 
+     #            max(young.old.percents[1,], young.old.percents[3,])+max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,])),
+     ylim=c(0, 
+            max(young.old.percents[1,], young.old.percents[3,])),
+     xlab="год", ylab="доля от общей численности, %")
+#молодь
+lines(seq(as.numeric(min(colnames(young.old.percents))),as.numeric(max(colnames(young.old.percents))),1), 
+      young.old.percents[1,], pch=15, type="b", col=2)
+#половозрелые
+lines(seq(as.numeric(min(colnames(young.old.percents))),as.numeric(max(colnames(young.old.percents))),1), 
+      young.old.percents[3,], pch=16, type="b", col=4)
+dev.off()
+embedFonts("young_old_percents.pdf") #встройка шрифтов в файл
+
+# численность общая и численность молоди - график
+# молодь и половозрелые - график
+pdf(file="young_all.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.young.old.sqmeter[1,], x=colnames(mean.young.old.sqmeter),pch=15, type="n", main="Эстуарий р. Лувеньги", 
+     #     ylim=c(min(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,])-max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,]), 
+     #            max(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,])+max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,])),
+     ylim=c(0, 
+            max(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,])+max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,])),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
+      mean.young.old.sqmeter[1,], pch=15, type="b", col=2)
+arrows(x0=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
+       x1=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1),
+       y0=mean.young.old.sqmeter[1,]-sem.young.old.sqmeter[1,], 
+       y1=mean.young.old.sqmeter[1,]+sem.young.old.sqmeter[1,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
+      mean.young.old.sqmeter[3,], pch=16, type="b", col=4)
+arrows(x0=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
+       x1=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1),
+       y0=mean.young.old.sqmeter[3,]-sem.young.old.sqmeter[3,], 
+       y1=mean.young.old.sqmeter[3,]+sem.young.old.sqmeter[3,], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_old.pdf") #встройка шрифтов в файл
+
+

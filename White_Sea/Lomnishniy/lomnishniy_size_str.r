@@ -1,4 +1,5 @@
 setwd("~/Dropbox/PhD_thesis/White_Sea/Lomnishniy/")
+setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Lomnishniy/")
 
 # размерная структура суммарно по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
@@ -49,6 +50,18 @@ sem.sqmeter.df<-as.data.frame(sem.sizestr.sqmeter)
 
 length.class<-seq(1,20,1)
 
+#>2mm mean size structure
+(mean.sizestr.sqmeter2<-mean.sizestr.sqmeter[2:20,])
+mean.sqmeter.df2<-as.data.frame(mean.sizestr.sqmeter2)
+(sd.sizestr.sqmeter2<-sd.sizestr.sqmeter[,2:20])
+
+n.samples<-tapply(samples.names$sample,samples.names$year, length )
+
+(sem.sizestr.sqmeter2<-t(sd.sizestr.sqmeter2/sqrt(as.vector(n.samples))))
+sem.sqmeter.df2<-as.data.frame(sem.sizestr.sqmeter2)
+
+length.class2<-seq(2,20,1)
+
 #from R-book 
 error.bars<-function(yv,z,nn){
   xv<-
@@ -71,6 +84,8 @@ error.bars<-function(yv,z,nn){
     dev.off()
   }
 
+
+
 ## to .eps
 #for (j in 1:length(colnames(mean.sizestr.sqmeter)))
 #{
@@ -80,6 +95,14 @@ error.bars<-function(yv,z,nn){
 #  dev.off()
 #}
 
+#>1mm
+for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
+{
+  pdf(file=paste("Lomnishniy2", colnames(mean.sizestr.sqmeter2)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sizestr.sqmeter2[,j], nn=length.class2, z=sem.sizestr.sqmeter2[,j])
+  title(main=colnames(mean.sizestr.sqmeter2)[j], xlab="", ylab="")
+  dev.off()
+}
 
 
 #динамика обилия
@@ -120,9 +143,37 @@ arrows(x0=seq(as.numeric(min(names(N2.mean.sqmeter))),as.numeric(max(names(N2.me
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 
+# динамика >2mm с осью 1992-2012
+(y92.12<-seq(1992,2012,1))
+N2.92.12.mean<-c(rep(NA,(as.numeric(min(names(N2.mean.sqmeter)))-1992)), N2.mean.sqmeter)
+N2.92.12.sem<-c(rep(NA,(as.numeric(min(names(N2.sem.sqmeter)))-1992)), N2.sem.sqmeter)
+
+pdf(file="N2_dynamic_92_12.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N2.92.12.mean, x=y92.12,pch=15, main="о. Ломнишный",
+     ylim=c(min(N2.92.12.mean, na.rm=T)-max(N2.92.12.sem, na.rm=T), max(N2.92.12.mean, na.rm=T)+max(N2.92.12.sem, na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+lines(y92.12, N2.92.12.mean, pch=1, type="b")
+arrows(x0=y92.12, 
+       x1=y92.12,
+       y0=N2.92.12.mean-N2.92.12.sem, y1=N2.92.12.mean+N2.92.12.sem, angle=90, code=3, length=0.1)
+dev.off()
+embedFonts("N2_dynamic_92_12.pdf") #встройка шрифтов в файл
+
+
 #plot(y=N.mean.sqmeter, x=names(N.mean.sqmeter),pch=1)
 #segments(x0=seq(as.numeric(min(names(N.mean.sqmeter))),as.numeric(max(names(N.mean.sqmeter))),1), 
 #         x1=seq(as.numeric(min(names(N.mean.sqmeter))),as.numeric(max(names(N.mean.sqmeter))),1),
 #         y0=N.mean.sqmeter-N.sem.sqmeter, y1=N.mean.sqmeter+N.sem.sqmeter)
 
 
+#динамика максимального размера
+str(ishodnik)
+(Length.max<-tapply(Length.mm, year, max, na.rm=T))
+plot(x=names(Length.max), y=Length.max, type=none)
+
+
+pdf(file="L_max.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(x=names(Length.max), y=Length.max, type="none", main="о. Ломнишный", xlab="год", ylab="L max, мм")
+lines(x=names(Length.max), y=Length.max, pch=1, type="b")
+dev.off()
+embedFonts("L_max.pdf") #встройка шрифтов в файл

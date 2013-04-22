@@ -1,4 +1,5 @@
 setwd("~/Dropbox/PhD_thesis/White_Sea/Ryashkov_ZRS/")
+setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Ryashkov_ZRS/")
 
 # размерная структура суммарно по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
@@ -47,6 +48,20 @@ sem.sqmeter.df<-as.data.frame(sem.sizestr.sqmeter)
 
 length.class<-seq(1,20,1)
 
+#>2mm mean size structure
+(mean.sizestr.sqmeter2<-mean.sizestr.sqmeter[2:20,])
+mean.sqmeter.df2<-as.data.frame(mean.sizestr.sqmeter2)
+(sd.sizestr.sqmeter2<-sd.sizestr.sqmeter[,2:20])
+
+n.samples<-tapply(samples.names$sample,samples.names$year, length )
+
+(sem.sizestr.sqmeter2<-t(sd.sizestr.sqmeter2/sqrt(as.vector(n.samples))))
+sem.sqmeter.df2<-as.data.frame(sem.sizestr.sqmeter2)
+
+
+
+length.class2<-seq(2,20,1)
+
 #from R-book 
 error.bars<-function(yv,z,nn){
   xv<-
@@ -66,6 +81,15 @@ error.bars<-function(yv,z,nn){
     title(main=colnames(mean.sizestr.sqmeter)[j], xlab="", ylab="")
     dev.off()
   }
+
+#>2mm
+for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
+{
+  pdf(file=paste("zrs2", colnames(mean.sizestr.sqmeter2)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sizestr.sqmeter2[,j], nn=length.class2, z=sem.sizestr.sqmeter2[,j])
+  title(main=colnames(mean.sizestr.sqmeter2)[j], xlab="", ylab="")
+  dev.off()
+}
 
 #динамика обилия
 (N.sqmeter<-(t(tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum))))
@@ -103,3 +127,15 @@ arrows(x0=seq(as.numeric(min(names(N2.mean.sqmeter))),as.numeric(max(names(N2.me
        y0=N2.mean.sqmeter-N2.sem.sqmeter, y1=N2.mean.sqmeter+N2.sem.sqmeter, angle=90, code=3, length=0.1)
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
+
+#динамика максимального размера
+str(ishodnik)
+(Length.max<-tapply(Length.mm, year, max, na.rm=T))
+#plot(x=names(Length.max), y=Length.max, type=none)
+
+
+pdf(file="L_max.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(x=names(Length.max), y=Length.max, type="n", main="литораль Западной Ряшковой салмы о. Ряшкова", xlab="год", ylab="L max, мм")
+lines(x=names(Length.max), y=Length.max, pch=1, type="b")
+dev.off()
+embedFonts("L_max.pdf") #встройка шрифтов в файл

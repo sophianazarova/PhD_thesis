@@ -1,22 +1,6 @@
-# размерная структура суммарно по годам по горизонтам
-#ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
-#attach(ishodnik)
-#year<-factor(year)
-#Length.int<-cut(Length.mm, breaks=seq(0,20,1))
-#(size.str.table<-table(Length.int,year, tidal_zone))
-#(size.str.df<-as.data.frame(size.str.table))
-#length.class<-seq(1,20,1)
-#for (i in 1:length(levels(size.str.df$tidal_zone)))
-#{
-#  for (j in 1:length(levels(size.str.df$year)))
-#  {
-#    pdf(file=paste("sizestr", size.str.df$tidal_zone[i], size.str.df$year[j], ".pdf",sep="_"),width=1000, height=790)
-#    barplot(size.str.df$Freq[size.str.df$tidal_zone==paste(size.str.df$tidal_zone[i]) & size.str.df$year==paste(size.str.df$year[j])], names.arg=length.class)
-#    dev.off()
-#}}
-
 
 setwd("~/Dropbox/PhD_thesis/White_Sea/Luvenga_Goreliy//")
+setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Luvenga_Goreliy//")
 
 # размерная структура средние по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
@@ -39,7 +23,7 @@ for (i in 1:length(levels(size.str.df$year)))
   size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i]][antixxx]<-NA
 }
 
-
+subset(size.str.df, size.str.df$year=="1995" & size.str.df$sample=="mg4")
 # SUBSET - для фильтрации таблицы данных
 # APPLY - кто-то из них для средней и СД по фрейму
 
@@ -122,6 +106,53 @@ sem.sqmeter.low[sem.sqmeter.low==mean.sqmeter.low]<-0
 
 length.class<-seq(1,20,1)
 
+#size structure >1mm
+
+#верхний горизонт
+(mean.sqmeter2.high<-mean.sqmeter.middle[2:20,])
+mean.sqmeter2.high.df<-as.data.frame(mean.sqmeter2.high)
+
+(sd.sqmeter2.high<-sd.sqmeter.middle[,2:20])
+
+(sem.sqmeter2.high <-t(sd.sqmeter2.high/sqrt(n.samples.df$high)))
+#TODO надо те строки где по одной пробе сделать вместо ошибки NA!!
+sem.sqmeter2.high.df<-as.data.frame(sem.sqmeter2.high)
+sem.sqmeter2.high[sem.sqmeter2.high==mean.sqmeter2.high]<-0
+
+
+#средний горизонт
+mean.sqmeter2.middle<-mean.sqmeter.middle[2:20,]
+mean.sqmeter2.middle.df<-as.data.frame(mean.sqmeter2.middle)
+
+sd.sqmeter2.middle<-sd.sqmeter.middle[,2:20]
+
+sem.sqmeter2.middle <-t(sd.sqmeter2.middle/sqrt(n.samples.df$middle))
+sem.sqmeter2.middle.df<-as.data.frame(sem.sqmeter2.middle)
+sem.sqmeter2.middle[sem.sqmeter2.middle==mean.sqmeter2.middle]<-0
+
+#граница среднего и нижнего горизонта, в фукусах
+mean.sqmeter2.midlow<-mean.sqmeter.middle[2:20,]
+mean.sqmeter2.midlow.df<-as.data.frame(mean.sqmeter2.midlow)
+
+sd.sqmeter2.midlow<-sd.sqmeter.middle[,2:20]
+
+sem.sqmeter2.midlow <-t(sd.sqmeter2.midlow/sqrt(n.samples.df$midlow))
+sem.sqmeter2.midlow.df<-as.data.frame(sem.sqmeter2.midlow)
+sem.sqmeter2.midlow[sem.sqmeter2.midlow==mean.sqmeter2.midlow]<-0
+
+#нижний горизонт, у нуля глубин
+mean.sqmeter2.low<-mean.sqmeter.middle[2:20,]
+mean.sqmeter2.low.df<-as.data.frame(mean.sqmeter2.low)
+
+sd.sqmeter2.low<-sd.sqmeter.middle[,2:20]
+
+sem.sqmeter2.low <-t(sd.sqmeter2.low/sqrt(n.samples.df$low))
+sem.sqmeter2.low.df<-as.data.frame(sem.sqmeter2.low)
+sem.sqmeter2.low[sem.sqmeter2.low==mean.sqmeter2.low]<-0
+
+length.class2<-seq(2,20,1)
+
+
 #from R-book 
 error.bars<-function(yv,z,nn){
   xv<-
@@ -189,6 +220,45 @@ barplot(matrix(mean.sqmeter.high_beatch[,1], mean.sqmeter.fucus_zone[,1],
                mean.sqmeter.zostera_zone[,1],mean.sqmeter.low_beatch[,1]))
 
 
+#>1mm
+#верхний горизонт
+for (j in 1:length(colnames(mean.sqmeter2.high)))
+{
+  pdf(file=paste("high2", colnames(mean.sqmeter2.high)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sqmeter2.high[,j], nn=length.class2,  z=sem.sqmeter2.high[,j])
+  title(main=colnames(mean.sqmeter2.high)[j], xlab="", ylab="")
+  dev.off()
+}
+
+#средний горизонт
+for (j in 1:length(colnames(mean.sqmeter2.middle)))
+{
+  pdf(file=paste("middle2", colnames(mean.sqmeter2.middle)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sqmeter2.middle[,j], nn=length.class2,  z=sem.sqmeter2.middle[,j])
+  title(main=colnames(mean.sqmeter2.middle)[j], xlab="", ylab="")
+  dev.off()
+}
+
+#граница среднего и нижнего горизонтов, в фукоидах
+for (j in 1:length(colnames(mean.sqmeter2.midlow)))
+{
+  pdf(file=paste("midlow2", colnames(mean.sqmeter2.midlow)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sqmeter2.midlow[,j], nn=length.class2,  z=sem.sqmeter2.midlow[,j])
+  title(main=colnames(mean.sqmeter2.midlow)[j], xlab="", ylab="")
+  dev.off()
+}
+
+#нижний горизонт, у нуля глубин
+for (j in 1:length(colnames(mean.sqmeter2.low)))
+{
+  pdf(file=paste("low2", colnames(mean.sqmeter2.low)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sqmeter2.low[,j], nn=length.class2,  z=sem.sqmeter2.low[,j])
+  title(main=colnames(mean.sqmeter2.low)[j], xlab="", ylab="")
+  dev.off()
+}
+
+
+
 #динамика обилия
 (N.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample, size.str.df$tidal_level), sum))
 (N.mean.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=mean))
@@ -234,3 +304,26 @@ for (i in 1:ncol(N2.mean.sqmeter))
 legend(legend=colnames(N2.mean.sqmeter),x=2005, y=31900, pch=seq(15,15+ncol(N2.mean.sqmeter),1), col=seq(1,1+ncol(N2.mean.sqmeter),1))
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
+
+
+#динамика максимального размера
+str(ishodnik)
+(Length.max<-tapply(Length.mm, list(year, tidal_level), max, na.rm=T))
+#plot(x=names(Length.max), y=Length.max, type=none)
+max(Length.mm[year=="1995"] & tidal_level=="low"])
+subset(ishodnik, year=="1995")
+
+pdf(file="L_max.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(x=rownames(Length.max), y=Length.max[,1], type="n", main="о. Горелый", xlab="год", ylab="L max, мм", 
+     ylim=c(min(Length.max), max(Length.max)))
+for (i in 1:ncol(Length.max))
+{lines(as.numeric(rownames(Length.max)), Length.max[,i], pch=14+i, col=0+i, type="b")
+}
+legend(legend=colnames(Length.max),x=1993.6, y=11.6, pch=seq(15,15+ncol(Length.max),1), col=seq(1,1+ncol(Length.max),1))
+
+dev.off()
+embedFonts("L_max.pdf") #встройка шрифтов в файл
+
+#динамика молоди <2mm
+
+#динамика половозрелых >8mm

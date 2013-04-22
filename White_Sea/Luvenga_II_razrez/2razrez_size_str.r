@@ -1,4 +1,5 @@
 setwd("~/Dropbox/PhD_thesis/White_Sea/Luvenga_II_razrez/")
+setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Luvenga_II_razrez/")
 
 # размерная структура средние по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
@@ -32,6 +33,13 @@ for (i in 1:length(levels(size.str.sqmeter$year)))
   size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]]<-
     size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]] * 
     samples.squares$square[samples.squares$year==levels(size.str.sqmeter$year)[i]]
+}
+
+
+for (i in 1: length(levels(size.str.sqmeter$tidal_level)))
+{
+  assign(paste(levels(size.str.sqmeter$tidal_level)[i]), 
+       subset(size.str.sqmeter, size.str.sqmeter$tidal_level==levels(size.str.sqmeter$tidal_level)[i]))
 }
 
 #for (i in 1: length(levels(size.str.sqmeter$tidal_level)))
@@ -99,6 +107,47 @@ sem.sqmeter.low_beatch.df<-as.data.frame(sem.sqmeter.low_beatch)
 
 length.class<-seq(1,20,1)
 
+#>1mm
+#Верхний пляж
+(mean.sqmeter2.high_beatch<-mean.sqmeter.high_beatch[2:20,])
+mean.sqmeter2.high_beatch.df<-as.data.frame(mean.sqmeter2.high_beatch)
+
+(sd.sqmeter2.high_beatch<-sd.sqmeter.high_beatch[,2:20])
+
+(sem.sqmeter2.high_beatch <-t(sd.sqmeter2.high_beatch/sqrt(n.samples.df$high_beatch)))
+sem.sqmeter2.high_beatch.df<-as.data.frame(sem.sqmeter2.high_beatch)
+
+#пояс фукоидов
+mean.sqmeter2.fucus_zone<-mean.sqmeter.fucus_zone[2:20,]
+mean.sqmeter2.fucus_zone.df<-as.data.frame(mean.sqmeter2.fucus_zone)
+
+sd.sqmeter2.fucus_zone<-sd.sqmeter.fucus_zone[,2:20]
+
+sem.sqmeter2.fucus_zone <-t(sd.sqmeter2.fucus_zone/sqrt(n.samples.df$fucus_zone))
+sem.sqmeter2.fucus_zone.df<-as.data.frame(sem.sqmeter2.fucus_zone)
+
+#пояс зостеры
+mean.sqmeter2.zostera_zone<-mean.sqmeter.zostera_zone[2:20,]
+mean.sqmeter2.zostera_zone.df<-as.data.frame(mean.sqmeter2.zostera_zone)
+
+sd.sqmeter2.zostera_zone<-sd.sqmeter.zostera_zone[,2:20]
+
+sem.sqmeter2.zostera_zone <-t(sd.sqmeter2.zostera_zone/sqrt(n.samples.df$zostera_zone))
+sem.sqmeter2.zostera_zone.df<-as.data.frame(sem.sqmeter2.zostera_zone)
+
+#нижний пляж
+mean.sqmeter2.low_beatch<-mean.sqmeter.low_beatch[2:20,]
+mean.sqmeter2.low_beatch.df<-as.data.frame(mean.sqmeter2.low_beatch)
+
+sd.sqmeter2.low_beatch<-sd.sqmeter.low_beatch[,2:20]
+
+sem.sqmeter2.low_beatch <-t(sd.sqmeter2.low_beatch/sqrt(n.samples.df$low_beatch))
+sem.sqmeter2.low_beatch.df<-as.data.frame(sem.sqmeter2.low_beatch)
+
+
+length.class2<-seq(2,20,1)
+
+
 #from R-book 
 error.bars<-function(yv,z,nn){
   xv<-
@@ -148,6 +197,7 @@ for (j in 1:length(colnames(mean.sqmeter.low_beatch)))
 }
 
 
+
 # все 4 на одном графике
 for (j in 1:length(colnames(mean.sqmeter.low_beatch)))
 {
@@ -163,6 +213,44 @@ for (j in 1:length(colnames(mean.sqmeter.low_beatch)))
 
 barplot(matrix(mean.sqmeter.high_beatch[,1], mean.sqmeter.fucus_zone[,1], 
            mean.sqmeter.zostera_zone[,1],mean.sqmeter.low_beatch[,1]))
+
+
+#>1mm
+#верхний пляж
+for (j in 1:length(colnames(mean.sqmeter2.high_beatch)))
+{
+  pdf(file=paste("high_beatch2", colnames(mean.sqmeter2.high_beatch)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sqmeter2.high_beatch[,j], nn=length.class2,  z=sem.sqmeter2.high_beatch[,j])
+  title(main=colnames(mean.sqmeter2.high_beatch)[j], xlab="", ylab="")
+  dev.off()
+}
+
+#пояс фукоидов
+for (j in 1:length(colnames(mean.sqmeter2.fucus_zone)))
+{
+  pdf(file=paste("fucus_zone2", colnames(mean.sqmeter2.fucus_zone)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sqmeter2.fucus_zone[,j], nn=length.class2,  z=sem.sqmeter2.fucus_zone[,j])
+  title(main=colnames(mean.sqmeter2.fucus_zone)[j], xlab="", ylab="")
+  dev.off()
+}
+
+#пояс зостеры
+for (j in 1:length(colnames(mean.sqmeter2.zostera_zone)))
+{
+  pdf(file=paste("zostera_zone2", colnames(mean.sqmeter2.zostera_zone)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sqmeter2.zostera_zone[,j], nn=length.class2,  z=sem.sqmeter2.zostera_zone[,j])
+  title(main=colnames(mean.sqmeter2.zostera_zone)[j], xlab="", ylab="")
+  dev.off()
+}
+
+#нижний пляж
+for (j in 1:length(colnames(mean.sqmeter2.low_beatch)))
+{
+  pdf(file=paste("low_beatch2", colnames(mean.sqmeter.low_beatch)[j], ".pdf",sep="_"))
+  error.bars(yv=mean.sqmeter2.low_beatch[,j], nn=length.class2,  z=sem.sqmeter2.low_beatch[,j])
+  title(main=colnames(mean.sqmeter2.low_beatch)[j], xlab="", ylab="")
+  dev.off()
+}
 
 
 #динамика обилия
@@ -209,3 +297,19 @@ for (i in 1:ncol(N2.mean.sqmeter))
 legend(legend=colnames(N2.mean.sqmeter),x=2000, y=7996, pch=seq(15,15+ncol(N2.mean.sqmeter),1), col=seq(1,1+ncol(N2.mean.sqmeter),1))
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
+
+#динамика максимального размера
+str(ishodnik)
+(Length.max<-tapply(Length.mm, list(year, tidal_level), max, na.rm=T))
+#plot(x=names(Length.max), y=Length.max, type=none)
+
+
+pdf(file="L_max.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(x=rownames(Length.max), y=Length.max[,1], type="n", main="Материковая литораль в районе пос. Лувеньга", xlab="год", ylab="L max, мм", 
+     ylim=c(min(Length.max,na.rm=T), max(Length.max,na.rm=T)))
+for (i in 1:ncol(Length.max))
+{lines(as.numeric(rownames(Length.max)), Length.max[,i], pch=14+i, col=0+i, type="b")
+}
+legend(legend=colnames(Length.max),x=1993, y=12.2, pch=seq(15,15+ncol(Length.max),1), col=seq(1,1+ncol(Length.max),1))
+dev.off()
+embedFonts("L_max.pdf") #встройка шрифтов в файл
