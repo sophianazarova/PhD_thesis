@@ -2,12 +2,12 @@
 \documentclass[12pt, a4paper]{article}
 \usepackage[english,russian]{babel}
 \usepackage[warn]{mathtext}
-\usepackage[T2A]{fontenc}
-\usepackage[utf8]{inputenc}
+%\usepackage[T2A]{fontenc}
+%\usepackage[utf8]{inputenc}
 
-%\usepackage{xecyr} % Продукт Вашего покорного слуги ;)
+\usepackage{xecyr} % Продукт Вашего покорного слуги ;)
 
-%\setmainfont{DejaVu Serif}
+\setmainfont{DejaVu Serif}
 
 \usepackage{color}
 \usepackage{amssymb,amsmath}
@@ -65,9 +65,11 @@
 \end{table}
 
 На каждом исследованном участке отбирали 3 --- 25 проб площадью 1/30 --- 1/10 м$^2$, которые затем промывали на сите с диаметром ячеи 0,5 -- 1 мм. 
-В пробах учитывали всех особей {\it Macoma balthica}, у которых в дальнейшем измеряли максимальный линейный размер (длину) с точностью 0,1 мм.
+В пробах учитывали всех особей {\it Macoma balthica}, у которых в дальнейшем измеряли максимальный линейный размер (длину) с точностью 0,1 мм. 
+Для определения биомассы моллюсков взвешивали на электронных весах с точностью до 1 мг. Для серий проб, где не проводили взвешивание моллюсков, биомассу определяли рассчетным методом с использованием аллометриеской зависимости сырой массы маком от длины их раковины \cite{Maximovich_et_al_1993}.
 В дальнейшем рассчитывали показатели средней численности маком на квадратный метр (плотность поселения) и размерно-частотное распределение особоей.
 Для построения размерно-частотного распределения шаг размерного класса составлял 1 мм.
+
 
 В дальнейшем при анализе мы работали с особями с длиной раковины более 1,0 мм по двум причинам. 
 Во-первых, для того чтобы сделать сравнимыми результаты с разных участков, где пробы промывались на ситах с разным диаметром ячеи. 
@@ -102,6 +104,7 @@
 %двустворчатых моллюсков. Грунт из нее промывали на сите с диаметром ячеи 1 мм,
 %а затем остаток разбирали в фотографической кювете с белым дном. Из грунта соби
 
+\section{Результаты}
 \subsection{Динамика обилия {\it M.~balthica}}
 
 
@@ -318,6 +321,7 @@
 
 		\subsection{Максимальный размер особей в поселениях}
 
+
 \newpage
 \begin{figure}[h]
 
@@ -383,5 +387,79 @@
 \caption{Изменения максимальной длины особей {\it Macoma balthica} в исследованных поселениях}
 \label{ris:Length_max}
 \end{figure}
+
+\subsection{Динамика биомассы}
+
+\newpage
+\begin{figure}[h]
+
+\begin{minipage}[b]{.46\linewidth}
+%Фигурка в первом ряду слева размер отведенный под весь этот объект -- 0.46 от ширины строки
+%Параметр [b] означает, что выравнивание этих министраниц будет по нижнему краю
+\begin{center}
+\includegraphics[width=65mm]{../White_Sea/Luvenga_Goreliy/B_count_dynamic.pdf}
+\end{center}
+\end{minipage}
+%
+\hfil %Это пружинка отодвигающая рисунки друг от друга
+%
+\begin{minipage}[b]{.46\linewidth}
+%Следующий рисунок - первый ряд справа %DUNGEON S_4 \ AB
+\begin{center}
+\includegraphics[width=65mm]{../White_Sea//Luvenga_II_razrez/B_count_dynamic.pdf}
+\end{center}
+\end{minipage}
+
+%\smallskip
+
+
+\begin{minipage}[b]{.46\linewidth}
+%Фигурка в первом ряду слева размер отведенный под весь этот объект -- 0.46 от ширины строки
+%Параметр [b] означает, что выравнивание этих министраниц будет по нижнему краю
+\begin{center}
+\includegraphics[width=65mm]{../White_Sea/Estuatiy_Luvenga/B_count_dynamic.pdf}
+\end{center}
+\end{minipage}
+%
+\hfil %Это пружинка отодвигающая рисунки друг от друга
+%
+\begin{minipage}[b]{.46\linewidth}
+%Следующий рисунок - первый ряд справа %DUNGEON S_4 \ AB
+\begin{center}
+\includegraphics[width=65mm]{../White_Sea/Ryashkov_ZRS/B_count_dynamic.pdf}
+\end{center}
+\end{minipage}
+
+%\smallskip
+
+\begin{minipage}[b]{.46\linewidth}
+%Фигурка в первом ряду слева размер отведенный под весь этот объект -- 0.46 от ширины строки
+%Параметр [b] означает, что выравнивание этих министраниц будет по нижнему краю
+\begin{center}
+\includegraphics[width=65mm]{../White_Sea/Ryashkov_YuG/B_count_dynamic.pdf}
+\end{center}
+\end{minipage}
+%
+\hfil %Это пружинка отодвигающая рисунки друг от друга
+%
+\begin{minipage}[b]{.46\linewidth}
+%Следующий рисунок - первый ряд справа %DUNGEON S_4 \ AB
+\begin{center}
+\includegraphics[width=65mm]{../White_Sea/Lomnishniy/B_count_dynamic.pdf}
+\end{center}
+\end{minipage}
+
+%\smallskip
+
+
+\caption{Динамика биомассы {\it Macoma balthica} в исследованных поселениях}
+\label{ris:Length_max}
+\end{figure}
+
+        \section{Литература}
+%        \bibliographystyle{rusnat}
+        \bibliographystyle{gost780s}
+%        \bibliographystyle{plain}
+        \bibliography{/home/sonya/Dropbox/sophia_base}
 
 \end{document}
