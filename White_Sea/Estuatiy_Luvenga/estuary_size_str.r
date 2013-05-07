@@ -405,7 +405,7 @@ n.samples<-tapply(samples.names$sample,samples.names$year, length )
 
 (sem.young.old.sqmeter <-t(sd.young.old.sqmeter/sqrt(as.vector(n.samples))))
 
-
+write.table(t(mean.young.old.sqmeter), file="estuary_young_old_mean.csv", sep=";", dec=",")
 
 
 # молодь и половозрелые - график

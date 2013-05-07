@@ -280,6 +280,8 @@ n.samples<-tapply(samples.names$sample,samples.names$year, length )
 
 (sem.young.old.sqmeter <-t(sd.young.old.sqmeter/sqrt(as.vector(n.samples))))
 
+write.table(t(mean.young.old.sqmeter), file="lomnishniy_young_old_mean.csv", sep=";", dec=",")
+
 #корреляция - молодь и половозрелые
 (spearman.young.old.mean<-cor.test(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,], method="spearman"))
 

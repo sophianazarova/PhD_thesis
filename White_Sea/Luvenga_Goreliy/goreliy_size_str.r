@@ -460,6 +460,7 @@ for (i in 1:4)
 
 str(mean.young.old.sqmeter)
 
+write.table(mean.young.old.sqmeter, file="goreliy_young_old_mean.csv", sep=";", dec=",")
 
 # и все же не умею я делать стопку графиков одним движением руки :(
 #for (j in 1:4){
@@ -586,15 +587,19 @@ embedFonts("young_old.pdf") #встройка шрифтов в файл
 #динамика молоди и половозрелых в %
 (sum.young.old<-(tapply(young.old.sqmeter$Freq[young.old.sqmeter$young.old.int!="(0,1]"],
                          INDEX=list(young.old.sqmeter$year[young.old.sqmeter$young.old.int!="(0,1]"], 
-                                    young.old.sqmeter$young.old.int[young.old.sqmeter$young.old.int!="(0,1]"],
-                                    young.old.sqmeter$tidal_level[young.old.sqmeter$young.old.int!="(0,1]"],),
+                                    young.old.sqmeter$tidal_level[young.old.sqmeter$young.old.int!="(0,1]"],
+                                    young.old.sqmeter$young.old.int[young.old.sqmeter$young.old.int!="(0,1]"]),
                          FUN=sum, na.rm=T)))
 
-(young.old.percents<-(sum.young.old)/apply(sum.young.old,MARGIN=c(1,3),FUN=sum, na.rm=T)*100)
+#это извращение - повторить три раза сумму, чтобы поделить на это трехмерный массив. 
+#потому что как делить трехмерный на двумерный я не догоняю
+summ.all.3times<-array(dim=dim(sum.young.old), dimnames=dimnames(sum.young.old), 
+                       data=rep(x=apply(sum.young.old, MARGIN=c(1,2), FUN=sum, na.rm=T), 3)) 
+(young.old.percents<-(sum.young.old)/summ.all.3times*100)
 
-write.table(t(young.old.percents), file="estuary_young_old_percent.csv", sep=";", dec=",")
+write.table((young.old.percents), file="goreliy_young_old_percent.csv", sep=";", dec=",")
 
 #корреляция - молодь и половозрелые в %
 str(young.old.percents)
-(spearman.young.old.sum.percent<-cor.test(young.old.percents[1,2:6], young.old.percents[3,1:5], method="spearman"))
-plot(x=young.old.percents[3,1:5], y=young.old.percents[1,2:6])
+(spearman.young.old.sum.percent<-cor.test(young.old.percents[2:21,,1], young.old.percents[1:20,,3], method="spearman"))
+plot(y=young.old.percents[2:21,,1], x=young.old.percents[1:20,,3])

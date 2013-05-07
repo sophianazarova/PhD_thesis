@@ -447,7 +447,10 @@ for (i in 1:4)
 {assign(paste("sem",dimnames(sem.young.old.sqmeter)[[2]][i],sep="."),sem.young.old.sqmeter[,i,])
 }
 
+write.table(mean.young.old.sqmeter, file="2razrez_young_old_mean.csv", sep=";", dec=",")
+
 str(mean.young.old.sqmeter)
+
 
 
 # молодь и половозрелые - график high_beatch
@@ -549,3 +552,23 @@ arrows(x0=as.numeric(rownames(mean.low_beatch)),
        y1=mean.low_beatch[,3]+sem.low_beatch[,3], angle=90, code=3, length=0.1, col=4)
 dev.off()
 embedFonts("young_old.pdf") #встройка шрифтов в файл
+
+#динамика молоди и половозрелых в %
+(sum.young.old<-(tapply(young.old.sqmeter$Freq[young.old.sqmeter$young.old.int!="(0,1]"],
+                        INDEX=list(young.old.sqmeter$year[young.old.sqmeter$young.old.int!="(0,1]"], 
+                                   young.old.sqmeter$tidal_level[young.old.sqmeter$young.old.int!="(0,1]"],
+                                   young.old.sqmeter$young.old.int[young.old.sqmeter$young.old.int!="(0,1]"]),
+                        FUN=sum, na.rm=T)))
+
+#это извращение - повторить три раза сумму, чтобы поделить на это трехмерный массив. 
+#потому что как делить трехмерный на двумерный я не догоняю
+summ.all.3times<-array(dim=dim(sum.young.old), dimnames=dimnames(sum.young.old), 
+                       data=rep(x=apply(sum.young.old, MARGIN=c(1,2), FUN=sum, na.rm=T), 3)) 
+(young.old.percents<-(sum.young.old)/summ.all.3times*100)
+
+write.table((young.old.percents), file="2razrez_young_old_percent.csv", sep=";", dec=",")
+
+#корреляция - молодь и половозрелые в %
+str(young.old.percents)
+(spearman.young.old.sum.percent<-cor.test(young.old.percents[2:9,,1], young.old.percents[1:8,,3], method="spearman"))
+plot(y=young.old.percents[2:9,,1], x=young.old.percents[1:8,,3])
