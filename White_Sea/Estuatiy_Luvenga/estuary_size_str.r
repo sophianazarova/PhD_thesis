@@ -10,7 +10,7 @@ attach(ishodnik)
 
 #year<-factor(year)
 
-# размерная структура суммарно по годам по горизонтам
+## размерная структура суммарно по годам по горизонтам
 Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 
 (size.str.table<-table(Length.int,year,sample))
@@ -51,7 +51,7 @@ n.samples<-tapply(samples.names$sample,samples.names$year, length )
 (sem.sizestr.sqmeter <-t(sd.sizestr.sqmeter/sqrt(as.vector(n.samples))))
 sem.sqmeter.df<-as.data.frame(sem.sizestr.sqmeter)
 
-#>2mm mean size structure
+##>2mm mean size structure
 (mean.sizestr.sqmeter2<-mean.sizestr.sqmeter[2:20,])
 mean.sqmeter.df2<-as.data.frame(mean.sizestr.sqmeter2)
 (sd.sizestr.sqmeter2<-sd.sizestr.sqmeter[,2:20])
@@ -65,6 +65,8 @@ sem.sqmeter.df2<-as.data.frame(sem.sizestr.sqmeter2)
 length.class<-seq(1,20,1)
 length.class2<-seq(2,20,1)
 
+
+## size structure plot
 #from R-book 
 error.bars<-function(yv,z,nn){
   xv<-
@@ -94,7 +96,27 @@ for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
   dev.off()
 }
 
-#динамика обилия
+## попытка построить трехмерный график
+#install.packages("lattice", "ggplot2")
+#library("lattice", "ggplot2")
+
+# пример трехмерного графика
+#state.info <- data.frame(name = state.name, long = state.center$x,
+#                         lat = state.center$y, area = state.x77[, "Area"],
+#                         population = 1000 * state.x77[, "Population"])
+#state.info$density <- with(state.info, population/area)
+#
+#pl <- cloud(density ~ long + lat, state.info, subset = !(name %in% c("Alaska", "Hawaii")), 
+#            type = "h", lwd = 2, zlim = c(0, max(state.info$density)), scales = list(arrows = FALSE))
+#print(pl)
+
+#mean.sqmeter.df2.2<-as.data.frame(as.table(mean.sizestr.sqmeter2))
+#pl <- cloud(Freq ~ Var1 + Var2, mean.sqmeter.df2.2, 
+            type = "h", lwd = 2, zlim = c(0, max(mean.sqmeter.df2.2$Freq)), scales = list(arrows = FALSE))
+#print(pl)
+
+
+##динамика обилия
 (N.sqmeter<-(t(tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum))))
 (N.mean.sqmeter<-colMeans(N.sqmeter, na.rm=T))
 (N.sd.sqmeter<-apply(N.sqmeter, 2, sd, na.rm=T))
@@ -114,7 +136,7 @@ arrows(x0=seq(as.numeric(min(names(N.mean.sqmeter))),as.numeric(max(names(N.mean
 dev.off()
 embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 
-#динамика без молод ( больше 2+)
+##динамика без молод ( больше 2+)
 (N2.sqmeter<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"], 
                        list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
                             size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"]), sum))))
@@ -135,7 +157,7 @@ arrows(x0=seq(as.numeric(min(names(N2.mean.sqmeter))),as.numeric(max(names(N2.me
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 
-#про численность 2+
+##про численность 2+
 #период 1992-1998
 
 (N2.92.98<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)<=1998], 
@@ -202,7 +224,7 @@ for (j in 1:length(colnames(sum.sizestr.sqmeter.percents)))
   dev.off()
 }
 
-#Principal component analisys
+##Principal component analisys
 #sizestr.pca<-prcomp(t(sum.sizestr.sqmeter.percents))
 sizestr.pca<-princomp(t(sum.sizestr.sqmeter.percents)) #princomp хочет чтобы признаков было больше чем групп. Тут 21 и 20 - т.е. это возможно
 sizestr.p<-predict(sizestr.pca)
@@ -227,7 +249,7 @@ text(sizestr.p[,2:3],
      labels=abbreviate(colnames(sum.sizestr.sqmeter.percents)))
 
 
-#все крупнее 1+
+##все крупнее 1+
 str(size.str.sqmeter)
 (sum.sizestr.sqmeter2<-t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"],
                                 INDEX=list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"], 
@@ -247,7 +269,7 @@ text(sizestr2.p[,1:2],
 lines(sizestr2.p[,1:2], pch=3)
 biplot(sizestr2.pca)
 
-#cluster analisys
+##cluster analisys
 #install.packages("cluster")
 library("cluster")
 
@@ -261,7 +283,7 @@ sizestr2.h <- hclust(sizestr2.dist, method="ward")
 plot(sizestr2.h, labels=colnames(sum.sizestr.sqmeter2), main="")
 
 
-#динамика максимального размера
+##динамика максимального размера
 str(ishodnik)
 (Length.max<-tapply(Length.mm, year, max, na.rm=T))
 plot(x=names(Length.max), y=Length.max, type=none)
@@ -274,7 +296,7 @@ dev.off()
 embedFonts("L_max.pdf") #встройка шрифтов в файл
 
 
-#рассчетная биомасса по Максимовичу и др., 1993
+##рассчетная биомасса по Максимовичу и др., 1993
 biomass.count<-0.00016*(Length.mm^2.96)
 (biomass.samples<-tapply(biomass.count, list(year, sample), sum, na.rm=T))
 
@@ -297,7 +319,7 @@ arrows(x0=seq(as.numeric(min(names(B.mean.sqmeter))),as.numeric(max(names(B.mean
 dev.off()
 embedFonts("B_count_dynamic.pdf") #встройка шрифтов в файл
 
-#рассчетная биомасса только с учетом >1mm особей
+##рассчетная биомасса только с учетом >1mm особей
 biomass2.count<-0.00016*(Length.mm[Length.mm>1.0]^2.96)
 (biomass2.samples<-tapply(biomass2.count, list(year[Length.mm>1.0], sample[Length.mm>1.0]), sum, na.rm=T))
 
@@ -320,7 +342,7 @@ arrows(x0=seq(as.numeric(min(names(B2.mean.sqmeter))),as.numeric(max(names(B2.me
 dev.off()
 embedFonts("B2_count_dynamic.pdf") #встройка шрифтов в файл
 
-#влияние особей <=1mm на рассчетную биомассу
+##влияние особей <=1mm на рассчетную биомассу
 pdf(file="B_B2_compare.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=B.mean.sqmeter, x=names(B.mean.sqmeter),pch=15, main="Эстуарий р. Лувеньги", type="n",
      ylim=c(min(min(B.mean.sqmeter)-max(B.sem.sqmeter), min(B2.mean.sqmeter)-max(B2.sem.sqmeter)), 
@@ -339,7 +361,7 @@ arrows(x0=seq(as.numeric(min(names(B2.mean.sqmeter))),as.numeric(max(names(B2.me
 dev.off()
 embedFonts("B_B2_compare.pdf") #встройка шрифтов в файл
 
-#измеренная биомасса (реальная)
+##измеренная биомасса (реальная)
 str(biomass.measure)
 (biomass.real.m<-tapply(biomass.measure$biomass.g, list(biomass.measure$year, biomass.measure$sample), function(x){x*1}))
 (biomass.real.sqmeter<-biomass.real.m*samples.squares$square)
@@ -349,7 +371,7 @@ str(biomass.measure)
 (Br.sem.sqmeter<-Br.sd.sqmeter/sqrt(n.samples))
 (D.br<-Br.sem.sqmeter/Br.mean.sqmeter*100)
 
-#сравнение рассчетной и реальной биомассы
+##сравнение рассчетной и реальной биомассы
 pdf(file="Bcount_Bmeasure_compare.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=B.mean.sqmeter, x=names(B.mean.sqmeter),pch=15, main="Эстуарий р. Лувеньги", type="n",
      ylim=c(min(min(B.mean.sqmeter)-max(B.sem.sqmeter), min(Br.mean.sqmeter, na.rm=T)-max(Br.sem.sqmeter, na.rm=T)), 
@@ -369,7 +391,7 @@ dev.off()
 embedFonts("Bcount_Bmeasure.pdf") #встройка шрифтов в файл
 
 
-#динамика молоди <2mm и половозрелых  >8mm
+##динамика молоди <2mm и половозрелых  >8mm
 
 
 (young.old.int<-cut(Length.mm, breaks=c(1,2.5,7.9,max(Length.mm, na.rm=T))))
@@ -383,7 +405,7 @@ for (i in 1:length(levels(young.old.df$year)))
 { (xxx<-young.old.df$sample[young.old.df$year==levels(young.old.df$year)[i] ]%in%
      samples.names$sample[samples.names$year==levels(young.old.df$year)[i]])
   antixxx<-as.logical(1-xxx)
-  size.str.df$Freq[young.old.df$year==levels(young.old.df$year)[i]][antixxx]<-NA
+  young.old.df$Freq[young.old.df$year==levels(young.old.df$year)[i]][antixxx]<-NA
 }
 
 #теперь на квадратный метр
@@ -469,13 +491,12 @@ embedFonts("young_old_percents.pdf") #встройка шрифтов в фай�
 
 
 # численность общая и численность молоди - график
-# молодь и половозрелые - график
 pdf(file="young_all.pdf", family="NimbusSan") # указываем шрифт подпией
-plot(y=mean.young.old.sqmeter[1,], x=colnames(mean.young.old.sqmeter),pch=15, type="n", main="Эстуарий р. Лувеньги", 
+plot(y=N2.mean.sqmeter, x=colnames(mean.young.old.sqmeter),pch=15, type="n", main="Эстуарий р. Лувеньги", 
      #     ylim=c(min(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,])-max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,]), 
      #            max(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,])+max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,])),
      ylim=c(0, 
-            max(mean.young.old.sqmeter[1,], mean.young.old.sqmeter[3,])+max(sem.young.old.sqmeter[1,], sem.young.old.sqmeter[3,])),
+            max(mean.young.old.sqmeter[1,], N2.mean.sqmeter)+max(sem.young.old.sqmeter[1,], N2.sem.sqmeter)),
      xlab="год", ylab="N, экз./кв.м")
 #молодь
 lines(seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
@@ -484,13 +505,13 @@ arrows(x0=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(c
        x1=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1),
        y0=mean.young.old.sqmeter[1,]-sem.young.old.sqmeter[1,], 
        y1=mean.young.old.sqmeter[1,]+sem.young.old.sqmeter[1,], angle=90, code=3, length=0.1, col=2)
-#половозрелые
+#все
 lines(seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
-      mean.young.old.sqmeter[3,], pch=16, type="b", col=4)
+      N2.mean.sqmeter, pch=16, type="b", col=4)
 arrows(x0=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1), 
        x1=seq(as.numeric(min(colnames(mean.young.old.sqmeter))),as.numeric(max(colnames(mean.young.old.sqmeter))),1),
-       y0=mean.young.old.sqmeter[3,]-sem.young.old.sqmeter[3,], 
-       y1=mean.young.old.sqmeter[3,]+sem.young.old.sqmeter[3,], angle=90, code=3, length=0.1, col=4)
+       y0=N2.mean.sqmeter-N2.sem.sqmeter, 
+       y1=N2.mean.sqmeter+N2.sem.sqmeter, angle=90, code=3, length=0.1, col=4)
 dev.off()
 embedFonts("young_old.pdf") #встройка шрифтов в файл
 
