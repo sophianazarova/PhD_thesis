@@ -119,6 +119,8 @@ embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 N2.sd.sqmeter<-apply(N2.sqmeter, 2, sd, na.rm=T)
 N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples)
 
+write.table(N2.mean.sqmeter, file="ZRS_N2.csv", sep=";", dec=",")
+
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter, x=names(N2.mean.sqmeter),pch=15, main="литораль Западной Ряшковой салмы о. Ряшкова",
      ylim=c(min(N2.mean.sqmeter)-max(N2.sem.sqmeter), max(N2.mean.sqmeter)+max(N2.sem.sqmeter)),
@@ -360,4 +362,18 @@ embedFonts("young_old_percents.pdf") #встройка шрифтов в фай�
      dev.off()
      embedFonts("young_old.pdf") #встройка шрифтов в файл
      
-     
+    
+
+##  численность молоди и биомасса половозрелых
+##рассчетная биомасса только с учетом >8mm особей
+biomass8.count<-0.00016*(Length.mm[Length.mm>8.0]^2.96)
+(biomass8.samples<-tapply(biomass8.count, list(year[Length.mm>8.0], sample[Length.mm>8.0]), sum, na.rm=T))
+
+(biomass8.sqmeter<-biomass8.samples*samples.squares$square)
+
+(B8.mean.sqmeter<-rowMeans(biomass8.sqmeter, na.rm=T))
+(B8.sd.sqmeter<-apply(biomass8.sqmeter, 1, sd, na.rm=T))
+n.samples<-tapply(samples.names$sample,samples.names$year, length )
+(B8.sem.sqmeter<-B8.sd.sqmeter/sqrt(n.samples))
+
+write.table(B8.mean.sqmeter, file="ZRS_biomass_old.csv", sep=";", dec=",")

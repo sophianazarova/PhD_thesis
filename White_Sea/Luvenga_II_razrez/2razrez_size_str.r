@@ -1,7 +1,7 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Luvenga_II_razrez/")
 #setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Luvenga_II_razrez/")
 
-# размерная структура средние по годам по горизонтам
+## размерная структура средние по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
 samples.names<-read.table(file="sample.csv", sep=";", dec=",", head=T)
@@ -108,7 +108,7 @@ sem.sqmeter.low_beatch.df<-as.data.frame(sem.sqmeter.low_beatch)
 
 length.class<-seq(1,20,1)
 
-#>1mm
+##>1mm
 #Верхний пляж
 (mean.sqmeter2.high_beatch<-mean.sqmeter.high_beatch[2:20,])
 mean.sqmeter2.high_beatch.df<-as.data.frame(mean.sqmeter2.high_beatch)
@@ -254,7 +254,7 @@ for (j in 1:length(colnames(mean.sqmeter2.low_beatch)))
 }
 
 
-#динамика обилия
+## динамика обилия
 (N.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample, size.str.df$tidal_level), sum))
 (N.mean.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=mean))
   N.mean.sqmeter[11,3]<-NA
@@ -275,7 +275,7 @@ legend(legend=colnames(N.mean.sqmeter),x=2000, y=7996, pch=seq(15,15+ncol(N.mean
 dev.off()
 embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 
-#динамика без молод ( больше 2+)
+## динамика без молод ( больше 2+)
 (N2.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"],
                    list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
                         size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"],
@@ -284,6 +284,8 @@ embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 N2.mean.sqmeter[11,3]<-NA
 (N2.sd.sqmeter<-apply(N2.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=sd))
 (N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples))
+
+write.table(N2.mean.sqmeter, file="2razrez_N2.csv", sep=";", dec=",")
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter[,1], x=as.numeric(rownames(N2.mean.sqmeter)), type="n", main="Материковая литораль в районе пос. Лувеньга",
@@ -299,7 +301,7 @@ legend(legend=colnames(N2.mean.sqmeter),x=2000, y=7996, pch=seq(15,15+ncol(N2.me
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 
-#динамика максимального размера
+## динамика максимального размера
 str(ishodnik)
 (Length.max<-tapply(Length.mm, list(year, tidal_level), max, na.rm=T))
 #plot(x=names(Length.max), y=Length.max, type=none)
@@ -315,7 +317,7 @@ legend(legend=colnames(Length.max),x=1993, y=12.2, pch=seq(15,15+ncol(Length.max
 dev.off()
 embedFonts("L_max.pdf") #встройка шрифтов в файл
 
-#рассчетная биомасса по Максимовичу и др., 1993
+## рассчетная биомасса по Максимовичу и др., 1993
 biomass.count<-0.00016*(Length.mm^2.96)
     (biomass.samples<-tapply(biomass.count, list(year, sample, tidal_level), sum, na.rm=T))
 
@@ -341,7 +343,7 @@ legend(legend=colnames(B.mean.sqmeter),x=2000, y=27.5, pch=seq(15,15+ncol(B.mean
 dev.off()
 embedFonts("B_count_dynamic.pdf") #встройка шрифтов в файл
 
-#рассчетная биомасса только с учетом >1mm особей
+## рассчетная биомасса только с учетом >1mm особей
 biomass2.count<-0.00016*(Length.mm[Length.mm>1.0]^2.96)
 (biomass2.samples<-tapply(biomass2.count, list(year[Length.mm>1.0], sample[Length.mm>1.0], tidal_level[Length.mm>1.0]), sum, na.rm=T))
 
@@ -368,7 +370,7 @@ dev.off()
 embedFonts("B2_count_dynamic.pdf") #встройка шрифтов в файл
 
 
-#измеренная биомасса (реальная)
+## измеренная биомасса (реальная)
 str(biomass.measure)
 (biomass.real.m<-tapply(biomass.measure$biomass.g, list(biomass.measure$year, biomass.measure$sample), function(x){x*1}))
 (biomass.real.sqmeter<-biomass.real.m*samples.squares$square)
@@ -399,7 +401,7 @@ embedFonts("Bcount_Bmeasure.pdf") #встройка шрифтов в файл
 
 
 
-#динамика молоди <2mm и половозрелых  >8mm
+## динамика молоди <2mm и половозрелых  >8mm
 
 young.old.int<-cut(Length.mm, breaks=c(1,2.5,7.9,max(Length.mm, na.rm=T)))
 
@@ -412,7 +414,7 @@ for (i in 1:length(levels(young.old.df$year)))
 { (xxx<-young.old.df$sample[young.old.df$year==levels(young.old.df$year)[i] ]%in%
      samples.names$sample[samples.names$year==levels(young.old.df$year)[i]])
   antixxx<-as.logical(1-xxx)
-  size.str.df$Freq[young.old.df$year==levels(young.old.df$year)[i]][antixxx]<-NA
+  young.old.df$Freq[young.old.df$year==levels(young.old.df$year)[i]][antixxx]<-NA
 }
 
 #теперь на квадратный метр
@@ -476,7 +478,7 @@ arrows(x0=as.numeric(rownames(mean.high_beatch)),
        y0=mean.high_beatch[,3]-sem.high_beatch[,3], 
        y1=mean.high_beatch[,3]+sem.high_beatch[,3], angle=90, code=3, length=0.1, col=4)
 dev.off()
-embedFonts("young_old.pdf") #встройка шрифтов в файл
+embedFonts("young_old_high_beatch.pdf") #встройка шрифтов в файл
 
 # молодь и половозрелые - график fucus_zone
 pdf(file="young_old_fucus_zone.pdf", family="NimbusSan") # указываем шрифт подпией
@@ -501,7 +503,7 @@ arrows(x0=as.numeric(rownames(mean.fucus_zone)),
        y0=mean.fucus_zone[,3]-sem.fucus_zone[,3], 
        y1=mean.fucus_zone[,3]+sem.fucus_zone[,3], angle=90, code=3, length=0.1, col=4)
 dev.off()
-embedFonts("young_old.pdf") #встройка шрифтов в файл
+embedFonts("young_old_fucus_zone.pdf") #встройка шрифтов в файл
 
 # молодь и половозрелые - график zostera_zone
 pdf(file="young_old_zostera_zone.pdf", family="NimbusSan") # указываем шрифт подпией
@@ -526,7 +528,7 @@ arrows(x0=as.numeric(rownames(mean.zostera_zone)),
        y0=mean.zostera_zone[,3]-sem.zostera_zone[,3], 
        y1=mean.zostera_zone[,3]+sem.zostera_zone[,3], angle=90, code=3, length=0.1, col=4)
 dev.off()
-embedFonts("young_old.pdf") #встройка шрифтов в файл
+embedFonts("young_old_zostera_zone.pdf") #встройка шрифтов в файл
 
 # молодь и половозрелые - график low_beatch
 pdf(file="young_old_low_beatch.pdf", family="NimbusSan") # указываем шрифт подпией
@@ -551,9 +553,9 @@ arrows(x0=as.numeric(rownames(mean.low_beatch)),
        y0=mean.low_beatch[,3]-sem.low_beatch[,3], 
        y1=mean.low_beatch[,3]+sem.low_beatch[,3], angle=90, code=3, length=0.1, col=4)
 dev.off()
-embedFonts("young_old.pdf") #встройка шрифтов в файл
+embedFonts("young_old_low_beatch.pdf") #встройка шрифтов в файл
 
-#динамика молоди и половозрелых в %
+## динамика молоди и половозрелых в %
 (sum.young.old<-(tapply(young.old.sqmeter$Freq[young.old.sqmeter$young.old.int!="(0,1]"],
                         INDEX=list(young.old.sqmeter$year[young.old.sqmeter$young.old.int!="(0,1]"], 
                                    young.old.sqmeter$tidal_level[young.old.sqmeter$young.old.int!="(0,1]"],
@@ -572,3 +574,120 @@ write.table((young.old.percents), file="2razrez_young_old_percent.csv", sep=";",
 str(young.old.percents)
 (spearman.young.old.sum.percent<-cor.test(young.old.percents[2:9,,1], young.old.percents[1:8,,3], method="spearman"))
 plot(y=young.old.percents[2:9,,1], x=young.old.percents[1:8,,3])
+
+## молодь и общая численность
+# молодь и общая численность - график high_beatch
+pdf(file="young_all_high_beatch.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N2.mean.sqmeter[,"high_beatch"], x=as.numeric(rownames(mean.high_beatch)),pch=15, type="n", 
+     main="Материковая литораль в районе пос. Лувеньга high_beatch", 
+     #     ylim=c(min(mean.high_beatch[,1], N2.mean.sqmeter[,"high_beatch"])-max(sem.high_beatch[,1], N2.sem.sqmeter[,"high_beatch"]), 
+     #            max(mean.high_beatch[,1], N2.mean.sqmeter[,"high_beatch"])+max(sem.high_beatch[,1], N2.sem.sqmeter[,"high_beatch"])),
+     ylim=c(0, 
+            max(mean.high_beatch[,1], N2.mean.sqmeter[,"high_beatch"], na.rm=T)+max(sem.high_beatch[,1], N2.sem.sqmeter[,"high_beatch"], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(as.numeric(rownames(mean.high_beatch)), 
+      mean.high_beatch[,1], pch=15, type="b", col=2)
+arrows(x0=as.numeric(rownames(mean.high_beatch)), 
+       x1=as.numeric(rownames(mean.high_beatch)),
+       y0=mean.high_beatch[,1]-sem.high_beatch[,1], 
+       y1=mean.high_beatch[,1]+sem.high_beatch[,1], angle=90, code=3, length=0.1, col=2)
+#общая численность
+lines(as.numeric(rownames(mean.high_beatch)), 
+      N2.mean.sqmeter[,"high_beatch"], pch=16, type="b", col=4)
+arrows(x0=as.numeric(rownames(mean.high_beatch)), 
+       x1=as.numeric(rownames(mean.high_beatch)),
+       y0=N2.mean.sqmeter[,"high_beatch"]-N2.sem.sqmeter[,"high_beatch"], 
+       y1=N2.mean.sqmeter[,"high_beatch"]+N2.sem.sqmeter[,"high_beatch"], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_all_high_beatch.pdf") #встройка шрифтов в файл
+
+# молодь и общая численность - график fucus_zone
+pdf(file="young_all_fucus_zone.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.fucus_zone[,1], x=as.numeric(rownames(mean.fucus_zone)),pch=15, type="n", main="Материковая литораль в районе пос. Лувеньга fucus_zone", 
+     #     ylim=c(min(mean.fucus_zone[,1], mean.fucus_zone[,3])-max(sem.fucus_zone[,1], sem.fucus_zone[,3]), 
+     #            max(mean.fucus_zone[,1], mean.fucus_zone[,3])+max(sem.fucus_zone[,1], sem.fucus_zone[,3])),
+     ylim=c(0, 
+            max(mean.fucus_zone[,1], mean.fucus_zone[,3], na.rm=T)+max(sem.fucus_zone[,1], sem.fucus_zone[,3], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(as.numeric(rownames(mean.fucus_zone)), 
+      mean.fucus_zone[,1], pch=15, type="b", col=2)
+arrows(x0=as.numeric(rownames(mean.fucus_zone)), 
+       x1=as.numeric(rownames(mean.fucus_zone)),
+       y0=mean.fucus_zone[,1]-sem.fucus_zone[,1], 
+       y1=mean.fucus_zone[,1]+sem.fucus_zone[,1], angle=90, code=3, length=0.1, col=2)
+#общая численность
+lines(as.numeric(rownames(mean.fucus_zone)), 
+      mean.fucus_zone[,3], pch=16, type="b", col=4)
+arrows(x0=as.numeric(rownames(mean.fucus_zone)), 
+       x1=as.numeric(rownames(mean.fucus_zone)),
+       y0=mean.fucus_zone[,3]-sem.fucus_zone[,3], 
+       y1=mean.fucus_zone[,3]+sem.fucus_zone[,3], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_all_fucus_zone.pdf") #встройка шрифтов в файл
+
+# молодь и общая численность - график zostera_zone
+pdf(file="young_all_zostera_zone.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.zostera_zone[,1], x=as.numeric(rownames(mean.zostera_zone)),pch=15, type="n", main="Материковая литораль в районе пос. Лувеньга zostera_zone", 
+     #     ylim=c(min(mean.zostera_zone[,1], mean.zostera_zone[,3])-max(sem.zostera_zone[,1], sem.zostera_zone[,3]), 
+     #            max(mean.zostera_zone[,1], mean.zostera_zone[,3])+max(sem.zostera_zone[,1], sem.zostera_zone[,3])),
+     ylim=c(0, 
+            max(mean.zostera_zone[,1], mean.zostera_zone[,3], na.rm=T)+max(sem.zostera_zone[,1], sem.zostera_zone[,3], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(as.numeric(rownames(mean.zostera_zone)), 
+      mean.zostera_zone[,1], pch=15, type="b", col=2)
+arrows(x0=as.numeric(rownames(mean.zostera_zone)), 
+       x1=as.numeric(rownames(mean.zostera_zone)),
+       y0=mean.zostera_zone[,1]-sem.zostera_zone[,1], 
+       y1=mean.zostera_zone[,1]+sem.zostera_zone[,1], angle=90, code=3, length=0.1, col=2)
+#общая численность
+lines(as.numeric(rownames(mean.zostera_zone)), 
+      mean.zostera_zone[,3], pch=16, type="b", col=4)
+arrows(x0=as.numeric(rownames(mean.zostera_zone)), 
+       x1=as.numeric(rownames(mean.zostera_zone)),
+       y0=mean.zostera_zone[,3]-sem.zostera_zone[,3], 
+       y1=mean.zostera_zone[,3]+sem.zostera_zone[,3], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_all_zostera_zone.pdf") #встройка шрифтов в файл
+
+# молодь и общая численность - график low_beatch
+pdf(file="young_all_low_beatch.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.low_beatch[,1], x=as.numeric(rownames(mean.low_beatch)),pch=15, type="n", main="Материковая литораль в районе пос. Лувеньга low_beatch", 
+     #     ylim=c(min(mean.low_beatch[,1], mean.low_beatch[,3])-max(sem.low_beatch[,1], sem.low_beatch[,3]), 
+     #            max(mean.low_beatch[,1], mean.low_beatch[,3])+max(sem.low_beatch[,1], sem.low_beatch[,3])),
+     ylim=c(0, 
+            max(mean.low_beatch[,1], mean.low_beatch[,3], na.rm=T)+max(sem.low_beatch[,1], sem.low_beatch[,3], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(as.numeric(rownames(mean.low_beatch)), 
+      mean.low_beatch[,1], pch=15, type="b", col=2)
+arrows(x0=as.numeric(rownames(mean.low_beatch)), 
+       x1=as.numeric(rownames(mean.low_beatch)),
+       y0=mean.low_beatch[,1]-sem.low_beatch[,1], 
+       y1=mean.low_beatch[,1]+sem.low_beatch[,1], angle=90, code=3, length=0.1, col=2)
+#общая численность
+lines(as.numeric(rownames(mean.low_beatch)), 
+      mean.low_beatch[,3], pch=16, type="b", col=4)
+arrows(x0=as.numeric(rownames(mean.low_beatch)), 
+       x1=as.numeric(rownames(mean.low_beatch)),
+       y0=mean.low_beatch[,3]-sem.low_beatch[,3], 
+       y1=mean.low_beatch[,3]+sem.low_beatch[,3], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_all_low_beatch.pdf") #встройка шрифтов в файл
+
+##  численность молоди и биомасса половозрелых
+## рассчетная биомасса только с учетом >1mm особей
+biomass8.count<-0.00016*(Length.mm[Length.mm>8.0]^2.96)
+(biomass8.samples<-tapply(biomass8.count, list(year[Length.mm>8.0], sample[Length.mm>8.0], tidal_level[Length.mm>8.0]), sum, na.rm=T))
+
+(biomass8.sqmeter<-biomass8.samples*samples.squares$square)
+
+(B2.mean.sqmeter<-apply(biomass8.sqmeter, c(1,3), mean, na.rm=T))
+(B2.sd.sqmeter<-apply(biomass8.sqmeter, c(1,3), sd, na.rm=T))
+(n.samples<-tapply(samples.names$sample,list(samples.names$year,samples.names$tidal.level), length ))
+(B2.sem.sqmeter<-B2.sd.sqmeter/sqrt(n.samples))
+(D.b2<-B2.sem.sqmeter/B2.mean.sqmeter*100)
+
+write.table(B8.mean.sqmeter, file="2razrez_biomass_old.csv", sep=";", dec=",")

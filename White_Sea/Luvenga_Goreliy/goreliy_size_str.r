@@ -1,8 +1,7 @@
-
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Luvenga_Goreliy/")
 #setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Luvenga_Goreliy//")
 
-# размерная структура средние по годам по горизонтам
+## размерная структура средние по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
 samples.names<-read.table(file="sample.csv", sep=";", dec=",", head=T)
@@ -106,7 +105,7 @@ sem.sqmeter.low[sem.sqmeter.low==t(sd.sqmeter.low)]<-0
 
 length.class<-seq(1,20,1)
 
-#size structure >1mm
+##size structure >1mm
 
 #верхний горизонт
 (mean.sqmeter2.high<-mean.sqmeter.middle[2:20,])
@@ -220,7 +219,7 @@ barplot(matrix(mean.sqmeter.high_beatch[,1], mean.sqmeter.fucus_zone[,1],
                mean.sqmeter.zostera_zone[,1],mean.sqmeter.low_beatch[,1]))
 
 
-#>1mm
+##>1mm
 #верхний горизонт
 for (j in 1:length(colnames(mean.sqmeter2.high)))
 {
@@ -259,7 +258,7 @@ for (j in 1:length(colnames(mean.sqmeter2.low)))
 
 
 
-#динамика обилия
+## динамика обилия
 (N.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample, size.str.df$tidal_level), sum))
 (N.mean.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=mean))
 N.mean.sqmeter[11,3]<-NA
@@ -282,7 +281,7 @@ dev.off()
 embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 
 
-#динамика без молод ( больше 2+)
+## динамика без молод ( больше 2+)
 (N2.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"], 
                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"],
@@ -292,6 +291,8 @@ N2.mean.sqmeter[11,3]<-NA
 (N2.sd.sqmeter<-apply(N2.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=sd))
 (N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples))
 N2.sem.sqmeter[N2.sem.sqmeter==N2.sd.sqmeter]<-NA
+
+write.table(N2.mean.sqmeter, file="goreliy_N2.csv", sep=";", dec=",")
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter[,1], x=as.numeric(rownames(N2.mean.sqmeter)), type="n", main="о. Горелый (Лувеньгские шхеры)",
@@ -308,7 +309,7 @@ dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 
 
-#динамика максимального размера
+##динамика максимального размера
 str(ishodnik)
 (Length.max<-tapply(Length.mm, list(year, tidal_level), max, na.rm=T))
 #plot(x=names(Length.max), y=Length.max, type=none)
@@ -327,7 +328,7 @@ dev.off()
 embedFonts("L_max.pdf") #встройка шрифтов в файл
 
 
-#рассчетная биомасса по Максимовичу и др., 1993
+## рассчетная биомасса по Максимовичу и др., 1993
 biomass.count<-0.00016*(Length.mm^2.96)
 (biomass.samples<-tapply(biomass.count, list(year, sample, tidal_level), sum, na.rm=T))
 
@@ -353,7 +354,7 @@ legend(legend=colnames(B.mean.sqmeter),x=2002.6, y=38.3, pch=seq(15,15+ncol(B.me
 dev.off()
 embedFonts("B_count_dynamic.pdf") #встройка шрифтов в файл
 
-#рассчетная биомасса только с учетом >1mm особей
+## рассчетная биомасса только с учетом >1mm особей
 biomass2.count<-0.00016*(Length.mm[Length.mm>1.0]^2.96)
 (biomass2.samples<-tapply(biomass2.count, list(year[Length.mm>1.0], sample[Length.mm>1.0], tidal_level[Length.mm>1.0]), sum, na.rm=T))
 
@@ -380,7 +381,7 @@ dev.off()
 embedFonts("B2_count_dynamic.pdf") #встройка шрифтов в файл
 
 
-#измеренная биомасса (реальная)
+## измеренная биомасса (реальная)
 str(biomass.measure)
 (biomass.real.m<-tapply(biomass.measure$biomass.g, list(biomass.measure$year, biomass.measure$sample), function(x){x*1}))
 (biomass.real.sqmeter<-biomass.real.m*samples.squares$square)
@@ -390,7 +391,7 @@ str(biomass.measure)
 (Br.sem.sqmeter<-Br.sd.sqmeter/sqrt(n.samples))
 (D.br<-Br.sem.sqmeter/Br.mean.sqmeter*100)
 
-#сравнение рассчетной и реальной биомассы
+## сравнение рассчетной и реальной биомассы
 pdf(file="Bcount_Bmeasure_compare.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=B.mean.sqmeter, x=names(B.mean.sqmeter),pch=15, main="Эстуарий р. Лувеньги", type="n",
      ylim=c(min(min(B.mean.sqmeter)-max(B.sem.sqmeter), min(Br.mean.sqmeter, na.rm=T)-max(Br.sem.sqmeter, na.rm=T)), 
@@ -410,7 +411,7 @@ dev.off()
 embedFonts("Bcount_Bmeasure.pdf") #встройка шрифтов в файл
 
 
-#динамика молоди <2mm и половозрелых  >8mm
+## динамика молоди <2mm и половозрелых  >8mm
 
 young.old.int<-cut(Length.mm, breaks=c(1,2.5,7.9,max(Length.mm, na.rm=T)))
 
@@ -423,7 +424,7 @@ young.old.df<-as.data.frame(young.old.table) # как таблица данны�
  { (xxx<-young.old.df$sample[young.old.df$year==levels(young.old.df$year)[i] ]%in%
       samples.names$sample[samples.names$year==levels(young.old.df$year)[i]])
    antixxx<-as.logical(1-xxx)
-   size.str.df$Freq[young.old.df$year==levels(young.old.df$year)[i]][antixxx]<-NA
+   young.old.df$Freq[young.old.df$year==levels(young.old.df$year)[i]][antixxx]<-NA
  }
  
  #теперь на квадратный метр
@@ -507,7 +508,7 @@ arrows(x0=seq(as.numeric(min(rownames(mean.high))),as.numeric(max(rownames(mean.
        y0=mean.high[,3]-sem.high[,3], 
        y1=mean.high[,3]+sem.high[,3], angle=90, code=3, length=0.1, col=4)
 dev.off()
-embedFonts("young_old.pdf") #встройка шрифтов в файл
+embedFonts("young_old_high.pdf") #встройка шрифтов в файл
 
 # молодь и половозрелые - график middle
 pdf(file="young_old_middle.pdf", family="NimbusSan") # указываем шрифт подпией
@@ -532,7 +533,7 @@ arrows(x0=seq(as.numeric(min(rownames(mean.middle))),as.numeric(max(rownames(mea
        y0=mean.middle[,3]-sem.middle[,3], 
        y1=mean.middle[,3]+sem.middle[,3], angle=90, code=3, length=0.1, col=4)
 dev.off()
-embedFonts("young_old.pdf") #встройка шрифтов в файл
+embedFonts("young_old_middle.pdf") #встройка шрифтов в файл
 
 # молодь и половозрелые - график midlow
 pdf(file="young_old_midlow.pdf", family="NimbusSan") # указываем шрифт подпией
@@ -557,7 +558,7 @@ arrows(x0=seq(as.numeric(min(rownames(mean.midlow))),as.numeric(max(rownames(mea
        y0=mean.midlow[,3]-sem.midlow[,3], 
        y1=mean.midlow[,3]+sem.midlow[,3], angle=90, code=3, length=0.1, col=4)
 dev.off()
-embedFonts("young_old.pdf") #встройка шрифтов в файл
+embedFonts("young_old_midlow.pdf") #встройка шрифтов в файл
 
 # молодь и половозрелые - график low
 pdf(file="young_old_low.pdf", family="NimbusSan") # указываем шрифт подпией
@@ -582,7 +583,7 @@ arrows(x0=seq(as.numeric(min(rownames(mean.low))),as.numeric(max(rownames(mean.l
        y0=mean.low[,3]-sem.low[,3], 
        y1=mean.low[,3]+sem.low[,3], angle=90, code=3, length=0.1, col=4)
 dev.off()
-embedFonts("young_old.pdf") #встройка шрифтов в файл
+embedFonts("young_old_low.pdf") #встройка шрифтов в файл
 
 #динамика молоди и половозрелых в %
 (sum.young.old<-(tapply(young.old.sqmeter$Freq[young.old.sqmeter$young.old.int!="(0,1]"],
@@ -603,3 +604,120 @@ write.table((young.old.percents), file="goreliy_young_old_percent.csv", sep=";",
 str(young.old.percents)
 (spearman.young.old.sum.percent<-cor.test(young.old.percents[2:21,,1], young.old.percents[1:20,,3], method="spearman"))
 plot(y=young.old.percents[2:21,,1], x=young.old.percents[1:20,,3])
+
+
+## молодь и общая численность - графики
+# молодь и все - график high
+pdf(file="young_all_high.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N2.mean.sqmeter[,"high"], x=as.numeric(rownames(mean.high)),pch=15, type="n", main="о. Горелый (Лувеньгские шхеры) high", 
+     #     ylim=c(min(mean.high[,1], N2.mean.sqmeter[,"high"])-max(sem.high[,1], N2.sem.sqmeter[,"high"]), 
+     #            max(mean.high[,1], N2.mean.sqmeter[,"high"])+max(sem.high[,1], N2.sem.sqmeter[,"high"])),
+     ylim=c(0, 
+            max(mean.high[,1], N2.mean.sqmeter[,"high"], na.rm=T)+max(sem.high[,1], N2.sem.sqmeter[,"high"], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(seq(as.numeric(min(rownames(mean.high))),as.numeric(max(rownames(mean.high))),1), 
+      mean.high[,1], pch=15, type="b", col=2)
+arrows(x0=seq(as.numeric(min(rownames(mean.high))),as.numeric(max(rownames(mean.high))),1), 
+       x1=seq(as.numeric(min(rownames(mean.high))),as.numeric(max(rownames(mean.high))),1),
+       y0=mean.high[,1]-sem.high[,1], 
+       y1=mean.high[,1]+sem.high[,1], angle=90, code=3, length=0.1, col=2)
+#все
+lines(seq(as.numeric(min(rownames(mean.high))),as.numeric(max(rownames(mean.high))),1), 
+      N2.mean.sqmeter[,"high"], pch=16, type="b", col=4)
+arrows(x0=seq(as.numeric(min(rownames(mean.high))),as.numeric(max(rownames(mean.high))),1), 
+       x1=seq(as.numeric(min(rownames(mean.high))),as.numeric(max(rownames(mean.high))),1),
+       y0=N2.mean.sqmeter[,"high"]-N2.sem.sqmeter[,"high"], 
+       y1=N2.mean.sqmeter[,"high"]+N2.sem.sqmeter[,"high"], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_all_high.pdf") #встройка шрифтов в файл
+
+# молодь и все - график middle
+pdf(file="young_all_middle.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N2.mean.sqmeter[,"middle"], x=as.numeric(rownames(mean.middle)),pch=15, type="n", main="о. Горелый (Лувеньгские шхеры) middle", 
+     #     ylim=c(min(mean.middle[,1], N2.mean.sqmeter[,"middle"])-max(sem.middle[,1], N2.sem.sqmeter[,"middle"]), 
+     #            max(mean.middle[,1], N2.mean.sqmeter[,"middle"])+max(sem.middle[,1], N2.sem.sqmeter[,"middle"])),
+     ylim=c(0, 
+            max(mean.middle[,1], N2.mean.sqmeter[,"middle"], na.rm=T)+max(sem.middle[,1], N2.sem.sqmeter[,"middle"], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(seq(as.numeric(min(rownames(mean.middle))),as.numeric(max(rownames(mean.middle))),1), 
+      mean.middle[,1], pch=15, type="b", col=2)
+arrows(x0=seq(as.numeric(min(rownames(mean.middle))),as.numeric(max(rownames(mean.middle))),1), 
+       x1=seq(as.numeric(min(rownames(mean.middle))),as.numeric(max(rownames(mean.middle))),1),
+       y0=mean.middle[,1]-sem.middle[,1], 
+       y1=mean.middle[,1]+sem.middle[,1], angle=90, code=3, length=0.1, col=2)
+#все
+lines(seq(as.numeric(min(rownames(mean.middle))),as.numeric(max(rownames(mean.middle))),1), 
+      N2.mean.sqmeter[,"middle"], pch=16, type="b", col=4)
+arrows(x0=seq(as.numeric(min(rownames(mean.middle))),as.numeric(max(rownames(mean.middle))),1), 
+       x1=seq(as.numeric(min(rownames(mean.middle))),as.numeric(max(rownames(mean.middle))),1),
+       y0=N2.mean.sqmeter[,"middle"]-N2.sem.sqmeter[,"middle"], 
+       y1=N2.mean.sqmeter[,"middle"]+N2.sem.sqmeter[,"middle"], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_all_middle.pdf") #встройка шрифтов в файл
+
+# молодь и все - график midlow
+pdf(file="young_all_midlow.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N2.mean.sqmeter[,"midlow"], x=as.numeric(rownames(mean.midlow)),pch=15, type="n", main="о. Горелый (Лувеньгские шхеры) midlow", 
+     #     ylim=c(min(mean.midlow[,1], N2.mean.sqmeter[,"midlow"])-max(sem.midlow[,1], N2.sem.sqmeter[,"midlow"]), 
+     #            max(mean.midlow[,1], N2.mean.sqmeter[,"midlow"])+max(sem.midlow[,1], N2.sem.sqmeter[,"midlow"])),
+     ylim=c(0, 
+            max(mean.midlow[,1], N2.mean.sqmeter[,"midlow"], na.rm=T)+max(sem.midlow[,1], N2.sem.sqmeter[,"midlow"], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(seq(as.numeric(min(rownames(mean.midlow))),as.numeric(max(rownames(mean.midlow))),1), 
+      mean.midlow[,1], pch=15, type="b", col=2)
+arrows(x0=seq(as.numeric(min(rownames(mean.midlow))),as.numeric(max(rownames(mean.midlow))),1), 
+       x1=seq(as.numeric(min(rownames(mean.midlow))),as.numeric(max(rownames(mean.midlow))),1),
+       y0=mean.midlow[,1]-sem.midlow[,1], 
+       y1=mean.midlow[,1]+sem.midlow[,1], angle=90, code=3, length=0.1, col=2)
+#все
+lines(seq(as.numeric(min(rownames(mean.midlow))),as.numeric(max(rownames(mean.midlow))),1), 
+      N2.mean.sqmeter[,"midlow"], pch=16, type="b", col=4)
+arrows(x0=seq(as.numeric(min(rownames(mean.midlow))),as.numeric(max(rownames(mean.midlow))),1), 
+       x1=seq(as.numeric(min(rownames(mean.midlow))),as.numeric(max(rownames(mean.midlow))),1),
+       y0=N2.mean.sqmeter[,"midlow"]-N2.sem.sqmeter[,"midlow"], 
+       y1=N2.mean.sqmeter[,"midlow"]+N2.sem.sqmeter[,"midlow"], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_all_midlow.pdf") #встройка шрифтов в файл
+
+# молодь и все - график low
+pdf(file="young_all_low.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N2.mean.sqmeter[,"low"], x=as.numeric(rownames(mean.low)),pch=15, type="n", main="о. Горелый (Лувеньгские шхеры) low", 
+     #     ylim=c(min(mean.low[,1], N2.mean.sqmeter[,"low"])-max(sem.low[,1], N2.sem.sqmeter[,"low"]), 
+     #            max(mean.low[,1], N2.mean.sqmeter[,"low"])+max(sem.low[,1], N2.sem.sqmeter[,"low"])),
+     ylim=c(0, 
+            max(mean.low[,1], N2.mean.sqmeter[,"low"], na.rm=T)+max(sem.low[,1], N2.sem.sqmeter[,"low"], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(seq(as.numeric(min(rownames(mean.low))),as.numeric(max(rownames(mean.low))),1), 
+      mean.low[,1], pch=15, type="b", col=2)
+arrows(x0=seq(as.numeric(min(rownames(mean.low))),as.numeric(max(rownames(mean.low))),1), 
+       x1=seq(as.numeric(min(rownames(mean.low))),as.numeric(max(rownames(mean.low))),1),
+       y0=mean.low[,1]-sem.low[,1], 
+       y1=mean.low[,1]+sem.low[,1], angle=90, code=3, length=0.1, col=2)
+#все
+lines(seq(as.numeric(min(rownames(mean.low))),as.numeric(max(rownames(mean.low))),1), 
+      N2.mean.sqmeter[,"low"], pch=16, type="b", col=4)
+arrows(x0=seq(as.numeric(min(rownames(mean.low))),as.numeric(max(rownames(mean.low))),1), 
+       x1=seq(as.numeric(min(rownames(mean.low))),as.numeric(max(rownames(mean.low))),1),
+       y0=N2.mean.sqmeter[,"low"]-N2.sem.sqmeter[,"low"], 
+       y1=N2.mean.sqmeter[,"low"]+N2.sem.sqmeter[,"low"], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("young_all_low.pdf") #встройка шрифтов в файл
+
+##  численность молоди и биомасса половозрелых
+## рассчетная биомасса только с учетом >8mm особей
+biomass8.count<-0.00016*(Length.mm[Length.mm>8.0]^2.96)
+(biomass8.samples<-tapply(biomass8.count, list(year[Length.mm>8.0], sample[Length.mm>8.0], tidal_level[Length.mm>8.0]), sum, na.rm=T))
+
+(biomass8.sqmeter<-biomass8.samples*samples.squares$square)
+
+(B2.mean.sqmeter<-apply(biomass8.sqmeter, c(1,3), mean, na.rm=T))
+(B2.sd.sqmeter<-apply(biomass8.sqmeter, c(1,3), sd, na.rm=T))
+(n.samples<-tapply(samples.names$sample,list(samples.names$year,samples.names$tidal_level), length ))
+(B2.sem.sqmeter<-B2.sd.sqmeter/sqrt(n.samples))
+
+
+write.table(B8.mean.sqmeter, file="goreliy_biomass_old.csv", sep=";", dec=",")

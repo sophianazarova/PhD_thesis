@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.70.2-2012091206 (TeX Live 2012/Debian) (format=lualatex 2013.1.18)  9 APR 2013 23:16
+This is LuaTeX, Version beta-0.70.2-2012091206 (TeX Live 2012/Debian) (format=lualatex 2013.4.23)  4 JUL 2013 18:17
  restricted \write18 enabled.
 **dynamic.tex
 (./dynamic.tex
@@ -1071,7 +1071,23 @@ LaTeX Font Warning: Font shape `OMS/DejaVuSerif(0)/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead on input line 37.
 
 luaotfload | otf process: missing cache for lookup ks_l_0_s of type gsub_contex
-tchain in font 26 (DejaVu Serif) [1
+tchain in font 26 (DejaVu Serif)
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)
+luaotfload | load font: font family='dejavuserif', subfamily='italic' found: De
+jaVuSerif-Italic.ttf
+luaotfload | otf process: missing cache for lookup ks_l_0_s of type gsub_contex
+tchain in font 57 (DejaVu Serif Italic)
+Overfull \hbox (22.76508pt too wide) in paragraph at lines 48--49
+\EU2/DejaVuSerif(0)/m/n/12 за пе-ри-од с $\OT1/cmr/m/n/12 1994$ \EU2/D
+ejaVuSerif(0)/m/n/12 по $\OT1/cmr/m/n/12 2012$ \EU2/DejaVuSerif(0)/m/n/12 г
+од ко-ле-ба-лась от $\OT1/cmr/m/n/12 220 (40\OML/cmm/m/it/12 ; \O
+T1/cmr/m/n/12 9)$ \EU2/DejaVuSerif(0)/m/n/12 экз./м$[][]$ до $\OT1/cmr/m/
+n/12 9285 (16\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4)$ \EU2/DejaVuSerif(0)/m/n/12 
+экз./м$[][]$
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 <../White_Sea/Luvenga_Goreliy/N_dynamic.pdf, id=13, 505.89pt x 505.89pt>
@@ -1079,7 +1095,7 @@ File: ../White_Sea/Luvenga_Goreliy/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/N_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Luvenga_Goreliy/N_dynamic.pdf used on inp
-ut line 56.
+ut line 60.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea//Luvenga_II_razrez/N_dynamic.pdf, id=14, 505.89pt x 505.89pt>
@@ -1087,7 +1103,7 @@ File: ../White_Sea//Luvenga_II_razrez/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea//Luvenga_II_razrez/N_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea//Luvenga_II_razrez/N_dynamic.pdf used on 
-input line 65.
+input line 69.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf, id=15, 505.89pt x 505.89pt>
@@ -1095,7 +1111,7 @@ File: ../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf used on in
-put line 77.
+put line 81.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea/Ryashkov_ZRS/N_dynamic.pdf, id=16, 505.89pt x 505.89pt>
@@ -1103,7 +1119,7 @@ File: ../White_Sea/Ryashkov_ZRS/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/N_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Ryashkov_ZRS/N_dynamic.pdf used on input 
-line 86.
+line 90.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea/Ryashkov_YuG/N_dynamic.pdf, id=17, 505.89pt x 505.89pt>
@@ -1111,7 +1127,7 @@ File: ../White_Sea/Ryashkov_YuG/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/N_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Ryashkov_YuG/N_dynamic.pdf used on input 
-line 96.
+line 100.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea/Lomnishniy/N_dynamic.pdf, id=18, 505.89pt x 505.89pt>
@@ -1119,14 +1135,9 @@ File: ../White_Sea/Lomnishniy/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/N_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Lomnishniy/N_dynamic.pdf used on input li
-ne 105.
+ne 109.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-luaotfload | load font: auto-selecting default features for script: dflt (was l
-atn)
-luaotfload | load font: font family='dejavuserif', subfamily='italic' found: De
-jaVuSerif-Italic.ttf
-luaotfload | otf process: missing cache for lookup ks_l_0_s of type gsub_contex
-tchain in font 57 (DejaVu Serif Italic)
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1135,7 +1146,7 @@ File: ../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf used on in
-put line 123.
+put line 127.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf, id=20, 505.89pt x 505.89pt>
@@ -1143,7 +1154,7 @@ File: ../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf used on
- input line 132.
+ input line 136.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf, id=21, 505.89pt x 505.89pt>
@@ -1151,7 +1162,7 @@ File: ../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf used on i
-nput line 143.
+nput line 147.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf, id=22, 505.89pt x 505.89pt>
@@ -1159,7 +1170,7 @@ File: ../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf used on input
- line 152.
+ line 156.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea/Ryashkov_YuG/N2_dynamic.pdf, id=23, 505.89pt x 505.89pt>
@@ -1167,7 +1178,7 @@ File: ../White_Sea/Ryashkov_YuG/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/N2_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Ryashkov_YuG/N2_dynamic.pdf used on input
- line 162.
+ line 166.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../White_Sea/Lomnishniy/N2_dynamic.pdf, id=24, 505.89pt x 505.89pt>
@@ -1175,7 +1186,7 @@ File: ../White_Sea/Lomnishniy/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/N2_dynamic.pdf>
 Package pdftex.def Info: ../White_Sea/Lomnishniy/N2_dynamic.pdf used on input l
-ine 171.
+ine 175.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 
@@ -1197,10 +1208,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of LuaTeX's memory you used:
  17010 strings out of 494125
  100000,552014 words of node,token memory allocated
- 362 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 6 attribute, 42 glue_spec, 6 attri
-bute_list, 2 write nodes
-   avail lists: 2:3739,3:90,4:423,5:6,6:1353,7:246,9:138,10:206
+ 356 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 5 attribute, 42 glue_spec, 5 attri
+bute_list, 1 write nodes
+   avail lists: 2:4127,3:90,4:478,5:6,6:1505,7:247,9:138,10:207
  19978 multiletter control sequences out of 65536+200000
  57 fonts using 10054535 bytes
  61i,8n,34p,576b,333s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1211,7 +1222,7 @@ tf></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
 sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on dynamic.pdf (3 pages, 201722 bytes).
+Output written on dynamic.pdf (3 pages, 200271 bytes).
 
 PDF statistics: 304 PDF objects out of 1000 (max. 8388607)
  200 compressed objects within 2 object streams
