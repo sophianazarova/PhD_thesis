@@ -142,6 +142,33 @@ arrows(x0=seq(as.numeric(min(names(N2.mean.sqmeter))),as.numeric(max(names(N2.me
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 
+##про численность 2+
+(N2.01.10<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" 
+                                           & as.vector(size.str.sqmeter$year)<=2010], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" 
+                                                & as.vector(size.str.sqmeter$year)<=2010],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" 
+                                                  & as.vector(size.str.sqmeter$year)<=2010]),
+                     sum))))
+(N2.mean.01.10<-mean(as.vector(N2.01.10), na.rm=T))
+(N2.sd.01.10<-sd(as.vector(N2.01.10), na.rm=T))
+N2.sem.01.10<-N2.sd.01.10/sqrt(sum(n.samples[1:(2010-2001+1)]))
+(D.n2.01.10<-N2.sem.01.10/N2.mean.01.10*100)
+
+#Kruskal-wollis
+(N2.df<-data.frame(samples.names, as.vector(N2.sqmeter)[!is.na(as.vector(N2.sqmeter))]))
+kruskal.test(N2.df$as.vector.N2.sqmeter...is.na.as.vector.N2.sqmeter... ~ N2.df$year)
+  boxplot(N2.df$as.vector.N2.sqmeter...is.na.as.vector.N2.sqmeter... ~ N2.df$year)
+(tukey.01.12<-TukeyHSD(aov(lm(N2.df$as.vector.N2.sqmeter...is.na.as.vector.N2.sqmeter... ~ as.factor(N2.df$year)))))
+
+
+N2.01.10.df<-data.frame(subset(samples.names, subset=samples.names$year<=2010),as.vector(N2.01.10)[!is.na(as.vector(N2.01.10))])
+kruskal.test(N2.01.10.df$as.vector.N2.01.10...is.na.as.vector.N2.01.10... ~ N2.01.10.df$year)
+boxplot(N2.01.10.df$as.vector.N2.01.10...is.na.as.vector.N2.01.10... ~ N2.01.10.df$year)
+(tukey.01.10<-TukeyHSD(aov(lm(N2.01.10.df$as.vector.N2.01.10...is.na.as.vector.N2.01.10... ~ as.factor(N2.01.10.df$year)))))
+write.table(tukey.01.10$'as.factor(N2.01.10.df$year)', file="tukey_92_98.csv", dec=",", sep=";")
+
+
 ## динамика максимального размера
 str(ishodnik)
 (Length.max<-tapply(Length.mm, year, max, na.rm=T))

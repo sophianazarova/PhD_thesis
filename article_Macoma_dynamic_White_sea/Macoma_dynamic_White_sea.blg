@@ -2,7 +2,7 @@ This is 8-bit Big BibTeX version 0.99d
 Implementation:  C for Unix
 Release version: 3.71 (31 May 2005)
 
-Error: cannot open CS file: sfile.csf
+The 8-bit codepage and sorting file: 88591lat.csf
 The top-level auxiliary file: Macoma_dynamic_White_sea.aux
 The style file: gost780s.bst
 Reallocated glb_str_ptr (elt_size=8) to 10 items from 0.
@@ -16,5 +16,5 @@ Here's how much of BibTeX's memory you used:
  Fields:                2 out of 5000
  Hash table:        34930 out of 35307
  Strings:            1108 out of 35307
- Free string pool:   9921 out of 65000
+ Free string pool:   9954 out of 65000
  Wizard functions:   3939 out of 6000

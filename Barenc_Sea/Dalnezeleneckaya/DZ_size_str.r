@@ -135,3 +135,26 @@ arrows(x0=seq(as.numeric(min(names(N2.mean.sqmeter))),as.numeric(max(names(N2.me
        y0=N2.mean.sqmeter-N2.sem.sqmeter, y1=N2.mean.sqmeter+N2.sem.sqmeter, angle=90, code=3, length=0.1)
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
+
+##рассчетная биомасса по Максимовичу и др., 1993
+biomass.count<-0.00016*(Length.mm^2.96)
+(biomass.samples<-tapply(biomass.count, list(year, sample), sum, na.rm=T))
+
+(biomass.sqmeter<-biomass.samples*samples.squares$square)
+
+(B.mean.sqmeter<-rowMeans(biomass.sqmeter, na.rm=T))
+(B.sd.sqmeter<-apply(biomass.sqmeter, 1, sd, na.rm=T))
+n.samples<-tapply(samples.names$sample,samples.names$year, length )
+(B.sem.sqmeter<-B.sd.sqmeter/sqrt(n.samples))
+(D.b<-B.sem.sqmeter/B.mean.sqmeter*100)
+
+pdf(file="B_count_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=B.mean.sqmeter, x=names(B.mean.sqmeter),pch=15, main="Эстуарий р. Лувеньги", 
+     ylim=c(min(B.mean.sqmeter)-max(B.sem.sqmeter), max(B.mean.sqmeter)+max(B.sem.sqmeter)),
+     xlab="год", ylab="B, г/кв.м")
+lines(seq(as.numeric(min(names(B.mean.sqmeter))),as.numeric(max(names(B.mean.sqmeter))),1), B.mean.sqmeter, pch=1, type="b")
+arrows(x0=seq(as.numeric(min(names(B.mean.sqmeter))),as.numeric(max(names(B.mean.sqmeter))),1), 
+       x1=seq(as.numeric(min(names(B.mean.sqmeter))),as.numeric(max(names(B.mean.sqmeter))),1),
+       y0=B.mean.sqmeter-B.sem.sqmeter, y1=B.mean.sqmeter+B.sem.sqmeter, angle=90, code=3, length=0.1)
+dev.off()
+embedFonts("B_count_dynamic.pdf") #встройка шрифтов в файл

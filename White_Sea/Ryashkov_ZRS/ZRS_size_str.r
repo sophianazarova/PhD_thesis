@@ -118,6 +118,7 @@ embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 (N2.mean.sqmeter<-colMeans(N2.sqmeter, na.rm=T))
 N2.sd.sqmeter<-apply(N2.sqmeter, 2, sd, na.rm=T)
 N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples)
+(D.n2<-N2.sem.sqmeter/N2.mean.sqmeter*100)
 
 write.table(N2.mean.sqmeter, file="ZRS_N2.csv", sep=";", dec=",")
 
@@ -131,6 +132,72 @@ arrows(x0=seq(as.numeric(min(names(N2.mean.sqmeter))),as.numeric(max(names(N2.me
        y0=N2.mean.sqmeter-N2.sem.sqmeter, y1=N2.mean.sqmeter+N2.sem.sqmeter, angle=90, code=3, length=0.1)
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
+
+##про численность 2+
+#период 1994-1998
+
+(N2.94.98<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)<=1998], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)<=1998],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)<=1998]), sum))))
+(N2.mean.94.98<-mean(as.vector(N2.94.98), na.rm=T))
+(N2.sd.94.98<-sd(as.vector(N2.94.98), na.rm=T))
+N2.sem.94.98<-N2.sd.94.98/sqrt(sum(n.samples[1:(1998-1994+1)]))
+(D.n2.94.98<-N2.sem.94.98/N2.mean.94.98*100)
+
+#период 2000-2012
+
+(N2.00.12<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)>=2000], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)>=2000],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)>=2000]), sum))))
+(N2.mean.00.12<-mean(as.vector(N2.00.12), na.rm=T))
+(N2.sd.00.12<-sd(as.vector(N2.00.12), na.rm=T))
+N2.sem.00.12<-N2.sd.00.12/sqrt(sum(n.samples[1:(2012-2000+1)]))
+(D.n2.00.12<-N2.sem.00.12/N2.mean.00.12*100)
+
+#период 2000-2006
+(N2.00.06<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" 
+                                           & as.vector(size.str.sqmeter$year)>=2000 & as.vector(size.str.sqmeter$year)<=2006], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" 
+                                                & as.vector(size.str.sqmeter$year)>=2000 & as.vector(size.str.sqmeter$year)<=2006],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" 
+                                                  & as.vector(size.str.sqmeter$year)>=2000 & as.vector(size.str.sqmeter$year)<=2006]),
+                     sum))))
+(N2.mean.00.06<-mean(as.vector(N2.00.06), na.rm=T))
+(N2.sd.00.06<-sd(as.vector(N2.00.06), na.rm=T))
+N2.sem.00.06<-N2.sd.00.06/sqrt(sum(n.samples[1:(2006-2000+1)]))
+(D.n2.00.06<-N2.sem.00.06/N2.mean.00.06*100)
+
+#период 2007-2012
+(N2.07.12<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" 
+                                           & as.vector(size.str.sqmeter$year)>=2007], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" 
+                                                & as.vector(size.str.sqmeter$year)>=2007],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" 
+                                                  & as.vector(size.str.sqmeter$year)>=2007]),
+                     sum))))
+(N2.mean.07.12<-mean(as.vector(N2.07.12), na.rm=T))
+(N2.sd.07.12<-sd(as.vector(N2.07.12), na.rm=T))
+N2.sem.07.12<-N2.sd.07.12/sqrt(sum(n.samples[1:(2012-2007+1)]))
+(D.n2.07.12<-N2.sem.07.12/N2.mean.07.12*100)
+
+#wilcox-test
+#до 1999 года и после
+wilcox.test(as.vector(N2.94.98), as.vector(N2.00.12),na.rm=T)
+
+#1999-2006 и 2007-2012
+wilcox.test(as.vector(N2.00.06), as.vector(N2.07.12),na.rm=T)
+
+
+#kruskal-wollis
+N2.94.98.df<-data.frame(c(rep(1994,2),rep(1995,2),rep(1996,2),rep(1997,2),rep(1998,2)),rep(c("mbb1","mbb2"),5),as.vector(N2.94.98)[1:10])
+kruskal.test(N2.94.98.df$as.vector.N2.94.98..1.10. ~ N2.94.98.df$c.rep.1994..2...rep.1995..2...rep.1996..2...rep.1997..2...rep.1998..)
+#anova(lm(N2.94.98.df$as.vector.N2.94.98..1.10. ~ N2.94.98.df$c.rep.1994..2...rep.1995..2...rep.1996..2...rep.1997..2...rep.1998..))
+
+N2.00.06.df<-data.frame(c(rep(2000,2),rep(2001,2),rep(2002,2),rep(2003,2),rep(2004,2), rep(2005,2), rep(2006,2)),rep(c("mbb1","mbb2"),7),as.vector(N2.00.06)[13:26])
+kruskal.test(N2.00.06.df$as.vector.N2.00.06..13.26. ~ N2.00.06.df$c.rep.2000..2...rep.2001..2...rep.2002..2...rep.2003..2...rep.2004..)
+
+N2.07.12.df<-data.frame(c(rep(2007,2),rep(2008,2),rep(2009,2),rep(2010,2),rep(2011,2), rep(2012,2)),rep(c("mbb1","mbb2"),6),as.vector(N2.07.12)[27:length(as.vector(N2.07.12))])
+kruskal.test(N2.07.12.df$as.vector.N2.07.12..27.length.as.vector.N2.07.12... ~ N2.07.12.df$c.rep.2007..2...rep.2008..2...rep.2009..2...rep.2010..2...rep.2011..)
 
 ##динамика максимального размера
 str(ishodnik)

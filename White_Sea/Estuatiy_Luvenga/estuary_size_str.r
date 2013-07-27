@@ -160,6 +160,7 @@ dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 
 ##про численность 2+
+
 #период 1992-1998
 
 (N2.92.98<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)<=1998], 
@@ -170,6 +171,29 @@ embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 N2.sem.92.98<-N2.sd.92.98/sqrt(sum(n.samples[1:(1998-1992+1)]))
 (D.n2.92.98<-N2.sem.92.98/N2.mean.92.98*100)
 
+#период 1992-1993
+
+(N2.92.93<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)<=1993], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)<=1993],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)<=1993]), sum))))
+(N2.mean.92.93<-mean(as.vector(N2.92.93), na.rm=T))
+(N2.sd.92.93<-sd(as.vector(N2.92.93), na.rm=T))
+N2.sem.92.93<-N2.sd.92.93/sqrt(sum(n.samples[1:(1993-1992+1)]))
+(D.n2.92.93<-N2.sem.92.93/N2.mean.92.93*100)
+
+#период 1995-1997
+(N2.95.97<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" 
+                                           & as.vector(size.str.sqmeter$year)>=1995 & as.vector(size.str.sqmeter$year)<=1997], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" 
+                                                & as.vector(size.str.sqmeter$year)>=1995 & as.vector(size.str.sqmeter$year)<=1997],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" 
+                                                  & as.vector(size.str.sqmeter$year)>=1995 & as.vector(size.str.sqmeter$year)<=1997]),
+                     sum))))
+(N2.mean.95.97<-mean(as.vector(N2.95.97), na.rm=T))
+(N2.sd.95.97<-sd(as.vector(N2.95.97), na.rm=T))
+N2.sem.95.97<-N2.sd.95.97/sqrt(sum(n.samples[1:(1997-1995+1)]))
+(D.n2.95.97<-N2.sem.95.97/N2.mean.95.97*100)
+
 #период 1999-2012
 
 (N2.99.12<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" & as.vector(size.str.sqmeter$year)>=1999], 
@@ -179,6 +203,20 @@ N2.sem.92.98<-N2.sd.92.98/sqrt(sum(n.samples[1:(1998-1992+1)]))
 (N2.sd.99.12<-sd(as.vector(N2.99.12), na.rm=T))
 N2.sem.99.12<-N2.sd.99.12/sqrt(sum(n.samples[1:(2012-1999+1)]))
 (D.n2.99.12<-N2.sem.99.12/N2.mean.99.12*100)
+
+#период 1999-2003
+(N2.99.03<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" 
+                                           & as.vector(size.str.sqmeter$year)>=1999 & as.vector(size.str.sqmeter$year)<=2003], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" 
+                                                & as.vector(size.str.sqmeter$year)>=1999 & as.vector(size.str.sqmeter$year)<=2003],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" 
+                                                  & as.vector(size.str.sqmeter$year)>=1999 & as.vector(size.str.sqmeter$year)<=2003]),
+                     sum))))
+(N2.mean.99.03<-mean(as.vector(N2.99.03), na.rm=T))
+(N2.sd.99.03<-sd(as.vector(N2.99.03), na.rm=T))
+N2.sem.99.03<-N2.sd.99.03/sqrt(sum(n.samples[1:(2003-1999+1)]))
+(D.n2.99.03<-N2.sem.99.03/N2.mean.99.03*100)
+
 
 #период 1999-2006
 (N2.99.06<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" 
@@ -193,6 +231,16 @@ N2.sem.99.12<-N2.sd.99.12/sqrt(sum(n.samples[1:(2012-1999+1)]))
 N2.sem.99.06<-N2.sd.99.06/sqrt(sum(n.samples[1:(2006-1999+1)]))
 (D.n2.99.06<-N2.sem.99.06/N2.mean.99.06*100)
 
+
+#период 2004-2012
+(N2.04.07<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" 
+                                           & as.vector(size.str.sqmeter$year)>=2004& as.vector(size.str.sqmeter$year)<=2007], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" 
+                                                & as.vector(size.str.sqmeter$year)>=2004 & as.vector(size.str.sqmeter$year)<=2007],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" 
+                                                  & as.vector(size.str.sqmeter$year)>=2004 & as.vector(size.str.sqmeter$year)<=2007]),
+                     sum))))
+
 #период 2007-2012
 (N2.07.12<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" 
                                            & as.vector(size.str.sqmeter$year)>=2007], 
@@ -206,12 +254,64 @@ N2.sem.99.06<-N2.sd.99.06/sqrt(sum(n.samples[1:(2006-1999+1)]))
 N2.sem.07.12<-N2.sd.07.12/sqrt(sum(n.samples[1:(2012-2007+1)]))
 (D.n2.07.12<-N2.sem.07.12/N2.mean.07.12*100)
 
+(N2.08.12<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]" 
+                                           & as.vector(size.str.sqmeter$year)>=2008], 
+                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]" 
+                                                & as.vector(size.str.sqmeter$year)>=2008],
+                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]" 
+                                                  & as.vector(size.str.sqmeter$year)>=2008]),
+                     sum))))
+(N2.mean.08.12<-mean(as.vector(N2.08.12), na.rm=T))
+(N2.sd.08.12<-sd(as.vector(N2.08.12), na.rm=T))
+N2.sem.08.12<-N2.sd.08.12/sqrt(sum(n.samples[1:(2012-2008+1)]))
+(D.n2.08.12<-N2.sem.08.12/N2.mean.08.12*100)
+
+
+
 #wilcox-test
 #до 1999 года и после
 wilcox.test(as.vector(N2.92.98), as.vector(N2.99.12),na.rm=T)
 
 #1999-2006 и 2007-2012
 wilcox.test(as.vector(N2.99.06), as.vector(N2.07.12),na.rm=T)
+
+#Kruskal-wollis
+N2.92.98.df<-data.frame(subset(samples.names, subset=samples.names$year<=1998),as.vector(N2.92.98)[!is.na(as.vector(N2.92.98))])
+kruskal.test(N2.92.98.df$as.vector.N2.92.98...is.na.as.vector.N2.92.98... ~ N2.92.98.df$year)
+boxplot(N2.92.98.df$as.vector.N2.92.98...is.na.as.vector.N2.92.98... ~ N2.92.98.df$year)
+(tukey.92.98<-TukeyHSD(aov(lm(N2.92.98.df$as.vector.N2.92.98...is.na.as.vector.N2.92.98... ~ as.factor(N2.92.98.df$year)))))
+write.table(tukey.92.98$'as.factor(N2.92.98.df$year)', file="tukey_92_98.csv", dec=",", sep=";")
+
+N2.99.06.df<-data.frame(subset(samples.names, subset=samples.names$year>=1999 & samples.names$year<=2006),
+                     as.vector(N2.99.06)[!is.na(as.vector(N2.99.06))])
+kruskal.test(N2.99.06.df$as.vector.N2.99.06...is.na.as.vector.N2.99.06... ~ N2.99.06.df$year)
+boxplot(N2.99.06.df$as.vector.N2.99.06...is.na.as.vector.N2.99.06... ~ N2.99.06.df$year)
+#posthoc ??
+#tukey.99.06<-TukeyHSD(aov(lm(N2.99.06.df$as.vector.N2.99.06...is.na.as.vector.N2.99.06... ~ as.factor(N2.99.06.df$year))))
+#plot(tukey.99.06)
+
+N2.04.07.df<-data.frame(subset(samples.names, subset=samples.names$year>=2004 & samples.names$year<=2007),as.vector(N2.04.07)[!is.na(as.vector(N2.04.07))])
+kruskal.test(N2.04.07.df$as.vector.N2.04.07...is.na.as.vector.N2.04.07... ~ N2.04.07.df$year)
+boxplot(N2.04.07.df$as.vector.N2.04.07...is.na.as.vector.N2.04.07... ~ N2.04.07.df$year)
+(tukey.04.07<-TukeyHSD(aov(lm(N2.04.07.df$as.vector.N2.04.07...is.na.as.vector.N2.04.07... ~ as.factor(N2.04.07.df$year)))))
+write.table(tukey.04.07$'as.factor(N2.04.07.df$year)', file="tukey_04_07.csv", dec=",", sep=";")
+
+N2.07.12.df<-data.frame(subset(samples.names, subset=samples.names$year>=2007), as.vector(N2.07.12)[!is.na(as.vector(N2.07.12))])
+kruskal.test(N2.07.12.df$as.vector.N2.07.12...is.na.as.vector.N2.07.12... ~ N2.07.12.df$year)
+boxplot(N2.07.12.df$as.vector.N2.07.12...is.na.as.vector.N2.07.12... ~ N2.07.12.df$year)
+
+N2.08.12.df<-data.frame(subset(samples.names, subset=samples.names$year>=2008), as.vector(N2.08.12)[!is.na(as.vector(N2.08.12))])
+kruskal.test(N2.08.12.df$as.vector.N2.08.12...is.na.as.vector.N2.08.12... ~ N2.08.12.df$year)
+boxplot(N2.08.12.df$as.vector.N2.08.12...is.na.as.vector.N2.08.12... ~ N2.08.12.df$year)
+
+N2.99.03.df<- data.frame(subset(samples.names, subset=samples.names$year>=1999 & samples.names$year<=2003),as.vector(N2.99.03)[!is.na(as.vector(N2.99.03))])
+kruskal.test(N2.99.03.df$as.vector.N2.99.03...is.na.as.vector.N2.99.03... ~ N2.99.03.df$year)
+
+N2.99.12.df<-data.frame(subset(samples.names, subset=samples.names$year>=1999),as.vector(N2.99.12)[!is.na(as.vector(N2.99.12))])
+kruskal.test(N2.99.12.df$as.vector.N2.99.12...is.na.as.vector.N2.99.12... ~ N2.99.12.df$year)  
+boxplot(N2.99.12.df$as.vector.N2.99.12...is.na.as.vector.N2.99.12... ~ N2.99.12.df$year)
+
+
 
 #размерная структура в %
 str(size.str.sqmeter)
