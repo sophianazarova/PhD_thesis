@@ -107,6 +107,7 @@ for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
 (N.mean.sqmeter<-colMeans(N.sqmeter, na.rm=T))
 N.sd.sqmeter<-apply(N.sqmeter, 2, sd, na.rm=T)
 N.sem.sqmeter<-N.sd.sqmeter/sqrt(n.samples)
+(D.n<-N.sem.sqmeter/N.mean.sqmeter*100)
 
 pdf(file="N_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N.mean.sqmeter, x=names(N.mean.sqmeter),pch=15, main="Южная губа о. Ряшкова",
@@ -127,6 +128,7 @@ embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 (N2.mean.sqmeter<-colMeans(N2.sqmeter, na.rm=T))
 N2.sd.sqmeter<-apply(N2.sqmeter, 2, sd, na.rm=T)
 N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples)
+(D.n2<-N2.sem.sqmeter/N2.mean.sqmeter*100)
 
 write.table(N2.mean.sqmeter, file="YuG_N2.csv", sep=";", dec=",")
 

@@ -110,6 +110,7 @@ for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
 (N.mean.sqmeter<-colMeans(N.sqmeter, na.rm=T))
 N.sd.sqmeter<-apply(N.sqmeter, 2, sd, na.rm=T)
 N.sem.sqmeter<-N.sd.sqmeter/sqrt(n.samples)
+(D.n<-N.sem.sqmeter/N.mean.sqmeter*100)
 
 pdf(file="N_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N.mean.sqmeter, x=names(N.mean.sqmeter),pch=15, main="о. Ломнишный",
@@ -131,6 +132,7 @@ embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 (N2.mean.sqmeter<-colMeans(N2.sqmeter, na.rm=T))
 (N2.sd.sqmeter<-apply(N2.sqmeter, 2, sd, na.rm=T))
 N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples)
+(D.n2<-N2.sem.sqmeter/N2.mean.sqmeter*100)
 
 write.table(N2.mean.sqmeter, file="lomnishniy_N2.csv", sep=";", dec=",")
 
@@ -166,6 +168,18 @@ embedFonts("N2_dynamic_92_12.pdf") #встройка шрифтов в файл
 #segments(x0=seq(as.numeric(min(names(N.mean.sqmeter))),as.numeric(max(names(N.mean.sqmeter))),1), 
 #         x1=seq(as.numeric(min(names(N.mean.sqmeter))),as.numeric(max(names(N.mean.sqmeter))),1),
 #         y0=N.mean.sqmeter-N.sem.sqmeter, y1=N.mean.sqmeter+N.sem.sqmeter)
+
+##про численность 2+
+#Kruskal-Wallis
+(N2.df<-data.frame(samples.names, as.vector(N2.sqmeter)[!is.na(as.vector(N2.sqmeter))]))
+kruskal.test(N2.df$as.vector.N2.sqmeter...is.na.as.vector.N2.sqmeter... ~ N2.df$year)
+boxplot(N2.df$as.vector.N2.sqmeter...is.na.as.vector.N2.sqmeter... ~ N2.df$year)
+(tukey.01.12<-TukeyHSD(aov(lm(N2.df$as.vector.N2.sqmeter...is.na.as.vector.N2.sqmeter... ~ as.factor(N2.df$year)))))
+
+(N2.mean.07.12<-mean(as.vector(N2.sqmeter), na.rm=T))
+(N2.sd.07.12<-sd(as.vector(N2.sqmeter), na.rm=T))
+N2.sem..07.12<-N2.sd.07.12/sqrt(sum(n.samples[1:(2012-2007+1)]))
+(D.n2..07.12<-N2.sem.07.12/N2.mean.01.10*100)
 
 
 ## динамика максимального размера

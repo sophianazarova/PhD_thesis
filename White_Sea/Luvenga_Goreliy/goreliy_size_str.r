@@ -308,6 +308,13 @@ legend(legend=colnames(N2.mean.sqmeter),x=2002, y=2468, pch=seq(15,15+ncol(N2.me
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 
+##про численность 2+
+N2.sqmeter.high<-(N2.sqmeter)[,,1]
+N2.92.12.df.high<-data.frame(subset(samples.names, samples.names$tidal_level=="high"),as.vector(t(N2.sqmeter.high))[!is.na(as.vector(t(N2.sqmeter.high)))])
+kruskal.test(N2.92.98.df$as.vector.N2.92.98...is.na.as.vector.N2.92.98... ~ N2.92.98.df$year)
+boxplot(N2.92.98.df$as.vector.N2.92.98...is.na.as.vector.N2.92.98... ~ N2.92.98.df$year)
+
+
 
 ##динамика максимального размера
 str(ishodnik)
