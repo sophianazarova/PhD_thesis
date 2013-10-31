@@ -52,4 +52,4 @@ plot(y=kolca.mean, x=Age, pch=15, main="Рост Macoma balthica в г. Даль
 arrows(x0=Age, x1=Age, y0=kolca.mean+kolca.sem, y1=kolca.mean-kolca.sem, angle=90, code=3, length=0.1)
 lines(x=Agemod, y=Lmod)
 dev.off()
-embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
+embedFonts("L_kolec.pdf") #встройка шрифтов в файл
