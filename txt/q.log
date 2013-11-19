@@ -1,6 +1,6 @@
-This is LuaTeX, Version beta-0.70.2-2012091206 (TeX Live 2012/Debian) (format=lualatex 2013.4.23)  16 JUL 2013 21:50
+This is LuaTeX, Version beta-0.70.2-2012091206 (TeX Live 2012/Debian) (format=lualatex 2013.4.23)  19 NOV 2013 22:39
  restricted \write18 enabled.
-**Macoma_dynamic_White_sea.tex
+**microdistribution.
 (/usr/share/texlive/texmf-dist/tex/latex/tools/q.tex
 LaTeX2e <2011/06/27>
 LuaTeX adaptation of babel <v3.8m-luatex-1.5> and hyphenation patterns for engl
@@ -17,8 +17,8 @@ n, catalan, spanish, swedish, thai, loaded.
 File ignored
 )
 ! Emergency stop.
-<*> Macoma_dynamic_White_sea.tex
-                                
+<*> microdistribution.
+                      
 *** (job aborted, no legal \end found)
 
 
@@ -30,5 +30,5 @@ Here is how much of LuaTeX's memory you used:
    avail lists: 2:12,3:1
  3757 multiletter control sequences out of 65536+200000
  14 fonts using 563007 bytes
- 5i,0n,2p,107b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 5i,0n,2p,97b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.70.2-2012091206 (TeX Live 2012/Debian) (format=lualatex 2013.4.23)  31 OCT 2013 14:27
+This is LuaTeX, Version beta-0.70.2-2012091206 (TeX Live 2012/Debian) (format=lualatex 2013.4.23)  19 NOV 2013 23:37
  restricted \write18 enabled.
 **microdistribution.tex
 (./microdistribution.tex
@@ -1051,235 +1051,132 @@ luaotfload | load font: font family='liberationserif', subfamily='regular' foun
 d: LiberationSerif-Regular.ttf
 luaotfload | load font: auto-selecting default features for script: dflt (was l
 atn)
+luaotfload | load font: font family='liberationserif', subfamily='bold' found: 
+LiberationSerif-Bold.ttf
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)
+luaotfload | load font: font family='liberationserif', subfamily='bold' found: 
+LiberationSerif-Bold.ttf
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)
 luaotfload | load font: font family='liberationserif', subfamily='italic' found
 : LiberationSerif-Italic.ttf
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf, id=1, 505.
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)
+luaotfload | load font: font family='liberationserif', subfamily='regular' foun
+d: LiberationSerif-Regular.ttf
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)
+luaotfload | load font: font family='liberationserif', subfamily='regular' foun
+d: LiberationSerif-Regular.ttf<<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+euex on input line 41.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueuex.fd
+File: ueuex.fd 2009/06/22 v3.00 Euler extra symbols
+)
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)(load: /home/sonya/.texmf-var/luatex-cache/generic/fonts/otf/temp-lmroman12
+-regular.lua)
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)(load: /home/sonya/.texmf-var/luatex-cache/generic/fonts/otf/temp-lmroman8-
+regular.lua)
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)(load: /home/sonya/.texmf-var/luatex-cache/generic/fonts/otf/temp-lmroman6-
+regular.lua)
+LaTeX Font Info:    Try loading font information for T3+lmr on input line 41.
+LaTeX Font Info:    No file T3lmr.fd. on input line 41.
+
+
+LaTeX Font Warning: Font shape `T3/lmr/m/n' undefined
+(Font)              using `T3/cmr/m/n' instead on input line 41.
+
+<<ot1.cmap>>
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)
+luaotfload | load font: font family='liberationserif', subfamily='regular' foun
+d: LiberationSerif-Regular.ttf
+<../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf, id=5, 505.
 89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf Graphi
 c file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf>
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_b
-althica_.pdf used on input line 43.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
+althica_.pdf used on input line 54.
+(pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
 
-<../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf, id=2, 505.
+<../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf, id=6, 505.
 89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf Graphi
 c file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf>
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_b
-althica_.pdf used on input line 53.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
+althica_.pdf used on input line 64.
+(pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
 
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf, id=3, 5
+Overfull \hbox (2.0pt too wide) in paragraph at lines 49--67
+[][][]  [] 
+ []
+
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)
+luaotfload | load font: font family='liberationserif', subfamily='italic' found
+: LiberationSerif-Italic.ttf
+<../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf, id=7, 5
 05.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf Gra
 phic file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf>
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastod
-erma_edule_.pdf used on input line 63.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
+erma_edule_.pdf used on input line 79.
+(pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
 
-<../Barenc_Sea/distribution_Moran/Pala_moran_B_Cerastoderma_edule_.pdf, id=4, 5
-05.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Pala_moran_B_Cerastoderma_edule_.pdf Gra
-phic file (type pdf)
+[1
 
-<use ../Barenc_Sea/distribution_Moran/Pala_moran_B_Cerastoderma_edule_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Pala_moran_B_Cerastod
-erma_edule_.pdf used on input line 73.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf, id=5, 5
-05.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf Gra
-phic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulu
-s_caudatus_.pdf used on input line 88.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Pala_moran_B_Priapulus_caudatus_.pdf, id=6, 5
-05.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Pala_moran_B_Priapulus_caudatus_.pdf Gra
-phic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Pala_moran_B_Priapulus_caudatus_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Pala_moran_B_Priapulu
-s_caudatus_.pdf used on input line 98.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Crangon_crangon_.pdf, id=7, 505.
-89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Crangon_crangon_.pdf Graphi
-c file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Pala_moran_N_Crangon_crangon_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Crangon_
-crangon_.pdf used on input line 118.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Macoma_balthica_.pdf, id=8, 
-505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Macoma_balthica_.pdf Gr
-aphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Macoma_balthica_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Maco
-ma_balthica_.pdf used on input line 195.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Macoma_balthica_.pdf, id=9, 
-505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Macoma_balthica_.pdf Gr
-aphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Macoma_balthica_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Maco
-ma_balthica_.pdf used on input line 205.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Cerastoderma_edule_.pdf, id=
-10, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Cerastoderma_edule_.pdf
- Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Cerastoderma_edule_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Cera
-stoderma_edule_.pdf used on input line 215.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Cerastoderma_edule_.pdf, id=
-11, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Cerastoderma_edule_.pdf
- Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Cerastoderma_edule_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Cera
-stoderma_edule_.pdf used on input line 226.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf, id=12, 50
-5.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf Graph
-ic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_
-arenaria_.pdf used on input line 241.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Mya_arenaria_.pdf, id=13, 50
-5.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Mya_arenaria_.pdf Graph
-ic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Mya_
-arenaria_.pdf used on input line 251.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mytilus_edulis_.pdf, id=14, 
-505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mytilus_edulis_.pdf Gra
-phic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mytilus_edulis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Myti
-lus_edulis_.pdf used on input line 271.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Mytilus_edulis_.pdf, id=15, 
-505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Mytilus_edulis_.pdf Gra
-phic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Mytilus_edulis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Myti
-lus_edulis_.pdf used on input line 281.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Pseudolibrotus_littoralis_.p
-df, id=16, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Pseudolibrotus_littoral
-is_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Pseudolibrotus_littorali
-s_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Pseu
-dolibrotus_littoralis_.pdf used on input line 291.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Pseudolibrotus_littoralis_.p
-df, id=17, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Pseudolibrotus_littoral
-is_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Pseudolibrotus_littorali
-s_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Pseu
-dolibrotus_littoralis_.pdf used on input line 302.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Gammarus_sp_.pdf, id=18, 505
-.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Gammarus_sp_.pdf Graphi
-c file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Gammarus_sp_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Gamm
-arus_sp_.pdf used on input line 317.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf, id=19
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../Barenc_Sea/distribution
+_Moran/Pala_moran_N_Macoma_balthica_.pdf> <../Barenc_Sea/distribution_Moran/Pal
+a_moran_B_Macoma_balthica_.pdf>]
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf, id=55
 , 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf G
 raphic file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf>
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mac
-oma_balthica_.pdf used on input line 351.
+oma_balthica_.pdf used on input line 96.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf, id=20
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf, id=56
 , 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf G
 raphic file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf>
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mac
-oma_balthica_.pdf used on input line 361.
+oma_balthica_.pdf used on input line 106.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pdf, id
-=21, 505.89pt x 505.89pt>
+=57, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pd
 f Graphic file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pdf
 >
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cer
-astoderma_edule_.pdf used on input line 371.
+astoderma_edule_.pdf used on input line 116.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pd
 f Graphic file (type pdf)
@@ -1287,563 +1184,182 @@ f Graphic file (type pdf)
 <use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pdf
 >
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cer
-astoderma_edule_.pdf used on input line 382.
+astoderma_edule_.pdf used on input line 127.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mya_arenaria_.pdf, id=22, 5
-05.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mya_arenaria_.pdf Grap
-hic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mya
-_arenaria_.pdf used on input line 397.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mya_arenaria_.pdf, id=23, 5
-05.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mya_arenaria_.pdf Grap
-hic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mya
-_arenaria_.pdf used on input line 407.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mytilus_edulis_.pdf, id=24,
- 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mytilus_edulis_.pdf Gr
-aphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mytilus_edulis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Myt
-ilus_edulis_.pdf used on input line 427.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mytilus_edulis_.pdf, id=25,
- 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mytilus_edulis_.pdf Gr
-aphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mytilus_edulis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Myt
-ilus_edulis_.pdf used on input line 437.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Pseudolibrotus_littoralis_.
-pdf, id=26, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Pseudolibrotus_littora
-lis_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Pseudolibrotus_littoral
-is_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Pse
-udolibrotus_littoralis_.pdf used on input line 447.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Pseudolibrotus_littoralis_.
-pdf, id=27, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Pseudolibrotus_littora
-lis_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Pseudolibrotus_littoral
-is_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Pse
-udolibrotus_littoralis_.pdf used on input line 458.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf, id=28, 50
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf, id=58, 50
 5.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf Graph
 ic file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf>
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gam
-marus_sp_.pdf used on input line 473.
+marus_sp_.pdf used on input line 136.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf, id=29, 50
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf, id=59, 50
 5.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf Graph
 ic file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf>
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gam
-marus_sp_.pdf used on input line 483.
+marus_sp_.pdf used on input line 146.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Priapulus_caudatus_.pdf, id
-=30, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Priapulus_caudatus_.pd
-f Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Priapulus_caudatus_.pdf
->
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Pri
-apulus_caudatus_.pdf used on input line 507.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Priapulus_caudatus_.pdf, id
-=31, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Priapulus_caudatus_.pd
-f Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Priapulus_caudatus_.pdf
->
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Pri
-apulus_caudatus_.pdf used on input line 517.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Macoma_balthica_.pdf, id=32
-, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Macoma_balthica_.pdf G
-raphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Macoma_balthica_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mac
-oma_balthica_.pdf used on input line 586.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Macoma_balthica_.pdf, id=33
-, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Macoma_balthica_.pdf G
-raphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Macoma_balthica_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mac
-oma_balthica_.pdf used on input line 596.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Cerastoderma_edule_.pdf, id
-=34, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Cerastoderma_edule_.pd
-f Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Cerastoderma_edule_.pdf
->
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Cer
-astoderma_edule_.pdf used on input line 606.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Cerastoderma_edule_.pd
-f Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Cerastoderma_edule_.pdf
->
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Cer
-astoderma_edule_.pdf used on input line 617.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mya_arenaria_.pdf, id=35, 5
-05.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mya_arenaria_.pdf Grap
-hic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mya
-_arenaria_.pdf used on input line 632.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mya_arenaria_.pdf, id=36, 5
-05.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mya_arenaria_.pdf Grap
-hic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mya
-_arenaria_.pdf used on input line 642.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf, id=37,
- 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf Gr
-aphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Myt
-ilus_edulis_.pdf used on input line 662.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf, id=38,
- 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf Gr
-aphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Myt
-ilus_edulis_.pdf used on input line 672.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Pseudolibrotus_littoralis_.
-pdf, id=39, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Pseudolibrotus_littora
-lis_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Pseudolibrotus_littoral
-is_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Pse
-udolibrotus_littoralis_.pdf used on input line 682.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Pseudolibrotus_littoralis_.
-pdf, id=40, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Pseudolibrotus_littora
-lis_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Pseudolibrotus_littoral
-is_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Pse
-udolibrotus_littoralis_.pdf used on input line 693.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Macoma_balthica_.pdf, id=4
-1, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Macoma_balthica_.pdf 
-Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Macoma_balthica_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Ma
-coma_balthica_.pdf used on input line 743.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Macoma_balthica_.pdf, id=4
-2, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Macoma_balthica_.pdf 
-Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Macoma_balthica_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Ma
-coma_balthica_.pdf used on input line 753.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Cerastoderma_edule_.pdf, i
-d=43, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Cerastoderma_edule_.p
-df Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Cerastoderma_edule_.pd
-f>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Ce
-rastoderma_edule_.pdf used on input line 763.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Cerastoderma_edule_.p
-df Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Cerastoderma_edule_.pd
-f>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Ce
-rastoderma_edule_.pdf used on input line 774.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf, id=44, 
-505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf Gra
-phic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_My
-a_arenaria_.pdf used on input line 789.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Mya_arenaria_.pdf, id=45, 
-505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Mya_arenaria_.pdf Gra
-phic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_My
-a_arenaria_.pdf used on input line 799.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mytilus_edulis_.pdf, id=46
-, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mytilus_edulis_.pdf G
-raphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mytilus_edulis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_My
-tilus_edulis_.pdf used on input line 819.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Mytilus_edulis_.pdf, id=47
-, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Mytilus_edulis_.pdf G
-raphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Mytilus_edulis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_My
-tilus_edulis_.pdf used on input line 829.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littoralis_
-.pdf, id=48, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littor
-alis_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littora
-lis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Ps
-eudolibrotus_littoralis_.pdf used on input line 839.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Pseudolibrotus_littoralis_
-.pdf, id=49, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Pseudolibrotus_littor
-alis_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Pseudolibrotus_littora
-lis_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Ps
-eudolibrotus_littoralis_.pdf used on input line 850.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf, id=50, 5
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf, id=60, 5
 05.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf Grap
 hic file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf>
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Ga
-mmarus_sp_.pdf used on input line 865.
+mmarus_sp_.pdf used on input line 156.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf, id=51, 5
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf, id=61, 5
 05.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf Grap
 hic file (type pdf)
 
 <use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf>
 Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Ga
-mmarus_sp_.pdf used on input line 875.
+mmarus_sp_.pdf used on input line 166.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 860--878
-[][][] \EU2/LiberationSerif(0)/m/n/10.95 B \EU2/LiberationSerif(0)/m/it/10.95 G
-ammarus sp.
+
+LaTeX Warning: Float too large for page by 137.08119pt on input line 171.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf, id=62, 
+505.89pt x 505.89pt>
+File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf Gra
+phic file (type pdf)
+
+<use ../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf>
+Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulu
+s_caudatus_.pdf used on input line 183.
+(pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+luaotfload | load font: auto-selecting default features for script: dflt (was l
+atn)
+<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf, id=63, 50
+5.89pt x 505.89pt>
+File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf Graph
+ic file (type pdf)
+
+<use ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf>
+Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_
+arenaria_.pdf used on input line 205.
+(pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
+
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf, id=64, 
+505.89pt x 505.89pt>
+File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf Gra
+phic file (type pdf)
+
+<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf>
+Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_My
+a_arenaria_.pdf used on input line 216.
+(pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
+
+Overfull \hbox (2.0pt too wide) in paragraph at lines 200--219
+[][][]  [] 
  []
 
 
-LaTeX Warning: Float too large for page by 164.60489pt on input line 889.
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf, id=65,
+ 505.89pt x 505.89pt>
+File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf Gr
+aphic file (type pdf)
+
+<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf>
+Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Myt
+ilus_edulis_.pdf used on input line 234.
+(pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
+
+<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf, id=66,
+ 505.89pt x 505.89pt>
+File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf Gr
+aphic file (type pdf)
+
+<use ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf>
+Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Myt
+ilus_edulis_.pdf used on input line 244.
+(pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
+
+Overfull \hbox (2.0pt too wide) in paragraph at lines 229--247
+[][][]  [] 
+ []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Priapulus_caudatus_.pdf, i
-d=52, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Priapulus_caudatus_.p
-df Graphic file (type pdf)
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littoralis_
+.pdf, id=67, 505.89pt x 505.89pt>
+File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littor
+alis_.pdf Graphic file (type pdf)
 
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Priapulus_caudatus_.pd
-f>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pr
-iapulus_caudatus_.pdf used on input line 899.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Priapulus_caudatus_.pdf, i
-d=53, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Priapulus_caudatus_.p
-df Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Priapulus_caudatus_.pd
-f>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Pr
-iapulus_caudatus_.pdf used on input line 909.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
+<use ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littora
+lis_.pdf>
+Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Ps
+eudolibrotus_littoralis_.pdf used on input line 261.
+(pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[2 <../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf>]
+[3 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf> <.
+./Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf> <../Bar
+enc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pdf> <../Baren
+c_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf> <../Barenc_Sea/dis
+tribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf> <../Barenc_Sea/distribution
+_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf> <../Barenc_Sea/distribution_Moran/P
+lyazh0812_moran_B_Gammarus_sp_.pdf>] [4 <../Barenc_Sea/distribution_Moran/Pala_
+moran_N_Priapulus_caudatus_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh07_mor
+an_N_Mya_arenaria_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_My
+a_arenaria_.pdf>] [5 <../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilu
+s_edulis_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edul
+is_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_li
+ttoralis_.pdf>] (./microdistribution.aux)
 
-<../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Macoma_balthica_.pdf, i
-d=54, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Macoma_balthica_.p
-df Graphic file (type pdf)
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-<use ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Macoma_balthica_.pd
-f>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N
-_Macoma_balthica_.pdf used on input line 978.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Macoma_balthica_.pdf, i
-d=55, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Macoma_balthica_.p
-df Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Macoma_balthica_.pd
-f>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B
-_Macoma_balthica_.pdf used on input line 988.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Cerastoderma_edule_.pdf
-, id=56, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Cerastoderma_edule
-_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Cerastoderma_edule_
-.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B
-_Cerastoderma_edule_.pdf used on input line 998.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Cerastoderma_edule
-_.pdf Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Cerastoderma_edule_
-.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B
-_Cerastoderma_edule_.pdf used on input line 1009.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mya_arenaria_.pdf, id=5
-7, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mya_arenaria_.pdf 
-Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N
-_Mya_arenaria_.pdf used on input line 1024.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Mya_arenaria_.pdf, id=5
-8, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Mya_arenaria_.pdf 
-Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Mya_arenaria_.pdf>
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B
-_Mya_arenaria_.pdf used on input line 1034.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mytilus_edulis_.pdf, id
-=59, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mytilus_edulis_.pd
-f Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mytilus_edulis_.pdf
->
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N
-_Mytilus_edulis_.pdf used on input line 1054.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-<../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Mytilus_edulis_.pdf, id
-=60, 505.89pt x 505.89pt>
-File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Mytilus_edulis_.pd
-f Graphic file (type pdf)
-
-<use ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B_Mytilus_edulis_.pdf
->
-Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_B
-_Mytilus_edulis_.pdf used on input line 1064.
-(pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../Barenc_Sea/distributi
-on_Moran/Pala_moran_N_Macoma_balthica_.pdf> <../Barenc_Sea/distribution_Moran/P
-ala_moran_B_Macoma_balthica_.pdf> <../Barenc_Sea/distribution_Moran/Pala_moran_
-N_Cerastoderma_edule_.pdf> <../Barenc_Sea/distribution_Moran/Pala_moran_B_Ceras
-toderma_edule_.pdf> <../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_ca
-udatus_.pdf> <../Barenc_Sea/distribution_Moran/Pala_moran_B_Priapulus_caudatus_
-.pdf>] [2 <../Barenc_Sea/distribution_Moran/Pala_moran_N_Crangon_crangon_.pdf>]
-[3 <../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Macoma_balthica_.pdf> <..
-/Barenc_Sea/distribution_Moran/Plyazh07_moran_B_Macoma_balthica_.pdf> <../Baren
-c_Sea/distribution_Moran/Plyazh07_moran_N_Cerastoderma_edule_.pdf> <../Barenc_S
-ea/distribution_Moran/Plyazh07_moran_B_Cerastoderma_edule_.pdf> <../Barenc_Sea/
-distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf> <../Barenc_Sea/distribut
-ion_Moran/Plyazh07_moran_B_Mya_arenaria_.pdf>] [4 <../Barenc_Sea/distribution_M
-oran/Plyazh07_moran_N_Mytilus_edulis_.pdf> <../Barenc_Sea/distribution_Moran/Pl
-yazh07_moran_B_Mytilus_edulis_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh07_
-moran_N_Pseudolibrotus_littoralis_.pdf> <../Barenc_Sea/distribution_Moran/Plyaz
-h07_moran_B_Pseudolibrotus_littoralis_.pdf> <../Barenc_Sea/distribution_Moran/P
-lyazh07_moran_N_Gammarus_sp_.pdf>] [5 <../Barenc_Sea/distribution_Moran/Plyazh0
-81_moran_N_Macoma_balthica_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh081_mo
-ran_B_Macoma_balthica_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B
-_Cerastoderma_edule_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_M
-ya_arenaria_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mya_arena
-ria_.pdf>] [6 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mytilus_eduli
-s_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Mytilus_edulis_.pdf
-> <../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Pseudolibrotus_littoralis
-_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Pseudolibrotus_litto
-ralis_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pd
-f> <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf>]
-[7 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Priapulus_caudatus_.pdf>
- <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Priapulus_caudatus_.pdf>]
-[8 <../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Macoma_balthica_.pdf> <.
-./Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Macoma_balthica_.pdf> <../Bar
-enc_Sea/distribution_Moran/Plyazh082_moran_B_Cerastoderma_edule_.pdf> <../Baren
-c_Sea/distribution_Moran/Plyazh082_moran_N_Mya_arenaria_.pdf> <../Barenc_Sea/di
-stribution_Moran/Plyazh082_moran_B_Mya_arenaria_.pdf>] [9 <../Barenc_Sea/distri
-bution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf> <../Barenc_Sea/distribution
-_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf> <../Barenc_Sea/distribution_Moran
-/Plyazh082_moran_N_Pseudolibrotus_littoralis_.pdf> <../Barenc_Sea/distribution_
-Moran/Plyazh082_moran_B_Pseudolibrotus_littoralis_.pdf>] [10 <../Barenc_Sea/dis
-tribution_Moran/Plyazh0812_moran_N_Macoma_balthica_.pdf> <../Barenc_Sea/distrib
-ution_Moran/Plyazh0812_moran_B_Macoma_balthica_.pdf> <../Barenc_Sea/distributio
-n_Moran/Plyazh0812_moran_B_Cerastoderma_edule_.pdf> <../Barenc_Sea/distribution
-_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf> <../Barenc_Sea/distribution_Moran/
-Plyazh0812_moran_B_Mya_arenaria_.pdf>] [11 <../Barenc_Sea/distribution_Moran/Pl
-yazh0812_moran_N_Mytilus_edulis_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh0
-812_moran_B_Mytilus_edulis_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh0812_m
-oran_N_Pseudolibrotus_littoralis_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh
-0812_moran_B_Pseudolibrotus_littoralis_.pdf> <../Barenc_Sea/distribution_Moran/
-Plyazh0812_moran_N_Gammarus_sp_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh08
-12_moran_B_Gammarus_sp_.pdf>] [12 <../Barenc_Sea/distribution_Moran/Plyazh0812_
-moran_N_Priapulus_caudatus_.pdf> <../Barenc_Sea/distribution_Moran/Plyazh0812_m
-oran_B_Priapulus_caudatus_.pdf>] [13 <../Barenc_Sea/distribution_Moran/Yarnyshn
-aya07_moran_N_Macoma_balthica_.pdf> <../Barenc_Sea/distribution_Moran/Yarnyshna
-ya07_moran_B_Macoma_balthica_.pdf> <../Barenc_Sea/distribution_Moran/Yarnyshnay
-a07_moran_B_Cerastoderma_edule_.pdf> <../Barenc_Sea/distribution_Moran/Yarnyshn
-aya07_moran_N_Mya_arenaria_.pdf> <../Barenc_Sea/distribution_Moran/Yarnyshnaya0
-7_moran_B_Mya_arenaria_.pdf>] [14 <../Barenc_Sea/distribution_Moran/Yarnyshnaya
-07_moran_N_Mytilus_edulis_.pdf> <../Barenc_Sea/distribution_Moran/Yarnyshnaya07
-_moran_B_Mytilus_edulis_.pdf>] (./microdistribution.aux) )
+ )
 
 Here is how much of LuaTeX's memory you used:
- 18211 strings out of 494125
+ 18071 strings out of 494125
  100000,552014 words of node,token memory allocated
- 433 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 8 attribute, 46 glue_spec, 8 attri
-bute_list, 6 write nodes
-   avail lists: 2:10374,3:620,4:2247,5:201,6:2857,7:17,9:793,10:331
- 21028 multiletter control sequences out of 65536+200000
- 28 fonts using 2056991 bytes
- 61i,8n,34p,407b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 383 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 5 attribute, 46 glue_spec, 5 attri
+bute_list, 1 write nodes
+   avail lists: 2:6009,3:188,4:871,5:120,6:1852,7:75,9:225,10:265
+ 20913 multiletter control sequences out of 65536+200000
+ 69 fonts using 5036247 bytes
+ 61i,8n,34p,636b,329s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/fonts/truetype/liberation/LiberationSerif-Italic.ttf></usr/share/fo
-nts/truetype/liberation/LiberationSerif-Regular.ttf>
-Output written on microdistribution.pdf (14 pages, 511356 bytes).
+nts/truetype/liberation/LiberationSerif-Regular.ttf></usr/share/fonts/truetype/
+liberation/LiberationSerif-Bold.ttf></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on microdistribution.pdf (5 pages, 222996 bytes).
 
-PDF statistics: 1150 PDF objects out of 1200 (max. 8388607)
- 819 compressed objects within 9 object streams
+PDF statistics: 359 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

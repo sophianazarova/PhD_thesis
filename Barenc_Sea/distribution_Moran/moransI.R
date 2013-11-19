@@ -17,6 +17,20 @@ dev.off()
 embedFonts(paste("Pala_moran",colnames(Pala.08)[i], ".pdf",sep="_")) #встройка шрифтов в файл
 }
            
+#кросскорреляции
+
+for (i in 4:(ncol(Pala.08)-1)) {
+  for(j in (i+1):ncol(Pala.08)){
+assign(paste("Pala_cross",colnames(Pala.08)[i],colnames(Pala.08)[j],sep="_"),correlog(x=Pala.08$X, y=Pala.08$Y, z=Pala.08[,i], w=Pala.08[,j], increment=100, resamp=1000))
+    
+pdf(file=paste("Pala_cross",colnames(Pala.08)[i], colnames(Pala.08)[j], ".pdf",sep="_"), family="NimbusSan") # указываем шрифт подпией
+plot(correlog(x=Pala.08$X, y=Pala.08$Y, z=Pala.08[,i], w=Pala.08[,j], increment=100, resamp=1000))
+dev.off()
+embedFonts(paste("Pala_cross",colnames(Pala.08)[i], colnames(Pala.08)[j], ".pdf",sep="_")) #встройка шрифтов в файл
+}}
+
+
+
 #Дальний Пляж 2007
 Plyazh.07<-read.table(file="Dalnezeleneckaya_2007.csv", header=T, sep=";", dec=",")
 str(Plyazh.07)
@@ -32,6 +46,19 @@ for (i in 4:ncol(Plyazh.07)) {
   dev.off()
   embedFonts(paste("Plyazh07_moran",colnames(Plyazh.07)[i], ".pdf",sep="_")) #встройка шрифтов в файл
 }
+
+#кросскорреляции
+
+for (i in 4:(ncol(Plyazh.07)-1)) {
+  for(j in (i+1):ncol(Plyazh.07)){
+    assign(paste("Plyazh_07_cross",colnames(Plyazh.07)[i],colnames(Plyazh.07)[j],sep="_"),correlog(x=Plyazh.07$X, y=Plyazh.07$Y, z=Plyazh.07[,i], w=Plyazh.07[,j], na.rm=T, increment=100, resamp=1000))
+    
+    pdf(file=paste("Plyazh_07_cross",colnames(Plyazh.07)[i], colnames(Plyazh.07)[j], ".pdf",sep="_"), family="NimbusSan") # указываем шрифт подпией
+    plot(correlog(x=Plyazh.07$X, y=Plyazh.07$Y, z=Plyazh.07[,i], w=Plyazh.07[,j], increment=100, resamp=1000, na.rm=T))
+    dev.off()
+    embedFonts(paste("Plyazh_07_cross",colnames(Plyazh.07)[i], colnames(Plyazh.07)[j], ".pdf",sep="_")) #встройка шрифтов в файл
+  }}
+
 
 #Дальний Пляж 2008 квадрат1
 Plyazh.081<-read.table(file="Dalnezeleneckaya_kv1_2008.csv", header=T, sep=";", dec=",")
