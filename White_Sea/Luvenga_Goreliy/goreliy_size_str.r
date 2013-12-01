@@ -317,9 +317,12 @@ embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 kruskal.test(N2.92.98.df$as.vector.N2.92.98...is.na.as.vector.N2.92.98... ~ N2.92.98.df$year)
 boxplot(N2.92.98.df$as.vector.N2.92.98...is.na.as.vector.N2.92.98... ~ N2.92.98.df$year)
 
+str(as.data.frame(N2.sqmeter))
+as.data.frame(t(N2.sqmeter[15:17,,"low"]))
+N2.sqmeter[15:17,,"low"]
+N2.sqmeter[15:17,,"low"]
 
-
-##динамика максимального размера
+ ##динамика максимального размера
 str(ishodnik)
 (Length.max<-tapply(Length.mm, list(year, tidal_level), max, na.rm=T))
 #plot(x=names(Length.max), y=Length.max, type=none)
