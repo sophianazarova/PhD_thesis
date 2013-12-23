@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.70.2-2012091206 (TeX Live 2012/Debian) (format=lualatex 2013.4.23)  11 AUG 2013 23:25
+This is LuaTeX, Version beta-0.70.2-2012091206 (TeX Live 2012/Debian) (format=lualatex 2013.4.23)  22 DEC 2013 23:25
  restricted \write18 enabled.
 **dynamic.tex
 (./dynamic.tex
@@ -1251,36 +1251,52 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-
-LaTeX Warning: Command \textendash invalid in math mode on input line 243.
-
 luaotfload | load font: auto-selecting default features for script: dflt (was l
 atn)
 luaotfload | load font: font family='liberationserif', subfamily='italic' found
 : LiberationSerif-Italic.ttf
-Overfull \hbox (48.0pt too wide) in paragraph at lines 252--263
+Overfull \hbox (48.0pt too wide) in paragraph at lines 240--253
 [][][]
  []
 
 
-Underfull \hbox (badness 3942) in paragraph at lines 252--263
+Underfull \hbox (badness 3942) in paragraph at lines 240--253
 \EU2/LiberationSerif(0)/m/n/10 При-ме-ча-ние: Kruskal-Wallis $\OML/cm
 m/m/it/10 []$ \EU2/LiberationSerif(0)/m/n/10 —зна-че-ния кри-т
 е-рия Краскелл-Уоллиса; $[]$ —сред-няя чис-ле
 н-ность
  []
 
-[3]
-<../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf, id=38, 505.89pt x 5
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 268.
+
+
+Underfull \vbox (badness 1325) has occurred while \output is active []
+
+ [3]
+Overfull \hbox (48.0pt too wide) in paragraph at lines 277--288
+[][][]
+ []
+
+
+Underfull \hbox (badness 3942) in paragraph at lines 277--288
+\EU2/LiberationSerif(0)/m/n/10 При-ме-ча-ние: Kruskal-Wallis $\OML/cm
+m/m/it/10 []$ \EU2/LiberationSerif(0)/m/n/10 —зна-че-ния кри-т
+е-рия Краскелл-Уоллиса; $[]$ —сред-няя чис-ле
+н-ность
+ []
+
+[4]
+<../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf, id=42, 505.89pt x 5
 05.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf Graphic file (t
 ype pdf)
  <use ../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf>
 Package pdftex.def Info: ../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.
-pdf used on input line 285.
+pdf used on input line 310.
 (pdftex.def)             Requested size: 505.88875pt x 505.88875pt.
 
-Overfull \hbox (50.64467pt too wide) in paragraph at lines 285--286
+Overfull \hbox (50.64467pt too wide) in paragraph at lines 310--311
 [][][] 
  []
 
@@ -1289,37 +1305,34 @@ atn)
 luaotfload | load font: font family='liberationserif', subfamily='bold' found: 
 LiberationSerif-Bold.ttf
 
-LaTeX Warning: Reference `Agarova_et_al_1976' on page 4 undefined on input line
- 287.
+LaTeX Warning: Reference `Agarova_et_al_1976' on page 5 undefined on input line
+ 312.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[5]
 
-LaTeX Warning: Reference `Agarova_et_al_1976' on page 5 undefined on input line
- 293.
+LaTeX Warning: Reference `Agarova_et_al_1976' on page 6 undefined on input line
+ 318.
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 297--298
+Underfull \hbox (badness 2088) in paragraph at lines 322--323
 [][]\EU2/LiberationSerif(0)/m/n/12 до-сто-вер-ность раз-ли-
  []
 
 
-Overfull \hbox (48.0pt too wide) in paragraph at lines 296--309
+Overfull \hbox (48.0pt too wide) in paragraph at lines 321--334
 [][][]
  []
 
-[5] [6 <../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf> <../White_Sea/Luvenga_Gore
+[6] [7 <../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf> <../White_Sea/Luvenga_Gore
 liy/N_dynamic.pdf> <../White_Sea//Luvenga_II_razrez/N_dynamic.pdf> <../White_Se
 a/Ryashkov_ZRS/N_dynamic.pdf> <../White_Sea/Ryashkov_YuG/N_dynamic.pdf> <../Whi
-te_Sea/Lomnishniy/N_dynamic.pdf>] [7 <../White_Sea/Estuatiy_Luvenga/N2_dynamic.
+te_Sea/Lomnishniy/N_dynamic.pdf>] [8 <../White_Sea/Estuatiy_Luvenga/N2_dynamic.
 pdf> <../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf> <../White_Sea//Luvenga_II_ra
 zrez/N2_dynamic.pdf> <../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf> <../White_Sea/R
-yashkov_YuG/N2_dynamic.pdf> <../White_Sea/Lomnishniy/N2_dynamic.pdf>] [8 <../Ba
+yashkov_YuG/N2_dynamic.pdf> <../White_Sea/Lomnishniy/N2_dynamic.pdf>] [9 <../Ba
 renc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf>] (./dynamic.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1330,13 +1343,13 @@ LaTeX Warning: There were undefined references.
  )
 
 Here is how much of LuaTeX's memory you used:
- 18130 strings out of 494125
+ 18131 strings out of 494125
  100000,552014 words of node,token memory allocated
- 390 words of node memory still in use:
+ 392 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 5 attribute, 46 glue_spec, 5 attri
 bute_list, 1 write nodes
-   avail lists: 2:9715,3:340,4:1900,5:329,6:3474,7:357,9:418,10:478
- 20923 multiletter control sequences out of 65536+200000
+   avail lists: 2:10312,3:342,4:1898,5:363,6:3525,7:357,9:418,10:549
+ 20924 multiletter control sequences out of 65536+200000
  100 fonts using 7241711 bytes
  61i,13n,34p,572b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf></usr/share/f
@@ -1349,10 +1362,10 @@ cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on dynamic.pdf (8 pages, 269932 bytes).
+Output written on dynamic.pdf (9 pages, 273661 bytes).
 
-PDF statistics: 353 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
+PDF statistics: 356 PDF objects out of 1000 (max. 8388607)
+ 234 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 131072)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,6 +6,7 @@ ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
 samples.names<-read.table(file="sample.csv", sep=";", dec=",", head=T)
 attach(ishodnik)
+#detach(ishodnik)
 #year<-factor(year)
 
 ## размерная структура суммарно по годам по горизонтам

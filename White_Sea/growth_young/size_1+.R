@@ -1,5 +1,6 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/growth_young/")
 ishodnik<-read.table(file="growth_young_Kandalaksha.csv", sep=";", dec=",", head=T)
+ishodnik$tidal_level<-ordered(ishodnik$tidal_level, levels=c("high", "middle", "Mid-low", "low"))
 str(ishodnik)
 hist(ishodnik$k1)
 hist(ishodnik$k1[ishodnik$age==1])
@@ -54,6 +55,12 @@ boxplot(ishodnik$Length.mm[ishodnik$age==1] ~ ishodnik$area[ishodnik$age==1], ma
 dev.off()
 embedFonts("boxplot_length_1+_area.pdf") #встройка шрифтов в файл
 
+#boxplot по участкам + горизонтам (1+)
+boxplot(ishodnik$Length.mm[ishodnik$age==1] ~ ishodnik$area[ishodnik$age==1] + ishodnik$tidal_level[ishodnik$age==1], main="длина раковины Macoma balthica на разных участках", xlab="участок", ylab="L,мм")
+
+#boxplot по горизонтам (1+)
+boxplot(ishodnik$Length.mm[ishodnik$age==1] ~ ishodnik$tidal_level[ishodnik$age==1], main="длина раковины Macoma balthica на разных горизонтах литорали", xlab="горизонт литорали", ylab="L,мм")
+
 #boxplot по участкам (кольцо1)
 pdf(file="boxplot_length_1kolco_area.pdf", family="NimbusSan") # указываем шрифт подпией
 boxplot(ishodnik$k1 ~ ishodnik$area, main="длина первого кольца Macoma balthica на разных участках", xlab="участок", ylab="L,мм")
@@ -79,8 +86,16 @@ write.table(anova(lm(ishodnik$k1 ~ ishodnik$area * ishodnik$age)), file="anova_k
 
 write.table(anova(lm(ishodnik$Length.mm[ishodnik$age==1] ~ ishodnik$area[ishodnik$age==1])), file="anova_1+.csv", sep=";", dec=",")
 
+# и дисперсионка влияние учатска и горизонта на длину раковины 1+ в июле
+write.table(anova(lm(ishodnik$Length.mm[ishodnik$age==1] ~ ishodnik$area[ishodnik$age==1] * ishodnik$tidal_level[ishodnik$age==1])), file="anova_1+.csv", sep=";", dec=",")
+
+# и дисперсионка влияние горизонта на длину раковины 1+ отдельно на Горелом
+write.table(anova(lm(ishodnik$Length.mm[ishodnik$age==1 & ishodnik$area=="Goreliy"] ~ ishodnik$tidal_level[ishodnik$age==1 & ishodnik$area=="Goreliy"])), file="anova_1+.csv", sep=";", dec=",")
+
+
 #oneway.test(ishodnik$Length.mm[ishodnik$age==1] ~ ishodnik$area[ishodnik$age==1])
 #kruskal.test(ishodnik$Length.mm[ishodnik$age==1] ~ ishodnik$area[ishodnik$age==1])
+
 
 #пробую отделить 1+
 

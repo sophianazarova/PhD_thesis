@@ -15,12 +15,27 @@ Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 size.str.df<-as.data.frame(size.str.table) # как таблица данных
 
 #убираем те пробы которых на самом деле нету
-for (i in 1:length(levels(size.str.df$year)))
-{ (xxx<-size.str.df$sample[size.str.df$year==levels(size.str.df$year)[i] ]%in%
-     samples.names$sample[samples.names$year==levels(size.str.df$year)[i]])
+
+#for (i in 1:length(levels(size.str.df$year))){
+#    (xxx<-size.str.df$sample[size.str.df$year==levels(size.str.df$year)[i]]%in%
+#       samples.names$sample[samples.names$year==levels(size.str.df$year)[i]])
+#    antixxx<-as.logical(1-xxx)
+#    size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i] ][antixxx]<-NA
+#  }
+
+
+for (i in 1:length(levels(size.str.df$year))){
+    for(j in 1:length(levels(size.str.df$tidal_level))){
+    (xxx<-size.str.df$sample[size.str.df$year==levels(size.str.df$year)[i] & 
+                               size.str.df$tidal_level==levels(size.str.df$tidal_level)[j]]%in%
+     samples.names$sample[samples.names$year==levels(size.str.df$year)[i] & 
+                            samples.names$tidal_level==levels(size.str.df$tidal_level)[j]])
   antixxx<-as.logical(1-xxx)
-  size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i]][antixxx]<-NA
-}
+  size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i] & 
+                     size.str.df$tidal_level==levels(size.str.df$tidal_level)[j]][antixxx]<-NA
+}}
+
+
 
 subset(size.str.df, size.str.df$year=="1995" & size.str.df$sample=="mg4")
 # SUBSET - для фильтрации таблицы данных
@@ -276,9 +291,10 @@ for (i in 1:ncol(N.mean.sqmeter))
  arrows(x0=as.numeric(rownames(N.mean.sqmeter)), x1=as.numeric(rownames(N.mean.sqmeter)),
         y0=N.mean.sqmeter[,i]-N.sem.sqmeter[,i], y1=N.mean.sqmeter[,i]+N.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
 }
-legend(legend=colnames(N.mean.sqmeter),x=2002, y=10666, pch=seq(15,15+ncol(N.mean.sqmeter),1), col=seq(1,1+ncol(N.mean.sqmeter),1))
+legend(legend=colnames(N.mean.sqmeter),x=2004, y=42965, pch=seq(15,15+ncol(N.mean.sqmeter),1), col=seq(1,1+ncol(N.mean.sqmeter),1))
 dev.off()
 embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
+
 
 
 ## динамика без молод ( больше 2+)
@@ -304,14 +320,16 @@ for (i in 1:ncol(N2.mean.sqmeter))
  arrows(x0=as.numeric(rownames(N2.mean.sqmeter)), x1=as.numeric(rownames(N2.mean.sqmeter)),
         y0=N2.mean.sqmeter[,i]-N2.sem.sqmeter[,i], y1=N2.mean.sqmeter[,i]+N2.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
 }
-legend(legend=colnames(N2.mean.sqmeter),x=2002, y=2468, pch=seq(15,15+ncol(N2.mean.sqmeter),1), col=seq(1,1+ncol(N2.mean.sqmeter),1))
+legend(legend=colnames(N2.mean.sqmeter),x=2005, y=8733, pch=seq(15,15+ncol(N2.mean.sqmeter),1), col=seq(1,1+ncol(N2.mean.sqmeter),1))
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
+
+#locator()
 
 ##про численность 2+
 (N2.sqmeter.high<-(N2.sqmeter)[,,1])
 (N2.92.12.df.high<-data.frame(subset(samples.names, samples.names$tidal_level=="high"),
-                             as.vector(t(N2.sqmeter.high))[!is.na(as.vector(t(N2.sqmeter.high)))])
+                             as.vector(t(N2.sqmeter.high))[!is.na(as.vector(t(N2.sqmeter.high)))]))
 (N2.sqmeter.high[!is.na(N2.sqmeter.high)])
 
 kruskal.test(N2.92.98.df$as.vector.N2.92.98...is.na.as.vector.N2.92.98... ~ N2.92.98.df$year)
@@ -319,9 +337,84 @@ boxplot(N2.92.98.df$as.vector.N2.92.98...is.na.as.vector.N2.92.98... ~ N2.92.98.
 
 str(as.data.frame(N2.sqmeter))
 as.data.frame(t(N2.sqmeter[15:17,,"low"]))
-N2.sqmeter[15:17,,"low"]
-N2.sqmeter[15:17,,"low"]
+ 
 
+#install.packages("reshape2") - пеерстройка объектов построчно
+#install.packages("doBy") - считать по датафрейму
+#library(doBy)
+#example(summaryBy) 
+
+#делаем таблицу данных с годами, где станции взяты по пробам, а не интегрально. после чего - краскел-уоллис
+#high
+#as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"high"])[!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"high"]))]
+(N2.high<-subset(samples.names, subset=samples.names$tidal_level=="high"))
+(N2.multisample.high<-data.frame(subset(N2.high, subset= N2.high$year==2004 | 
+                                         N2.high$year==2006 | N2.high$year==2007 | N2.high$year==2008 | 
+                                         N2.high$year==2011), 
+                                as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"high"])
+                                [!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"high"]))]))
+kruskal.test(N2.multisample.high$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... ~ N2.multisample.high$year)
+
+#mean, d
+mean(N2.multisample.high$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)
+
+(sd(N2.multisample.high$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... )/
+   sqrt(length(N2.multisample.high$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... )))/
+  mean(N2.multisample.high$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)*100
+
+#middle
+#as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"middle"])[!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"middle"]))]
+(N2.middle<-subset(samples.names, subset=samples.names$tidal_level=="middle"))
+(N2.multisample.middle<-data.frame(subset(N2.middle, subset= N2.middle$year==2004 | 
+                                         N2.middle$year==2006 | N2.middle$year==2007 | N2.middle$year==2008 | 
+                                         N2.middle$year==2011), 
+                                as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"middle"])
+                                [!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"middle"]))]))
+kruskal.test(N2.multisample.middle$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... ~ N2.multisample.middle$year)
+
+#mean, d
+mean(N2.multisample.middle$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)
+
+(sd(N2.multisample.middle$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... )/
+   sqrt(length(N2.multisample.middle$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... )))/
+  mean(N2.multisample.middle$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)*100
+
+#midlow
+#as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"midlow"])[!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"midlow"]))]
+(N2.midlow<-subset(samples.names, subset=samples.names$tidal_level=="midlow"))
+(N2.multisample.midlow<-data.frame(subset(N2.midlow, subset= N2.midlow$year==2004 | 
+                                         N2.midlow$year==2006 | N2.midlow$year==2007 | N2.midlow$year==2008 | 
+                                         N2.midlow$year==2011), 
+                                as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"midlow"])
+                                [!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"midlow"]))]))
+kruskal.test(N2.multisample.midlow$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... ~ N2.multisample.midlow$year)
+
+#mean,d
+mean(N2.multisample.midlow$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)
+
+(sd(N2.multisample.midlow$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... )/
+   sqrt(length(N2.multisample.midlow$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... )))/
+  mean(N2.multisample.midlow$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)*100
+
+#low 
+#as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"low"])[!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"low"]))]
+(N2.low<-subset(samples.names, subset=samples.names$tidal_level=="low"))
+ (N2.multisample.low<-data.frame(subset(N2.low, subset= N2.low$year==2004 | 
+                             N2.low$year==2006 | N2.low$year==2007 | N2.low$year==2008 | 
+                             N2.low$year==2011), 
+                                 as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"low"])
+                                 [!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"low"]))]))
+kruskal.test(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... ~ N2.multisample.low$year)
+
+#mean, d
+mean(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)
+
+(sd(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... )/
+   sqrt(length(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... )))/
+  mean(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)*100
+
+ 
+ 
  ##динамика максимального размера
 str(ishodnik)
 (Length.max<-tapply(Length.mm, list(year, tidal_level), max, na.rm=T))
