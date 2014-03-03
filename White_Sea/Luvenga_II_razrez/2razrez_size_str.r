@@ -1,6 +1,9 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Luvenga_II_razrez/")
 #setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Luvenga_II_razrez/")
 
+#на всякий случай отключили исходний от предыдущего файла
+detach(ishodnik)
+
 ## размерная структура средние по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
@@ -8,6 +11,7 @@ samples.names<-read.table(file="sample.csv", sep=";", dec=",", head=T)
 attach(ishodnik)
 #year<-factor(year)
 str(ishodnik)
+ishodnik$tidal_level<-ordered(x=ishodnik$tidal_level, levels=c("high_beatch", "fucus_zone", "zostera_zone", "low_beatch"))
 
 Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 
@@ -16,14 +20,27 @@ Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 size.str.df<-as.data.frame(size.str.table) # как таблица данных
 
 #убираем те пробы которых на самом деле нету
-for (i in 1:length(levels(size.str.df$year)))
-{ (xxx<-size.str.df$sample[size.str.df$year==levels(size.str.df$year)[i] ]%in%
-     samples.names$sample[samples.names$year==levels(size.str.df$year)[i]])
-  antixxx<-as.logical(1-xxx)
-  size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i]][antixxx]<-NA
-}
+
+#for (i in 1:length(levels(size.str.df$year)))
+#{ (xxx<-size.str.df$sample[size.str.df$year==levels(size.str.df$year)[i] ]%in%
+#     samples.names$sample[samples.names$year==levels(size.str.df$year)[i]])
+#  antixxx<-as.logical(1-xxx)
+#  size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i]][antixxx]<-NA
+#}
+
+for (i in 1:length(levels(size.str.df$year))){
+  for(j in 1:length(levels(size.str.df$tidal_level))){
+    (xxx<-size.str.df$sample[size.str.df$year==levels(size.str.df$year)[i] & 
+                               size.str.df$tidal_level==levels(size.str.df$tidal_level)[j]]%in%
+       samples.names$sample[samples.names$year==levels(size.str.df$year)[i] & 
+                              samples.names$tidal.level==levels(size.str.df$tidal_level)[j]])
+    antixxx<-as.logical(1-xxx)
+    size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i] & 
+                       size.str.df$tidal_level==levels(size.str.df$tidal_level)[j]][antixxx]<-NA
+  }}
 
 
+summary(size.str.df, na.rm=T)
 # SUBSET - для фильтрации таблицы данных
 # APPLY - кто-то из них для средней и СД по фрейму
 
@@ -260,6 +277,7 @@ for (j in 1:length(colnames(mean.sqmeter2.low_beatch)))
   N.mean.sqmeter[11,3]<-NA
 (N.sd.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=sd))
 (N.sem.sqmeter<-N.sd.sqmeter/sqrt(n.samples))
+(D.n<-N.sem.sqmeter/N.mean.sqmeter*100)
 
 pdf(file="N_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N.mean.sqmeter[,1], x=as.numeric(rownames(N.mean.sqmeter)), type="n", main="Материковая литораль в районе пос. Лувеньга",
@@ -271,9 +289,22 @@ for (i in 1:ncol(N.mean.sqmeter))
 arrows(x0=as.numeric(rownames(N.mean.sqmeter)), x1=as.numeric(rownames(N.mean.sqmeter)),
        y0=N.mean.sqmeter[,i]-N.sem.sqmeter[,i], y1=N.mean.sqmeter[,i]+N.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
  }
-legend(legend=colnames(N.mean.sqmeter),x=2000, y=7996, pch=seq(15,15+ncol(N.mean.sqmeter),1), col=seq(1,1+ncol(N.mean.sqmeter),1))
+legend(legend=colnames(N.mean.sqmeter),x=2000, y=24777, pch=seq(15,15+ncol(N.mean.sqmeter),1), col=seq(1,1+ncol(N.mean.sqmeter),1))
 dev.off()
 embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
+
+
+#техническая картинка чтобы понять как устроена нижняя часть графика, без выпадающего 1998 года
+plot(y=N.mean.sqmeter[,1], x=as.numeric(rownames(N.mean.sqmeter)), type="n", main="Материковая литораль в районе пос. Лувеньга",
+     #     ylim=c(min(N.mean.sqmeter, na.rm=T)-max(N.sem.sqmeter, na.rm=T), max(N.mean.sqmeter, na.rm=T)+max(N.sem.sqmeter, na.rm=T)),
+     ylim=c(0, 5000), 
+     xlab="год", ylab="N, экз./кв.м")
+for (i in 1:ncol(N.mean.sqmeter))
+{lines(as.numeric(rownames(N.mean.sqmeter)), N.mean.sqmeter[,i], pch=14+i, col=0+i, type="b")
+ arrows(x0=as.numeric(rownames(N.mean.sqmeter)), x1=as.numeric(rownames(N.mean.sqmeter)),
+        y0=N.mean.sqmeter[,i]-N.sem.sqmeter[,i], y1=N.mean.sqmeter[,i]+N.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
+}
+
 
 ## динамика без молод ( больше 2+)
 (N2.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"],
@@ -284,8 +315,14 @@ embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 N2.mean.sqmeter[11,3]<-NA
 (N2.sd.sqmeter<-apply(N2.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=sd))
 (N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples))
+(D.n2<-N.sem.sqmeter/N.mean.sqmeter*100)
 
-write.table(N2.mean.sqmeter, file="2razrez_N2.csv", sep=";", dec=",")
+# запишем численность всех крупнее 1 мм в файл
+write.table(data.frame(N2.mean.sqmeter, N2.sem.sqmeter), file="2razrez_N2.csv", sep=";", dec=",")
+
+# запишем пересчет обилия >1мм в пробах на квадратный метр в файл
+write.table(as.data.frame(as.table(N2.sqmeter)), file="2razrez_N2_in samples_sqmeter.csv", sep=";", dec=",")
+
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter[,1], x=as.numeric(rownames(N2.mean.sqmeter)), type="n", main="Материковая литораль в районе пос. Лувеньга",
@@ -297,9 +334,107 @@ for (i in 1:ncol(N2.mean.sqmeter))
  arrows(x0=as.numeric(rownames(N2.mean.sqmeter)), x1=as.numeric(rownames(N2.mean.sqmeter)),
         y0=N2.mean.sqmeter[,i]-N2.sem.sqmeter[,i], y1=N2.mean.sqmeter[,i]+N2.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
 }
-legend(legend=colnames(N2.mean.sqmeter),x=2000, y=7996, pch=seq(15,15+ncol(N2.mean.sqmeter),1), col=seq(1,1+ncol(N2.mean.sqmeter),1))
+legend(legend=colnames(N2.mean.sqmeter),x=1992, y=12749, pch=seq(15,15+ncol(N2.mean.sqmeter),1), col=seq(1,1+ncol(N2.mean.sqmeter),1))
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
+
+#locator()
+
+#техническая картинка чтобы понять как устроена нижняя часть графика, без выпадающего 1998 года
+plot(y=N2.mean.sqmeter[,1], x=as.numeric(rownames(N.mean.sqmeter)), type="n", main="Материковая литораль в районе пос. Лувеньга",
+     #     ylim=c(min(N.mean.sqmeter, na.rm=T)-max(N.sem.sqmeter, na.rm=T), max(N.mean.sqmeter, na.rm=T)+max(N.sem.sqmeter, na.rm=T)),
+     ylim=c(0, 5000), 
+     xlab="год", ylab="N, экз./кв.м")
+for (i in 1:ncol(N2.mean.sqmeter))
+{lines(as.numeric(rownames(N2.mean.sqmeter)), N2.mean.sqmeter[,i], pch=14+i, col=0+i, type="b")
+ arrows(x0=as.numeric(rownames(N2.mean.sqmeter)), x1=as.numeric(rownames(N2.mean.sqmeter)),
+        y0=N2.mean.sqmeter[,i]-N2.sem.sqmeter[,i], y1=N2.mean.sqmeter[,i]+N2.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
+}
+
+##про N2
+#доля молоди
+(N.mean.sqmeter-N2.mean.sqmeter)/N.mean.sqmeter*100
+
+# сравниваем обилие до 1998 года краскел уоллисом. для этого делаем выборку для каждой зоны нужные года по пробам
+#high_beatch
+(N2.high_beatch<-subset(samples.names, subset=samples.names$tidal.level=="high_beatch"))
+(N2.92.98.high_beatch<-data.frame(subset(N2.high_beatch, subset= N2.high_beatch$year<=1997), 
+                                 as.vector(N2.sqmeter[c(as.character(seq(1992,1997,1))),,"high_beatch"])
+                                 [!is.na(as.vector(N2.sqmeter[c(as.character(seq(1992,1997,1))),,"high_beatch"]))]))
+kruskal.test(N2.92.98.high_beatch$as.vector.N2.sqmeter.c.as.character.seq.1992..1997..1........high_beatch.....is.na.as.vector.N2.sqmeter.c.as.character.seq.1992..
+             ~ N2.92.98.high_beatch$year)
+#mean, d
+mean(N2.92.98.high_beatch$as.vector.N2.sqmeter.c.as.character.seq.1992..1997..1........high_beatch.....is.na.as.vector.N2.sqmeter.c.as.character.seq.1992..)
+
+sd(N2.92.98.high_beatch$as.vector.N2.sqmeter.c.as.character.seq.1992..1997..1........high_beatch.....is.na.as.vector.N2.sqmeter.c.as.character.seq.1992..)/
+   sqrt(length((N2.92.98.high_beatch$as.vector.N2.sqmeter.c.as.character.seq.1992..1997..1........high_beatch.....is.na.as.vector.N2.sqmeter.c.as.character.seq.1992..)))/
+  mean(N2.92.98.high_beatch$as.vector.N2.sqmeter.c.as.character.seq.1992..1997..1........high_beatch.....is.na.as.vector.N2.sqmeter.c.as.character.seq.1992..)*100
+
+#fucus_zone
+(N2.fucus_zone<-subset(samples.names, subset=samples.names$tidal.level=="fucus_zone"))
+(N2.92.98.fucus_zone<-data.frame(subset(N2.fucus_zone, subset= N2.fucus_zone$year<=1997), 
+                                  as.vector(N2.sqmeter[c(as.character(seq(1992,1997,1))),,"fucus_zone"])
+                                  [!is.na(as.vector(N2.sqmeter[c(as.character(seq(1992,1997,1))),,"fucus_zone"]))]))
+kruskal.test(N2.92.98.fucus_zone$as.vector.N2.sqmeter.c.as.character.seq.1992..1997..1........fucus_zone.....is.na.as.vector.N2.sqmeter.c.as.character.seq.1992..
+             ~ N2.92.98.fucus_zone$year)
+#отличаются!
+
+#fucus_zone
+(N2.fucus_zone<-subset(samples.names, subset=samples.names$tidal.level=="fucus_zone"))
+(N2.92.98.fucus_zone<-data.frame(subset(N2.fucus_zone, subset= N2.fucus_zone$year<=1997), 
+                                 as.vector(N2.sqmeter[c(as.character(seq(1992,1997,1))),,"fucus_zone"])
+                                 [!is.na(as.vector(N2.sqmeter[c(as.character(seq(1992,1997,1))),,"fucus_zone"]))]))
+kruskal.test(N2.92.98.fucus_zone$as.vector.N2.sqmeter.c.as.character.seq.1992..1997..1........fucus_zone.....is.na.as.vector.N2.sqmeter.c.as.character.seq.1992..
+             ~ N2.92.98.fucus_zone$year)
+#отличаются!
+
+##размерная структура в %
+str(size.str.sqmeter)
+
+#high_beatch
+(sum.sizestr.sqmeter.high_beatch<-t(tapply(high_beatch$Freq,INDEX=list(high_beatch$year, high_beatch$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.high_beatch<-t(t(sum.sizestr.sqmeter.high_beatch)/colSums(sum.sizestr.sqmeter.high_beatch))*100)
+
+
+
+#>1mm
+(sum.sizestr2.sqmeter.percents.high_beatch<-t(t(sum.sizestr.sqmeter.high_beatch[2:nrow(sum.sizestr.sqmeter.high_beatch),])/
+   colSums(sum.sizestr.sqmeter.high_beatch[2:nrow(sum.sizestr.sqmeter.high_beatch),])*100))
+
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents.high_beatch, file="2razrez_high_beatch_sizestr2_percent.csv", sep=";", dec=",")
+
+#fucus_zone
+(sum.sizestr.sqmeter.fucus_zone<-t(tapply(fucus_zone$Freq,INDEX=list(fucus_zone$year, fucus_zone$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.fucus_zone<-t(t(sum.sizestr.sqmeter.fucus_zone)/colSums(sum.sizestr.sqmeter.fucus_zone)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.fucus_zone<-t(t(sum.sizestr.sqmeter.fucus_zone[2:nrow(sum.sizestr.sqmeter.fucus_zone),])/
+   colSums(sum.sizestr.sqmeter.fucus_zone[2:nrow(sum.sizestr.sqmeter.fucus_zone),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents.fucus_zone, file="2razrez_fucus_zone_sizestr2_percent.csv", sep=";", dec=",")
+
+#zostera_zone
+(sum.sizestr.sqmeter.zostera_zone<-t(tapply(zostera_zone$Freq,INDEX=list(zostera_zone$year, zostera_zone$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.zostera_zone<-t(t(sum.sizestr.sqmeter.zostera_zone)/colSums(sum.sizestr.sqmeter.zostera_zone)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.zostera_zone<-t(t(sum.sizestr.sqmeter.zostera_zone[2:nrow(sum.sizestr.sqmeter.zostera_zone),])/
+   colSums(sum.sizestr.sqmeter.zostera_zone[2:nrow(sum.sizestr.sqmeter.zostera_zone),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents.zostera_zone, file="2razrez_zostera_zone_sizestr2_percent.csv", sep=";", dec=",")
+
+#low_beatch
+(sum.sizestr.sqmeter.low_beatch<-t(tapply(low_beatch$Freq,INDEX=list(low_beatch$year, low_beatch$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.low_beatch<-t(t(sum.sizestr.sqmeter.low_beatch/colSums(sum.sizestr.sqmeter.low_beatch)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.low_beatch<-t(t(sum.sizestr.sqmeter.low_beatch[2:nrow(sum.sizestr.sqmeter.low_beatch),])/
+   colSums(sum.sizestr.sqmeter.low_beatch[2:nrow(sum.sizestr.sqmeter.low_beatch),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents.low_beatch, file="2razrez_low_beatch_sizestr2_percent.csv", sep=";", dec=",")
+
 
 ## динамика максимального размера
 str(ishodnik)

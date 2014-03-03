@@ -1,6 +1,8 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Ryashkov_YuG//")
 #setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Ryashkov_YuG//")
 
+#на всякий случай отключили исходний от предыдущего файла
+detach(ishodnik)
 
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
@@ -131,7 +133,12 @@ N2.sd.sqmeter<-apply(N2.sqmeter, 2, sd, na.rm=T)
 N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples)
 (D.n2<-N2.sem.sqmeter/N2.mean.sqmeter*100)
 
-write.table(N2.mean.sqmeter, file="YuG_N2.csv", sep=";", dec=",")
+# запишем численность всех крупнее 1 мм в файл
+write.table(data.frame(N2.mean.sqmeter, N2.sem.sqmeter), file="YuG_N2.csv", sep=";", dec=",")
+
+# запишем пересчет обилия >1мм в пробах на квадратный метр в файл
+write.table(as.data.frame(as.table(N2.sqmeter)), file="YuG_N2_in samples_sqmeter.csv", sep=";", dec=",")
+
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter, x=names(N2.mean.sqmeter),pch=15, main="Южная губа о. Ряшкова",
@@ -171,6 +178,17 @@ boxplot(N2.01.10.df$as.vector.N2.01.10...is.na.as.vector.N2.01.10... ~ N2.01.10.
 (tukey.01.10<-TukeyHSD(aov(lm(N2.01.10.df$as.vector.N2.01.10...is.na.as.vector.N2.01.10... ~ as.factor(N2.01.10.df$year)))))
 write.table(tukey.01.10$'as.factor(N2.01.10.df$year)', file="tukey_92_98.csv", dec=",", sep=";")
 
+
+##размерная структура в %
+(sum.sizestr.sqmeter<-t(tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents<-t(t(sum.sizestr.sqmeter)/colSums(sum.sizestr.sqmeter)*100))
+
+#>1mm
+(sum.sizestr2.sqmeter.percents<-t(t(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])/
+                                    colSums(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents, file="YuG_sizestr2_percent.csv", sep=";", dec=",")
 
 ## динамика максимального размера
 str(ishodnik)
@@ -219,6 +237,10 @@ biomass2.count<-0.00016*(Length.mm[Length.mm>1.0]^2.96)
 n.samples<-tapply(samples.names$sample,samples.names$year, length )
 (B2.sem.sqmeter<-B.sd.sqmeter/sqrt(n.samples))
 (D.b2<-B2.sem.sqmeter/B2.mean.sqmeter*100)
+
+#запишем в файл рассчетную биомассу
+write.table(data.frame(B2.mean.sqmeter, B2.sem.sqmeter), file="estuary_B2_mean.csv",sep=";", dec=",")
+
 
 pdf(file="B2_count_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=B2.mean.sqmeter, x=names(B2.mean.sqmeter),pch=15, main="Южная губа о. Ряшков", 

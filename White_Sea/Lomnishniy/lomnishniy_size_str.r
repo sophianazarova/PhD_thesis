@@ -1,6 +1,9 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Lomnishniy/")
 #setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Lomnishniy/")
 
+#на всякий случай отключили исходний от предыдущего файла
+detach(ishodnik)
+
 ## размерная структура суммарно по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
@@ -32,6 +35,7 @@ for (i in 1:length(levels(size.str.sqmeter$year)))
 {
   size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]]<-size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]] * samples.squares$square[samples.squares$year==levels(size.str.sqmeter$year)[i]]
 }
+
 
 n.samples<-tapply(samples.names$sample,samples.names$year, length )
 
@@ -134,7 +138,12 @@ embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples)
 (D.n2<-N2.sem.sqmeter/N2.mean.sqmeter*100)
 
-write.table(N2.mean.sqmeter, file="lomnishniy_N2.csv", sep=";", dec=",")
+# запишем численность всех крупнее 1 мм в файл
+write.table(data.frame(N2.mean.sqmeter, N2.sem.sqmeter), file="Lomnishniy_N2.csv", sep=";", dec=",")
+
+# запишем пересчет обилия >1мм в пробах на квадратный метр в файл
+write.table(as.data.frame(as.table(N2.sqmeter)), file="Lomnishniy_N2_in samples_sqmeter.csv", sep=";", dec=",")
+
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter, x=names(N2.mean.sqmeter),pch=15, main="о. Ломнишный",
@@ -182,6 +191,16 @@ N2.sem..07.12<-N2.sd.07.12/sqrt(sum(n.samples[1:(2012-2007+1)]))
 (D.n2..07.12<-N2.sem.07.12/N2.mean.01.10*100)
 
 
+##размерная структура в %
+(sum.sizestr.sqmeter<-t(tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents<-t(t(sum.sizestr.sqmeter)/colSums(sum.sizestr.sqmeter)*100))
+
+#>1mm
+(sum.sizestr2.sqmeter.percents<-t(t(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])/
+                                    colSums(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])*100))
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents, file="lomnishniy_sizestr2_percent.csv", sep=";", dec=",")
+
 ## динамика максимального размера
 str(ishodnik)
 (Length.max<-tapply(Length.mm, year, max, na.rm=T))
@@ -224,10 +243,13 @@ biomass2.count<-0.00016*(Length.mm[Length.mm>1.0]^2.96)
 (biomass2.sqmeter<-biomass2.samples*samples.squares$square)
 
 (B2.mean.sqmeter<-rowMeans(biomass2.sqmeter, na.rm=T))
-(B2.sd.sqmeter<-apply(biomass.sqmeter, 1, sd, na.rm=T))
+(B2.sd.sqmeter<-apply(biomass2.sqmeter, 1, sd, na.rm=T))
 n.samples<-tapply(samples.names$sample,samples.names$year, length )
-(B2.sem.sqmeter<-B.sd.sqmeter/sqrt(n.samples))
+(B2.sem.sqmeter<-B2.sd.sqmeter/sqrt(n.samples))
 (D.b2<-B2.sem.sqmeter/B2.mean.sqmeter*100)
+
+#запишем в файл рассчетную биомассу
+write.table(data.frame(B2.mean.sqmeter, B2.sem.sqmeter), file="lomnishniy_B2_mean.csv",sep=";", dec=",")
 
 pdf(file="B2_count_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=B2.mean.sqmeter, x=names(B2.mean.sqmeter),pch=15, main="о. Ломнишный", 

@@ -8,6 +8,7 @@ library("ncf")
 Pala.08<-read.table("Pala_autumn_2008.csv", header=T, sep=";", dec=",")
 str(Pala.08)
 
+#для всех видов считаем автокорреляции и рисуем коррелограмму
 for (i in 4:ncol(Pala.08)) {
   assign(paste("Pala_moran",colnames(Pala.08)[i],sep="_"),correlog(x=Pala.08$X, y=Pala.08$Y, z=Pala.08[,i], increment=100, resamp=1000))
 
@@ -36,7 +37,7 @@ Plyazh.07<-read.table(file="Dalnezeleneckaya_2007.csv", header=T, sep=";", dec="
 str(Plyazh.07)
 summary(Plyazh.07)
 
-
+#для всех видов считаем автокорреляции и рисуем коррелограмму
 for (i in 4:ncol(Plyazh.07)) {
   assign(paste("Plyazh07_moran",colnames(Plyazh.07)[i],sep="_"),
          correlog(x=Plyazh.07$X, y=Plyazh.07$Y, z=Plyazh.07[,i], increment=100, resamp=1000, na.rm=T))
@@ -65,7 +66,7 @@ Plyazh.081<-read.table(file="Dalnezeleneckaya_kv1_2008.csv", header=T, sep=";", 
 str(Plyazh.081)
 summary(Plyazh.081)
 
-
+#для всех видов считаем автокорреляции и рисуем коррелограмму
 for (i in 4:ncol(Plyazh.081)) {
   assign(paste("Plyazh081_moran",colnames(Plyazh.081)[i],sep="_"),
          correlog(x=Plyazh.081$X, y=Plyazh.081$Y, z=Plyazh.081[,i], increment=100, resamp=1000))
@@ -81,7 +82,7 @@ Plyazh.082<-read.table(file="Dalnezeleneckaya_kv2_2008.csv", header=T, sep=";", 
 str(Plyazh.082)
 summary(Plyazh.082)
 
-
+#для всех видов считаем автокорреляции и рисуем коррелограмму
 for (i in 4:ncol(Plyazh.082)) {
   assign(paste("Plyazh082_moran",colnames(Plyazh.082)[i],sep="_"),
          correlog(x=Plyazh.082$X, y=Plyazh.082$Y, z=Plyazh.082[,i], increment=100, resamp=1000))
@@ -97,7 +98,7 @@ Plyazh.0812<-read.table(file="Dalnezeleneckaya_kv12_2008.csv", header=T, sep=";"
 str(Plyazh.0812)
 summary(Plyazh.0812)
 
-
+#для всех видов считаем автокорреляции и рисуем коррелограмму
 for (i in 4:ncol(Plyazh.0812)) {
   assign(paste("Plyazh0812_moran",colnames(Plyazh.0812)[i],sep="_"),
          correlog(x=Plyazh.0812$X, y=Plyazh.0812$Y, z=Plyazh.0812[,i], increment=100, resamp=1000))
@@ -113,7 +114,7 @@ Yarn.07<-read.table(file="Yarnyshnaya_2007.csv", header=T, sep=";", dec=",")
 str(Yarn.07)
 summary(Yarn.07)
 
-
+#для всех видов считаем автокорреляции и рисуем коррелограмму
 for (i in 4:ncol(Yarn.07)) {
   assign(paste("Yarn07_moran",colnames(Yarn.07)[i],sep="_"),
          correlog(x=Yarn.07$X, y=Yarn.07$Y, z=Yarn.07[,i], increment=100, resamp=1000, na.rm=T))
@@ -123,3 +124,29 @@ for (i in 4:ncol(Yarn.07)) {
   dev.off()
   embedFonts(paste("Yarnyshnaya07_moran",colnames(Yarn.07)[i], ".pdf",sep="_")) #встройка шрифтов в файл
 }
+
+## Пала осень 2008 корреляции маком разного возраста
+Pala.macoma.ages<-read.table("Pala_Macoma_ages.csv", header=T, sep=";", dec=",")
+str(Pala.macoma.ages)
+
+for (i in 4:ncol(Pala.macoma.ages)) {
+  assign(paste("Pala_macoma_age",colnames(Pala.macoma.ages)[i],sep="_"),
+         correlog(x=Pala.macoma.ages$X, y=Pala.macoma.ages$Y, z=Pala.macoma.ages[,i], increment=100, resamp=1000, na.rm=T))
+
+  pdf(file=paste("Pala_macoma_age",colnames(Pala.macoma.ages)[i], ".pdf",sep="_"), family="NimbusSan") # указываем шрифт подпией
+  plot(correlog(x=Pala.macoma.ages$X, y=Pala.macoma.ages$Y, z=Pala.macoma.ages[,i], increment=100, resamp=1000, na.rm=T))
+  dev.off()
+  embedFonts(paste("Pala_macoma_age",colnames(Pala.macoma.ages)[i], ".pdf",sep="_")) #встройка шрифтов в файл
+}
+
+#кросскорреляции
+
+for (i in 4:(ncol(Plyazh.07)-1)) {
+  for(j in (i+1):ncol(Plyazh.07)){
+    assign(paste("Plyazh_07_cross",colnames(Plyazh.07)[i],colnames(Plyazh.07)[j],sep="_"),correlog(x=Plyazh.07$X, y=Plyazh.07$Y, z=Plyazh.07[,i], w=Plyazh.07[,j], na.rm=T, increment=100, resamp=1000))
+    
+    pdf(file=paste("Plyazh_07_cross",colnames(Plyazh.07)[i], colnames(Plyazh.07)[j], ".pdf",sep="_"), family="NimbusSan") # указываем шрифт подпией
+    plot(correlog(x=Plyazh.07$X, y=Plyazh.07$Y, z=Plyazh.07[,i], w=Plyazh.07[,j], increment=100, resamp=1000, na.rm=T))
+    dev.off()
+    embedFonts(paste("Plyazh_07_cross",colnames(Plyazh.07)[i], colnames(Plyazh.07)[j], ".pdf",sep="_")) #встройка шрифтов в файл
+  }}

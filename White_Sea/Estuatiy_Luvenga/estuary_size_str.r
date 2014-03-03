@@ -1,6 +1,8 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Estuatiy_Luvenga")
 #setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Estuatiy_Luvenga")
 
+#на всякий случай отключили исходний от предыдущего файла
+detach(ishodnik)
 
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
@@ -46,7 +48,7 @@ n.samples<-tapply(samples.names$sample,samples.names$year, length )
 mean.sqmeter.df<-as.data.frame(mean.sizestr.sqmeter)
 (sd.sizestr.sqmeter<-tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=sd, na.rm=T))
 
-n.samples<-tapply(samples.names$sample,samples.names$year, length )
+(n.samples<-tapply(samples.names$sample,samples.names$year, length ))
 
 (sem.sizestr.sqmeter <-t(sd.sizestr.sqmeter/sqrt(as.vector(n.samples))))
 sem.sqmeter.df<-as.data.frame(sem.sizestr.sqmeter)
@@ -61,6 +63,8 @@ n.samples<-tapply(samples.names$sample,samples.names$year, length )
 (sem.sizestr.sqmeter2<-t(sd.sizestr.sqmeter2/sqrt(as.vector(n.samples))))
 sem.sqmeter.df2<-as.data.frame(sem.sizestr.sqmeter2)
 
+apply(mean.sizestr.sqmeter2, 2, max)
+max(apply(mean.sizestr.sqmeter2, 2, max))
 
 length.class<-seq(1,20,1)
 length.class2<-seq(2,20,1)
@@ -78,8 +82,19 @@ error.bars<-function(yv,z,nn){
     lines(c(xv[i]-g,xv[i]+g),c(yv[i]-z[i], yv[i]-z[i]))
   }}
 
+error.bars.align<-function(yv,z,nn, yl){
+  xv<-
+    barplot(yv,names=nn,ylim=yl)#,ylab=deparse(substitute(yv)))
+  g=(max(xv)-min(xv))/50
+  for (i in 1:length(xv)) {
+    lines(c(xv[i],xv[i]),c(yv[i]+z[i],yv[i]-z[i]))
+    lines(c(xv[i]-g,xv[i]+g),c(yv[i]+z[i], yv[i]+z[i]))
+    lines(c(xv[i]-g,xv[i]+g),c(yv[i]-z[i], yv[i]-z[i]))
+  }}
 
-  for (j in 1:length(colnames(mean.sizestr.sqmeter)))
+
+
+for (j in 1:length(colnames(mean.sizestr.sqmeter)))
   {
     pdf(file=paste("sizestr", colnames(mean.sizestr.sqmeter)[j], ".pdf",sep="_"))
     error.bars(yv=mean.sizestr.sqmeter[,j], nn=length.class, z=sem.sizestr.sqmeter[,j])
@@ -91,10 +106,28 @@ error.bars<-function(yv,z,nn){
 for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
 {
   pdf(file=paste("sizestr2", colnames(mean.sizestr.sqmeter2)[j], ".pdf",sep="_"))
-  error.bars(yv=mean.sizestr.sqmeter2[,j], nn=length.class2, z=sem.sizestr.sqmeter2[,j])
+  error.bars(yv=mean.sizestr.sqmeter2[,j], nn=length.class2, z=sem.sizestr.sqmeter2[,j],)
   title(main=colnames(mean.sizestr.sqmeter2)[j], xlab="", ylab="")
   dev.off()
 }
+
+# >2 мм, с выровненными осями
+for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
+{
+  pdf(file=paste("sizestr2_align", colnames(mean.sizestr.sqmeter2)[j], ".pdf",sep="_"))
+  error.bars.align(yv=mean.sizestr.sqmeter2[,j], nn=length.class2, z=sem.sizestr.sqmeter2[,j],yl=c(0,1500))
+  title(main=colnames(mean.sizestr.sqmeter2)[j], xlab="", ylab="")
+  dev.off()
+}
+
+##попробовать нарисовать в lattice
+#library(lattice)
+#(mean.sqmeter.df1<-as.data.frame(as.table(mean.sizestr.sqmeter)))
+#barchart(mean.sqmeter.df1$Freq ~ mean.sqmeter.df1$Var1 | mean.sqmeter.df1$Var2, relation="free")
+
+#(mean.sqmeter.df21<-as.data.frame(as.table(mean.sizestr.sqmeter2)))
+#barchart(mean.sqmeter.df21$Freq ~ mean.sqmeter.df21$Var1 | mean.sqmeter.df21$Var2, relation="free")
+
 
 ## попытка построить трехмерный график
 #install.packages("lattice", "ggplot2")
@@ -146,7 +179,12 @@ N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples)
 #точность учета
 (D.n2<-N2.sem.sqmeter/N2.mean.sqmeter*100)
 
-write.table(N2.mean.sqmeter, file="estuary_N2.csv", sep=";", dec=",")
+# запишем численность всех крупнее 1 мм в файл
+write.table(data.frame(N2.mean.sqmeter, N2.sem.sqmeter), file="estuary_N2.csv", sep=";", dec=",")
+
+# запишем пересчет обилия >1мм в пробах на квадратный метр в файл
+write.table(as.data.frame(as.table(N2.sqmeter)), file="estuary_N2_in samples_sqmeter.csv", sep=";", dec=",")
+
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter, x=names(N2.mean.sqmeter),pch=15, main="Эстуарий р. Лувеньги", 
@@ -314,9 +352,15 @@ boxplot(N2.99.12.df$as.vector.N2.99.12...is.na.as.vector.N2.99.12... ~ N2.99.12.
 
 
 #размерная структура в %
-str(size.str.sqmeter)
 (sum.sizestr.sqmeter<-t(tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=sum, na.rm=T)))
-(sum.sizestr.sqmeter.percents<-sum.sizestr.sqmeter/colSums(sum.sizestr.sqmeter)*100)
+(sum.sizestr.sqmeter.percents<-t(t(sum.sizestr.sqmeter)/colSums(sum.sizestr.sqmeter)*100))
+
+#>1mm
+(sum.sizestr2.sqmeter.percents<-t(t(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])/
+                                    colSums(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents, file="estuary_sizestr2_percent.csv", sep=";", dec=",")
 
 for (j in 1:length(colnames(sum.sizestr.sqmeter.percents)))
 {
@@ -432,6 +476,9 @@ biomass2.count<-0.00016*(Length.mm[Length.mm>1.0]^2.96)
 n.samples<-tapply(samples.names$sample,samples.names$year, length )
 (B2.sem.sqmeter<-B2.sd.sqmeter/sqrt(n.samples))
 (D.b2<-B2.sem.sqmeter/B2.mean.sqmeter*100)
+
+#запишем в файл рассчетную биомассу
+write.table(data.frame(B2.mean.sqmeter, B2.sem.sqmeter), file="estuary_B2_mean.csv",sep=";", dec=",")
 
 pdf(file="B2_count_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=B2.mean.sqmeter, x=names(B2.mean.sqmeter),pch=15, main="Эстуарий р. Лувеньги", 

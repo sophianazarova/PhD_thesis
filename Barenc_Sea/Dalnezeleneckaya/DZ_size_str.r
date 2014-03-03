@@ -1,6 +1,9 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/Barenc_Sea/Dalnezeleneckaya/")
 #setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Estuatiy_Luvenga")
 
+#на всякий случай отключили исходний от предыдущего файла
+detach(ishodnik)
+
 
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.names<-read.table(file="sample.csv", sep=";", dec=",", head=T)
@@ -26,14 +29,24 @@ for (i in 1:length(levels(size.str.df$year)))
 # SUBSET - для фильтрации таблицы данных
 # APPLY - кто-то из них для средней и СД по фрейму
 
+###ТУТ ВСЕ НЕ ТАК!!! ПОТОМУ ЧТО ПЕРЕСЧЕТ НА КВАДРАТНЫЙ МЕТР НЕПРАВИЛЬНЫЙ!
 #теперь на квадратный метр
-size.str.sqmeter<-size.str.df
+(size.str.sqmeter<-size.str.df)
 for (i in 1:length(levels(size.str.sqmeter$year)))
-{
-  size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]]<-size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]] * samples.squares$square[samples.squares$year==levels(size.str.sqmeter$year)[i]]
+  {
+  x30<-size.str.sqmeter$sample[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i] ]%in%
+     samples.squares$sample[samples.squares$year==levels(size.str.sqmeter$year)[i] & samples.squares$square==30]
+  x10<-size.str.sqmeter$sample[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i] ]%in%
+          samples.squares$sample[samples.squares$year==levels(size.str.sqmeter$year)[i] & samples.squares$square==10]
+    
+  size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]][x30]<-
+    size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]][x30] * 30
+  size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]][x10]<-
+     size.str.sqmeter$Freq[size.str.sqmeter$year==levels(size.str.sqmeter$year)[i]][x10] * 10
 }
 
 n.samples<-tapply(samples.names$sample,samples.names$year, length )
+
 
 #subset(size.str.sqmeter,subset=size.str.sqmeter$year=="1992")
 
@@ -43,7 +56,7 @@ n.samples<-tapply(samples.names$sample,samples.names$year, length )
 mean.sqmeter.df<-as.data.frame(mean.sizestr.sqmeter)
 (sd.sizestr.sqmeter<-tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=sd, na.rm=T))
 
-n.samples<-tapply(samples.names$sample,samples.names$year, length )
+(n.samples<-tapply(samples.names$sample,samples.names$year, length ))
 
 (sem.sizestr.sqmeter <-t(sd.sizestr.sqmeter/sqrt(as.vector(n.samples))))
 sem.sqmeter.df<-as.data.frame(sem.sizestr.sqmeter)
@@ -135,7 +148,13 @@ N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples)
 #точность учета
 (D.n2<-N2.sem.sqmeter/N2.mean.sqmeter*100)
 
-write.table(N2.mean.sqmeter, file="DZ_N2.csv", sep=";", dec=",")
+# запишем численность всех крупнее 1 мм в файл
+write.table(data.frame(N2.mean.sqmeter, N2.sem.sqmeter), file="DZ_N2.csv", sep=";", dec=",")
+
+# запишем пересчет обилия >1мм в пробах на квадратный метр в файл
+write.table(as.data.frame(as.table(N2.sqmeter)), file="DZ_N2_in samples_sqmeter.csv", sep=";", dec=",")
+
+
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter, x=names(N2.mean.sqmeter),pch=15, main="г. Дальнезеленецкая", 
@@ -162,19 +181,16 @@ kruskal.test(N2.02.06.df$Freq ~ N2.02.06.df$Var2)
 (N2.03.06.df<-subset(N2.df, N2.df$Var2==2003 | N2.df$Var2==2004 | N2.df$Var2==2005| N2.df$Var2==2006 ))
 kruskal.test(N2.03.06.df$Freq ~ N2.03.06.df$Var2)
 boxplot(N2.03.06.df$Freq ~ N2.03.06.df$Var2)
-
-(N2.04.06.df<-subset(N2.df, N2.df$Var2==2004 | N2.df$Var2==2005| N2.df$Var2==2006 ))
-kruskal.test(N2.04.06.df$Freq ~ N2.04.06.df$Var2)
-N2.04.06.mean<-mean(N2.04.06.df$Freq, na.rm=T)
-N2.04.06.sd<-sd(N2.04.06.df$Freq, na.rm=T)
-N2.04.06.sem<-N2.04.06.sd/sum(!is.na(N2.04.06.df$Freq))
-N2.04.06.d<-N2.04.06.sem/N2.04.06.mean
+(N2.03.06.mean<-mean(N2.03.06.df$Freq, na.rm=T))
+(N2.03.06.sd<-sd(N2.03.06.df$Freq, na.rm=T))
+(N2.03.06.sem<-N2.03.06.sd/sum(!is.na(N2.03.06.df$Freq)))
+(N2.03.06.d<-N2.03.06.sem/N2.03.06.mean*100)
 
 (N2.07.08.df<-subset(N2.df, N2.df$Var2==2008 | N2.df$Var2==2007))
 (N2.07.08.mean<-mean(N2.07.08.df$Freq, na.rm=T))
 N2.07.08.sd<-sd(N2.07.08.df$Freq, na.rm=T)
 N2.07.08.sem<-N2.07.08.sd/sum(!is.na(N2.07.08.df$Freq))
-(N2.07.08.d<-N2.07.08.sem/N2.07.08.mean)
+(N2.07.08.d<-N2.07.08.sem/N2.07.08.mean*100)
 
 #wilcox.test
 wilcox.test((subset(N2.df, N2.df$Var2==2002,select=Freq))$Freq, (subset(N2.df, N2.df$Var2==2003,select=Freq))$Freq, na.rm=T)
@@ -190,6 +206,8 @@ wilcox.test(Agarova.ish$N.indd, (subset(N2.df, N2.df$Var2==2003,select=Freq))$Fr
 wilcox.test(Agarova.ish$N.indd, (subset(N2.df, N2.df$Var2==2002,select=Freq))$Freq, na.rm=T)
 wilcox.test((subset(N2.df, N2.df$Var2==2004 | N2.df$Var2==2005| N2.df$Var2==2006 ,select=Freq))$Freq, Agarova.ish$N.indd, na.rm=T)
 wilcox.test(Agarova.ish$N.indd, (subset(N2.df, N2.df$Var2==2007| N2.df$Var2==2008,select=Freq))$Freq, na.rm=T)
+
+
 
 ## Динамика численности + 1972 год
 Agarova.ish<-read.table("Agarova_1973.csv", head=T, sep=";", dec=",")
@@ -209,6 +227,14 @@ title(main=)
 dev.off()
 embedFonts("N_dynamic_with_Agarova.pdf") #встройка шрифтов в файл
 
+##размерная структура в %
+(sum.sizestr.sqmeter<-t(tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents<-sum.sizestr.sqmeter/colSums(sum.sizestr.sqmeter)*100)
+#>1mm
+(sum.sizestr2.sqmeter.percents<-sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),]/colSums(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])*100)
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents, file="DZ_sizestr2_percent.csv", sep=";", dec=",")
 
 ##рассчетная биомасса по Максимовичу и др., 1993
 biomass.count<-0.00016*(Length.mm^2.96)
@@ -221,6 +247,9 @@ biomass.count<-0.00016*(Length.mm^2.96)
 n.samples<-tapply(samples.names$sample,samples.names$year, length )
 (B.sem.sqmeter<-B.sd.sqmeter/sqrt(n.samples))
 (D.b<-B.sem.sqmeter/B.mean.sqmeter*100)
+
+#запишем в файл рассчетную биомассу
+write.table(data.frame(B.mean.sqmeter, B.sem.sqmeter), file="DZ_B2_mean.csv",sep=";", dec=",")
 
 pdf(file="B_count_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=B.mean.sqmeter, x=names(B.mean.sqmeter),pch=15, main="Эстуарий р. Лувеньги", 

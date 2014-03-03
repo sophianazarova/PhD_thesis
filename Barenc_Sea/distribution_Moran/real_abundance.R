@@ -12,6 +12,15 @@ library("latticeExtra")
 Pala.08<-read.table("Pala_autumn_2008.csv", header=T, sep=";", dec=",")
 str(Pala.08)
 
+# расположение проб на полигоне
+#bubbles
+pdf(file="Pala_samples.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Pala.08$X, Pala.08$Y, rep(1,length(Pala.08$X)), inches=0.07, fg="white", bg="black", xlim=c(0,1200), ylim=c(0,750),
+        xlab="см", ylab="см")
+abline(h=c(250,500), v=c(300,600,900))
+dev.off()
+embedFonts(paste("Pala_samples.pdf")) #встройка шрифтов в файл
+
 Pala_N_Macoma_hist<-cloud(Pala.08$N_Macoma_balthica ~ Pala.08$X + Pala.08$Y, type="h", lwd = 5, scales = list(arrows = FALSE))
 print(Pala_N_Macoma_hist)
 
@@ -50,3 +59,74 @@ pdf(file="Pala_N_Macoma_bubbles.pdf", family="NimbusSan") # указываем �
 symbols(Pala.08$X, Pala.08$Y, sqrt(Pala.08$N_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
 dev.off()
 embedFonts(paste("Pala_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл
+
+
+## Пала осень 2008 корреляции маком разного возраста
+Pala.macoma.ages<-read.table("Pala_Macoma_ages.csv", header=T, sep=";", dec=",")
+str(Pala.macoma.ages)
+
+for (i in 4:ncol(Pala.macoma.ages)) {
+   pdf(file=paste("Pala_macoma_age_bubb",colnames(Pala.macoma.ages)[i], ".pdf",sep="_"), family="NimbusSan") # указываем шрифт подпией
+   symbols(Pala.macoma.ages$X, Pala.macoma.ages$Y, sqrt(Pala.macoma.ages[,i])/ pi, inches=0.2, fg="white", bg="blue", 
+           main=paste(Pala.macoma.ages[i]))
+  dev.off()
+  embedFonts(paste("Pala_macoma_age_bubb",colnames(Pala.macoma.ages)[i], ".pdf",sep="_")) #встройка шрифтов в файл
+}
+
+## Ярнышная 2007 
+Yarn.07<-read.table(file="Yarnyshnaya_2007.csv", header=T, sep=";", dec=",")
+str(Yarn.07)
+summary(Yarn.07)
+
+pdf(file="Yarnyshnaya_N_Macoma_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Yarn.07$X, Yarn.07$Y, sqrt(Yarn.07$N_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Yarnyshnaya_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл
+
+# расположение проб на полигоне
+#bubbles
+pdf(file="Yarnyshnaya_samples.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Yarn.07$X, Yarn.07$Y, rep(1,length(Yarn.07$X)), inches=0.07, fg="white", bg="black", xlim=c(0,1200), ylim=c(0,750),
+        xlab="см", ylab="см")
+abline(h=c(250,500), v=c(300,600,900))
+dev.off()
+embedFonts(paste("Yarnyshnaya_samples.pdf")) #встройка шрифтов в файл
+
+
+##Дальний Пляж 2007
+Plyazh.07<-read.table(file="Dalnezeleneckaya_2007.csv", header=T, sep=";", dec=",")
+
+# расположение проб на полигоне
+#bubbles
+pdf(file="Plyazh07_samples.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Plyazh.07$X, Plyazh.07$Y, rep(1,length(Plyazh.07$X)), inches=0.07, fg="white", bg="black", xlim=c(0,1200), ylim=c(0,750),
+        xlab="см", ylab="см")
+abline(h=c(250,500), v=c(300,600,900))
+dev.off()
+embedFonts(paste("Plyazh07_samples.pdf")) #встройка шрифтов в файл
+
+##Дальний Пляж 2008 квадраты 1+2
+Plyazh.0812<-read.table(file="Dalnezeleneckaya_kv12_2008.csv", header=T, sep=";", dec=",")
+
+# расположение проб на полигоне
+#bubbles
+pdf(file="Plyazh08_samples.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Plyazh.0812$X, Plyazh.0812$Y, rep(1,length(Plyazh.0812$X)), inches=0.07, fg="white", bg="black", xlim=c(0,1200), ylim=c(0,1500),
+        xlab="см", ylab="см")
+abline(h=c(250,500,750,1000,1250), v=c(300,600,900))
+dev.off()
+embedFonts(paste("Plyazh08_samples.pdf")) #встройка шрифтов в файл
+
+#bubbles
+pdf(file="Plyazh0812_N_Macoma_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Plyazh.0812$X, Plyazh.0812$Y, sqrt(Plyazh.0812$N_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Plyazh0812_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл
+
+##Дальний Пляж 2007
+Plyazh.07<-read.table(file="Dalnezeleneckaya_2007.csv", header=T, sep=";", dec=",")
+#bubbles
+pdf(file="Plyazh07_N_Macoma_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Plyazh.07$X, Plyazh.07$Y, sqrt(Plyazh.07$N_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Plyazh07_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл

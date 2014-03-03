@@ -1,6 +1,9 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Luvenga_Goreliy/")
 #setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Luvenga_Goreliy//")
 
+#на всякий случай отключили исходний от предыдущего файла
+detach(ishodnik)
+
 ## размерная структура средние по годам по горизонтам
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
@@ -281,6 +284,9 @@ N.mean.sqmeter[11,3]<-NA
 (N.sem.sqmeter<-N.sd.sqmeter/sqrt(n.samples))
 N.sem.sqmeter[N.sem.sqmeter==N.sd.sqmeter]<-NA
 
+##COUNT
+(D.n<-N.sem.sqmeter/N.mean.sqmeter*100)
+
 pdf(file="N_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N.mean.sqmeter[,1], x=as.numeric(rownames(N.mean.sqmeter)), type="n", main="о. Горелый (Лувеньгские шхеры)",
      #     ylim=c(min(N.mean.sqmeter, na.rm=T)-max(N.sem.sqmeter, na.rm=T), max(N.mean.sqmeter, na.rm=T)+max(N.sem.sqmeter, na.rm=T)),
@@ -308,7 +314,16 @@ N2.mean.sqmeter[11,3]<-NA
 (N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples))
 N2.sem.sqmeter[N2.sem.sqmeter==N2.sd.sqmeter]<-NA
 
-write.table(N2.mean.sqmeter, file="goreliy_N2.csv", sep=";", dec=",")
+##COUNT!
+(D.n2<-N.sem.sqmeter/N.mean.sqmeter*100)
+
+# запишем численность всех крупнее 1 мм в файл
+write.table(data.frame(N2.mean.sqmeter, N2.sem.sqmeter), file="goreliy_N2.csv", sep=";", dec=",")
+
+# запишем пересчет обилия >1мм в пробах на квадратный метр в файл
+write.table(as.data.frame(as.table(N2.sqmeter)), file="goreliy_N2_in samples_sqmeter.csv", sep=";", dec=",")
+
+
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter[,1], x=as.numeric(rownames(N2.mean.sqmeter)), type="n", main="о. Горелый (Лувеньгские шхеры)",
@@ -413,8 +428,50 @@ mean(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....
    sqrt(length(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011.... )))/
   mean(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)*100
 
+
+##размерная структура в %
+str(size.str.sqmeter)
+
+#high
+(sum.sizestr.sqmeter.high<-t(tapply(high$Freq,INDEX=list(high$year, high$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.high<-t(t(sum.sizestr.sqmeter.high)/colSums(sum.sizestr.sqmeter.high)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.high<-t(t(sum.sizestr.sqmeter.high[2:nrow(sum.sizestr.sqmeter.high),])/
+   colSums(sum.sizestr.sqmeter.high[2:nrow(sum.sizestr.sqmeter.high),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents.high, file="goreliy_high_sizestr2_percent.csv", sep=";", dec=",")
+
+#middle
+(sum.sizestr.sqmeter.middle<-t(tapply(middle$Freq,INDEX=list(middle$year, middle$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.middle<-t(t(sum.sizestr.sqmeter.middle)/colSums(sum.sizestr.sqmeter.middle)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.middle<-t(t(sum.sizestr.sqmeter.middle[2:nrow(sum.sizestr.sqmeter.middle),])/
+   colSums(sum.sizestr.sqmeter.middle[2:nrow(sum.sizestr.sqmeter.middle),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents.middle, file="goreliy_middle_sizestr2_percent.csv", sep=";", dec=",")
  
- 
+#midlow
+(sum.sizestr.sqmeter.midlow<-t(tapply(midlow$Freq,INDEX=list(midlow$year, midlow$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.midlow<-t(t(sum.sizestr.sqmeter.midlow)/colSums(sum.sizestr.sqmeter.midlow)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.midlow<-t(t(sum.sizestr.sqmeter.midlow[2:nrow(sum.sizestr.sqmeter.midlow),])/
+   colSums(sum.sizestr.sqmeter.midlow[2:nrow(sum.sizestr.sqmeter.midlow),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents.midlow, file="goreliy_midlow_sizestr2_percent.csv", sep=";", dec=",")
+
+#low
+(sum.sizestr.sqmeter.low<-t(tapply(low$Freq,INDEX=list(low$year, low$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.low<-t(t(sum.sizestr.sqmeter.low)/colSums(sum.sizestr.sqmeter.low)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.low<-t(t(sum.sizestr.sqmeter.low[2:nrow(sum.sizestr.sqmeter.low),])/
+   colSums(sum.sizestr.sqmeter.low[2:nrow(sum.sizestr.sqmeter.low),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents.low, file="goreliy_low_sizestr2_percent.csv", sep=";", dec=",")
+
  ##динамика максимального размера
 str(ishodnik)
 (Length.max<-tapply(Length.mm, list(year, tidal_level), max, na.rm=T))
@@ -471,6 +528,9 @@ biomass2.count<-0.00016*(Length.mm[Length.mm>1.0]^2.96)
 (n.samples<-tapply(samples.names$sample,list(samples.names$year,samples.names$tidal_level), length ))
 (B2.sem.sqmeter<-B2.sd.sqmeter/sqrt(n.samples))
 (D.b2<-B2.sem.sqmeter/B2.mean.sqmeter*100)
+
+#запишем в файл рассчетную биомассу
+write.table(data.frame(B2.mean.sqmeter, B2.sem.sqmeter), file="Goreliy_B2_mean.csv",sep=";", dec=",")
 
 pdf(file="B2_count_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=B2.mean.sqmeter[,1], x=as.numeric(rownames(B2.mean.sqmeter)), type="n", main="о. Горелый (Лувеньгские шхеры)",
@@ -827,3 +887,8 @@ biomass8.count<-0.00016*(Length.mm[Length.mm>8.0]^2.96)
 
 
 write.table(B8.mean.sqmeter, file="goreliy_biomass_old.csv", sep=";", dec=",")
+
+##размеры маком на разных горизонтах
+str(ishodnik)
+boxplot(Length.mm ~ tidal_level, horizontal=T)
+

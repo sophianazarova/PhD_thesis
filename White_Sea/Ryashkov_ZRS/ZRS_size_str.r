@@ -1,6 +1,8 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Ryashkov_ZRS/")
 #setwd("~/note_backup_2013-04-13/PhD_thesis/White_Sea/Ryashkov_ZRS/")
 
+#на всякий случай отключили исходний от предыдущего файла
+detach(ishodnik)
 
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
@@ -120,7 +122,12 @@ N2.sd.sqmeter<-apply(N2.sqmeter, 2, sd, na.rm=T)
 N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples)
 (D.n2<-N2.sem.sqmeter/N2.mean.sqmeter*100)
 
-write.table(N2.mean.sqmeter, file="ZRS_N2.csv", sep=";", dec=",")
+# запишем численность всех крупнее 1 мм в файл
+write.table(data.frame(N2.mean.sqmeter, N2.sem.sqmeter), file="ZRS_N2.csv", sep=";", dec=",")
+
+# запишем пересчет обилия >1мм в пробах на квадратный метр в файл
+write.table(as.data.frame(as.table(N2.sqmeter)), file="ZRS_N2_in samples_sqmeter.csv", sep=";", dec=",")
+
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N2.mean.sqmeter, x=names(N2.mean.sqmeter),pch=15, main="литораль Западной Ряшковой салмы о. Ряшкова",
@@ -199,6 +206,19 @@ kruskal.test(N2.00.06.df$as.vector.N2.00.06..13.26. ~ N2.00.06.df$c.rep.2000..2.
 N2.07.12.df<-data.frame(c(rep(2007,2),rep(2008,2),rep(2009,2),rep(2010,2),rep(2011,2), rep(2012,2)),rep(c("mbb1","mbb2"),6),as.vector(N2.07.12)[27:length(as.vector(N2.07.12))])
 kruskal.test(N2.07.12.df$as.vector.N2.07.12..27.length.as.vector.N2.07.12... ~ N2.07.12.df$c.rep.2007..2...rep.2008..2...rep.2009..2...rep.2010..2...rep.2011..)
 
+##размерная структура в %
+(sum.sizestr.sqmeter<-t(tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents<-t(t(sum.sizestr.sqmeter)/colSums(sum.sizestr.sqmeter)*100))
+
+#>1mm
+(sum.sizestr2.sqmeter.percents<-t(t(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])/
+                                    colSums(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=sum.sizestr2.sqmeter.percents, file="ZRS_sizestr2_percent.csv", sep=";", dec=",")
+
+
+
 ##динамика максимального размера
 str(ishodnik)
 (Length.max<-tapply(Length.mm, year, max, na.rm=T))
@@ -245,6 +265,9 @@ biomass2.count<-0.00016*(Length.mm[Length.mm>1.0]^2.96)
 n.samples<-tapply(samples.names$sample,samples.names$year, length )
 (B2.sem.sqmeter<-B.sd.sqmeter/sqrt(n.samples))
 (D.b2<-B2.sem.sqmeter/B2.mean.sqmeter*100)
+
+#запишем в файл рассчетную биомассу
+write.table(data.frame(B2.mean.sqmeter, B2.sem.sqmeter), file="ZRS_B2_mean.csv",sep=";", dec=",")
 
 pdf(file="B2_count_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=B2.mean.sqmeter, x=names(B2.mean.sqmeter),pch=15, main="литораль Западной Ряшковой салмы о. Ряшкова", 

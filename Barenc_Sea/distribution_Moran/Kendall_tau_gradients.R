@@ -190,3 +190,19 @@ Yarn_07_kendall_Y_B_Mya_arenaria
 Yarn_07_kendall_Y_N_Mya_arenaria
 Yarn_07_kendall_Y_B_Mytilus_edulis
 Yarn_07_kendall_Y_N_Mytilus_edulis
+
+## Пала осень 2008 корреляции маком разного возраста
+Pala.macoma.ages<-read.table("Pala_Macoma_ages.csv", header=T, sep=";", dec=",")
+
+for (i in 2:3) {
+  for (j in 4:ncol(Pala.macoma.ages)) {
+    assign(paste("Pala_macoma_ages_kendall",colnames(Pala.macoma.ages)[i],colnames(Pala.macoma.ages)[j], sep="_"), 
+           cor.test(method="kendall",x=Pala.macoma.ages[,i], y=Pala.macoma.ages[,j]))
+  }}
+
+Pala_macoma_ages_kendall_Y_N8
+Pala_macoma_ages_kendall_X_N8
+
+
+Pala_macoma_ages_kendall_Y_N2
+Pala_macoma_ages_kendall_X_N2
