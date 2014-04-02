@@ -1,0 +1,116 @@
+Call:corr.test(x = ishodnik, use = "pairwise", method = "spearman")
+Correlation matrix 
+                      year Estuary Lomnishniy Goreliy_high Goreliy_low Goreliy_middle Goreliy_midlow
+year                  1.00    0.54      -0.31         0.38        0.39           0.24           0.08
+Estuary               0.54    1.00       0.09         0.74        0.61           0.58           0.45
+Lomnishniy           -0.31    0.09       1.00        -0.71       -0.31           0.31          -0.03
+Goreliy_high          0.38    0.74      -0.71         1.00        0.48           0.77           0.49
+Goreliy_low           0.39    0.61      -0.31         0.48        1.00           0.45           0.71
+Goreliy_middle        0.24    0.58       0.31         0.77        0.45           1.00           0.58
+Goreliy_midlow        0.08    0.45      -0.03         0.49        0.71           0.58           1.00
+razrez2_fucus_zone    0.87    0.92         NA         0.87        0.90           0.93           0.65
+razrez2_high_beatch   0.87    0.86         NA         0.85        0.93           0.90           0.66
+razrez2_low_beatch    0.64    0.72         NA         0.79        0.61           0.90           0.70
+razrez2_zostera_zone  0.83    0.79         NA         0.86        0.64           0.88           0.60
+YuG                  -0.66    0.71       0.54         0.28        0.11           0.45           0.13
+ZRS                   0.25    0.81       0.77         0.82        0.49           0.66           0.37
+                     razrez2_fucus_zone razrez2_high_beatch razrez2_low_beatch razrez2_zostera_zone   YuG
+year                               0.87                0.87               0.64                 0.83 -0.66
+Estuary                            0.92                0.86               0.72                 0.79  0.71
+Lomnishniy                           NA                  NA                 NA                   NA  0.54
+Goreliy_high                       0.87                0.85               0.79                 0.86  0.28
+Goreliy_low                        0.90                0.93               0.61                 0.64  0.11
+Goreliy_middle                     0.93                0.90               0.90                 0.88  0.45
+Goreliy_midlow                     0.65                0.66               0.70                 0.60  0.13
+razrez2_fucus_zone                 1.00                0.94               0.66                 0.81 -1.00
+razrez2_high_beatch                0.94                1.00               0.76                 0.77  1.00
+razrez2_low_beatch                 0.66                0.76               1.00                 0.73    NA
+razrez2_zostera_zone               0.81                0.77               0.73                 1.00 -1.00
+YuG                               -1.00                1.00                 NA                -1.00  1.00
+ZRS                                0.93                0.87               0.52                 0.78  0.64
+                      ZRS
+year                 0.25
+Estuary              0.81
+Lomnishniy           0.77
+Goreliy_high         0.82
+Goreliy_low          0.49
+Goreliy_middle       0.66
+Goreliy_midlow       0.37
+razrez2_fucus_zone   0.93
+razrez2_high_beatch  0.87
+razrez2_low_beatch   0.52
+razrez2_zostera_zone 0.78
+YuG                  0.64
+ZRS                  1.00
+Sample Size 
+                     year Estuary Lomnishniy Goreliy_high Goreliy_low Goreliy_middle Goreliy_midlow
+year                   21      21          6           21          21             20             21
+Estuary                21      21          6           21          21             20             21
+Lomnishniy              6       6          6            6           6              6              6
+Goreliy_high           21      21          6           21          21             20             21
+Goreliy_low            21      21          6           21          21             20             21
+Goreliy_middle         20      20          6           20          20             20             20
+Goreliy_midlow         21      21          6           21          21             20             21
+razrez2_fucus_zone     11      11          0           11          11             10             11
+razrez2_high_beatch    11      11          0           11          11             10             11
+razrez2_low_beatch     10      10          0           10          10              9             10
+razrez2_zostera_zone   11      11          0           11          11             10             11
+YuG                    12      12          6           12          12             11             12
+ZRS                    19      19          6           19          19             18             19
+                     razrez2_fucus_zone razrez2_high_beatch razrez2_low_beatch razrez2_zostera_zone YuG ZRS
+year                                 11                  11                 10                   11  12  19
+Estuary                              11                  11                 10                   11  12  19
+Lomnishniy                            0                   0                  0                    0   6   6
+Goreliy_high                         11                  11                 10                   11  12  19
+Goreliy_low                          11                  11                 10                   11  12  19
+Goreliy_middle                       10                  10                  9                   10  11  18
+Goreliy_midlow                       11                  11                 10                   11  12  19
+razrez2_fucus_zone                   11                  11                 10                   11   2   9
+razrez2_high_beatch                  11                  11                 10                   11   2   9
+razrez2_low_beatch                   10                  10                 10                   10   1   8
+razrez2_zostera_zone                 11                  11                 10                   11   2   9
+YuG                                   2                   2                  1                    2  12  12
+ZRS                                   9                   9                  8                    9  12  19
+Probability values (Entries above the diagonal are adjusted for multiple tests.) 
+                     year Estuary Lomnishniy Goreliy_high Goreliy_low Goreliy_middle Goreliy_midlow
+year                 0.00    0.44       1.00         1.00        1.00           1.00           1.00
+Estuary              0.01    0.00       1.00         0.01        0.15           0.29           0.97
+Lomnishniy           0.54    0.87       0.00         1.00        1.00           1.00           1.00
+Goreliy_high         0.09    0.00       0.11         0.00        0.81           0.00           0.74
+Goreliy_low          0.08    0.00       0.54         0.03        0.00           1.00           0.02
+Goreliy_middle       0.31    0.01       0.54         0.00        0.05           0.00           0.32
+Goreliy_midlow       0.73    0.04       0.96         0.02        0.00           0.01           0.00
+razrez2_fucus_zone   0.00    0.00         NA         0.00        0.00           0.00           0.03
+razrez2_high_beatch  0.00    0.00         NA         0.00        0.00           0.00           0.03
+razrez2_low_beatch   0.05    0.02         NA         0.01        0.06           0.00           0.03
+razrez2_zostera_zone 0.00    0.00         NA         0.00        0.04           0.00           0.05
+YuG                  0.02    0.01       0.27         0.38        0.74           0.16           0.70
+ZRS                  0.30    0.00       0.07         0.00        0.04           0.00           0.11
+                     razrez2_fucus_zone razrez2_high_beatch razrez2_low_beatch razrez2_zostera_zone  YuG
+year                               0.03                0.03               1.00                 0.08 0.69
+Estuary                            0.00                0.03               0.65                 0.17 0.37
+Lomnishniy                           NA                  NA                 NA                   NA 1.00
+Goreliy_high                       0.03                0.04               0.26                 0.03 1.00
+Goreliy_low                        0.01                0.00               1.00                 0.95 1.00
+Goreliy_middle                     0.01                0.02               0.05                 0.04 1.00
+Goreliy_midlow                     0.81                0.81               0.80                 1.00 1.00
+razrez2_fucus_zone                 0.00                0.00               0.95                 0.12  NaN
+razrez2_high_beatch                0.00                0.00               0.43                 0.23  NaN
+razrez2_low_beatch                 0.04                0.01               0.00                 0.57   NA
+razrez2_zostera_zone               0.00                0.01               0.02                 0.00  NaN
+YuG                                 NaN                 NaN                 NA                  NaN 0.00
+ZRS                                0.00                0.00               0.18                 0.01 0.03
+                      ZRS
+year                 1.00
+Estuary              0.00
+Lomnishniy           1.00
+Goreliy_high         0.00
+Goreliy_low          0.95
+Goreliy_middle       0.13
+Goreliy_midlow       1.00
+razrez2_fucus_zone   0.01
+razrez2_high_beatch  0.12
+razrez2_low_beatch   1.00
+razrez2_zostera_zone 0.46
+YuG                  0.81
+ZRS                  0.00

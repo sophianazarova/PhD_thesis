@@ -1,0 +1,84 @@
+[1] "Estuary"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 20, df = 20, p-value = 0.4579
+
+[1] "Lomnishniy"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 5, df = 5, p-value = 0.4159
+
+[1] "Goreliy_high"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 20, df = 20, p-value = 0.4579
+
+[1] "Goreliy_low"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 20, df = 20, p-value = 0.4579
+
+[1] "Goreliy_middle"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 19, df = 19, p-value = 0.4568
+
+[1] "Goreliy_midlow"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 20, df = 20, p-value = 0.4579
+
+[1] "razrez2_fucus_zone"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 10, df = 10, p-value = 0.4405
+
+[1] "razrez2_high_beatch"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 10, df = 10, p-value = 0.4405
+
+[1] "razrez2_low_beatch"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 9, df = 9, p-value = 0.4373
+
+[1] "razrez2_zostera_zone"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 10, df = 10, p-value = 0.4405
+
+[1] "YuG"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 11, df = 11, p-value = 0.4433
+
+[1] "ZRS"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 18, df = 18, p-value = 0.4557
+

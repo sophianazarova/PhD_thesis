@@ -1,0 +1,192 @@
+[1] "Estuary"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: 0.3168 
+      Significance: 0.005 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.103 0.144 0.200 0.244 
+
+Based on 999 permutations
+
+[1] "Lomnishniy"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: -0.09993 
+      Significance: 0.471 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.355 0.464 0.504 0.573 
+
+Based on 999 permutations
+
+[1] "Goreliy_high"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: 0.102 
+      Significance: 0.193 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.145 0.179 0.219 0.258 
+
+Based on 999 permutations
+
+[1] "Goreliy_low"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: 0.000817 
+      Significance: 0.403 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.147 0.181 0.207 0.235 
+
+Based on 999 permutations
+
+[1] "Goreliy_middle"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: -0.05004 
+      Significance: 0.631 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.144 0.182 0.208 0.232 
+
+Based on 999 permutations
+
+[1] "Goreliy_midlow"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: -0.04127 
+      Significance: 0.576 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.135 0.174 0.218 0.261 
+
+Based on 999 permutations
+
+[1] "razrez2_fucus_zone"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: 0.6316 
+      Significance: 0.001 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.151 0.241 0.347 0.426 
+
+Based on 999 permutations
+
+[1] "razrez2_high_beatch"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: 0.1157 
+      Significance: 0.275 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.305 0.412 0.465 0.506 
+
+Based on 999 permutations
+
+[1] "razrez2_low_beatch"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: 0.2068 
+      Significance: 0.157 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.270 0.339 0.382 0.481 
+
+Based on 999 permutations
+
+[1] "razrez2_zostera_zone"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: 0.5723 
+      Significance: 0.005 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.174 0.258 0.336 0.499 
+
+Based on 999 permutations
+
+[1] "YuG"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: 0.3687 
+      Significance: 0.015 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.176 0.245 0.316 0.452 
+
+Based on 999 permutations
+
+[1] "ZRS"
+
+Mantel statistic based on Pearson's product-moment correlation 
+
+Call:
+mantel(xdis = vegdist(as.vector(ishodnik[, 1][!is.na(ishodnik[,      j])]), method = "euclidean"), ydis = vegdist(as.vector(na.omit(ishodnik[,      j])), method = "euclidean")) 
+
+Mantel statistic r: 0.01081 
+      Significance: 0.371 
+
+Upper quantiles of permutations (null model):
+  90%   95% 97.5%   99% 
+0.177 0.207 0.227 0.246 
+
+Based on 999 permutations
+

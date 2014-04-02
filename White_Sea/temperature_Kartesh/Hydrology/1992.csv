@@ -1,0 +1,388 @@
+CRUISEINFO ,,,,,,,,,,
+90,COUNTRY CODE,RUSSIA,,,,,,,,
+,PROJECT ,Data archaeology and rescue,,,,,,,,
+,INSTITUTE,ZOOLOGICAL INSTITUTE RUSSIAN ACADEMY OF SCIENCE,,,,,,,,
+,PLATFORM,,,,,,,,,
+,CRUISE,,,,,,,,,
+,REFERENCE,,,,,,,,,
+,COUNTING,ZOOLOGICAL INSTITUTE RUSSIAN ACADEMY OF SCIENCE,,,,,,,,
+,VOUCHER,ZOOLOGICAL INSTITUTE RUSSIAN ACADEMY OF SCIENCE,,,,,,,,
+3,NUMBER,UNDER ICE MESUREMENTS,,,,,,,,
+STATION,11373,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,2,21,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E
+BOTTOM DEPTH,65,m,,
+COMMENTS,UNDER ICE MESUREMENTS,,,
+
+DETAILS,DEPTH,TEMP,SAL,
+units,m,C,psu,
+decimal places,0,1,1,
+,0,-1,25.1,
+,5,-1.1,,
+,10,-1,26.5,
+,15,-0.9,26.9,
+,25,-0.5,27.4,
+,50,0,27.4,
+,65,0,28.2,
+
+STATION,11413,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,4,1,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,UNDER ICE MESUREMENTS,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,7,20.1,,,,,,,
+,5,5.5,,,,,,,,
+,10,5,27.2,,,,,,,
+,15,4.5,27.1,,,,,,,
+,25,2,27.5,,,,,,,
+,50,-0.5,27.6,,,,,,,
+,65,-1.1,27.9,,,,,,,
+
+STATION,11483,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,6,10,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,7.2,23.5,,,,,,,
+,5,5.8,,,,,,,,
+,10,5.2,24.4,,,,,,,
+,15,4.7,24.4,,,,,,,
+,25,2,26.1,,,,,,,
+,50,-0.5,26.9,,,,,,,
+,65,-1,27.6,,,,,,,
+
+STATION,11493,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,6,20,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,9.2,23.3,,,,,,,
+,5,8.1,,,,,,,,
+,10,6,27.6,,,,,,,
+,15,3,26.2,,,,,,,
+,25,2,27.4,,,,,,,
+,50,-0.5,27.1,,,,,,,
+,65,-1,27.7,,,,,,,
+
+STATION,11504,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,7,1,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,9.6,24,,,,,,,
+,5,9.6,,,,,,,,
+,10,9.4,24.5,,,,,,,
+,15,7.3,24.7,,,,,,,
+,25,5,26.2,,,,,,,
+,50,-0.5,27.5,,,,,,,
+,65,-0.7,27.5,,,,,,,
+
+STATION,11512,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,7,9,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,9.6,22.1,,,,,,,
+,5,9,,,,,,,,
+,10,7.7,26.9,,,,,,,
+,15,6,26.7,,,,,,,
+,25,3,27.4,,,,,,,
+,50,-0.6,27.6,,,,,,,
+,65,-1,27.8,,,,,,,
+
+STATION,11522,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,7,19,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,12.4,24.3,,,,,,,
+,5,11,,,,,,,,
+,10,9,25.9,,,,,,,
+,15,7,26.4,,,,,,,
+,25,3,26.7,,,,,,,
+,50,-0.3,27.4,,,,,,,
+,65,-0.5,27.8,,,,,,,
+
+STATION,11533,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,7,30,1992
+
+HEADERS,,, , , 
+LAT END,66,19.5,,N,
+LONG END,33,39.4,,E,
+BOTTOM DEPTH,65,m,,,
+COMMENTS,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,
+units,m,C,psu,,
+decimal places,0,1,1,,
+,0,12.6,23.8,,
+,5,11.4,,,
+,10,10.2,25,,
+,15,8,25.3,,
+,25,2.6,26.6,,
+,50,-0.1,27.5,,
+,65,-0.2,27.8,,,,,,,
+
+STATION,11545,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,8,11,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,12.2,24.6,,,,,,,
+,5,12.2,,,,,,,,
+,10,11.6,24.7,,,,,,,
+,15,10.5,25.1,,,,,,,
+,25,4,26.7,,,,,,,
+,50,0.5,27.5,,,,,,,
+,65,0.2,27.8,,,,,,,
+
+STATION,11556,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,8,22,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,9,25,,,,,,,
+,5,9,,,,,,,,
+,10,9,25.1,,,,,,,
+,15,6.5,25.6,,,,,,,
+,25,3.3,26.9,,,,,,,
+,50,0.7,27.4,,,,,,,
+,65,0.6,27.7,,,,,,,
+
+STATION,11565,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,8,31,1992
+
+HEADERS,,, , , 
+LAT END,66,19.5,,N,
+LONG END,33,39.4,,E,
+BOTTOM DEPTH,65,m,,,
+COMMENTS,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,
+units,m,C,psu,,
+decimal places,0,1,1,,
+,0,8.5,25.1,,
+,5,8.7,,,
+,10,8.3,25.6,,
+,15,7,26,,
+,25,4.3,27,,
+,50,1.8,27.2,,
+,65,1.7,27.5,,
+
+STATION,11575,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,9,10,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,8.4,24.6,,,,,,,
+,5,8.7,,,,,,,,
+,10,8.7,25.4,,,,,,,
+,15,8.7,25.7,,,,,,,
+,25,8.3,25.9,,,,,,,
+,50,3.7,26.8,,,,,,,
+,65,3.4,27.2,,,,,,,
+
+STATION,11586,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,9,21,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,9.6,23.9,,,,,,,
+,5,9.6,,,,,,,,
+,10,8.6,24.3,,,,,,,
+,15,8.3,25.5,,,,,,,
+,25,8.3,25.9,,,,,,,
+,50,4.7,26.7,,,,,,,
+,65,4.4,27.1,,,,,,,
+
+STATION,11596,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,10,1,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N
+LONG END,33,39.4,,E
+BOTTOM DEPTH,65,m,,
+COMMENTS,,,,
+
+DETAILS,DEPTH,TEMP,SAL,
+units,m,C,psu,
+decimal places,0,1,1,
+,0,8.4,22.6,
+,5,8.5,,
+,10,8.7,23,
+,15,8.8,23.1,
+,25,7.8,26.2,
+,50,4,27.4,
+,65,3.9,27.6,
+
+STATION,11606,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,10,11,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,6.2,22.9,,,,,,,
+,5,6.3,,,,,,,,
+,10,6.6,23.4,,,,,,,
+,15,6.1,24.8,,,,,,,
+,25,3.7,26.7,,,,,,,
+,50,1.8,27.1,,,,,,,
+,65,1.5,26.5,,,,,,,
+
+STATION,11617,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,10,22,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,2.6,23.6,,,,,,,
+,5,2.9,,,,,,,,
+,10,5,24.4,,,,,,,
+,15,6.6,24.4,,,,,,,
+,25,6.2,25.6,,,,,,,
+,50,3.1,27.6,,,,,,,
+,65,2.9,27.7,,,,,,,
+
+STATION,11626,,,,,,,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,10,31,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E
+BOTTOM DEPTH,65,m,,
+COMMENTS,,,,
+
+DETAILS,DEPTH,TEMP,SAL,
+units,m,C,psu,
+decimal places,0,1,1,
+,0,1.5,22.8,
+,5,1.5,,
+,10,1.5,24.6,
+,15,1.5,25.3,
+,25,1.7,24.6,
+,50,2.3,28.1,
+,65,1.9,28.2,
+
+STATION,11636,,,
+LAT DEG,LAT MIN,LAT SEC,LAT HEM,LONG DEG,LON MIN,LON SEC,LON HEM,MONTH,DAY,YEAR
+66,19.5,,N,33,39.4,,E,11,10,1992
+
+HEADERS,,, , , ,,,,,
+LAT END,66,19.5,,N,,,,,,
+LONG END,33,39.4,,E,,,,,,
+BOTTOM DEPTH,65,m,,,,,,,,
+COMMENTS,,,,,,,,,,
+
+DETAILS,DEPTH,TEMP,SAL,,,,,,,
+units,m,C,psu,,,,,,,
+decimal places,0,1,1,,,,,,,
+,0,1,22.9,,,,,,,
+,5,,,,,,,,,
+,10,,24.9,,,,,,,
+,15,,25.1,,,,,,,
+,25,,26
+,50,,26.7
+,65,2.3,27
+

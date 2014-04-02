@@ -158,6 +158,9 @@ for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
 #точность учета
 (D.n<-N.sem.sqmeter/N.mean.sqmeter*100)
 
+# запишем численность всех в файл
+write.table(data.frame(N.mean.sqmeter, N.sem.sqmeter), file="estuary_N.csv", sep=";", dec=",")
+
 pdf(file="N_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=N.mean.sqmeter, x=names(N.mean.sqmeter),pch=15, main="Эстуарий р. Лувеньги", 
      ylim=c(min(N.mean.sqmeter)-max(N.sem.sqmeter), max(N.mean.sqmeter)+max(N.sem.sqmeter)),

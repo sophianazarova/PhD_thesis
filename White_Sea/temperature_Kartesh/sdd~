@@ -1,0 +1,11 @@
+SDD <- function(x, y, z)
+{ 
+yearN=1979
+No <- seq(1:length(x[z==yearN]))
+sdd_[yearN] <- sum((x[z==yearN][No+1]-x[z==yearN][No])*y[z==yearN], na.rm=T)
+repeat{
+yearN <- yearN+1
+No <- seq(1:length(x[z==yearN]))
+sdd_[yearN] <- sum((x[z==yearN][No+1]-x[z==yearN][No])*y[z==yearN], na.rm=T)
+if (z==1997) break}
+}

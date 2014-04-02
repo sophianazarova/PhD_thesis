@@ -1,0 +1,96 @@
+[1] "Klyushiha"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                  Df  Sum Sq Mean Sq F value    Pr(>F)    
+mareographic[area == (levels(area)[i]), drop = T]  2 3615547 1807773  81.562 3.601e-12 ***
+Residuals                                         27  598440   22164                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Suhaya"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                  Df  Sum Sq Mean Sq F value Pr(>F)
+mareographic[area == (levels(area)[i]), drop = T]  1   53045   53045  0.2831 0.6012
+Residuals                                         18 3373210  187401               
+[1] "Lisya"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                  Df   Sum Sq Mean Sq F value    Pr(>F)    
+mareographic[area == (levels(area)[i]), drop = T]  2 18860240 9430120  19.283 6.285e-06 ***
+Residuals                                         27 13204240  489046                      
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Podpahta"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                  Df  Sum Sq Mean Sq F value  Pr(>F)  
+mareographic[area == (levels(area)[i]), drop = T]  1  499280  499280  4.0844 0.05841 .
+Residuals                                         18 2200320  122240                  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "goreliy"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                   Df    Sum Sq Mean Sq F value  Pr(>F)   
+mareographic[area == (levels(area)[i]), drop = T]   3  17545489 5848496  4.2786 0.00633 **
+Residuals                                         142 194101372 1366911                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "razrez2"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                   Df    Sum Sq Mean Sq F value Pr(>F)
+mareographic[area == (levels(area)[i]), drop = T]   3   9691934 3230645  0.9551 0.4151
+Residuals                                         195 659605404 3382592               
+[1] "Abram"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                  Df   Sum Sq Mean Sq F value Pr(>F)
+mareographic[area == (levels(area)[i]), drop = T]  1   620237  620237   0.484 0.5025
+Residuals                                         10 12814063 1281406               
+[1] "Pala"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                  Df   Sum Sq Mean Sq F value Pr(>F)
+mareographic[area == (levels(area)[i]), drop = T]  1     4234    4234  0.0167 0.8975
+Residuals                                         71 17972366  253132               
+[1] "Gavrilovo"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                  Df Sum Sq Mean Sq F value   Pr(>F)   
+mareographic[area == (levels(area)[i]), drop = T]  1  32490   32490  24.067 0.001185 **
+Residuals                                          8  10800    1350                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Yarnyshnaya"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                  Df Sum Sq Mean Sq F value   Pr(>F)    
+mareographic[area == (levels(area)[i]), drop = T]  2 793726  396863  26.527 3.13e-08 ***
+Residuals                                         43 643320   14961                     
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "DZ"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                   Df Sum Sq Mean Sq F value Pr(>F)
+mareographic[area == (levels(area)[i]), drop = T]   2   2981  1490.6   0.872 0.4195
+Residuals                                         234 400012  1709.5               
+[1] "Shelpino"
+Analysis of Variance Table
+
+Response: N2.indd.sqmeter[area == (levels(area)[i])]
+                                                  Df Sum Sq Mean Sq F value Pr(>F)
+mareographic[area == (levels(area)[i]), drop = T]  1    810     810    0.75 0.4117
+Residuals                                          8   8640    1080               

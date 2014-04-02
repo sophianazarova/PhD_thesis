@@ -60,7 +60,7 @@ for (i in 1: length(levels(size.str.sqmeter$tidal_level)))
 }
 
 
-#subset(size.str.sqmeter,subset=size.str.sqmeter$year=="1992")
+#summary((subset(size.str.sqmeter,subset=size.str.sqmeter$year=="1994"))$Freq)
 
 #и среднее??
 # tapply выдает как резудьтат матрицу
@@ -86,10 +86,10 @@ mean.sqmeter.high.df<-as.data.frame(mean.sqmeter.high)
 (sd.sqmeter.high<-tapply(high$Freq,INDEX=list(high$year,  high$Length.int),FUN=sd, na.rm=T))
 
 (sem.sqmeter.high <-t(sd.sqmeter.high/sqrt(n.samples.df$high)))
-#TODO надо те строки где по одной пробе сделать вместо ошибки NA!!
+#TODO надо те строки где по одной пробе сделать вместо NA - ноль!!
 sem.sqmeter.high.df<-as.data.frame(sem.sqmeter.high)
-sem.sqmeter.high[sem.sqmeter.high==t(sd.sqmeter.high)]<-0
-
+sem.sqmeter.high[is.na(sem.sqmeter.high)]<-0
+sem.sqmeter.high
 
 #средний горизонт
 mean.sqmeter.middle<-t(tapply(middle$Freq,INDEX=list(middle$year,  middle$Length.int),FUN=mean, na.rm=T))
@@ -99,7 +99,8 @@ sd.sqmeter.middle<-tapply(middle$Freq,INDEX=list(middle$year,  middle$Length.int
 
 sem.sqmeter.middle <-t(sd.sqmeter.middle/sqrt(n.samples.df$middle))
 sem.sqmeter.middle.df<-as.data.frame(sem.sqmeter.middle)
-sem.sqmeter.middle[sem.sqmeter.middle==t(sd.sqmeter.middle)]<-0
+sem.sqmeter.middle[is.na(sem.sqmeter.middle)]<-0
+
 
 #граница среднего и нижнего горизонта, в фукусах
 mean.sqmeter.midlow<-t(tapply(midlow$Freq,INDEX=list(midlow$year,  midlow$Length.int),FUN=mean, na.rm=T))
@@ -109,7 +110,9 @@ sd.sqmeter.midlow<-tapply(midlow$Freq,INDEX=list(midlow$year,  midlow$Length.int
 
 sem.sqmeter.midlow <-t(sd.sqmeter.midlow/sqrt(n.samples.df$midlow))
 sem.sqmeter.midlow.df<-as.data.frame(sem.sqmeter.midlow)
-sem.sqmeter.midlow[sem.sqmeter.midlow==t(sd.sqmeter.midlow)]<-0
+sem.sqmeter.midlow[is.na(sem.sqmeter.midlow)]<-0
+
+
 
 #нижний горизонт, у нуля глубин
 (mean.sqmeter.low<-t(tapply(low$Freq,INDEX=list(low$year,  low$Length.int),FUN=mean, na.rm=T)))
@@ -119,7 +122,8 @@ sd.sqmeter.low<-tapply(low$Freq,INDEX=list(low$year,  low$Length.int),FUN=sd, na
 
 sem.sqmeter.low <-t(sd.sqmeter.low/sqrt(n.samples.df$low))
 sem.sqmeter.low.df<-as.data.frame(sem.sqmeter.low)
-sem.sqmeter.low[sem.sqmeter.low==t(sd.sqmeter.low)]<-0
+sem.sqmeter.low[is.na(sem.sqmeter.low)]<-0
+
 
 length.class<-seq(1,20,1)
 
@@ -134,7 +138,9 @@ mean.sqmeter2.high.df<-as.data.frame(mean.sqmeter2.high)
 (sem.sqmeter2.high <-t(sd.sqmeter2.high/sqrt(n.samples.df$high)))
 #TODO надо те строки где по одной пробе сделать вместо ошибки NA!!
 sem.sqmeter2.high.df<-as.data.frame(sem.sqmeter2.high)
-sem.sqmeter2.high[sem.sqmeter2.high==t(sd.sqmeter2.high)]<-0
+sem.sqmeter2.high[is.na(sem.sqmeter2.high)]<-0
+
+
 
 
 #средний горизонт
@@ -145,7 +151,7 @@ sd.sqmeter2.middle<-sd.sqmeter.middle[,2:20]
 
 sem.sqmeter2.middle <-t(sd.sqmeter2.middle/sqrt(n.samples.df$middle))
 sem.sqmeter2.middle.df<-as.data.frame(sem.sqmeter2.middle)
-sem.sqmeter2.middle[sem.sqmeter2.middle==t(sd.sqmeter2.middle)]<-0
+sem.sqmeter2.middle[is.na(sem.sqmeter2.middle)]<-0
 
 #граница среднего и нижнего горизонта, в фукусах
 mean.sqmeter2.midlow<-mean.sqmeter.middle[2:20,]
@@ -155,7 +161,7 @@ sd.sqmeter2.midlow<-sd.sqmeter.middle[,2:20]
 
 sem.sqmeter2.midlow <-t(sd.sqmeter2.midlow/sqrt(n.samples.df$midlow))
 sem.sqmeter2.midlow.df<-as.data.frame(sem.sqmeter2.midlow)
-sem.sqmeter2.midlow[sem.sqmeter2.midlow==t(sd.sqmeter2.midlow)]<-0
+sem.sqmeter2.midlow[is.na(sem.sqmeter2.midlow)]<-0
 
 #нижний горизонт, у нуля глубин
 mean.sqmeter2.low<-mean.sqmeter.middle[2:20,]
@@ -165,7 +171,7 @@ sd.sqmeter2.low<-sd.sqmeter.middle[,2:20]
 
 sem.sqmeter2.low <-t(sd.sqmeter2.low/sqrt(n.samples.df$low))
 sem.sqmeter2.low.df<-as.data.frame(sem.sqmeter2.low)
-sem.sqmeter2.low[sem.sqmeter2.low==t(sd.sqmeter2.low)]<-0
+sem.sqmeter2.low[is.na(sem.sqmeter2.low)]<-0
 
 length.class2<-seq(2,20,1)
 
@@ -279,7 +285,6 @@ for (j in 1:length(colnames(mean.sqmeter2.low)))
 ## динамика обилия
 (N.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample, size.str.df$tidal_level), sum))
 (N.mean.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=mean))
-N.mean.sqmeter[11,3]<-NA
 (N.sd.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=sd))
 (N.sem.sqmeter<-N.sd.sqmeter/sqrt(n.samples))
 N.sem.sqmeter[N.sem.sqmeter==N.sd.sqmeter]<-NA
@@ -302,6 +307,17 @@ dev.off()
 embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 
 
+##динамика без разделения на горизонты
+str(size.str.sqmeter)
+(N.all.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum, na.rm=T))
+N.all.sqmeter[N.all.sqmeter==0]<-NA
+(N.all.mean.sqmeter<-apply(N.all.sqmeter, na.rm=T, MARGIN=1, FUN=mean ))
+(N.all.sd.sqmeter<-apply(N.all.sqmeter, na.rm=T, MARGIN=1, FUN=sd))
+(N.all.sem.sqmeter<-N.all.sd.sqmeter/sqrt(rowSums(as.matrix(n.samples),na.rm=T)))
+(D.n.all<-N.all.sem.sqmeter/N.all.mean.sqmeter*100)
+
+write.table(data.frame(N.all.mean.sqmeter, N.all.sem.sqmeter), file="Nall_mean.csv", dec=",", sep=";")
+
 
 ## динамика без молод ( больше 2+)
 (N2.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"], 
@@ -309,7 +325,6 @@ embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"],
                          size.str.df$tidal_level[size.str.sqmeter$Length.int!="(0,1]"]), sum))
 (N2.mean.sqmeter<-apply(N2.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=mean))
-N2.mean.sqmeter[11,3]<-NA
 (N2.sd.sqmeter<-apply(N2.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=sd))
 (N2.sem.sqmeter<-N2.sd.sqmeter/sqrt(n.samples))
 N2.sem.sqmeter[N2.sem.sqmeter==N2.sd.sqmeter]<-NA
@@ -323,6 +338,18 @@ write.table(data.frame(N2.mean.sqmeter, N2.sem.sqmeter), file="goreliy_N2.csv", 
 # запишем пересчет обилия >1мм в пробах на квадратный метр в файл
 write.table(as.data.frame(as.table(N2.sqmeter)), file="goreliy_N2_in samples_sqmeter.csv", sep=";", dec=",")
 
+##динамика без спата без разделения на горизонты
+str(size.str.sqmeter)
+(N2.all.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"],
+                        list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
+                             size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"]), sum, na.rm=T))
+N2.all.sqmeter[N2.all.sqmeter==0]<-NA
+(N2.all.mean.sqmeter<-apply(N2.all.sqmeter, na.rm=T, MARGIN=1, FUN=mean ))
+(N2.all.sd.sqmeter<-apply(N2.all.sqmeter, na.rm=T, MARGIN=1, FUN=sd))
+(N2.all.sem.sqmeter<-N2.all.sd.sqmeter/sqrt(rowSums(as.matrix(n.samples),na.rm=T)))
+(D.n2.all<-N2.all.sem.sqmeter/N2.all.mean.sqmeter*100)
+
+write.table(data.frame(N2.all.mean.sqmeter, N2.all.sem.sqmeter), file="N2all_mean.csv", dec=",", sep=";")
 
 
 pdf(file="N2_dynamic.pdf", family="NimbusSan") # указываем шрифт подпией

@@ -12,7 +12,7 @@ attach(ishodnik)
 
 ishodnik$tidal_level<-ordered(x=ishodnik$tidal_level, levels=c("high_beatch", "fucus_zone", "zostera_zone", "low_beatch"))
 
-(oneyear.int<-cut(Length.mm, breaks=c(0.1,1.2,1.8,max(Length.mm, na.rm=T))))
+(oneyear.int<-cut(Length.mm, breaks=c(0.1,1.2,1.8,8.0,max(Length.mm, na.rm=T))))
 
 (oneyear.table<-table(oneyear.int, year, tidal_level, sample))
 
@@ -63,14 +63,147 @@ mean.sqmeter.high_beatch.df<-as.data.frame(mean.sqmeter.high_beatch)
 (sem.sqmeter.high_beatch <-t(sd.sqmeter.high_beatch/sqrt(n.samples.df$high_beatch)))
 sem.sqmeter.high_beatch.df<-as.data.frame(sem.sqmeter.high_beatch)
 
+#пишем численности в файл
+write.table(mean.sqmeter.high_beatch, file="Nmean_all_high_beatch.csv",sep=";", dec=",")
+
+#рисуем график N1+ & N>8мм(=половозрелые)
+pdf(file="2razrez_high_beatch_N1y_N8mm.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.sqmeter.high_beatch[2,], x=colnames(mean.sqmeter.high_beatch),pch=15, type="n", main="материк, Лувеньга. Верхний пляж", 
+     ylim=c(0, 
+            max(mean.sqmeter.high_beatch[2,], mean.sqmeter.high_beatch[4,], na.rm=T)+max(sem.sqmeter.high_beatch[2,], sem.sqmeter.high_beatch[4,], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(as.numeric(colnames(mean.sqmeter.high_beatch)), 
+      mean.sqmeter.high_beatch[2,], pch=15, type="b", col=2)
+arrows(x0=as.numeric(colnames(mean.sqmeter.high_beatch)), 
+       x1=as.numeric(colnames(mean.sqmeter.high_beatch)),
+       y0=mean.sqmeter.high_beatch[2,]-sem.sqmeter.high_beatch[2,], 
+       y1=mean.sqmeter.high_beatch[2,]+sem.sqmeter.high_beatch[2,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(as.numeric(colnames(mean.sqmeter.high_beatch)), 
+      mean.sqmeter.high_beatch[4,], pch=15, type="b", col=4)
+arrows(x0=as.numeric(colnames(mean.sqmeter.high_beatch)), 
+       x1=as.numeric(colnames(mean.sqmeter.high_beatch)),
+       y0=mean.sqmeter.high_beatch[4,]-sem.sqmeter.high_beatch[4,], 
+       y1=mean.sqmeter.high_beatch[4,]+sem.sqmeter.high_beatch[4,], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("2razrez_high_beatch_N1y_N8mm.pdf") #встройка шрифтов в файл
+
+#считаем среднюю численность и ошибки особей старше 1+
+str(high_beatch)
+levels(high_beatch$oneyear.int)
+(old.sqmeter.high_beatch<-subset(high_beatch, subset=high_beatch$oneyear.int==c("(1.8,8]","(8,24]")))
+(N.old.sqmeter.high_beatch<-t(tapply(old.sqmeter.high_beatch$Freq,INDEX=list(old.sqmeter.high_beatch$year, old.sqmeter.high_beatch$sample),FUN=sum, na.rm=T)))
+N.old.sqmeter.high_beatch[N.old.sqmeter.high_beatch==0]<-NA
+
+(mean.old.sqmeter.high_beatch<-apply(N.old.sqmeter.high_beatch, 2, FUN=mean, na.rm=T))
+
+(sd.old.sqmeter.high_beatch<-apply(N.old.sqmeter.high_beatch, 2, FUN=sd, na.rm=T))
+
+(sem.old.sqmeter.high_beatch <-t(sd.old.sqmeter.high_beatch/sqrt(as.vector(n.samples.df$high_beatch))))
+
+#пишем численности в файл
+write.table(mean.old.sqmeter.high_beatch, file="Nmean_old_high_beatch.csv",sep=";", dec=",")
+
+#рисуем график N1+ & N>1+
+pdf(file="2razrez_high_beatch_N1_Nold.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.sqmeter.high_beatch[2,], x=colnames(mean.sqmeter.high_beatch),pch=15, type="n", main="материк, Лувеньга. Верхний пляж", 
+     ylim=c(0, 
+            max(mean.sqmeter.high_beatch[2,], mean.old.sqmeter.high_beatch, na.rm=T)+max(sem.sqmeter.high_beatch[2,], sem.old.sqmeter.high_beatch, na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(colnames(mean.sqmeter.high_beatch), 
+      mean.sqmeter.high_beatch[2,], pch=15, type="b", col=2)
+arrows(x0=as.numeric(colnames(mean.sqmeter.high_beatch)), 
+       x1=as.numeric(colnames(mean.sqmeter.high_beatch)),
+       y0=mean.sqmeter.high_beatch[2,]-sem.sqmeter.high_beatch[2,], 
+       y1=mean.sqmeter.high_beatch[2,]+sem.sqmeter.high_beatch[2,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(as.numeric(colnames(mean.sqmeter.high_beatch)), 
+      mean.old.sqmeter.high_beatch, pch=15, type="b", col=4)
+arrows(x0=as.numeric(colnames(mean.sqmeter.high_beatch)), 
+       x1=as.numeric(colnames(mean.sqmeter.high_beatch)),
+       y0=mean.old.sqmeter.high_beatch-sem.old.sqmeter.high_beatch, 
+       y1=mean.old.sqmeter.high_beatch+sem.old.sqmeter.high_beatch, angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("2razrez_high_beatch_N1_Nold.pdf") #встройка шрифтов в файл
+
 #пояс фукоидов
 mean.sqmeter.fucus_zone<-t(tapply(fucus_zone$Freq,INDEX=list(fucus_zone$year,  fucus_zone$oneyear.int),FUN=sd, na.rm=T))
 mean.sqmeter.fucus_zone.df<-as.data.frame(mean.sqmeter.fucus_zone)
 
 sd.sqmeter.fucus_zone<-tapply(fucus_zone$Freq,INDEX=list(fucus_zone$year,  fucus_zone$oneyear.int),FUN=sd, na.rm=T)
 
-sem.sqmeter.fucus_zone <-t(sd.sqmeter.fucus_zone/sqrt(n.samples.df$fucus_zone))
+(sem.sqmeter.fucus_zone <-t(sd.sqmeter.fucus_zone/sqrt(n.samples.df$fucus_zone)))
 sem.sqmeter.fucus_zone.df<-as.data.frame(sem.sqmeter.fucus_zone)
+
+#пишем численности в файл
+write.table(mean.sqmeter.fucus_zone, file="Nmean_all_fucus_zone.csv",sep=";", dec=",")
+
+
+#рисуем график N1+ & N>8мм(=половозрелые)
+pdf(file="2razrez_fucus_zone_N1y_N8mm.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.sqmeter.fucus_zone[2,], x=colnames(mean.sqmeter.fucus_zone),pch=15, type="n", main="материк, Лувеньга. пояс фукоидов", 
+     ylim=c(0, 
+            max(mean.sqmeter.fucus_zone[2,], mean.sqmeter.fucus_zone[4,], na.rm=T)+max(sem.sqmeter.fucus_zone[2,], sem.sqmeter.fucus_zone[4,], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(as.numeric(colnames(mean.sqmeter.fucus_zone)), 
+      mean.sqmeter.fucus_zone[2,], pch=15, type="b", col=2)
+arrows(x0=as.numeric(colnames(mean.sqmeter.fucus_zone)), 
+       x1=as.numeric(colnames(mean.sqmeter.fucus_zone)),
+       y0=mean.sqmeter.fucus_zone[2,]-sem.sqmeter.fucus_zone[2,], 
+       y1=mean.sqmeter.fucus_zone[2,]+sem.sqmeter.fucus_zone[2,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(as.numeric(colnames(mean.sqmeter.fucus_zone)), 
+      mean.sqmeter.fucus_zone[4,], pch=15, type="b", col=4)
+arrows(x0=as.numeric(colnames(mean.sqmeter.fucus_zone)), 
+       x1=as.numeric(colnames(mean.sqmeter.fucus_zone)),
+       y0=mean.sqmeter.fucus_zone[4,]-sem.sqmeter.fucus_zone[4,], 
+       y1=mean.sqmeter.fucus_zone[4,]+sem.sqmeter.fucus_zone[4,], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("2razrez_fucus_zone_N1y_N8mm.pdf") #встройка шрифтов в файл
+
+#считаем среднюю численность и ошибки особей старше 1+
+str(fucus_zone)
+levels(fucus_zone$oneyear.int)
+(old.sqmeter.fucus_zone<-subset(fucus_zone, subset=fucus_zone$oneyear.int==c("(1.8,8]","(8,24]")))
+(N.old.sqmeter.fucus_zone<-t(tapply(old.sqmeter.fucus_zone$Freq,INDEX=list(old.sqmeter.fucus_zone$year, old.sqmeter.fucus_zone$sample),FUN=sum, na.rm=T)))
+N.old.sqmeter.fucus_zone[N.old.sqmeter.fucus_zone==0]<-NA
+
+(mean.old.sqmeter.fucus_zone<-apply(N.old.sqmeter.fucus_zone, 2, FUN=mean, na.rm=T))
+
+(sd.old.sqmeter.fucus_zone<-apply(N.old.sqmeter.fucus_zone, 2, FUN=sd, na.rm=T))
+
+(sem.old.sqmeter.fucus_zone <-t(sd.old.sqmeter.fucus_zone/sqrt(as.vector(n.samples.df$fucus_zone))))
+
+#пишем численности в файл
+write.table(mean.old.sqmeter.fucus_zone, file="Nmean_old_fucus_zone.csv",sep=";", dec=",")
+
+#рисуем график N1+ & N>1+
+pdf(file="2razrez_fucus_zone_N1_Nold.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.sqmeter.fucus_zone[2,], x=colnames(mean.sqmeter.fucus_zone),pch=15, type="n", main="материк, Лувеньга. пояс фукоидов", 
+     ylim=c(0, 
+            max(mean.sqmeter.fucus_zone[2,], mean.old.sqmeter.fucus_zone, na.rm=T)+max(sem.sqmeter.fucus_zone[2,], sem.old.sqmeter.fucus_zone, na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(colnames(mean.sqmeter.fucus_zone), 
+      mean.sqmeter.fucus_zone[2,], pch=15, type="b", col=2)
+arrows(x0=as.numeric(colnames(mean.sqmeter.fucus_zone)), 
+       x1=as.numeric(colnames(mean.sqmeter.fucus_zone)),
+       y0=mean.sqmeter.fucus_zone[2,]-sem.sqmeter.fucus_zone[2,], 
+       y1=mean.sqmeter.fucus_zone[2,]+sem.sqmeter.fucus_zone[2,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(as.numeric(colnames(mean.sqmeter.fucus_zone)), 
+      mean.old.sqmeter.fucus_zone, pch=15, type="b", col=4)
+arrows(x0=as.numeric(colnames(mean.sqmeter.fucus_zone)), 
+       x1=as.numeric(colnames(mean.sqmeter.fucus_zone)),
+       y0=mean.old.sqmeter.fucus_zone-sem.old.sqmeter.fucus_zone, 
+       y1=mean.old.sqmeter.fucus_zone+sem.old.sqmeter.fucus_zone, angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("2razrez_fucus_zone_N1_Nold.pdf") #встройка шрифтов в файл
+
+
 
 #пояс зостеры
 mean.sqmeter.zostera_zone<-t(tapply(zostera_zone$Freq,INDEX=list(zostera_zone$year,  zostera_zone$oneyear.int),FUN=sd, na.rm=T))
@@ -81,6 +214,73 @@ sd.sqmeter.zostera_zone<-tapply(zostera_zone$Freq,INDEX=list(zostera_zone$year, 
 sem.sqmeter.zostera_zone <-t(sd.sqmeter.zostera_zone/sqrt(n.samples.df$zostera_zone))
 sem.sqmeter.zostera_zone.df<-as.data.frame(sem.sqmeter.zostera_zone)
 
+#пишем численности в файл
+write.table(mean.sqmeter.zostera_zone, file="Nmean_all_zostera_zone.csv",sep=";", dec=",")
+
+#рисуем график N1+ & N>8мм(=половозрелые)
+pdf(file="2razrez_zostera_zone_N1y_N8mm.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.sqmeter.zostera_zone[2,], x=colnames(mean.sqmeter.zostera_zone),pch=15, type="n", main="материк, Лувеньга. Верхний пляж", 
+     ylim=c(0, 
+            max(mean.sqmeter.zostera_zone[2,], mean.sqmeter.zostera_zone[4,], na.rm=T)+max(sem.sqmeter.zostera_zone[2,], sem.sqmeter.zostera_zone[4,], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(as.numeric(colnames(mean.sqmeter.zostera_zone)), 
+      mean.sqmeter.zostera_zone[2,], pch=15, type="b", col=2)
+arrows(x0=as.numeric(colnames(mean.sqmeter.zostera_zone)), 
+       x1=as.numeric(colnames(mean.sqmeter.zostera_zone)),
+       y0=mean.sqmeter.zostera_zone[2,]-sem.sqmeter.zostera_zone[2,], 
+       y1=mean.sqmeter.zostera_zone[2,]+sem.sqmeter.zostera_zone[2,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(as.numeric(colnames(mean.sqmeter.zostera_zone)), 
+      mean.sqmeter.zostera_zone[4,], pch=15, type="b", col=4)
+arrows(x0=as.numeric(colnames(mean.sqmeter.zostera_zone)), 
+       x1=as.numeric(colnames(mean.sqmeter.zostera_zone)),
+       y0=mean.sqmeter.zostera_zone[4,]-sem.sqmeter.zostera_zone[4,], 
+       y1=mean.sqmeter.zostera_zone[4,]+sem.sqmeter.zostera_zone[4,], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("2razrez_zostera_zone_N1y_N8mm.pdf") #встройка шрифтов в файл
+
+#считаем среднюю численность и ошибки особей старше 1+
+str(zostera_zone)
+levels(zostera_zone$oneyear.int)
+(old.sqmeter.zostera_zone<-subset(zostera_zone, subset=zostera_zone$oneyear.int==c("(1.8,8]","(8,24]")))
+(N.old.sqmeter.zostera_zone<-t(tapply(old.sqmeter.zostera_zone$Freq,INDEX=list(old.sqmeter.zostera_zone$year, old.sqmeter.zostera_zone$sample),FUN=sum, na.rm=T)))
+N.old.sqmeter.zostera_zone[N.old.sqmeter.zostera_zone==0]<-NA
+
+(mean.old.sqmeter.zostera_zone<-apply(N.old.sqmeter.zostera_zone, 2, FUN=mean, na.rm=T))
+
+(sd.old.sqmeter.zostera_zone<-apply(N.old.sqmeter.zostera_zone, 2, FUN=sd, na.rm=T))
+
+(sem.old.sqmeter.zostera_zone <-t(sd.old.sqmeter.zostera_zone/sqrt(as.vector(n.samples.df$zostera_zone))))
+
+#пишем численности в файл
+write.table(mean.old.sqmeter.zostera_zone, file="Nmean_old_zostera_zone.csv",sep=";", dec=",")
+
+#рисуем график N1+ & N>1+
+pdf(file="2razrez_zostera_zone_N1_Nold.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.sqmeter.zostera_zone[2,], x=colnames(mean.sqmeter.zostera_zone),pch=15, type="n", main="материк, Лувеньга. Верхний пляж", 
+     ylim=c(0, 
+            max(mean.sqmeter.zostera_zone[2,], mean.old.sqmeter.zostera_zone, na.rm=T)+max(sem.sqmeter.zostera_zone[2,], sem.old.sqmeter.zostera_zone, na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(colnames(mean.sqmeter.zostera_zone), 
+      mean.sqmeter.zostera_zone[2,], pch=15, type="b", col=2)
+arrows(x0=as.numeric(colnames(mean.sqmeter.zostera_zone)), 
+       x1=as.numeric(colnames(mean.sqmeter.zostera_zone)),
+       y0=mean.sqmeter.zostera_zone[2,]-sem.sqmeter.zostera_zone[2,], 
+       y1=mean.sqmeter.zostera_zone[2,]+sem.sqmeter.zostera_zone[2,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(as.numeric(colnames(mean.sqmeter.zostera_zone)), 
+      mean.old.sqmeter.zostera_zone, pch=15, type="b", col=4)
+arrows(x0=as.numeric(colnames(mean.sqmeter.zostera_zone)), 
+       x1=as.numeric(colnames(mean.sqmeter.zostera_zone)),
+       y0=mean.old.sqmeter.zostera_zone-sem.old.sqmeter.zostera_zone, 
+       y1=mean.old.sqmeter.zostera_zone+sem.old.sqmeter.zostera_zone, angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("2razrez_zostera_zone_N1_Nold.pdf") #встройка шрифтов в файл
+
+
+
 #нижний пляж
 (mean.sqmeter.low_beatch<-t(tapply(low_beatch$Freq,INDEX=list(low_beatch$year,  low_beatch$oneyear.int),FUN=sd, na.rm=T)))
 mean.sqmeter.low_beatch.df<-as.data.frame(mean.sqmeter.low_beatch)
@@ -90,8 +290,74 @@ sd.sqmeter.low_beatch<-tapply(low_beatch$Freq,INDEX=list(low_beatch$year,  low_b
 sem.sqmeter.low_beatch <-t(sd.sqmeter.low_beatch/sqrt(n.samples.df$low_beatch))
 sem.sqmeter.low_beatch.df<-as.data.frame(sem.sqmeter.low_beatch)
 
+#пишем численности в файл
+write.table(mean.sqmeter.low_beatch, file="Nmean_all_low_beatch.csv",sep=";", dec=",")
 
-#рисуем график
+#рисуем график N1+ & N>8мм(=половозрелые)
+pdf(file="2razrez_low_beatch_N1y_N8mm.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.sqmeter.low_beatch[2,], x=colnames(mean.sqmeter.low_beatch),pch=15, type="n", main="материк, Лувеньга. Верхний пляж", 
+     ylim=c(0, 
+            max(mean.sqmeter.low_beatch[2,], mean.sqmeter.low_beatch[4,], na.rm=T)+max(sem.sqmeter.low_beatch[2,], sem.sqmeter.low_beatch[4,], na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(as.numeric(colnames(mean.sqmeter.low_beatch)), 
+      mean.sqmeter.low_beatch[2,], pch=15, type="b", col=2)
+arrows(x0=as.numeric(colnames(mean.sqmeter.low_beatch)), 
+       x1=as.numeric(colnames(mean.sqmeter.low_beatch)),
+       y0=mean.sqmeter.low_beatch[2,]-sem.sqmeter.low_beatch[2,], 
+       y1=mean.sqmeter.low_beatch[2,]+sem.sqmeter.low_beatch[2,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(as.numeric(colnames(mean.sqmeter.low_beatch)), 
+      mean.sqmeter.low_beatch[4,], pch=15, type="b", col=4)
+arrows(x0=as.numeric(colnames(mean.sqmeter.low_beatch)), 
+       x1=as.numeric(colnames(mean.sqmeter.low_beatch)),
+       y0=mean.sqmeter.low_beatch[4,]-sem.sqmeter.low_beatch[4,], 
+       y1=mean.sqmeter.low_beatch[4,]+sem.sqmeter.low_beatch[4,], angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("2razrez_low_beatch_N1y_N8mm.pdf") #встройка шрифтов в файл
+
+#считаем среднюю численность и ошибки особей старше 1+
+str(low_beatch)
+levels(low_beatch$oneyear.int)
+(old.sqmeter.low_beatch<-subset(low_beatch, subset=low_beatch$oneyear.int==c("(1.8,8]","(8,24]")))
+(N.old.sqmeter.low_beatch<-t(tapply(old.sqmeter.low_beatch$Freq,INDEX=list(old.sqmeter.low_beatch$year, old.sqmeter.low_beatch$sample),FUN=sum, na.rm=T)))
+N.old.sqmeter.low_beatch[N.old.sqmeter.low_beatch==0]<-NA
+
+(mean.old.sqmeter.low_beatch<-apply(N.old.sqmeter.low_beatch, 2, FUN=mean, na.rm=T))
+
+(sd.old.sqmeter.low_beatch<-apply(N.old.sqmeter.low_beatch, 2, FUN=sd, na.rm=T))
+
+(sem.old.sqmeter.low_beatch <-t(sd.old.sqmeter.low_beatch/sqrt(as.vector(n.samples.df$low_beatch))))
+
+
+#пишем численности в файл
+write.table(mean.old.sqmeter.low_beatch, file="Nmean_old_low_beatch.csv",sep=";", dec=",")
+
+#рисуем график N1+ & N>1+
+pdf(file="2razrez_low_beatch_N1_Nold.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=mean.sqmeter.low_beatch[2,], x=colnames(mean.sqmeter.low_beatch),pch=15, type="n", main="материк, Лувеньга. Верхний пляж", 
+     ylim=c(0, 
+            max(mean.sqmeter.low_beatch[2,], mean.old.sqmeter.low_beatch, na.rm=T)+max(sem.sqmeter.low_beatch[2,], sem.old.sqmeter.low_beatch, na.rm=T)),
+     xlab="год", ylab="N, экз./кв.м")
+#молодь
+lines(colnames(mean.sqmeter.low_beatch), 
+      mean.sqmeter.low_beatch[2,], pch=15, type="b", col=2)
+arrows(x0=as.numeric(colnames(mean.sqmeter.low_beatch)), 
+       x1=as.numeric(colnames(mean.sqmeter.low_beatch)),
+       y0=mean.sqmeter.low_beatch[2,]-sem.sqmeter.low_beatch[2,], 
+       y1=mean.sqmeter.low_beatch[2,]+sem.sqmeter.low_beatch[2,], angle=90, code=3, length=0.1, col=2)
+#половозрелые
+lines(as.numeric(colnames(mean.sqmeter.low_beatch)), 
+      mean.old.sqmeter.low_beatch, pch=15, type="b", col=4)
+arrows(x0=as.numeric(colnames(mean.sqmeter.low_beatch)), 
+       x1=as.numeric(colnames(mean.sqmeter.low_beatch)),
+       y0=mean.old.sqmeter.low_beatch-sem.old.sqmeter.low_beatch, 
+       y1=mean.old.sqmeter.low_beatch+sem.old.sqmeter.low_beatch, angle=90, code=3, length=0.1, col=4)
+dev.off()
+embedFonts("2razrez_low_beatch_N1_Nold.pdf") #встройка шрифтов в файл
+
+
+#рисуем график всей молоди
 
 pdf(file="2razrez_N_oneyear.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(y=mean.sqmeter.high_beatch[2,], x=as.numeric(colnames(mean.sqmeter.high_beatch)),pch=15, type="n", 

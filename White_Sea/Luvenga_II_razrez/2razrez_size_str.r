@@ -305,8 +305,18 @@ for (i in 1:ncol(N.mean.sqmeter))
         y0=N.mean.sqmeter[,i]-N.sem.sqmeter[,i], y1=N.mean.sqmeter[,i]+N.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
 }
 
+##динамика без разделения на горизонты
+str(size.str.sqmeter)
+(N.all.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum,na.rm=T))
+N.all.sqmeter[N.all.sqmeter==0]<-NA
+(N.all.mean.sqmeter<-apply(N.all.sqmeter, na.rm=T, MARGIN=1, FUN=mean ))
+(N.all.sd.sqmeter<-apply(N.all.sqmeter, na.rm=T, MARGIN=1, FUN=sd))
+(N.all.sem.sqmeter<-N.all.sd.sqmeter/sqrt(rowSums(as.matrix(n.samples),na.rm=T)))
+(D.n.all<-N.all.sem.sqmeter/N.all.mean.sqmeter*100)
 
-## динамика без молод ( больше 2+)
+write.table(data.frame(N.all.mean.sqmeter, N.all.sem.sqmeter), file="Nall_mean.csv", dec=",", sep=";")
+
+## динамика без спата ( больше 1 мм)
 (N2.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"],
                    list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
                         size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"],
@@ -350,6 +360,21 @@ for (i in 1:ncol(N2.mean.sqmeter))
  arrows(x0=as.numeric(rownames(N2.mean.sqmeter)), x1=as.numeric(rownames(N2.mean.sqmeter)),
         y0=N2.mean.sqmeter[,i]-N2.sem.sqmeter[,i], y1=N2.mean.sqmeter[,i]+N2.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
 }
+
+##динамика без спата без разделения на горизонты
+str(size.str.sqmeter)
+(N2.all.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"],
+                    list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
+                         size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"]), sum, na.rm=T))
+N2.all.sqmeter[N2.all.sqmeter==0]<-NA
+(N2.all.mean.sqmeter<-apply(N2.all.sqmeter, na.rm=T, MARGIN=1, FUN=mean ))
+(N2.all.sd.sqmeter<-apply(N2.all.sqmeter, na.rm=T, MARGIN=1, FUN=sd))
+(N2.all.sem.sqmeter<-N2.all.sd.sqmeter/sqrt(rowSums(as.matrix(n.samples),na.rm=T)))
+(D.n2.all<-N2.all.sem.sqmeter/N2.all.mean.sqmeter*100)
+
+write.table(data.frame(N2.all.mean.sqmeter, N2.all.sem.sqmeter), file="N2all_mean.csv", dec=",", sep=";")
+
+
 
 ##про N2
 #доля молоди

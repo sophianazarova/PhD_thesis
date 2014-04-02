@@ -1,4 +1,11 @@
-mac <- read.table("clipboard", header=TRUE)
+setwd("~/Dropbox/PhD_thesis/PhD_thesis/schet_s_VM/")
+
+install.packages("vegan")
+
+library(ggplot2)
+library(vegan)
+
+mac <- read.table("est1.csv", header=TRUE, sep=";", dec=",")
 
 pl <- ggplot(mac, aes(x=year, y=N))
 pl+geom_line()
@@ -305,6 +312,10 @@ dev.off()
 #-------------------------------------------
 
 # Detrending of time series и анализ PACF
+
+#install.packages("boot")
+library(boot)
+
 detrend_mac <- lm(N ~ as.numeric(year), data=mac)$residuals + mean(mac$N)
 mac$detrendN <- detrend_mac 
 
@@ -425,3 +436,8 @@ pl_PRCF_ci <- ggplot(boot_prcf_all, aes(x=lag, y=PRCF))
 
 
 pl_PRCF_ci + geom_bar(colour="black", fill="darkgray", stat="identity", position="dodge")  + geom_hline(yintercept=0) + geom_hline(yintercept=c(-2/sqrt(21),2/sqrt(21)), linetype=2) + geom_errorbar(aes(ymin=low.ci, ymax=upper.ci),width=0.1)+ xlab("Time lag") + ylab("Partial autocorrelations") + theme_bw()
+
+pdf(file="Rstuary_N2_PRCF.pdf", family="NimbusSan")
+pl_PRCF_ci + geom_bar(colour="black", fill="darkgray", stat="identity", position="dodge")  + geom_hline(yintercept=0) + geom_hline(yintercept=c(-2/sqrt(21),2/sqrt(21)), linetype=2) + geom_errorbar(aes(ymin=low.ci, ymax=upper.ci),width=0.1)+ xlab("Time lag") + ylab("Partial autocorrelations") + theme_bw()
+dev.off()
+embedFonts("Rstuary_N2_PRCF.pdf") #встройка шрифтов в файл

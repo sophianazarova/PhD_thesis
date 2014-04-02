@@ -19,6 +19,11 @@ ishodnik$mareography<-ordered(ishodnik$mareography, levels=c("high","middle", "l
 
 str(ishodnik)
 
+#минимумы-максимумы
+tapply(X=ishodnik$N.indd[ishodnik$sea=="White",drop=T], INDEX=ishodnik$region[ishodnik$sea=="White",drop=T], summary)
+hist(ishodnik$N.indd[ishodnik$region=="Chupa_bay"], breaks=seq(0,9000, 500))
+hist(ishodnik$N.indd[ishodnik$region=="Luvenga"], breaks=seq(0,9000, 500))
+hist(ishodnik$N.indd[ishodnik$region=="North_archipelago"], breaks=seq(0,9000, 500))
 
 ## рисуем частотное распределение средних численностей, чтобы понять, какие они.
 hist(ishodnik$N.indd[ishodnik$sea=="White"], breaks=seq(0,9000, 500))
