@@ -1,8 +1,9 @@
-setwd("~/Dropbox/PhD_thesis/PhD_thesis/oneyear_all_Kandalaksha_all/")
+setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/oneyear_all_Kandalaksha_all/")
 
 #на всякий случай отключили исходний от предыдущего файла
 detach(ishodnik)
 
+#####
 ishodnik<-read.table(file="all_Kandalaksha.csv", sep=";", dec=",", head=T)
 
 str(ishodnik)
@@ -54,3 +55,84 @@ boxplot(ishodnik$oneyear_tau[ishodnik$area=="goreliy" & ishodnik$tidal_level=="m
 boxplot(ishodnik$oneyear_tau[ishodnik$area=="goreliy" & ishodnik$tidal_level=="low"] ~ 
           all_before_tau.int[ishodnik$area=="goreliy" & ishodnik$tidal_level=="low"])
 
+#####
+
+#вторая серия
+#####
+detach(ishodnik)
+
+ishodnik<-read.table("N_all_Kandalaksha.csv", header=T, sep=";", dec=",")
+str(ishodnik)
+attach(ishodnik)
+
+#сделаем из линейного датафрейма матрицы
+#для годовалых
+(N.1year.matrix<-tapply(X=N.1year, list(year,area, tidal_zone), max))
+str(N.1year.matrix)
+#для 8мм = половозрелых
+(N.8mm.matrix<-tapply(X=N.8mm, list(year,area, tidal_zone), max))
+# для всех крупнее годовалых
+(N.old.matrix<-tapply(X=N.old, list(year,area, tidal_zone), max))
+
+levels(tidal_zone)
+levels(tidal_zone)
+apply(N.1year.matrix,MARGIN=c(2,3), FUN=mean, na.rm=T)
+
+#Эстуарий
+ccf(N.1year.matrix[,1,5], N.8mm.matrix[,1,5])
+ccf(N.1year.matrix[,1,5], N.old.matrix[,1,5])
+
+#Ломнишный
+ccf(as.vector(na.omit(N.1year.matrix[,3,4])), as.vector(na.omit(N.8mm.matrix[,3,4])))
+ccf(as.vector(na.omit(N.1year.matrix[,3,4])), as.vector(na.omit(N.old.matrix[,3,4])))
+
+#ЮГ
+ccf(as.vector(na.omit(N.1year.matrix[,5,4])), as.vector(na.omit(N.8mm.matrix[,5,4])))
+ccf(as.vector(na.omit(N.1year.matrix[,5,4])), as.vector(na.omit(N.old.matrix[,5,4])))
+
+#ЗРС
+ccf(as.vector(na.omit(N.1year.matrix[,6,7])), as.vector(na.omit(N.8mm.matrix[,6,7])))
+ccf(as.vector(na.omit(N.1year.matrix[,6,7])), as.vector(na.omit(N.old.matrix[,6,7])))
+
+###########
+# пробуем нарисовать модель про зависимость
+setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/oneyear_all_Kandalaksha_all/")
+
+#на всякий случай отключили исходний от предыдущего файла
+detach(ishodnik)
+
+ishodnik<-read.table(file="all_Kandalaksha.csv", sep=";", dec=",", head=T)
+str(ishodnik)
+attach(ishodnik)
+#install.packages("nlme")
+#install.packages("mgcv")
+
+library(nlme, mgcv)
+
+mod1 <- gls(oneyear_tau ~ 1 + polovozrelye_before_tau * tidal_level, data=ishodnik)
+mod1_a <- gls(oneyear_tau ~ 1 + polovozrelye_before_tau  + tidal_level, data=ishodnik)
+mod1_b <- gls(oneyear_tau ~ 1 + polovozrelye_before_tau, data=ishodnik)
+
+plot(mod1)
+anova(mod1, mod1_a)
+anova(mod1, mod1_b)
+
+
+library (car)
+
+mod5 <-  lme(log(oneyear_tau+1) ~ 1 + log(polovozrelye_before_tau +1) + tidal_level, random = ~1|area, method = "REML", weights = varIdent (form=~1|area), data=ishodnik)
+
+
+plot(mod5)
+hist(mod5$residuals)
+Anova(mod5)
+summary(mod5)
+
+
+mod6 <- gls(log(oneyear_tau+1) ~ 1 + log(all_before_tau +1) + tidal_level, data=ishodnik)
+mod7 <-  lme(log(oneyear_tau+1) ~ 1 + log(polovozrelye_before_tau +1) + tidal_level, random = ~1|area, method = "REML", weights = varIdent (form=~1|area), data=ishodnik)
+anova(mod6, mod7)
+
+plot(mod7)
+Anova(mod7)
+summary(mod7)

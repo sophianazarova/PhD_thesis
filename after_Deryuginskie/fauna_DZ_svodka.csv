@@ -1,0 +1,1011 @@
+year;station;sample;square;species;N.indd;B.mg
+2002;1;I-1;245;Capitella capitata;13;NA
+2002;1;I-1;245;Cricotopus sp;6;NA
+2002;1;I-1;245;Enchytraeidae gen sp;63;20
+2002;1;I-1;245;Fabricia sabella;143;35
+2002;1;I-1;30;Lineus ruber;12;82
+2002;1;I-1;30;Littorina saxatilis;10;47
+2002;1;I-1;30;Nainereis quadricuspida;3;35
+2002;1;I-1;245;Paranais littoralis;6;NA
+2002;1;I-1;245;Polydora quadrilobata;2;NA
+2002;1;I-1;245;Pygospio elegans;21;NA
+2002;1;I-1;30;Scoloplos armiger;15;NA
+2002;1;I-1;30;Scoloplos armiger;4;53
+2002;1;I-1;30;Skeneopsis planorbis;2;5
+2002;1;I-2;245;Arenicola marina;2;NA
+2002;1;I-2;245;Capitella capitata;6;NA
+2002;1;I-2;245;Cricotopus sp;12;NA
+2002;1;I-2;245;Fabricia sabella;413;77
+2002;1;I-2;30;Lineus ruber;28;234
+2002;1;I-2;30;Littorina saxatilis;24;NA
+2002;1;I-2;30;Macoma balthica;1;NA
+2002;1;I-2;30;Nainereis quadricuspida;8;58
+2002;1;I-2;30;Onoba aculeas;1;NA
+2002;1;I-2;245;Polydora quadrilobata;12;NA
+2002;1;I-2;30;Priapulus caudatus;1;33
+2002;1;I-2;245;Pygospio elegans;43;NA
+2002;1;I-2;30;Scoloplos armiger;20;NA
+2002;1;I-2;30;Scoloplos armiger;23;286
+2002;1;I-2;30;Skeneopsis planorbis;1;1
+2002;1;I-3;30;Amphiporus lactifloreus;1;3
+2002;1;I-3;245;Arenicola marina;2;1
+2002;1;I-3;245;Capitella capitata;8;7
+2002;1;I-3;245;Clitellio arenarius;66;138
+2002;1;I-3;245;Cricotopus sp;3;1
+2002;1;I-3;245;Enchytraeidae gen sp;94;NA
+2002;1;I-3;245;Fabricia sabella;394;64
+2002;1;I-3;30;Lineus ruber;19;245
+2002;1;I-3;245;long and fit tubificid;25;NA
+2002;1;I-3;30;Mya arenaria;1;5800
+2002;1;I-3;30;Nainereis quadricuspida;7;30
+2002;1;I-3;245;Polydora quadrilobata;15;60
+2002;1;I-3;245;Pygospio elegans;32;30
+2002;1;I-3;30;Scoloplos armiger;3;15
+2002;1;I-3;245;Tubificoides benedeni;119;199
+2002;1;M-10;10;Cerastoderma edule;6;17760
+2002;1;M-11;10;Cerastoderma edule;1;4400
+2002;1;M-11;10;Macoma balthica;1;3
+2002;1;M-9;10;Cerastoderma edule;4;7370
+2002;1;M-9;10;Macoma balthica;4;715
+2002;2;II-1;30;Jaera sp;1;1
+2002;2;II-1;30;Onisimus (Pseudalibrotus) litoralis;10;182
+2002;2;II-2;30;Jaera sp;1;NA
+2002;2;II-2;30;Onisimus (Pseudalibrotus) litoralis;4;NA
+2002;2;II-3;30;Arenicola marina;3;82
+2002;2;II-3;30;Capitella capitata;8;NA
+2002;2;II-3;30;Onisimus (Pseudalibrotus) litoralis;3;NA
+2002;2;II-3;30;Pygospio elegans;1;NA
+2002;3;III-1;30;Onisimus (Pseudalibrotus) litoralis;5;NA
+2002;3;III-2;245;Capitella capitata;9;6
+2002;3;III-2;30;Cerastoderma edule;1;820
+2002;3;III-2;245;Cricotopus sp;11;2
+2002;3;III-2;245;Enchytraeidae gen sp;5;5
+2002;3;III-2;245;Fabricia sabella;15;5
+2002;3;III-2;30;Mya arenaria;1;NA
+2002;3;III-2;245;Paranais littoralis;2;1
+2002;3;III-2;245;Pygospio elegans;4;4
+2002;3;III-2;245;Tubificoides benedeni;26;35
+2002;3;III-3;30;Mya arenaria;1;NA
+2002;3;III-3;30;Onisimus (Pseudalibrotus) litoralis;4;NA
+2002;3;M-13;10;Cerastoderma edule;3;7900
+2002;3;M-13;10;Macoma balthica;4;362
+2002;3;M-14;10;Cerastoderma edule;1;42
+2002;3;M-14;10;Macoma balthica;3;445
+2002;3;M-15;10;Cerastoderma edule;2;5490
+2002;3;M-15;10;Macoma balthica;6;6230
+2002;3;M-16;10;Cerastoderma edule;2;5040
+2002;3;M-16;10;Macoma balthica;1;NA
+2002;4;IV-1;245;Capitella capitata;17;NA
+2002;4;IV-1;245;Cricotopus sp;6;3
+2002;4;IV-1;245;Enchytraeidae gen sp;113;48
+2002;4;IV-1;30;Eteone longa;1;77
+2002;4;IV-1;245;Fabricia sabella;31;NA
+2002;4;IV-1;245;Paranais littoralis;9;4
+2002;4;IV-1;245;Pygospio elegans;14;5
+2002;4;IV-2;245;Capitella capitata;19;4
+2002;4;IV-2;245;Cricotopus sp;2;1
+2002;4;IV-2;245;Enchytraeidae gen sp;88;20
+2002;4;IV-2;30;Eteone longa;1;93
+2002;4;IV-2;245;Fabricia sabella;38;4
+2002;4;IV-2;245;Pygospio elegans;3;1
+2002;4;IV-2;30;Scoloplos armiger;1;33
+2002;4;IV-3;245;Capitella capitata;22;7
+2002;4;IV-3;245;Cricotopus sp;6;1
+2002;4;IV-3;245;Enchytraeidae gen sp;63;10
+2002;4;IV-3;245;Fabricia sabella;63;19
+2002;4;IV-3;30;Lineus ruber;2;NA
+2002;4;IV-3;245;Paranais littoralis;2;1
+2002;4;IV-3;30;Phyllodoce groenlandica;1;NA
+2002;4;IV-3;245;Pygospio elegans;15;4
+2002;4;IV-3;245;Tubificoides benedeni;65;22
+2002;4;M-13;10;Mya arenaria;2;416
+2002;4;M-14;10;Mya arenaria;1;5000
+2002;4;M-15;10;Mya arenaria;2;NA
+2002;5;V-1;30;Amphiporus lactifloreus;1;NA
+2002;5;V-1;30;Lineus ruber;14;NA
+2002;5;V-1;30;Mya arenaria;1;NA
+2002;5;V-1;30;Nainereis quadricuspida;4;NA
+2002;5;V-1;30;Scoloplos armiger;16;NA
+2002;5;V-2;245;Capitella capitata;31;7
+2002;5;V-2;245;Cricotopus sp;5;3
+2002;5;V-2;245;Enchytraeidae gen sp;105;27
+2002;5;V-2;245;Fabricia sabella;594;73
+2002;5;V-2;245;Polydora quadrilobata;1;1
+2002;5;V-2;245;Pygospio elegans;94;39
+2002;5;V-2;30;Scoloplos armiger;5;5
+2002;6;M-17;10;Cerastoderma edule;2;3270
+2002;6;M-18;10;Cerastoderma edule;5;4930
+2002;6;M-18;10;Macoma balthica;2;82
+2002;6;M-19;10;Cerastoderma edule;2;3510
+2002;6;M-19;10;Macoma balthica;4;646
+2002;6;VI-1;245;Capitella capitata;29;7
+2002;6;VI-1;30;Cerastoderma edule;2;750
+2002;6;VI-1;245;Cricotopus sp;57;6
+2002;6;VI-1;245;Enchytraeidae gen sp;5;3
+2002;6;VI-1;245;Fabricia sabella;55;12
+2002;6;VI-1;30;Onisimus (Pseudalibrotus) litoralis;3;NA
+2002;6;VI-1;245;Pygospio elegans;408;52
+2002;6;VI-1;30;Tubifex costatus;1;1
+2002;6;VI-1;30;Tubificoides benedeni;1;1
+2002;6;VI-2;30;Arenicola marina;2;33
+2002;6;VI-2;245;Capitella capitata;16;NA
+2002;6;VI-2;30;Cerastoderma edule;1;36
+2002;6;VI-2;245;Cricotopus sp;45;NA
+2002;6;VI-2;245;Fabricia sabella;9;NA
+2002;6;VI-2;30;Hyale prevosti;1;NA
+2002;6;VI-2;245;microphtalmus sczelkovii;4;NA
+2002;6;VI-2;30;Onisimus (Pseudalibrotus) litoralis;2;NA
+2002;6;VI-2;245;Pygospio elegans;47;NA
+2002;6;VI-3;245;Capitella capitata;21;6
+2002;6;VI-3;30;Cerastoderma edule;1;4200
+2002;6;VI-3;245;Cricotopus sp;30;3
+2002;6;VI-3;30;Eteone longa;1;20
+2002;6;VI-3;245;Fabricia sabella;11;3
+2002;6;VI-3;30;Onisimus (Pseudalibrotus) litoralis;5;NA
+2002;6;VI-3;245;Pygospio elegans;127;32
+2002;7;VII-1;30;Cerastoderma edule;2;2010
+2002;7;VII-2;30;Mya arenaria;1;620
+2002;7;VII-2;30;Onisimus (Pseudalibrotus) litoralis;1;NA
+2002;7;VII-3;245;Capitella capitata;52;15
+2002;7;VII-3;30;Capitella capitata;11;NA
+2002;7;VII-3;30;Cerastoderma edule;1;1810
+2002;7;VII-3;245;Cricotopus sp;1;500
+2002;7;VII-3;245;Enchytraeidae gen sp;94;37
+2002;7;VII-3;245;Eteone longa;1;1
+2002;7;VII-3;245;Fabricia sabella;168;14
+2002;7;VII-3;30;Mya arenaria;1;27
+2002;7;VII-3;30;Nainereis quadricuspida;2;NA
+2002;7;VII-3;30;Onisimus (Pseudalibrotus) litoralis;1;NA
+2002;7;VII-3;30;Onoba aculeas;1;1
+2002;7;VII-3;245;Polydora quadrilobata;2;1
+2002;7;VII-3;30;Polydora quadrilobata;2;NA
+2002;7;VII-3;245;Pygospio elegans;77;12
+2002;7;VII-3;30;Pygospio elegans;1;NA
+2002;7;VII-3;30;Scoloplos armiger;1;NA
+2002;7;VII-3;245;Tubificoides benedeni;54;87
+2002;8;M-6;10;Macoma balthica;4;856
+2002;8;M-8;10;Macoma balthica;4;610
+2002;8;VIII-1;245;Capitella capitata;43;11
+2002;8;VIII-1;245;Clitellio arenarius;1;2
+2002;8;VIII-1;245;Cricotopus sp;4;2
+2002;8;VIII-1;245;Enchytraeidae gen sp;114;40
+2002;8;VIII-1;245;Fabricia sabella;287;48
+2002;8;VIII-1;245;Lineus ruber;3;14
+2002;8;VIII-1;30;Nainereis quadricuspida;2;5
+2002;8;VIII-1;245;Nicomache lumbricalis;1;1
+2002;8;VIII-1;245;Pygospio elegans;33;30
+2002;8;VIII-1;30;Scoloplos armiger;4;44
+2002;8;VIII-1;245;Tubificoides benedeni;8;9
+2002;8;VIII-2;245;Capitella capitata;103;15
+2002;8;VIII-2;245;Clitellio arenarius;15;8
+2002;8;VIII-2;245;Enchytraeidae gen sp;90;17
+2002;8;VIII-2;245;Fabricia sabella;467;53
+2002;8;VIII-2;245;Lineus ruber;4;13
+2002;8;VIII-2;30;Nainereis quadricuspida;3;7
+2002;8;VIII-2;30;Onisimus (Pseudalibrotus) litoralis;1;NA
+2002;8;VIII-2;245;Pygospio elegans;60;18
+2002;8;VIII-2;30;Scoloplos armiger;10;11
+2002;8;VIII-2;245;Tubificoides benedeni;149;125
+2002;8;VIII-3;245;Capitella capitata;107;NA
+2002;8;VIII-3;245;Cricotopus sp;6;NA
+2002;8;VIII-3;245;Fabricia sabella;439;NA
+2002;8;VIII-3;30;Hyale prevosti;1;NA
+2002;8;VIII-3;245;Lineus ruber;2;NA
+2002;8;VIII-3;245;Phyllodoce groenlandica;1;NA
+2002;8;VIII-3;245;Pygospio elegans;17;NA
+2002;8;VIII-3;30;Scoloplos armiger;5;NA
+2003;1;I-1;30;Cerastoderma edule;1;2450
+2003;1;I-1;30;Cladophora fracta;NA;49,6
+2003;1;I-1;30;Hydrobia ulvae;1;4
+2003;1;I-1;30;Lineus ruber;10;150
+2003;1;I-1;30;Littorina saxatilis;2;6
+2003;1;I-1;30;Mya arenaria;1;32
+2003;1;I-1;30;Mya arenaria;1;320
+2003;1;I-1;30;Mytilus edulis;60;7600
+2003;1;I-1;30;Nemertini;2;NA
+2003;1;I-1;30;Phyllodoce groenlandica;1;NA
+2003;1;I-1;30;Scoloplos armiger;22;640
+2003;1;I-1;30;Styctiosiphon;NA;12,4
+2003;1;I-1;30;Turtonia minuta;1;3
+2003;1;I-2;30;Cladophora rupestris;NA;18
+2003;1;I-2;30;Lineus ruber;13;208
+2003;1;I-2;30;Littorina saxatilis;2;7
+2003;1;I-2;30;Macoma balthica;2;439
+2003;1;I-2;30;Mytilus edulis;61;10200
+2003;1;I-2;30;Nainereis quadricuspida;1;NA
+2003;1;I-2;30;Scoloplos armiger;19;144
+2003;1;I-2;30;Styctiosiphon;NA;11
+2003;1;I-3;30;Cladophora fracta;NA;12
+2003;1;I-3;30;Lineus ruber;10;242
+2003;1;I-3;30;Mytilus edulis;18;1600
+2003;1;I-3;30;Nainereis quadricuspida;2;NA
+2003;1;I-3;30;Nemertini;2;NA
+2003;1;I-3;30;Phyllodoce groenlandica;1;NA
+2003;1;I-3;30;Scoloplos armiger;43;770
+2003;1;I-3;30;Styctiosiphon;NA;22
+2003;1;M-10;10;Cerastoderma edule;3;7400
+2003;2;II-1;245;Cricotopus sp;4;1
+2003;2;II-1;30;Macoma balthica;1;96
+2003;2;II-1;245;Pygospio elegans;260;134
+2003;2;II-2;245;Cricotopus sp;5;1
+2003;2;II-2;30;Mytilus edulis;1;174
+2003;2;II-2;245;Pygospio elegans;31;19
+2003;2;II-3;30;Cerastoderma edule;1;5950
+2003;2;II-3;30;Onisimus (Pseudalibrotus) litoralis;1;51
+2003;2;II-3;245;Pygospio elegans;70;37
+2003;2;II-3;30;Skeneopsis planorbis;1;2
+2003;2;M-2;10;Cerastoderma edule;1;4900
+2003;2;M-2;10;Mya arenaria;1;2,85
+2003;2;M-3;11;Mya arenaria;1;409
+2003;3;III-1;30;Gammarus sp;11;29
+2003;3;III-1;30;Lineus ruber;2;19
+2003;3;III-1;30;Macoma balthica;1;238
+2003;3;III-1;30;Mya arenaria;1;254
+2003;3;III-1;30;Mya arenaria;1;252
+2003;3;III-1;30;Scoloplos armiger;2;266
+2003;3;III-1;30;Styctiosiphon;NA;767
+2003;3;III-2;30;Arenicola marina;1;26
+2003;3;III-2;30;Cerastoderma edule;1;4200
+2003;3;III-2;30;Macoma balthica;6;416
+2003;3;III-2;30;Mya arenaria;1;105
+2003;3;III-2;30;Mya arenaria;1;416
+2003;3;III-2;30;Mytilus edulis;3;694
+2003;3;III-2;30;Onisimus (Pseudalibrotus) litoralis;2;58
+2003;3;III-2;30;Scoloplos armiger;2;522
+2003;3;III-3;30;Cladophora fracta;NA;10
+2003;3;III-3;30;Gammarus sp;1;4
+2003;3;III-3;30;Lineus ruber;1;36
+2003;3;III-3;30;Macoma balthica;2;534
+2003;3;III-3;30;Mytilus edulis;1;284
+2003;3;III-3;30;Scoloplos armiger;1;51
+2003;3;III-3;30;Styctiosiphon;NA;124
+2003;3;M-13;10;Cerastoderma edule;1;1600
+2003;3;M-15;10;Cerastoderma edule;1;5950
+2003;3;M-16;10;Cerastoderma edule;1;366
+2003;4;IV-1;245;Cricotopus sp;5;2
+2003;4;IV-1;30;Macoma balthica;2;2200
+2003;4;IV-1;30;Onisimus (Pseudalibrotus) litoralis;2;10
+2003;4;IV-1;245;Pygospio elegans;11;6
+2003;4;IV-1;30;Scoloplos armiger;1;223
+2003;4;IV-1;30;Styctiosiphon;NA;3
+2003;4;IV-2;30;Cerastoderma edule;1;5400
+2003;4;IV-2;245;Cricotopus sp;6;2
+2003;4;IV-2;245;Pygospio elegans;4;4
+2003;4;IV-3;245;Cricotopus sp;3;2
+2003;4;IV-3;30;Macoma balthica;2;238
+2003;4;IV-3;245;Pygospio elegans;8;3
+2003;5;V-1;30;Ilea zosterifolia;NA;27
+2003;5;V-1;30;Lineus ruber;5;42
+2003;5;V-1;30;Littorina saxatilis;3;11
+2003;5;V-1;30;Macoma balthica;1;122
+2003;5;V-1;30;Mytilus edulis;23;5700
+2003;5;V-1;30;Scoloplos armiger;1;27
+2003;5;V-2;30;Lineus ruber;20;328
+2003;5;V-2;30;Macoma balthica;2;1700
+2003;5;V-2;30;Mya arenaria;1;162
+2003;5;V-2;30;Mya arenaria;1;162
+2003;5;V-2;30;Mytilus edulis;19;2200
+2003;5;V-2;30;Nainereis quadricuspida;2;28
+2003;5;V-2;245;Polydora quadrilobata;1;1
+2003;5;V-2;30;Scoloplos armiger;28;519
+2003;5;V-3;30;Ilea zosterifolia;NA;43
+2003;5;V-3;30;Lineus ruber;7;64
+2003;5;V-3;30;Littorina saxatilis;4;253
+2003;5;V-3;30;Mytilus edulis;30;9800
+2003;5;V-3;245;Polydora quadrilobata;1;1
+2003;5;V-3;30;Scoloplos armiger;8;426
+2003;6;M-18;10;Cerastoderma edule;1;650
+2003;6;M-19;10;Macoma balthica;8;3600
+2003;6;VI-1;30;Cerastoderma edule;1;2000
+2003;6;VI-1;245;Cricotopus sp;19;3
+2003;6;VI-1;30;Macoma balthica;1;72
+2003;6;VI-1;245;Pygospio elegans;95;61
+2003;6;VI-2;30;Arenicola marina;1;81
+2003;6;VI-2;245;Cricotopus sp;12;2
+2003;6;VI-2;30;Macoma balthica;4;1600
+2003;6;VI-2;30;Onisimus (Pseudalibrotus) litoralis;1;8
+2003;6;VI-2;245;Pygospio elegans;105;69
+2003;6;VI-3;245;Cricotopus sp;12;2
+2003;6;VI-3;245;Fabriciinae;1;1
+2003;6;VI-3;30;Macoma balthica;1;804
+2003;6;VI-3;30;Onisimus (Pseudalibrotus) litoralis;2;13
+2003;6;VI-3;245;Pygospio elegans;108;57
+2003;6;VI-3;30;Scoloplos armiger;1;9
+2003;7;M-20;10;Cerastoderma edule;1;1600
+2003;7;M-20;10;Macoma balthica;10;2400
+2003;7;M-21;10;Macoma balthica;13;8000
+2003;7;M-22;10;Macoma balthica;6;2300
+2003;7;VII-1;245;Cricotopus sp;12;3
+2003;7;VII-1;30;Lineus ruber;2;22
+2003;7;VII-1;30;Macoma balthica;3;695
+2003;7;VII-1;245;Polydora quadrilobata;1;1
+2003;7;VII-1;245;Pygospio elegans;25;19
+2003;7;VII-1;30;Scoloplos armiger;2;149
+2003;7;VII-2;245;Cricotopus sp;11;2
+2003;7;VII-2;30;Lineus ruber;5;69
+2003;7;VII-2;30;Macoma balthica;4;2500
+2003;7;VII-2;30;Mya arenaria;1;80
+2003;7;VII-2;30;Mya arenaria;1;80
+2003;7;VII-2;30;Nemertini;1;6
+2003;7;VII-2;245;Polydora quadrilobata;6;22
+2003;7;VII-2;245;Pygospio elegans;30;19
+2003;7;VII-2;30;Scoloplos armiger;5;207
+2003;7;VII-3;245;Cricotopus sp;17;3
+2003;7;VII-3;30;Lineus ruber;2;78
+2003;7;VII-3;30;Macoma balthica;4;1140
+2003;7;VII-3;30;Onisimus (Pseudalibrotus) litoralis;1;4
+2003;7;VII-3;245;Polydora quadrilobata;1;11
+2003;7;VII-3;245;Pygospio elegans;16;16
+2003;7;VII-3;30;Scoloplos armiger;14;1120
+2003;8;M-8;10;Cerastoderma edule;2;7040
+2003;8;VIII-1;245;Cricotopus sp;13;2
+2003;8;VIII-1;30;Mytilus edulis;28;9150
+2003;8;VIII-1;245;Pygospio elegans;10;8
+2003;8;VIII-2;30;Lineus ruber;6;74
+2003;8;VIII-2;30;Littorina saxatilis;3;58
+2003;8;VIII-2;30;Mya arenaria;1;104
+2003;8;VIII-2;30;Mya arenaria;1;104
+2003;8;VIII-2;30;Mytilus edulis;34;7800
+2003;8;VIII-2;30;Phyllodoce groenlandica;1;70
+2003;8;VIII-2;30;Scoloplos armiger;6;90
+2003;8;VIII-3;245;Cricotopus sp;7;2
+2003;8;VIII-3;30;Lineus ruber;1;11
+2003;8;VIII-3;30;Littorina saxatilis;2;15
+2003;8;VIII-3;30;Macoma balthica;1;822
+2003;8;VIII-3;30;Mytilus edulis;19;2350
+2003;8;VIII-3;245;Pygospio elegans;5;5
+2003;8;VIII-3;30;Scoloplos armiger;4;355
+2003;8;VIII-3;30;Travisia forbesii;1;72
+2003;9;M-25;10;Cerastoderma edule;1;1640
+2003;9;M-25;10;Macoma balthica;5;2800
+2003;1;I-1;;Mya arenaria;1;32
+2003;3;III-1;;Mya arenaria;1;254
+2003;3;III-2;;Mya arenaria;1;416
+2003;4;M-13;15;Mya arenaria;1;108
+2003;4;M-15;13;Mya arenaria;1;1,4
+2003;4;M-16;14;Mya arenaria;1;750
+2003;6;M-19;12;Mya arenaria;1;389
+2003;7;M-20;17;Mya arenaria;4;1,8
+2003;7;M-21;16;Mya arenaria;3;650
+2003;9;M-25;20;Mya arenaria;1;152
+2003;8;M-6;18;Mya arenaria;1;103
+2003;8;M-7;19;Mya arenaria;2;232
+2003;5;V-2;;Mya arenaria;1;162
+2003;7;VII-2;;Mya arenaria;1;80
+2003;8;VIII-2;;Mya arenaria;1;104
+2004;1;I-1;30;Capitella capitata;1;1
+2004;1;I-1;30;Cerastoderma edule;1;4700
+2004;1;I-1;245;Clitellio arenarius;28;111
+2004;1;I-1;245;Cricotopus sp;3;2
+2004;1;I-1;245;Enchytraeidae gen sp;64;27
+2004;1;I-1;245;Fabricia sabella;178;61
+2004;1;I-1;30;Gammarus sp;2;3
+2004;1;I-1;30;Littorina saxatilis;31;300
+2004;1;I-1;30;Macoma balthica;2;1600
+2004;1;I-1;30;Mytilus edulis;38;24500
+2004;1;I-1;245;Oligochaeta;12;12
+2004;1;I-1;245;Paranais littoralis;25;4
+2004;1;I-1;245;Pygospio elegans;11;3
+2004;1;I-1;30;Scoloplos armiger;4;99
+2004;1;I-1;245;Tubifex costatus;6;7
+2004;1;I-1;30;Tubificoides benedeni;61;118
+2004;1;I-2;30;Capitella capitata;13;3
+2004;1;I-2;245;Clitellio arenarius;43;104
+2004;1;I-2;245;Cricotopus sp;6;2
+2004;1;I-2;30;Enchytraeidae gen sp;61;23
+2004;1;I-2;245;Fabricia sabella;581;148
+2004;1;I-2;30;Lineus ruber;4;32
+2004;1;I-2;30;Littorina saxatilis;8;44
+2004;1;I-2;30;Macoma balthica;1;432
+2004;1;I-2;30;Mytilus edulis;34;17200
+2004;1;I-2;245;Oligochaeta;46;NA
+2004;1;I-2;245;Paranais littoralis;22;3
+2004;1;I-2;30;Phyllodoce groenlandica;1;23
+2004;1;I-2;245;Polydora quadrilobata;6;5
+2004;1;I-2;245;Pygospio elegans;40;25
+2004;1;I-2;30;Scoloplos armiger;14;494
+2004;1;I-2;245;Tubifex costatus;9;13
+2004;1;I-2;245;Tubificoides benedeni;132;219
+2004;1;I-3;30;Capitella capitata;43;33
+2004;1;I-3;245;Cricotopus sp;3;2
+2004;1;I-3;245;Enchytraeidae gen sp;26;7
+2004;1;I-3;245;Fabricia sabella;406;107
+2004;1;I-3;30;Gammarus sp;1;2
+2004;1;I-3;30;Lineus ruber;4;47
+2004;1;I-3;30;Littorina saxatilis;7;47
+2004;1;I-3;30;Macoma balthica;3;2800
+2004;1;I-3;30;Mytilus edulis;13;9700
+2004;1;I-3;245;Oligochaeta;4;4
+2004;1;I-3;245;Oligochaeta;5;3
+2004;1;I-3;245;Paranais littoralis;6;4
+2004;1;I-3;245;Polydora quadrilobata;1;1
+2004;1;I-3;245;Pygospio elegans;25;12
+2004;1;I-3;30;Scoloplos armiger;8;219
+2004;1;I-3;245;Tubificoides benedeni;212;36
+2004;1;M-10;10;Cerastoderma edule;1;3700
+2004;1;M-11;10;Cerastoderma edule;1;3200
+2004;1;M-11;10;Macoma balthica;1;700
+2004;2;II-1;30;Capitella capitata;7;15
+2004;2;II-1;245;Cricotopus sp;5;2
+2004;2;II-1;245;Enchytraeidae gen sp;2;3
+2004;2;II-1;30;Nemertini;1;1
+2004;2;II-1;30;Onisimus (Pseudalibrotus) litoralis;2;10
+2004;2;II-1;245;Paranais littoralis;3;1
+2004;2;II-1;245;Pygospio elegans;48;32
+2004;2;II-1;245;Tubifex costatus;2;4
+2004;2;II-1;245;Tubificoides benedeni;11;18
+2004;2;II-2;30;Capitella capitata;54;48
+2004;2;II-2;245;Cricotopus sp;13;7
+2004;2;II-2;245;Enchytraeidae gen sp;17;11
+2004;2;II-2;30;Littorina saxatilis;1;1
+2004;2;II-2;245;Paranais littoralis;2;1
+2004;2;II-2;245;Pygospio elegans;196;86
+2004;2;II-2;245;Tubifex costatus;1;1
+2004;2;II-2;245;Tubificoides benedeni;3;3
+2004;2;II-3;30;Capitella capitata;42;40
+2004;2;II-3;245;Cricotopus sp;14;3
+2004;2;II-3;245;Enchytraeidae gen sp;5;4
+2004;2;II-3;30;Nemertini;1;1
+2004;2;II-3;30;Onisimus (Pseudalibrotus) litoralis;1;9,8
+2004;2;II-3;245;Paranais littoralis;16;3
+2004;2;II-3;245;Pygospio elegans;249;149
+2004;2;II-3;245;Tubifex costatus;1;1
+2004;2;II-3;245;Tubificoides benedeni;2;2
+2004;2;M-1;10;Macoma balthica;1;250
+2004;2;M-2;10;Macoma balthica;1;450
+2004;2;M-3;10;Macoma balthica;1;800
+2004;2;M-4;10;Macoma balthica;3;1000
+2004;3;III-1;30;Capitella capitata;10;5
+2004;3;III-1;30;Cerastoderma edule;1;6200
+2004;3;III-1;245;Cricotopus sp;10;4
+2004;3;III-1;245;Enchytraeidae gen sp;248;81
+2004;3;III-1;245;Fabricia sabella;731;186
+2004;3;III-1;30;Lineus ruber;1;3
+2004;3;III-1;30;Macoma balthica;4;700
+2004;3;III-1;30;Onisimus (Pseudalibrotus) litoralis;1;5
+2004;3;III-1;245;Paranais littoralis;3;2
+2004;3;III-1;245;Pygospio elegans;196;69
+2004;3;III-1;30;Scoloplos armiger;2;209
+2004;3;III-1;245;Tubificoides benedeni;110;199
+2004;3;III-2;30;Arenicola marina;1;22
+2004;3;III-2;30;Capitella capitata;17;18
+2004;3;III-2;245;Clitellio arenarius;1;1
+2004;3;III-2;245;Cricotopus sp;13;3
+2004;3;III-2;245;Enchytraeidae gen sp;87;23
+2004;3;III-2;245;Fabricia sabella;497;192
+2004;3;III-2;30;Gammarus sp;1;12
+2004;3;III-2;30;Macoma balthica;2;600
+2004;3;III-2;245;Oligochaeta;17;NA
+2004;3;III-2;30;Onisimus (Pseudalibrotus) litoralis;2;10
+2004;3;III-2;245;Paranais littoralis;3;3
+2004;3;III-2;245;Pygospio elegans;80;34
+2004;3;III-2;30;Scoloplos armiger;1;19
+2004;3;III-2;245;Tubificoides benedeni;51;55
+2004;3;III-3;30;Capitella capitata;29;7
+2004;3;III-3;245;Cricotopus sp;55;5
+2004;3;III-3;245;Enchytraeidae gen sp;234;85
+2004;3;III-3;245;Fabricia sabella;838;185
+2004;3;III-3;30;Macoma balthica;1;500
+2004;3;III-3;30;Onisimus (Pseudalibrotus) litoralis;1;44
+2004;3;III-3;245;Paranais littoralis;31;5
+2004;3;III-3;245;Pygospio elegans;106;33
+2004;3;III-3;30;Scoloplos armiger;2;360
+2004;3;III-3;245;Tubifex costatus;3;2
+2004;3;III-3;245;Tubificoides benedeni;77;127
+2004;3;M-13;10;Cerastoderma edule;1;1600
+2004;3;M-13;10;Macoma balthica;6;1700
+2004;3;M-14;10;Macoma balthica;3;1200
+2004;3;M-15;10;Macoma balthica;2;250
+2004;3;M-16;10;Cerastoderma edule;1;7400
+2004;3;M-16;10;Macoma balthica;3;2000
+2004;6;M-17;10;Macoma balthica;1;1000
+2004;6;M-18;10;Cerastoderma edule;2;6700
+2004;6;M-18;10;Macoma balthica;1;250
+2004;6;M-19;10;Cerastoderma edule;1;3600
+2004;6;M-19;10;Macoma balthica;6;2500
+2004;7;M-20;10;Macoma balthica;5;3500
+2004;7;M-21;10;Macoma balthica;2;1500
+2004;7;M-22;10;Cerastoderma edule;1;4600
+2004;7;M-22;10;Macoma balthica;8;5200
+2004;8;M-6;10;Macoma balthica;3;1800
+2004;8;M-7;10;Macoma balthica;1;600
+2004;8;M-8;10;Cerastoderma edule;2;11,7
+2004;8;M-8;10;Macoma balthica;3;NA
+2004;9;M-23;10;Cerastoderma edule;3;18,1
+2004;9;M-23;10;Macoma balthica;1;500
+2004;9;M-24;10;Macoma balthica;1;1000
+2004;9;M-25;10;Macoma balthica;2;1500
+2004;4;M-14;;Mya arenaria;1;1100
+2004;9;M-23;;Mya arenaria;1;3700
+2005;1;I-1;30;Amphiporus lactifloreus;1;1
+2005;1;I-1;30;Capitella capitata;2;1
+2005;1;I-1;245;Clitellio arenarius;8;16
+2005;1;I-1;245;Cricotopus sp;42;4
+2005;1;I-1;245;Enchytraeidae gen sp;87;25
+2005;1;I-1;245;Fabricia sabella;570;100
+2005;1;I-1;30;Lineus ruber;2;31
+2005;1;I-1;30;Littorina saxatilis;6;41
+2005;1;I-1;30;Macoma balthica;1;1100
+2005;1;I-1;30;Mytilus edulis;10;78
+2005;1;I-1;245;Olygochaeta long sick;8;4
+2005;1;I-1;245;Paranais littoralis;12;3
+2005;1;I-1;245;Polydora quadrilobata;1;1
+2005;1;I-1;245;Pygospio elegans;51;25
+2005;1;I-1;30;Scoloplos armiger;16;351
+2005;1;I-1;245;Tubifex costatus;9;3
+2005;1;I-1;245;Tubificoides benedeni;138;138
+2005;1;I-2;30;Capitella capitata;5;5
+2005;1;I-2;245;Clitellio arenarius;19;43
+2005;1;I-2;245;Cricotopus sp;48;4
+2005;1;I-2;245;Enchytraeidae gen sp;30;7
+2005;1;I-2;245;Eteone longa;1;1
+2005;1;I-2;245;Fabricia sabella;308;90
+2005;1;I-2;30;Lineus sp;1;6
+2005;1;I-2;30;Littorina saxatilis;7;45
+2005;1;I-2;30;Macoma balthica;1;400
+2005;1;I-2;30;Mytilus edulis;10;7900
+2005;1;I-2;245;Olygochaeta long sick;48;13
+2005;1;I-2;245;Paranais littoralis;4;3
+2005;1;I-2;245;Polydora quadrilobata;18;15
+2005;1;I-2;245;Pygospio elegans;48;20
+2005;1;I-2;30;Scoloplos armiger;13;340
+2005;1;I-2;245;Tubifex costatus;13;12
+2005;1;I-2;245;Tubificoides benedeni;108;130
+2005;1;I-3;30;Capitella capitata;3;2
+2005;1;I-3;245;Clitellio arenarius;60;150
+2005;1;I-3;245;Cricotopus sp;28;3
+2005;1;I-3;245;Enchytraeidae gen sp;103;35
+2005;1;I-3;245;Fabricia sabella;338;110
+2005;1;I-3;30;Jaera sp;3;3
+2005;1;I-3;30;Littorina saxatilis;8;31
+2005;1;I-3;30;Mytilus edulis;26;19100
+2005;1;I-3;245;Olygochaeta long sick;25;6
+2005;1;I-3;245;Paranais littoralis;5;2
+2005;1;I-3;245;Polydora quadrilobata;1;1
+2005;1;I-3;245;Pygospio elegans;27;26
+2005;1;I-3;30;Scoloplos armiger;7;309
+2005;1;I-3;245;Tubifex costatus;20;30
+2005;1;I-3;245;Tubificoides benedeni;60;85
+2005;1;I-3;30;Turtonia minuta;1;2
+2005;1;M-10;10;Macoma balthica;2;1600
+2005;1;M-11;10;Macoma balthica;1;3
+2005;1;M-9;10;Macoma balthica;1;200
+2005;2;II-1;30;Capitella capitata;8;120
+2005;2;II-1;245;Cricotopus sp;3;2
+2005;2;II-1;30;Gammarus sp;1;6
+2005;2;II-1;30;Macoma balthica;1;300
+2005;2;II-1;30;Onisimus (Pseudalibrotus) litoralis;3;57
+2005;2;II-1;245;Pygospio elegans;14;12
+2005;2;II-1;245;Tubifex costatus;4;4
+2005;2;II-2;30;Capitella capitata;6;6
+2005;2;II-2;245;Cricotopus sp;4;2
+2005;2;II-2;245;Enchytraeidae gen sp;8;10
+2005;2;II-2;245;Fabricia sabella;2;2
+2005;2;II-2;30;Onisimus (Pseudalibrotus) litoralis;9;171
+2005;2;II-2;245;Pygospio elegans;67;43
+2005;2;II-2;245;Tubificoides benedeni;5;14
+2005;2;II-3;30;Capitella capitata;15;12
+2005;2;II-3;245;Cricotopus sp;25;10
+2005;2;II-3;245;Enchytraeidae gen sp;26;10
+2005;2;II-3;30;Onisimus (Pseudalibrotus) litoralis;1;19
+2005;2;II-3;245;Paranais littoralis;4;3
+2005;2;II-3;245;Pygospio elegans;391;189
+2005;2;II-3;245;Tubificoides benedeni;4;3
+2005;2;M-3;10;Macoma balthica;2;900
+2005;2;M-4;10;Macoma balthica;1;2300
+2005;2;M-5;10;Macoma balthica;1;600
+2005;3;III-1;30;Capitella capitata;25;13
+2005;3;III-1;30;Cerastoderma edule;1;235
+2005;3;III-1;245;Clitellio arenarius;8;12
+2005;3;III-1;245;Cricotopus sp;29;4
+2005;3;III-1;245;Enchytraeidae gen sp;61;19
+2005;3;III-1;245;Fabricia sabella;427;131
+2005;3;III-1;30;Macoma balthica;1;235
+2005;3;III-1;30;Mytilus edulis;2;5
+2005;3;III-1;245;Olygochaeta long sick;1;2
+2005;3;III-1;30;Onisimus (Pseudalibrotus) litoralis;1;4
+2005;3;III-1;245;Pygospio elegans;80;30
+2005;3;III-1;30;Scoloplos armiger;4;18
+2005;3;III-1;245;Tubifex costatus;18;16
+2005;3;III-1;245;Tubificoides benedeni;36;29
+2005;3;III-2;30;Capitella capitata;11;4
+2005;3;III-2;245;Clitellio arenarius;14;43
+2005;3;III-2;245;Cricotopus sp;58;4
+2005;3;III-2;245;Enchytraeidae gen sp;100;26
+2005;3;III-2;245;Fabricia sabella;989;91
+2005;3;III-2;30;Lineus ruber;3;82
+2005;3;III-2;30;Macoma balthica;3;1100
+2005;3;III-2;30;Mytilus edulis;8;400
+2005;3;III-2;245;Paranais littoralis;20;5
+2005;3;III-2;245;Pygospio elegans;89;31
+2005;3;III-2;30;Scoloplos armiger;51;17
+2005;3;III-2;245;Tubifex costatus;22;14
+2005;3;III-2;245;Tubificoides benedeni;50;52
+2005;3;III-3;30;Capitella capitata;14;8
+2005;3;III-3;245;Clitellio arenarius;20;37
+2005;3;III-3;245;Cricotopus sp;29;2
+2005;3;III-3;245;Enchytraeidae gen sp;94;24
+2005;3;III-3;245;Fabricia sabella;432;121
+2005;3;III-3;30;Hyale prevosti;1;3
+2005;3;III-3;30;Jaera sp;1;2
+2005;3;III-3;30;Littorina saxatilis;3;6
+2005;3;III-3;30;Macoma balthica;3;1100
+2005;3;III-3;30;Mytilus edulis;2;25
+2005;3;III-3;245;Olygochaeta long sick;6;4
+2005;3;III-3;30;Onisimus (Pseudalibrotus) litoralis;1;44
+2005;3;III-3;245;Paranais littoralis;4;3
+2005;3;III-3;245;Polydora quadrilobata;3;5
+2005;3;III-3;245;Pygospio elegans;89;22
+2005;3;III-3;30;Scoloplos armiger;4;3
+2005;3;III-3;245;Tubifex costatus;32;25
+2005;3;III-3;245;Tubificoides benedeni;49;42
+2005;3;M-13;10;Macoma balthica;3;NA
+2005;3;M-14;10;Cerastoderma edule;1;250
+2005;3;M-14;10;Macoma balthica;7;3000
+2005;3;M-15;10;Cerastoderma edule;1;42
+2005;3;M-15;10;Macoma balthica;6;2500
+2005;3;M-16;10;Cerastoderma edule;1;18
+2005;3;M-16;10;Macoma balthica;2;1800
+2005;6;M-18;10;Macoma balthica;1;429
+2005;6;M-19;10;Cerastoderma edule;1;5100
+2005;6;M-19;10;Macoma balthica;3;1500
+2005;7;M-20;10;Macoma balthica;4;2900
+2005;7;M-21;10;Cerastoderma edule;1;3200
+2005;7;M-21;10;Macoma balthica;7;5300
+2005;7;M-22;10;Macoma balthica;4;6300
+2005;8;M-6;10;Macoma balthica;5;1900
+2005;8;M-7;10;Macoma balthica;1;1800
+2005;8;M-8;10;Macoma balthica;4;2400
+2005;9;M-23;10;Macoma balthica;3;2800
+2005;9;M-24;10;Macoma balthica;2;1100
+2005;9;M-25;10;Macoma balthica;1;600
+2005;7;M-21;;Mya arenaria;2;4600
+2005;7;M-22;;Mya arenaria;3;5
+2005;8;M-6;;Mya arenaria;1;56
+2005;8;M-7;;Mya arenaria;3;3600
+2005;8;M-8;;Mya arenaria;1;10
+2006;1;I-1;30;Capitella capitata;24;NA
+2006;1;I-1;245;Clitellio arenarius;98;NA
+2006;1;I-1;245;Cricotopus sp;57;NA
+2006;1;I-1;245;Enchytraeidae gen sp;48;NA
+2006;1;I-1;245;Fabricia sabella;1013;NA
+2006;1;I-1;30;Lineus sp;10;NA
+2006;1;I-1;30;Littorina saxatilis;5;NA
+2006;1;I-1;30;Mytilus edulis;83;NA
+2006;1;I-1;30;Nainereis quadricuspida;6;NA
+2006;1;I-1;245;Olygochaeta long sick;45;NA
+2006;1;I-1;245;Polydora quadrilobata;5;NA
+2006;1;I-1;245;Pygospio elegans;78;NA
+2006;1;I-1;30;Scoloplos armiger;32;NA
+2006;1;I-1;245;Tubifex costatus;9;NA
+2006;1;I-1;245;Tubificoides benedeni;143;NA
+2006;1;I-2;30;Capitella capitata;16;NA
+2006;1;I-2;245;Clitellio arenarius;121;NA
+2006;1;I-2;245;Cricotopus sp;36;NA
+2006;1;I-2;245;Enchytraeidae gen sp;29;NA
+2006;1;I-2;245;Fabricia sabella;784;NA
+2006;1;I-2;30;Lineus sp;7;NA
+2006;1;I-2;30;Littorina littorea;1;NA
+2006;1;I-2;30;Littorina saxatilis;9;NA
+2006;1;I-2;30;Macoma balthica;1;1100
+2006;1;I-2;30;Mytilus edulis;67;NA
+2006;1;I-2;30;Nudibranchia;1;NA
+2006;1;I-2;245;Olygochaeta long sick;48;NA
+2006;1;I-2;245;Polydora quadrilobata;4;NA
+2006;1;I-2;245;Pygospio elegans;65;NA
+2006;1;I-2;30;Scoloplos armiger;9;NA
+2006;1;I-2;245;Tubifex costatus;18;NA
+2006;1;I-2;245;Tubificoides benedeni;163;NA
+2006;1;I-3;30;Calliopius laevisculus;1;NA
+2006;1;I-3;30;Capitella capitata;10;NA
+2006;1;I-3;245;Clitellio arenarius;31;NA
+2006;1;I-3;245;Cricotopus sp;25;NA
+2006;1;I-3;245;Enchytraeidae gen sp;41;NA
+2006;1;I-3;245;Fabricia sabella;525;NA
+2006;1;I-3;30;Lineus sp;7;NA
+2006;1;I-3;30;Littorina obtusata;4;NA
+2006;1;I-3;30;Littorina saxatilis;12;NA
+2006;1;I-3;30;Mytilus edulis;114;NA
+2006;1;I-3;30;Nainereis quadricuspida;3;NA
+2006;1;I-3;245;Olygochaeta long sick;16;NA
+2006;1;I-3;245;Paranais littoralis;1;NA
+2006;1;I-3;245;Polydora quadrilobata;16;NA
+2006;1;I-3;245;Pygospio elegans;57;NA
+2006;1;I-3;30;Scoloplos armiger;10;NA
+2006;1;I-3;245;Tubifex costatus;7;NA
+2006;1;I-3;245;Tubificoides benedeni;142;NA
+2006;1;I-3;30;Turtonia minuta;1;NA
+2006;1;M-11;10;Macoma balthica;3;NA
+2006;2;II-1;30;Capitella capitata;20;NA
+2006;2;II-1;245;Cricotopus sp;2;NA
+2006;2;II-1;245;Enchytraeidae gen sp;2;NA
+2006;2;II-1;245;Fabricia sabella;2;NA
+2006;2;II-1;30;Onisimus (Pseudalibrotus) litoralis;3;NA
+2006;2;II-1;245;Pygospio elegans;110;NA
+2006;2;II-1;245;Tubificoides benedeni;3;NA
+2006;2;II-2;30;Arenicola marina;1;NA
+2006;2;II-2;30;Capitella capitata;72;NA
+2006;2;II-2;245;Clitellio arenarius;1;NA
+2006;2;II-2;245;Cricotopus sp;21;NA
+2006;2;II-2;245;Enchytraeidae gen sp;4;NA
+2006;2;II-2;245;Fabricia sabella;8;NA
+2006;2;II-2;30;Macoma balthica;1;700
+2006;2;II-2;30;Onisimus (Pseudalibrotus) litoralis;2;NA
+2006;2;II-2;245;Pygospio elegans;178;NA
+2006;2;II-2;245;Tubifex costatus;2;NA
+2006;2;II-2;245;Tubificoides benedeni;13;NA
+2006;2;II-3;30;Capitella capitata;23;NA
+2006;2;II-3;245;Clitellio arenarius;18;NA
+2006;2;II-3;245;Cricotopus sp;9;NA
+2006;2;II-3;245;Enchytraeidae gen sp;2;NA
+2006;2;II-3;245;Fabricia sabella;7;NA
+2006;2;II-3;30;Macoma balthica;2;1400
+2006;2;II-3;245;Olygochaeta long sick;1;NA
+2006;2;II-3;30;Onisimus (Pseudalibrotus) litoralis;2;NA
+2006;2;II-3;245;Paranais littoralis;2;NA
+2006;2;II-3;245;Pygospio elegans;241;NA
+2006;2;II-3;245;Tubificoides benedeni;33;NA
+2006;2;M-1;10;Macoma balthica;1;1250
+2006;2;M-2;10;Macoma balthica;2;550
+2006;2;M-3;10;Macoma balthica;1;600
+2006;2;M-5;10;Macoma balthica;4;1700
+2006;3;III-1;30;Capitella capitata;33;NA
+2006;3;III-1;30;Cerastoderma edule;1;500
+2006;3;III-1;245;Clitellio arenarius;21;NA
+2006;3;III-1;245;Cricotopus sp;39;NA
+2006;3;III-1;245;Enchytraeidae gen sp;80;NA
+2006;3;III-1;30;Eteone longa;1;NA
+2006;3;III-1;245;Fabricia sabella;489;NA
+2006;3;III-1;30;Macoma balthica;2;1200
+2006;3;III-1;30;Mytilus edulis;21;NA
+2006;3;III-1;30;Nainereis quadricuspida;1;NA
+2006;3;III-1;245;Olygochaeta long sick;2;NA
+2006;3;III-1;245;Paranais littoralis;2;NA
+2006;3;III-1;245;Pygospio elegans;57;NA
+2006;3;III-1;30;Scoloplos armiger;14;NA
+2006;3;III-1;245;Tubifex costatus;31;NA
+2006;3;III-1;245;Tubificoides benedeni;68;NA
+2006;3;III-2;30;Arenicola marina;1;NA
+2006;3;III-2;30;Capitella capitata;33;NA
+2006;3;III-2;245;Clitellio arenarius;12;NA
+2006;3;III-2;245;Cricotopus sp;83;NA
+2006;3;III-2;245;Enchytraeidae gen sp;57;NA
+2006;3;III-2;245;Fabricia sabella;405;NA
+2006;3;III-2;30;Lineus sp;1;NA
+2006;3;III-2;30;Macoma balthica;4;2000
+2006;3;III-2;30;Mytilus edulis;21;NA
+2006;3;III-2;245;Polydora quadrilobata;2;NA
+2006;3;III-2;245;Pygospio elegans;38;NA
+2006;3;III-2;30;Scoloplos armiger;3;NA
+2006;3;III-2;245;Tubifex costatus;18;NA
+2006;3;III-2;245;Tubificoides benedeni;38;NA
+2006;3;III-3;30;Arenicola marina;1;NA
+2006;3;III-3;30;Capitella capitata;23;NA
+2006;3;III-3;30;Cerastoderma edule;1;NA
+2006;3;III-3;245;Clitellio arenarius;21;NA
+2006;3;III-3;245;Cricotopus sp;61;NA
+2006;3;III-3;245;Enchytraeidae gen sp;89;NA
+2006;3;III-3;245;Fabricia sabella;685;NA
+2006;3;III-3;30;Lineus sp;2;NA
+2006;3;III-3;30;Littorina saxatilis;1;NA
+2006;3;III-3;30;Macoma balthica;2;NA
+2006;3;III-3;30;Mya arenaria;1;NA
+2006;3;III-3;30;Mytilus edulis;14;NA
+2006;3;III-3;245;Olygochaeta long sick;1;NA
+2006;3;III-3;245;Paranais littoralis;6;NA
+2006;3;III-3;245;Pygospio elegans;77;NA
+2006;3;III-3;30;Scoloplos armiger;1;NA
+2006;3;III-3;245;Tubifex costatus;19;NA
+2006;3;III-3;245;Tubificoides benedeni;65;NA
+2006;3;M-13;10;Cerastoderma edule;2;100
+2006;3;M-13;10;Macoma balthica;9;2150
+2006;3;M-14;10;Cerastoderma edule;3;150
+2006;3;M-14;10;Macoma balthica;1;550
+2006;3;M-15;10;Cerastoderma edule;2;17200
+2006;3;M-15;10;Macoma balthica;7;5500
+2006;3;M-16;10;Cerastoderma edule;3;17300
+2006;3;M-16;10;Macoma balthica;5;3300
+2006;6;M-17;10;Cerastoderma edule;1;100
+2006;6;M-17;10;Macoma balthica;2;1100
+2006;6;M-18;10;Cerastoderma edule;3;9200
+2006;6;M-18;10;Macoma balthica;4;2600
+2006;6;M-19;10;Cerastoderma edule;3;250
+2006;6;M-19;10;Macoma balthica;1;NA
+2006;7;M-20;10;Macoma balthica;11;7700
+2006;7;M-21;10;Macoma balthica;5;7300
+2006;7;M-22;10;Macoma balthica;6;5300
+2006;8;M-6;10;Macoma balthica;1;200
+2006;8;M-7;10;Macoma balthica;2;200
+2006;8;M-8;10;Macoma balthica;1;17
+2006;9;M-23;10;Cerastoderma edule;1;15200
+2006;9;M-23;10;Macoma balthica;1;900
+2006;9;M-24;10;Cerastoderma edule;1;NA
+2006;9;M-24;10;Macoma balthica;2;1300
+2006;9;M-25;10;Cerastoderma edule;1;3000
+2006;9;M-25;10;Macoma balthica;4;3400
+2007;1;I-1;245;Cricotopus sp;51;6
+2007;1;I-1;245;Fabricia sabella;540;290
+2007;1;I-1;245;Lineus sp;2;26
+2007;1;I-1;30;Littorina saxatilis;12;120
+2007;1;I-1;30;Macoma balthica;5;2830
+2007;1;I-1;30;Mytilus edulis;34;1690
+2007;1;I-1;245;Polydora quadrilobata;13;18
+2007;1;I-1;245;Pygospio elegans;126;99
+2007;1;I-1;30;Scoloplos armiger;11;120
+2007;1;I-2;245;Capitella capitata;6;2
+2007;1;I-2;245;Cricotopus sp;96;120
+2007;1;I-2;245;Fabricia sabella;433;174
+2007;1;I-2;30;Lineus sp;11;98
+2007;1;I-2;30;Macoma balthica;1;140
+2007;1;I-2;245;Nainereis quadricuspida;1;2
+2007;1;I-2;245;Polydora quadrilobata;16;12
+2007;1;I-2;245;Pygospio elegans;51;36
+2007;1;I-2;30;Scoloplos armiger;19;250
+2007;1;I-3;245;Capitella capitata;9;9
+2007;1;I-3;245;Clitellio arenarius;114;227
+2007;1;I-3;245;Cricotopus sp;27;13
+2007;1;I-3;245;Enchytraeidae gen sp;61;27
+2007;1;I-3;245;Fabricia sabella;382;166
+2007;1;I-3;245;Lineus sp;9;72
+2007;1;I-3;30;Littorina saxatilis;2;20
+2007;1;I-3;30;Mytilus edulis;71;8500
+2007;1;I-3;245;Nainereis quadricuspida;2;23
+2007;1;I-3;245;Olygochaeta long sick;21;19
+2007;1;I-3;245;Pygospio elegans;42;42
+2007;1;I-3;245;Scoloplos armiger;2;9
+2007;1;I-3;30;Scoloplos armiger;3;17
+2007;1;I-3;245;Tubifex costatus;27;19
+2007;1;I-3;245;Tubificoides benedeni;211;337
+2007;2;II-1;245;Cricotopus sp;4;1
+2007;2;II-1;245;Enchytraeidae gen sp;2;3
+2007;2;II-1;30;Onisimus (Pseudalibrotus) litoralis;2;7
+2007;2;II-1;245;Pygospio elegans;19;11
+2007;2;II-1;30;Scoloplos armiger;3;15
+2007;2;II-1;245;Tubifex costatus;4;5
+2007;2;II-1;245;Tubificoides benedeni;12;20
+2007;2;II-2;245;Capitella capitata;6;4
+2007;2;II-2;245;Clitellio arenarius;3;2
+2007;2;II-2;245;Enchytraeidae gen sp;5;4
+2007;2;II-2;245;Fabricia sabella;1;1
+2007;2;II-2;30;Littorina saxatilis;1;2
+2007;2;II-2;30;Macoma balthica;1;650
+2007;2;II-2;245;Olygochaeta long sick;1;1
+2007;2;II-2;30;Onisimus (Pseudalibrotus) litoralis;4;25
+2007;2;II-2;245;Paranais littoralis;1;1
+2007;2;II-2;245;Pygospio elegans;459;237
+2007;2;II-2;30;Scoloplos armiger;2;25
+2007;2;II-2;245;Tubifex costatus;13;14
+2007;2;II-2;245;Tubificoides benedeni;26;53
+2007;2;II-3;245;Amphiporus lactifloreus;2;1
+2007;2;II-3;245;Capitella capitata;5;NA
+2007;2;II-3;245;Clitellio arenarius;2;1
+2007;2;II-3;245;Cricotopus sp;3;1
+2007;2;II-3;245;Enchytraeidae gen sp;7;3
+2007;2;II-3;245;Lineus sp;1;4
+2007;2;II-3;245;Olygochaeta long sick;2;1
+2007;2;II-3;30;Onisimus (Pseudalibrotus) litoralis;2;8
+2007;2;II-3;245;Paranais littoralis;2;1
+2007;2;II-3;245;Pygospio elegans;127;65
+2007;2;II-3;245;Tubifex costatus;2;1
+2007;2;II-3;245;Tubificoides benedeni;20;NA
+2007;3;III-1;245;Clitellio arenarius;1;1
+2007;3;III-1;245;Cricotopus sp;19;3
+2007;3;III-1;245;Fabricia sabella;26;12
+2007;3;III-1;30;Macoma balthica;1;133
+2007;3;III-1;30;Onisimus (Pseudalibrotus) litoralis;1;13
+2007;3;III-1;245;Paranais littoralis;3;1
+2007;3;III-1;245;Pygospio elegans;16;21
+2007;3;III-1;30;Scoloplos armiger;1;133
+2007;3;III-1;245;Tubificoides benedeni;2;3
+2007;3;III-2;245;Capitella capitata;3;5
+2007;3;III-2;245;Cricotopus sp;10;4
+2007;3;III-2;245;Fabricia sabella;81;52
+2007;3;III-2;30;Gammarus sp;13;43
+2007;3;III-2;30;Macoma balthica;5;2600
+2007;3;III-2;30;Mya arenaria;2;800
+2007;3;III-2;30;Onisimus (Pseudalibrotus) litoralis;10;144
+2007;3;III-2;245;Pygospio elegans;23;14
+2007;3;III-3;30;Arenicola marina;1;44
+2007;3;III-3;245;Capitella capitata;16;9
+2007;3;III-3;245;Cricotopus sp;44;5
+2007;3;III-3;245;Fabricia sabella;588;286
+2007;3;III-3;30;Macoma balthica;4;1320
+2007;3;III-3;30;Mytilus edulis;4;760
+2007;3;III-3;30;Onisimus (Pseudalibrotus) litoralis;1;10
+2007;3;III-3;245;Pygospio elegans;68;48
+2007;3;III-3;30;Scoloplos armiger;5;63
+2002;1;I-3;30;Macoma balthica;2;NA
+2002;2;II-1;30;Macoma balthica;1;7
+2002;2;II-3;30;Macoma balthica;1;5
+2002;3;III-1;30;Macoma balthica;1;1860
+2002;3;III-2;30;Macoma balthica;2;2100
+2002;4;IV-1;30;Macoma balthica;2;576
+2002;4;IV-2;30;Macoma balthica;2;160
+2002;4;IV-3;30;Macoma balthica;4;1470
+2002;5;V-1;30;Macoma balthica;2;870
+2002;5;V-2;30;Macoma balthica;2;NA
+2002;5;V-3;30;Macoma balthica;2;910
+2002;6;VI-1;30;Macoma balthica;2;153
+2002;6;VI-2;30;Macoma balthica;2;725
+2002;7;VII-1;30;Macoma balthica;6;NA
+2002;7;VII-2;30;Macoma balthica;2;90
+2002;7;VII-3;30;Macoma balthica;1;486
+2002;8;VIII-1;30;Macoma balthica;6;748
+2002;8;VIII-2;30;Macoma balthica;1;20
+2002;8;VIII-3;30;Macoma balthica;3;2930
+2002;2;1;4;Arenicola marina;31;NA
+2002;2;2;4;Arenicola marina;27;NA
+2002;2;3;4;Arenicola marina;19;NA
+2002;2;4;4;Arenicola marina;29;NA
+2002;2;5;4;Arenicola marina;32;NA
+2002;6;1;4;Arenicola marina;27;NA
+2002;6;2;4;Arenicola marina;33;NA
+2002;6;3;4;Arenicola marina;36;NA
+2002;6;4;4;Arenicola marina;13;NA
+2002;6;5;4;Arenicola marina;35;NA
+2002;3;1;4;Arenicola marina;5;NA
+2002;3;2;4;Arenicola marina;6;NA
+2002;3;3;4;Arenicola marina;9;NA
+2002;3;4;4;Arenicola marina;5;NA
+2002;3;5;4;Arenicola marina;8;NA
+2002;4;1;4;Arenicola marina;4;NA
+2002;4;2;4;Arenicola marina;2;NA
+2002;4;3;4;Arenicola marina;2;NA
+2002;4;4;4;Arenicola marina;3;NA
+2002;4;5;4;Arenicola marina;2;NA
+2002;7;1;4;Arenicola marina;119;NA
+2002;7;2;4;Arenicola marina;89;NA
+2002;7;3;4;Arenicola marina;65;NA
+2002;7;4;4;Arenicola marina;92;NA
+2002;7;5;4;Arenicola marina;87;NA
+2002;1;1;4;Arenicola marina;2;NA
+2002;1;2;4;Arenicola marina;2;NA
+2002;1;3;4;Arenicola marina;1;NA
+2002;1;4;4;Arenicola marina;2;NA
+2002;1;5;4;Arenicola marina;0;NA
+2002;5;1;4;Arenicola marina;0;NA
+2002;5;2;4;Arenicola marina;1;NA
+2002;5;3;4;Arenicola marina;1;NA
+2002;5;4;4;Arenicola marina;3;NA
+2002;5;5;4;Arenicola marina;1;NA
+2003;1;1;4;Arenicola marina;1;NA
+2003;1;2;4;Arenicola marina;1;NA
+2003;1;3;4;Arenicola marina;2;NA
+2003;1;4;4;Arenicola marina;2;NA
+2003;1;5;4;Arenicola marina;1;NA
+2003;2;1;4;Arenicola marina;12;NA
+2003;2;2;4;Arenicola marina;16;NA
+2003;2;3;4;Arenicola marina;16;NA
+2003;2;4;4;Arenicola marina;15;NA
+2003;2;5;4;Arenicola marina;5;NA
+2003;3;1;4;Arenicola marina;2;NA
+2003;3;2;4;Arenicola marina;7;NA
+2003;3;3;4;Arenicola marina;5;NA
+2003;3;4;4;Arenicola marina;4;NA
+2003;3;5;4;Arenicola marina;7;NA
+2003;4;1;4;Arenicola marina;9;NA
+2003;4;2;4;Arenicola marina;2;NA
+2003;4;3;4;Arenicola marina;4;NA
+2003;4;4;4;Arenicola marina;3;NA
+2003;4;5;4;Arenicola marina;7;NA
+2003;6;1;4;Arenicola marina;13;NA
+2003;6;2;4;Arenicola marina;12;NA
+2003;6;3;4;Arenicola marina;12;NA
+2003;6;4;4;Arenicola marina;13;NA
+2003;6;5;4;Arenicola marina;11;NA
+2003;7;1;4;Arenicola marina;13;NA
+2003;7;2;4;Arenicola marina;14;NA
+2003;7;3;4;Arenicola marina;10;NA
+2003;7;4;4;Arenicola marina;5;NA
+2003;7;5;4;Arenicola marina;22;NA
+2003;8;1;4;Arenicola marina;1;NA
+2003;8;2;4;Arenicola marina;1;NA
+2003;8;3;4;Arenicola marina;0;NA
+2003;8;4;4;Arenicola marina;1;NA
+2003;8;5;4;Arenicola marina;1;NA
+2003;9;1;4;Arenicola marina;13;NA
+2003;9;2;4;Arenicola marina;8;NA
+2003;9;3;4;Arenicola marina;6;NA
+2003;9;4;4;Arenicola marina;12;NA
+2003;9;5;4;Arenicola marina;6;NA
+2004;;;;;;

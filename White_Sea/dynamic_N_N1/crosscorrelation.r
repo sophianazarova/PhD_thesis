@@ -12,7 +12,16 @@ str(ishodnik)
 
 table(year, area)
 
+# сделаем из линейного data.frame две матрицы
+N2.matrix<-tapply(X=N2.mean, list(year,area), max)
+(N2.df<-data.frame(years=as.numeric(dimnames(N2.matrix)[[1]]), as.data.frame(N2.matrix[,!is.na(colMeans(N2.matrix, na.rm=T))])))
+N.matrix<-tapply(X=N.mean, list(year,area), max)
+(N.df<-data.frame(years=as.numeric(dimnames(N.matrix)[[1]]), as.data.frame(N.matrix[,!is.na(colMeans(N.matrix, na.rm=T))])))
+
 ##crosscorrelation 
+#Кажется это некоторая хрень - кросскорреляции между участками.
+#####
+
 # сделаем из линейного data.frame две матрицы
 N2.matrix<-tapply(X=N2.mean, list(year,area), max)
 N2.df<-as.data.frame(N2.matrix)
@@ -270,3 +279,187 @@ pdf(file="crosscorr_N2_ZRS_Suhaya_1995_2005.pdf", family="NimbusSan")
 ccf(x=N2.df$ZRS[rownames(N.df)%in%seq(1995,2001,1)], N2.df$Suhaya[rownames(N.df)%in%seq(1995,2001,1)])
 dev.off()
 embedFonts("crosscorr_N2_ZRS_Suhaya_1995_2005.pdf") #встройка шрифтов в файл
+#####
+
+## просто корреляции всего со всем... По численности между всеми участками
+#####
+library(psych)
+N_pearson<-corr.test(N.matrix, method="pearson", use="pairwise")
+N2_pearson<-corr.test(N2.matrix, method="pearson", use="pairwise")
+#для N: Пишем в файл значения корреляции Пирсона и значения p
+write.table(corr.test(N.matrix, method="pearson", use="pairwise")$r, file="corr_N_pearson_r.csv", sep=";", dec=",")
+write.table(corr.test(N.matrix, method="pearson", use="pairwise")$p, file="corr_N_pearson_p_value.csv", sep=";", dec=",")
+#для N2: Пишем в файл значения корреляции Пирсона и значения p
+write.table(corr.test(N2.matrix, method="pearson", use="pairwise")$r, file="corr_N2_pearson_r.csv", sep=";", dec=",")
+write.table(corr.test(N2.matrix, method="pearson", use="pairwise")$p, file="corr_N2_pearson_p_value.csv", sep=";", dec=",")
+
+
+# не станет ли лучше если посчитать Спирмена, т.к. он ранговый??
+N_spearman<-corr.test(N.matrix, method="spearman", use="pairwise")
+N2_spearman<-corr.test(N.matrix, method="spearman", use="pairwise")
+#для N: Пишем в файл значения корреляции Пирсона и значения p
+write.table(corr.test(N.matrix, method="spearman", use="pairwise")$r, file="corr_N_spearman_r.csv", sep=";", dec=",")
+write.table(corr.test(N.matrix, method="spearman", use="pairwise")$p, file="corr_N_spearman_p_value.csv", sep=";", dec=",")
+#для N2: Пишем в файл значения корреляции Пирсона и значения p
+write.table(corr.test(N2.matrix, method="spearman", use="pairwise")$r, file="corr_N2_spearman_r.csv", sep=";", dec=",")
+write.table(corr.test(N2.matrix, method="spearman", use="pairwise")$p, file="corr_N2_spearman_p_value.csv", sep=";", dec=",")
+##### 
+
+##теперь считаем Мантеля между расстояниями и корреляциями.
+#####
+
+library(vegan)
+#сделаем матрицу корреляций для участков где мыли на 1 мм
+N_spearman.matrix<-N_spearman$r[c(1,2,5,6,7,10),c(1,2,5,6,7,10)]
+# и соответствующую ей матрицу расстояний
+rasstoyanie_km_N<-read.table("coordinates_N.csv", sep=";", dec=",", header=T, )
+rownames(rasstoyanie_km_N)<-rasstoyanie_km_N$X
+rasstoyanie_km_N<-rasstoyanie_km_N[,2:7]
+rasstoyanie_km_N<-as.matrix(rasstoyanie_km_N)
+str(rasstoyanie_km_N)
+
+mantel(xdis=rasstoyanie_km_N, ydis=N_spearman.matrix)
+
+# соответствие динамик через Мантелевские корреляции
+#####
+
+library(vegan)
+str(ishodnik)
+attach(ishodnik)
+rm(year)
+
+##считаем частные корреляции мантеля по участкам, мытым на сите 0,5 мм
+#делаем пустые матрицы для результатов
+(N.mantel.signif<-matrix(nrow=(ncol(N.df)-1), ncol=ncol(N.df)-1, dimnames=list(colnames(N.df[2:ncol(N.df)]),colnames(N.df[2:ncol(N.df)]))))
+(N.mantel.statistic<-matrix(nrow=(ncol(N.df)-1), ncol=ncol(N.df)-1, dimnames=list(colnames(N.df[2:ncol(N.df)]),colnames(N.df[2:ncol(N.df)]))))
+#для каждой пары участков i и j
+for (i in 2:ncol(N.df)) {
+  for (j in 2:ncol(N.df)) {
+    # делаем модельную матрицу по годам
+    year.m<-vegdist(N.df$years[!is.na(N.df[,i]) &  !is.na(N.df[,j])], method="euclidean")
+    # делаем матрицу по численностям
+    area1.m<-vegdist(N.df[,i][N.df$years%in%N.df$years[!is.na(N.df[,i])] &  !is.na(N.df[,j])], method="euclidean")
+    area2.m<-vegdist(N.df[,j][N.df$years%in%N.df$years[!is.na(N.df[,i])] &  !is.na(N.df[,j])], method="euclidean")
+    #считаем частные корреляции мантеля с учетом детрендинга
+    cormant<-mantel.partial(area1.m, area2.m, year.m, permutations=999)
+    N.mantel.signif[i-1, j-1]<-cormant$signif
+    N.mantel.statistic[i-1, j-1]<-round(cormant$statistic, digits=3)
+  }
+}
+write.table(N.mantel.statistic, file="N_mantel_statistic.csv", sep=";", dec=",")
+write.table(N.mantel.signif, file="N_mantel_signif.csv", sep=";", dec=",")
+
+## аналогично считаем частные корреляции мантеля для участков где мыли на 1 мм.
+(N2.mantel.signif<-matrix(nrow=(ncol(N2.df)-1), ncol=ncol(N2.df)-1, dimnames=list(colnames(N2.df[2:ncol(N2.df)]),colnames(N2.df[2:ncol(N2.df)]))))
+(N2.mantel.statistic<-matrix(nrow=(ncol(N2.df)-1), ncol=ncol(N2.df)-1, dimnames=list(colnames(N2.df[2:ncol(N2.df)]),colnames(N2.df[2:ncol(N2.df)]))))
+for (i in 2:ncol(N2.df)) {
+  for (j in 2:ncol(N2.df)) {
+    year.period<-N2.df$years[!is.na(N2.df[,i]) &  !is.na(N2.df[,j])]
+    if (length(year.period)==0) j<-j+1
+    year.period<-N2.df$years[!is.na(N2.df[,i]) &  !is.na(N2.df[,j])]
+    if (length(year.period)==0) j<-j+1
+    year.m<-vegdist(year.period, method="euclidean")
+    area1.m<-vegdist(N2.df[,i][N2.df$years%in%year.period], method="euclidean")
+    area2.m<-vegdist(N2.df[,j][N2.df$years%in%year.period], method="euclidean")
+    cormant<-mantel.partial(area1.m, area2.m, year.m, permutations=999)
+    N2.mantel.signif[i-1, j-1]<-cormant$signif
+    N2.mantel.statistic[i-1, j-1]<-round(cormant$statistic, digits=3)
+  }
+}
+write.table(N2.mantel.statistic, file="N2_mantel_statistic.csv", sep=";", dec=",")
+write.table(N2.mantel.signif, file="N2_mantel_signif.csv", sep=";", dec=",")
+#####
+
+#пробовали с Хайтовым считать Мантеля
+#####
+
+
+# пример с наумовкимии данными
+# модельная матрица расстояний между годами
+
+(year.matrix<-vegdist(seq(1987,2013,1), method="euclidean"))
+
+# матрица расстояний по численностям
+(Medvezhya.matrix<-vegdist(log(as.vector(na.omit(N.df$Medvezhya))+1), method="euclidean"))
+(Seldyanaya.matrix<-vegdist(log(as.vector(na.omit(N.df$Seldyanaya))+1), method="euclidean"))
+
+#partial.mantel
+
+mantel.partial(Medvezhya.matrix, Seldyanaya.matrix,year.matrix,permutations=999)
+
+mantel(Medvezhya.matrix, Seldyanaya.matrix)
+
+library(lattice)
+(naumov<-subset(ishodnik, ishodnik$area==c("Seldyanaya", "Medvezhya")))
+xyplot(lm(naumov$N.mean~naumov$year)$residuals ~ naumov$year|naumov$area)
+
+#пример с нашими данными
+(year.matrix<-vegdist(seq(1992,2012,1), method="euclidean"))
+(Medvezhya.matrix<-vegdist(log(as.vector(na.omit(N.df$Medvezhya[row.names(N.df)%in%as.character(seq(1992,2012,1))]))+1), method="euclidean"))
+(Estuary.matrix<-vegdist(log(as.vector(na.omit(N.df$Estuary))), method="euclidean"))
+
+mantel.partial(Medvezhya.matrix, Estuary.matrix,year.matrix,permutations=999)
+
+mantel(Medvezhya.matrix, Estuary.matrix)
+
+(naumov<-subset(ishodnik, ishodnik$area==c("Estuary", "Medvezhya")))
+xyplot(log(naumov$N.mean+1) ~ naumov$year|naumov$area)
+
+#зрс и эстуарий
+(year.matrix<-vegdist(seq(1994,2012,1), method="euclidean"))
+(Estuary.matrix<-vegdist(log(as.vector(na.omit(N.df$Estuary[row.names(N.df)%in%as.character(seq(1994,2012,1))]))+1), method="euclidean"))
+(ZRS.matrix<-vegdist(log(as.vector(na.omit(N.df$ZRS))), method="euclidean"))
+
+mantel.partial(ZRS.matrix, Estuary.matrix,year.matrix,permutations=999)
+
+mantel(ZRS.matrix, Estuary.matrix)
+
+(naumov<-subset(ishodnik, ishodnik$area==c("Estuary", "Medvezhya")))
+xyplot(log(naumov$N.mean+1) ~ naumov$year|naumov$area)
+
+#зрс и эстуарий
+(year.matrix<-vegdist(seq(2001,2012,1), method="euclidean"))
+(Estuary.matrix<-vegdist(log(as.vector(na.omit(N2.df$Estuary[row.names(N2.df)%in%as.character(seq(2001,2012,1))]))+1), method="euclidean"))
+(YuG.matrix<-vegdist(log(as.vector(na.omit(N2.df$YuG))), method="euclidean"))
+
+mantel.partial(YuG.matrix, Estuary.matrix,year.matrix,permutations=999)
+
+mantel(YuG.matrix, Estuary.matrix)
+
+(naumov<-ishodnik[ishodnik$area=="YuG"|ishodnik$area=="Estuary",])
+xyplot(log(naumov$N2.mean+1) ~ naumov$year|naumov$area)
+xyplot(lm(naumov$N2.mean ~ naumov$year)$residuals ~ naumov$year|naumov$area)
+
+log(N2.mean[area=="YuG"])
+#####
+
+#Считаем сходство с матрицей расстояний
+#####
+
+#читаем матрицу расстояний
+distance_N_km<-read.table("coordinates_N.csv", sep=";", dec=",", header =T)
+rownames(distance_N_km)<-distance_N_km[,1]
+distance_N_km<-as.matrix(distance_N_km[,2:7])
+colnames(distance_N_km)<-rownames(distance_N_km)
+
+distance_N2_km<-read.table("coordinates_N2.csv", sep=";", dec=",", header =T)
+rownames(distance_N2_km)<-distance_N2_km[,1]
+distance_N2_km<-as.matrix(distance_N2_km[,2:9])
+colnames(distance_N2_km)<-rownames(distance_N2_km)
+
+# считаем мантеля между матрицей расстояний и корреляциями динамики
+mantel(xdis=distance_N_km, N.mantel.statistic)
+mantel(xdis=distance_N2_km, N2.mantel.statistic, na.rm=T)
+
+#попробую убрать 2 разрез и посчитать без na.rm
+N2.mantel.razrez2.rm<-N2.mantel.statistic[c(1:4,6:8),c(1:4,6:8)]
+distance_N2_km.razrez2.rm<-distance_N2_km[c(1:4,6:8),c(1:4,6:8)]
+
+mantel(xdis=distance_N2_km.razrez2.rm, N2.mantel.razrez2.rm)
+
+#####
+
+#картинки расстояние vs корреляция мантеля
+as.vector(distance_N_km)
+as.vector(N.mantel.statistic)
+plot(distance_N_km, N.mantel.statistic)

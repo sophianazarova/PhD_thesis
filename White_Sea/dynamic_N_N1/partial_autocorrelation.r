@@ -19,6 +19,7 @@ library(ggplot2)
 library(boot)
 
 #проверяем на наличие тренда - есть в Эстуарии, 2 разрез фукусы, 2 разрез нижний пляж, 2 разрез зостера, ЮГ, 
+#####
 sink("trends_avova.txt")
 for (i in 2:ncol(ishodnik)){
   print(colnames(ishodnik)[i])
@@ -34,8 +35,11 @@ for (i in 2:ncol(ishodnik)){
   print(kruskal.test(ishodnik[,i] ~ ishodnik[,1]))
 }
 sink()
+#####
 
 # Проводим анализ с помощью Мантеловской коррелограммы
+#####
+#install.packages("vegan")
 library(vegan)
 
 # Формируем матрицу расстояний между годами Внимание! эта матрица является также и модельной матрицей для направленного тренда
@@ -53,8 +57,9 @@ for (j in 2:ncol(ishodnik)){
   trend_mantel$mantel[j-1]<-round(mt$statistic, digits=4)
   trend_mantel$p[j-1]<-mt$signif
 }
+trend_mantel
 # запишем в табличку. 
-# тренд есть в Эстуарии, 2 разрез фукусы, 2 разрез зостера, ЮГ, 
+# тренд есть в Эстуарии, 2 разрез фукусы, 2 разрез зостера, ЮГ, разре2_весь, Сельдяная
 write.table(trend_mantel, file="trend_mantel.csv", sep=";",dec=",")
 
 
@@ -66,6 +71,11 @@ for(i in c(2,8,10,11,12)){
   assign(paste(colnames(ishodnik)[i], "detr", sep="_"),(lm(ishodnik[,i] ~ ishodnik[,1])$residuals + mean(ishodnik[,i], na.rm=T)))
 }
 
+#детредним все - для единообразности
+
+for(i in 2:ncol(ishodnik)){
+  assign(paste(colnames(ishodnik)[i], "detr", sep="_"),(lm(ishodnik[,i] ~ ishodnik[,1])$residuals + mean(ishodnik[,i], na.rm=T)))
+}
 
 #detrend_mac <- lm(N ~ as.numeric(year), data=mac)$residuals + mean(mac$N)
 #mac$detrendN <- detrend_mac 
@@ -77,11 +87,7 @@ nrow(ishodnik)
 
 #pacf_detrend <- pacf(detrend_mac, lag.max=10)
 
-
-
-# Анализы без детрендинга
-
-#pacf(mac$N, lag.max=10)
+#####
 
 
 # Функция для расчетов PRCF по Berryman, Turchin, 2001
@@ -119,6 +125,11 @@ PRCF2 <- function (data)
   return(prcf$acf)
 }
 
+## рассчеты с PRCF
+#####
+# Анализы без детрендинга
+
+#pacf(mac$N, lag.max=10)
 # Считаем prcf для всех учатсков
 
 for (i in 2:ncol(ishodnik)) { 
@@ -139,7 +150,6 @@ prcf_razrez2_zostera_zone$area<-"razrez2_zostera_zone"
 prcf_razrez2_low_beatch$area<-"razrez2_low_beatch"
 prcf_YuG$area<-"YuG"
 prcf_ZRS$area<-"ZRS"
-
 
 # детреднированные данные
 # Эстуарии, 2 разрез фукусы, 2 разрез нижний пляж, 2 разрез зостера, ЮГ, 
@@ -277,9 +287,10 @@ for (i in 2:ncol(ishodnik)) {
   dev.off()
   embedFonts(file=paste("prcf_plot", colnames(ishodnik)[i], ".pdf",sep="_"))
 }
+#####
 
-
-# играю с бутстрепом для оценки ошибок в PRCF
+## ВМ: играю с бутстрепом для оценки ошибок в PRCF
+#####
 boot_PRCF <- function (data, n=99, dl=3, confid=0.95)
 {
   set.seed(1234)
@@ -455,10 +466,10 @@ ggplot(boot_PRCF_YuG_detrend, aes(x=lag, y=PRCF)) +
 
 dev.off()
 
+#####
 
-
-##ЭТО Я НЕ СЧИТАЛА!
-#Играю с возможностью пермутационной оценки достоверности PRCF
+## ВМ: Играю с возможностью пермутационной оценки достоверности PRCF
+#####
 perm_PRCF <- function(data)
 {
   prcf <- PRCF(data)[[1]]
@@ -478,8 +489,411 @@ perm_PRCF <- function(data)
   
 }
 
-perm_prcf_mac <- perm_PRCF(mac$N)
-perm_prcf_mac
+# Анализы без детрендинга
 
-perm_prcf_mac_detr <- perm_PRCF(mac$detrendN)
-perm_prcf_mac_detr
+# Считаем perm-prcf для всех учатсков
+
+for (i in 2:ncol(ishodnik)) { 
+  assign(paste("prcf_perm", colnames(ishodnik)[i], sep="_"), perm_PRCF(as.vector(na.omit(ishodnik[,i])))) 
+}
+
+
+#вписываем в каждый датафрейм что это за участок
+# как это автоматизировать не придумала :(
+prcf_perm_Estuary$area<-"Estuary"
+prcf_perm_Goreliy_high$area<-"Goreliy_high"
+prcf_perm_Goreliy_middle$area<-"Goreliy_middle"
+prcf_perm_Goreliy_midlow$area<-"Goreliy_midlow"
+prcf_perm_Goreliy_low$area<-"Goreliy_low"
+prcf_perm_Lomnishniy$area<-"Lomnishniy"
+prcf_perm_razrez2_fucus_zone$area<-"razrez2_fucus_zone"
+prcf_perm_razrez2_high_beatch$area<-"razrez2_high_beatch"
+prcf_perm_razrez2_zostera_zone$area<-"razrez2_zostera_zone"
+prcf_perm_razrez2_low_beatch$area<-"razrez2_low_beatch"
+prcf_perm_YuG$area<-"YuG"
+prcf_perm_ZRS$area<-"ZRS"
+#####
+
+# детреднированные данные - по всем
+#Эстуарий
+(perm_prcf_Estuary_detrend<-perm_PRCF(Estuary_detr))
+perm_prcf_Estuary_detrend$signif<-NA
+perm_prcf_Estuary_detrend$signif[perm_prcf_Estuary_detrend$p>0.1]<-1
+perm_prcf_Estuary_detrend$signif[perm_prcf_Estuary_detrend$p<=0.1 & perm_prcf_Estuary_detrend$p>0.05]<-0.1
+perm_prcf_Estuary_detrend$signif[perm_prcf_Estuary_detrend$p<=0.05]<-0.05
+perm_prcf_Estuary_detrend$signif<-as.factor(perm_prcf_Estuary_detrend$signif)
+
+cairo_pdf("perm_PRCF_Estuary_detrend.pdf")
+ggplot(perm_prcf_Estuary_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_Estuary_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_Estuary_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+#2 разрез верхний пляж
+(perm_prcf_razrez2_high_beatch_detrend<-perm_PRCF(razrez2_high_beatch_detr))
+
+perm_prcf_razrez2_high_beatch_detrend$signif<-NA
+perm_prcf_razrez2_high_beatch_detrend$signif[perm_prcf_razrez2_high_beatch_detrend$p<=0.05]<-0.005
+perm_prcf_razrez2_high_beatch_detrend$signif[perm_prcf_razrez2_high_beatch_detrend$p>0.05 & perm_prcf_razrez2_high_beatch_detrend$p<=0.1]<-0.1
+perm_prcf_razrez2_high_beatch_detrend$signif[perm_prcf_razrez2_high_beatch_detrend$p>0.1]<-1
+perm_prcf_razrez2_high_beatch_detrend$signif<-as.factor(perm_prcf_razrez2_high_beatch_detrend$signif)
+
+cairo_pdf("perm_PRCF_razrez2_high_beatch_detrend.pdf")
+ggplot(perm_prcf_razrez2_high_beatch_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_razrez2_high_beatch_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_razrez2_high_beatch_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+#2 разрез пояс фукоидов
+(perm_prcf_razrez2_fucus_zone_detrend<-perm_PRCF(razrez2_fucus_zone_detr))
+
+perm_prcf_razrez2_fucus_zone_detrend$signif<-NA
+perm_prcf_razrez2_fucus_zone_detrend$signif[perm_prcf_razrez2_fucus_zone_detrend$p<=0.05]<-0.005
+perm_prcf_razrez2_fucus_zone_detrend$signif[perm_prcf_razrez2_fucus_zone_detrend$p>0.05 & perm_prcf_razrez2_fucus_zone_detrend$p<=0.1]<-0.1
+perm_prcf_razrez2_fucus_zone_detrend$signif[perm_prcf_razrez2_fucus_zone_detrend$p>0.1]<-1
+perm_prcf_razrez2_fucus_zone_detrend$signif<-as.factor(perm_prcf_razrez2_fucus_zone_detrend$signif)
+
+cairo_pdf("perm_PRCF_razrez2_fucus_zone_detrend.pdf")
+ggplot(perm_prcf_razrez2_fucus_zone_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_razrez2_fucus_zone_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_razrez2_fucus_zone_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+#2 разрез нижний пляж
+(perm_prcf_razrez2_low_beatch_detrend<-perm_PRCF(razrez2_low_beatch_detr))
+
+perm_prcf_razrez2_low_beatch_detrend$signif<-NA
+perm_prcf_razrez2_low_beatch_detrend$signif[perm_prcf_razrez2_low_beatch_detrend$p<=0.05]<-0.05
+perm_prcf_razrez2_low_beatch_detrend$signif[perm_prcf_razrez2_low_beatch_detrend$p>0.05 & perm_prcf_razrez2_low_beatch_detrend$p<=0.1]<-0.1
+perm_prcf_razrez2_low_beatch_detrend$signif[perm_prcf_razrez2_low_beatch_detrend$p>0.1]<-1
+perm_prcf_razrez2_low_beatch_detrend$signif<-as.factor(perm_prcf_razrez2_low_beatch_detrend$signif)
+
+cairo_pdf("perm_PRCF_razrez2_low_beatch_detrend.pdf")
+ggplot(perm_prcf_razrez2_low_beatch_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_razrez2_low_beatch_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_razrez2_low_beatch_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+#2 разрез пояс зостеры
+(perm_prcf_razrez2_zostera_zone_detrend<-perm_PRCF(razrez2_zostera_zone_detr))
+
+perm_prcf_razrez2_zostera_zone_detrend$signif<-NA
+perm_prcf_razrez2_zostera_zone_detrend$signif[perm_prcf_razrez2_zostera_zone_detrend$p<=0.05]<-0.05
+perm_prcf_razrez2_zostera_zone_detrend$signif[perm_prcf_razrez2_zostera_zone_detrend$p>0.05 & perm_prcf_razrez2_zostera_zone_detrend$p<=0.1]<-0.1
+perm_prcf_razrez2_zostera_zone_detrend$signif[perm_prcf_razrez2_zostera_zone_detrend$p>0.1]<-1
+perm_prcf_razrez2_zostera_zone_detrend$signif<-as.factor(perm_prcf_razrez2_zostera_zone_detrend$signif)
+
+cairo_pdf("perm_PRCF_razrez2_zostera_zone_detrend.pdf")
+ggplot(perm_prcf_razrez2_zostera_zone_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_razrez2_zostera_zone_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_razrez2_zostera_zone_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+#2 разрез_весь
+(perm_prcf_razrez2_all_detrend<-perm_PRCF(razrez2_all_detr))
+
+perm_prcf_razrez2_all_detrend$signif<-NA
+perm_prcf_razrez2_all_detrend$signif[perm_prcf_razrez2_all_detrend$p<=0.05]<-0.05
+perm_prcf_razrez2_all_detrend$signif[perm_prcf_razrez2_all_detrend$p>0.05 & perm_prcf_razrez2_all_detrend$p<=0.1]<-0.1
+perm_prcf_razrez2_all_detrend$signif[perm_prcf_razrez2_all_detrend$p>0.1]<-1
+perm_prcf_razrez2_all_detrend$signif<-as.factor(perm_prcf_razrez2_all_detrend$signif)
+
+cairo_pdf("perm_PRCF_razrez2_all_detrend.pdf")
+ggplot(perm_prcf_razrez2_all_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_razrez2_all_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_razrez2_all_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+# ЮГ
+(perm_prcf_YuG_detrend<-perm_PRCF(YuG_detr))
+
+perm_prcf_YuG_detrend$signif<-NA
+perm_prcf_YuG_detrend$signif[perm_prcf_YuG_detrend$p>0.1]<-1
+perm_prcf_YuG_detrend$signif[perm_prcf_YuG_detrend$p<=0.1 & perm_prcf_YuG_detrend$p>0.05]<-0.1
+perm_prcf_YuG_detrend$signif[perm_prcf_YuG_detrend$p<=0.05]<-0.05
+perm_prcf_YuG_detrend$signif<-as.factor(perm_prcf_YuG_detrend$signif)
+
+cairo_pdf("perm_PRCF_YuG_detrend.pdf")
+ggplot(perm_prcf_YuG_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_YuG_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_YuG_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+colnames(ishodnik)
+
+# Ломнишный
+(perm_prcf_Lomnishniy_detrend<-perm_PRCF(Lomnishniy_detr))
+
+perm_prcf_Lomnishniy_detrend$signif<-NA
+perm_prcf_Lomnishniy_detrend$signif[perm_prcf_Lomnishniy_detrend$p>0.1]<-1
+perm_prcf_Lomnishniy_detrend$signif[perm_prcf_Lomnishniy_detrend$p<=0.1 & perm_prcf_Lomnishniy_detrend$p>0.05]<-0.1
+perm_prcf_Lomnishniy_detrend$signif[perm_prcf_Lomnishniy_detrend$p<=0.05]<-0.05
+perm_prcf_Lomnishniy_detrend$signif<-as.factor(perm_prcf_Lomnishniy_detrend$signif)
+
+cairo_pdf("perm_PRCF_Lomnishniy_detrend.pdf")
+ggplot(perm_prcf_Lomnishniy_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_Lomnishniy_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_Lomnishniy_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+# ЗРС
+(perm_prcf_ZRS_detrend<-perm_PRCF(ZRS_detr))
+
+perm_prcf_ZRS_detrend$signif<-NA
+perm_prcf_ZRS_detrend$signif[perm_prcf_ZRS_detrend$p>0.1]<-1
+perm_prcf_ZRS_detrend$signif[perm_prcf_ZRS_detrend$p<=0.1 & perm_prcf_ZRS_detrend$p>0.05]<-0.1
+perm_prcf_ZRS_detrend$signif[perm_prcf_ZRS_detrend$p<=0.05]<-0.05
+perm_prcf_ZRS_detrend$signif<-as.factor(perm_prcf_ZRS_detrend$signif)
+
+cairo_pdf("perm_PRCF_ZRS_detrend.pdf")
+ggplot(perm_prcf_ZRS_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_ZRS_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_ZRS_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+# Горелый верх
+(perm_prcf_Goreliy_high_detrend<-perm_PRCF(Goreliy_high_detr))
+
+perm_prcf_Goreliy_high_detrend$signif<-NA
+perm_prcf_Goreliy_high_detrend$signif[perm_prcf_Goreliy_high_detrend$p>0.1]<-1
+perm_prcf_Goreliy_high_detrend$signif[perm_prcf_Goreliy_high_detrend$p<=0.1 & perm_prcf_Goreliy_high_detrend$p>0.05]<-0.1
+perm_prcf_Goreliy_high_detrend$signif[perm_prcf_Goreliy_high_detrend$p<=0.05]<-0.05
+perm_prcf_Goreliy_high_detrend$signif<-as.factor(perm_prcf_Goreliy_high_detrend$signif)
+
+cairo_pdf("perm_PRCF_Goreliy_high_detrend.pdf")
+ggplot(perm_prcf_Goreliy_high_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_Goreliy_high_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_Goreliy_high_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+# Горелый middle
+(perm_prcf_Goreliy_middle_detrend<-perm_PRCF(Goreliy_middle_detr))
+
+perm_prcf_Goreliy_middle_detrend$signif<-NA
+perm_prcf_Goreliy_middle_detrend$signif[perm_prcf_Goreliy_middle_detrend$p>0.1]<-1
+perm_prcf_Goreliy_middle_detrend$signif[perm_prcf_Goreliy_middle_detrend$p<=0.1 & perm_prcf_Goreliy_middle_detrend$p>0.05]<-0.1
+perm_prcf_Goreliy_middle_detrend$signif[perm_prcf_Goreliy_middle_detrend$p<=0.05]<-0.05
+perm_prcf_Goreliy_middle_detrend$signif<-as.factor(perm_prcf_Goreliy_middle_detrend$signif)
+
+cairo_pdf("perm_PRCF_Goreliy_middle_detrend.pdf")
+ggplot(perm_prcf_Goreliy_middle_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_Goreliy_middle_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_Goreliy_middle_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+# Горелый midlow
+(perm_prcf_Goreliy_midlow_detrend<-perm_PRCF(Goreliy_midlow_detr))
+
+perm_prcf_Goreliy_midlow_detrend$signif<-NA
+perm_prcf_Goreliy_midlow_detrend$signif[perm_prcf_Goreliy_midlow_detrend$p>0.1]<-1
+perm_prcf_Goreliy_midlow_detrend$signif[perm_prcf_Goreliy_midlow_detrend$p<=0.1 & perm_prcf_Goreliy_midlow_detrend$p>0.05]<-0.1
+perm_prcf_Goreliy_midlow_detrend$signif[perm_prcf_Goreliy_midlow_detrend$p<=0.05]<-0.05
+perm_prcf_Goreliy_midlow_detrend$signif<-as.factor(perm_prcf_Goreliy_midlow_detrend$signif)
+
+cairo_pdf("perm_PRCF_Goreliy_midlow_detrend.pdf")
+ggplot(perm_prcf_Goreliy_midlow_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_Goreliy_midlow_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_Goreliy_midlow_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+# Горелый low
+(perm_prcf_Goreliy_low_detrend<-perm_PRCF(as.vector(Goreliy_low_detr)))
+
+perm_prcf_Goreliy_low_detrend$signif<-NA
+perm_prcf_Goreliy_low_detrend$signif[perm_prcf_Goreliy_low_detrend$p>0.1]<-1
+perm_prcf_Goreliy_low_detrend$signif[perm_prcf_Goreliy_low_detrend$p<=0.1 & perm_prcf_Goreliy_low_detrend$p>0.05]<-0.1
+perm_prcf_Goreliy_low_detrend$signif[perm_prcf_Goreliy_low_detrend$p<=0.05]<-0.05
+perm_prcf_Goreliy_low_detrend$signif<-as.factor(perm_prcf_Goreliy_low_detrend$signif)
+
+cairo_pdf("perm_PRCF_Goreliy_low_detrend.pdf")
+ggplot(perm_prcf_Goreliy_low_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_Goreliy_low_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_Goreliy_low_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+
+# Горелый весь
+(perm_prcf_Goreliy_all_detrend<-perm_PRCF(as.vector(Goreliy_all_detr)))
+
+perm_prcf_Goreliy_all_detrend$signif<-NA
+perm_prcf_Goreliy_all_detrend$signif[perm_prcf_Goreliy_all_detrend$p>0.1]<-1
+perm_prcf_Goreliy_all_detrend$signif[perm_prcf_Goreliy_all_detrend$p<=0.1 & perm_prcf_Goreliy_all_detrend$p>0.05]<-0.1
+perm_prcf_Goreliy_all_detrend$signif[perm_prcf_Goreliy_all_detrend$p<=0.05]<-0.05
+perm_prcf_Goreliy_all_detrend$signif<-as.factor(perm_prcf_Goreliy_all_detrend$signif)
+
+cairo_pdf("perm_PRCF_Goreliy_all_detrend.pdf")
+ggplot(perm_prcf_Goreliy_all_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_Goreliy_all_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_Goreliy_all_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+
+# Медвежья
+(perm_prcf_Medvezhya_detrend<-perm_PRCF(Medvezhya_detr))
+
+perm_prcf_Medvezhya_detrend$signif<-NA
+perm_prcf_Medvezhya_detrend$signif[perm_prcf_Medvezhya_detrend$p>0.1]<-1
+perm_prcf_Medvezhya_detrend$signif[perm_prcf_Medvezhya_detrend$p<=0.1 & perm_prcf_Medvezhya_detrend$p>0.05]<-0.1
+perm_prcf_Medvezhya_detrend$signif[perm_prcf_Medvezhya_detrend$p<=0.05]<-0.05
+perm_prcf_Medvezhya_detrend$signif<-as.factor(perm_prcf_Medvezhya_detrend$signif)
+
+cairo_pdf("perm_PRCF_Medvezhya_detrend.pdf")
+ggplot(perm_prcf_Medvezhya_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_Medvezhya_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_Medvezhya_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+# Сельдяная
+Seldyanaya_detr<-lm(ishodnik$Seldyanaya ~ 0 + ishodnik[,1])$residuals+mean(ishodnik$Seldyanaya)
+(perm_prcf_Seldyanaya_detrend<-perm_PRCF(Seldyanaya_detr))
+
+perm_prcf_Seldyanaya_detrend$signif<-NA
+perm_prcf_Seldyanaya_detrend$signif[perm_prcf_Seldyanaya_detrend$p>0.1]<-1
+perm_prcf_Seldyanaya_detrend$signif[perm_prcf_Seldyanaya_detrend$p<=0.1 & perm_prcf_Seldyanaya_detrend$p>0.05]<-0.1
+perm_prcf_Seldyanaya_detrend$signif[perm_prcf_Seldyanaya_detrend$p<=0.05]<-0.05
+perm_prcf_Seldyanaya_detrend$signif<-as.factor(perm_prcf_Seldyanaya_detrend$signif)
+
+cairo_pdf("perm_PRCF_Seldyanaya_detrend.pdf")
+ggplot(perm_prcf_Seldyanaya_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) + 
+  scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+  geom_bar(colour="black", stat="identity", position="dodge")  + 
+  geom_hline(yintercept=0) + 
+  geom_hline(yintercept=c(-2/sqrt(length(perm_prcf_Seldyanaya_detrend$PRCF)),
+                          2/sqrt(length(perm_prcf_Seldyanaya_detrend$PRCF))), linetype=2) + 
+  xlab("Time lag") + 
+  ylab("Partial autocorrelations") + 
+  theme_bw()
+dev.off()
+
+
+# продолжаем с данными без детрендирования
+#склеиваем все в один датафрейм
+prcf_perm_all <- rbind(prcf_perm_Estuary, 
+                  prcf_perm_Goreliy_high, 
+                  prcf_perm_Goreliy_middle,
+                  prcf_perm_Goreliy_midlow,
+                  prcf_perm_Goreliy_low,
+                  prcf_perm_Lomnishniy,
+                  prcf_perm_razrez2_fucus_zone,
+                  prcf_perm_razrez2_high_beatch,
+                  prcf_perm_razrez2_zostera_zone,
+                  prcf_perm_razrez2_low_beatch,
+                  prcf_perm_YuG,
+                  prcf_perm_ZRS)
+prcf_perm_all$lag<-as.factor(prcf_perm_all$lag)
+prcf_perm_all$area<-as.factor(prcf_perm_all$area)
+
+prcf_perm_all$signif<-NA
+prcf_perm_all$signif[prcf_perm_all$p>0.1]<-1
+prcf_perm_all$signif[prcf_perm_all$p<=0.1 & prcf_perm_all$p>0.05]<-0.1
+prcf_perm_all$signif[prcf_perm_all$p<=0.05]<-0.05
+prcf_perm_all$signif<-as.factor(prcf_perm_all$signif)
+
+# я не понимаю, почему не генерится файл!!  прогнал руками, но зело извращение
+# ggplot не замыкается в цикл
+for (i in 2:ncol(ishodnik)) { 
+  cairo_pdf(paste("perm_PRCF", colnames(ishodnik)[i], ".pdf", sep="_"))
+  ggplot(subset(prcf_all, prcf_all$area==colnames(ishodnik)[i]), aes(x=as.factor(lag), y=acf, fill=signif)) + 
+    scale_fill_manual(values=c("1"="white", "0.1"="gray", "0.05"="black")) +
+    geom_bar(colour="black", stat="identity", position="dodge")  + 
+    geom_hline(yintercept=0) + 
+    geom_hline(yintercept=c(-2/sqrt(length(prcf_all$acf[prcf_all$area==colnames(ishodnik)[i]])),
+                            2/sqrt(length(prcf_all$acf[prcf_all$area==colnames(ishodnik)[i]]))), linetype=2) + 
+    xlab("Time lag") + 
+    ylab("Partial autocorrelations") + 
+    theme_bw()
+dev.off()  
+  }
+
+
+#####
