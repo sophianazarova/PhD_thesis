@@ -28,6 +28,7 @@
 %\author{\copyright~~С.А.~Назарова \thanks{e-mail:~sophia.nazarova@gmail.com}}
 %\date{}
 
+\includeonly{matmet, harakteristiki_rayonov_issledovaniya}
 
 \begin{document}
 %\maketitle
@@ -35,12 +36,13 @@
 \section{Введение}
 
 \section{материал и методика}
-
-        \subsection{полевые сборы}
-
-        \subsection{стат.обработка}
+%        \subsection{полевые сборы}
+%       \subsection{стат.обработка}
+		\include{matmet}
 
 \section{результаты}
+	\subsection{Характеристика района исследования}
+		\include{harakteristiki_rayonov_issledovaniya}
 
         \subsection{роль в сообществах разнообразных местообитаний}
 
@@ -49,10 +51,14 @@
 %            \subsubsection{Баренцево море}
 
         \subsection{микрораспределение}
-
+		\input{microdistribution}
         \subsection{популяционная структура}
-
+		\input{obilie}
+		\input{dynamic}
+		\input{size_structure}
+		\input{size_1year_macoma}
         \subsection{рост в разных условиях}
+
 
 \section{обсуждение}
 
@@ -65,5 +71,6 @@
         \subsection{скорость роста как показатель "условий жизни"}
 
         \subsection{о долговременных трендах в популяции Mb}
+		\input{dynamic_analyse}
 
 \end{document}

@@ -1,0 +1,106 @@
+% для компиляции в lualatex!!
+%\documentclass[12pt, a4paper]{article}
+\documentclass[12pt, a4paper]{disser}
+\usepackage[english,russian]{babel}
+\usepackage[warn]{mathtext}
+%\usepackage[T2A]{fontenc}
+%\usepackage[utf8]{inputenc}
+
+\usepackage{xecyr} % Продукт Вашего покорного слуги ;)
+
+%\setmainfont{DejaVu Serif}
+\setmainfont{Liberation Serif}
+
+\usepackage{color}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{multicol}
+
+\textheight=24cm           % высота текста
+\textwidth=16cm            % ширина текста
+\oddsidemargin=0pt         % отступ от левого края
+\topmargin=-1.5cm          % отступ от верхнего края
+\parindent=24pt            % абзацный отступ
+\parskip=0pt               % интервал между абзацами
+\tolerance=2000            % терпимость к "жидким" строкам
+\flushbottom               % выравнивание высоты страниц
+%\def\baselinestretch{1.5} % печать с большим интервалом
+
+%\title{}
+%\author{\copyright~~С.А.~Назарова \thanks{e-mail:~sophia.nazarova@gmail.com}}
+%\date{}
+
+
+\begin{document}
+
+	\begin{figure}[ht]
+	
+	\begin{minipage}[b]{.46\linewidth}
+	%Фигурка в первом ряду слева размер отведенный под весь этот объект \textendash 0.46 от ширины строки
+	%Параметр [b] означает, что выравнивание этих министраниц будет по нижнему краю
+	\begin{center}
+	{\tiny 2002}
+		\includegraphics[width=65mm]{station_jaccard_2002.pdf}
+
+	\end{center}
+	\end{minipage}
+	%
+	\hfil %Это пружинка отодвигающая рисунки друг от друга
+	%
+	\begin{minipage}[b]{.46\linewidth}
+%Следующий рисунок - первый ряд справа %DUNGEON S_4 \ AB
+	\begin{center}
+	{\tiny 2003}
+		\includegraphics[width=65mm]{station_jaccard_2003.pdf}
+	\end{center}
+	\end{minipage}
+
+%\smallskip
+
+
+	\begin{minipage}[b]{.46\linewidth}
+%Фигурка в первом ряду слева размер отведенный под весь этот объект \textendash 0.46 от ширины строки
+%Параметр [b] означает, что выравнивание этих министраниц будет по нижнему краю
+	\begin{center}
+	{\tiny 2004}
+		\includegraphics[width=65mm]{station_jaccard_2004.pdf}
+	\end{center}
+	\end{minipage}
+%
+	\hfil %Это пружинка отодвигающая рисунки друг от друга
+%
+	\begin{minipage}[b]{.46\linewidth}
+%Следующий рисунок - первый ряд справа %DUNGEON S_4 \ AB
+	\begin{center}	
+	{\tiny 2005}
+		\includegraphics[width=65mm]{station_jaccard_2005.pdf}
+	\end{center}
+	\end{minipage}
+
+%\smallskip
+
+	\begin{minipage}[b]{.46\linewidth}
+%Фигурка в первом ряду слева размер отведенный под весь этот объект \textendash 0.46 от ширины строки
+%Параметр [b] означает, что выравнивание этих министраниц будет по нижнему краю
+	\begin{center}
+	{\tiny 2006}
+		\includegraphics[width=65mm]{station_jaccard_2006.pdf}
+	\end{center}
+	\end{minipage}
+%
+	\hfil %Это пружинка отодвигающая рисунки друг от друга
+%
+	\begin{minipage}[b]{.46\linewidth}
+%Следующий рисунок - первый ряд справа %DUNGEON S_4 \ AB
+	\begin{center}
+	{\tiny 2007}
+		\includegraphics[width=65mm]{station_jaccard_2007.pdf}
+	\end{center}
+	\end{minipage}
+
+%\smallskip
+	\caption{Сходство мониторинговых станций на Дальнем пляже по видовому разнообразию в разные годы. Мера сходства - коэффициент Жаккара. Кластеризация методом Варда.}
+	\label{ris:jaccard_station}
+	\end{figure}
+
+\end{document}
