@@ -92,3 +92,35 @@ Response: ishodnik[, i]
               Df   Sum Sq Mean Sq F value Pr(>F)
 ishodnik[, 1]  1     4407    4407  0.0012 0.9723
 Residuals     17 60140972 3537704               
+[1] "Medvezhya"
+Analysis of Variance Table
+
+Response: ishodnik[, i]
+              Df   Sum Sq Mean Sq F value Pr(>F)
+ishodnik[, 1]  1   906409  906409  2.0444 0.1651
+Residuals     25 11084222  443369               
+[1] "Seldyanaya"
+Analysis of Variance Table
+
+Response: ishodnik[, i]
+              Df  Sum Sq Mean Sq F value   Pr(>F)   
+ishodnik[, 1]  1 2906134 2906134  12.718 0.001495 **
+Residuals     25 5712779  228511                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+[1] "Goreliy_all"
+Analysis of Variance Table
+
+Response: ishodnik[, i]
+              Df   Sum Sq Mean Sq F value Pr(>F)
+ishodnik[, 1]  1   482650  482650  0.4314 0.5192
+Residuals     19 21259234 1118907               
+[1] "razrez2_all"
+Analysis of Variance Table
+
+Response: ishodnik[, i]
+              Df  Sum Sq Mean Sq F value   Pr(>F)   
+ishodnik[, 1]  1 7450441 7450441  18.674 0.003474 **
+Residuals      7 2792741  398963                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

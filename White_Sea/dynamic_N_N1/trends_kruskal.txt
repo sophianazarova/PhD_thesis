@@ -82,3 +82,31 @@ Kruskal-Wallis chi-squared = 11, df = 11, p-value = 0.4433
 data:  ishodnik[, i] by ishodnik[, 1]
 Kruskal-Wallis chi-squared = 18, df = 18, p-value = 0.4557
 
+[1] "Medvezhya"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 26, df = 26, p-value = 0.4631
+
+[1] "Seldyanaya"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 26, df = 26, p-value = 0.4631
+
+[1] "Goreliy_all"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 20, df = 20, p-value = 0.4579
+
+[1] "razrez2_all"
+
+	Kruskal-Wallis rank sum test
+
+data:  ishodnik[, i] by ishodnik[, 1]
+Kruskal-Wallis chi-squared = 8, df = 8, p-value = 0.4335
+

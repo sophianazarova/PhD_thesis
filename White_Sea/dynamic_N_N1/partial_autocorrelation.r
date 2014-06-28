@@ -265,7 +265,7 @@ pl_PRCF + geom_bar(colour="black", stat="identity", position="dodge")  + scale_f
 # я не понимаю, почему не генерится файл!!  прогнал руками, но зело извращение
 # ggplot не замыкается в цикл
   for (i in 2:ncol(ishodnik)) { 
-    cairo_pdf(paste("PRCF", colnames(ishodnik)[i], ".pdf", sep="_"))
+      cairo_pdf(paste("PRCF", colnames(ishodnik)[i], ".pdf", sep="_"))
     ggplot(subset(prcf_all, prcf_all$area==colnames(ishodnik)[i]), aes(x=as.factor(lag), y=acf, fill=type)) +
     geom_bar(colour="black", stat="identity", position="dodge")  + 
     scale_fill_manual(values=c("PRCF" = "grey")) + 
@@ -834,7 +834,7 @@ ggplot(perm_prcf_Medvezhya_detrend, aes(x=as.factor(lag), y=prcf, fill=signif)) 
 dev.off()
 
 # Сельдяная
-Seldyanaya_detr<-lm(ishodnik$Seldyanaya ~ 0 + ishodnik[,1])$residuals+mean(ishodnik$Seldyanaya)
+
 (perm_prcf_Seldyanaya_detrend<-perm_PRCF(Seldyanaya_detr))
 
 perm_prcf_Seldyanaya_detrend$signif<-NA

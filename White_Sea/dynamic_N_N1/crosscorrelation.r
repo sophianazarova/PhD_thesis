@@ -18,17 +18,14 @@ N2.matrix<-tapply(X=N2.mean, list(year,area), max)
 N.matrix<-tapply(X=N.mean, list(year,area), max)
 (N.df<-data.frame(years=as.numeric(dimnames(N.matrix)[[1]]), as.data.frame(N.matrix[,!is.na(colMeans(N.matrix, na.rm=T))])))
 
+names(N2.df)
+
 ##crosscorrelation 
 #Кажется это некоторая хрень - кросскорреляции между участками.
 #####
 
-# сделаем из линейного data.frame две матрицы
-N2.matrix<-tapply(X=N2.mean, list(year,area), max)
-N2.df<-as.data.frame(N2.matrix)
-N.matrix<-tapply(X=N.mean, list(year,area), max)
-N.df<-as.data.frame(N.matrix)
-
 ## численность N, участки, где мыли на сите 0,5.
+#####
 #N Эстуарий vs Горелый, Сельдяная, Медвежья 1992-2012
 pdf(file="crosscorr_N_Estury_Goreliy_1992_2012.pdf", family="NimbusSan")
 ccf(x=N.df$Estuary[rownames(N.df)%in%seq(1992,2012,1)], N.df$Goreliy[rownames(N.df)%in%seq(1992,2012,1)])
@@ -113,8 +110,10 @@ pdf(file="crosscorr_N_ZRS_2razrez_1994_2000.pdf", family="NimbusSan")
 ccf(x=N.df$ZRS[rownames(N.df)%in%seq(1994,2000,1)], N.df$razrez2[rownames(N.df)%in%seq(1994,2000,1)])
 dev.off()
 embedFonts("crosscorr_N_ZRS_2razrez_1994_2000.pdf") #встройка шрифтов в файл
+#####
 
 ## численность N2, участки, где мыли на сите 1 + обрезанные по 1 мм ЛЭМБовские мониторинги.
+#####
 #N2 Эстуарий vs Горелый 1992-2012
 pdf(file="crosscorr_N2_Estury_Goreliy_1992_2012.pdf", family="NimbusSan")
 ccf(x=N2.df$Estuary[rownames(N.df)%in%seq(1992,2012,1)], N2.df$Goreliy[rownames(N.df)%in%seq(1992,2012,1)])
@@ -283,6 +282,7 @@ embedFonts("crosscorr_N2_ZRS_Suhaya_1995_2005.pdf") #встройка шрифт
 
 ## просто корреляции всего со всем... По численности между всеми участками
 #####
+#install.packages("psych")
 library(psych)
 N_pearson<-corr.test(N.matrix, method="pearson", use="pairwise")
 N2_pearson<-corr.test(N2.matrix, method="pearson", use="pairwise")
@@ -326,7 +326,9 @@ mantel(xdis=rasstoyanie_km_N, ydis=N_spearman.matrix)
 library(vegan)
 str(ishodnik)
 attach(ishodnik)
-rm(year)
+
+
+str(N.df)
 
 ##считаем частные корреляции мантеля по участкам, мытым на сите 0,5 мм
 #делаем пустые матрицы для результатов
@@ -336,7 +338,11 @@ rm(year)
 for (i in 2:ncol(N.df)) {
   for (j in 2:ncol(N.df)) {
     # делаем модельную матрицу по годам
-    year.m<-vegdist(N.df$years[!is.na(N.df[,i]) &  !is.na(N.df[,j])], method="euclidean")
+    year.period<-N.df$years[!is.na(N.df[,i]) &  !is.na(N.df[,j])]
+    if (length(year.period)==0) j<-j+1
+    year.period<-N.df$years[!is.na(N.df[,i]) &  !is.na(N.df[,j])]
+    if (length(year.period)==0) j<-j+1
+    year.m<-vegdist(year.period, method="euclidean")
     # делаем матрицу по численностям
     area1.m<-vegdist(N.df[,i][N.df$years%in%N.df$years[!is.na(N.df[,i])] &  !is.na(N.df[,j])], method="euclidean")
     area2.m<-vegdist(N.df[,j][N.df$years%in%N.df$years[!is.na(N.df[,i])] &  !is.na(N.df[,j])], method="euclidean")
@@ -370,68 +376,6 @@ write.table(N2.mantel.statistic, file="N2_mantel_statistic.csv", sep=";", dec=",
 write.table(N2.mantel.signif, file="N2_mantel_signif.csv", sep=";", dec=",")
 #####
 
-#пробовали с Хайтовым считать Мантеля
-#####
-
-
-# пример с наумовкимии данными
-# модельная матрица расстояний между годами
-
-(year.matrix<-vegdist(seq(1987,2013,1), method="euclidean"))
-
-# матрица расстояний по численностям
-(Medvezhya.matrix<-vegdist(log(as.vector(na.omit(N.df$Medvezhya))+1), method="euclidean"))
-(Seldyanaya.matrix<-vegdist(log(as.vector(na.omit(N.df$Seldyanaya))+1), method="euclidean"))
-
-#partial.mantel
-
-mantel.partial(Medvezhya.matrix, Seldyanaya.matrix,year.matrix,permutations=999)
-
-mantel(Medvezhya.matrix, Seldyanaya.matrix)
-
-library(lattice)
-(naumov<-subset(ishodnik, ishodnik$area==c("Seldyanaya", "Medvezhya")))
-xyplot(lm(naumov$N.mean~naumov$year)$residuals ~ naumov$year|naumov$area)
-
-#пример с нашими данными
-(year.matrix<-vegdist(seq(1992,2012,1), method="euclidean"))
-(Medvezhya.matrix<-vegdist(log(as.vector(na.omit(N.df$Medvezhya[row.names(N.df)%in%as.character(seq(1992,2012,1))]))+1), method="euclidean"))
-(Estuary.matrix<-vegdist(log(as.vector(na.omit(N.df$Estuary))), method="euclidean"))
-
-mantel.partial(Medvezhya.matrix, Estuary.matrix,year.matrix,permutations=999)
-
-mantel(Medvezhya.matrix, Estuary.matrix)
-
-(naumov<-subset(ishodnik, ishodnik$area==c("Estuary", "Medvezhya")))
-xyplot(log(naumov$N.mean+1) ~ naumov$year|naumov$area)
-
-#зрс и эстуарий
-(year.matrix<-vegdist(seq(1994,2012,1), method="euclidean"))
-(Estuary.matrix<-vegdist(log(as.vector(na.omit(N.df$Estuary[row.names(N.df)%in%as.character(seq(1994,2012,1))]))+1), method="euclidean"))
-(ZRS.matrix<-vegdist(log(as.vector(na.omit(N.df$ZRS))), method="euclidean"))
-
-mantel.partial(ZRS.matrix, Estuary.matrix,year.matrix,permutations=999)
-
-mantel(ZRS.matrix, Estuary.matrix)
-
-(naumov<-subset(ishodnik, ishodnik$area==c("Estuary", "Medvezhya")))
-xyplot(log(naumov$N.mean+1) ~ naumov$year|naumov$area)
-
-#зрс и эстуарий
-(year.matrix<-vegdist(seq(2001,2012,1), method="euclidean"))
-(Estuary.matrix<-vegdist(log(as.vector(na.omit(N2.df$Estuary[row.names(N2.df)%in%as.character(seq(2001,2012,1))]))+1), method="euclidean"))
-(YuG.matrix<-vegdist(log(as.vector(na.omit(N2.df$YuG))), method="euclidean"))
-
-mantel.partial(YuG.matrix, Estuary.matrix,year.matrix,permutations=999)
-
-mantel(YuG.matrix, Estuary.matrix)
-
-(naumov<-ishodnik[ishodnik$area=="YuG"|ishodnik$area=="Estuary",])
-xyplot(log(naumov$N2.mean+1) ~ naumov$year|naumov$area)
-xyplot(lm(naumov$N2.mean ~ naumov$year)$residuals ~ naumov$year|naumov$area)
-
-log(N2.mean[area=="YuG"])
-#####
 
 #Считаем сходство с матрицей расстояний
 #####
@@ -439,7 +383,7 @@ log(N2.mean[area=="YuG"])
 #читаем матрицу расстояний
 distance_N_km<-read.table("coordinates_N.csv", sep=";", dec=",", header =T)
 rownames(distance_N_km)<-distance_N_km[,1]
-distance_N_km<-as.matrix(distance_N_km[,2:7])
+distance_N_km<-as.matrix(distance_N_km[,2:9])
 colnames(distance_N_km)<-rownames(distance_N_km)
 
 distance_N2_km<-read.table("coordinates_N2.csv", sep=";", dec=",", header =T)
@@ -448,7 +392,7 @@ distance_N2_km<-as.matrix(distance_N2_km[,2:9])
 colnames(distance_N2_km)<-rownames(distance_N2_km)
 
 # считаем мантеля между матрицей расстояний и корреляциями динамики
-mantel(xdis=distance_N_km, N.mantel.statistic)
+mantel(xdis=distance_N_km, N.mantel.statistic, na.rm=T)
 mantel(xdis=distance_N2_km, N2.mantel.statistic, na.rm=T)
 
 #попробую убрать 2 разрез и посчитать без na.rm

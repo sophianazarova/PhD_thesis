@@ -19,6 +19,21 @@ ishodnik$mareography<-ordered(ishodnik$mareography, levels=c("high","middle", "l
 
 str(ishodnik)
 
+#summary по участкам для макрораспределения
+
+summ_area<-tapply(ishodnik$N.indd, ishodnik$area, summary)
+#соберем в табличку
+area_summary_df<-data.frame(area=levels(ishodnik$area), Nmin=numeric(length=length(levels(ishodnik$area))), Nmax=numeric(length=length(levels(ishodnik$area))), Nmean=numeric(length=length(levels(ishodnik$area))))
+
+(summ_area[[1]])
+
+for (i in 1:length(summ_area)) {
+  area_summary_df$Nmin[i]<-summ_area[[i]]["Min."]
+  area_summary_df$Nmax[i]<-summ_area[[i]]["Max."]
+  area_summary_df$Nmean[i]<-summ_area[[i]]["Mean"]
+}
+write.table(area_summary_df, "area_summary.csv", sep=";", dec=",")
+
 #минимумы-максимумы
 tapply(X=ishodnik$N.indd[ishodnik$sea=="White",drop=T], INDEX=ishodnik$region[ishodnik$sea=="White",drop=T], summary)
 hist(ishodnik$N.indd[ishodnik$region=="Chupa_bay"], breaks=seq(0,9000, 500))

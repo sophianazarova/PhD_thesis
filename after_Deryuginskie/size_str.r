@@ -1,5 +1,6 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/after_Deryuginskie")
 
+detach(ishodnik)
 #загружаем исходники
 ishodnik<-read.table("Macoma_Cerastoderma_Mya_size.csv", header=T, sep=";", dec=",")
 str(ishodnik)
@@ -192,7 +193,7 @@ Macoma_means<-matrix(c(Macoma_1973_mean, Macoma_5mm_mean, NA, Macoma_mean), nrow
 dimnames(Macoma_means)<-(list(c(1973, names(Macoma_mean)), c(">5mm", "all")))
 
 pdf(file="Macoma_N_dynamic_all.pdf", family="NimbusSan")
-barplot(t(Macoma_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="L, мм", ylim=c(0, max(Macoma_mean)+max(Macoma_SEM)))
+barplot(t(Macoma_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, max(Macoma_mean)+max(Macoma_SEM)))
 arrows(x0=seq(1.5,24.5,3),
        y0=(c(Macoma_1973_mean, Macoma_5mm_mean) + c(Macoma_1973_SEM, Macoma_5mm_SEM)),
        x1=seq(1.5,24.5,3),
@@ -206,12 +207,11 @@ arrows(x0=seq(2.5,25.5,3),
 dev.off()
 embedFonts("Macoma_N_dynamic_all.pdf") #встройка шрифтов в файл
 
-
 cockle_means<-matrix(c(cockle_1973_mean, cockle_5mm_mean, NA, cockle_mean), nrow=8,ncol=2, byrow=F)
 dimnames(cockle_means)<-(list(c(1973, names(cockle_mean)), c(">5mm", "all")))
 
 pdf(file="cockle_N_dynamic_all.pdf", family="NimbusSan")
-barplot(t(cockle_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="L, мм", ylim=c(0, max(cockle_mean)+max(cockle_SEM)+1))
+barplot(t(cockle_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, max(cockle_mean)+max(cockle_SEM)+1))
 arrows(x0=seq(1.5,24.5,3),
        y0=(c(cockle_1973_mean, cockle_5mm_mean) + c(cockle_1973_SEM, cockle_5mm_SEM)),
        x1=seq(1.5,24.5,3),
@@ -229,11 +229,11 @@ Mya_means<-matrix(c(Mya_1973_sqmeter, Mya_5mm_mean, NA, Mya_mean), nrow=8,ncol=2
 dimnames(Mya_means)<-(list(c(1973, names(Mya_mean)), c(">5mm", "all")))
 
 pdf(file="Mya_N_dynamic_all.pdf", family="NimbusSan")
-barplot(t(Mya_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="L, мм", ylim=c(0, max(Mya_mean)+max(Mya_SEM)))
+barplot(t(Mya_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, max(Mya_5mm_mean)+max(Mya_5mm_SEM)))
 arrows(x0=seq(1.5,24.5,3),
-       y0=(c(Mya_1973_mean, Mya_5mm_mean) + c(Mya_1973_SEM, Mya_5mm_SEM)),
+       y0=(c(Mya_1973_sqmeter, Mya_5mm_mean) + c(0, Mya_5mm_SEM)),
        x1=seq(1.5,24.5,3),
-       y1=c(Mya_1973_mean, Mya_5mm_mean) - c(Mya_1973_SEM, Mya_5mm_SEM),
+       y1=c(Mya_1973_sqmeter, Mya_5mm_mean) - c(0, Mya_5mm_SEM),
        angle=90, code=3, length=.06)
 arrows(x0=seq(2.5,25.5,3),
        y0=(c(NA, Mya_mean) + c(NA, Mya_SEM)),
@@ -243,13 +243,31 @@ arrows(x0=seq(2.5,25.5,3),
 dev.off()
 embedFonts("Mya_N_dynamic_all.pdf") #встройка шрифтов в файл
 
+#тренды
+kruskal.test(Macoma_N_samples.df$N_sqmeter ~ as.factor(Macoma_N_samples.df$year))
 
+kruskal.test(cockle_N_samples.df$N_sqmeter ~ as.factor(cockle_N_samples.df$year))
+
+kruskal.test(Mya_N_samples.df$N_sqmeter ~ as.factor(Mya_N_samples.df$year))
+
+plot(TukeyHSD(aov(lm(Macoma_N_samples.df$N_sqmeter ~ as.factor(Macoma_N_samples.df$year)))))
 
 #гистограммы - размерная структура
 library(lattice)
-
-pdf(file="size_structure_Macoma_Cerastoderma_Mya.pdf", family="NimbusSan", width=190, height=280, paper="a4")
-histogram(~ishodnik$Length.mm | ishodnik$species + ordered(ishodnik$year, levels<-c(2008, 2007, 2006, 2005, 2004, 2003, 2002)))
+ #размерные класс = 1 мм
+pdf(file="size_structure_Macoma_Cerastoderma_Mya_1mmclass.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+histogram(~ishodnik$Length.mm | ishodnik$species + ordered(ishodnik$year, levels<-c(2008, 2007, 2006, 2005, 2004, 2003, 2002)),
+          type="count",
+          breaks=seq(0, max(ishodnik$Length.mm+1, na.rm=T),1), 
+          xlab="L, мм", ylab="N, экз./кв.м")
 dev.off()
-embedFonts("size_structure_Macoma_Cerastoderma_Mya.pdf")
+embedFonts("size_structure_Macoma_Cerastoderma_Mya_1mmclass.pdf")
 
+#размерные класс = 2 мм
+pdf(file="size_structure_Macoma_Cerastoderma_Mya_2mmclass.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+histogram(~ishodnik$Length.mm | ishodnik$species + ordered(ishodnik$year, levels<-c(2008, 2007, 2006, 2005, 2004, 2003, 2002)),
+          type="count",
+          breaks=seq(0, max(ishodnik$Length.mm+2, na.rm=T),2), 
+          xlab="L, мм", ylab="N, экз./кв.м")
+dev.off()
+embedFonts("size_structure_Macoma_Cerastoderma_Mya_2mmclass.pdf")

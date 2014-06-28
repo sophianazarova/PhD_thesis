@@ -12,6 +12,7 @@ attach(ishodnik)
 
 #year<-factor(year)
 
+
 ## размерная структура суммарно по годам по горизонтам
 Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 
@@ -682,3 +683,9 @@ n.samples<-tapply(samples.names$sample,samples.names$year, length )
 write.table(B8.mean.sqmeter, file="estuary_biomass_old.csv", sep=";", dec=",")
 
 plot(x=B8.mean.sqmeter[1:length(B8.mean.sqmeter)-1], y=mean.young.old.sqmeter[1,][2:length(B8.mean.sqmeter)])
+
+#mean.size & N1+
+meansize<-tapply(ishodnik$Length.mm, ishodnik$year, mean, na.rm=T)
+plot(x=as.numeric(names(meansize)), y=meansize)
+plot(x=mean.young.old.sqmeter[1,], y=meansize)
+cor.test(mean.young.old.sqmeter[1,], meansize, method="spearman")

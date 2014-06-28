@@ -21,25 +21,6 @@ ishodnik$B.sqmeter<-ishodnik$B.mg * ishodnik$square
 #(n.samples<-table(samples.names$square,samples.names$year, samples.names$station))
 (n.samples<-table(samples.names$year, samples.names$station))
 
-# БЫла идея работать с разными рамками отдельно, но мы забили, и усредняем по всем рамкам разного размера.
-#####
-##245ки
-ish_245<-subset(ishodnik, square==245)
-str(ish_245)
-
-#Mean
-N_sqmeter_245<-tapply(ish_245$N.sqmeter, INDEX=list(ish_245$species, ish_245$year, ish_245$station), FUN=sum, na.rm=T)
-
-str(N_sqmeter_245)
-
-for (i in 1:length(levels(as.factor(ish_245$year)))) {
-  for (j in 1:length(levels(as.factor(ish_245$station)))) {
-    N_sqmeter_245[,i,j]<-N_sqmeter_245[,i,j]/n.samples[4,i,j]
-  }
-}
-
-#SD=sqrt((sum((x-MEAN)^2))/(n-1))
-
 #####
 
 str(ishodnik)
@@ -169,6 +150,8 @@ barplot(sort(N_sqmeter_2002[,1],decreasing=T),names.arg=abbreviate(names(sort(N_
         
 ,col=as.numeric(names(N_sqmeter_2002)))
 
+#экспортирую список видов за все года
+write.table(levels(ishodnik$species), "spicies_all_year.csv", sep=";", dec=",")
 
 ## таксономическая структура
 species<-table(ishodnik$species, ishodnik$year)
@@ -452,7 +435,6 @@ fabricia_sqmeter_SEM<-fabricia_sqmeter_sd/sqrt(n.samples.fabricia[,c(1,3:6)])
 Fabricia_means<-(cbind(c(dominants_1973[1,3],NA, dominants_1973[1,2]), (fabricia_sqmeter_mean)))
 colnames(Fabricia_means)<-c("1973", colnames(fabricia_sqmeter_mean))
 
-
 pdf(file="Fabricia_N_dynamic.pdf", family="NimbusSan")
 barplot(Fabricia_means,beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, 240000))
 arrows(x0=seq(1.5,24.5,4),
@@ -474,6 +456,33 @@ arrows(x0=seq(3.5,24.5,4),
 dev.off()
 embedFonts("Fabricia_N_dynamic.pdf") #встройка шрифтов в файл
 #locator()
+
+str(ishodnik_community)
+
+#проверяем на наличие тренда
+#сначала непараметрика, но уж больно все одинаковое...
+kruskal.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"] ~ as.factor(ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"]))
+
+kruskal.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"] ~ as.factor(ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"]))
+
+#проверяем условия для дисперсионки и смотрим на нее.
+fligner.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"] ~ as.factor(ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"]))
+
+lapply(split(ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"], as.factor(ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"])), shapiro.test)
+
+anova(lm(ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"] ~ as.factor(ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"])))
+
+fligner.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"] ~ as.factor(ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"]))
+
+lapply(split(ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"], as.factor(ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"])), shapiro.test)
+
+anova(lm((ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"] ~ as.factor(ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"]))))
+
+#смотрим на боксплоты
+boxplot(ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"] ~ ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"])
+
+boxplot(ishodnik_community$N.sqmeter[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"] ~ ishodnik_community$year[ishodnik_community$species=="Fabricia sabella" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"])
+
 #####
 
 #Pygospio
@@ -513,6 +522,23 @@ arrows(x0=seq(3.5,27.5,4),
 dev.off()
 embedFonts("Pygospio_N_dynamic.pdf") #встройка шрифтов в файл
 #locator()
+
+#проверяем на наличие тренда
+#непараметрика
+kruskal.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"] ~ ishodnik_community$year[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"])
+
+kruskal.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"] ~ ishodnik_community$year[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"])
+
+#проверяем условия для дисперсионки и пробуем ее
+fligner.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"] ~ ishodnik_community$year[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"])
+
+lapply(split(ishodnik_community$N.sqmeter[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"], as.factor(ishodnik_community$year[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="arenicola"])), shapiro.test)
+
+
+fligner.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"] ~ ishodnik_community$year[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"])
+
+# lapply(split(ishodnik_community$N.sqmeter[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"], as.factor(ishodnik_community$year[ishodnik_community$species=="Pygospio elegans" & ishodnik_community$square=="245" & ishodnik_community$comm=="trubkostroiteli"])), shapiro.test)
+
 #####
 
 #Capitella capitata
@@ -553,6 +579,18 @@ text(x=3.5,y=2800, labels=c("19000"),srt=90)
 dev.off()
 embedFonts("Capitella_N_dynamic.pdf") #встройка шрифтов в файл
 #locator()
+
+#проверяем на наличие тренда
+#смотрим непараметрику
+kruskal.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Capitella capitata" & ishodnik_community$square=="245" |ishodnik_community$square=="30" & ishodnik_community$comm=="arenicola"] ~ ishodnik_community$year[ishodnik_community$species=="Capitella capitata" & ishodnik_community$square=="245" |ishodnik_community$square=="30" & ishodnik_community$comm=="arenicola"])
+
+kruskal.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Capitella capitata" & ishodnik_community$square=="245" |ishodnik_community$square=="30" & ishodnik_community$comm=="trubkostroiteli"] ~ ishodnik_community$year[ishodnik_community$species=="Capitella capitata" & ishodnik_community$square=="245" |ishodnik_community$square=="30" & ishodnik_community$comm=="trubkostroiteli"])
+
+#проверяем условия для дисперсионки и смотрим ее
+fligner.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Capitella capitata" & ishodnik_community$square=="245" |ishodnik_community$square=="30" & ishodnik_community$comm=="arenicola"] ~ ishodnik_community$year[ishodnik_community$species=="Capitella capitata" & ishodnik_community$square=="245" |ishodnik_community$square=="30" & ishodnik_community$comm=="arenicola"])
+
+fligner.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Capitella capitata" & ishodnik_community$square=="245" |ishodnik_community$square=="30" & ishodnik_community$comm=="trubkostroiteli"] ~ ishodnik_community$year[ishodnik_community$species=="Capitella capitata" & ishodnik_community$square=="245" |ishodnik_community$square=="30" & ishodnik_community$comm=="trubkostroiteli"])
+
 #####
 
 
@@ -593,6 +631,23 @@ arrows(x0=seq(3.5,23.5,4),
 dev.off()
 embedFonts("Arenicola_N_dynamic.pdf") #встройка шрифтов в файл
 #locator()
+
+#проверяем на наличие тренда
+#непараметрика
+kruskal.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="arenicola"] ~ ishodnik_community$year[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="arenicola"])
+
+kruskal.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="trubkostroiteli"] ~ ishodnik_community$year[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="trubkostroiteli"])
+
+kruskal.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="perehodnaya"] ~ ishodnik_community$year[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="perehodnaya"])
+
+#првоеряем условия для дисперсионки и смотрим ее
+fligner.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="arenicola"] ~ ishodnik_community$year[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="arenicola"])
+
+
+fligner.test(ishodnik_community$N.sqmeter[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="trubkostroiteli"] ~ ishodnik_community$year[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="trubkostroiteli"])
+
+lapply(split(ishodnik_community$N.sqmeter[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="trubkostroiteli"], as.factor(ishodnik_community$year[ishodnik_community$species=="Arenicola marina" & ishodnik_community$square=="4" & ishodnik_community$comm=="trubkostroiteli"])), shapiro.test)
+
 #####
 
 #Oligochaeta
@@ -601,11 +656,9 @@ oligochaeta_ish1<-subset(ishodnik_community,ishodnik_community$taxon=="Oligochae
 str(oligochaeta_ish1)
 
 oligochaeta_ish2<-as.data.frame(as.table(tapply(oligochaeta_ish1$N.sqmeter, list(oligochaeta_ish1$sample, oligochaeta_ish1$square, oligochaeta_ish1$station, oligochaeta_ish1$year), sum)))
-names(oligochaeta_ish2)<-c("sample", "square", "station", "year", "N.sqmeter")
-
-
 comm<-recode(oligochaeta_ish2$station, community$station, as.character(community$community))
 oligochaeta_ish2<-(cbind(comm=comm, oligochaeta_ish2))
+
 
 samplenames_community
 
@@ -643,9 +696,51 @@ arrows(x0=seq(3.5,23.5,4),
 #legend(x=21, y=240000, fill=gray(c(0.3,0.5,0.7)),legend=rownames(Oligochaeta_means))
 dev.off()
 embedFonts("Oligochaeta_N_dynamic.pdf") #встройка шрифтов в файл
+
+#проверка на наличие тренда
+# непараметрика
+kruskal.test(oligochaeta_ish2$N.sqmeter[oligochaeta_ish2$comm=="arenicola"] ~ oligochaeta_ish2$year[oligochaeta_ish2$comm=="arenicola"])
+
+kruskal.test(oligochaeta_ish2$N.sqmeter[oligochaeta_ish2$comm=="trubkostroiteli"] ~ oligochaeta_ish2$year[oligochaeta_ish2$comm=="trubkostroiteli"])
+
+# проверка условия для дисперсионки и смотрим ее
+fligner.test(oligochaeta_ish2$N.sqmeter[oligochaeta_ish2$comm=="arenicola"] ~ as.factor(oligochaeta_ish2$year[oligochaeta_ish2$comm=="arenicola"]))
+
+fligner.test(oligochaeta_ish2$N.sqmeter[oligochaeta_ish2$comm=="trubkostroiteli"] ~ as.factor(oligochaeta_ish2$year[oligochaeta_ish2$comm=="trubkostroiteli"]))
+
+#lapply(split(oligochaeta_ish2$N.sqmeter[oligochaeta_ish2$comm=="trubkostroiteli"], oligochaeta_ish2$year[oligochaeta_ish2$comm=="trubkostroiteli"]), shapiro.test)
 #####
 
 
+
 #####
-#динамика...
+# наличие тренда
+
 kruskal.test()
+
+
+# Проводим анализ с помощью Мантеловской коррелограммы
+#####
+#install.packages("vegan")
+library(vegan)
+
+# Формируем матрицу расстояний между годами Внимание! эта матрица является также и модельной матрицей для направленного тренда
+
+(dist_year <- vegdist(, method="euclidean"))
+
+# считаем эвклидово расстояне между точками и считаем корреляции мантеля между модельной матрицей для тренда 
+# (рассчитано по годам - равномерное увеличение) и матрицей для каждого участка.
+# и собираем сразу в табличку.
+
+trend_mantel<-data.frame(area=rep(NA, (ncol(ishodnik)-1)), mantel=rep(NA, (ncol(ishodnik)-1)), p=rep(NA, (ncol(ishodnik)-1)))  
+for (j in 2:ncol(ishodnik)){
+  trend_mantel$area[j-1] <- colnames(ishodnik)[j]
+  mt<-mantel(xdis=vegdist(as.vector(ishodnik[,1][!is.na(ishodnik[,j])]), method="euclidean"),
+             ydis=vegdist(as.vector(na.omit(ishodnik[,j])), method="euclidean"))
+  trend_mantel$mantel[j-1]<-round(mt$statistic, digits=4)
+  trend_mantel$p[j-1]<-mt$signif
+}
+trend_mantel
+# запишем в табличку. 
+# тренд есть в Эстуарии, 2 разрез фукусы, 2 разрез зостера, ЮГ, разре2_весь, Сельдяная
+write.table(trend_mantel, file="trend_mantel.csv", sep=";",dec=",")
