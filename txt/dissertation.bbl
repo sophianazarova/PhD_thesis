@@ -47,6 +47,37 @@
       \field{pages}{119\bibrangedash 137}
       \keyw{Bivalvia,Population dynamics,Recruitment,White Sea,Macoma balthica,динамика,Белое море,Arctica islandica,Serripes,Mytilus edulis}
     \endentry
+    \entry{Thrush_et_al_1989}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=062484d8dbabcf35e29117e5b31353ce}{Thrush}{T\bibinitperiod}{SF}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=da13b68786133f3aea074d4a0d825b06}{Hewitt}{H\bibinitperiod}{JE}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=734cdf1d2c6c23ef08332a1ce125cbb6}{Pridmore}{P\bibinitperiod}{RD}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=062484d8dbabcf35e29117e5b31353ce}{Thrush}{T\bibinitperiod}{SF}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=da13b68786133f3aea074d4a0d825b06}{Hewitt}{H\bibinitperiod}{JE}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=734cdf1d2c6c23ef08332a1ce125cbb6}{Pridmore}{P\bibinitperiod}{RD}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{ac8eb67b435eb4d719d79083f965fd2c}
+      \strng{fullhash}{ac8eb67b435eb4d719d79083f965fd2c}
+      \field{sortinit}{T}
+      \field{sortinithash}{9378dd666f3c24d81538df53aa99e23d}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Patterns in the spatial arrangements of polychaetes and bivalves in intertidal sandflats}
+      \field{journaltitle}{Marine biology}
+      \field{number}{4}
+      \field{title}{Patterns in the spatial arrangements of polychaetes and bivalves in intertidal sandflats}
+      \field{volume}{102}
+      \field{year}{1989}
+      \field{pages}{529\bibrangedash 535}
+      \verb{file}
+      \verb :/home/sonya/Library/Hydrobiology/Marine/spatial trends/thrush et al.pdf:PDF
+      \endverb
+    \endentry
     \entry{Varfolomeeva_Naumov_2013}{article}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=452561e3feeef2fd0c4298adf1228ecd}{Varfolomeeva}{V\bibinitperiod}{Marina}{M\bibinitperiod}{}{}{}{}}%
@@ -84,7 +115,7 @@
       \endverb
       \keyw{Spatial and temporal scale; Long-term studies; Soft-bottom intertidal assemblages; The White Sea}
     \endentry
-    \entry{Agarova_et_al_1976}{inproceedings}{useauthor=true}
+    \entry{Agarova_et_al_1976}{inproceedings}{}
       \name{labelname}{7}{}{%
         {{uniquename=0,hash=e31fd6cba6753d2652844760095d06d5}{Агарова}{А\bibinitperiod}{ИЯ}{И\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=5c16a6c62beffa56c08922982c15cf68}{Воронова}{В\bibinitperiod}{МН}{М\bibinitperiod}{}{}{}{}}%
@@ -118,6 +149,26 @@
       \field{year}{1976}
       \field{pages}{95\bibrangedash 186}
       \keyw{Дальний пляж,зообентос,литораль}
+    \endentry
+    \entry{Maximovich_1989}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=1,hash=ccae54e59e66339abf77ecd2c9c0f520}{Максимович}{М\bibinitperiod}{НВ}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=1,hash=ccae54e59e66339abf77ecd2c9c0f520}{Максимович}{М\bibinitperiod}{НВ}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{ccae54e59e66339abf77ecd2c9c0f520}
+      \strng{fullhash}{ccae54e59e66339abf77ecd2c9c0f520}
+      \field{sortinit}{М}
+      \field{sortinithash}{0d59d2d67dac18e4a6b75e9f56dff809}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Статистическое сравнение кривых роста}
+      \field{journaltitle}{Вестник Ленинградского университета}
+      \field{title}{Статистическое сравнение кривых роста}
+      \field{volume}{4}
+      \field{year}{1989}
+      \field{pages}{18\bibrangedash 25}
     \endentry
     \entry{Maximovich_et_al_1991}{article}{}
       \name{labelname}{3}{}{%
@@ -176,10 +227,33 @@
       \field{pages}{3\bibrangedash 10}
       \keyw{Macoma,Bivalvia,Macoma balthica,,Белое море,,продукция production}
     \endentry
+    \entry{Streltsov_et_al_1974}{inproceedings}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=3ade2cb9c0c170fe3895bf5f04558427}{Стрельцов}{С\bibinitperiod}{ВЕ}{В\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e31fd6cba6753d2652844760095d06d5}{Агарова}{А\bibinitperiod}{ИЯ}{И\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=658679501b529485146af930b960bb7a}{Петухов}{П\bibinitperiod}{ВЛ}{В\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=3ade2cb9c0c170fe3895bf5f04558427}{Стрельцов}{С\bibinitperiod}{ВЕ}{В\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e31fd6cba6753d2652844760095d06d5}{Агарова}{А\bibinitperiod}{ИЯ}{И\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=658679501b529485146af930b960bb7a}{Петухов}{П\bibinitperiod}{ВЛ}{В\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Апатиты}%
+      }
+      \strng{namehash}{a26aef1a3fb0f45fc2b031a1f46a78f1}
+      \strng{fullhash}{a26aef1a3fb0f45fc2b031a1f46a78f1}
+      \field{sortinit}{С}
+      \field{sortinithash}{60e1570c1297a70b3d5e02bbecc5842c}
+      \field{labelyear}{1974}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Зообентос и оценка органического вещества в морских донных осадках песчаной литорали Дальнего Пляжа (Баренцево море)}
+      \field{booktitle}{Донные отложения и биогеоценозы Баренцева и Белого морей.}
+      \field{title}{Зообентос и оценка органического вещества в морских донных осадках песчаной литорали Дальнего Пляжа (Баренцево море)}
+      \field{year}{1974}
+      \field{pages}{129\bibrangedash 141}
+    \endentry
   \endsortlist
-  \missing{Streltsov_et_el_1974}
-  \missing{Thrush_et_al_1989}
-  \missing{Varfolomeev_aNaumov_2013}
 \endrefsection
 \endinput
 

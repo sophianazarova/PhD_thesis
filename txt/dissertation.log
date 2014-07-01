@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.28)  28 JUN 2014 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.28)  2 JUL 2014 00:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -627,51 +627,80 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption2.sty
+Package: caption2 2013/02/03 v2.2-62 Customising captions (AR)
+
+
+Package caption2 Warning: ****************************************************
+(caption2)                THIS PACKAGE IS OBSOLETE:
+(caption2)                This package attempts to provide an `caption2'
+(caption2)                package v2.0/2.1 author environment so that OLD
+(caption2)                documents can be successfully processed. It should
+(caption2)                NOT be used for NEW documents! New documents should
+(caption2)                use the regular `caption' package v3.x instead.
+(caption2)                ****************************************************
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen126
+\captionmargin@=\dimen127
+\captionwidth=\dimen128
+\caption@tempdima=\dimen129
+\caption@indent=\dimen130
+\caption@parindent=\dimen131
+\caption@hangindent=\dimen132
+)
+Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
+e 215.
+\captionlinewidth=\dimen133
+\realcaptionwidth=\dimen134
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen126
-\extrarowheight=\dimen127
+\col@sep=\dimen135
+\extrarowheight=\dimen136
 \NC@list=\toks29
 \extratabsurround=\skip53
 \backup@length=\skip54
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2014/05/13 v2.10 `tabularx' package (DPC)
-\TX@col@width=\dimen128
-\TX@old@table=\dimen129
-\TX@old@col=\dimen130
-\TX@target=\dimen131
-\TX@delta=\dimen132
+\TX@col@width=\dimen137
+\TX@old@table=\dimen138
+\TX@old@col=\dimen139
+\TX@target=\dimen140
+\TX@delta=\dimen141
 \TX@cols=\count106
 \TX@ftn=\toks30
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tabulary/tabulary.sty
 Package: tabulary 2014/06/11 v0.10 tabulary package (DPC)
 \TY@count=\count107
-\TY@linewidth=\dimen133
-\tymin=\dimen134
-\tymax=\dimen135
-\TY@tablewidth=\dimen136
+\TY@linewidth=\dimen142
+\tymin=\dimen143
+\tymax=\dimen144
+\TY@tablewidth=\dimen145
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen137
-\lightrulewidth=\dimen138
-\cmidrulewidth=\dimen139
-\belowrulesep=\dimen140
-\belowbottomsep=\dimen141
-\aboverulesep=\dimen142
-\abovetopsep=\dimen143
-\cmidrulesep=\dimen144
-\cmidrulekern=\dimen145
-\defaultaddspace=\dimen146
+\heavyrulewidth=\dimen146
+\lightrulewidth=\dimen147
+\cmidrulewidth=\dimen148
+\belowrulesep=\dimen149
+\belowbottomsep=\dimen150
+\aboverulesep=\dimen151
+\abovetopsep=\dimen152
+\cmidrulesep=\dimen153
+\cmidrulekern=\dimen154
+\defaultaddspace=\dimen155
 \@cmidla=\count108
 \@cmidlb=\count109
-\@aboverulesep=\dimen147
-\@belowrulesep=\dimen148
+\@aboverulesep=\dimen156
+\@belowrulesep=\dimen157
 \@thisruleclass=\count110
 \@lastruleclass=\count111
-\@thisrulewidth=\dimen149
+\@thisrulewidth=\dimen158
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
@@ -680,7 +709,7 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTpre=\skip57
 \LTpost=\skip58
 \LTchunksize=\count112
-\LTcapwidth=\dimen150
+\LTcapwidth=\dimen159
 \LT@head=\box29
 \LT@firsthead=\box30
 \LT@foot=\box31
@@ -692,7 +721,7 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LT@p@ftn=\toks31
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen151
+\bigstrutjot=\dimen160
 )
 \c@theorem=\count117
 \c@corollary=\count118
@@ -734,14 +763,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count122
 \Gm@cntv=\count123
 \c@Gm@tempcnt=\count124
-\Gm@bindingoffset=\dimen152
-\Gm@wd@mp=\dimen153
-\Gm@odd@mp=\dimen154
-\Gm@even@mp=\dimen155
-\Gm@layoutwidth=\dimen156
-\Gm@layoutheight=\dimen157
-\Gm@layouthoffset=\dimen158
-\Gm@layoutvoffset=\dimen159
+\Gm@bindingoffset=\dimen161
+\Gm@wd@mp=\dimen162
+\Gm@odd@mp=\dimen163
+\Gm@even@mp=\dimen164
+\Gm@layoutwidth=\dimen165
+\Gm@layoutheight=\dimen166
+\Gm@layouthoffset=\dimen167
+\Gm@layoutvoffset=\dimen168
 \Gm@dimlist=\toks32
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/setspace/setspace.sty
@@ -750,17 +779,26 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 (/usr/local/texlive/2014/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/afterpage.sty
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks33
+\AP@partial=\box33
+\AP@footins=\box34
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks33
-\SOUL@lasttoken=\toks34
-\SOUL@cmds=\toks35
-\SOUL@buffer=\toks36
-\SOUL@token=\toks37
+\SOUL@word=\toks34
+\SOUL@lasttoken=\toks35
+\SOUL@cmds=\toks36
+\SOUL@buffer=\toks37
+\SOUL@token=\toks38
 \SOUL@spaceskip=\skip59
-\SOUL@ttwidth=\dimen160
-\SOUL@uldp=\dimen161
-\SOUL@ulht=\dimen162
+\SOUL@ttwidth=\dimen169
+\SOUL@uldp=\dimen170
+\SOUL@ulht=\dimen171
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -813,7 +851,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen163
+\@linkdim=\dimen172
 \Hy@linkcounter=\count125
 \Hy@pagecounter=\count126
 
@@ -847,10 +885,10 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen164
+\XeTeXLinkMargin=\dimen173
 \Fld@menulength=\count129
-\Field@Width=\dimen165
-\Fld@charsize=\dimen166
+\Field@Width=\dimen174
+\Fld@charsize=\dimen175
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -890,7 +928,7 @@ Package xcolor Info: Driver file: pdftex.def on input line 225.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks38
+\everycr=\toks39
 \minrowclearance=\skip61
 )
 \rownum=\count135
@@ -910,34 +948,51 @@ File: dvipsnam.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2007/01/21 v2.11 Predefined colors according to SVG 1.1 (UK)
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 113.
-Package hyperref Info: Option `colorlinks' set `true' on input line 113.
+Package hyperref Info: Option `unicode' set `true' on input line 121.
+Package hyperref Info: Option `colorlinks' set `true' on input line 121.
 
+(/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2011/10/22 v5.1d context-sensitive quotations
+\csq@reset=\count136
+\csq@gtype=\count137
+\csq@glevel=\count138
+\csq@qlevel=\count139
+\csq@maxlvl=\count140
+\csq@tshold=\count141
+\csq@ltx@everypar=\toks40
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2011/10/22 v5.1d csquotes generic definitions
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
-\c@tracingmulticols=\count136
-\mult@box=\box33
-\multicol@leftmargin=\dimen167
-\c@unbalance=\count137
-\c@collectmore=\count138
-\doublecol@number=\count139
-\multicoltolerance=\count140
-\multicolpretolerance=\count141
-\full@width=\dimen168
-\page@free=\dimen169
-\premulticols=\dimen170
-\postmulticols=\dimen171
+\c@tracingmulticols=\count142
+\mult@box=\box35
+\multicol@leftmargin=\dimen176
+\c@unbalance=\count143
+\c@collectmore=\count144
+\doublecol@number=\count145
+\multicoltolerance=\count146
+\multicolpretolerance=\count147
+\full@width=\dimen177
+\page@free=\dimen178
+\premulticols=\dimen179
+\postmulticols=\dimen180
 \multicolsep=\skip62
 \multicolbaselineskip=\skip63
-\partial@page=\box34
-\last@line=\box35
-\maxbalancingoverflow=\dimen172
-\mult@rightbox=\box36
-\mult@grightbox=\box37
-\mult@gfirstbox=\box38
-\mult@firstbox=\box39
-\@tempa=\box40
-\@tempa=\box41
+\partial@page=\box36
+\last@line=\box37
+\maxbalancingoverflow=\dimen181
+\mult@rightbox=\box38
+\mult@grightbox=\box39
+\mult@gfirstbox=\box40
+\mult@firstbox=\box41
 \@tempa=\box42
 \@tempa=\box43
 \@tempa=\box44
@@ -953,28 +1008,30 @@ Package: multicol 2014/04/23 v1.8e multicolumn formatting (FMi)
 \@tempa=\box54
 \@tempa=\box55
 \@tempa=\box56
-\c@columnbadness=\count142
-\c@finalcolumnbadness=\count143
-\last@try=\dimen173
-\multicolovershoot=\dimen174
-\multicolundershoot=\dimen175
-\mult@nat@firstbox=\box57
-\colbreak@box=\box58
-\mc@col@check@num=\count144
+\@tempa=\box57
+\@tempa=\box58
+\c@columnbadness=\count148
+\c@finalcolumnbadness=\count149
+\last@try=\dimen182
+\multicolovershoot=\dimen183
+\multicolundershoot=\dimen184
+\mult@nat@firstbox=\box59
+\colbreak@box=\box60
+\mc@col@check@num=\count150
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks39
-\pgfutil@tempdima=\dimen176
-\pgfutil@tempdimb=\dimen177
+\pgfutil@everybye=\toks41
+\pgfutil@tempdima=\dimen185
+\pgfutil@tempdimb=\dimen186
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box59
+\pgfutil@abb=\box61
 (/usr/local/texlive/2014/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -987,30 +1044,30 @@ Package: pgf 2013/12/18 v3.0.0 (rcs-revision 1.14)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2013/11/30 v3.0.0 (rcs-revision 1.47)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks40
-\pgfkeys@temptoks=\toks41
+\pgfkeys@pathtoks=\toks42
+\pgfkeys@temptoks=\toks43
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks42
+\pgfkeys@tmptoks=\toks44
 ))
-\pgf@x=\dimen178
-\pgf@y=\dimen179
-\pgf@xa=\dimen180
-\pgf@ya=\dimen181
-\pgf@xb=\dimen182
-\pgf@yb=\dimen183
-\pgf@xc=\dimen184
-\pgf@yc=\dimen185
+\pgf@x=\dimen187
+\pgf@y=\dimen188
+\pgf@xa=\dimen189
+\pgf@ya=\dimen190
+\pgf@xb=\dimen191
+\pgf@yb=\dimen192
+\pgf@xc=\dimen193
+\pgf@yc=\dimen194
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count145
-\c@pgf@countb=\count146
-\c@pgf@countc=\count147
-\c@pgf@countd=\count148
-\t@pgf@toka=\toks43
-\t@pgf@tokb=\toks44
-\t@pgf@tokc=\toks45
+\c@pgf@counta=\count151
+\c@pgf@countb=\count152
+\c@pgf@countc=\count153
+\c@pgf@countd=\count154
+\t@pgf@toka=\toks45
+\t@pgf@tokb=\toks46
+\t@pgf@tokc=\toks47
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -1028,8 +1085,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count149
-\pgfsyssoftpath@bigbuffer@items=\count150
+\pgfsyssoftpath@smallbuffer@items=\count155
+\pgfsyssoftpath@bigbuffer@items=\count156
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -1041,12 +1098,12 @@ Package: pgfcore 2010/04/11 v3.0.0 (rcs-revision 1.7)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen186
-\pgfmath@count=\count151
-\pgfmath@box=\box60
-\pgfmath@toks=\toks46
-\pgfmath@stack@operand=\toks47
-\pgfmath@stack@operation=\toks48
+\pgfmath@dimen=\dimen195
+\pgfmath@count=\count157
+\pgfmath@box=\box62
+\pgfmath@toks=\toks48
+\pgfmath@stack@operand=\toks49
+\pgfmath@stack@operation=\toks50
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -1067,57 +1124,57 @@ code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count152
+\c@pgfmathroundto@lastzeros=\count158
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen187
-\pgf@picmaxx=\dimen188
-\pgf@picminy=\dimen189
-\pgf@picmaxy=\dimen190
-\pgf@pathminx=\dimen191
-\pgf@pathmaxx=\dimen192
-\pgf@pathminy=\dimen193
-\pgf@pathmaxy=\dimen194
-\pgf@xx=\dimen195
-\pgf@xy=\dimen196
-\pgf@yx=\dimen197
-\pgf@yy=\dimen198
-\pgf@zx=\dimen199
-\pgf@zy=\dimen200
+\pgf@picminx=\dimen196
+\pgf@picmaxx=\dimen197
+\pgf@picminy=\dimen198
+\pgf@picmaxy=\dimen199
+\pgf@pathminx=\dimen200
+\pgf@pathmaxx=\dimen201
+\pgf@pathminy=\dimen202
+\pgf@pathmaxy=\dimen203
+\pgf@xx=\dimen204
+\pgf@xy=\dimen205
+\pgf@yx=\dimen206
+\pgf@yy=\dimen207
+\pgf@zx=\dimen208
+\pgf@zy=\dimen209
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen201
-\pgf@path@lasty=\dimen202
+\pgf@path@lastx=\dimen210
+\pgf@path@lasty=\dimen211
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2013/12/13  (rcs-revision 1.23)
-\pgf@shorten@end@additional=\dimen203
-\pgf@shorten@start@additional=\dimen204
+\pgf@shorten@end@additional=\dimen212
+\pgf@shorten@start@additional=\dimen213
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2013/10/09  (rcs-revision 1.44)
-\pgfpic=\box61
-\pgf@hbox=\box62
-\pgf@layerbox@main=\box63
-\pgf@picture@serial@count=\count153
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count159
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2013/09/19  (rcs-revision 1.11)
-\pgflinewidth=\dimen205
+\pgflinewidth=\dimen214
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2013/10/10  (rcs-revision 1.17)
-\pgf@pt@x=\dimen206
-\pgf@pt@y=\dimen207
-\pgf@pt@temp=\dimen208
+\pgf@pt@x=\dimen215
+\pgf@pt@y=\dimen216
+\pgf@pt@temp=\dimen217
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -1134,13 +1191,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2013/11/07  (rcs-revision 1.40)
-\pgfarrowsep=\dimen209
+\pgfarrowsep=\dimen218
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen210
-\pgf@sys@shading@range@num=\count154
+\pgf@max=\dimen219
+\pgf@sys@shading@range@num=\count160
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -1149,7 +1206,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2013/07/15  (rcs-revision 1.20)
-\pgfexternal@startupbox=\box64
+\pgfexternal@startupbox=\box66
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -1166,7 +1223,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2013/10/31  (rcs-revision 1.34)
-\pgfnodeparttextbox=\box65
+\pgfnodeparttextbox=\box67
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -1175,8 +1232,8 @@ File: pgfmoduleplot.code.tex 2013/07/31  (rcs-revision 1.12)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.0 (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen211
-\pgf@nodesepend=\dimen212
+\pgf@nodesepstart=\dimen220
+\pgf@nodesepend=\dimen221
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -1191,10 +1248,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.0 (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.0 (rcs-revision 1.25)
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen213
-\pgffor@skip=\dimen214
-\pgffor@stack=\toks49
-\pgffor@toks=\toks50
+\pgffor@iter=\dimen222
+\pgffor@skip=\dimen223
+\pgffor@stack=\toks51
+\pgffor@toks=\toks52
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -1203,32 +1260,32 @@ Package: tikz 2013/12/13 v3.0.0 (rcs-revision 1.142)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.0 (rcs-revision 1.20)
-\pgf@plot@mark@count=\count155
-\pgfplotmarksize=\dimen215
+\pgf@plot@mark@count=\count161
+\pgfplotmarksize=\dimen224
 )
-\tikz@lastx=\dimen216
-\tikz@lasty=\dimen217
-\tikz@lastxsaved=\dimen218
-\tikz@lastysaved=\dimen219
-\tikzleveldistance=\dimen220
-\tikzsiblingdistance=\dimen221
-\tikz@figbox=\box66
-\tikz@figbox@bg=\box67
-\tikz@tempbox=\box68
-\tikz@tempbox@bg=\box69
-\tikztreelevel=\count156
-\tikznumberofchildren=\count157
-\tikznumberofcurrentchild=\count158
-\tikz@fig@count=\count159
+\tikz@lastx=\dimen225
+\tikz@lasty=\dimen226
+\tikz@lastxsaved=\dimen227
+\tikz@lastysaved=\dimen228
+\tikzleveldistance=\dimen229
+\tikzsiblingdistance=\dimen230
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count162
+\tikznumberofchildren=\count163
+\tikznumberofcurrentchild=\count164
+\tikz@fig@count=\count165
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count160
-\pgfmatrixcurrentcolumn=\count161
-\pgf@matrix@numberofcolumns=\count162
+\pgfmatrixcurrentrow=\count166
+\pgfmatrixcurrentcolumn=\count167
+\pgf@matrix@numberofcolumns=\count168
 )
-\tikz@expandcount=\count163
+\tikz@expandcount=\count169
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -1239,12 +1296,12 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.0 (rcs-revision 1.2)
 Package: pgfplots 2014/02/28 v1.10 Data Visualization (1.10-2-gb39fe75)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks51
-\t@pgfplots@tokb=\toks52
-\t@pgfplots@tokc=\toks53
-\pgfplots@tmpa=\dimen222
-\c@pgfplots@coordindex=\count164
-\c@pgfplots@scanlineindex=\count165
+\t@pgfplots@toka=\toks53
+\t@pgfplots@tokb=\toks54
+\t@pgfplots@tokc=\toks55
+\pgfplots@tmpa=\dimen231
+\c@pgfplots@coordindex=\count170
+\c@pgfplots@scanlineindex=\count171
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1262,14 +1319,14 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count166
+\c@pgfplotsarray@tmp=\count172
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count167
-\t@pgfplotstable@a=\toks54
+\c@pgfplotstable@counta=\count173
+\t@pgfplotstable@a=\toks56
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -1281,7 +1338,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count168
+\c@pgfplotslibrarysurf@no=\count174
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1311,16 +1368,17 @@ x)
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen223
-\pgfdecoratedremainingdistance=\dimen224
-\pgfdecoratedinputsegmentcompleteddistance=\dimen225
-\pgfdecoratedinputsegmentremainingdistance=\dimen226
-\pgf@decorate@distancetomove=\dimen227
-\pgf@decorate@repeatstate=\count169
-\pgfdecorationsegmentamplitude=\dimen228
-\pgfdecorationsegmentlength=\dimen229
+\pgfdecoratedcompleteddistance=\dimen232
+\pgfdecoratedremainingdistance=\dimen233
+Normal \dimen register pool exhausted, switching to extended pool.
+\pgfdecoratedinputsegmentcompleteddistance=\dimen256
+\pgfdecoratedinputsegmentremainingdistance=\dimen257
+\pgf@decorate@distancetomove=\dimen258
+\pgf@decorate@repeatstate=\count175
+\pgfdecorationsegmentamplitude=\dimen259
+\pgfdecorationsegmentlength=\dimen260
 )
-\tikz@lib@dec@box=\box70
+\tikz@lib@dec@box=\box72
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarydecorations.pathmorphing.code.tex
@@ -1330,14 +1388,13 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count170
-\pgfplots@xmin@reg=\dimen230
-\pgfplots@xmax@reg=\dimen231
-\pgfplots@ymin@reg=\dimen232
-\pgfplots@ymax@reg=\dimen233
-Normal \dimen register pool exhausted, switching to extended pool.
-\pgfplots@zmin@reg=\dimen256
-\pgfplots@zmax@reg=\dimen257
+\pgfplots@numplots=\count176
+\pgfplots@xmin@reg=\dimen261
+\pgfplots@xmax@reg=\dimen262
+\pgfplots@ymin@reg=\dimen263
+\pgfplots@ymax@reg=\dimen264
+\pgfplots@zmin@reg=\dimen265
+\pgfplots@zmax@reg=\dimen266
 )
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryplotmarks.code.tex
@@ -1365,7 +1422,7 @@ AB)
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count171
+\lrq@indent=\count177
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
@@ -1373,44 +1430,44 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@tabx@nest=\count172
-\c@listtotal=\count173
-\c@listcount=\count174
-\c@liststart=\count175
-\c@liststop=\count176
-\c@citecount=\count177
-\c@citetotal=\count178
-\c@multicitecount=\count179
-\c@multicitetotal=\count180
-\c@instcount=\count181
-\c@maxnames=\count182
-\c@minnames=\count183
-\c@maxitems=\count184
-\c@minitems=\count185
-\c@citecounter=\count186
-\c@savedcitecounter=\count187
-\c@uniquelist=\count188
-\c@uniquename=\count189
-\c@refsection=\count190
-\c@refsegment=\count191
-\c@maxextratitle=\count192
-\c@maxextratitleyear=\count193
-\c@maxextrayear=\count194
-\c@maxextraalpha=\count195
-\c@abbrvpenalty=\count196
-\c@highnamepenalty=\count197
-\c@lownamepenalty=\count198
-\c@maxparens=\count199
-\c@parenlevel=\count200
-\blx@tempcnta=\count201
-\blx@tempcntb=\count202
-\blx@tempcntc=\count203
-\blx@maxsection=\count204
-\blx@maxsegment@0=\count205
-\blx@notetype=\count206
-\blx@parenlevel@text=\count207
-\blx@parenlevel@foot=\count208
-\blx@sectionciteorder@0=\count209
+\c@tabx@nest=\count178
+\c@listtotal=\count179
+\c@listcount=\count180
+\c@liststart=\count181
+\c@liststop=\count182
+\c@citecount=\count183
+\c@citetotal=\count184
+\c@multicitecount=\count185
+\c@multicitetotal=\count186
+\c@instcount=\count187
+\c@maxnames=\count188
+\c@minnames=\count189
+\c@maxitems=\count190
+\c@minitems=\count191
+\c@citecounter=\count192
+\c@savedcitecounter=\count193
+\c@uniquelist=\count194
+\c@uniquename=\count195
+\c@refsection=\count196
+\c@refsegment=\count197
+\c@maxextratitle=\count198
+\c@maxextratitleyear=\count199
+\c@maxextrayear=\count200
+\c@maxextraalpha=\count201
+\c@abbrvpenalty=\count202
+\c@highnamepenalty=\count203
+\c@lownamepenalty=\count204
+\c@maxparens=\count205
+\c@parenlevel=\count206
+\blx@tempcnta=\count207
+\blx@tempcntb=\count208
+\blx@tempcntc=\count209
+\blx@maxsection=\count210
+\blx@maxsegment@0=\count211
+\blx@notetype=\count212
+\blx@parenlevel@text=\count213
+\blx@parenlevel@foot=\count214
+\blx@sectionciteorder@0=\count215
 \labelnumberwidth=\skip64
 \labelalphawidth=\skip65
 \biblabelsep=\skip66
@@ -1421,9 +1478,9 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \bibhang=\skip71
 \blx@bcfin=\read2
 \blx@bcfout=\write4
-\c@mincomprange=\count210
-\c@maxcomprange=\count211
-\c@mincompwidth=\count212
+\c@mincomprange=\count216
+\c@maxcomprange=\count217
+\c@mincompwidth=\count218
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -1437,93 +1494,93 @@ Package biblatex Info: ... file 'biblatex-gost.dbx' found.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.dbx))
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count213
-\c@savedafterword=\count214
-\c@annotator=\count215
-\c@savedannotator=\count216
-\c@author=\count217
-\c@savedauthor=\count218
-\c@bookauthor=\count219
-\c@savedbookauthor=\count220
-\c@commentator=\count221
-\c@savedcommentator=\count222
-\c@editor=\count223
-\c@savededitor=\count224
-\c@editora=\count225
-\c@savededitora=\count226
-\c@editorb=\count227
-\c@savededitorb=\count228
-\c@editorc=\count229
-\c@savededitorc=\count230
-\c@foreword=\count231
-\c@savedforeword=\count232
-\c@holder=\count233
+\c@afterword=\count219
+\c@savedafterword=\count220
+\c@annotator=\count221
+\c@savedannotator=\count222
+\c@author=\count223
+\c@savedauthor=\count224
+\c@bookauthor=\count225
+\c@savedbookauthor=\count226
+\c@commentator=\count227
+\c@savedcommentator=\count228
+\c@editor=\count229
+\c@savededitor=\count230
+\c@editora=\count231
+\c@savededitora=\count232
+\c@editorb=\count233
 Normal \count register pool exhausted, switching to extended pool.
-\c@savedholder=\count277
-\c@introduction=\count278
-\c@savedintroduction=\count279
-\c@namea=\count280
-\c@savednamea=\count281
-\c@nameb=\count282
-\c@savednameb=\count283
-\c@namec=\count284
-\c@savednamec=\count285
-\c@translator=\count286
-\c@savedtranslator=\count287
-\c@shortauthor=\count288
-\c@savedshortauthor=\count289
-\c@shorteditor=\count290
-\c@savedshorteditor=\count291
-\c@booktranslator=\count292
-\c@savedbooktranslator=\count293
-\c@bookcommentator=\count294
-\c@savedbookcommentator=\count295
-\c@bookannotator=\count296
-\c@savedbookannotator=\count297
-\c@bookintroduction=\count298
-\c@savedbookintroduction=\count299
-\c@bookforeword=\count300
-\c@savedbookforeword=\count301
-\c@bookafterword=\count302
-\c@savedbookafterword=\count303
-\c@labelname=\count304
-\c@savedlabelname=\count305
-\c@institution=\count306
-\c@savedinstitution=\count307
-\c@lista=\count308
-\c@savedlista=\count309
-\c@listb=\count310
-\c@savedlistb=\count311
-\c@listc=\count312
-\c@savedlistc=\count313
-\c@listd=\count314
-\c@savedlistd=\count315
-\c@liste=\count316
-\c@savedliste=\count317
-\c@listf=\count318
-\c@savedlistf=\count319
-\c@location=\count320
-\c@savedlocation=\count321
-\c@organization=\count322
-\c@savedorganization=\count323
-\c@origlocation=\count324
-\c@savedoriglocation=\count325
-\c@origpublisher=\count326
-\c@savedorigpublisher=\count327
-\c@publisher=\count328
-\c@savedpublisher=\count329
-\c@language=\count330
-\c@savedlanguage=\count331
-\c@specdata=\count332
-\c@savedspecdata=\count333
-\c@credits=\count334
-\c@savedcredits=\count335
-\c@bookcredits=\count336
-\c@savedbookcredits=\count337
-\c@editioncredits=\count338
-\c@savededitioncredits=\count339
-\c@pageref=\count340
-\c@savedpageref=\count341
+\c@savededitorb=\count277
+\c@editorc=\count278
+\c@savededitorc=\count279
+\c@foreword=\count280
+\c@savedforeword=\count281
+\c@holder=\count282
+\c@savedholder=\count283
+\c@introduction=\count284
+\c@savedintroduction=\count285
+\c@namea=\count286
+\c@savednamea=\count287
+\c@nameb=\count288
+\c@savednameb=\count289
+\c@namec=\count290
+\c@savednamec=\count291
+\c@translator=\count292
+\c@savedtranslator=\count293
+\c@shortauthor=\count294
+\c@savedshortauthor=\count295
+\c@shorteditor=\count296
+\c@savedshorteditor=\count297
+\c@booktranslator=\count298
+\c@savedbooktranslator=\count299
+\c@bookcommentator=\count300
+\c@savedbookcommentator=\count301
+\c@bookannotator=\count302
+\c@savedbookannotator=\count303
+\c@bookintroduction=\count304
+\c@savedbookintroduction=\count305
+\c@bookforeword=\count306
+\c@savedbookforeword=\count307
+\c@bookafterword=\count308
+\c@savedbookafterword=\count309
+\c@labelname=\count310
+\c@savedlabelname=\count311
+\c@institution=\count312
+\c@savedinstitution=\count313
+\c@lista=\count314
+\c@savedlista=\count315
+\c@listb=\count316
+\c@savedlistb=\count317
+\c@listc=\count318
+\c@savedlistc=\count319
+\c@listd=\count320
+\c@savedlistd=\count321
+\c@liste=\count322
+\c@savedliste=\count323
+\c@listf=\count324
+\c@savedlistf=\count325
+\c@location=\count326
+\c@savedlocation=\count327
+\c@organization=\count328
+\c@savedorganization=\count329
+\c@origlocation=\count330
+\c@savedoriglocation=\count331
+\c@origpublisher=\count332
+\c@savedorigpublisher=\count333
+\c@publisher=\count334
+\c@savedpublisher=\count335
+\c@language=\count336
+\c@savedlanguage=\count337
+\c@specdata=\count338
+\c@savedspecdata=\count339
+\c@credits=\count340
+\c@savedcredits=\count341
+\c@bookcredits=\count342
+\c@savedbookcredits=\count343
+\c@editioncredits=\count344
+\c@savededitioncredits=\count345
+\c@pageref=\count346
+\c@savedpageref=\count347
 \shorthandwidth=\skip72
 \shortjournalwidth=\skip73
 \shortserieswidth=\skip74
@@ -1540,13 +1597,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 
-\c@textcitecount=\count342
-\c@textcitetotal=\count343
-\c@textcitemaxnames=\count344
-\c@biburlnumpenalty=\count345
-\c@biburlucpenalty=\count346
-\c@biburllcpenalty=\count347
-\c@smartand=\count348
+\c@textcitecount=\count348
+\c@textcitetotal=\count349
+\c@textcitemaxnames=\count350
+\c@biburlnumpenalty=\count351
+\c@biburlucpenalty=\count352
+\c@biburllcpenalty=\count353
+\c@smartand=\count354
 )
 Package biblatex Info: Trying to load bibliography style 'gost-authoryear'...
 Package biblatex Info: ... file 'gost-authoryear.bbx' found.
@@ -1563,9 +1620,9 @@ Package biblatex Info: ... file 'biblatex-gost.def' found.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.def
 File: biblatex-gost.def 2014/02/15 v1.0 biblatex-gost styles
 )
-\c@blx@gost@pointer=\count349
-\c@bbx:relatedcount=\count350
-\c@bbx:relatedtotal=\count351
+\c@blx@gost@pointer=\count355
+\c@bbx:relatedcount=\count356
+\c@bbx:relatedtotal=\count357
 Package biblatex Info: Redefining autocite command 'footnote'.
 Package biblatex Info: Redefining autocite command 'superscript'.
 )
@@ -1599,6 +1656,10 @@ Package biblatex Warning: 'babel' option is deprecated, use 'autolang' instead.
 
 
 ))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'russian'.
 Package biblatex Info: Trying to load language 'russian' -> 'russian-gost'...
 Package biblatex Info: ... file 'russian-gost.lbx' found.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/russian-gost.lbx
@@ -1608,12 +1669,6 @@ Package biblatex Info: ... file 'russian.lbx' found.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/lbx/russian.lbx
 File: russian.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
 ))
-
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
-\@quotelevel=\count352
-\@quotereset=\count353
 (./dissertation.aux
 
 LaTeX Warning: Label `tab:grunt_granulometriya_Barents' multiply defined.
@@ -1641,17 +1696,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
  (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count354
-\scratchdimen=\dimen258
-\scratchbox=\box71
-\nofMPsegments=\count355
-\nofMParguments=\count356
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count357
-\MPscratchDim=\dimen259
-\MPnumerator=\count358
-\makeMPintoPDFobject=\count359
-\everyMPtoPDFconversion=\toks56
+\scratchcounter=\count358
+\scratchdimen=\dimen267
+\scratchbox=\box73
+\nofMPsegments=\count359
+\nofMParguments=\count360
+\everyMPshowfont=\toks57
+\MPscratchCnt=\count361
+\MPscratchDim=\dimen268
+\MPnumerator=\count362
+\makeMPintoPDFobject=\count363
+\everyMPtoPDFconversion=\toks58
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1667,6 +1722,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1708,7 +1766,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 23.
-\AtBeginShipoutBox=\box72
+\AtBeginShipoutBox=\box74
 Package hyperref Info: Link coloring ON on input line 23.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1716,7 +1774,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count360
+\c@section@level=\count364
 )
 LaTeX Info: Redefining \ref on input line 23.
 LaTeX Info: Redefining \pageref on input line 23.
@@ -1741,29 +1799,7 @@ Package biblatex Info: Data encoding 'utf8' specified.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'dissertation.bbl' found.
-(./dissertation.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Streltsov_et_el_1974
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Thrush_et_al_1989
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Varfolomeev_aNaumov_2013
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(./dissertation.bbl)
 Package biblatex Info: Reference section=0 on input line 23.
 Package biblatex Info: Reference segment=0 on input line 23.
  (./title.tex
@@ -1806,7 +1842,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 4.
 
-<../maps/map_Kandalaksha.pdf, id=197, 589.11928pt x 597.75322pt>
+<../maps/map_Kandalaksha.pdf, id=182, 589.11928pt x 597.75322pt>
 File: ../maps/map_Kandalaksha.pdf Graphic file (type pdf)
 
 <use ../maps/map_Kandalaksha.pdf>
@@ -1821,7 +1857,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 14.
  [2]
-<../maps/map_Chupa.pdf, id=211, 639.11815pt x 232.95831pt>
+<../maps/map_Chupa.pdf, id=197, 639.11815pt x 232.95831pt>
 File: ../maps/map_Chupa.pdf Graphic file (type pdf)
 
 <use ../maps/map_Chupa.pdf>
@@ -1847,6 +1883,12 @@ LaTeX Warning: Reference `ris:karta_Murman' on page 3 undefined on input line 3
 
 LaTeX Warning: Reference `ris:karta_Kolskiy' on page 3 undefined on input line 
 32.
+
+
+Overfull \hbox (13.18124pt too wide) in paragraph at lines 32--33
+[]\T2A/cmr/m/n/12 Также в ра-бо-те ис-поль-зо-ва-ны дан-ные К.В. Шунь-ки-ной и 
+Е.А. Генельт-Яновского
+ []
 
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 34.
@@ -1921,101 +1963,236 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 93.
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-[]|\T2A/cmr/m/n/12 годы на-блю-де-
+Underfull \hbox (badness 8189) in paragraph at lines 111--111
+[]|\T2A/cmr/m/n/12 годы на-блю-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Overfull \hbox (3.8959pt too wide) in paragraph at lines 111--111
 []|\T2A/cmr/m/n/12 обследованные
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 \T2A/cmr/m/n/12 го-ри-зон-ты
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--103
-\T2A/cmr/m/n/12 в од-но-крат-ной
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]|\T2A/cmr/m/n/12 количество
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T2A/cmr/m/n/12 проб в од-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T2A/cmr/m/n/12 но-крат-ной
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]|\T2A/cmr/m/n/12 о. Го-ре-лый
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+\T2A/cmr/m/n/12 Лу-веньг-ских
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]|\T2A/cmr/m/n/12 ВГЛ, СГЛ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 []|\T2A/cmr/m/n/12 Материковая
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 \T2A/cmr/m/n/12 ли-то-раль в
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
 \T2A/cmr/m/n/12 рай-оне пос.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-[]|\T2A/cmr/m/n/12 Литораль За-
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]|\T2A/cmr/m/n/12 1992-2000,
  []
 
 
-Underfull \hbox (badness 3872) in paragraph at lines 107--107
-\T2A/cmr/m/n/12 пад-ной Ряш-ко-
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]|\T2A/cmr/m/n/12 ВГЛ, СГЛ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--107
-\T2A/cmr/m/n/12 вой сал-мы о.
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]|\T2A/cmr/m/n/12 Эстуарий р.
  []
 
 
-Overfull \hbox (62.3932pt too wide) in paragraph at lines 102--111
-[][] 
+Underfull \hbox (badness 3199) in paragraph at lines 111--111
+\T2A/cmr/m/n/12 пад-ной Ряш-
+ []
+
+
+Underfull \hbox (badness 5667) in paragraph at lines 111--111
+\T2A/cmr/m/n/12 ко-вой сал-мы
+ []
+
+
+Underfull \hbox (badness 4316) in paragraph at lines 111--111
+[]|\T2A/cmr/m/n/12 Южная гу-ба
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--111
+[]|\T2A/cmr/m/n/12 о. Лом-ниш-
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 121.
 [6]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 164.
+(babel)             in language  on input line 165.
 
 
-LaTeX Warning: Reference `ris:karta_DP' on page 7 undefined on input line 173.
-
-
-LaTeX Warning: Reference `ris:karta_DP' on page 7 undefined on input line 182.
+LaTeX Warning: Reference `ris:karta_DP' on page 7 undefined on input line 174.
 
 
 LaTeX Warning: Reference `ris:karta_DP' on page 7 undefined on input line 183.
 
+
+LaTeX Warning: Reference `ris:karta_DP' on page 7 undefined on input line 184.
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 186.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 186.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 186.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 186.
 [7]
-Overfull \hbox (7.54019pt too wide) in paragraph at lines 186--187
-[]\T2A/cmr/m/n/12 В ка-че-стве точ-ки срав-не-ния на-ми был вы-бран $\OT1/cmr/m
-/n/12 1973$ \T2A/cmr/m/n/12 год ([];
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 193.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 193.
+Missing character: There is no к in font cmr8!
+Missing character: There is no к in font cmr8!
+
+Overfull \hbox (4.05869pt too wide) in paragraph at lines 222--222
+[]|$\OML/cmm/m/it/12 min$| 
+ []
+
+
+Overfull \hbox (5.88148pt too wide) in paragraph at lines 222--222
+[]|$\OML/cmm/m/it/12 max$| 
+ []
+
+
+Overfull \hbox (6.10509pt too wide) in paragraph at lines 222--222
+[]|$\OML/cmm/m/it/12 aver$| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 11,5| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 13,7| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 10,6| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 14,2| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 11,1| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 10,5| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 11,4| 
+ []
+
+
+Overfull \hbox (19.2384pt too wide) in paragraph at lines 222--222
+[]|$\OML/cmm/m/it/12 L[]aver$| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 10,2| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 11,4| 
+ []
+
+
+LaTeX Warning: Command \cyrk invalid in math mode on input line 222.
+
+Missing character: There is no к in font cmr8!
+
+Overfull \hbox (17.192pt too wide) in paragraph at lines 222--222
+[]|$\OML/cmm/m/it/12 L[]min$| 
+ []
+
+
+Overfull \hbox (19.0148pt too wide) in paragraph at lines 222--222
+[]|$\OML/cmm/m/it/12 L[]max$| 
+ []
+
+
+Overfull \hbox (3.64258pt too wide) in paragraph at lines 222--222
+[]|\T2A/cmr/m/n/12 10,5| 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 192.
+(babel)             in language  on input line 242.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 192.
+(babel)             in language  on input line 242.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 242.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 242.
+[8]
+Overfull \hbox (0.47661pt too wide) in paragraph at lines 243--246
+[]\T2A/cmr/m/n/12 Возрастные ря-ды ап-прок-си-ми-ро-ва-ли при по-мо-щи ли-ней-н
+ой мо-ди-фи-ка-ции урав-
+ []
+
 ) (./harakteristiki_rayonov_issledovaniya.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 2.
@@ -2043,7 +2220,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 29.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 29.
-[8]
+[9]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining russian shorthand "~
@@ -2052,7 +2229,18 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 59.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 59.
- [9]
+ [10
+
+]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 92.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 92.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 92.
+ [11]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 93.
 Package babel Info: Redefining russian shorthand "~
@@ -2066,15 +2254,7 @@ Overfull \hbox (49.99994pt too wide) in paragraph at lines 102--122
 [][] 
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 125.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 125.
-[10]
+
 Overfull \hbox (7.62485pt too wide) in paragraph at lines 137--137
 []|\T2A/cmr/m/n/12 крупный
  []
@@ -2160,7 +2340,7 @@ Overfull \hbox (50.24419pt too wide) in paragraph at lines 136--157
  []
 
 
-LaTeX Warning: Reference `' on page 11 undefined on input line 162.
+LaTeX Warning: Reference `' on page 12 undefined on input line 162.
 
 
 Overfull \hbox (2.40388pt too wide) in paragraph at lines 167--167
@@ -2222,15 +2402,24 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 2.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 6.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 6.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 5.
+(babel)             in language  on input line 6.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 5.
- [11]
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf, id=333, 50
+(babel)             in language  on input line 6.
+ [12]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 6.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 6.
+ [13]
+<../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf, id=344, 50
 5.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf Graphi
 c file (type pdf)
@@ -2245,7 +2434,7 @@ Overfull \hbox (7.11317pt too wide) in paragraph at lines 18--20
  []
 
 
-<../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf, id=334, 50
+<../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf, id=345, 50
 5.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf Graphi
 c file (type pdf)
@@ -2264,17 +2453,8 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 14--32
 [][]  [] 
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 37.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 37.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 37.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 37.
-[12 <../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf> <../Ba
-renc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf>]
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf, id=371,
+
+<../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf, id=348,
  505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf Gra
 phic file (type pdf)
@@ -2289,8 +2469,11 @@ Overfull \hbox (7.11317pt too wide) in paragraph at lines 43--45
  []
 
 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf, id=37
-2, 505.89pt x 505.89pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf, id=34
+9, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf G
 raphic file (type pdf)
 
@@ -2299,8 +2482,8 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Mac
 oma_balthica_.pdf used on input line 61.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf, id=37
-3, 505.89pt x 505.89pt>
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf, id=35
+0, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf G
 raphic file (type pdf)
 
@@ -2310,7 +2493,7 @@ oma_balthica_.pdf used on input line 71.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pdf, id
-=374, 505.89pt x 505.89pt>
+=351, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pd
 f Graphic file (type pdf)
 
@@ -2328,7 +2511,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cer
 astoderma_edule_.pdf used on input line 92.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf, id=375, 5
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf, id=352, 5
 05.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf Graph
 ic file (type pdf)
@@ -2338,7 +2521,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gam
 marus_sp_.pdf used on input line 101.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf, id=376, 5
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf, id=353, 5
 05.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf Graph
 ic file (type pdf)
@@ -2348,7 +2531,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gam
 marus_sp_.pdf used on input line 111.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf, id=377, 
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf, id=354, 
 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf Grap
 hic file (type pdf)
@@ -2358,7 +2541,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Ga
 mmarus_sp_.pdf used on input line 121.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf, id=378, 
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf, id=355, 
 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf Grap
 hic file (type pdf)
@@ -2375,7 +2558,7 @@ LaTeX Warning: Float too large for page by 138.08652pt on input line 136.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf, id=380,
+<../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf, id=357,
  505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf Gra
 phic file (type pdf)
@@ -2397,7 +2580,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 158.
 
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf, id=382, 5
+<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf, id=359, 5
 05.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf Graph
 ic file (type pdf)
@@ -2412,7 +2595,7 @@ Overfull \hbox (7.11317pt too wide) in paragraph at lines 169--171
  []
 
 
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf, id=383,
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf, id=360,
  505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf Gra
 phic file (type pdf)
@@ -2431,11 +2614,23 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 165--184
 [][]  [] 
  []
 
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 187.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 187.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 187.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 187.
+[14
+
+ <../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf> <../Baren
+c_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf, id=385
+<../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf, id=397
 , 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf Gr
 aphic file (type pdf)
@@ -2450,7 +2645,7 @@ Overfull \hbox (7.11317pt too wide) in paragraph at lines 198--200
  []
 
 
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf, id=386
+<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf, id=398
 , 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf Gr
 aphic file (type pdf)
@@ -2474,7 +2669,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littoralis_
-.pdf, id=388, 505.89pt x 505.89pt>
+.pdf, id=400, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littor
 alis_.pdf Graphic file (type pdf)
 
@@ -2495,17 +2690,9 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 235.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 235.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 239.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 239.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 239.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 239.
-[13 <../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf>]
+
 <../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mytilus_edulis_.pdf, id
-=412, 505.89pt x 505.89pt>
+=402, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mytilus_edulis_.pd
 f Graphic file (type pdf)
 
@@ -2522,595 +2709,7 @@ Overfull \hbox (7.11317pt too wide) in paragraph at lines 245--247
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./obilie.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 2.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 2.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 3.
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\T2A/cmr/m/n/10 ма-ре-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\T2A/cmr/m/n/10 ографи-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\T2A/cmr/m/n/10 ческий
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-[]|\T2A/cmr/m/n/10 число
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 10--10
-\T2A/cmr/m/n/10 по-втор-
- []
-
-
-Overfull \hbox (11.25978pt too wide) in paragraph at lines 10--10
-[]|\T2A/cmr/m/n/10 площадь
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 7--11
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-[]|\T2A/cmr/m/n/10 ма-ре-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-\T2A/cmr/m/n/10 ографи-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-\T2A/cmr/m/n/10 ческий
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-[]|\T2A/cmr/m/n/10 число
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--14
-\T2A/cmr/m/n/10 по-втор-
- []
-
-
-Overfull \hbox (11.25978pt too wide) in paragraph at lines 14--14
-[]|\T2A/cmr/m/n/10 площадь
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 11--15
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 15--18
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 18--19
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 30--30
-[]|\T2A/cmr/m/n/10 НГЛ, по-яс
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 42--42
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 46--46
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 48--48
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 54--54
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 56--56
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 58--58
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 19--59
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 62--62
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--64
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 70--70
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--74
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 78--78
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--82
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 86--86
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 90--90
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 94--94
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--96
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--98
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 59--99
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 102--102
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 104--104
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 106--106
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 110--110
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 112--112
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 114--114
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 118--118
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
-[]|\T2A/cmr/m/n/10 нижний
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 122--122
-[]|\T2A/cmr/m/n/10 верхний
- []
-
-
-Underfull \hbox (badness 6725) in paragraph at lines 126--126
-[]|\T2A/cmr/m/n/10 пояс зо-сте-
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 99--139
- [] [] [] [] [] [] [] [] [] 
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 139.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 139.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 139.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 139.
-[14]
-Overfull \hbox (67.44435pt too wide) in alignment at lines 139--179
- [] [] [] [] [] [] [] [] [] 
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 179.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 179.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 179.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 179.
-[15]
-Underfull \hbox (badness 10000) in paragraph at lines 184--184
-[]|\T2A/cmr/m/n/10 Эстуарий
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 179--219
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
-[]|\T2A/cmr/m/n/10 Северный
- []
-
-
-Underfull \hbox (badness 2635) in paragraph at lines 226--226
-[]|\T2A/cmr/m/n/10 Западная Ряш-ко-
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 219--259
- [] [] [] [] [] [] [] [] [] 
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 259.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 259.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 259.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 259.
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 264--264
-[]|\T2A/cmr/m/n/10 Южная гу-ба о.
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 259--299
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (67.44435pt too wide) in alignment at lines 299--307
- [] [] [] [] [] [] [] [] [] 
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 307.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 307.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 307.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 307.
-[17] <../All_N/Nmean_hist_White.pdf, id=445, 505.89pt x 505.89pt>
-File: ../All_N/Nmean_hist_White.pdf Graphic file (type pdf)
-
-<use ../All_N/Nmean_hist_White.pdf>
-Package pdftex.def Info: ../All_N/Nmean_hist_White.pdf used on input line 313.
-(pdftex.def)             Requested size: 202.30609pt x 202.30115pt.
-
-<../All_N/Nmean_hist_Barents.pdf, id=446, 505.89pt x 505.89pt>
-File: ../All_N/Nmean_hist_Barents.pdf Graphic file (type pdf)
-
-<use ../All_N/Nmean_hist_Barents.pdf>
-Package pdftex.def Info: ../All_N/Nmean_hist_Barents.pdf used on input line 314
-.
-(pdftex.def)             Requested size: 202.30609pt x 202.30115pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|\T2A/cmr/m/n/12 ма-ре-ографи-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 328--328
-[]|$\OML/cmm/m/it/12 Kruskal \OMS/cmsy/m/n/12 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--349
-[]|$\OML/cmm/m/it/12 Kruskal \OMS/cmsy/m/n/12 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 353--353
-[]|\T2A/cmr/m/n/12 Клющиха (толь-ко
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--369
-[][]
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 378.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 378.
-
-Overfull \hbox (3.10211pt too wide) in paragraph at lines 380--384
-\T2A/cmr/m/n/12 Мур-ман-ско-го по-бе-ре-жья. Ми-ни-маль-ная сред-няя чис-лен-но
-сть со-став-ля-ла $\OT1/cmr/m/n/12 30$ \T2A/cmr/m/n/12 экз./м$[]$
- []
-
-
-Overfull \hbox (7.5185pt too wide) in paragraph at lines 380--384
-\T2A/cmr/m/n/12 ная сред-няя чис-лен-ность бы-ла зна-чи-тель-но мень-ше, чем бе
--ло-мор-ская --- $\OT1/cmr/m/n/12 3350$ \T2A/cmr/m/n/12 экз./м$[]$
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 384.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 384.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 384.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 384.
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
-[]|\T2A/cmr/m/n/10 ма-ре-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
-\T2A/cmr/m/n/10 ографи-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
-\T2A/cmr/m/n/10 ческий
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
-[]|\T2A/cmr/m/n/10 число
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 387--387
-\T2A/cmr/m/n/10 по-втор-
- []
-
-
-Overfull \hbox (11.25978pt too wide) in paragraph at lines 387--387
-[]|\T2A/cmr/m/n/10 площадь
- []
-
-
-Overfull \hbox (62.44557pt too wide) in alignment at lines 384--388
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--391
-[]|\T2A/cmr/m/n/10 ма-ре-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--391
-\T2A/cmr/m/n/10 ографи-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--391
-\T2A/cmr/m/n/10 ческий
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--391
-[]|\T2A/cmr/m/n/10 число
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 391--391
-\T2A/cmr/m/n/10 по-втор-
- []
-
-
-Overfull \hbox (11.25978pt too wide) in paragraph at lines 391--391
-[]|\T2A/cmr/m/n/10 площадь
- []
-
-
-Overfull \hbox (62.44557pt too wide) in alignment at lines 388--392
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (62.44557pt too wide) in alignment at lines 392--395
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (62.44557pt too wide) in alignment at lines 395--396
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 397--397
-[]|\T2A/cmr/m/n/10 Западный
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 401--401
-[]|\T2A/cmr/m/n/10 Кольский
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 401--401
-[]|\T2A/cmr/m/n/10 Северное На-гор-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 413--413
-[]|\T2A/cmr/m/n/10 2007
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 415--415
-[]|\T2A/cmr/m/n/10 2008
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 419--419
-[]|\T2A/cmr/m/n/10 Восточный
- []
-
-
-Overfull \hbox (62.44557pt too wide) in alignment at lines 396--436
- [] [] [] [] [] [] [] [] [] 
- []
-
-
-Overfull \hbox (62.44557pt too wide) in alignment at lines 436--464
- [] [] [] [] [] [] [] [] [] 
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 464.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 464.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 464.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 464.
-[19]
-
-LaTeX Warning: Reference `' on page 20 undefined on input line 469.
-
-<../All_N/Nmean_region_Barents1.pdf, id=469, 442.53612pt x 412.39354pt>
-File: ../All_N/Nmean_region_Barents1.pdf Graphic file (type pdf)
-
-<use ../All_N/Nmean_region_Barents1.pdf>
-Package pdftex.def Info: ../All_N/Nmean_region_Barents1.pdf used on input line 
-473.
-(pdftex.def)             Requested size: 442.53503pt x 412.39252pt.
-
-Overfull \hbox (1.5173pt too wide) in paragraph at lines 473--474
-[][] 
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 496--496
-[]|$\OML/cmm/m/it/12 Kruskal \OMS/cmsy/m/n/12 ^^@
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 495--512
-[][]
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 515.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 515.
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-[]|\T2A/cmr/m/n/12 доля ор-га-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 543--543
-\T2A/cmr/m/n/12 ни-че-ских
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 552.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 552.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 552.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 552.
-[20]) (./size_1year_macoma.tex
+) (./size_1year_macoma.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining russian shorthand "~
@@ -3123,8 +2722,55 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 8.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 8.
- [21]
-<../White_Sea/growth_young/hist_obili_po_godam.pdf, id=486, 505.89pt x 505.89pt
+ [15 <../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8.
+ [16 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf> 
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf> <../B
+arenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pdf> <../Bar
+enc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf> <../Barenc_Sea/d
+istribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf> <../Barenc_Sea/distributi
+on_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf> <../Barenc_Sea/distribution_Moran
+/Plyazh0812_moran_B_Gammarus_sp_.pdf>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8.
+ [17 <../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf> <.
+./Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf> <../Barenc_
+Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8.
+ [18 <../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf> <
+../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf> <../Bar
+enc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littoralis_.pdf>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 8.
+ [19 <../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mytilus_edulis_.pd
+f>]
+<../White_Sea/growth_young/hist_obili_po_godam.pdf, id=600, 505.89pt x 505.89pt
 >
 File: ../White_Sea/growth_young/hist_obili_po_godam.pdf Graphic file (type pdf)
 
@@ -3138,7 +2784,7 @@ Overfull \hbox (64.87102pt too wide) in paragraph at lines 13--14
  []
 
 
-<../White_Sea/growth_young/boxplot_Goreliy_length_1+_tidal.pdf, id=488, 505.89p
+<../White_Sea/growth_young/boxplot_Goreliy_length_1+_tidal.pdf, id=602, 505.89p
 t x 505.89pt>
 File: ../White_Sea/growth_young/boxplot_Goreliy_length_1+_tidal.pdf Graphic fil
 e (type pdf)
@@ -3153,7 +2799,7 @@ Overfull \hbox (64.87102pt too wide) in paragraph at lines 21--22
  []
 
 
-<../White_Sea/growth_young/boxplot_length_1age_area.pdf, id=491, 505.89pt x 505
+<../White_Sea/growth_young/boxplot_length_1age_area.pdf, id=605, 505.89pt x 505
 .89pt>
 File: ../White_Sea/growth_young/boxplot_length_1age_area.pdf Graphic file (type
  pdf)
@@ -3215,7 +2861,224 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 74.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 74.
-[22]) (./dynamic.tex
+[20
+
+
+]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 74.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 74.
+ [21 <../White_Sea/growth_young/hist_obili_po_godam.pdf>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 74.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 74.
+ [22 <../White_Sea/growth_young/boxplot_Goreliy_length_1+_tidal.pdf>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 74.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 74.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 74.
+ [23 <../White_Sea/growth_young/boxplot_length_1age_area.pdf>]) (./growth.tex
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 1.
+
+
+LaTeX Warning: Reference `ris:Barents_growth_gorizonts_all' on page 24 undefine
+d on input line 11.
+
+
+<../Barenc_Sea/growth_from_MSc/Rost_gorizonts_all.jpg, id=678, 422.5386pt x 245
+.59755pt>
+File: ../Barenc_Sea/growth_from_MSc/Rost_gorizonts_all.jpg Graphic file (type j
+pg)
+ <use ../Barenc_Sea/growth_from_MSc/Rost_gorizonts_all.jpg>
+Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/Rost_gorizonts_all.jpg u
+sed on input line 13.
+(pdftex.def)             Requested size: 441.01773pt x 256.34105pt.
+
+
+LaTeX Warning: Reference `ris:dendrogramma_linear_all_gorizonts' on page 24 und
+efined on input line 20.
+
+
+<../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_all_gorizont
+s.jpg, id=679, 599.27258pt x 378.40247pt>
+File: ../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_all_gor
+izonts.jpg Graphic file (type jpg)
+
+<use ../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_all_gori
+zonts.jpg>
+Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_r
+osta_linear_all_gorizonts.jpg used on input line 22.
+(pdftex.def)             Requested size: 441.01773pt x 278.48334pt.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 37.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 37.
+ [24]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 37.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 37.
+ [25 <../Barenc_Sea/growth_from_MSc/Rost_gorizonts_all.jpg> <../Barenc_Sea/grow
+th_from_MSc/dendrogramma_sravnenie_rosta_linear_all_gorizonts.jpg>]
+
+LaTeX Warning: Reference `ris:Barents_clusters_gorizonts_all' on page 26 undefi
+ned on input line 41.
+
+
+<../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg, id=695, 423.984pt x 220.5
+4395pt>
+File: ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg Graphic file (type jp
+g)
+ <use ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg>
+Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg us
+ed on input line 43.
+(pdftex.def)             Requested size: 441.01773pt x 229.41075pt.
+
+
+LaTeX Warning: Command \cyrd invalid in math mode on input line 48.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 48.
+
+Missing character: There is no д in font cmr12!
+Missing character: There is no о in font cmr12!
+
+LaTeX Warning: Reference `ris:Barents_growth_gorizonts_8year' on page 26 undefi
+ned on input line 55.
+
+
+<../Barenc_Sea/growth_from_MSc/Rost_8+_gorizonts.jpg, id=696, 413.74574pt x 245
+.59755pt>
+File: ../Barenc_Sea/growth_from_MSc/Rost_8+_gorizonts.jpg Graphic file (type jp
+g)
+ <use ../Barenc_Sea/growth_from_MSc/Rost_8+_gorizonts.jpg>
+Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/Rost_8+_gorizonts.jpg us
+ed on input line 57.
+(pdftex.def)             Requested size: 441.01773pt x 261.80118pt.
+
+
+LaTeX Warning: Reference `ris:dendrogramma_linear_clusters_8year' on page 26 un
+defined on input line 62.
+
+
+<../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_8year_gorizo
+nts.jpg, id=697, 587.90427pt x 369.47023pt>
+File: ../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_8year_g
+orizonts.jpg Graphic file (type jpg)
+
+<use ../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_8year_go
+rizonts.jpg>
+Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_r
+osta_linear_8year_gorizonts.jpg used on input line 64.
+(pdftex.def)             Requested size: 441.01773pt x 277.16963pt.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 68.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 68.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 68.
+ [26 <../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg>]
+
+LaTeX Warning: Reference `ris:Barents_clusters_gorizonts_8year' on page 27 unde
+fined on input line 78.
+
+
+<../Barenc_Sea/growth_from_MSc/Rost_8+_clusters.jpg, id=703, 416.63655pt x 224.
+88016pt>
+File: ../Barenc_Sea/growth_from_MSc/Rost_8+_clusters.jpg Graphic file (type jpg
+)
+ <use ../Barenc_Sea/growth_from_MSc/Rost_8+_clusters.jpg>
+Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/Rost_8+_clusters.jpg use
+d on input line 80.
+(pdftex.def)             Requested size: 441.01773pt x 238.04582pt.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 88.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 88.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 88.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 88.
+ [27 <../Barenc_Sea/growth_from_MSc/Rost_8+_gorizonts.jpg>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 88.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 88.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 88.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 88.
+ [28 <../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_8year_g
+orizonts.jpg> <../Barenc_Sea/growth_from_MSc/Rost_8+_clusters.jpg>]
+
+LaTeX Warning: Reference `tab:godovoy_prirost_min_max' on page 29 undefined on 
+input line 97.
+
+
+LaTeX Warning: Reference `tab:prirost_ANOVA_tidal' on page 29 undefined on inpu
+t line 125.
+
+
+LaTeX Warning: Reference `tab:prirost_ANOVA_geography' on page 29 undefined on 
+input line 146.
+
+
+LaTeX Warning: Reference `ris:prirost_otklik' on page 29 undefined on input lin
+e 173.
+
+
+LaTeX Warning: Reference `ris:prirost:otklik' on page 29 undefined on input lin
+e 176.
+
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 56.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 56.
+[29]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 56.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 56.
+ [30] (./dynamic.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining russian shorthand "~
@@ -3225,7 +3088,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 3.
 
-<../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf, id=502, 505.89pt x 505.89pt>
+<../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf, id=729, 505.89pt x 505.89pt>
 File: ../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf>
@@ -3233,7 +3096,7 @@ Package pdftex.def Info: ../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf used on in
 put line 13.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Luvenga_Goreliy/N_dynamic.pdf, id=503, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/N_dynamic.pdf, id=730, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/N_dynamic.pdf>
@@ -3241,7 +3104,7 @@ Package pdftex.def Info: ../White_Sea/Luvenga_Goreliy/N_dynamic.pdf used on inp
 ut line 23.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea//Luvenga_II_razrez/N_dynamic.pdf, id=504, 505.89pt x 505.89pt>
+<../White_Sea//Luvenga_II_razrez/N_dynamic.pdf, id=731, 505.89pt x 505.89pt>
 File: ../White_Sea//Luvenga_II_razrez/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea//Luvenga_II_razrez/N_dynamic.pdf>
@@ -3249,7 +3112,7 @@ Package pdftex.def Info: ../White_Sea//Luvenga_II_razrez/N_dynamic.pdf used on
 input line 34.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Ryashkov_ZRS/N_dynamic.pdf, id=505, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/N_dynamic.pdf, id=732, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/N_dynamic.pdf>
@@ -3257,7 +3120,7 @@ Package pdftex.def Info: ../White_Sea/Ryashkov_ZRS/N_dynamic.pdf used on input
 line 43.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Ryashkov_YuG/N_dynamic.pdf, id=506, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/N_dynamic.pdf, id=733, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/N_dynamic.pdf>
@@ -3265,7 +3128,7 @@ Package pdftex.def Info: ../White_Sea/Ryashkov_YuG/N_dynamic.pdf used on input
 line 53.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Lomnishniy/N_dynamic.pdf, id=507, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/N_dynamic.pdf, id=734, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/N_dynamic.pdf>
@@ -3273,7 +3136,7 @@ Package pdftex.def Info: ../White_Sea/Lomnishniy/N_dynamic.pdf used on input li
 ne 62.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf, id=509, 505.89pt x 505.89pt>
+<../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf, id=736, 505.89pt x 505.89pt>
 File: ../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf>
@@ -3281,7 +3144,7 @@ Package pdftex.def Info: ../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf used on i
 nput line 79.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf, id=510, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf, id=737, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf>
@@ -3289,7 +3152,7 @@ Package pdftex.def Info: ../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf used on in
 put line 88.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf, id=511, 505.89pt x 505.89pt>
+<../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf, id=738, 505.89pt x 505.89pt>
 File: ../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf>
@@ -3297,7 +3160,7 @@ Package pdftex.def Info: ../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf used on
  input line 96.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf, id=512, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf, id=739, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf>
@@ -3305,7 +3168,7 @@ Package pdftex.def Info: ../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf used on input
  line 105.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Ryashkov_YuG/N2_dynamic.pdf, id=513, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/N2_dynamic.pdf, id=740, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/N2_dynamic.pdf>
@@ -3313,7 +3176,7 @@ Package pdftex.def Info: ../White_Sea/Ryashkov_YuG/N2_dynamic.pdf used on input
  line 113.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Lomnishniy/N2_dynamic.pdf, id=514, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/N2_dynamic.pdf, id=741, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/N2_dynamic.pdf>
@@ -3355,7 +3218,9 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 189.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 189.
-[23]
+[31
+
+]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 190.
 Package babel Info: Redefining russian shorthand "~
@@ -3368,7 +3233,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 204.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 204.
- [24]
+ [32]
 Overfull \hbox (49.99994pt too wide) in paragraph at lines 206--219
 [][]
  []
@@ -3397,7 +3262,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 258.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 258.
-[25]
+[33]
 Overfull \hbox (49.99994pt too wide) in paragraph at lines 265--276
 [][]
  []
@@ -3419,7 +3284,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 2.
- [26]
+ [34]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining russian shorthand "~
@@ -3440,7 +3305,7 @@ Overfull \hbox (5.89548pt too wide) in paragraph at lines 11--32
  []
 
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pdf, id=555, 505.89pt x 50
+<../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pdf, id=788, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pdf Graphic file (typ
 e pdf)
@@ -3449,7 +3314,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pd
 f used on input line 45.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_Goreliy_all_detrend.pdf, id=556, 505.89pt 
+<../White_Sea/dynamic_N_N1/perm_PRCF_Goreliy_all_detrend.pdf, id=789, 505.89pt 
 x 505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Goreliy_all_detrend.pdf Graphic file 
 (type pdf)
@@ -3458,7 +3323,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_Goreliy_all_detren
 d.pdf used on input line 54.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_razrez2_all_detrend.pdf, id=557, 505.89pt 
+<../White_Sea/dynamic_N_N1/perm_PRCF_razrez2_all_detrend.pdf, id=790, 505.89pt 
 x 505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_razrez2_all_detrend.pdf Graphic file 
 (type pdf)
@@ -3467,7 +3332,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_razrez2_all_detren
 d.pdf used on input line 63.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_Lomnishniy_detrend.pdf, id=558, 505.89pt x
+<../White_Sea/dynamic_N_N1/perm_PRCF_Lomnishniy_detrend.pdf, id=791, 505.89pt x
  505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Lomnishniy_detrend.pdf Graphic file (
 type pdf)
@@ -3476,7 +3341,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_Lomnishniy_detrend
 .pdf used on input line 71.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_YuG_detrend.pdf, id=559, 505.89pt x 505.89
+<../White_Sea/dynamic_N_N1/perm_PRCF_YuG_detrend.pdf, id=792, 505.89pt x 505.89
 pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_YuG_detrend.pdf Graphic file (type pd
 f)
@@ -3485,7 +3350,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_YuG_detrend.pdf us
 ed on input line 80.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_ZRS_detrend.pdf, id=560, 505.89pt x 505.89
+<../White_Sea/dynamic_N_N1/perm_PRCF_ZRS_detrend.pdf, id=793, 505.89pt x 505.89
 pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_ZRS_detrend.pdf Graphic file (type pd
 f)
@@ -3494,7 +3359,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_ZRS_detrend.pdf us
 ed on input line 87.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.pdf, id=561, 505.89pt x 
+<../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.pdf, id=794, 505.89pt x 
 505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.pdf Graphic file (t
 ype pdf)
@@ -3503,7 +3368,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.
 pdf used on input line 102.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_Seldyanaya_detrend.pdf, id=562, 505.89pt x
+<../White_Sea/dynamic_N_N1/perm_PRCF_Seldyanaya_detrend.pdf, id=795, 505.89pt x
  505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Seldyanaya_detrend.pdf Graphic file (
 type pdf)
@@ -3520,7 +3385,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 130.
 
-[27]
+[35]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining russian shorthand "~
@@ -3701,7 +3566,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 203.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 203.
-[28]
+[36]
 Overfull \hbox (0.63554pt too wide) in paragraph at lines 210--211
 []|\T2A/cmr/m/n/12 [10]| 
  []
@@ -3892,7 +3757,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 296.
 
-<../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf, id=579, 505.89pt x 
+<../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf, id=813, 505.89pt x 
 505.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf Graphic file (t
 ype pdf)
@@ -3906,7 +3771,7 @@ Overfull \hbox (64.87102pt too wide) in paragraph at lines 300--301
  []
 
 
-LaTeX Warning: Reference `Agarova_et_al_1976' on page 29 undefined on input lin
+LaTeX Warning: Reference `Agarova_et_al_1976' on page 37 undefined on input lin
 e 302.
 
 Package babel Info: Redefining russian shorthand "|
@@ -3917,12 +3782,12 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 307.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 307.
-[29]
+[37]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `Agarova_et_al_1976' on page 30 undefined on input lin
+LaTeX Warning: Reference `Agarova_et_al_1976' on page 38 undefined on input lin
 e 308.
 
 
@@ -3937,154 +3802,48 @@ Overfull \hbox (49.99994pt too wide) in paragraph at lines 311--324
 
 )
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 55.
- [30]
-Overfull \hbox (6.18367pt too wide) in paragraph at lines 59--59
-[][]\T2A/cmr/m/it/12 Varfolomeeva M.\T2A/cmr/m/n/12 , \T2A/cmr/m/it/12 Naumov A
-. \T2A/cmr/m/n/12 Long-term temporal and spatial variation of macrobenthos
- []
-
-
-Overfull \hbox (1.31993pt too wide) in paragraph at lines 59--59
-[][]\T2A/cmr/m/it/12 Максимович Н. В.\T2A/cmr/m/n/12 , \T2A/cmr/m/it/12 А.В. Г.
-\T2A/cmr/m/n/12 , \T2A/cmr/m/it/12 Ку-ни-на Т. \T2A/cmr/m/n/12 Про-дук-ци-он-ны
-е свой-ства по-се-ле-ний Macoma
- []
-
-
-AED: lastpage setting LastPage
+(babel)             in language  on input line 69.
+ [38]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-[31]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [32 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf> 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf> <../B
-arenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pdf> <../Bar
-enc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf> <../Barenc_Sea/d
-istribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf> <../Barenc_Sea/distributi
-on_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf> <../Barenc_Sea/distribution_Moran
-/Plyazh0812_moran_B_Gammarus_sp_.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [33 <../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf> <.
-./Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf> <../Barenc_
-Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [34 <../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf> <
-../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf> <../Bar
-enc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littoralis_.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [35 <../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mytilus_edulis_.pd
-f> <../All_N/Nmean_hist_White.pdf> <../All_N/Nmean_hist_Barents.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [36 <../All_N/Nmean_region_Barents1.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [37 <../White_Sea/growth_young/hist_obili_po_godam.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [38 <../White_Sea/growth_young/boxplot_Goreliy_length_1+_tidal.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [39 <../White_Sea/growth_young/boxplot_length_1age_area.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [40 <../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf> <../White_Sea/Luvenga_Goreli
+(babel)             in language  on input line 69.
+ [39 <../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf> <../White_Sea/Luvenga_Goreli
 y/N_dynamic.pdf> <../White_Sea//Luvenga_II_razrez/N_dynamic.pdf> <../White_Sea/
 Ryashkov_ZRS/N_dynamic.pdf> <../White_Sea/Ryashkov_YuG/N_dynamic.pdf> <../White
 _Sea/Lomnishniy/N_dynamic.pdf>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [41 <../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf> <../White_Sea/Luvenga_Gorel
+(babel)             in language  on input line 69.
+ [40 <../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf> <../White_Sea/Luvenga_Gorel
 iy/N2_dynamic.pdf> <../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf> <../White_S
 ea/Ryashkov_ZRS/N2_dynamic.pdf> <../White_Sea/Ryashkov_YuG/N2_dynamic.pdf> <../
 White_Sea/Lomnishniy/N2_dynamic.pdf>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 
-[42 <../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pdf> <../White_Sea/dyn
+[41 <../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pdf> <../White_Sea/dyn
 amic_N_N1/perm_PRCF_Goreliy_all_detrend.pdf
 
 pdfTeX warning: pdflatex (file ../White_Sea/dynamic_N_N1/perm_PRCF_Goreliy_all_
@@ -4110,14 +3869,14 @@ pdfTeX warning: pdflatex (file ../White_Sea/dynamic_N_N1/perm_PRCF_ZRS_detrend.
 pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [43 <../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.pdf> <../White_Sea/
+(babel)             in language  on input line 69.
+ [42 <../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.pdf> <../White_Sea/
 dynamic_N_N1/perm_PRCF_Seldyanaya_detrend.pdf
 
 pdfTeX warning: pdflatex (file ../White_Sea/dynamic_N_N1/perm_PRCF_Seldyanaya_d
@@ -4125,77 +3884,341 @@ etrend.pdf): PDF inclusion: multiple pdfs with page group included in a single
 page
 >]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 69.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
- [44 <../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 60.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
+(babel)             in language  on input line 69.
+ [43 <../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf>]
+Overfull \hbox (6.18367pt too wide) in paragraph at lines 73--73
+[][]\T2A/cmr/m/it/12 Varfolomeeva M.\T2A/cmr/m/n/12 , \T2A/cmr/m/it/12 Naumov A
+. \T2A/cmr/m/n/12 Long-term temporal and spatial variation of macrobenthos
+ []
 
+
+Overfull \hbox (1.31993pt too wide) in paragraph at lines 73--73
+[][]\T2A/cmr/m/it/12 Максимович Н. В.\T2A/cmr/m/n/12 , \T2A/cmr/m/it/12 А.В. Г.
+\T2A/cmr/m/n/12 , \T2A/cmr/m/it/12 Ку-ни-на Т. \T2A/cmr/m/n/12 Про-дук-ци-он-ны
+е свой-ства по-се-ле-ний Macoma
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 75.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 75.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 75.
+[44
+
+] (./prilozhenie_growth.tex
+Overfull \hbox (15.73657pt too wide) in paragraph at lines 6--6
+[]\T2A/cmr/bx/n/17.28 Приложение. Воз-раст-ная струк-ту-ра \T2A/cmr/m/it/17.28 
+Macoma balthica
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--24
+
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 27.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 27.
+[45]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (43.96742pt too wide) in paragraph at lines 134--158
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (14.52592pt too wide) in paragraph at lines 241--263
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+[46
+
+]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [47]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [48]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [49]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [50]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [51]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [52]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [53]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [54]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [55]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [56]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [57]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [58]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 391.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 391.
+ [59])
+
+AED: lastpage setting LastPage
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 78.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 78.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 78.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 78.
 (./dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
-Package rerunfilecheck Info: File `dissertation.out' has not changed.
-(rerunfilecheck)             Checksum: D54EC3639895A9CD1448869B41747D8A;9802.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 
+
+Package rerunfilecheck Warning: File `dissertation.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `dissertation.out':
+(rerunfilecheck)             Before: 7AA5677E20CFFE53807057055F3CACCB;9428
+(rerunfilecheck)             After:  EEB5A91C2E576539B6182E2B2137A243;9662.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'dissertation.run.xml'.
 \openout1 = `dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37927 strings out of 493117
- 813169 string characters out of 6135439
- 1518074 words of memory out of 5000000
- 40498 multiletter control sequences out of 15000+600000
+ 39233 strings out of 493117
+ 837032 string characters out of 6135439
+ 1735563 words of memory out of 5000000
+ 41735 multiletter control sequences out of 15000+600000
  27583 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,14n,76p,2091b,2137s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
-}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-d
-ist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/cm-super/sfti1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/cm-super/sfti1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-urw/helvetic/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/hel
-vetic/uhvr8a.pfb>
-Output written on dissertation.pdf (44 pages, 1550978 bytes).
+ 57i,14n,76p,2650b,2135s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.5.9} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.8} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.7} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/cm-super/sfsl1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
+lic/cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/cm-super/sfti1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+cm-super/sfti1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helve
+tic/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhv
+r8a.pfb>
+Output written on dissertation.pdf (59 pages, 4874932 bytes).
 PDF statistics:
- 1245 PDF objects out of 1440 (max. 8388607)
- 978 compressed objects within 10 object streams
- 139 named destinations out of 1000 (max. 500000)
- 543 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1305 PDF objects out of 1440 (max. 8388607)
+ 1025 compressed objects within 11 object streams
+ 180 named destinations out of 1000 (max. 500000)
+ 534 words of extra memory for PDF output out of 10000 (max. 10000000)
 

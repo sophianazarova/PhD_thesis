@@ -31,31 +31,49 @@
 
 %%материал и методика
 \input{matmet.tex}
+\afterpage{\clearpage}
 
 %%описание участков
 \input{harakteristiki_rayonov_issledovaniya.tex}
+\afterpage{\clearpage}
 
 %%роль в сообществах разнообразных местообитаний
  
 %%микрораспределение
 \input{microdistribution.tex}
+\afterpage{\clearpage}
 
 %%популяционная структура
-\input{obilie.tex}
+%\input{obilie.tex}
 %\input{size_structure.tex}
+\afterpage{\clearpage}
 
 %%рост в разных условиях
 
 \input{size_1year_macoma.tex}
+\input{growth.tex}
+\afterpage{\clearpage}
 
 %%динамика популяций
 \input{dynamic.tex}
-%\input{dynamic_analyse} %вставили его в dymanic.tex
+%%\input{dynamic_analyse} %вставили его в dymanic.tex
+\afterpage{\clearpage}
+%%обсуждение
+%%    макома как массовый элемент в сообществах литорали северных морей
+%%    об организации сообществ с участием Macoma balthica
+%%    Структура популяции Mb как отражение характеристик экотопов
+%%    скорость роста как показатель "условий жизни"
+%%    о долговременных трендах в популяции Mb
+
 
 \printbibliography %это хвост от biblatex-biber
 %это bibtex с Котельниковским пакетом gost
 %\bibliographystyle{gost2008}
 %\bibliography{sophia_base}
+
+%приложение
+\newpage
+\input{prilozhenie_growth.tex}
 
 \end{document} % конец документа
 

@@ -5,6 +5,7 @@
 % для Coursera.org: http://coursera.org/course/latex .
 % Исходная версия шаблона --- 
 % https://www.writelatex.com/coursera/latex/5.3
+% модификация Софии Назаровой
 
 % В этом документе преамбула
 
@@ -48,10 +49,14 @@
 \setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
 \usepackage{wrapfig} % Обтекание рисунков текстом
 
+\usepackage{caption2}%форматирование подписей к плавающим объектам
+\renewcommand{\captionlabeldelim}{.}% после названия объекта ставим точку.
+
 %%% Работа с таблицами
 \usepackage{array,tabularx,tabulary,booktabs} % Дополнительная работа с таблицами
 \usepackage{longtable}  % Длинные таблицы
 \usepackage{multirow} % Слияние строк в таблице
+%%\usepackage{slashbox} %можно делать \backslashbox %не стоит
 
 %%% Теоремы
 \theoremstyle{plain} % Это стиль по умолчанию, его можно не переопределять.
@@ -92,6 +97,9 @@
 %\singlespacing % Интерлиньяж 1
 
 \usepackage{lastpage} % Узнать, сколько всего страниц в документе.
+\usepackage[pdftex]{lscape} %подключение окружения landscape. внутри него все горизонтально, но макет страницы не меняется!
+
+\usepackage{afterpage}
 
 \usepackage{soul} % Модификаторы начертания
 

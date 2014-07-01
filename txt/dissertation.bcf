@@ -2690,14 +2690,15 @@
     <bcf:datasource type="file" datatype="bibtex">sophia_base.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Varfolomeev_aNaumov_2013</bcf:citekey>
-    <bcf:citekey order="3">Thrush_et_al_1989</bcf:citekey>
-    <bcf:citekey order="4">Maximovich_et_al_1993</bcf:citekey>
-    <bcf:citekey order="5">Maximovich_et_al_1991</bcf:citekey>
-    <bcf:citekey order="5">Gerasimova_Maximovich_2013</bcf:citekey>
-    <bcf:citekey order="6">Varfolomeeva_Naumov_2013</bcf:citekey>
-    <bcf:citekey order="7">Streltsov_et_el_1974</bcf:citekey>
-    <bcf:citekey order="7">Agarova_et_al_1976</bcf:citekey>
+    <bcf:citekey order="1">Varfolomeeva_Naumov_2013</bcf:citekey>
+    <bcf:citekey order="2">Thrush_et_al_1989</bcf:citekey>
+    <bcf:citekey order="3">Maximovich_et_al_1993</bcf:citekey>
+    <bcf:citekey order="4">Maximovich_et_al_1991</bcf:citekey>
+    <bcf:citekey order="4">Gerasimova_Maximovich_2013</bcf:citekey>
+    <bcf:citekey order="5">Varfolomeeva_Naumov_2013</bcf:citekey>
+    <bcf:citekey order="6">Streltsov_et_al_1974</bcf:citekey>
+    <bcf:citekey order="6">Agarova_et_al_1976</bcf:citekey>
+    <bcf:citekey order="7">Maximovich_1989</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt" type="entry" sortscheme="nyt">
   <bcf:sorting>
