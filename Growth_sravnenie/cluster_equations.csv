@@ -1,0 +1,87 @@
+cluster1,
+"Nonlinear regression model",
+model,"L ~ Lm * (1 - exp(-k * (t - t0)))"
+data,parent.frame()
+Lm, k,t0,
+23.2222,0.9053,0.3534,
+"residual sum-of-squares",0.01197
+,
+cluster2,
+"Number of iterations to convergence",9
+"Achieved convergence tolerance",7.26e-07
+"Nonlinear regression model",
+model,"L ~ Lm * (1 - exp(-k * (t - t0)))"
+data,parent.frame()
+Lm, k,t0,
+20.6100,0.2889,0.2810,
+"residual sum-of-squares",12.95
+,
+cluster3,
+"Number of iterations to convergence",9
+"Achieved convergence tolerance",9.467e-06
+"Nonlinear regression model",
+model,"L ~ Lm * (1 - exp(-k * (t - t0)))"
+data,parent.frame()
+Lm, k,t0,
+18.8082,0.2332,0.9045,
+"residual sum-of-squares",3.999
+,
+cluster4,
+"Number of iterations to convergence",8
+"Achieved convergence tolerance",4.9e-06
+"Nonlinear regression model",
+model,"L ~ Lm * (1 - exp(-k * (t - t0)))"
+data,parent.frame()
+Lm, k,t0,
+18.5083,0.1633,0.3221,
+"residual sum-of-squares",1.381
+,
+cluster5,
+"Number of iterations to convergence",4
+"Achieved convergence tolerance",8.749e-06
+"Nonlinear regression model",
+model,"L ~ Lm * (1 - exp(-k * (t - t0)))"
+data,parent.frame()
+Lm,k, t0,
+18.55145,0.05762,0.33315,
+"residual sum-of-squares",0.6243
+,
+cluster6,
+"Number of iterations to convergence",5
+"Achieved convergence tolerance",9.957e-07
+"Nonlinear regression model",
+model,"L ~ Lm * (1 - exp(-k * (t - t0)))"
+data,parent.frame()
+Lm, k,t0,
+17.1978,0.1396,0.3075,
+"residual sum-of-squares",0.6421
+,
+cluster7,
+"Number of iterations to convergence",6
+"Achieved convergence tolerance",8.712e-06
+"Nonlinear regression model",
+model,"L ~ Lm * (1 - exp(-k * (t - t0)))"
+data,parent.frame()
+Lm,k, t0,
+29.04626,0.06469,0.73555,
+"residual sum-of-squares",1.036
+,
+cluster8,
+"Number of iterations to convergence",5
+"Achieved convergence tolerance",4.233e-06
+"Nonlinear regression model",
+model,"L ~ Lm * (1 - exp(-k * (t - t0)))"
+data,parent.frame()
+Lm, k,t0,
+35.8266,0.0591,0.7383,
+"residual sum-of-squares",1.269
+,
+cluster9,
+"Number of iterations to convergence",6
+"Achieved convergence tolerance",3.8e-06
+"Nonlinear regression model",
+model,"L ~ Lm * (1 - exp(-k * (t - t0)))"
+data,parent.frame()
+Lm,k, t0,
+42.39563,0.03234,0.26232,
+"residual sum-of-squares",0.2746

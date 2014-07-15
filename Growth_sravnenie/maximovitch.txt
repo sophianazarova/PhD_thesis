@@ -1,0 +1,4 @@
+bertalanffy<-function(L,t)
+{
+bertalanffy<-nls(L~Lm*(1-exp(-k*(t-t0)), start=list(Lmax=20,k=0.1,t0=0.1)))
+}

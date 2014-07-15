@@ -8,7 +8,11 @@
 
 \documentclass[a4paper,12pt]{article}
 
-\input{preamble}
+
+\input{preamble.tex} %вставляем приамбудус подключением пакетов и параметрами
+\input{perenosy.tex} %файл с заданными частыми переносами
+
+\setcounter{tocdepth}{2}%устанавливаем "глубину" оглавления до подсекций
 
 %это движок biber
 %\usepackage[backend=biber,bibencoding=utf8,sorting=nyt,maxcitenames=2,style=authoryear]{biblatex}
@@ -28,33 +32,44 @@
 \tableofcontents
 
 %%Введение
+\newpage
+\input{vvedenie.tex}
+\afterpage{\clearpage}
 
 %%материал и методика
+\newpage
 \input{matmet.tex}
 \afterpage{\clearpage}
 
 %%описание участков
+\newpage
 \input{harakteristiki_rayonov_issledovaniya.tex}
 \afterpage{\clearpage}
 
 %%роль в сообществах разнообразных местообитаний
- 
+\newpage
+\input{soobshestva_barents.tex} 
+\afterpage{\clearpage}
+
 %%микрораспределение
+\newpage
 \input{microdistribution.tex}
 \afterpage{\clearpage}
 
 %%популяционная структура
-%\input{obilie.tex}
+\newpage
+\input{obilie.tex}
 %\input{size_structure.tex}
 \afterpage{\clearpage}
 
 %%рост в разных условиях
-
+\newpage
 \input{size_1year_macoma.tex}
 \input{growth.tex}
 \afterpage{\clearpage}
 
 %%динамика популяций
+\newpage
 \input{dynamic.tex}
 %%\input{dynamic_analyse} %вставили его в dymanic.tex
 \afterpage{\clearpage}
@@ -65,13 +80,22 @@
 %%    скорость роста как показатель "условий жизни"
 %%    о долговременных трендах в популяции Mb
 
+%%благодарности
+\newpage
+\input{blagodarnosti.tex}
 
-\printbibliography %это хвост от biblatex-biber
+%печатаем список литературы
+\newpage
+\printbibliography[heading=bibintoc] %это хвост от biblatex-biber
 %это bibtex с Котельниковским пакетом gost
 %\bibliographystyle{gost2008}
 %\bibliography{sophia_base}
 
 %приложение
+\renewcommand{\thetable}{\Roman{table}}
+\setcounter{table}{0}
+\appendix
+
 \newpage
 \input{prilozhenie_growth.tex}
 
