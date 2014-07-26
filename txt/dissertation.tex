@@ -10,6 +10,11 @@
 
 
 \input{preamble.tex} %вставляем приамбудус подключением пакетов и параметрами
+
+%нумерация строк на полях для редактирования
+%\usepackage[left, pagewise]{lineno} %на каждой странице с нуля
+\usepackage[left]{lineno}
+
 \input{perenosy.tex} %файл с заданными частыми переносами
 
 \setcounter{tocdepth}{2}%устанавливаем "глубину" оглавления до подсекций
@@ -30,6 +35,8 @@
 \input{title.tex}
 
 \tableofcontents
+
+\linenumbers
 
 %%Введение
 \newpage
@@ -73,6 +80,12 @@
 \input{dynamic.tex}
 %%\input{dynamic_analyse} %вставили его в dymanic.tex
 \afterpage{\clearpage}
+
+%пополнение
+\newpage
+\input{popolnenie.tex}
+\afterpage{\clearpage}
+
 %%обсуждение
 %%    макома как массовый элемент в сообществах литорали северных морей
 %%    об организации сообществ с участием Macoma balthica

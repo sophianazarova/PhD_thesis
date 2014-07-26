@@ -6,21 +6,30 @@ str(ishodnik)
 (lat_lim<-c(min(ishodnik$Ndec)-1, max(ishodnik$Ndec)+1))
 (long_lim<-c(min(ishodnik$Edec)-1, max(ishodnik$Edec)+1))
 #считаем какой должен быть радиус у кружков на карте - площадь пропорциональна
-radius <- sqrt( ishodnik$Nmean/ pi)
+radius_mean <- sqrt( ishodnik$Nmean/ pi)
+
+radius_max <- sqrt( ishodnik$Nmax/ pi)
 
 #install.packages("maps")
 #install.packages("mapdata")
 library(maps)
 library(mapdata)
 
-pdf("white_barents_Nmean_1.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+pdf("Nmean_1.pdf", family="NimbusSan", width=190, height=280, paper="a4")
 map("worldHires", xlim=long_lim, ylim=lat_lim, col="gray90", fill=TRUE)
 #map("worldHires", xlim=c(30,44), ylim=c(63.8,70), col="gray90", fill=TRUE)
-points(x=ishodnik$Edec, y=ishodnik$Ndec, col="black", bg="red", pch=21, cex=radius/5)
+points(x=ishodnik$Edec, y=ishodnik$Ndec, col="black", bg="red", pch=21, cex=radius_mean/5)
 legend(x="bottomright", col="red", pch=20, legend=c("1000 indd./sq.meter", "100 indd./sq.meter", "10 indd./sq.meter"), pt.cex=(sqrt(c(1000,100,10)/pi)/5), bg = "white", title = "Circle squares are proportional to Macoma balthica abundance")
 dev.off()
-embedFonts("white_barents_Nmean_1.pdf")
+embedFonts("Nmean_1.pdf")
 
+pdf("Nmax_1.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+map("worldHires", xlim=long_lim, ylim=lat_lim, col="gray90", fill=TRUE)
+#map("worldHires", xlim=c(30,44), ylim=c(63.8,70), col="gray90", fill=TRUE)
+points(x=ishodnik$Edec, y=ishodnik$Ndec, col="black", bg="red", pch=21, cex=radius_max/5)
+legend(x="bottomright", col="red", pch=20, legend=c("1000 indd./sq.meter", "100 indd./sq.meter", "10 indd./sq.meter"), pt.cex=(sqrt(c(1000,100,10)/pi)/5), bg = "white", title = "Circle squares are proportional to Macoma balthica abundance")
+dev.off()
+embedFonts("Nmax_1.pdf")
 
 
 ## попробуемкарту из shape файла

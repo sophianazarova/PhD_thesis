@@ -22,12 +22,16 @@ Ivanovskaya bay;Barents;68,29;38,71;1208;1208;1208;author data
 Seldyanaya inlet;White;66,34;33,62;42;2089;669;Varfolomeeva_Naumov_2013
 Medvezhya inlet;White;66,35;33,6;53;3300;618;Varfolomeeva_Naumov_2013
 Aland Islands;Baltic;60,17;20,53;600;1200;850;Bostrom_Bonsdorf_2000
-Tvarminne;Baltic;59,826769;23,17;NA;NA;855;Segerstrale_1969
-Gironde;Biskayskiy bay;45,55;-1,05;NA;NA;500;Bachelet_1986
-Ythan river estuary;North Sea;57,3;-1,9;NA;NA;687;Chambes_Milne_1975
-Aland Islands;Baltic;60,38;19,64;NA;NA;1360;Bonsdorf_et_al_1995
-Skallingen;Wadden Sea;55,52;8,29;NA;NA;241;Jensen_Jensen_1985
-between Den Helder and Delfzijl;Wadden Sea;53,41;5,8;NA;NA;113;Beukema_1976
+Tvarminne;Baltic;59,826769;23,17;855;855;855;Segerstrale_1969
+Gironde;Biskayskiy bay;45,55;-1,05;500;500;500;Bachelet_1986
+Ythan river estuary;North Sea;57,3;-1,9;687;687;687;Chambes_Milne_1975
+Aland Islands;Baltic;60,38;19,64;1360;1360;1360;Bonsdorf_et_al_1995
+Skallingen;Wadden Sea;55,52;8,29;241;241;241;Jensen_Jensen_1985
 Tromso;Norway Sea;69,64;18,87;10;3360;890;Oug_2001
-Skjellvika, Oydegard ;Norway Sea;63,01;8;NA;NA;121;Sneli_1969
-South-West Baltic Sea;Baltic;54,61;20,00;20;1000;650;Gusev_2010
+Skjellvika, Oydegard ;Norway Sea;63,01;8;121;121;121;Sneli_1969
+South-West Baltic Sea;Baltic;54,61;20;20;1000;650;Gusev_2010
+Pechora bay;Pechora Sea;68,59;55,22;654;654;654;Denisenko_et_al_2003
+Dolgaya bay, Solovki;White;65,06;35,75;NA;NA;1556;Khaitov_et_al_2007
+Kruglaya bay, Kartesh;White;66,34;33,64;NA;NA;545;Khaitov_et_al_2007
+Fukusovaya bay, Ryashkov;White;67,01;32,58;NA;NA;285;Khaitov_et_al_2007
+between Den Helder and Delfzijl;Wadden;52,93;4,83;NA;NA;113;Beukema_1976

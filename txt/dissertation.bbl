@@ -19,6 +19,32 @@
 
 \refsection{0}
   \sortlist{nyt}{nyt}
+    \entry{Beukema_et_al_2009}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=4af3bd59d042920708f6afefefe7376f}{Beukema}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c71fb1dd985a5ed33f0c6161cc71d6be}{Dekker}{D\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d6bb52e015f1adff2ca55f12a5c00acd}{Jansen}{J\bibinitperiod}{J.\:M.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=4af3bd59d042920708f6afefefe7376f}{Beukema}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c71fb1dd985a5ed33f0c6161cc71d6be}{Dekker}{D\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d6bb52e015f1adff2ca55f12a5c00acd}{Jansen}{J\bibinitperiod}{J.\:M.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{9f8e581cf6b44eb7952435b5afe7f0f5}
+      \strng{fullhash}{9f8e581cf6b44eb7952435b5afe7f0f5}
+      \field{sortinit}{B}
+      \field{sortinithash}{1a3a21dbed09540af12d49a0b14f4751}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Some like it cold: populations of the tellinid bivalve Macoma balthica (L.) suffer in various ways from a warming climate}
+      \field{abstract}{Because of its relatively low tolerance to elevated temperatures, Macoma balthica (L.) may be one of the first important marine species in temperate coastal areas to suffer from a warming climate. For the last few decades, the abundance of the species in the Dutch Wadden Sea has been seriously declining. At lower latitudes, the southern edge of its range recently shifted several 100s of km to the north. To understand changes in abundance related to high temperatures, we studied short-term population responses to warmer than average seasons using data from a long-term (> 35 yr) sampling program in the western Wadden Sea. The observed relationships included reduction of reproductive output and recruitment in years starting with mild winter–spring periods, reduction of adult survival in years with warm summers, reduction of annual migration in ~8 mo olds to more favourable areas in mild winters, reduction of growth rates in warmer than average growing seasons, and enhancement of seasonal weight loss in milder than average winters. We conclude that elevated temperatures negatively affect population dynamics of M. balthica in a number of ways, i.e. via recruitment or mortality as well as growth. These negative influences were observed already far below the upper lethal temperature of the species and in populations living ~1000 km poleward of the warm edge of the species’ range. The outcome of M. balthica’s energy balance appears to be decisive for their continued existence by effects not only on individual weights but also on mortality as well as reproduction.}
+      \field{journaltitle}{Marine Ecology Progress Series}
+      \field{title}{Some like it cold: populations of the tellinid bivalve Macoma balthica (L.) suffer in various ways from a warming climate}
+      \field{volume}{384}
+      \field{year}{2009}
+      \field{pages}{135\bibrangedash 145}
+      \keyw{Wadden Sea,Macoma balthica,динамика dynamic,изменение климата climat change,изменения массы weight changes,температура воды water temperature,температура temperature,смертность mortality,миграции migration,пополнение поселений recruitment}
+    \endentry
     \entry{ncf}{manual}{}
       \name{labelname}{1}{}{%
         {{uniquename=0,hash=18147402f0fe77ebd1a2800db2ebe8cb}{Bjornstad}{B\bibinitperiod}{Ottar\bibnamedelima N.}{O\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
@@ -68,6 +94,26 @@
       \field{pages}{119\bibrangedash 137}
       \keyw{Bivalvia,Population dynamics,Recruitment,White Sea,Macoma balthica,динамика,Белое море,Arctica islandica,Serripes,Mytilus edulis}
     \endentry
+    \entry{Gilbert_1978}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=0a68ea8669bd21ffea6f41907494555a}{Gilbert}{G\bibinitperiod}{M.\:A.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0a68ea8669bd21ffea6f41907494555a}{Gilbert}{G\bibinitperiod}{M.\:A.}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{0a68ea8669bd21ffea6f41907494555a}
+      \strng{fullhash}{0a68ea8669bd21ffea6f41907494555a}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labelyear}{1978}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Growth rate, longevity and aspects of reproductive cycle in Macoma balthica (Bivalvia)}
+      \field{journaltitle}{Nautilus}
+      \field{title}{Growth rate, longevity and aspects of reproductive cycle in Macoma balthica (Bivalvia)}
+      \field{volume}{92}
+      \field{year}{1978}
+      \field{pages}{21\bibrangedash 24}
+    \endentry
     \entry{Hammer_et_al_2001}{article}{}
       \name{labelname}{3}{}{%
         {{uniquename=0,hash=b9a6d93081f7ce1214604fa5076ee829}{Hammer}{H\bibinitperiod}{{Ø}}{Ø\bibinitperiod}{}{}{}{}}%
@@ -92,6 +138,97 @@
       \field{volume}{4}
       \field{year}{2001}
       \field{pages}{9}
+    \endentry
+    \entry{Hiddink_et_al_2002_predation_epifauna}{article}{}
+      \name{labelname}{4}{uniquelist=2}{%
+        {{uniquename=0,hash=c62ad1665e754809c0ee1747597cb47d}{Hiddink}{H\bibinitperiod}{J.\:G.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=369279932c236c84252855d30df8f328}{Marijnissen}{M\bibinitperiod}{S.\:A.\:E.}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1984796f6a5d2e84c9e07f94ed7c3d9b}{Troost}{T\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cf5623e4aab620ead9e3ae75661255eb}{Wolff}{W\bibinitperiod}{W.\:J.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{4}{uniquelist=2}{%
+        {{uniquename=0,hash=c62ad1665e754809c0ee1747597cb47d}{Hiddink}{H\bibinitperiod}{J.\:G.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=369279932c236c84252855d30df8f328}{Marijnissen}{M\bibinitperiod}{S.\:A.\:E.}{S\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1984796f6a5d2e84c9e07f94ed7c3d9b}{Troost}{T\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cf5623e4aab620ead9e3ae75661255eb}{Wolff}{W\bibinitperiod}{W.\:J.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{64a75d7dbb59e4194d2b4c982f219ff3}
+      \strng{fullhash}{e3c1e5e94bacb9f7c96bc77085088dd2}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Predation on 0-group and older year classes of the bivalve Macoma balthica: interaction of size selection and intertidal distribution of epibenthic predators}
+      \field{abstract}{The bivalve Macoma balthica is a common species in the Wadden Sea and North Sea. Juveniles temporarily use nurseries in the high intertidal. To explain this nursery use, predation pressure was examined for both juvenile and adult Macoma at low and high tidal flats. The study was carried out in the eastern Dutch Wadden Sea. Shrimps Crangon crangon, adult crabs Carcinus maenas, gobies Pomatoschistus and juvenile flatfish were more abundant and larger on low than on high tidal flats, but 0-group Carcinus was more abundant on the high tidal flats. Crangon and 0-group Carcinus stomachs frequently contained Macoma remains. These predators selectively preyed on small 0-group Macoma, both in the field and in laboratory experiments. The effect of predation by epibenthic animals and birds, on the low and high tidal flats, was examined in exclosure experiments (2 mm mesh). There was no effect of epibenthos exclosure on adult Macoma. For 0-group Macoma, densities were higher in exclosures than in the controls where predators had normal access. The density reduction by epibenthic predators was much larger in the low than in the high intertidal. We found no effect of bird predation on densities of 0- and 1+group Macoma. Thus, 0-group Macoma is under high predation pressure by epibenthos in the low intertidal, especially by shrimps, while they are relatively safe in the high intertidal. However, most of the shellfish outgrow their epibenthic predators during their first summer. Therefore, it becomes safe for the bivalves to redistribute to locations where epibenthic predators are abundant, during their first winter. On the other hand, it did not become clear from this study why many of the larger Macoma leave the high intertidal. Concluding, the nursery use of Macoma-spat in the high intertidal is probably, at least partly, an adaptation to avoid epibenthic predation.}
+      \field{issn}{0022-0981}
+      \field{journaltitle}{Journal of Experimental Marine Biology and Ecology}
+      \field{number}{2}
+      \field{title}{Predation on 0-group and older year classes of the bivalve Macoma balthica: interaction of size selection and intertidal distribution of epibenthic predators}
+      \field{volume}{269}
+      \field{year}{2002}
+      \field{pages}{223\bibrangedash 248}
+      \verb{doi}
+      \verb DOI: 10.1016/S0022-0981(02)00002-3
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6T8F-44XCDX4-1/2/685cb120b1f6fc6c240e50d47f2df79b
+      \endverb
+      \keyw{Caging studies}
+    \endentry
+    \entry{Hiddink_et_al_2002_predation_infauna}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=c62ad1665e754809c0ee1747597cb47d}{Hiddink}{H\bibinitperiod}{J.\:G.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cc1b3d269dad530f97a731a7d29b36ae}{{ter\bibnamedelimb Hofstede}}{t\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cf5623e4aab620ead9e3ae75661255eb}{Wolff}{W\bibinitperiod}{W.\:J.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=c62ad1665e754809c0ee1747597cb47d}{Hiddink}{H\bibinitperiod}{J.\:G.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cc1b3d269dad530f97a731a7d29b36ae}{{ter\bibnamedelimb Hofstede}}{t\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cf5623e4aab620ead9e3ae75661255eb}{Wolff}{W\bibinitperiod}{W.\:J.}{W\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{dfdac0be302085ac63c56ca7237edaa2}
+      \strng{fullhash}{dfdac0be302085ac63c56ca7237edaa2}
+      \field{sortinit}{H}
+      \field{sortinithash}{95b2cb08933fe649b7e9f8beee2132b4}
+      \field{labelyear}{2002}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Predation of intertidal infauna on juveniles of the bivalve Macoma balthica}
+      \field{abstract}{Juveniles of the bivalve Macoma balthica live on tidal flats in the Wadden Sea. This study examined the interaction of Macoma with the infaunal polychaetes Arenicola marina and Nereis diversicolor and the gastropod Retusa obtusa. The distribution of M. balthica spat on the flats, shortly after settlement in April, showed a positive correlation with the Arenicola distribution and a negative correlation with Nereis distribution. There were no locations where Macoma spat and Retusa occurred together. In August, Macoma spat had grown too large for predation by intertidal infauna. Small individuals of Macoma spat were found in stomachs of Arenicola (0.14 worm-1) and Nereis (0.05 worm-1). Laboratory experiments showed that Nereis and Retusa could reduce Macoma spat abundance, both in the absence and presence of sediment and alternative prey. Arenicola reduced the abundance of small Macoma (<1 mm) in sediment without, but not with, alternative prey. In field experiments, we manipulated the density of Arenicola in 0.25-1 m2 plots and of Nereis in 0.03 m2 cages and examined the effect on Macoma density several weeks later. We found a significant negative relation between densities of polychaetes and Macoma spat for both polychaete species in these experimental plots. Peculiarly, we found a significant positive relation between manipulated Nereis density and adult Macoma density in the cages; we cannot explain this. Consumption rates, calculated both from stomach contents and from field experiments, were 45 to 102 Macoma m-2 d-1 for Arenicola and 5 to 116 Macoma m-2 d-1 for Nereis. These values are higher than recorded consumption rates by epibenthic predators in the same area. Nevertheless, between-year differences in year-class strength could not be explained by differential abundance of these polychaetes. In conclusion, Arenicola and Nereis had a negative effect on the abundance of Macoma <1.5 mm, which was at least partly caused by direct consumption. Retusa obtusa can eat juvenile Macoma, but probably did not so in the study area, because there were no locations where Retusa and Macoma spat occurred together in the period that Macoma was <2 mm.}
+      \field{issn}{1385-1101}
+      \field{journaltitle}{Journal of Sea Research}
+      \field{number}{2}
+      \field{title}{Predation of intertidal infauna on juveniles of the bivalve Macoma balthica}
+      \field{volume}{47}
+      \field{year}{2002}
+      \field{pages}{141\bibrangedash 159}
+      \verb{doi}
+      \verb DOI: 10.1016/S1385-1101(02)00107-7
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/B6VHH-4599BD6-1/2/0d2bf605960aa66b049b5392541716a3
+      \endverb
+      \keyw{Macoma balthica}
+    \endentry
+    \entry{Lavoie_1970}{thesis}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=346dc5dc6155489442a265f39e21ea34}{Lavoie}{L\bibinitperiod}{Ren{é}\bibnamedelima E}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=346dc5dc6155489442a265f39e21ea34}{Lavoie}{L\bibinitperiod}{Ren{é}\bibnamedelima E}{R\bibinitperiod\bibinitdelim E\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Université Laval, Québec}%
+      }
+      \strng{namehash}{346dc5dc6155489442a265f39e21ea34}
+      \strng{fullhash}{346dc5dc6155489442a265f39e21ea34}
+      \field{sortinit}{L}
+      \field{sortinithash}{c41a2b5886eeae464e75d1a9df4cd13e}
+      \field{labelyear}{1970}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Contribution {à} la biologie et {à} l'{é}cologie de Macoma balthica L. de l'estuaire du Saint-Laurent}
+      \field{title}{Contribution {à} la biologie et {à} l'{é}cologie de Macoma balthica L. de l'estuaire du Saint-Laurent}
+      \field{type}{phdthesis}
+      \field{year}{1970}
     \endentry
     \entry{Nikula_et_al_2007}{article}{}
       \name{labelname}{3}{}{%
@@ -147,6 +284,27 @@
       \verb http://www.R-project.org/
       \endverb
       \keyw{R}
+    \endentry
+    \entry{Segerstrale_1960}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=1ae410bef12fb2705ed5c70de8348032}{Segerstr{å}le}{S\bibinitperiod}{S.\:G.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=1ae410bef12fb2705ed5c70de8348032}{Segerstr{å}le}{S\bibinitperiod}{S.\:G.}{S\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1ae410bef12fb2705ed5c70de8348032}
+      \strng{fullhash}{1ae410bef12fb2705ed5c70de8348032}
+      \field{sortinit}{S}
+      \field{sortinithash}{4125bb4c3a0eb3eaee3ea6da32eb70c8}
+      \field{labelyear}{1960}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Investigation on baltic populations of the bivalve Macoma balthica (L.)}
+      \field{journaltitle}{Soc. Sci. Fenn. Comment. Biol.}
+      \field{number}{2}
+      \field{title}{Investigation on baltic populations of the bivalve Macoma balthica (L.)}
+      \field{volume}{23}
+      \field{year}{1960}
+      \field{pages}{3\bibrangedash 72}
     \endentry
     \entry{Thrush_et_al_1989}{article}{}
       \name{labelname}{3}{}{%
@@ -358,6 +516,34 @@
       \field{year}{1960}
       \field{pages}{3\bibrangedash 14}
     \endentry
+    \entry{Bianki_et_al_2003}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=fcb65812f4b094ad4639d3600bc04f92}{Бианки}{Б\bibinitperiod}{В.\:В.}{В\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ef0703de2a751af77721865b475f26f6}{Бойко}{Б\bibinitperiod}{Н.\:С.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2786aa7a2cfc2ad0f4ec374e333323b3}{Хайтов}{Х\bibinitperiod}{В.\:М.}{В\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=fcb65812f4b094ad4639d3600bc04f92}{Бианки}{Б\bibinitperiod}{В.\:В.}{В\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ef0703de2a751af77721865b475f26f6}{Бойко}{Б\bibinitperiod}{Н.\:С.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=2786aa7a2cfc2ad0f4ec374e333323b3}{Хайтов}{Х\bibinitperiod}{В.\:М.}{В\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Русский орнитологический журнал}%
+      }
+      \strng{namehash}{cc6ffb4775082008297211d2103b4354}
+      \strng{fullhash}{cc6ffb4775082008297211d2103b4354}
+      \field{sortinit}{Б}
+      \field{sortinithash}{8f918f8686258589a227d5aaf265a9bb}
+      \field{labelyear}{2003}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Питание гоголей Bucephala clangula в Кандалакшском заливе}
+      \field{journaltitle}{Русский орнитологический журнал}
+      \field{number}{225}
+      \field{title}{Питание гоголей Bucephala clangula в Кандалакшском заливе}
+      \field{volume}{12}
+      \field{year}{2003}
+      \field{pages}{615\bibrangedash 629}
+    \endentry
     \entry{Genelt_Dalnezeleneckaya_2008}{inproceedings}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=4b1baa9ec95c078737d8b0778ab3239a}{Генельт-Яновский}{Г\bibinithyphendelim Я\bibinitperiod}{Евгений\bibnamedelima Александрович}{Е\bibinitperiod\bibinitdelim А\bibinitperiod}{}{}{}{}}%
@@ -383,18 +569,18 @@
       \name{labelname}{3}{}{%
         {{uniquename=0,hash=ebe4b22b13aaadffdf9e0a4cad32e2cc}{Гольцев}{Г\bibinitperiod}{Н.\:А.}{Н\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=e5cc913e665021d9a7edc30c9a5ba123}{Полозов}{П\bibinitperiod}{Ю.\:С.}{Ю\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=0135ee0b5d4c1f34473895ff5d54c1ed}{Полоскин}{П\bibinitperiod}{А.\:В.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d3abe55d6cb01952f1b7cbae6a3e3e3d}{Полоскин}{П\bibinitperiod}{Алексей\bibnamedelima Валерьевич}{А\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{3}{}{%
         {{uniquename=0,hash=ebe4b22b13aaadffdf9e0a4cad32e2cc}{Гольцев}{Г\bibinitperiod}{Н.\:А.}{Н\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=e5cc913e665021d9a7edc30c9a5ba123}{Полозов}{П\bibinitperiod}{Ю.\:С.}{Ю\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=0135ee0b5d4c1f34473895ff5d54c1ed}{Полоскин}{П\bibinitperiod}{А.\:В.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d3abe55d6cb01952f1b7cbae6a3e3e3d}{Полоскин}{П\bibinitperiod}{Алексей\bibnamedelima Валерьевич}{А\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
       }
       \list{language}{1}{%
         {russian}%
       }
-      \strng{namehash}{2fb7f319678a14a53ab0a398108d8858}
-      \strng{fullhash}{2fb7f319678a14a53ab0a398108d8858}
+      \strng{namehash}{60564e282f3a403f079066fcffd9cc2e}
+      \strng{fullhash}{60564e282f3a403f079066fcffd9cc2e}
       \field{sortinit}{Г}
       \field{sortinithash}{6a6be5d07cf3b5b7cff33b504a4e3f68}
       \field{labelyear}{1997}
@@ -477,35 +663,12 @@
       \field{pages}{95\bibrangedash 155}
       \keyw{Bivalvia,general zoology}
     \endentry
-    \entry{Maximovich_1985}{inproceedings}{}
-      \name{labelname}{1}{}{%
-        {{uniquename=1,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{1}{}{%
-        {{uniquename=1,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Л}%
-      }
-      \strng{namehash}{bae04da35928c4680e5606548551274a}
-      \strng{fullhash}{bae04da35928c4680e5606548551274a}
-      \field{sortinit}{М}
-      \field{sortinithash}{0d59d2d67dac18e4a6b75e9f56dff809}
-      \field{labelyear}{1985}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Особенности экологии и репродуктивный цикл Macoma balthica L. в губе Чупа}
-      \field{booktitle}{Биоценозы губы Чупа Белого моря и их сезонная динамика. Исследования фауны морей}
-      \field{title}{Особенности экологии и репродуктивный цикл Macoma balthica L. в губе Чупа}
-      \field{volume}{31 (39)}
-      \field{year}{1985}
-      \field{pages}{230\bibrangedash 243}
-    \endentry
     \entry{Maximovich_1989}{article}{}
       \name{labelname}{1}{}{%
-        {{uniquename=1,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{uniquename=1,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
       }
       \strng{namehash}{bae04da35928c4680e5606548551274a}
       \strng{fullhash}{bae04da35928c4680e5606548551274a}
@@ -522,20 +685,20 @@
     \endentry
     \entry{Maximovich_et_al_1991}{article}{}
       \name{labelname}{3}{}{%
-        {{uniquename=1,hash=51259dbf706919097b1205a800057c3a}{Максимович}{М\bibinitperiod}{Н.В.}{Н\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=3e68eea5915b1a63f402aafc188955ea}{Герасимова}{Г\bibinitperiod}{А.В.}{А\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=8268824d10e3d69339d630a4b211bc24}{Кунина}{К\bibinitperiod}{Т.А.}{Т\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4e831fee48437c9521efb6e07aa5ea87}{Герасимова}{Г\bibinitperiod}{А.:\В{}.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=22591eb32f22f6711ebe8298dd0ba84d}{Кунина}{К\bibinitperiod}{Т.\:А.}{Т\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{3}{}{%
-        {{uniquename=1,hash=51259dbf706919097b1205a800057c3a}{Максимович}{М\bibinitperiod}{Н.В.}{Н\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=3e68eea5915b1a63f402aafc188955ea}{Герасимова}{Г\bibinitperiod}{А.В.}{А\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=8268824d10e3d69339d630a4b211bc24}{Кунина}{К\bibinitperiod}{Т.А.}{Т\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4e831fee48437c9521efb6e07aa5ea87}{Герасимова}{Г\bibinitperiod}{А.:\В{}.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=22591eb32f22f6711ebe8298dd0ba84d}{Кунина}{К\bibinitperiod}{Т.\:А.}{Т\bibinitperiod}{}{}{}{}}%
       }
       \list{language}{1}{%
         {russian}%
       }
-      \strng{namehash}{4107e2cbf6e53e2d3c9878e00d9c9dba}
-      \strng{fullhash}{4107e2cbf6e53e2d3c9878e00d9c9dba}
+      \strng{namehash}{3f879b3c3cd07e6fdf239f1cf8f0ba5e}
+      \strng{fullhash}{3f879b3c3cd07e6fdf239f1cf8f0ba5e}
       \field{sortinit}{М}
       \field{sortinithash}{0d59d2d67dac18e4a6b75e9f56dff809}
       \field{labelyear}{1991}
@@ -548,13 +711,42 @@
       \field{pages}{23\bibrangedash 31}
       \keyw{Macoma,Macoma balthica,Белое море,губа Чупа,численность,биомасса,динамика,размерная структура}
     \endentry
+    \entry{Maximovich_et_al_1993}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4e831fee48437c9521efb6e07aa5ea87}{Герасимова}{Г\bibinitperiod}{А.:\В{}.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=22591eb32f22f6711ebe8298dd0ba84d}{Кунина}{К\bibinitperiod}{Т.\:А.}{Т\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4e831fee48437c9521efb6e07aa5ea87}{Герасимова}{Г\bibinitperiod}{А.:\В{}.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=22591eb32f22f6711ebe8298dd0ba84d}{Кунина}{К\bibinitperiod}{Т.\:А.}{Т\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \strng{namehash}{3f879b3c3cd07e6fdf239f1cf8f0ba5e}
+      \strng{fullhash}{3f879b3c3cd07e6fdf239f1cf8f0ba5e}
+      \field{sortinit}{М}
+      \field{sortinithash}{0d59d2d67dac18e4a6b75e9f56dff809}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Продукционные свойства поселений Macoma balthica L. в губе Чупа (Белое море). II. Продукция}
+      \field{journaltitle}{Вестник СПбГУ}
+      \field{number}{3}
+      \field{title}{Продукционные свойства поселений Macoma balthica L. в губе Чупа (Белое море). II. Продукция}
+      \field{volume}{1}
+      \field{year}{1993}
+      \field{pages}{3\bibrangedash 10}
+      \keyw{Macoma,Bivalvia,Macoma balthica,,Белое море,,продукция production}
+    \endentry
     \entry{Maximovich_Kunina_1982}{inbook}{}
       \name{labelname}{2}{}{%
-        {{uniquename=1,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=22591eb32f22f6711ebe8298dd0ba84d}{Кунина}{К\bibinitperiod}{Т.\:А.}{Т\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{2}{}{%
-        {{uniquename=1,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=bae04da35928c4680e5606548551274a}{Максимович}{М\bibinitperiod}{Н.\:В.}{Н\bibinitperiod}{}{}{}{}}%
         {{uniquename=0,hash=22591eb32f22f6711ebe8298dd0ba84d}{Кунина}{К\bibinitperiod}{Т.\:А.}{Т\bibinitperiod}{}{}{}{}}%
       }
       \list{location}{1}{%
@@ -575,35 +767,6 @@
       \field{title}{Биология шельфовых зон мирового океана, тезисы докладов}
       \field{year}{1982}
       \field{pages}{148\bibrangedash 150}
-    \endentry
-    \entry{Maximovich_et_al_1993}{article}{}
-      \name{labelname}{3}{}{%
-        {{uniquename=1,hash=630b4d88f792263c1f230ed36953f2d5}{Максимович}{М\bibinitperiod}{Николай\bibnamedelima Владимирович}{Н\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=6e1bb3fba5e5cc9829a05f2450acaccc}{А.В.}{А\bibinitperiod}{Герасимоваб}{Г\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=8268824d10e3d69339d630a4b211bc24}{Кунина}{К\bibinitperiod}{Т.А.}{Т\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{3}{}{%
-        {{uniquename=1,hash=630b4d88f792263c1f230ed36953f2d5}{Максимович}{М\bibinitperiod}{Николай\bibnamedelima Владимирович}{Н\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=6e1bb3fba5e5cc9829a05f2450acaccc}{А.В.}{А\bibinitperiod}{Герасимоваб}{Г\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=8268824d10e3d69339d630a4b211bc24}{Кунина}{К\bibinitperiod}{Т.А.}{Т\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {russian}%
-      }
-      \strng{namehash}{71bd619c6f45d4e8e31479effe4fb75a}
-      \strng{fullhash}{71bd619c6f45d4e8e31479effe4fb75a}
-      \field{sortinit}{М}
-      \field{sortinithash}{0d59d2d67dac18e4a6b75e9f56dff809}
-      \field{labelyear}{1993}
-      \field{datelabelsource}{}
-      \field{labeltitle}{Продукционные свойства поселений Macoma balthica L. в губе Чупа (Белое море). II. Продукция}
-      \field{journaltitle}{Вестник СПбГУ}
-      \field{number}{3}
-      \field{title}{Продукционные свойства поселений Macoma balthica L. в губе Чупа (Белое море). II. Продукция}
-      \field{volume}{1}
-      \field{year}{1993}
-      \field{pages}{3\bibrangedash 10}
-      \keyw{Macoma,Bivalvia,Macoma balthica,,Белое море,,продукция production}
     \endentry
     \entry{Nazarova_2003}{article}{}
       \name{labelname}{1}{}{%
@@ -631,11 +794,11 @@
     \entry{Nazarova_Poloskin_2005}{inproceedings}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=bb09b3b23ae41d0f66488d78a1f1798d}{Назарова}{Н\bibinitperiod}{София\bibnamedelima Александровна}{С\bibinitperiod\bibinitdelim А\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=d3abe55d6cb01952f1b7cbae6a3e3e3d}{Полоскин}{П\bibinitperiod}{Алексей\bibnamedelima Валерьевич}{А\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d3abe55d6cb01952f1b7cbae6a3e3e3d}{Полоскин}{П\bibinitperiod}{Алексей\bibnamedelima Валерьевич}{А\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{2}{}{%
         {{uniquename=0,hash=bb09b3b23ae41d0f66488d78a1f1798d}{Назарова}{Н\bibinitperiod}{София\bibnamedelima Александровна}{С\bibinitperiod\bibinitdelim А\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=d3abe55d6cb01952f1b7cbae6a3e3e3d}{Полоскин}{П\bibinitperiod}{Алексей\bibnamedelima Валерьевич}{А\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d3abe55d6cb01952f1b7cbae6a3e3e3d}{Полоскин}{П\bibinitperiod}{Алексей\bibnamedelima Валерьевич}{А\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
       }
       \list{language}{1}{%
         {russian}%
@@ -703,16 +866,16 @@
     \endentry
     \entry{Poloskin_1996}{thesis}{}
       \name{labelname}{1}{}{%
-        {{uniquename=1,hash=bdcca180da6b7a43e547ab57cca57463}{Полоскин}{П\bibinitperiod}{А.В.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d3abe55d6cb01952f1b7cbae6a3e3e3d}{Полоскин}{П\bibinitperiod}{Алексей\bibnamedelima Валерьевич}{А\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
       }
       \name{author}{1}{}{%
-        {{uniquename=1,hash=bdcca180da6b7a43e547ab57cca57463}{Полоскин}{П\bibinitperiod}{А.В.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=d3abe55d6cb01952f1b7cbae6a3e3e3d}{Полоскин}{П\bibinitperiod}{Алексей\bibnamedelima Валерьевич}{А\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
       }
       \list{institution}{1}{%
         {ЛГУ}%
       }
-      \strng{namehash}{bdcca180da6b7a43e547ab57cca57463}
-      \strng{fullhash}{bdcca180da6b7a43e547ab57cca57463}
+      \strng{namehash}{d3abe55d6cb01952f1b7cbae6a3e3e3d}
+      \strng{fullhash}{d3abe55d6cb01952f1b7cbae6a3e3e3d}
       \field{sortinit}{П}
       \field{sortinithash}{dd49c1a2cbe3228d2a16ae6100f0784f}
       \field{labelyear}{1996}
@@ -773,10 +936,6 @@
       \field{pages}{129\bibrangedash 141}
     \endentry
   \endsortlist
-  \missing{Bianki_et_al_2003}
-  \missing{Lavoie_1970}
-  \missing{Segerstrale_1960}
-  \missing{Gilbert_1978}
 \endrefsection
 \endinput
 
