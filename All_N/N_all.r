@@ -76,6 +76,19 @@ for (i in 1:length(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T]))){
 dev.off()
 embedFonts("N2_area_Barents.pdf") #встройка шрифтов в файл
 
+#тот же график с раскраской отдельных регионов
+pdf(file="N2_area_Barents_color.pdf", family="NimbusSan")
+boxplot(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T] ~ abbreviate(ishodnik$area[ishodnik$sea=="Barents",drop=T]),  
+        names=(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T])), ylim=c(0,max(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T])), col=c(2,2,3,3,3,3,4,4,4,4,4,4))
+#подпишем на график медианы
+for (i in 1:length(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T]))){
+  text(x=seq(1:12)[i], y=3900,
+       labels=round(as.vector(tapply(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T], 
+                                     INDEX=ishodnik$area[ishodnik$sea=="Barents",drop=T], FUN=median)))[i])
+}
+dev.off()
+embedFonts("N2_area_Barents_color.pdf") #встройка шрифтов в файл
+
 
 #tapply(ishodnik$N2.indd.sqmeter, INDEX=ishodnik$area, FUN=median)
 

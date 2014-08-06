@@ -60,6 +60,11 @@ symbols(Pala.08$X, Pala.08$Y, sqrt(Pala.08$N_Macoma_balthica)/ pi, inches=0.2, f
 dev.off()
 embedFonts(paste("Pala_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл
 
+pdf(file="Pala_N_cockle_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Pala.08$X, Pala.08$Y, sqrt(Pala.08$N_Cerastoderma_edule)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Pala_N_cockle_bubbles.pdf")) #встройка шрифтов в файл
+
 
 ## Пала осень 2008 корреляции маком разного возраста
 Pala.macoma.ages<-read.table("Pala_Macoma_ages.csv", header=T, sep=";", dec=",")
@@ -83,6 +88,11 @@ symbols(Yarn.07$X, Yarn.07$Y, sqrt(Yarn.07$N_Macoma_balthica)/ pi, inches=0.2, f
 dev.off()
 embedFonts(paste("Yarnyshnaya_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл
 
+pdf(file="Yarnyshnaya_N_cockle_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Yarn.07$X, Yarn.07$Y, sqrt(Yarn.07$N_Cerastoderma_edule)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Yarnyshnaya_N_cockle_bubbles.pdf")) #встройка шрифтов в файл
+
 # расположение проб на полигоне
 #bubbles
 pdf(file="Yarnyshnaya_samples.pdf", family="NimbusSan") # указываем шрифт подпией
@@ -104,6 +114,11 @@ symbols(Plyazh.07$X, Plyazh.07$Y, rep(1,length(Plyazh.07$X)), inches=0.07, fg="w
 abline(h=c(250,500), v=c(300,600,900))
 dev.off()
 embedFonts(paste("Plyazh07_samples.pdf")) #встройка шрифтов в файл
+
+pdf(file="Plyzh07_N_cockle_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Plyazh.07$X, Plyazh.07$Y, sqrt(Plyazh.07$N_Cerastoderma_edule)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Plyzh07_N_cockle_bubbles.pdf")) #встройка шрифтов в файл
 
 ##Дальний Пляж 2008 квадраты 1+2
 Plyazh.0812<-read.table(file="Dalnezeleneckaya_kv12_2008.csv", header=T, sep=";", dec=",")

@@ -1,37 +1,55 @@
-site;sea;Ndec;Edec;Nmin;Nmax;Nmean;source
-Suhaya salma Keret island;White;66,31;33,65;992;1165;1096;author data
-Klyushiha bay Keret island;White;66,31;33,78;362;1136;647,3;author data
-Podpahta ;White;66,3;33,62;372;688;530;author data
-Lisya bay;White;66,31;33,57;1006;2832;1728;author data
-South bay Ryashkov island;White;67,01;32,57;142;1913;1082;author data
-West Ryashkov salma Ryashkov island;White;67,01;32,54;220;8530;1811;author data
-Lomnishniy island;White;66,98;32,62;378;1530;712,5;author data
-Goreliy island Luvenga;White;67,09;32,68;13;2740;1079;author data
-Estuary Luvenga river;White;67,1;32,69;55;3330;1449;author data
-razrez2;White;67,1;32,71;94;7240;1504;author data
-Ura bay;Barents;69,32;32,82;1267;1267;1267;author data
-Pechenga bay;Barents;69,58;31,27;767;767;767;author data
-Cape Abram;Barents;68,98;33,03;540;3350;1898;author data
-Pala bay;Barents;69,19;33,37;790;1644;1058;author data
-Gavrilovo bay;Barents;69,17;35,86;24;138;81;author data
-Yarnyshnaya bay;Barents;69,09;36,05;70;414;281,3;author data
-Dalnezeleneckaya bay;Barents;69,11;36,1;30;72;44,78;author data
-Shelpino bay;Barents;69,1;36,21;36;54;45;author data
-Porchnikha bay;Barents;69,08;36,25;60;87;73,5;author data
-Ivanovskaya bay;Barents;68,29;38,71;1208;1208;1208;author data
-Seldyanaya inlet;White;66,34;33,62;42;2089;669;Varfolomeeva_Naumov_2013
-Medvezhya inlet;White;66,35;33,6;53;3300;618;Varfolomeeva_Naumov_2013
-Aland Islands;Baltic;60,17;20,53;600;1200;850;Bostrom_Bonsdorf_2000
-Tvarminne;Baltic;59,826769;23,17;855;855;855;Segerstrale_1969
-Gironde;Biskayskiy bay;45,55;-1,05;500;500;500;Bachelet_1986
-Ythan river estuary;North Sea;57,3;-1,9;687;687;687;Chambes_Milne_1975
-Aland Islands;Baltic;60,38;19,64;1360;1360;1360;Bonsdorf_et_al_1995
-Skallingen;Wadden Sea;55,52;8,29;241;241;241;Jensen_Jensen_1985
-Tromso;Norway Sea;69,64;18,87;10;3360;890;Oug_2001
-Skjellvika, Oydegard ;Norway Sea;63,01;8;121;121;121;Sneli_1969
-South-West Baltic Sea;Baltic;54,61;20;20;1000;650;Gusev_2010
-Pechora bay;Pechora Sea;68,59;55,22;654;654;654;Denisenko_et_al_2003
-Dolgaya bay, Solovki;White;65,06;35,75;NA;NA;1556;Khaitov_et_al_2007
-Kruglaya bay, Kartesh;White;66,34;33,64;NA;NA;545;Khaitov_et_al_2007
-Fukusovaya bay, Ryashkov;White;67,01;32,58;NA;NA;285;Khaitov_et_al_2007
-between Den Helder and Delfzijl;Wadden;52,93;4,83;NA;NA;113;Beukema_1976
+site;sea;Ndec;Edec;Nmin;Nmax;Nmean;Bmean;source;region
+Suhaya salma Keret island;White;66,31;33,65;992;1165;1096;6,2;author data;Chupa
+Klyushiha bay Keret island;White;66,31;33,78;362;1136;647,3;1,1;author data;Chupa
+Podpahta ;White;66,30;33,62;372;688;530;1,8;author data;Chupa
+Lisya bay;White;66,31;33,57;1006;2832;1728;1,9;author data;Chupa
+South bay Ryashkov island;White;67,01;32,57;142;1913;1082;20,42;author data;North_arch
+West Ryashkov salma Ryashkov island;White;67,01;32,54;220;8530;1811;106,67;author data;North_arch
+Lomnishniy island;White;66,98;32,62;378;1530;712,5;25,03;author data;North_arch
+Goreliy island Luvenga;White;67,09;32,68;13;2740;1079;68,83;author data;Luvenga
+Estuary Luvenga river;White;67,10;32,69;55;3330;1449;81,49;author data;Luvenga
+razrez2;White;67,10;32,71;94;7240;1504;NA;author data;Luvenga
+Ura bay;Barents;69,32;32,82;1267;1267;1267;NA;author data;Ura
+Pechenga bay;Barents;69,58;31,27;767;767;767;NA;author data;Pechenga
+Cape Abram;Barents;68,98;33,03;540;3350;1898;197;author data;Kola_bay
+Nagornoe;Barents;68,9;33,06;390;390;390;NA;author data;Kola_bay
+Retinskoe;Barents;69,11;33,38;660;660;660;NA;author data;Kola_bay
+Pala bay;Barents;69,19;33,37;790;1644;1058;104;author data;Kola_bay
+Gavrilovo bay;Barents;69,17;35,86;24;138;81;54,5;author data;West_Murman
+Yarnyshnaya bay;Barents;69,09;36,05;70;414;281,3;57,7;author data;a_Yarnyshnaya
+Dalnezeleneckaya bay;Barents;69,11;36,10;30;72;44,78;24,6;author data;West_Murman
+Shelpino bay;Barents;69,10;36,21;36;54;45;19,5;author data;West_Murman
+Porchnikha bay;Barents;69,08;36,25;60;87;73,5;27;author data;West_Murman
+Ivanovskaya bay;Barents;68,29;38,71;1208;1208;1208;75;author data;Ivanovka
+Seldyanaya inlet;White;66,34;33,62;42;2089;669;20,25;Varfolomeeva_Naumov_2013;Chupa
+Medvezhya inlet;White;66,35;33,60;53;3300;618;41,96;Varfolomeeva_Naumov_2013;Chupa
+Podvoloche bay;White;66,52;33,20;120;1240;680;NA;Semenova_1974;WSBS_MSU
+Lobanikha bay Velikiy island;White;66,56;33,20;20;810;415;NA;Semenova_1974;WSBS_MSU
+Pekkelinskaya bay;White;66,59;32,96;43;980;512;NA;Semenova_1974;WSBS_MSU
+WSBS MSU;White;66,55;33,10;80;2760;1420;NA;Semenova_1974;WSBS_MSU
+Ermolinskaya bay;White;66,55;33,05;75;400;238;NA;Semenova_1974;WSBS_MSU
+Aland Islands;Baltic;60,17;20,53;600;1200;850;NA;Bostrom_Bonsdorf_2000;Aland Islands
+Tvarminne;Baltic;59,826769;23,17;NA;NA;855;NA;Segerstrale_1969;Tvarminne
+Gironde;Biskayskiy bay;45,55;-1,05;NA;NA;500;NA;Bachelet_1986;Gironde
+Ythan river estuary;North;57,30;-1,90;NA;NA;687;NA;Chambes_Milne_1975;Ythan river estuary
+Aland Islands;Baltic;60,38;19,64;NA;NA;1360;230;Bonsdorf_et_al_1995;Aland Islands
+Skallingen;Wadden;55,52;8,29;NA;NA;241;NA;Jensen_Jensen_1985;Skallingen
+Tromso;Norway;69,64;18,87;10;3360;890;NA;Oug_2001;Tromso
+Skjellvika, Oydegard ;Norway;63,01;8,00;NA;NA;121;NA;Sneli_1969;Skjellvika, Oydegard 
+South-West Baltic Sea;Baltic;54,61;20,00;20;1000;650;80;Gusev_2010;South-West Baltic Sea
+Pechora bay;Pechora bay;68,59;55,22;NA;NA;654;267,84;Denisenko_et_al_2003;Pechora bay
+Dolgaya bay, Solovki;White;65,06;35,75;NA;NA;1556;NA;Khaitov_et_al_2007;Dolgaya bay, Solovki
+Kruglaya bay, Kartesh;White;66,34;33,64;NA;NA;545;NA;Khaitov_et_al_2007;Chupa
+Fukusovaya bay, Ryashkov;White;67,01;32,58;NA;NA;285;NA;Khaitov_et_al_2007;North_arch
+between Den Helder and Delfzijl;Wadden;52,93;4,83;NA;NA;113;NA;Beukema_1976;between Den Helder and Delfzijl
+Ko:nigshafen of Sylt ;Wadden;55,04;8,40;5;265;81;NA;Reise_et_al_1994;Konigshafen of Sylt 
+Ho Bay;North;55,49;8,40;NA;NA;254;NA;Madsen_Jensen_1987;Ho Bay
+Balgzand;Wadden;52,93;4,83;NA;NA;NA;NA;Beukema_1979;Balgzand
+Friesland ;Wadden;53,42;6,07;NA;300;250;NA;Zwarts_Wanink_1993;Friesland 
+Lakselvvatn;Norwegian;65,91;13,1;NA;142;77;NA;Jensen_et_al_1985;Lakselvvatn
+Wash;North;52,85;0,42;47,619047619;1666,6666666667;693,4523809524;NA;Reading_1979;Wash
+Tvarminne;Baltic;59,83;23,17;62;1084;321;42,2;Aschan_1988;Tvarminne
+Tvarminne;Baltic;59,826769;23,17;353;1078;715;NA;Segerstrale_1933b by Laine_et_al_2013;Tvarminne
+Tvarminne;Baltic;59,826769;23,17;190;990;590;NA;Laine_et_al_2013;Tvarminne
+Finskiy Gulf: Koporskaya, Luzhskaya bays;Baltic;59,71;28,31;NA;NA;NA;43,2;Maximov_et_al_2009;Finskiy_gulf
+Kaliningrad bay;Baltic;54,61;20,00;NA;NA;460;40,85;Gusev_et_al_2013;South-West Baltic Sea

@@ -349,3 +349,16 @@ for (i in 1:(ncol(N.1year.df)-1)) {
 }
 write.table(N.1year.mantel.statistic, file="N_1year_mantel_statistic.csv", sep=";", dec=",")
 write.table(N.1year.mantel.signif, file="N_1_year_mantel_signif.csv", sep=";", dec=",")
+
+
+#зависимость от расстояний
+#Считаем сходство с матрицей расстояний
+#####
+
+#читаем матрицу расстояний
+distance_N1_km<-read.table("coordinates_N_1year.csv", sep=";", dec=",", header =T)
+rownames(distance_N1_km)<-distance_N1_km[,1]
+
+
+# считаем мантеля между матрицей расстояний и корреляциями динамики
+mantel(xdis=distance_N1_km, N1.mantel.statistic, na.rm=T)

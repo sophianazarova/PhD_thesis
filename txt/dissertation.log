@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.28)  26 JUL 2014 23:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.6.28)  30 JUL 2014 23:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1532,14 +1532,14 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 2.
 
-<../maps/map_Kandalaksha.pdf, id=297, 589.11928pt x 597.75322pt>
+<../maps/map_Kandalaksha.pdf, id=296, 589.11928pt x 597.75322pt>
 File: ../maps/map_Kandalaksha.pdf Graphic file (type pdf)
 
 <use ../maps/map_Kandalaksha.pdf>
 Package pdftex.def Info: ../maps/map_Kandalaksha.pdf used on input line 7.
 (pdftex.def)             Requested size: 483.69687pt x 490.79927pt.
 
-<../maps/map_Chupa.pdf, id=300, 639.11815pt x 232.95831pt>
+<../maps/map_Chupa.pdf, id=299, 639.11815pt x 232.95831pt>
 File: ../maps/map_Chupa.pdf Graphic file (type pdf)
 
 <use ../maps/map_Chupa.pdf>
@@ -1631,62 +1631,62 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
 
-Underfull \hbox (badness 2359) in paragraph at lines 155--155
+Underfull \hbox (badness 2359) in paragraph at lines 157--157
 []|\T2A/cmr/m/n/12 годы на-блю-де-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []|\T2A/cmr/m/n/12 обследованные
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 \T2A/cmr/m/n/12 го-ри-зон-ты
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []|\T2A/cmr/m/n/12 количество
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 \T2A/cmr/m/n/12 проб в од-но-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []|\T2A/cmr/m/n/12 ВГЛ, СГЛ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []|\T2A/cmr/m/n/12 Материковая
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 \T2A/cmr/m/n/12 ли-то-раль в
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 \T2A/cmr/m/n/12 рай-оне пос.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []|\T2A/cmr/m/n/12 ВГЛ, СГЛ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []|\T2A/cmr/m/n/12 Эстуарий р.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 155--155
+Underfull \hbox (badness 10000) in paragraph at lines 157--157
 []|\T2A/cmr/m/n/12 Литораль
  []
 
@@ -2382,7 +2382,7 @@ Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 82.
  [22]
 <../Barenc_Sea/soobshestvo/soobshestvo_po_gorizontam_Jakkard_paired_group_clust
-ers.jpg, id=496, 514.92375pt x 503.8825pt>
+ers.jpg, id=495, 514.92375pt x 503.8825pt>
 File: ../Barenc_Sea/soobshestvo/soobshestvo_po_gorizontam_Jakkard_paired_group_
 clusters.jpg Graphic file (type jpg)
 
@@ -2462,7 +2462,7 @@ Overfull \hbox (3.96606pt too wide) in paragraph at lines 3--5
  []
 
 
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf, id=520, 50
+<../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf, id=519, 50
 5.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf Graphi
 c file (type pdf)
@@ -2472,7 +2472,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_b
 althica_.pdf used on input line 19.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
 
-<../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf, id=521, 50
+<../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf, id=520, 50
 5.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf Graphi
 c file (type pdf)
@@ -2487,7 +2487,7 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 14--32
  []
 
 
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf, id=524,
+<../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf, id=523,
  505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Cerastoderma_edule_.pdf Gra
 phic file (type pdf)
@@ -2502,7 +2502,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf, id=52
-5, 505.89pt x 505.89pt>
+4, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Macoma_balthica_.pdf G
 raphic file (type pdf)
 
@@ -2512,7 +2512,7 @@ oma_balthica_.pdf used on input line 61.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf, id=52
-6, 505.89pt x 505.89pt>
+5, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Macoma_balthica_.pdf G
 raphic file (type pdf)
 
@@ -2522,7 +2522,7 @@ oma_balthica_.pdf used on input line 71.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
 <../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pdf, id
-=527, 505.89pt x 505.89pt>
+=526, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cerastoderma_edule_.pd
 f Graphic file (type pdf)
 
@@ -2540,7 +2540,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Cer
 astoderma_edule_.pdf used on input line 92.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf, id=528, 5
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf, id=527, 5
 05.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gammarus_sp_.pdf Graph
 ic file (type pdf)
@@ -2550,7 +2550,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_N_Gam
 marus_sp_.pdf used on input line 101.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf, id=529, 5
+<../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf, id=528, 5
 05.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gammarus_sp_.pdf Graph
 ic file (type pdf)
@@ -2560,7 +2560,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh081_moran_B_Gam
 marus_sp_.pdf used on input line 111.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf, id=530, 
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf, id=529, 
 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Gammarus_sp_.pdf Grap
 hic file (type pdf)
@@ -2570,7 +2570,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Ga
 mmarus_sp_.pdf used on input line 121.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf, id=531, 
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf, id=530, 
 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_B_Gammarus_sp_.pdf Grap
 hic file (type pdf)
@@ -2587,7 +2587,7 @@ LaTeX Warning: Float too large for page by 81.181pt on input line 136.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf, id=533,
+<../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf, id=532,
  505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Pala_moran_N_Priapulus_caudatus_.pdf Gra
 phic file (type pdf)
@@ -2616,7 +2616,7 @@ Package babel Info: Redefining russian shorthand "~
 
  <../Barenc_Sea/distribution_Moran/Pala_moran_N_Macoma_balthica_.pdf> <../Baren
 c_Sea/distribution_Moran/Pala_moran_B_Macoma_balthica_.pdf>]
-<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf, id=570, 5
+<../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf, id=569, 5
 05.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_arenaria_.pdf Graph
 ic file (type pdf)
@@ -2626,7 +2626,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh07_moran_N_Mya_
 arenaria_.pdf used on input line 170.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf, id=571,
+<../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf, id=570,
  505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Mya_arenaria_.pdf Gra
 phic file (type pdf)
@@ -2644,7 +2644,7 @@ Overfull \hbox (2.61049pt too wide) in paragraph at lines 165--184
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf, id=573
+<../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf, id=572
 , 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Mytilus_edulis_.pdf Gr
 aphic file (type pdf)
@@ -2654,7 +2654,7 @@ Package pdftex.def Info: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_N_Myt
 ilus_edulis_.pdf used on input line 199.
 (pdftex.def)             Requested size: 227.62204pt x 227.62523pt.
 
-<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf, id=574
+<../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf, id=573
 , 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh082_moran_B_Mytilus_edulis_.pdf Gr
 aphic file (type pdf)
@@ -2673,7 +2673,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 <../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littoralis_
-.pdf, id=576, 505.89pt x 505.89pt>
+.pdf, id=575, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Plyazh0812_moran_N_Pseudolibrotus_littor
 alis_.pdf Graphic file (type pdf)
 
@@ -2692,7 +2692,7 @@ Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 235.
 
 <../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mytilus_edulis_.pdf, id
-=578, 505.89pt x 505.89pt>
+=577, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/distribution_Moran/Yarnyshnaya07_moran_N_Mytilus_edulis_.pd
 f Graphic file (type pdf)
 
@@ -3135,7 +3135,7 @@ Overfull \hbox (2.00337pt too wide) in alignment at lines 300--308
  [] [] [] [] [] [] [] [] [] 
  []
 
-<../All_N/Nmean_hist_White1.pdf, id=801, 505.89pt x 505.89pt>
+<../All_N/Nmean_hist_White1.pdf, id=800, 505.89pt x 505.89pt>
 File: ../All_N/Nmean_hist_White1.pdf Graphic file (type pdf)
 
 <use ../All_N/Nmean_hist_White1.pdf>
@@ -3143,7 +3143,7 @@ Package pdftex.def Info: ../All_N/Nmean_hist_White1.pdf used on input line 315.
 
 (pdftex.def)             Requested size: 219.37335pt x 219.37297pt.
 
-<../All_N/Nmean_hist_Barents1.pdf, id=802, 505.89pt x 505.89pt>
+<../All_N/Nmean_hist_Barents1.pdf, id=801, 505.89pt x 505.89pt>
 File: ../All_N/Nmean_hist_Barents1.pdf Graphic file (type pdf)
 
 <use ../All_N/Nmean_hist_Barents1.pdf>
@@ -3294,7 +3294,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 473.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 473.
-[39] <../All_N/Nmean_region_Barents1.pdf, id=876, 442.53612pt x 412.39354pt>
+[39] <../All_N/Nmean_region_Barents1.pdf, id=875, 442.53612pt x 412.39354pt>
 File: ../All_N/Nmean_region_Barents1.pdf Graphic file (type pdf)
 
 <use ../All_N/Nmean_region_Barents1.pdf>
@@ -3355,7 +3355,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 2.
 
-<../White_Sea/growth_young/hist_obili_po_godam.pdf, id=915, 505.89pt x 505.89pt
+<../White_Sea/growth_young/hist_obili_po_godam.pdf, id=914, 505.89pt x 505.89pt
 >
 File: ../White_Sea/growth_young/hist_obili_po_godam.pdf Graphic file (type pdf)
 
@@ -3369,7 +3369,7 @@ Overfull \hbox (22.19188pt too wide) in paragraph at lines 13--14
  []
 
 
-<../White_Sea/growth_young/boxplot_Goreliy_length_1+_tidal.pdf, id=917, 505.89p
+<../White_Sea/growth_young/boxplot_Goreliy_length_1+_tidal.pdf, id=916, 505.89p
 t x 505.89pt>
 File: ../White_Sea/growth_young/boxplot_Goreliy_length_1+_tidal.pdf Graphic fil
 e (type pdf)
@@ -3384,7 +3384,7 @@ Overfull \hbox (22.19188pt too wide) in paragraph at lines 21--22
  []
 
 
-<../White_Sea/growth_young/boxplot_length_1age_area.pdf, id=920, 505.89pt x 505
+<../White_Sea/growth_young/boxplot_length_1age_area.pdf, id=919, 505.89pt x 505
 .89pt>
 File: ../White_Sea/growth_young/boxplot_length_1age_area.pdf Graphic file (type
  pdf)
@@ -3462,7 +3462,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 1.
 
-<../Barenc_Sea/growth_from_MSc/Rost_gorizonts_all.jpg, id=994, 422.5386pt x 245
+<../Barenc_Sea/growth_from_MSc/Rost_gorizonts_all.jpg, id=993, 422.5386pt x 245
 .59755pt>
 File: ../Barenc_Sea/growth_from_MSc/Rost_gorizonts_all.jpg Graphic file (type j
 pg)
@@ -3472,7 +3472,7 @@ sed on input line 13.
 (pdftex.def)             Requested size: 483.69687pt x 281.14583pt.
 
 <../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_all_gorizont
-s.jpg, id=996, 599.27258pt x 378.40247pt>
+s.jpg, id=995, 599.27258pt x 378.40247pt>
 File: ../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_all_gor
 izonts.jpg Graphic file (type jpg)
 
@@ -3500,7 +3500,7 @@ Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 32.
  [48 <../Barenc_Sea/growth_from_MSc/Rost_gorizonts_all.jpg> <../Barenc_Sea/grow
 th_from_MSc/dendrogramma_sravnenie_rosta_linear_all_gorizonts.jpg>]
-<../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg, id=1010, 423.984pt x 220.
+<../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg, id=1009, 423.984pt x 220.
 54395pt>
 File: ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg Graphic file (type jp
 g)
@@ -3526,7 +3526,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 54.
 [49 <../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg>]
-<../Barenc_Sea/growth_from_MSc/Rost_8+_gorizonts.jpg, id=1018, 413.74574pt x 24
+<../Barenc_Sea/growth_from_MSc/Rost_8+_gorizonts.jpg, id=1017, 413.74574pt x 24
 5.59755pt>
 File: ../Barenc_Sea/growth_from_MSc/Rost_8+_gorizonts.jpg Graphic file (type jp
 g)
@@ -3536,7 +3536,7 @@ ed on input line 57.
 (pdftex.def)             Requested size: 483.69687pt x 287.1381pt.
 
 <../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_8year_gorizo
-nts.jpg, id=1020, 587.90427pt x 369.47023pt>
+nts.jpg, id=1019, 587.90427pt x 369.47023pt>
 File: ../Barenc_Sea/growth_from_MSc/dendrogramma_sravnenie_rosta_linear_8year_g
 orizonts.jpg Graphic file (type jpg)
 
@@ -3554,7 +3554,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 77.
  [50 <../Barenc_Sea/growth_from_MSc/Rost_8+_gorizonts.jpg>]
-<../Barenc_Sea/growth_from_MSc/Rost_8+_clusters.jpg, id=1028, 416.63655pt x 224
+<../Barenc_Sea/growth_from_MSc/Rost_8+_clusters.jpg, id=1027, 416.63655pt x 224
 .88016pt>
 File: ../Barenc_Sea/growth_from_MSc/Rost_8+_clusters.jpg Graphic file (type jpg
 )
@@ -3586,7 +3586,7 @@ LaTeX Warning: Reference `ris:prirost_otklik' on page 53 undefined on input lin
 e 173.
 
 
-<../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg, id=1043, 1460.45
+<../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg, id=1042, 1460.45
 625pt x 1322.9425pt>
 File: ../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg Graphic file
  (type jpg)
@@ -3596,7 +3596,7 @@ Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/prirost_otklik_mareograp
 hy.jpg used on input line 180.
 (pdftex.def)             Requested size: 199.16928pt x 180.40631pt.
 
-<../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg, id=1044, 1379.1525
+<../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg, id=1043, 1379.1525
 pt x 1325.95375pt>
 File: ../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg Graphic file (
 type jpg)
@@ -3641,7 +3641,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 3.
 
-<../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf, id=1058, 505.89pt x 505.89pt>
+<../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf, id=1057, 505.89pt x 505.89pt>
 File: ../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf>
@@ -3649,7 +3649,7 @@ Package pdftex.def Info: ../White_Sea/Estuatiy_Luvenga/N_dynamic.pdf used on in
 put line 13.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Luvenga_Goreliy/N_dynamic.pdf, id=1059, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/N_dynamic.pdf, id=1058, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/N_dynamic.pdf>
@@ -3657,7 +3657,7 @@ Package pdftex.def Info: ../White_Sea/Luvenga_Goreliy/N_dynamic.pdf used on inp
 ut line 23.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea//Luvenga_II_razrez/N_dynamic.pdf, id=1060, 505.89pt x 505.89pt>
+<../White_Sea//Luvenga_II_razrez/N_dynamic.pdf, id=1059, 505.89pt x 505.89pt>
 File: ../White_Sea//Luvenga_II_razrez/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea//Luvenga_II_razrez/N_dynamic.pdf>
@@ -3665,7 +3665,7 @@ Package pdftex.def Info: ../White_Sea//Luvenga_II_razrez/N_dynamic.pdf used on
 input line 34.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Ryashkov_ZRS/N_dynamic.pdf, id=1061, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/N_dynamic.pdf, id=1060, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/N_dynamic.pdf>
@@ -3673,7 +3673,7 @@ Package pdftex.def Info: ../White_Sea/Ryashkov_ZRS/N_dynamic.pdf used on input
 line 43.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Ryashkov_YuG/N_dynamic.pdf, id=1062, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/N_dynamic.pdf, id=1061, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/N_dynamic.pdf>
@@ -3681,7 +3681,7 @@ Package pdftex.def Info: ../White_Sea/Ryashkov_YuG/N_dynamic.pdf used on input
 line 53.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Lomnishniy/N_dynamic.pdf, id=1063, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/N_dynamic.pdf, id=1062, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/N_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/N_dynamic.pdf>
@@ -3689,7 +3689,7 @@ Package pdftex.def Info: ../White_Sea/Lomnishniy/N_dynamic.pdf used on input li
 ne 62.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf, id=1065, 505.89pt x 505.89pt>
+<../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf, id=1064, 505.89pt x 505.89pt>
 File: ../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf>
@@ -3697,7 +3697,7 @@ Package pdftex.def Info: ../White_Sea/Estuatiy_Luvenga/N2_dynamic.pdf used on i
 nput line 79.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf, id=1066, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf, id=1065, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf>
@@ -3705,7 +3705,7 @@ Package pdftex.def Info: ../White_Sea/Luvenga_Goreliy/N2_dynamic.pdf used on in
 put line 88.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf, id=1067, 505.89pt x 505.89pt>
+<../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf, id=1066, 505.89pt x 505.89pt>
 File: ../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf>
@@ -3713,7 +3713,7 @@ Package pdftex.def Info: ../White_Sea//Luvenga_II_razrez/N2_dynamic.pdf used on
  input line 96.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf, id=1068, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf, id=1067, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf>
@@ -3721,7 +3721,7 @@ Package pdftex.def Info: ../White_Sea/Ryashkov_ZRS/N2_dynamic.pdf used on input
  line 105.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Ryashkov_YuG/N2_dynamic.pdf, id=1069, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/N2_dynamic.pdf, id=1068, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/N2_dynamic.pdf>
@@ -3729,7 +3729,7 @@ Package pdftex.def Info: ../White_Sea/Ryashkov_YuG/N2_dynamic.pdf used on input
  line 113.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Lomnishniy/N2_dynamic.pdf, id=1070, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/N2_dynamic.pdf, id=1069, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/N2_dynamic.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/N2_dynamic.pdf>
@@ -3834,7 +3834,7 @@ Overfull \hbox (1.62729pt too wide) in paragraph at lines 11--32
  []
 
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pdf, id=1106, 505.89pt x 5
+<../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pdf, id=1105, 505.89pt x 5
 05.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pdf Graphic file (typ
 e pdf)
@@ -3843,7 +3843,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_Estuary_detrend.pd
 f used on input line 45.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_Goreliy_all_detrend.pdf, id=1107, 505.89pt
+<../White_Sea/dynamic_N_N1/perm_PRCF_Goreliy_all_detrend.pdf, id=1106, 505.89pt
  x 505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Goreliy_all_detrend.pdf Graphic file 
 (type pdf)
@@ -3852,7 +3852,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_Goreliy_all_detren
 d.pdf used on input line 54.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_razrez2_all_detrend.pdf, id=1108, 505.89pt
+<../White_Sea/dynamic_N_N1/perm_PRCF_razrez2_all_detrend.pdf, id=1107, 505.89pt
  x 505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_razrez2_all_detrend.pdf Graphic file 
 (type pdf)
@@ -3861,7 +3861,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_razrez2_all_detren
 d.pdf used on input line 63.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_Lomnishniy_detrend.pdf, id=1109, 505.89pt 
+<../White_Sea/dynamic_N_N1/perm_PRCF_Lomnishniy_detrend.pdf, id=1108, 505.89pt 
 x 505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Lomnishniy_detrend.pdf Graphic file (
 type pdf)
@@ -3870,7 +3870,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_Lomnishniy_detrend
 .pdf used on input line 71.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_YuG_detrend.pdf, id=1110, 505.89pt x 505.8
+<../White_Sea/dynamic_N_N1/perm_PRCF_YuG_detrend.pdf, id=1109, 505.89pt x 505.8
 9pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_YuG_detrend.pdf Graphic file (type pd
 f)
@@ -3879,7 +3879,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_YuG_detrend.pdf us
 ed on input line 80.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_ZRS_detrend.pdf, id=1111, 505.89pt x 505.8
+<../White_Sea/dynamic_N_N1/perm_PRCF_ZRS_detrend.pdf, id=1110, 505.89pt x 505.8
 9pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_ZRS_detrend.pdf Graphic file (type pd
 f)
@@ -3896,7 +3896,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 93.
  [58]
-<../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.pdf, id=1117, 505.89pt x
+<../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.pdf, id=1116, 505.89pt x
  505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.pdf Graphic file (t
 ype pdf)
@@ -3905,7 +3905,7 @@ Package pdftex.def Info: ../White_Sea/dynamic_N_N1/perm_PRCF_Medvezhya_detrend.
 pdf used on input line 102.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/dynamic_N_N1/perm_PRCF_Seldyanaya_detrend.pdf, id=1118, 505.89pt 
+<../White_Sea/dynamic_N_N1/perm_PRCF_Seldyanaya_detrend.pdf, id=1117, 505.89pt 
 x 505.89pt>
 File: ../White_Sea/dynamic_N_N1/perm_PRCF_Seldyanaya_detrend.pdf Graphic file (
 type pdf)
@@ -4173,7 +4173,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 296.
 
-<../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf, id=1137, 505.89pt x
+<../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf, id=1136, 505.89pt x
  505.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/N_dynamic_with_Agarova.pdf Graphic file (t
 ype pdf)
@@ -4317,7 +4317,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 1.
 
-<../White_Sea/spat/adult_str_Suhaya_1.pdf, id=1414, 427.11873pt x 402.23691pt>
+<../White_Sea/spat/adult_str_Suhaya_1.pdf, id=1413, 427.11873pt x 402.23691pt>
 File: ../White_Sea/spat/adult_str_Suhaya_1.pdf Graphic file (type pdf)
 
 <use ../White_Sea/spat/adult_str_Suhaya_1.pdf>
@@ -4325,7 +4325,7 @@ Package pdftex.def Info: ../White_Sea/spat/adult_str_Suhaya_1.pdf used on input
  line 54.
 (pdftex.def)             Requested size: 153.56442pt x 144.62103pt.
 
-<../White_Sea/spat/spat_str_Suhaya_1.pdf, id=1415, 427.11841pt x 399.20753pt>
+<../White_Sea/spat/spat_str_Suhaya_1.pdf, id=1414, 427.11841pt x 399.20753pt>
 File: ../White_Sea/spat/spat_str_Suhaya_1.pdf Graphic file (type pdf)
 
 <use ../White_Sea/spat/spat_str_Suhaya_1.pdf>
@@ -4333,7 +4333,7 @@ Package pdftex.def Info: ../White_Sea/spat/spat_str_Suhaya_1.pdf used on input
 line 62.
 (pdftex.def)             Requested size: 153.56442pt x 143.53186pt.
 
-<../White_Sea/spat/adult_str_Lisya_1.pdf, id=1416, 427.11873pt x 399.20753pt>
+<../White_Sea/spat/adult_str_Lisya_1.pdf, id=1415, 427.11873pt x 399.20753pt>
 File: ../White_Sea/spat/adult_str_Lisya_1.pdf Graphic file (type pdf)
 
 <use ../White_Sea/spat/adult_str_Lisya_1.pdf>
@@ -4341,7 +4341,7 @@ Package pdftex.def Info: ../White_Sea/spat/adult_str_Lisya_1.pdf used on input
 line 77.
 (pdftex.def)             Requested size: 153.56442pt x 143.53186pt.
 
-<../White_Sea/spat/spat_str_Lisya_1.pdf, id=1417, 427.11841pt x 399.20753pt>
+<../White_Sea/spat/spat_str_Lisya_1.pdf, id=1416, 427.11841pt x 399.20753pt>
 File: ../White_Sea/spat/spat_str_Lisya_1.pdf Graphic file (type pdf)
 
 <use ../White_Sea/spat/spat_str_Lisya_1.pdf>
@@ -4349,7 +4349,7 @@ Package pdftex.def Info: ../White_Sea/spat/spat_str_Lisya_1.pdf used on input l
 ine 86.
 (pdftex.def)             Requested size: 153.56442pt x 143.53186pt.
 
-<../White_Sea/spat/adult_str_Klushiha_1.pdf, id=1418, 427.11873pt x 399.20753pt
+<../White_Sea/spat/adult_str_Klushiha_1.pdf, id=1417, 427.11873pt x 399.20753pt
 >
 File: ../White_Sea/spat/adult_str_Klushiha_1.pdf Graphic file (type pdf)
  <use ../White_Sea/spat/adult_str_Klushiha_1.pdf>
@@ -4357,7 +4357,7 @@ Package pdftex.def Info: ../White_Sea/spat/adult_str_Klushiha_1.pdf used on inp
 ut line 101.
 (pdftex.def)             Requested size: 153.56442pt x 143.53186pt.
 
-<../White_Sea/spat/spat_str_Klushuha_1.pdf, id=1419, 427.11841pt x 406.272pt>
+<../White_Sea/spat/spat_str_Klushuha_1.pdf, id=1418, 427.11841pt x 406.272pt>
 File: ../White_Sea/spat/spat_str_Klushuha_1.pdf Graphic file (type pdf)
 
 <use ../White_Sea/spat/spat_str_Klushuha_1.pdf>
@@ -4365,7 +4365,7 @@ Package pdftex.def Info: ../White_Sea/spat/spat_str_Klushuha_1.pdf used on inpu
 t line 110.
 (pdftex.def)             Requested size: 153.56442pt x 146.07182pt.
 
-<../White_Sea/spat/adult_str_Podpahta_1.pdf, id=1420, 427.11873pt x 399.20753pt
+<../White_Sea/spat/adult_str_Podpahta_1.pdf, id=1419, 427.11873pt x 399.20753pt
 >
 File: ../White_Sea/spat/adult_str_Podpahta_1.pdf Graphic file (type pdf)
  <use ../White_Sea/spat/adult_str_Podpahta_1.pdf>
@@ -4373,7 +4373,7 @@ Package pdftex.def Info: ../White_Sea/spat/adult_str_Podpahta_1.pdf used on inp
 ut line 125.
 (pdftex.def)             Requested size: 153.56442pt x 143.53186pt.
 
-<../White_Sea/spat/spat_str_Podpahta_1.pdf, id=1421, 427.11841pt x 399.20753pt>
+<../White_Sea/spat/spat_str_Podpahta_1.pdf, id=1420, 427.11841pt x 399.20753pt>
 File: ../White_Sea/spat/spat_str_Podpahta_1.pdf Graphic file (type pdf)
 <use ../White_Sea/spat/spat_str_Podpahta_1.pdf>
 Package pdftex.def Info: ../White_Sea/spat/spat_str_Podpahta_1.pdf used on inpu
@@ -4434,14 +4434,14 @@ Overfull \hbox (31.54126pt too wide) in paragraph at lines 161--181
  []
 
 
-<../White_Sea/spat/spearman_spat_3mm_1.pdf, id=1522, 459.93492pt x 413.24059pt>
+<../White_Sea/spat/spearman_spat_3mm_1.pdf, id=1521, 459.93492pt x 413.24059pt>
 File: ../White_Sea/spat/spearman_spat_3mm_1.pdf Graphic file (type pdf)
 <use ../White_Sea/spat/spearman_spat_3mm_1.pdf>
 Package pdftex.def Info: ../White_Sea/spat/spearman_spat_3mm_1.pdf used on inpu
 t line 201.
 (pdftex.def)             Requested size: 222.5038pt x 199.91699pt.
 
-<../White_Sea/spat/spearman_spat_2mm_1.pdf, id=1523, 462.82825pt x 421.12508pt>
+<../White_Sea/spat/spearman_spat_2mm_1.pdf, id=1522, 462.82825pt x 421.12508pt>
 File: ../White_Sea/spat/spearman_spat_2mm_1.pdf Graphic file (type pdf)
 <use ../White_Sea/spat/spearman_spat_2mm_1.pdf>
 Package pdftex.def Info: ../White_Sea/spat/spearman_spat_2mm_1.pdf used on inpu
@@ -4838,11 +4838,11 @@ Package logreq Info: Writing requests to 'dissertation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21522 strings out of 493117
- 344771 string characters out of 6135439
+ 21519 strings out of 493117
+ 344732 string characters out of 6135439
  1183466 words of memory out of 5000000
- 24235 multiletter control sequences out of 15000+600000
- 29647 words of font info for 69 fonts, out of 8000000 for 9000
+ 24234 multiletter control sequences out of 15000+600000
+ 28787 words of font info for 68 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
  46i,14n,70p,2892b,2358s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
@@ -4873,19 +4873,18 @@ ts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts
 /type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
 ype1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
-/public/cm-super/sfsl1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
-ublic/cm-super/sfss0600.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
-c/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm
--super/sfti1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-s
-uper/sfti1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/
-uhvb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.
-pfb>
-Output written on dissertation.pdf (91 pages, 5446620 bytes).
+/public/cm-super/sfss0600.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
+lic/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publi
+c/cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
+cm-super/sfti1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm
+-super/sfti1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helveti
+c/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvr8
+a.pfb>
+Output written on dissertation.pdf (91 pages, 5434542 bytes).
 PDF statistics:
- 1843 PDF objects out of 2073 (max. 8388607)
- 1449 compressed objects within 15 object streams
+ 1839 PDF objects out of 2073 (max. 8388607)
+ 1446 compressed objects within 15 object streams
  258 named destinations out of 1000 (max. 500000)
  650 words of extra memory for PDF output out of 10000 (max. 10000000)
 
