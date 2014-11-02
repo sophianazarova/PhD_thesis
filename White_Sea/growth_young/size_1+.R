@@ -21,7 +21,7 @@ length(ishodnik$Length.mm)
 pdf(file="hist_obili_po_godam.pdf", family="NimbusSan") # указываем шрифт подпией
 par(mfrow=c(2,1))
 hist(ishodnik$Length.mm, breaks=seq(min(ishodnik$Length.mm, na.rm=T), max(ishodnik$Length.mm, na.rm=T), 0.1), main="A", xlab="L, мм", ylab="N, экз.")
-hist(ishodnik$age, breaks=seq(min(ishodnik$age, na.rm=T), max(ishodnik$age, na.rm=T), 1), main="B", xlab="возраст, годы", ylab="N, экз.", )
+hist(ishodnik$age, breaks=seq(min(ishodnik$age, na.rm=T), max(ishodnik$age, na.rm=T), 1), main="B", xlab="возраст, годы", ylab="N, экз.")
 dev.off()
 embedFonts("hist_obili_po_godam.pdf") #встройка шрифтов в файл
 par(mfrow=c(1,1))

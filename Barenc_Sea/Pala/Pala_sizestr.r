@@ -192,3 +192,9 @@ for (j in 1:length(colnames(mean.sqmeter.low)))
   dev.off()
   embedFonts(paste("low", colnames(mean.sqmeter.low)[j], ".pdf",sep="_"))
 }
+
+##рисуем распределение по возрастам маком из всех проб в нгл
+pdf(file="Pala_2007_low_age_hist.pdf", family="NimbusSan")
+hist(ishodnik$age[ ishodnik$tidal_level=="low"], xlab = "возраст, годы", ylab = "N, экз.", main = "")
+dev.off()
+embedFonts("Pala_2007_low_age_hist.pdf")

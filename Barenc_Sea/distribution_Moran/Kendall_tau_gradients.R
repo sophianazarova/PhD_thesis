@@ -200,8 +200,9 @@ for (i in 2:3) {
            cor.test(method="kendall",x=Pala.macoma.ages[,i], y=Pala.macoma.ages[,j]))
   }}
 
-Pala_macoma_ages_kendall_Y_N8
-Pala_macoma_ages_kendall_X_N8
+
+Pala_macoma_ages_kendall_X_N14
+Pala_macoma_ages_kendall_Y_N14
 
 
 Pala_macoma_ages_kendall_Y_N2

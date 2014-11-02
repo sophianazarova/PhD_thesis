@@ -60,6 +60,11 @@ symbols(Pala.08$X, Pala.08$Y, sqrt(Pala.08$N_Macoma_balthica)/ pi, inches=0.2, f
 dev.off()
 embedFonts(paste("Pala_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл
 
+pdf(file="Pala_B_Macoma_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Pala.08$X, Pala.08$Y, sqrt(Pala.08$B_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Pala_B_Macoma_bubbles.pdf")) #встройка шрифтов в файл
+
 pdf(file="Pala_N_cockle_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
 symbols(Pala.08$X, Pala.08$Y, sqrt(Pala.08$N_Cerastoderma_edule)/ pi, inches=0.2, fg="white", bg="blue")
 dev.off()
@@ -87,6 +92,11 @@ pdf(file="Yarnyshnaya_N_Macoma_bubbles.pdf", family="NimbusSan") # указыв�
 symbols(Yarn.07$X, Yarn.07$Y, sqrt(Yarn.07$N_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
 dev.off()
 embedFonts(paste("Yarnyshnaya_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл
+
+pdf(file="Yarnyshnaya_B_Macoma_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Yarn.07$X, Yarn.07$Y, sqrt(Yarn.07$B_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Yarnyshnaya_B_Macoma_bubbles.pdf")) #встройка шрифтов в файл
 
 pdf(file="Yarnyshnaya_N_cockle_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
 symbols(Yarn.07$X, Yarn.07$Y, sqrt(Yarn.07$N_Cerastoderma_edule)/ pi, inches=0.2, fg="white", bg="blue")
@@ -138,10 +148,21 @@ symbols(Plyazh.0812$X, Plyazh.0812$Y, sqrt(Plyazh.0812$N_Macoma_balthica)/ pi, i
 dev.off()
 embedFonts(paste("Plyazh0812_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл
 
+pdf(file="Plyazh0812_B_Macoma_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Plyazh.0812$X, Plyazh.0812$Y, sqrt(Plyazh.0812$B_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Plyazh0812_B_Macoma_bubbles.pdf")) #встройка шрифтов в файл
+
 ##Дальний Пляж 2007
 Plyazh.07<-read.table(file="Dalnezeleneckaya_2007.csv", header=T, sep=";", dec=",")
 #bubbles
+
 pdf(file="Plyazh07_N_Macoma_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
 symbols(Plyazh.07$X, Plyazh.07$Y, sqrt(Plyazh.07$N_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
 dev.off()
 embedFonts(paste("Plyazh07_N_Macoma_bubbles.pdf")) #встройка шрифтов в файл
+
+pdf(file="Plyazh07_B_Macoma_bubbles.pdf", family="NimbusSan") # указываем шрифт подпией
+symbols(Plyazh.07$X, Plyazh.07$Y, sqrt(Plyazh.07$B_Macoma_balthica)/ pi, inches=0.2, fg="white", bg="blue")
+dev.off()
+embedFonts(paste("Plyazh07_B_Macoma_bubbles.pdf")) #встройка шрифтов в файл

@@ -10,7 +10,7 @@ samples.names<-read.table(file="sample.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
 attach(ishodnik)
 
-## размерная структура суммарно по годам по горизонтам
+# ========== размерная структура суммарно по годам по горизонтам =============
 Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 
 (size.str.table<-table(Length.int,year,sample))
@@ -61,7 +61,7 @@ mean.sqmeter.df<-as.data.frame(mean.sizestr.sqmeter)
 (sem.sizestr.sqmeter <-t(sd.sizestr.sqmeter/sqrt(as.vector(n.samples))))
 sem.sqmeter.df<-as.data.frame(sem.sizestr.sqmeter)
 
-##>2mm mean size structure
+# ========= >2mm mean size structure ====================================
 (mean.sizestr.sqmeter2<-mean.sizestr.sqmeter[2:20,])
 mean.sqmeter.df2<-as.data.frame(mean.sizestr.sqmeter2)
 (sd.sizestr.sqmeter2<-sd.sizestr.sqmeter[,2:20])
@@ -118,7 +118,7 @@ for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
   dev.off()
 }
 
-##динамика обилия
+# ============= динамика обилия ============================================
 (N.sqmeter<-(t(tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum))))
 (N.mean.sqmeter<-colMeans(N.sqmeter, na.rm=T))
 (N.sd.sqmeter<-apply(N.sqmeter, 2, sd, na.rm=T))
@@ -138,7 +138,7 @@ arrows(x0=seq(as.numeric(min(names(N.mean.sqmeter))),as.numeric(max(names(N.mean
 dev.off()
 embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 
-##динамика без молод ( больше 2+)
+# ========= динамика без молод ( больше 2+) ==================================
 (N2.sqmeter<-(t(tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"], 
                        list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
                             size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"]), sum))))
@@ -167,7 +167,7 @@ arrows(x0=seq(as.numeric(min(names(N2.mean.sqmeter))),as.numeric(max(names(N2.me
 dev.off()
 embedFonts("N2_dynamic.pdf") #встройкашрифтов в файл
 
-## про численность 2+
+# ================= про численность 2+ =====================================
 #Kruskal-Wallis
 N2.df<-as.data.frame(as.table(N2.sqmeter))
 kruskal.test(N2.df$Freq ~ N2.df$Var2)
@@ -209,7 +209,7 @@ wilcox.test(Agarova.ish$N.indd, (subset(N2.df, N2.df$Var2==2007| N2.df$Var2==200
 
 
 
-## Динамика численности + 1972 год
+# =============== Динамика численности + 1972 год ============================
 Agarova.ish<-read.table("Agarova_1973.csv", head=T, sep=";", dec=",")
 (Agarova.73.mean<-sum(Agarova.ish$N.indd*Agarova.ish$vstrechaemost)/sum(Agarova.ish$vstrechaemost))
 Agarova.73.sd<-sd(Agarova.ish$N.indd)
@@ -227,7 +227,7 @@ title(main=)
 dev.off()
 embedFonts("N_dynamic_with_Agarova.pdf") #встройка шрифтов в файл
 
-##размерная структура в %
+# ============= размерная структура в % ===========================
 (sum.sizestr.sqmeter<-t(tapply(size.str.sqmeter$Freq,INDEX=list(size.str.sqmeter$year, size.str.sqmeter$Length.int),FUN=sum, na.rm=T)))
 (sum.sizestr.sqmeter.percents<-sum.sizestr.sqmeter/colSums(sum.sizestr.sqmeter)*100)
 #>1mm

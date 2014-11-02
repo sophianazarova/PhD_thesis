@@ -4,7 +4,7 @@ setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Luvenga_II_razrez/")
 #на всякий случай отключили исходний от предыдущего файла
 detach(ishodnik)
 
-## размерная структура средние по годам по горизонтам
+
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
 samples.names<-read.table(file="sample.csv", sep=";", dec=",", head=T)
@@ -12,6 +12,8 @@ attach(ishodnik)
 #year<-factor(year)
 str(ishodnik)
 ishodnik$tidal_level<-ordered(x=ishodnik$tidal_level, levels=c("high_beatch", "fucus_zone", "zostera_zone", "low_beatch"))
+
+#========= размерная структура средние по годам по горизонтам ==================
 
 Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 
@@ -44,7 +46,7 @@ summary(size.str.df, na.rm=T)
 # SUBSET - для фильтрации таблицы данных
 # APPLY - кто-то из них для средней и СД по фрейму
 
-#теперь на квадратный метр
+#теперь РС на квадратный метр
 size.str.sqmeter<-size.str.df
 for (i in 1:length(levels(size.str.sqmeter$year)))
 {
@@ -125,7 +127,7 @@ sem.sqmeter.low_beatch.df<-as.data.frame(sem.sqmeter.low_beatch)
 
 length.class<-seq(1,20,1)
 
-##>1mm
+##=============== РС >1mm ===============================================
 #Верхний пляж
 (mean.sqmeter2.high_beatch<-mean.sqmeter.high_beatch[2:20,])
 mean.sqmeter2.high_beatch.df<-as.data.frame(mean.sqmeter2.high_beatch)
@@ -271,7 +273,7 @@ for (j in 1:length(colnames(mean.sqmeter2.low_beatch)))
 }
 
 
-## динамика обилия
+# ================= динамика обилия =======================================
 (N.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample, size.str.df$tidal_level), sum))
 (N.mean.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=mean))
   N.mean.sqmeter[11,3]<-NA
@@ -305,7 +307,7 @@ for (i in 1:ncol(N.mean.sqmeter))
         y0=N.mean.sqmeter[,i]-N.sem.sqmeter[,i], y1=N.mean.sqmeter[,i]+N.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
 }
 
-##динамика без разделения на горизонты
+# ============ динамика без разделения на горизонты ============================
 str(size.str.sqmeter)
 (N.all.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum,na.rm=T))
 N.all.sqmeter[N.all.sqmeter==0]<-NA
@@ -316,7 +318,7 @@ N.all.sqmeter[N.all.sqmeter==0]<-NA
 
 write.table(data.frame(N.all.mean.sqmeter, N.all.sem.sqmeter), file="Nall_mean.csv", dec=",", sep=";")
 
-## динамика без спата ( больше 1 мм)
+# ===========  динамика без спата ( больше 1 мм) ==========================
 (N2.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"],
                    list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
                         size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"],
@@ -361,7 +363,7 @@ for (i in 1:ncol(N2.mean.sqmeter))
         y0=N2.mean.sqmeter[,i]-N2.sem.sqmeter[,i], y1=N2.mean.sqmeter[,i]+N2.sem.sqmeter[,i], angle=90, code=3, length=.1, col=0+i)
 }
 
-##динамика без спата без разделения на горизонты
+# ======== динамика без спата без разделения на горизонты ========================
 str(size.str.sqmeter)
 (N2.all.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"],
                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
@@ -376,7 +378,7 @@ write.table(data.frame(N2.all.mean.sqmeter, N2.all.sem.sqmeter), file="N2all_mea
 
 
 
-##про N2
+# ======================про N2===========================
 #доля молоди
 (N.mean.sqmeter-N2.mean.sqmeter)/N.mean.sqmeter*100
 
@@ -413,7 +415,7 @@ kruskal.test(N2.92.98.fucus_zone$as.vector.N2.sqmeter.c.as.character.seq.1992..1
              ~ N2.92.98.fucus_zone$year)
 #отличаются!
 
-##размерная структура в %
+#============= размерная структура в %=====================================
 str(size.str.sqmeter)
 
 #high_beatch
@@ -428,7 +430,7 @@ str(size.str.sqmeter)
 
 
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents.high_beatch, file="2razrez_high_beatch_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.high_beatch)), file="2razrez_high_beatch_sizestr2_percent.csv", sep=";", dec=",")
 
 #fucus_zone
 (sum.sizestr.sqmeter.fucus_zone<-t(tapply(fucus_zone$Freq,INDEX=list(fucus_zone$year, fucus_zone$Length.int),FUN=sum, na.rm=T)))
@@ -437,8 +439,8 @@ write.table(x=sum.sizestr2.sqmeter.percents.high_beatch, file="2razrez_high_beat
 (sum.sizestr2.sqmeter.percents.fucus_zone<-t(t(sum.sizestr.sqmeter.fucus_zone[2:nrow(sum.sizestr.sqmeter.fucus_zone),])/
    colSums(sum.sizestr.sqmeter.fucus_zone[2:nrow(sum.sizestr.sqmeter.fucus_zone),])*100))
 
-# запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents.fucus_zone, file="2razrez_fucus_zone_sizestr2_percent.csv", sep=";", dec=",")
+#  запишем в файл размерную структуру в процентах
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.fucus_zone)), file="2razrez_fucus_zone_sizestr2_percent.csv", sep=";", dec=",")
 
 #zostera_zone
 (sum.sizestr.sqmeter.zostera_zone<-t(tapply(zostera_zone$Freq,INDEX=list(zostera_zone$year, zostera_zone$Length.int),FUN=sum, na.rm=T)))
@@ -448,24 +450,24 @@ write.table(x=sum.sizestr2.sqmeter.percents.fucus_zone, file="2razrez_fucus_zone
    colSums(sum.sizestr.sqmeter.zostera_zone[2:nrow(sum.sizestr.sqmeter.zostera_zone),])*100))
 
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents.zostera_zone, file="2razrez_zostera_zone_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.zostera_zone)), file="2razrez_zostera_zone_sizestr2_percent.csv", sep=";", dec=",")
 
 #low_beatch
 (sum.sizestr.sqmeter.low_beatch<-t(tapply(low_beatch$Freq,INDEX=list(low_beatch$year, low_beatch$Length.int),FUN=sum, na.rm=T)))
-(sum.sizestr.sqmeter.percents.low_beatch<-t(t(sum.sizestr.sqmeter.low_beatch/colSums(sum.sizestr.sqmeter.low_beatch)*100))
+(sum.sizestr.sqmeter.percents.low_beatch<-t(t(sum.sizestr.sqmeter.low_beatch/colSums(sum.sizestr.sqmeter.low_beatch)*100)))
 #>1mm
 (sum.sizestr2.sqmeter.percents.low_beatch<-t(t(sum.sizestr.sqmeter.low_beatch[2:nrow(sum.sizestr.sqmeter.low_beatch),])/
    colSums(sum.sizestr.sqmeter.low_beatch[2:nrow(sum.sizestr.sqmeter.low_beatch),])*100))
 
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents.low_beatch, file="2razrez_low_beatch_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.low_beatch)), file="2razrez_low_beatch_sizestr2_percent.csv", sep=";", dec=",")
 
 
-## динамика максимального размера
+# ===================== динамика максимального размера ======================== 
 str(ishodnik)
 (Length.max<-tapply(Length.mm, list(year, tidal_level), max, na.rm=T))
 #plot(x=names(Length.max), y=Length.max, type=none)
-
+max(Length.mm, na.rm=T)
 
 pdf(file="L_max.pdf", family="NimbusSan") # указываем шрифт подпией
 plot(x=rownames(Length.max), y=Length.max[,1], type="n", main="Материковая литораль в районе пос. Лувеньга", xlab="год", ylab="L max, мм", 
@@ -528,6 +530,9 @@ for (i in 1:ncol(B2.mean.sqmeter))
 legend(legend=colnames(B2.mean.sqmeter),x=2000, y=30.6, pch=seq(15,15+ncol(B2.mean.sqmeter),1), col=seq(1,1+ncol(B2.mean.sqmeter),1))
 dev.off()
 embedFonts("B2_count_dynamic.pdf") #встройка шрифтов в файл
+
+#запишем в файл рассчетную биомассу
+write.table(data.frame(B2.mean.sqmeter, B2.sem.sqmeter), file="2 razrez_B2_mean.csv",sep=";", dec=",")
 
 
 ## измеренная биомасса (реальная)

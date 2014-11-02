@@ -3,7 +3,7 @@ setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/dynamic_N_N1")
 #на всякий случай отключили исходний от предыдущего файла
 detach(ishodnik)
 
-## размерная структура средние по годам по горизонтам
+# ====== размерная структура средние по годам по горизонтам ====================
 ishodnik<-read.table(file="All_Kandalaksha_N2mean.csv", sep=";", dec=",", head=T)
 str(ishodnik)
 cor(ishodnik, method="spearman", use="pairwise.complete.obs")

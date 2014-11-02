@@ -2,10 +2,12 @@ setwd("~/Dropbox/PhD_thesis/PhD_thesis/after_Deryuginskie")
 
 detach(ishodnik)
 #загружаем исходники
-ishodnik<-read.table("Macoma_Cerastoderma_Mya_size.csv", header=T, sep=";", dec=",")
+ishodnik<-read.table("Macoma_Cerastoderma_Mya_Mytilus_size.csv", header=T, sep=";", dec=",")
 str(ishodnik)
 
 samples.names<-read.table(file="samples.csv", sep=";", dec=",", head=T)
+
+
 
 ## ДЕЛАЕМ ОЦЕНКУ ОБИЛИЯ ДЛЯ СРАВНЕНИЯ С 1973 ГОДОМ, ОТРЕЗАЯ ВСЕХ КТО МЕНЬШЕ 5ММ, т.к.ТАМ МЫЛИ НА 5 мм сите
 #####
@@ -108,6 +110,11 @@ Mya_5mm_sd<-tapply(Mya_N_samples_5mm.df$N_sqmeter, INDEX=Mya_N_samples_5mm.df$ye
 Mya_5mm_SEM<-Mya_5mm_sd/sqrt(n.samples)
 
 #####
+
+# ===== сравниваем точечную оценку по 1973 году с нашими ======================
+wilcox.test(x = Macoma_5mm_mean[1:6], mu = Macoma_1973_mean)
+wilcox.test(x = cockle_5mm_mean, mu = cockle_1973_mean)
+
 
 ## Считаем динамику обилия с учетом всех особей.
 #####
@@ -252,22 +259,75 @@ kruskal.test(Mya_N_samples.df$N_sqmeter ~ as.factor(Mya_N_samples.df$year))
 
 plot(TukeyHSD(aov(lm(Macoma_N_samples.df$N_sqmeter ~ as.factor(Macoma_N_samples.df$year)))))
 
-#гистограммы - размерная структура
+#гистограммы 
 library(lattice)
  #размерные класс = 1 мм
-pdf(file="size_structure_Macoma_Cerastoderma_Mya_1mmclass.pdf", family="NimbusSan", width=190, height=280, paper="a4")
-histogram(~ishodnik$Length.mm | ishodnik$species + ordered(ishodnik$year, levels<-c(2008, 2007, 2006, 2005, 2004, 2003, 2002)),
-          type="count",
+pdf(file="size_structure_Macoma_Cerastoderma_Mya_1mmclass.pdf", family="NimbusSan",
+    width=190, height=280, paper="a4")
+histogram(~ishodnik$Length.mm[ ishodnik$species!="Mytilus edulis"] | ishodnik$species[ ishodnik$species!="Mytilus edulis"] + ordered(ishodnik$year[ ishodnik$species!="Mytilus edulis"], levels<-c(2008, 2007, 2006, 2005, 2004, 2003, 2002)),
+          type="percent",
           breaks=seq(0, max(ishodnik$Length.mm+1, na.rm=T),1), 
-          xlab="L, мм", ylab="N, экз./кв.м")
+          xlab="L, мм", ylab="%")
 dev.off()
 embedFonts("size_structure_Macoma_Cerastoderma_Mya_1mmclass.pdf")
 
 #размерные класс = 2 мм
 pdf(file="size_structure_Macoma_Cerastoderma_Mya_2mmclass.pdf", family="NimbusSan", width=190, height=280, paper="a4")
-histogram(~ishodnik$Length.mm | ishodnik$species + ordered(ishodnik$year, levels<-c(2008, 2007, 2006, 2005, 2004, 2003, 2002)),
-          type="count",
+histogram(~ishodnik$Length.mm[ ishodnik$species!="Mytilus edulis"] | ishodnik$species[ ishodnik$species!="Mytilus edulis"] + ordered(ishodnik$year[ ishodnik$species!="Mytilus edulis"], levels<-c(2008, 2007, 2006, 2005, 2004, 2003, 2002)),
+          type="percent",
           breaks=seq(0, max(ishodnik$Length.mm+2, na.rm=T),2), 
-          xlab="L, мм", ylab="N, экз./кв.м")
+          xlab="L, мм", ylab="%")
 dev.off()
 embedFonts("size_structure_Macoma_Cerastoderma_Mya_2mmclass.pdf")
+
+#####
+
+## Mytilus edulis - считаем обилие в нижней литорали. Пробы M6-M11. Площадь 1/10 кв.м. 2002 год отрезаем
+#####
+ish_Mytilus<-subset(ishodnik, ishodnik$samples== "M-6" | ishodnik$samples=="M-7" | ishodnik$samples=="M-8" | ishodnik$samples=="M-9" | ishodnik$samples=="M-10"| ishodnik$samples=="M-11" & ishodnik$species=="Mytilus edulis")
+
+str(ish_Mytilus)
+
+(Mytilus_N_samples<-table(ish_Mytilus$year, ish_Mytilus$samples))
+(Mytilus_N_samples.df<-as.data.frame(Mytilus_N_samples))
+names(Mytilus_N_samples.df)<-c("year", "sample", "N_sample")
+
+Mytilus_N_samples.df$N_sample[Mytilus_N_samples.df$N_sample==0 & Mytilus_N_samples.df$sample!="M-6" & Mytilus_N_samples.df$sample!="M-7" & Mytilus_N_samples.df$sample!="M-8" & Mytilus_N_samples.df$sample!="M-9" & Mytilus_N_samples.df$sample!="M-10" & Mytilus_N_samples.df$sample!="M-11"]<-NA
+
+Mytilus_N_samples.df$N_sqmeter<-Mytilus_N_samples.df$N_sample*10
+
+#теперь считаем средние численности и ошибки в каждом году
+
+Mytilus_mean<-tapply(Mytilus_N_samples.df$N_sqmeter, INDEX=Mytilus_N_samples.df$year, mean, na.rm=T)
+Mytilus_sd<-tapply(Mytilus_N_samples.df$N_sqmeter, INDEX=Mytilus_N_samples.df$year, sd, na.rm=T)
+Mytilus_SEM<-Mytilus_sd/sqrt(6)
+
+
+#график обилия мидий
+
+#from R-book 
+error.bars<-function(yv,z,nn){
+  xv<-
+    barplot(yv,ylim=c(0,(max(yv)+max(z))),names=nn)#,ylab=deparse(substitute(yv)))
+  g=(max(xv)-min(xv))/50
+  for (i in 1:length(xv)) {
+    lines(c(xv[i],xv[i]),c(yv[i]+z[i],yv[i]-z[i]))
+    lines(c(xv[i]-g,xv[i]+g),c(yv[i]+z[i], yv[i]+z[i]))
+    lines(c(xv[i]-g,xv[i]+g),c(yv[i]-z[i], yv[i]-z[i]))
+  }}
+
+pdf(file="Mytilus_N_dynamic_low.pdf", family="NimbusSan")
+error.bars(Mytilus_mean[2:5], Mytilus_SEM[2:5], names(Mytilus_mean)[2:5])
+dev.off()
+embedFonts("Mytilus_N_dynamic_low.pdf") #встройка шрифтов в файл
+
+#гистограммы - размерная структура мидий
+library(lattice)
+#размерные класс = 5 мм
+pdf(file="size_structure_Mytilus_5mmklass.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+histogram(~ish_Mytilus$Length.mm[ ish_Mytilus$year!=2002] | ordered(ish_Mytilus$year[ ish_Mytilus$year!=2002], levels<-c(2003, 2004, 2005, 2006)),
+          type="percent",
+          breaks=seq(0, max(ish_Mytilus$Length.mm[ ish_Mytilus$year!=2002], na.rm=T)+4.5,5), 
+          xlab="L, мм", ylab="%")
+dev.off()
+embedFonts("size_structure_Mytilus_5mmklass.pdf")

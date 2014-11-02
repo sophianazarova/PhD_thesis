@@ -4,7 +4,7 @@ setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/Luvenga_Goreliy/")
 #на всякий случай отключили исходний от предыдущего файла
 detach(ishodnik)
 
-## размерная структура средние по годам по горизонтам
+#====== размерная структура средние по годам по горизонтам ==================
 ishodnik<-read.table(file="length.csv", sep=";", dec=",", head=T)
 samples.squares<-read.table(file="squares.csv", sep=";", dec=",", head=T)
 samples.names<-read.table(file="sample.csv", sep=";", dec=",", head=T)
@@ -19,14 +19,6 @@ size.str.df<-as.data.frame(size.str.table) # как таблица данных
 
 #убираем те пробы которых на самом деле нету
 
-#for (i in 1:length(levels(size.str.df$year))){
-#    (xxx<-size.str.df$sample[size.str.df$year==levels(size.str.df$year)[i]]%in%
-#       samples.names$sample[samples.names$year==levels(size.str.df$year)[i]])
-#    antixxx<-as.logical(1-xxx)
-#    size.str.df$Freq[size.str.df$year==levels(size.str.df$year)[i] ][antixxx]<-NA
-#  }
-
-
 for (i in 1:length(levels(size.str.df$year))){
     for(j in 1:length(levels(size.str.df$tidal_level))){
     (xxx<-size.str.df$sample[size.str.df$year==levels(size.str.df$year)[i] & 
@@ -40,7 +32,7 @@ for (i in 1:length(levels(size.str.df$year))){
 
 
 
-subset(size.str.df, size.str.df$year=="1995" & size.str.df$sample=="mg4")
+#subset(size.str.df, size.str.df$year=="1995" & size.str.df$sample=="mg4")
 # SUBSET - для фильтрации таблицы данных
 # APPLY - кто-то из них для средней и СД по фрейму
 
@@ -81,7 +73,7 @@ for (i in 1: length(levels(size.str.sqmeter$tidal_level)))
 
 #верхний горизонт
 (mean.sqmeter.high<-t(tapply(high$Freq,INDEX=list(high$year,  high$Length.int),FUN=mean, na.rm=T)))
-mean.sqmeter.high.df<-as.data.frame(mean.sqmeter.high)
+mean.sqmeter.high.df<-as.data.frame(as.table(mean.sqmeter.high))
 
 (sd.sqmeter.high<-tapply(high$Freq,INDEX=list(high$year,  high$Length.int),FUN=sd, na.rm=T))
 
@@ -127,10 +119,10 @@ sem.sqmeter.low[is.na(sem.sqmeter.low)]<-0
 
 length.class<-seq(1,20,1)
 
-##size structure >1mm
+# ====== size structure >1mm =============================================
 
 #верхний горизонт
-(mean.sqmeter2.high<-mean.sqmeter.middle[2:20,])
+(mean.sqmeter2.high<-mean.sqmeter.high[2:20,])
 mean.sqmeter2.high.df<-as.data.frame(mean.sqmeter2.high)
 
 (sd.sqmeter2.high<-sd.sqmeter.middle[,2:20])
@@ -154,7 +146,7 @@ sem.sqmeter2.middle.df<-as.data.frame(sem.sqmeter2.middle)
 sem.sqmeter2.middle[is.na(sem.sqmeter2.middle)]<-0
 
 #граница среднего и нижнего горизонта, в фукусах
-mean.sqmeter2.midlow<-mean.sqmeter.middle[2:20,]
+mean.sqmeter2.midlow<-mean.sqmeter.midlow[2:20,]
 mean.sqmeter2.midlow.df<-as.data.frame(mean.sqmeter2.midlow)
 
 sd.sqmeter2.midlow<-sd.sqmeter.middle[,2:20]
@@ -164,7 +156,7 @@ sem.sqmeter2.midlow.df<-as.data.frame(sem.sqmeter2.midlow)
 sem.sqmeter2.midlow[is.na(sem.sqmeter2.midlow)]<-0
 
 #нижний горизонт, у нуля глубин
-mean.sqmeter2.low<-mean.sqmeter.middle[2:20,]
+mean.sqmeter2.low<-mean.sqmeter.low[2:20,]
 mean.sqmeter2.low.df<-as.data.frame(mean.sqmeter2.low)
 
 sd.sqmeter2.low<-sd.sqmeter.middle[,2:20]
@@ -175,6 +167,7 @@ sem.sqmeter2.low[is.na(sem.sqmeter2.low)]<-0
 
 length.class2<-seq(2,20,1)
 
+#====== все картинки по размерной структуре ===============
 
 #from R-book 
 error.bars<-function(yv,z,nn){
@@ -187,6 +180,16 @@ error.bars<-function(yv,z,nn){
     lines(c(xv[i]-g,xv[i]+g),c(yv[i]-z[i], yv[i]-z[i]))
   }}
 
+# попробуем нарисовать РС про все горизонты на одном графике
+str(mean.sqmeter.high)
+dimnames(mean.sqmeter.high)
+#собираем в один массив все горизонты литорали
+mean.sqmeter.all<-array(c(mean.sqmeter.high, mean.sqmeter.middle, mean.sqmeter.midlow, mean.sqmeter.low), dim = c(20,21,4), dimnames = list(size_class=dimnames(mean.sqmeter.high)[[1]], year=dimnames(mean.sqmeter.high)[[2]], tidal_level=c("high", "middle", "midlow", "low")))
+sem.sqmeter.all<-array(c(sem.sqmeter.high, sem.sqmeter.middle, sem.sqmeter.midlow, sem.sqmeter.low), dim = c(20,21,4), dimnames = list(size_class=dimnames(sem.sqmeter.high)[[1]], year=dimnames(sem.sqmeter.high)[[2]], tidal_level=c("high", "middle", "midlow", "low")))
+
+library(lattice)
+barchart(mean.sqmeter.high.df$Freq ~ mean.sqmeter.high.df$Var1|mean.sqmeter.high.df$Var2, equal.width=F)
+histogram
 
 #верхний горизонт
 for (j in 1:length(colnames(mean.sqmeter.high)))
@@ -282,7 +285,7 @@ for (j in 1:length(colnames(mean.sqmeter2.low)))
 
 
 
-## динамика обилия
+#======= динамика обилия ====================================================
 (N.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample, size.str.df$tidal_level), sum))
 (N.mean.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=mean))
 (N.sd.sqmeter<-apply(N.sqmeter, na.rm=T, MARGIN=c(1,3), FUN=sd))
@@ -307,7 +310,7 @@ dev.off()
 embedFonts("N_dynamic.pdf") #встройка шрифтов в файл
 
 
-##динамика без разделения на горизонты
+##==========динамика без разделения на горизонты================================
 str(size.str.sqmeter)
 (N.all.sqmeter<-tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum, na.rm=T))
 N.all.sqmeter[N.all.sqmeter==0]<-NA
@@ -319,7 +322,7 @@ N.all.sqmeter[N.all.sqmeter==0]<-NA
 write.table(data.frame(N.all.mean.sqmeter, N.all.sem.sqmeter), file="Nall_mean.csv", dec=",", sep=";")
 
 
-## динамика без молод ( больше 2+)
+#================= динамика без молод ( больше 2+)================================
 (N2.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"], 
                     list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
                          size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"],
@@ -338,7 +341,7 @@ write.table(data.frame(N2.mean.sqmeter, N2.sem.sqmeter), file="goreliy_N2.csv", 
 # запишем пересчет обилия >1мм в пробах на квадратный метр в файл
 write.table(as.data.frame(as.table(N2.sqmeter)), file="goreliy_N2_in samples_sqmeter.csv", sep=";", dec=",")
 
-##динамика без спата без разделения на горизонты
+#====динамика без спата без разделения на горизонты===============================
 str(size.str.sqmeter)
 (N2.all.sqmeter<-tapply(size.str.sqmeter$Freq[size.str.sqmeter$Length.int!="(0,1]"],
                         list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
@@ -368,7 +371,7 @@ embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 
 #locator()
 
-##про численность 2+
+# ======= про численность 2+ =================================================
 (N2.sqmeter.high<-(N2.sqmeter)[,,1])
 (N2.92.12.df.high<-data.frame(subset(samples.names, samples.names$tidal_level=="high"),
                              as.vector(t(N2.sqmeter.high))[!is.na(as.vector(t(N2.sqmeter.high)))]))
@@ -405,7 +408,7 @@ mean(N2.multisample.high$as.vector.N2.sqmeter.c..2004....2006....2007....2008...
   mean(N2.multisample.high$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)*100
 
 #middle
-#as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"middle"])[!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"middle"]))]
+#as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"middle"])[!is.na(as.vector(N2.sqmeter[c("2004","2006","2007","2008","2011"),,"middle"]))] 
 (N2.middle<-subset(samples.names, subset=samples.names$tidal_level=="middle"))
 (N2.multisample.middle<-data.frame(subset(N2.middle, subset= N2.middle$year==2004 | 
                                          N2.middle$year==2006 | N2.middle$year==2007 | N2.middle$year==2008 | 
@@ -456,7 +459,7 @@ mean(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....
   mean(N2.multisample.low$as.vector.N2.sqmeter.c..2004....2006....2007....2008....2011....)*100
 
 
-##размерная структура в %
+# ============ размерная структура в %=========================================
 str(size.str.sqmeter)
 
 #high
@@ -467,7 +470,7 @@ str(size.str.sqmeter)
    colSums(sum.sizestr.sqmeter.high[2:nrow(sum.sizestr.sqmeter.high),])*100))
 
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents.high, file="goreliy_high_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.high)), file="goreliy_high_sizestr2_percent.csv", sep=";", dec=",")
 
 #middle
 (sum.sizestr.sqmeter.middle<-t(tapply(middle$Freq,INDEX=list(middle$year, middle$Length.int),FUN=sum, na.rm=T)))
@@ -477,7 +480,7 @@ write.table(x=sum.sizestr2.sqmeter.percents.high, file="goreliy_high_sizestr2_pe
    colSums(sum.sizestr.sqmeter.middle[2:nrow(sum.sizestr.sqmeter.middle),])*100))
 
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents.middle, file="goreliy_middle_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.middle)), file="goreliy_middle_sizestr2_percent.csv", sep=";", dec=",")
  
 #midlow
 (sum.sizestr.sqmeter.midlow<-t(tapply(midlow$Freq,INDEX=list(midlow$year, midlow$Length.int),FUN=sum, na.rm=T)))
@@ -487,7 +490,7 @@ write.table(x=sum.sizestr2.sqmeter.percents.middle, file="goreliy_middle_sizestr
    colSums(sum.sizestr.sqmeter.midlow[2:nrow(sum.sizestr.sqmeter.midlow),])*100))
 
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents.midlow, file="goreliy_midlow_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.midlow)), file="goreliy_midlow_sizestr2_percent.csv", sep=";", dec=",")
 
 #low
 (sum.sizestr.sqmeter.low<-t(tapply(low$Freq,INDEX=list(low$year, low$Length.int),FUN=sum, na.rm=T)))
@@ -497,9 +500,9 @@ write.table(x=sum.sizestr2.sqmeter.percents.midlow, file="goreliy_midlow_sizestr
    colSums(sum.sizestr.sqmeter.low[2:nrow(sum.sizestr.sqmeter.low),])*100))
 
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents.low, file="goreliy_low_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.low)), file="goreliy_low_sizestr2_percent.csv", sep=";", dec=",")
 
- ##динамика максимального размера
+ # ===== динамика максимального размера =======================================
 str(ishodnik)
 (Length.max<-tapply(Length.mm, list(year, tidal_level), max, na.rm=T))
 #plot(x=names(Length.max), y=Length.max, type=none)
@@ -518,7 +521,9 @@ dev.off()
 embedFonts("L_max.pdf") #встройка шрифтов в файл
 
 
-## рассчетная биомасса по Максимовичу и др., 1993
+tapply(Length.mm, tidal_level, max, na.rm=T)
+
+## ======== рассчетная биомасса по Максимовичу и др., 1993 =====================
 biomass.count<-0.00016*(Length.mm^2.96)
 (biomass.samples<-tapply(biomass.count, list(year, sample, tidal_level), sum, na.rm=T))
 

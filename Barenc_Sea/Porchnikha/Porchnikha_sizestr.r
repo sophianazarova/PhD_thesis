@@ -9,7 +9,7 @@ attach(ishodnik)
 
 str(ishodnik)
 
-## размерная структура суммарно
+# ======= размерная структура суммарно ======================================
 max(Length.mm)
 Length.int<-cut(Length.mm, breaks=seq(0,21,1))
 
@@ -52,7 +52,7 @@ dev.off()
 embedFonts("sizestr2007.pdf") #встройка шрифтов в файл
 
 
-##возрастная структура
+# ====== возрастная структура =================================================
 (age.int<-as.factor(age))
 
 (age.str.table<-table(age.int,sample))
@@ -79,3 +79,16 @@ error.bars(yv=mean.agestr.sqmeter, nn=as.numeric(levels(age.int)), z=sem.agestr.
 title(main="2008", xlab="", ylab="")
 dev.off()
 embedFonts("agestr2007.pdf") #встройка шрифтов в файл
+
+# ========= размерная структура в % ============================================
+str(size.str.sqmeter)
+(sum.sizestr.sqmeter<-t(tapply(size.str.sqmeter$Freq,INDEX=size.str.sqmeter$Length.int,FUN=sum, na.rm=T)))
+
+(sum.sizestr.sqmeter.percents<-t(t(sum.sizestr.sqmeter)/rowSums(sum.sizestr.sqmeter)*100))
+
+#>1mm
+(sum.sizestr2.sqmeter.percents<-t(t(sum.sizestr.sqmeter[,2:ncol(sum.sizestr.sqmeter)])/
+                                    rowSums(sum.sizestr.sqmeter)*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents)), file="porchnikha_sizestr2_percent.csv", sep=";", dec=",")

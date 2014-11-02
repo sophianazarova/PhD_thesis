@@ -1,4 +1,3 @@
-setwd("~/Dropbox/PhD_thesis/PhD_thesis/All_N/")
 
 #на всякий случай отключили исходний от предыдущего файла
 detach(ishodnik)
@@ -19,7 +18,7 @@ ishodnik$mareography<-ordered(ishodnik$mareography, levels=c("high","middle", "l
 
 str(ishodnik)
 
-#summary по участкам для макрораспределения
+# =========== summary по участкам для макрораспределения ========================
 
 summ_area<-tapply(ishodnik$N.indd, ishodnik$area, summary)
 #соберем в табличку
@@ -40,7 +39,7 @@ hist(ishodnik$N.indd[ishodnik$region=="Chupa_bay"], breaks=seq(0,9000, 500))
 hist(ishodnik$N.indd[ishodnik$region=="Luvenga"], breaks=seq(0,9000, 500))
 hist(ishodnik$N.indd[ishodnik$region=="North_archipelago"], breaks=seq(0,9000, 500))
 
-## рисуем частотное распределение средних численностей, чтобы понять, какие они.
+# ==== рисуем частотное распределение средних численностей, чтобы понять, какие они. =====
 hist(ishodnik$N.indd[ishodnik$sea=="White"], breaks=seq(0,9000, 500))
 hist(ishodnik$N.indd[ishodnik$sea=="Barents"], breaks=seq(0,9000, 500))
 
@@ -56,8 +55,7 @@ hist(ishodnik$N.indd[ishodnik$sea=="Barents"], breaks=seq(0,9000, 100), main="Б
 dev.off()
 embedFonts("Nmean_hist_Barents.pdf") #встройка шрифтов в файл
 
-## сводка по численностям
-#Белое
+## ===== сводка по численностям Белое ==========
 summary(ishodnik$N.indd[ishodnik$sea=="White"])
 
 boxplot(ishodnik$N.indd[ishodnik$sea=="White"] ~ ishodnik$area[ishodnik$sea=="White",drop=T])
@@ -125,7 +123,7 @@ kruskal.test(ishodnik$N.indd[ishodnik$sea=="White" & ishodnik$mareography=="subt
                ishodnik$area[ishodnik$sea=="White" & ishodnik$mareography=="subtidal", drop=T])
 
 
-##Баренцево
+# ======== сводка по численностям Баренцево ================================
 summary(ishodnik$N.indd[ishodnik$sea=="Barents"])
 
 boxplot(ishodnik$N.indd[ishodnik$sea=="Barents"] ~ ishodnik$area[ishodnik$sea=="Barents",drop=T])

@@ -11,7 +11,7 @@ attach(ishodnik)
 
 str(ishodnik)
 
-##размерная структура
+# ======= размерная структура ===============================================
 max(Length.mm, na.rm=T)
 Length.int<-cut(Length.mm, breaks=seq(0,22,1))
 
@@ -129,7 +129,7 @@ error.bars<-function(yv,z,nn){
   embedFonts(paste("low", colnames(mean.sqmeter.low)[2], ".pdf",sep="_"))
 #}
 
-## возрастная структура
+# ======= возрастная структура =================================================
 (age.int<-as.factor(age))
 
 (age.str.table<-table(age.int, year, tidal_level, sample))
@@ -229,3 +229,37 @@ age.sem.sqmeter.low.df<-as.data.frame(age.sem.sqmeter.low)
   dev.off()
   embedFonts(paste("low", colnames(mean.sqmeter.low)[2], ".pdf",sep="_"))
 #}
+
+# ============ размерная структура в %=========================================
+str(size.str.sqmeter)
+
+#high
+(sum.sizestr.sqmeter.high<-t(tapply(high$Freq,INDEX=list(high$year, high$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.high<-t(t(sum.sizestr.sqmeter.high)/colSums(sum.sizestr.sqmeter.high)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.high<-t(t(sum.sizestr.sqmeter.high[2:nrow(sum.sizestr.sqmeter.high),])/
+                                         colSums(sum.sizestr.sqmeter.high[2:nrow(sum.sizestr.sqmeter.high),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.high)), file="goreliy_high_sizestr2_percent.csv", sep=";", dec=",")
+
+#middle
+(sum.sizestr.sqmeter.middle<-t(tapply(middle$Freq,INDEX=list(middle$year, middle$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.middle<-t(t(sum.sizestr.sqmeter.middle)/colSums(sum.sizestr.sqmeter.middle)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.middle<-t(t(sum.sizestr.sqmeter.middle[2:nrow(sum.sizestr.sqmeter.middle),])/
+                                           colSums(sum.sizestr.sqmeter.middle[2:nrow(sum.sizestr.sqmeter.middle),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.middle)), file="goreliy_middle_sizestr2_percent.csv", sep=";", dec=",")
+
+
+#low
+(sum.sizestr.sqmeter.low<-t(tapply(low$Freq,INDEX=list(low$year, low$Length.int),FUN=sum, na.rm=T)))
+(sum.sizestr.sqmeter.percents.low<-t(t(sum.sizestr.sqmeter.low)/colSums(sum.sizestr.sqmeter.low)*100))
+#>1mm
+(sum.sizestr2.sqmeter.percents.low<-t(t(sum.sizestr.sqmeter.low[2:nrow(sum.sizestr.sqmeter.low),])/
+                                        colSums(sum.sizestr.sqmeter.low[2:nrow(sum.sizestr.sqmeter.low),])*100))
+
+# запишем в файл размерную структуру в процентах
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents.low)), file="goreliy_low_sizestr2_percent.csv", sep=";", dec=",")

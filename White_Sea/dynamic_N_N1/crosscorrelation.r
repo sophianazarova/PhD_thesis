@@ -4,7 +4,7 @@ setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/dynamic_N_N1/")
 #на всякий случай отключили исходний от предыдущего файла
 detach(ishodnik)
 
-## размерная структура средние по годам по горизонтам
+# ======= размерная структура средние по годам по горизонтам ====================
 ishodnik<-read.table(file="dynamic_N_all_White.csv", sep=";", dec=",", head=T)
 attach(ishodnik)
 
@@ -20,12 +20,12 @@ N.matrix<-tapply(X=N.mean, list(year,area), max)
 
 names(N2.df)
 
-##crosscorrelation 
+# ============== crosscorrelation  ==============================================
 #Кажется это некоторая хрень - кросскорреляции между участками.
-#####
+
 
 ## численность N, участки, где мыли на сите 0,5.
-#####
+
 #N Эстуарий vs Горелый, Сельдяная, Медвежья 1992-2012
 pdf(file="crosscorr_N_Estury_Goreliy_1992_2012.pdf", family="NimbusSan")
 ccf(x=N.df$Estuary[rownames(N.df)%in%seq(1992,2012,1)], N.df$Goreliy[rownames(N.df)%in%seq(1992,2012,1)])
@@ -110,10 +110,10 @@ pdf(file="crosscorr_N_ZRS_2razrez_1994_2000.pdf", family="NimbusSan")
 ccf(x=N.df$ZRS[rownames(N.df)%in%seq(1994,2000,1)], N.df$razrez2[rownames(N.df)%in%seq(1994,2000,1)])
 dev.off()
 embedFonts("crosscorr_N_ZRS_2razrez_1994_2000.pdf") #встройка шрифтов в файл
-#####
 
-## численность N2, участки, где мыли на сите 1 + обрезанные по 1 мм ЛЭМБовские мониторинги.
-#####
+
+# ==== численность N2, участки, где мыли на сите 1 + обрезанные по 1 мм ЛЭМБовские мониторинги. =============================================================
+
 #N2 Эстуарий vs Горелый 1992-2012
 pdf(file="crosscorr_N2_Estury_Goreliy_1992_2012.pdf", family="NimbusSan")
 ccf(x=N2.df$Estuary[rownames(N.df)%in%seq(1992,2012,1)], N2.df$Goreliy[rownames(N.df)%in%seq(1992,2012,1)])
@@ -278,10 +278,10 @@ pdf(file="crosscorr_N2_ZRS_Suhaya_1995_2005.pdf", family="NimbusSan")
 ccf(x=N2.df$ZRS[rownames(N.df)%in%seq(1995,2001,1)], N2.df$Suhaya[rownames(N.df)%in%seq(1995,2001,1)])
 dev.off()
 embedFonts("crosscorr_N2_ZRS_Suhaya_1995_2005.pdf") #встройка шрифтов в файл
-#####
 
-## просто корреляции всего со всем... По численности между всеми участками
-#####
+
+# ==== просто корреляции всего со всем... По численности между всеми участками ===============================================================================
+
 #install.packages("psych")
 library(psych)
 N_pearson<-corr.test(N.matrix, method="pearson", use="pairwise")
@@ -303,10 +303,10 @@ write.table(corr.test(N.matrix, method="spearman", use="pairwise")$p, file="corr
 #для N2: Пишем в файл значения корреляции Пирсона и значения p
 write.table(corr.test(N2.matrix, method="spearman", use="pairwise")$r, file="corr_N2_spearman_r.csv", sep=";", dec=",")
 write.table(corr.test(N2.matrix, method="spearman", use="pairwise")$p, file="corr_N2_spearman_p_value.csv", sep=";", dec=",")
-##### 
+ 
 
-##теперь считаем Мантеля между расстояниями и корреляциями.
-#####
+# ====== теперь считаем Мантеля между расстояниями и корреляциями. =================
+
 
 library(vegan)
 #сделаем матрицу корреляций для участков где мыли на 1 мм
@@ -321,7 +321,7 @@ str(rasstoyanie_km_N)
 mantel(xdis=rasstoyanie_km_N, ydis=N_spearman.matrix)
 
 # соответствие динамик через Мантелевские корреляции
-#####
+
 
 library(vegan)
 str(ishodnik)
@@ -330,7 +330,7 @@ attach(ishodnik)
 
 str(N.df)
 
-##считаем частные корреляции мантеля по участкам, мытым на сите 0,5 мм
+# ===== считаем частные корреляции мантеля по участкам, мытым на сите 0,5 мм =======
 #делаем пустые матрицы для результатов
 (N.mantel.signif<-matrix(nrow=(ncol(N.df)-1), ncol=ncol(N.df)-1, dimnames=list(colnames(N.df[2:ncol(N.df)]),colnames(N.df[2:ncol(N.df)]))))
 (N.mantel.statistic<-matrix(nrow=(ncol(N.df)-1), ncol=ncol(N.df)-1, dimnames=list(colnames(N.df[2:ncol(N.df)]),colnames(N.df[2:ncol(N.df)]))))
@@ -355,7 +355,7 @@ for (i in 2:ncol(N.df)) {
 write.table(N.mantel.statistic, file="N_mantel_statistic.csv", sep=";", dec=",")
 write.table(N.mantel.signif, file="N_mantel_signif.csv", sep=";", dec=",")
 
-## аналогично считаем частные корреляции мантеля для участков где мыли на 1 мм.
+# ===== считаем частные корреляции мантеля для участков где мыли на 1 мм. =====
 (N2.mantel.signif<-matrix(nrow=(ncol(N2.df)-1), ncol=ncol(N2.df)-1, dimnames=list(colnames(N2.df[2:ncol(N2.df)]),colnames(N2.df[2:ncol(N2.df)]))))
 (N2.mantel.statistic<-matrix(nrow=(ncol(N2.df)-1), ncol=ncol(N2.df)-1, dimnames=list(colnames(N2.df[2:ncol(N2.df)]),colnames(N2.df[2:ncol(N2.df)]))))
 for (i in 2:ncol(N2.df)) {
@@ -374,11 +374,11 @@ for (i in 2:ncol(N2.df)) {
 }
 write.table(N2.mantel.statistic, file="N2_mantel_statistic.csv", sep=";", dec=",")
 write.table(N2.mantel.signif, file="N2_mantel_signif.csv", sep=";", dec=",")
-#####
 
 
-#Считаем сходство с матрицей расстояний
-#####
+
+# ===== Считаем сходство с матрицей расстояний ================================
+
 
 #читаем матрицу расстояний
 distance_N_km<-read.table("coordinates_N.csv", sep=";", dec=",", header =T)
@@ -401,7 +401,7 @@ distance_N2_km.razrez2.rm<-distance_N2_km[c(1:4,6:8),c(1:4,6:8)]
 
 mantel(xdis=distance_N2_km.razrez2.rm, N2.mantel.razrez2.rm)
 
-#####
+
 
 #картинки расстояние vs корреляция мантеля
 as.vector(distance_N_km)

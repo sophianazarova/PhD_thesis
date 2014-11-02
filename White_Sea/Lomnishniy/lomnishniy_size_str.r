@@ -203,7 +203,7 @@ N2.sem..07.12<-N2.sd.07.12/sqrt(sum(n.samples[1:(2012-2007+1)]))
 (sum.sizestr2.sqmeter.percents<-t(t(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])/
                                     colSums(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])*100))
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents, file="lomnishniy_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents)), file="lomnishniy_sizestr2_percent.csv", sep=";", dec=",")
 
 ## динамика максимального размера
 str(ishodnik)

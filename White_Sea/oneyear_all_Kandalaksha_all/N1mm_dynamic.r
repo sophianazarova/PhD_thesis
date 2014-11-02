@@ -10,9 +10,31 @@ attach(ishodnik)
 #сделаем из линейного датафрейма матрицы
 #для годовалых
 (N.1year.matrix<-tapply(X=N.1year, list(year,area, tidal_zone), max))
+str(N.1year.matrix)
 
-# PRCF для N1year - смотрим цикличность пополнений
-#####
+# ========= обилие 1+ насколько определяет общее обилие в заданный год? ========
+cairo_pdf("N1y_vs_N2.pdf")
+plot(ishodnik$N.1year, ishodnik$N.1mm, xlab = "N1+, экз./кв.м.", ylab = "N, экз./кв.м")
+dev.off()
+
+cor.test(ishodnik$N.1year, ishodnik$N.1mm, method = "spearman")
+
+
+mod1<-lm(ishodnik$N.1mm ~ ishodnik$N.1year)
+summary(mod1)
+plot(mod1$residuals)
+abline(h = 0)
+hist(mod1$residuals)
+shapiro.test(mod1$residuals)
+
+# ========= кросскорреляции одногодки и половозрелые =========================
+ishodnik_shift<-read.table("all_Kandalaksha.csv", header=T, sep=";", dec=",")
+str(ishodnik_shift)
+
+plot(ishodnik_shift$polovozrelye_before_tau, ishodnik_shift$oneyear_tau)
+cor.test(ishodnik_shift$polovozrelye_before_tau, ishodnik_shift$oneyear_tau, method = "spearman")
+
+# ========= PRCF для N1year - смотрим цикличность пополнений ===================
 
 # Функция для расчетов PRCF по Berryman, Turchin, 2001
 
@@ -312,9 +334,8 @@ ggplot(perm_prcf_Goreliy_low_N1y, aes(x=as.factor(lag), y=prcf, fill=signif)) +
   theme_bw()
 dev.off()
 
-#####
 
-#Смотрим синхронность пополнений
+# ============= Смотрим синхронность пополнений ==========================
 #####
 
 library(vegan)
@@ -351,7 +372,7 @@ write.table(N.1year.mantel.statistic, file="N_1year_mantel_statistic.csv", sep="
 write.table(N.1year.mantel.signif, file="N_1_year_mantel_signif.csv", sep=";", dec=",")
 
 
-#зависимость от расстояний
+# ============== зависимость от расстояний ================================
 #Считаем сходство с матрицей расстояний
 #####
 

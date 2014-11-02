@@ -18,6 +18,8 @@ radius_max <- sqrt( ishodnik$Nmax/ pi)
 library(maps)
 library(mapdata)
 
+
+
 pdf("Nmean_1.pdf", family="NimbusSan", width=190, height=280, paper="a4")
 map("worldHires", xlim=long_lim, ylim=lat_lim, col="gray90", fill=TRUE)
 #map("worldHires", xlim=c(30,44), ylim=c(63.8,70), col="gray90", fill=TRUE)
@@ -98,6 +100,17 @@ locator()
 10	points(samps$lon, samps$lat, pch=19, col="red", cex=0.5)  #plot my sample sites
 
 #####
+
+#####
+## карта европа + Белое
+pdf("seas.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+#plot(seas, ylim=c(54.29, 70.70), xlim=c(7.55, 45.08), lwd=2) 
+map("worldHires", ylim=c(54.29, 70.70), xlim=c(7.55, 45.08), col="gray90", fill=TRUE)
+dev.off()
+embedFonts("seas.pdf")
+#####
+
+
 
 ## ggmap
 #####

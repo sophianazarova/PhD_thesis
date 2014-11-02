@@ -167,6 +167,7 @@ sum(species.allyears)
 write.table(taxons, file="taxons.csv", sep=";", dec=",")
 
 taxons<-read.table(file="taxons_species.csv", header=T, sep=";", dec=",")
+taxons$taxon<-ordered(taxons$taxon, levels=c("Diptera", "Isopoda", "Amphipoda", "Bivalvia", "Gastropoda", "Priapulida", "Oligochaeta", "Polychaeta", "Nemertini"))
 (taxons_svodka<-table(taxons$taxon))
 
 pdf(file="taxons_pie.pdf", family="NimbusSan")
@@ -189,10 +190,12 @@ recode <- function(var, from, to)
 taxa<-recode(ishodnik$species, taxons$species, as.character(taxons$taxon))
 ishodnik_taxons<-(cbind(taxon=taxa, ishodnik))
 
-N_svodka_taxons<-tapply(ishodnik_taxons$N.sqmeter, list(ishodnik_taxons$taxon, ishodnik_taxons$year, ishodnik_taxons$station), mean)
+(N_svodka_taxons<-tapply(ishodnik_taxons$N.sqmeter, list(ishodnik_taxons$taxon, ishodnik_taxons$year, ishodnik_taxons$station), mean))
 
 str(N_svodka_taxons)
 N_svodka_taxons[is.na(N_svodka_taxons)]<-0
+
+
 
 pdf(file="N_taxons_dot_2002.pdf", family="NimbusSan")
 dotchart(N_svodka_taxons[,1,1])
@@ -203,6 +206,18 @@ pdf(file="N_taxons_pie_2002.pdf", family="NimbusSan")
 pie(N_svodka_taxons[,1,1])
 dev.off()
 embedFonts("N_taxons_pie_2002.pdf") #встройка шрифтов в файл
+
+#делаем гистограмму
+N_2002_svodka_taxons<-N_svodka_taxons[,1,1]
+N_2002_svodka_taxons<-as.data.frame(N_2002_svodka_taxons[c(1,2,5,6,8,10,11,12,13)])
+colnames(N_2002_svodka_taxons)<-c("N_2002")
+
+rownames(N_2002_svodka_taxons)[order(N_2002_svodka_taxons$N_2002, decreasing = T)]
+
+pdf(file="N_taxons_bar_2002.pdf", family="NimbusSan")
+barplot(sort(N_2002_svodka_taxons$N_2002, decreasing = T), names.arg = rownames(N_2002_svodka_taxons)[order(N_2002_svodka_taxons$N_2002, decreasing = T)], ylab = "N, экз./кв.м")
+dev.off()
+embedFonts("N_taxons_bar_2002.pdf") #встройка шрифтов в файл
 
 # смотрим различия между обилием видов. 
 #Возьмем скажем доминантов по численности, слив олигохет.

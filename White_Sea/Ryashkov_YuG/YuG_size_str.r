@@ -192,7 +192,7 @@ write.table(tukey.01.10$'as.factor(N2.01.10.df$year)', file="tukey_92_98.csv", d
                                     colSums(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])*100))
 
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents, file="YuG_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents)), file="YuG_sizestr2_percent.csv", sep=";", dec=",")
 
 ## динамика максимального размера
 str(ishodnik)

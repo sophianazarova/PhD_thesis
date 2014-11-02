@@ -218,7 +218,7 @@ kruskal.test(N2.07.12.df$as.vector.N2.07.12..27.length.as.vector.N2.07.12... ~ N
                                     colSums(sum.sizestr.sqmeter[2:nrow(sum.sizestr.sqmeter),])*100))
 
 # запишем в файл размерную структуру в процентах
-write.table(x=sum.sizestr2.sqmeter.percents, file="ZRS_sizestr2_percent.csv", sep=";", dec=",")
+write.table(x=as.data.frame(as.table(sum.sizestr2.sqmeter.percents)), file="ZRS_sizestr2_percent.csv", sep=";", dec=",")
 
 
 
