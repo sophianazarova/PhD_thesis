@@ -2751,6 +2751,38 @@
     <bcf:citekey order="38">Beukema_et_al_1998</bcf:citekey>
     <bcf:citekey order="38">Strasser_Gunter_2001</bcf:citekey>
     <bcf:citekey order="39">Maximovich_Gerasimova_2004</bcf:citekey>
+    <bcf:citekey order="41">Semenova_1980</bcf:citekey>
+    <bcf:citekey order="41">Maximovich_1985</bcf:citekey>
+    <bcf:citekey order="42">Zenkevich_1963</bcf:citekey>
+    <bcf:citekey order="43">Babkov_Golikov_1984</bcf:citekey>
+    <bcf:citekey order="44">Babkov_1982</bcf:citekey>
+    <bcf:citekey order="45">Babkov_Golikov_1984</bcf:citekey>
+    <bcf:citekey order="46">Kuznecov_1960</bcf:citekey>
+    <bcf:citekey order="47">Babkov_1982</bcf:citekey>
+    <bcf:citekey order="48">Babkov_Golikov_1984</bcf:citekey>
+    <bcf:citekey order="49">Naumov_Fedyakov_1993</bcf:citekey>
+    <bcf:citekey order="50">Babkov_1982</bcf:citekey>
+    <bcf:citekey order="51">Adrov_1992</bcf:citekey>
+    <bcf:citekey order="52">Propp_1971</bcf:citekey>
+    <bcf:citekey order="53">Derugin_1915</bcf:citekey>
+    <bcf:citekey order="54">Derugin_1915</bcf:citekey>
+    <bcf:citekey order="55">Derugin_1915</bcf:citekey>
+    <bcf:citekey order="56">Guryanova_et_al_1930</bcf:citekey>
+    <bcf:citekey order="57">Guryanova_Ushakov_1929</bcf:citekey>
+    <bcf:citekey order="58">Prigorovskiy_1948</bcf:citekey>
+    <bcf:citekey order="59">Voronkov_et_al_1948</bcf:citekey>
+    <bcf:citekey order="60">Alexeev_1976</bcf:citekey>
+    <bcf:citekey order="61">Streltsov_Agarova_1978</bcf:citekey>
+    <bcf:citekey order="62">Agarova_et_al_1976</bcf:citekey>
+    <bcf:citekey order="63">Prigorovskiy_1948</bcf:citekey>
+    <bcf:citekey order="64">Pavlova_1976</bcf:citekey>
+    <bcf:citekey order="65">Alexeev_1976</bcf:citekey>
+    <bcf:citekey order="66">Gurevich_Yakovleva_1976</bcf:citekey>
+    <bcf:citekey order="67">Prigorovskiy_1948</bcf:citekey>
+    <bcf:citekey order="67">Matveeva_et_al_1955</bcf:citekey>
+    <bcf:citekey order="67">Streltsov_et_al_1974</bcf:citekey>
+    <bcf:citekey order="67">Agarova_et_al_1976</bcf:citekey>
+    <bcf:citekey order="67">Zhukov_1984</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt" type="entry" sortscheme="nyt">
   <bcf:sorting>

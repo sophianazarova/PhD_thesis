@@ -5,6 +5,7 @@ detach(ishodnik)
 
 ishodnik<-read.table("N_all_Kandalaksha.csv", header=T, sep=";", dec=",")
 str(ishodnik)
+head(ishodnik)
 attach(ishodnik)
 
 #сделаем из линейного датафрейма матрицы
@@ -12,9 +13,13 @@ attach(ishodnik)
 (N.1year.matrix<-tapply(X=N.1year, list(year,area, tidal_zone), max))
 str(N.1year.matrix)
 
+tapply(ishodnik$N.1year, list(ishodnik$area, ishodnik$tidal_zone), min, na.rm=T)
+tapply(ishodnik$N.1year, list(ishodnik$area, ishodnik$tidal_zone), max, na.rm=T)
+
 # ========= обилие 1+ насколько определяет общее обилие в заданный год? ========
 cairo_pdf("N1y_vs_N2.pdf")
 plot(ishodnik$N.1year, ishodnik$N.1mm, xlab = "N1+, экз./кв.м.", ylab = "N, экз./кв.м")
+#curve(x^1, from = 0, to = 6000, n = 1000, add = T, )
 dev.off()
 
 cor.test(ishodnik$N.1year, ishodnik$N.1mm, method = "spearman")
@@ -31,7 +36,13 @@ shapiro.test(mod1$residuals)
 ishodnik_shift<-read.table("all_Kandalaksha.csv", header=T, sep=";", dec=",")
 str(ishodnik_shift)
 
-plot(ishodnik_shift$polovozrelye_before_tau, ishodnik_shift$oneyear_tau)
+pdf("N8mm_vs_N1y.pdf", family="NimbusSan")
+plot(ishodnik_shift$polovozrelye_before_tau, ishodnik_shift$oneyear_tau, xlab = "N8mm, экз./кв.м", ylab = "N1+, экз./кв.м")
+dev.off()
+embedFonts("N8mm_vs_N1y.pdf")
+
+# plot(lm(ishodnik_shift$polovozrelye_before_tau ~ ishodnik_shift$oneyear_tau))
+
 cor.test(ishodnik_shift$polovozrelye_before_tau, ishodnik_shift$oneyear_tau, method = "spearman")
 
 # ========= PRCF для N1year - смотрим цикличность пополнений ===================
@@ -336,7 +347,6 @@ dev.off()
 
 
 # ============= Смотрим синхронность пополнений ==========================
-#####
 
 library(vegan)
 str(ishodnik)
@@ -382,4 +392,4 @@ rownames(distance_N1_km)<-distance_N1_km[,1]
 
 
 # считаем мантеля между матрицей расстояний и корреляциями динамики
-mantel(xdis=distance_N1_km, N1.mantel.statistic, na.rm=T)
+mantel(xdis=distance_N1_km[,2:7], N.1year.mantel.statistic, na.rm=T)

@@ -13,7 +13,7 @@ attach(ishodnik)
 # ========== размерная структура суммарно по годам по горизонтам =============
 Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 
-(size.str.table<-table(Length.int,year,sample))
+size.str.table<-table(Length.int,year,sample)
 
 size.str.df<-as.data.frame(size.str.table) # как таблица данных
 
@@ -117,6 +117,29 @@ for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
   title(main=colnames(mean.sizestr.sqmeter2)[j], xlab="", ylab="")
   dev.off()
 }
+
+
+#собираем в один df все данные
+sizestr2_df<-data.frame(size=as.factor(rep(seq(2,20,1),7)), size_class=as.data.frame(as.table(mean.sizestr.sqmeter2))[,1],year=as.factor(as.data.frame(as.table(mean.sizestr.sqmeter2))[,2]), meanN=as.data.frame(as.table(mean.sizestr.sqmeter2))[,3], SEM=as.data.frame(as.table(sem.sizestr.sqmeter2))[,3])
+
+str(sizestr2_df)
+
+##рисуем с ggplot
+library(ggplot2)
+
+dodge <- position_dodge(width=0.9)
+p <- ggplot(data=sizestr2_df, aes(y=meanN, x=size)) + 
+  geom_bar(position=dodge, stat="identity") + 
+  facet_wrap(~year, ncol=4) + 
+  theme_bw() +
+  xlab("длина раковины, мм") +
+  ylab("N, экз./кв.м") +
+  scale_x_discrete(breaks=seq(2,20,4))
+
+pdf("DZ_sizestr_oneplot.pdf", family="NimbusSan")
+p + geom_errorbar(aes(ymin=meanN-SEM, ymax=meanN+SEM), position=dodge, width=0.25)
+dev.off()
+embedFonts("DZ_sizestr_oneplot.pdf")
 
 # ============= динамика обилия ============================================
 (N.sqmeter<-(t(tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum))))

@@ -610,6 +610,31 @@
       \field{pages}{95\bibrangedash 186}
       \keyw{Дальний пляж,зообентос,литораль}
     \endentry
+    \entry{Adrov_1992}{inproceedings}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=05b7cbaf572cacdaa0d9a1455b2f02a1}{Адров}{А\bibinitperiod}{Н.М.}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=05b7cbaf572cacdaa0d9a1455b2f02a1}{Адров}{А\bibinitperiod}{Н.М.}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \list{location}{1}{%
+        {Апатиты}%
+      }
+      \strng{namehash}{05b7cbaf572cacdaa0d9a1455b2f02a1}
+      \strng{fullhash}{05b7cbaf572cacdaa0d9a1455b2f02a1}
+      \field{sortinit}{А}
+      \field{sortinithash}{d5ebf62df63408744dd6d82dcc8a6b41}
+      \field{labelyear}{1992}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Два аспекта для формирования благоприятных для первичного продуцирования условий в водных массах полярных районов океана}
+      \field{booktitle}{Теоретические подходы к изучению экосистем морей Арктики и Субарктики}
+      \field{title}{Два аспекта для формирования благоприятных для первичного продуцирования условий в водных массах полярных районов океана}
+      \field{year}{1992}
+      \field{pages}{9\bibrangedash 18}
+    \endentry
     \entry{Azarov_1963}{inproceedings}{}
       \name{labelname}{1}{}{%
         {{uniquename=0,hash=e67badac796dcad745ba98f8cb448e2a}{Азаров}{А\bibinitperiod}{В.\:В.}{В\bibinitperiod}{}{}{}{}}%
@@ -637,6 +662,58 @@
       \field{year}{1963}
       \field{pages}{35\bibrangedash 53}
       \keyw{Macoma balthica,питание,рыбы,птицы,Белое море,Кандалакшский заповедник}
+    \endentry
+    \entry{Babkov_1982}{inproceedings}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=80c293ab843a7764e051ec30b7c8b8c5}{Бабков}{Б\bibinitperiod}{А.И.}{А\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=80c293ab843a7764e051ec30b7c8b8c5}{Бабков}{Б\bibinitperiod}{А.И.}{А\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \list{publisher}{1}{%
+        {Л}%
+      }
+      \strng{namehash}{80c293ab843a7764e051ec30b7c8b8c5}
+      \strng{fullhash}{80c293ab843a7764e051ec30b7c8b8c5}
+      \field{sortinit}{Б}
+      \field{sortinithash}{8f918f8686258589a227d5aaf265a9bb}
+      \field{labelyear}{1982}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Краткая гидрологическая характеристика губы Чупа Белого моря}
+      \field{booktitle}{Экологические исследования перспективных объектов марикультуры фауны Белого моря}
+      \field{chapter}{Краткая гидрологическая характеристика губы Чупа Белого моря}
+      \field{title}{Краткая гидрологическая характеристика губы Чупа Белого моря}
+      \field{year}{1982}
+      \field{pages}{3\bibrangedash 16}
+    \endentry
+    \entry{Babkov_Golikov_1984}{book}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=80c293ab843a7764e051ec30b7c8b8c5}{Бабков}{Б\bibinitperiod}{А.И.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8790aa6ec20465e8b4947e4772c85c4b}{Голиков}{Г\bibinitperiod}{А.Н.}{А\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=80c293ab843a7764e051ec30b7c8b8c5}{Бабков}{Б\bibinitperiod}{А.И.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8790aa6ec20465e8b4947e4772c85c4b}{Голиков}{Г\bibinitperiod}{А.Н.}{А\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \list{publisher}{1}{%
+        {5. Л.: Изд. Зоол. ин-та РАН}%
+      }
+      \strng{namehash}{58b1bbaeaf4b0bdcf9b1ca61ae91e1a8}
+      \strng{fullhash}{58b1bbaeaf4b0bdcf9b1ca61ae91e1a8}
+      \field{sortinit}{Б}
+      \field{sortinithash}{8f918f8686258589a227d5aaf265a9bb}
+      \field{labelyear}{1984}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Гидробиокомплексы Белого моря}
+      \field{title}{Гидробиокомплексы Белого моря}
+      \field{year}{1984}
+      \field{pages}{104}
     \endentry
     \entry{Bezrukov_Lisicyn_1960}{article}{}
       \name{labelname}{2}{}{%
@@ -782,6 +859,29 @@
       \field{year}{1929}
       \field{pages}{5\bibrangedash 40}
     \endentry
+    \entry{Derugin_1915}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=cc73b464fac706323837df1995328cd5}{Дерюгин}{Д\bibinitperiod}{КМ}{К\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=cc73b464fac706323837df1995328cd5}{Дерюгин}{Д\bibinitperiod}{КМ}{К\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \strng{namehash}{cc73b464fac706323837df1995328cd5}
+      \strng{fullhash}{cc73b464fac706323837df1995328cd5}
+      \field{sortinit}{Д}
+      \field{sortinithash}{1b7ddf82ad674a4705c0178bee90015c}
+      \field{labelyear}{1915}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Фауна Кольского залива и условия ее существования}
+      \field{journaltitle}{Зап. Имп. Акад. наук. Сер}
+      \field{title}{Фауна Кольского залива и условия ее существования}
+      \field{volume}{8}
+      \field{year}{1915}
+      \field{pages}{1\bibrangedash 929}
+    \endentry
     \entry{Zacepin_Filatova_1968}{inbook}{}
       \name{labelname}{2}{}{%
         {{uniquename=0,hash=e0b7d9ba44bae1787b7cdd80425b5b4f}{Зацепин}{З\bibinitperiod}{В.\:И.}{В\bibinitperiod}{}{}{}{}}%
@@ -806,6 +906,55 @@
       \field{year}{1968}
       \field{pages}{95\bibrangedash 155}
       \keyw{Bivalvia,general zoology}
+    \endentry
+    \entry{Zenkevich_1963}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=8b5e0f1ec513da09458cafc118715f36}{Зенкевич}{З\bibinitperiod}{Лев\bibnamedelima Александрович}{Л\bibinitperiod\bibinitdelim А\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=8b5e0f1ec513da09458cafc118715f36}{Зенкевич}{З\bibinitperiod}{Лев\bibnamedelima Александрович}{Л\bibinitperiod\bibinitdelim А\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Изд-во Академии наук СССР}%
+      }
+      \strng{namehash}{8b5e0f1ec513da09458cafc118715f36}
+      \strng{fullhash}{8b5e0f1ec513da09458cafc118715f36}
+      \field{sortinit}{З}
+      \field{sortinithash}{77598a6094814ac98e053b81c53814e4}
+      \field{labelyear}{1963}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Биология морей СССР.}
+      \field{title}{Биология морей СССР.}
+      \field{year}{1963}
+    \endentry
+    \entry{Kuznecov_1960}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=9b5d0d51fcf7f4e7dfd1c9eb74471fea}{Кузнецов}{К\bibinitperiod}{В.\bibnamedelimi В.}{В\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=9b5d0d51fcf7f4e7dfd1c9eb74471fea}{Кузнецов}{К\bibinitperiod}{В.\bibnamedelimi В.}{В\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \list{location}{1}{%
+        {М. - Л.}%
+      }
+      \list{publisher}{1}{%
+        {издательство АН СССР}%
+      }
+      \strng{namehash}{9b5d0d51fcf7f4e7dfd1c9eb74471fea}
+      \strng{fullhash}{9b5d0d51fcf7f4e7dfd1c9eb74471fea}
+      \field{sortinit}{К}
+      \field{sortinithash}{63d3bbd575ebadbdb48d1b2fe67b8a28}
+      \field{labelyear}{1960}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Белое море и биологические особенности его флоры и фауны}
+      \field{note}{ЗИН: I 15836}
+      \field{title}{Белое море и биологические особенности его флоры и фауны}
+      \field{year}{1960}
+      \field{pages}{322}
+      \keyw{Белое море White sea}
     \endentry
     \entry{Maximovich_Gerasimova_2004}{inproceedings}{}
       \name{labelname}{2}{}{%
@@ -1046,6 +1195,28 @@
       \field{pages}{51\bibrangedash 52}
       \keyw{my publications}
     \endentry
+    \entry{Naumov_Fedyakov_1993}{book}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=b73c5ff80f74642896e8a636fe98ca02}{Наумов}{Н\bibinitperiod}{Андрей\bibnamedelima Донатович}{А\bibinitperiod\bibinitdelim Д\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3094a0ff3c7e2019abb1c594381c7584}{Федяков}{Ф\bibinitperiod}{Вячеслав\bibnamedelima Викторович}{В\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=b73c5ff80f74642896e8a636fe98ca02}{Наумов}{Н\bibinitperiod}{Андрей\bibnamedelima Донатович}{А\bibinitperiod\bibinitdelim Д\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=3094a0ff3c7e2019abb1c594381c7584}{Федяков}{Ф\bibinitperiod}{Вячеслав\bibnamedelima Викторович}{В\bibinitperiod\bibinitdelim В\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Изд-во Санкт-Петербургского гор. дворца творчества юных}%
+      }
+      \strng{namehash}{78a77cce2edab9f4364a3a4ab17921b6}
+      \strng{fullhash}{78a77cce2edab9f4364a3a4ab17921b6}
+      \field{sortinit}{Н}
+      \field{sortinithash}{ff8719eecc07ad86054c52cb97637aff}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Вечно живое Белое море}
+      \field{title}{Вечно живое Белое море}
+      \field{year}{1993}
+    \endentry
     \entry{Nikolaeva_1998}{report}{}
       \name{labelname}{1}{}{%
         {{uniquename=0,hash=648b164efa93a4009a9b19ef4ab2cbf2}{Николаева}{Н\bibinitperiod}{Д.}{Д\bibinitperiod}{}{}{}{}}%
@@ -1114,6 +1285,30 @@
       \field{title}{Макробентос литорали Лувеньгских шхер Кандалакшского залива Белого моря и некоторые аспекты его динамики}
       \field{type}{mathesis}
       \field{year}{1996}
+    \endentry
+    \entry{Propp_1971}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=a7d1192765219959b20e060d58bd027c}{Пропп}{П\bibinitperiod}{М.В.}{М\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=a7d1192765219959b20e060d58bd027c}{Пропп}{П\bibinitperiod}{М.В.}{М\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Л.}%
+      }
+      \list{publisher}{1}{%
+        {Наука}%
+      }
+      \strng{namehash}{a7d1192765219959b20e060d58bd027c}
+      \strng{fullhash}{a7d1192765219959b20e060d58bd027c}
+      \field{sortinit}{П}
+      \field{sortinithash}{dd49c1a2cbe3228d2a16ae6100f0784f}
+      \field{labelyear}{1971}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Экология прибрежных донных сообществ Мурманского побережья Баренцева моря. По материалам водолазных гидробиологических работ}
+      \field{title}{Экология прибрежных донных сообществ Мурманского побережья Баренцева моря. По материалам водолазных гидробиологических работ}
+      \field{year}{1971}
+      \field{pages}{128}
     \endentry
     \entry{Semenova_1980}{inproceedings}{}
       \name{labelname}{1}{}{%

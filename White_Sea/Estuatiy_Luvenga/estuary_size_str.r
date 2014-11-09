@@ -151,6 +151,32 @@ for (j in 1:length(colnames(mean.sizestr.sqmeter2)))
 #print(pl)
 
 
+
+#собираем в один df все данные
+sizestr2_df<-data.frame(size=as.factor(rep(seq(2,20,1),21)), size_class=as.data.frame(as.table(mean.sizestr.sqmeter2))[,1],year=(as.data.frame(as.table(mean.sizestr.sqmeter2))[,2]), meanN=as.data.frame(as.table(mean.sizestr.sqmeter2))[,3], SEM=as.data.frame(as.table(sem.sizestr.sqmeter2))[,3])
+
+str(sizestr2_df)
+
+##рисуем с ggplot
+library(ggplot2)
+
+to_plot<-subset(sizestr2_df, sizestr2_df$year%in%levels(sizestr2_df$year)[levels(sizestr2_df$year)>1997 & levels(sizestr2_df$year)<2010])
+
+dodge <- position_dodge(width=0.9)
+p <- ggplot(data=to_plot, aes(y=meanN, x=size)) + 
+  geom_bar(position=dodge, stat="identity") + 
+  facet_wrap(~year, ncol=4) + 
+  theme_bw() +
+  xlab("длина раковины, мм") +
+  ylab("N, экз./кв.м") +
+  scale_x_discrete(breaks=seq(2,20,4))
+
+pdf("Estuary_sizestr_oneplot.pdf", family="NimbusSan")
+p + geom_errorbar(aes(ymin=meanN-SEM, ymax=meanN+SEM), position=dodge, width=0.25)
+dev.off()
+embedFonts("Estuary_sizestr_oneplot.pdf")
+
+
 # ======== динамика обилия ==============================================
 (N.sqmeter<-(t(tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum))))
 (N.mean.sqmeter<-colMeans(N.sqmeter, na.rm=T))

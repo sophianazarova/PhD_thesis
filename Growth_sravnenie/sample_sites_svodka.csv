@@ -1,0 +1,55 @@
+area;depth.m;place;country;region;continent;lat.;long.;author;Lmax;k;omega
+Rand_Harbor;;Buzzards Bay;Massachusetts;Massachusetts;Amerika;41,5;;Gilbert.1974;24,0446;0,6401;15,39094846
+Wadden_Sea;;Der Helder;Netherlands;Wadden;Europe;53;;Lammens.1967;25,5623;0,3382;8,64516986
+Hudsons_Bay;1.1;Churchill;Manitoba;Manitoba;Amerika;58,76667;;Green, in preparation;21,6428;0,3174;6,86942472
+MLW;;Churchill;Manitoba;Manitoba;Amerika;58,76667;;Green, in preparation;38,57715;0,08927;3,4437821805
+Finland_Gulf_3m;3;Tvarminne, Finland gulf, Baltic Sea;Finland;Baltic;Europe;60;;Segerstrale.1960;64,38269;0,04463;2,8733994547
+Finland_Gulf_20m;20;Tvarminne, Finland gulf, Baltic Sea;Finland;Baltic;Europe;60;;Segerstrale.1960;NA;NA;NA
+Finland_Gulf_35m;35;Tvarminne, Finland gulf, Baltic Sea;Finland;Baltic;Europe;60;;Segerstrale.1960;NA;NA;NA
+St_Laurence_River;;Cacouna;Quebeck;Quebeck;Amerika;48,029265;-69,414718;Lavoie.1968;17,577;0,128;2,249856
+Cobscook bay;;Maine;USA;Maine;Amerika;44,86667;67 04 W;Commito. 1982;22,3183;0,1737;3,87668871
+Windsor;;Fundy bay;;Fundy bay;Amerika;45;64 W;Turk et al. 1980;23,9901;0,08069;1,935761169
+Mungo_brook;;Fundy bay;;Fundy bay;Amerika;45;63 W;Turk et al. 1980;13,6292;0,1035;1,4106222
+Pekkelinskaya_Bay;;White Sea;Russia;White;Europe;66,59;32,96;Semenova. 1970;22,1986;0,04732;1,050437752
+WSBS_MSU;;White Sea;Russia;White;Europe;66,55;33,1;Semenova. 1970;22,5669;0,0424;0,95683656
+Ermolinskaya_Bay;;White Sea;Russia;White;Europe;66,55;33,05;Semenova. 1970;18,60622;0,05555;1,033575521
+Sukhaya_middle;middle;White Sea;Russia;White;Europe;66,310088;33,65288;Maximovich et al. 1992;3,51E+002;6,21E-003;2,1820056
+Sukhaya_low;low;White Sea;Russia;White;Europe;66,310088;33,65288;Maximovich et al. 1992;NA;NA;NA
+Sukhaya_low_zostera;low;White Sea;Russia;White;Europe;66,310088;33,65288;Maximovich et al. 1992;22,2236;0,1369;3,04241084
+Klyushiha_middle;middle;White Sea;Russia;White;Europe;66,305005;33,781795;Maximovich et al. 1992;NA;NA;NA
+Klyushiha_low;low;White Sea;Russia;White;Europe;66,305005;33,781795;Maximovich et al. 1992;45,23571;0,04901;2,2170021471
+Klyushiha_low_zostera;low;White Sea;Russia;White;Europe;66,305005;33,781795;Maximovich et al. 1992;4,75E+002;5,84E-003;2,7696565
+St_Laurence_high;high;;Canada;St_Laurence;Amerika;NA;;Vincent et al. 1989;13,5893;0,2415;3,28181595
+St_Laurence_middle;middle;;Canada;St_Laurence;Amerika;NA;;Vincent et al. 1989;17,4201;0,1923;3,34988523
+St_Laurence_low;low;;Canada;St_Laurence;Amerika;NA;;Vincent et al. 1989;25,9046;0,1324;3,42976904
+IPB_length;;Baltic Sea;Poland;Baltic;Europe;NA;;Venne Klusek. 1985;21,8034;0,2852;6,21832968
+GN_length;;Baltic Sea;Poland;Baltic;Europe;NA;;Venne Klusek. 1985;28,6856;0,1895;5,4359212
+H75_length;;Baltic Sea;Poland;Baltic;Europe;NA;;Venne Klusek. 1985;27,4526;0,2049;5,62503774
+Tvaren_Bay;;Baltic Sea;;Baltic;Europe;NA;;Bergh.1974;32,91504;0,05197;1,7105946288
+North_sea;;List, Sylt, Nordernay, North Sea;Germany;North;Europe;54,5;;Vogel.1959;25,6568;0,2634;6,75800112
+Kiel_area;;Kiel Bay, Baltic Sea;;Baltic;Europe;54,5;;Vogel.1959;NA;NA;NA
+Tvarminne_area;;Tvarminne, Finland gulf, Baltic Sea;Finland;Baltic;Europe;60;;Vogel.1959;9,7203;0,8819;8,57233257
+Le_Verdon_high;high;Gironde Estuary;France;Biscay;Europe;45,55;-1,05;Bachelet.1980;17,1515;0,4354;7,4677631
+Le_Verdon_middle;middle;Gironde Estuary;France;Biscay;Europe;45,55;-1,05;Bachelet.1980;15,9549;0,3644;5,81396556
+Phare_de_Richard;middle;Gironde Estuary;France;Biscay;Europe;45,55;-1,05;Bachelet.1980;15,9162;0,3769;5,99881578
+Abram_mid;middle;Barents Sea;Russia;Barents;Europe;68,98;33,03;author data;NA;NA;NA
+Abram_low;low;Barents Sea;Russia;Barents;Europe;68,98;33,03;author data;30,16808;0,04681;1,4121678248
+Dalnezeleneckaya_high;high;Barents Sea;Russia;Barents;Europe;69,11;36,1;author data;352,89043;0,00439;1,5491889877
+Dalnezeleneckaya_mid;middle;Barents Sea;Russia;Barents;Europe;69,11;36,1;author data;20,088;0,1284;2,5792992
+Gavrilovo_mid;middle;Barents Sea;Russia;Barents;Europe;69,17;35,86;author data;55,26754;0,02517;1,3910839818
+Gavrilovo_low;low;Barents Sea;Russia;Barents;Europe;69,17;35,86;author data;75,80496;0,02228;1,6889345088
+Shelpino_high;high;Barents Sea;Russia;Barents;Europe;69,1;36,21;author data;26,5544;0,0619;1,64371736
+Shelpino_mid;middle;Barents Sea;Russia;Barents;Europe;69,1;36,21;author data;NA;NA;NA
+Yarnyshnaya_high;high;Barents Sea;Russia;Barents;Europe;69,09;36,05;author data;NA;NA;NA
+Yarnyshnaya_mid;middle;Barents Sea;Russia;Barents;Europe;69,09;36,05;author data;49,50258;0,05198;2,5731441084
+Yarnyshnaya_low;low;Barents Sea;Russia;Barents;Europe;69,09;36,05;author data;1,93E+002;6,07E-003;1,1735243
+Pala_mid;middle;Barents Sea;Russia;Barents;Europe;69,19;33,37;author data;NA;NA;NA
+Pala_low;low;Barents Sea;Russia;Barents;Europe;69,19;33,37;author data;NA;NA;NA
+Porchnikha_mid;middle;Barents Sea;Russia;Barents;Europe;69,08;36,25;author data;33,03148;0,09703;3,2050445044
+Ivanovskaya;subtidal;Barents Sea;Russia;Barents;Europe;68,29;38,71;author data;NA;NA;NA
+Ythan_estuary;;North Sea;UK;North;Europe;57,3;-1,9;Chambes, Milne, 1975;15,6216;0,4372;6,82976352
+Budle_Bay;;North Sea;UK;North;Europe;55,615113;-1,762876;Brady, 1943;27,1831;0,2815;7,65204265
+Firth_of_Forth;;North Sea;UK;North;Europe;56,014708;-2,86;Stephen_1931;NA;NA;NA
+river_Clwyd;;Irish Sea;UK;Irish;Europe;53,311959;-3,51;Parsons_Thomas_1979;42,3713;0,1272;5,38962936
+Lynher_estuary;;La Manche;UK;La Manche;Europe;50,38;-4,3;Warwick_Price_1975;14,3301;0,5109;7,32124809
+Wash;;North;UK;North;Europe;52,85;0,42;Reading_1979;18,0314;0,3447;6,21542358

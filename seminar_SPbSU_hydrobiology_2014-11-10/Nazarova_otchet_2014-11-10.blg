@@ -1,0 +1,17 @@
+[2] Config.pm:320> INFO - This is Biber 1.9
+[2] Config.pm:323> INFO - Logfile is 'Nazarova_otchet_2014-11-10.blg'
+[261] biber:277> INFO - === ÐÑ. Ð½Ð¾ÑÐ±.  7, 2014, 13:36:23
+[262] Biber.pm:333> INFO - Reading 'Nazarova_otchet_2014-11-10.bcf'
+[414] Biber.pm:632> INFO - Using all citekeys in bib section 0
+[772] Biber.pm:3051> INFO - Processing section 0
+[1172] Biber.pm:3189> INFO - Looking for bibtex format file 'publications_for_disser.bib' for section 0
+[1175] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[1176] bibtex.pm:864> INFO - Found BibTeX data source 'publications_for_disser.bib'
+[1754] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1754] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1754] Biber.pm:2928> INFO - Sorting list 'ydnt' of type 'entry' with scheme 'ydnt' and locale 'ru-RU'
+[1906] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1906] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1906] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'ru-RU'
+[1948] bbl.pm:517> INFO - Writing 'Nazarova_otchet_2014-11-10.bbl' with encoding 'UTF-8'
+[1953] bbl.pm:606> INFO - Output to Nazarova_otchet_2014-11-10.bbl

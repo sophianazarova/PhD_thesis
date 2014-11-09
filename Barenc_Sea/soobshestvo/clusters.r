@@ -56,3 +56,22 @@ pdf("Barents_fauna_sites_jaccard_single_BW.pdf", family="NimbusSan")
 simprof.plot(fauna_sites_clust, siglinetype = 5, leafcolors = rep("black", length(fauna_sites_clust$significantclusters)))
 dev.off()
 embedFonts("Barents_fauna_sites_jaccard_single_BW.pdf")
+
+# ======= рисуем таксономический состав ==========================
+taxa<-read.csv2("taxons.csv")
+
+taxa_svodka<-table(taxa$taxon)
+
+sort(taxa_svodka)
+
+pdf("Barents_taxons.pdf", family="NimbusSan")
+dotchart(x = sort(as.vector(taxa_svodka)), labels = names(taxa_svodka)[order(as.vector(taxa_svodka))])
+dev.off()
+embedFonts("Barents_taxons.pdf")
+
+pdf("Barents_taxons_pie.pdf", family="NimbusSan")
+pie(x = sort(as.vector(taxa_svodka)), labels = names(taxa_svodka)[order(as.vector(taxa_svodka))])
+dev.off()
+embedFonts("Barents_taxons_pie.pdf")
+
+par
