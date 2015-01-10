@@ -4,13 +4,13 @@ setwd("~/Dropbox/PhD_thesis/PhD_thesis/All_N/")
 #на всякий случай отключили исходний от предыдущего файла
 detach(ishodnik)
 
-## размерная структура средние по годам по горизонтам
+
 ishodnik<-read.table(file="N_all_samples.csv", sep=";", dec=",", head=T)
 ishodnik$area<-ordered(ishodnik$area, levels=c("Klyushiha", "Suhaya", "Lisya", "Podpahta",
                                                "YuG", "ZRS", "lomnishniy", 
                                                "goreliy", "estuary", "razrez2", 
-                                               "Ura", "Pechenga",
-                                               "Abram", "Nagornoe", "Retinskoe", "Pala", 
+                                               "Pechenga", "Ura",
+                                               "Pala", "Retinskoe", "Abram", "Nagornoe",    
                                                "Gavrilovo", "Yarnyshnaya", "DZ", "Shelpino", "Porchnikha", "Ivanovskaya"))
 ishodnik$region<-ordered(ishodnik$region, levels=c("Chupa_bay", "North_archipelago", "Luvenga", "West_Murman", "Kola_bay", "East_Murman"))
 ishodnik$sea<-ordered(ishodnik$sea, levels=c("White", "Barents"))
@@ -65,7 +65,7 @@ dev.off()
 embedFonts("N2_area_White.pdf") #встройка шрифтов в файл
 
 pdf(file="N2_area_Barents.pdf", family="NimbusSan")
-boxplot(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T] ~ abbreviate(ishodnik$area[ishodnik$sea=="Barents",drop=T]),  
+boxplot(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T] ~ ishodnik$area[ishodnik$sea=="Barents",drop=T],  
         names=(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T])), ylim=c(0,max(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T])))
 #подпишем на график медианы
 for (i in 1:length(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T]))){
@@ -74,7 +74,36 @@ for (i in 1:length(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T]))){
                                      INDEX=ishodnik$area[ishodnik$sea=="Barents",drop=T], FUN=median)))[i])
 }
 dev.off()
-embedFonts("N2_area_Barents.pdf") #встройка шрифтов в файл
+embedFonts("N2_area_Barents.pdf") #встройка шрифтов в файла
+
+#рисуем со средними на белом фоне для статьи
+pdf(file="Macoma_N2_area_Barents_means.pdf", family="NimbusSan", bg = "white")
+boxplot(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T] ~ ishodnik$area[ishodnik$sea=="Barents",drop=T],  
+        names=c("PC", "UR", "PL", "RT", "AB", "NG", "GV", "YA", "DZ", "SH", "PR", "IV"), ylim=c(0,max(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T])+10), cex.axis=1.2, ylab="N, indd./m-2", xlab = "area", cex.lab=1.2)
+#подпишем на график средние
+for (i in 1:length(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T]))){
+  text(x=seq(1:12)[i], y=3920, cex=1.2,
+       labels=round(as.vector(tapply(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T], 
+                                     INDEX=ishodnik$area[ishodnik$sea=="Barents",drop=T], FUN=mean)))[i])
+}
+dev.off()
+embedFonts("Macoma_N2_area_Barents_means.pdf") #встройка шрифтов в файл
+
+# тифф
+tiff(file="Macoma_N2_area_Barents_means.tiff", width = )
+boxplot(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T] ~ ishodnik$area[ishodnik$sea=="Barents",drop=T],  
+        names=abbreviate(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T]),minlength = 2), ylim=c(0,max(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T])))
+#подпишем на график средние
+for (i in 1:length(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T]))){
+  text(x=seq(1:12)[i], y=3915,
+       labels=round(as.vector(tapply(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T], 
+                                     INDEX=ishodnik$area[ishodnik$sea=="Barents",drop=T], FUN=mean)))[i])
+}
+dev.off()
+embedFonts("Macoma_N2_area_Barents_means.pdf") #встройка шрифтов в файл
+
+
+
 
 #тот же график с раскраской отдельных регионов
 pdf(file="N2_area_Barents_color.pdf", family="NimbusSan")
@@ -142,3 +171,6 @@ kruskal.test(N2.indd.sqmeter[area=="Gavrilovo"] ~ mareographic[area=="Gavrilovo"
 tapply(N2.indd.sqmeter[area=="Gavrilovo"], mareographic[area=="Gavrilovo"], summary)
 c(3,  5,	4,	4,	7, 1,	2,	0,	0,	1)*30
 
+#======== summary по пробоотбору ==================================
+tapply(ishodnik$sample, ishodnik$area, length)
+table(ishodnik$year[ ishodnik$sea=="Barents", drop=T], ishodnik$area[ ishodnik$sea=="Barents", drop=T])

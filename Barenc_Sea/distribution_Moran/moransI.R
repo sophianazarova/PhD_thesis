@@ -17,6 +17,7 @@ plot(correlog(x=Pala.08$X, y=Pala.08$Y, z=Pala.08[,i], increment=100, resamp=100
 dev.off()
 embedFonts(paste("Pala_moran",colnames(Pala.08)[i], ".pdf",sep="_")) #встройка шрифтов в файл
 }
+
            
 #кросскорреляции
 

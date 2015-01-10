@@ -84,3 +84,6 @@ plot(x = ish_sites$lat.[ ish_sites$continent!="Amerika"], y = ish_sites$omega[ i
 legend(x = "bottomleft", legend = levels(ish_sites$region[ ish_sites$continent!="Amerika", drop=T]), pch=seq(1:8))
 dev.off()
 embedFonts("long_vs_omega_big.pdf")
+
+# ========== корреляция omega и широты =======================
+cor.test(ish_sites$lat., ish_sites$omega, method = "spearman")

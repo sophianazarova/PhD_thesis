@@ -7,6 +7,10 @@ str(ishodnik)
 
 (lat_lim<-c(min(ishodnik$Ndec)-1, max(ishodnik$Ndec)+1))
 (long_lim<-c(min(ishodnik$Edec)-1, max(ishodnik$Edec)+1))
+
+#подгонка границ карты
+(long_lim<-c(-10.5, max(ishodnik$Edec)+1))
+
 #считаем какой должен быть радиус у кружков на карте - площадь пропорциональна
 radius_Nmean <- sqrt( ishodnik$Nmean/ pi)
 radius_Bmean <- sqrt( ishodnik$Bmean/ pi)
@@ -146,3 +150,11 @@ macoma_ggmap<-ggmap(macoma_google,
 
 
 macoma_ggmap + geom_point(aes(x = (ishodnik$Edec[ ishodnik$sea=="White"]), y = (ishodnik$Ndec[ ishodnik$sea=="White"]), size = (radius_Nmean[c(1:10,23:29,40:42)]), color="red"))
+
+##серая карта для статьи
+pdf("Macoma_Nmean_article.pdf", family="NimbusSan", bg="white", width=190, height=280, paper="a4")
+map("worldHires", xlim=long_lim, ylim=lat_lim, col="gray90", fill=TRUE)
+  points(x=ishodnik$Edec, y=ishodnik$Ndec, col="black", bg="gray30", pch=21, cex=radius_Nmean/5)
+legend(horiz = T, x="bottomright", col="gray30", pch=20, legend=c("1000", "100", "10", "1"), pt.cex=(sqrt(c(1000,100,10,1)/pi)/5), bg = "white", title = "Macoma balthica abundance, indd./m-2", cex=1.9)
+dev.off()
+embedFonts("Macoma_Nmean_article.pdf")

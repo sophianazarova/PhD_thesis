@@ -8,6 +8,10 @@ str(ishodnik)
 (lat_lim<-c(min(ishodnik$latitude)-1, max(ishodnik$latitude)+1))
 (long_lim<-c(min(ishodnik$longitude)-1, max(ishodnik$longitude)))
 
+# подгонка краев карты, чтоюы не отрезать лишнего
+(lat_lim<-c(27.7, max(ishodnik$latitude)+1))
+long_lim<-c(-10.5, 41.42)
+
 #считаем какой должен быть радиус у кружков на карте - площадь пропорциональна
   radius_Nmean <- sqrt( ishodnik$ind..sq.m./ pi)
 
@@ -22,9 +26,18 @@ library(mapdata)
 pdf("cockle_Nmean.pdf", family="NimbusSan", width=190, height=280, paper="a4")
 map("worldHires", xlim=long_lim, ylim=lat_lim, col="gray90", fill=TRUE)
 points(x=ishodnik$longitude, y=ishodnik$latitude, col="black", bg="red", pch=21, cex=radius_Nmean/1.5)
-legend(horiz = T, x="bottomright", col="red", pch=20, legend=c("2500","2000","1000", "500", "100", "50", "10", "1"), pt.cex=(sqrt(c(2500,2000,1000,500,100,50,10,1)/pi)/5), bg = "white", title = "Circle squares are proportional to Cerastoderma edule abundance, indd./sq.meter")
+legend(horiz = T, x="bottomright", col="red", pch=20, legend=c("2500","2000","1000", "500", "100", "50", "10", "1"), pt.cex=(sqrt(c(2500,2000,1000,500,100,50,10,1)/pi)/5), bg = "white", title = "Circle squares are proportional to Cerastoderma edule abundance, indd./m-1")
 dev.off()
 embedFonts("cockle_Nmean.pdf")
+
+
+## серая карта для статьи
+pdf("cockle_Nmean_artickle.pdf", family="NimbusSan", bg="white", width=190, height=280, paper="a4")
+map("worldHires", xlim=long_lim, ylim=lat_lim, col="gray90", fill=TRUE)
+points(x=ishodnik$longitude, y=ishodnik$latitude, col="black", bg="gray30", pch=21, cex=radius_Nmean/1.5)
+legend(horiz = T, x="bottomright", col="gray30", pch=20, legend=c("1000", "100", "10", "1"), pt.cex=(sqrt(c(1000,100,10,1)/pi)/1.5), bg = "white", title = "Cerastoderma edule abundance, indd./m-2", cex=1.9)
+dev.off()
+embedFonts("cockle_Nmean_artickle.pdf")
 
 
 ##пробую подбрать районы чтобы нагляднее было

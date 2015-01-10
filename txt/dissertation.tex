@@ -15,7 +15,8 @@
 %\usepackage[backend=biber,bibencoding=utf8,sorting=nyt,maxcitenames=2,style=authoryear]{biblatex}
 
 %biblatex-gost
-\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other*, bibencoding=utf8, bibdoi=false, biburl=false, movenames=false]{biblatex}
+\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other, bibencoding=utf8, bibdoi=false, biburl=false, movenames=false]{biblatex}
+%\renewcommand*{\gostmedialanguage}{}
 
 \addbibresource{sophia_base.bib}
 
@@ -122,6 +123,9 @@
 
 % треугольные матрицы с возрастной структурой
 \include{prilozhenie_growth}
+
+%обилие маком по литературным и авторским источникам
+\include{prilozhenie_macrodistribution}
 
 \end{document} % конец документа
 

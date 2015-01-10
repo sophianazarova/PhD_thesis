@@ -1,14 +1,45 @@
 [0] Config.pm:320> INFO - This is Biber 1.9
-[0] Config.pm:323> INFO - Logfile is 'dissertation.blg'
-[227] biber:277> INFO - === Ð¡Ð±. Ð½Ð¾ÑÐ±.  8, 2014, 14:01:32
-[227] Biber.pm:333> INFO - Reading 'dissertation.bcf'
-[381] Biber.pm:635> INFO - Found 51 citekeys in bib section 0
-[902] Biber.pm:3051> INFO - Processing section 0
-[1015] Biber.pm:3189> INFO - Looking for bibtex format file 'sophia_base.bib' for section 0
-[1048] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[1143] bibtex.pm:864> INFO - Found BibTeX data source 'sophia_base.bib'
-[2507] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
-[2507] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[2507] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'ru-RU'
-[2866] bbl.pm:517> INFO - Writing 'dissertation.bbl' with encoding 'UTF-8'
-[2881] bbl.pm:606> INFO - Output to dissertation.bbl
+[1] Config.pm:323> INFO - Logfile is 'dissertation.blg'
+[439] biber:277> INFO - === ÐÑ. ÑÐ½Ð².  6, 2015, 00:03:07
+[440] Biber.pm:333> INFO - Reading 'dissertation.bcf'
+[598] Biber.pm:635> INFO - Found 93 citekeys in bib section 0
+[1144] Biber.pm:3051> INFO - Processing section 0
+[1679] Biber.pm:3189> INFO - Looking for bibtex format file 'sophia_base.bib' for section 0
+[1902] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[2193] bibtex.pm:864> INFO - Found BibTeX data source 'sophia_base.bib'
+[2844] Utils.pm:144> WARN - I didn't find a database entry for 'Kafanov_1985' (section 0)
+[2845] Utils.pm:144> WARN - I didn't find a database entry for 'Meehan_1985' (section 0)
+[2845] Utils.pm:144> WARN - I didn't find a database entry for 'Naumov_Skorobogatov_1987' (section 0)
+[2845] Utils.pm:144> WARN - I didn't find a database entry for 'Meehan_et_al_1989' (section 0)
+[2845] Utils.pm:144> WARN - I didn't find a database entry for 'Hummel_et_al_1997' (section 0)
+[2845] Utils.pm:144> WARN - I didn't find a database entry for 'Bachelet_1986' (section 0)
+[2845] Utils.pm:144> WARN - I didn't find a database entry for 'Warwick_Price_1975' (section 0)
+[2846] Utils.pm:144> WARN - I didn't find a database entry for 'Beukema_1979' (section 0)
+[2846] Utils.pm:144> WARN - I didn't find a database entry for 'Beukema_1976' (section 0)
+[2846] Utils.pm:144> WARN - I didn't find a database entry for 'Parsons_Thomas_1979' (section 0)
+[2846] Utils.pm:144> WARN - I didn't find a database entry for 'Zwarts_Wanink_1993' (section 0)
+[2846] Utils.pm:144> WARN - I didn't find a database entry for 'Gusev_et_al_2013' (section 0)
+[2847] Utils.pm:144> WARN - I didn't find a database entry for 'Reise_et_al_1994' (section 0)
+[2847] Utils.pm:144> WARN - I didn't find a database entry for 'Madsen_Jensen_1987' (section 0)
+[2847] Utils.pm:144> WARN - I didn't find a database entry for 'Brady_1943' (section 0)
+[2847] Utils.pm:144> WARN - I didn't find a database entry for 'Stephen_1931' (section 0)
+[2847] Utils.pm:144> WARN - I didn't find a database entry for 'Chambers_Milne_1975' (section 0)
+[2847] Utils.pm:144> WARN - I didn't find a database entry for 'Maximov_et_al_2009' (section 0)
+[2848] Utils.pm:144> WARN - I didn't find a database entry for 'Aschan_1988' (section 0)
+[2848] Utils.pm:144> WARN - I didn't find a database entry for 'Segerstrale_1933b' (section 0)
+[2848] Utils.pm:144> WARN - I didn't find a database entry for 'Rousi_et_al_2013' (section 0)
+[2848] Utils.pm:144> WARN - I didn't find a database entry for 'Laine_et_al_2013' (section 0)
+[2848] Utils.pm:144> WARN - I didn't find a database entry for 'Bostrom_Bonsdorff_2000' (section 0)
+[2848] Utils.pm:144> WARN - I didn't find a database entry for 'Bonsdorff_et_al_1995' (section 0)
+[2848] Utils.pm:144> WARN - I didn't find a database entry for 'Sneli_1968' (section 0)
+[2849] Utils.pm:144> WARN - I didn't find a database entry for 'Stromgren_et_al_1973' (section 0)
+[2849] Utils.pm:144> WARN - I didn't find a database entry for 'Khaitov_et_al_2007' (section 0)
+[2849] Utils.pm:144> WARN - I didn't find a database entry for 'Jensen_et_al_1985' (section 0)
+[2849] Utils.pm:144> WARN - I didn't find a database entry for 'Denisenko_et_al_2003' (section 0)
+[2849] Utils.pm:144> WARN - I didn't find a database entry for 'Oug_2001' (section 0)
+[4467] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4467] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4467] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'ru-RU'
+[4972] bbl.pm:517> INFO - Writing 'dissertation.bbl' with encoding 'UTF-8'
+[4991] bbl.pm:606> INFO - Output to dissertation.bbl
+[4991] Biber.pm:106> INFO - WARNINGS: 30
