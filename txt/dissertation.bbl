@@ -42,6 +42,7 @@
       \field{labeltitle}{Some like it cold: populations of the tellinid bivalve Macoma balthica (L.) suffer in various ways from a warming climate}
       \field{abstract}{Because of its relatively low tolerance to elevated temperatures, Macoma balthica (L.) may be one of the first important marine species in temperate coastal areas to suffer from a warming climate. For the last few decades, the abundance of the species in the Dutch Wadden Sea has been seriously declining. At lower latitudes, the southern edge of its range recently shifted several 100s of km to the north. To understand changes in abundance related to high temperatures, we studied short-term population responses to warmer than average seasons using data from a long-term (> 35 yr) sampling program in the western Wadden Sea. The observed relationships included reduction of reproductive output and recruitment in years starting with mild winter–spring periods, reduction of adult survival in years with warm summers, reduction of annual migration in ~8 mo olds to more favourable areas in mild winters, reduction of growth rates in warmer than average growing seasons, and enhancement of seasonal weight loss in milder than average winters. We conclude that elevated temperatures negatively affect population dynamics of M. balthica in a number of ways, i.e. via recruitment or mortality as well as growth. These negative influences were observed already far below the upper lethal temperature of the species and in populations living ~1000 km poleward of the warm edge of the species’ range. The outcome of M. balthica’s energy balance appears to be decisive for their continued existence by effects not only on individual weights but also on mortality as well as reproduction.}
       \field{journaltitle}{Marine Ecology Progress Series}
+      \field{langid}{english}
       \field{title}{Some like it cold: populations of the tellinid bivalve Macoma balthica (L.) suffer in various ways from a warming climate}
       \field{volume}{384}
       \field{year}{2009}
@@ -73,6 +74,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Recruitment in Macoma balthica after mild and cold winters and its possible control by egg production and shrimp predation}
       \field{booktitle}{Recruitment, Colonization and Physical-Chemical Forcing in Marine Biological Systems}
+      \field{langid}{english}
       \field{title}{Recruitment in Macoma balthica after mild and cold winters and its possible control by egg production and shrimp predation}
       \field{year}{1998}
       \field{pages}{23\bibrangedash 34}
@@ -94,6 +96,7 @@
       \field{labelyear}{2013}
       \field{datelabelsource}{}
       \field{labeltitle}{ncf: spatial nonparametric covariance functions}
+      \field{langid}{english}
       \field{note}{R package version 1.1-5}
       \field{title}{ncf: spatial nonparametric covariance functions}
       \field{year}{2013}
@@ -126,6 +129,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Testing of null hypotheses in exploratory community analyses: similarity profiles and biota-environment linkage}
       \field{journaltitle}{Journal of Experimental Marine Biology and Ecology}
+      \field{langid}{english}
       \field{number}{1}
       \field{title}{Testing of null hypotheses in exploratory community analyses: similarity profiles and biota-environment linkage}
       \field{volume}{366}
@@ -156,6 +160,7 @@
       \field{labeltitle}{Age--size structure of common bivalve mollusc populations in the White Sea: the causes of instability}
       \field{abstract}{Inter-annual fluctuations in the recruitment rate and size–age structure are typical for marine bivalve beds. Until now there is no common opinion about the causes of this variability. One of them may be related to the adult–larval interactions in mollusk populations. To test this suggestion and to reveal the possible causes of inter-annual instability in bed recruitment level we analyzed the long-term (9–30 years) dynamics of the size–age structure of 22 populations of 9 bivalve species in the White Sea. Inter-annual variability in the successful recruitment was typical of most studied bivalve beds. This phenomenon was apparently caused, on the one hand, by the intensity of molluscs’ intraspecific interactions, and on the other (no less), by the juvenile survival in their first winter. The bivalve stationary beds in the White Sea are likely the exception from the general rule. They can be formed in case of a relatively stable level of annual recruitment with a decrease in intensity of intraspecific competition. However, in this case, the stability of the bed size–age structure can be easily disrupted under unfavourable conditions for spat survival in their first winter.}
       \field{journaltitle}{Hydrobiologia}
+      \field{langid}{english}
       \field{number}{1}
       \field{title}{Age--size structure of common bivalve mollusc populations in the White Sea: the causes of instability}
       \field{volume}{706}
@@ -181,6 +186,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Growth rate, longevity and aspects of reproductive cycle in Macoma balthica (Bivalvia)}
       \field{journaltitle}{Nautilus}
+      \field{langid}{english}
       \field{title}{Growth rate, longevity and aspects of reproductive cycle in Macoma balthica (Bivalvia)}
       \field{volume}{92}
       \field{year}{1978}
@@ -240,6 +246,7 @@
       \field{abstract}{The bivalve Macoma balthica is a common species in the Wadden Sea and North Sea. Juveniles temporarily use nurseries in the high intertidal. To explain this nursery use, predation pressure was examined for both juvenile and adult Macoma at low and high tidal flats. The study was carried out in the eastern Dutch Wadden Sea. Shrimps Crangon crangon, adult crabs Carcinus maenas, gobies Pomatoschistus and juvenile flatfish were more abundant and larger on low than on high tidal flats, but 0-group Carcinus was more abundant on the high tidal flats. Crangon and 0-group Carcinus stomachs frequently contained Macoma remains. These predators selectively preyed on small 0-group Macoma, both in the field and in laboratory experiments. The effect of predation by epibenthic animals and birds, on the low and high tidal flats, was examined in exclosure experiments (2 mm mesh). There was no effect of epibenthos exclosure on adult Macoma. For 0-group Macoma, densities were higher in exclosures than in the controls where predators had normal access. The density reduction by epibenthic predators was much larger in the low than in the high intertidal. We found no effect of bird predation on densities of 0- and 1+group Macoma. Thus, 0-group Macoma is under high predation pressure by epibenthos in the low intertidal, especially by shrimps, while they are relatively safe in the high intertidal. However, most of the shellfish outgrow their epibenthic predators during their first summer. Therefore, it becomes safe for the bivalves to redistribute to locations where epibenthic predators are abundant, during their first winter. On the other hand, it did not become clear from this study why many of the larger Macoma leave the high intertidal. Concluding, the nursery use of Macoma-spat in the high intertidal is probably, at least partly, an adaptation to avoid epibenthic predation.}
       \field{issn}{0022-0981}
       \field{journaltitle}{Journal of Experimental Marine Biology and Ecology}
+      \field{langid}{english}
       \field{number}{2}
       \field{title}{Predation on 0-group and older year classes of the bivalve Macoma balthica: interaction of size selection and intertidal distribution of epibenthic predators}
       \field{volume}{269}
@@ -277,6 +284,7 @@
       \field{abstract}{Juveniles of the bivalve Macoma balthica live on tidal flats in the Wadden Sea. This study examined the interaction of Macoma with the infaunal polychaetes Arenicola marina and Nereis diversicolor and the gastropod Retusa obtusa. The distribution of M. balthica spat on the flats, shortly after settlement in April, showed a positive correlation with the Arenicola distribution and a negative correlation with Nereis distribution. There were no locations where Macoma spat and Retusa occurred together. In August, Macoma spat had grown too large for predation by intertidal infauna. Small individuals of Macoma spat were found in stomachs of Arenicola (0.14 worm-1) and Nereis (0.05 worm-1). Laboratory experiments showed that Nereis and Retusa could reduce Macoma spat abundance, both in the absence and presence of sediment and alternative prey. Arenicola reduced the abundance of small Macoma (<1 mm) in sediment without, but not with, alternative prey. In field experiments, we manipulated the density of Arenicola in 0.25-1 m2 plots and of Nereis in 0.03 m2 cages and examined the effect on Macoma density several weeks later. We found a significant negative relation between densities of polychaetes and Macoma spat for both polychaete species in these experimental plots. Peculiarly, we found a significant positive relation between manipulated Nereis density and adult Macoma density in the cages; we cannot explain this. Consumption rates, calculated both from stomach contents and from field experiments, were 45 to 102 Macoma m-2 d-1 for Arenicola and 5 to 116 Macoma m-2 d-1 for Nereis. These values are higher than recorded consumption rates by epibenthic predators in the same area. Nevertheless, between-year differences in year-class strength could not be explained by differential abundance of these polychaetes. In conclusion, Arenicola and Nereis had a negative effect on the abundance of Macoma <1.5 mm, which was at least partly caused by direct consumption. Retusa obtusa can eat juvenile Macoma, but probably did not so in the study area, because there were no locations where Retusa and Macoma spat occurred together in the period that Macoma was <2 mm.}
       \field{issn}{1385-1101}
       \field{journaltitle}{Journal of Sea Research}
+      \field{langid}{english}
       \field{number}{2}
       \field{title}{Predation of intertidal infauna on juveniles of the bivalve Macoma balthica}
       \field{volume}{47}
@@ -289,36 +297,6 @@
       \verb http://www.sciencedirect.com/science/article/B6VHH-4599BD6-1/2/0d2bf605960aa66b049b5392541716a3
       \endverb
       \keyw{Macoma balthica}
-    \endentry
-    \entry{Jensen_Jensen_1985}{article}{}
-      \name{labelname}{2}{}{%
-        {{uniquename=1,hash=21b3635d79c487cd636a4ab8852ba29b}{Jensen}{J\bibinitperiod}{Kurt\bibnamedelima Thomas}{K\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=d621432458d7847611f6861c9a4894c4}{Jensen}{J\bibinitperiod}{J\orgen\bibnamedelima N\orrevang}{J\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
-      }
-      \name{author}{2}{}{%
-        {{uniquename=1,hash=21b3635d79c487cd636a4ab8852ba29b}{Jensen}{J\bibinitperiod}{Kurt\bibnamedelima Thomas}{K\bibinitperiod\bibinitdelim T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=d621432458d7847611f6861c9a4894c4}{Jensen}{J\bibinitperiod}{J\orgen\bibnamedelima N\orrevang}{J\bibinitperiod\bibinitdelim N\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{f2fb425031a250425c60e72909144b91}
-      \strng{fullhash}{f2fb425031a250425c60e72909144b91}
-      \field{sortinit}{J}
-      \field{sortinithash}{f75b22df8c340a961dce37019e29107f}
-      \field{labelyear}{1985}
-      \field{datelabelsource}{}
-      \field{labeltitle}{THE IMPORTANCE OF SOME EPIBENTHIC PREDATORS ON THE DENSITY OF JUVENILE BENTHIC MACROFAUNA IN THE DANISH WADDEN SEA}
-      \field{abstract}{Recruitment of Cerastoderma edule (L.), Mya arenaria L., Mytilus edulis L., and Macoma balthi- ca (L.) on an intertidal flat in the Danish Wadden Sea was very successful in a year following a severe winter. Initially, densities of Cerastoderma edule up to 60000 ind’m-s were observed but shortly after settling declining densities occurred. Among the main epibenthic predators on juvenile animals on the flat, small individuals of the shore crab, Carcinus maenas (L.) were found to be important. Thus, laboratory experi- ments demonstrated that juvenile crabs in particular were preying on Cerastoderma edule. The juvenile crabs arrived simultaneously with the spat of C. edule. In July and August, the production of juvenile crabs was estimated to account for 26.1% of the elimination of cockles. Later the cockles were protected from predation by crabs by size. Analysis of stomach contents showed that another dominating predator on the flat, Crangon crangon (L.), was mainly feeding on meiofauna. We suggest that the juvenile individuals of Carcinus maenas play a key role in structuring the benthic community in the Wadden Sea by preventing the development of cockle beds.}
-      \field{journaltitle}{Journal of Experimental Marine Biology and Ecology}
-      \field{title}{THE IMPORTANCE OF SOME EPIBENTHIC PREDATORS ON THE DENSITY OF JUVENILE BENTHIC MACROFAUNA IN THE DANISH WADDEN SEA}
-      \field{volume}{89}
-      \field{year}{1985}
-      \field{pages}{157\bibrangedash 174}
-      \verb{file}
-      \verb :/home/sonya/Library/Hydrobiology/Marine/Wadden_Sea_Macoma_Cerasroderma_predators/Jensen_Jensen_1985.pdf:PDF
-      \endverb
-      \keyw{settlement,Cerastoderma edule,elimination,Carcinus maenas,production,size refuge,Wadden Sea}
     \endentry
     \entry{Lavoie_1970}{thesis}{}
       \name{labelname}{1}{}{%
@@ -369,6 +347,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Diversity and Trans-Arctic Invasion History of Mitochondrial Lineages in the North Atlantic Macoma balthica Complex (Bivalvia: Tellinidae)}
       \field{journaltitle}{Evolution}
+      \field{langid}{english}
       \field{number}{4}
       \field{title}{Diversity and Trans-Arctic Invasion History of Mitochondrial Lineages in the North Atlantic Macoma balthica Complex (Bivalvia: Tellinidae)}
       \field{volume}{61}
@@ -564,7 +543,7 @@
         {{uniquename=0,hash=51164379c7b8ef13afd8bcddfdfc3cdb}{Naumov}{N\bibinitperiod}{Andrew}{A\bibinitperiod}{}{}{}{}}%
       }
       \list{language}{1}{%
-        {English}%
+        {english}%
       }
       \list{publisher}{1}{%
         {Springer Netherlands}%
@@ -578,6 +557,7 @@
       \field{labeltitle}{Long-term temporal and spatial variation of macrobenthos in the intertidal soft-bottom flats of two small bights (Chupa Inlet, Kandalaksha Bay, White Sea)}
       \field{issn}{0018-8158}
       \field{journaltitle}{Hydrobiologia}
+      \field{langid}{english}
       \field{number}{1}
       \field{title}{Long-term temporal and spatial variation of macrobenthos in the intertidal soft-bottom flats of two small bights (Chupa Inlet, Kandalaksha Bay, White Sea)}
       \field{volume}{706}
@@ -645,6 +625,7 @@
       \field{labelmonth}{октябрь}
       \field{datelabelsource}{}
       \field{labeltitle}{World Register of Marine Species.}
+      \field{langid}{english}
       \field{month}{октябрь}
       \field{title}{World Register of Marine Species.}
       \field{year}{2014}
@@ -685,6 +666,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Распределение и экология донной фауны на литоральной отмели Дальнего Пляжа}
       \field{booktitle}{Экологические исследования песчаной литорали}
+      \field{langid}{russian}
       \field{title}{Распределение и экология донной фауны на литоральной отмели Дальнего Пляжа}
       \field{year}{1976}
       \field{pages}{95\bibrangedash 186}
@@ -711,6 +693,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Два аспекта для формирования благоприятных для первичного продуцирования условий в водных массах полярных районов океана}
       \field{booktitle}{Теоретические подходы к изучению экосистем морей Арктики и Субарктики}
+      \field{langid}{russian}
       \field{title}{Два аспекта для формирования благоприятных для первичного продуцирования условий в водных массах полярных районов океана}
       \field{year}{1992}
       \field{pages}{9\bibrangedash 18}
@@ -764,6 +747,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Приливно-отливное и волновое воздействие на отложения литоральной отмели Дальнего пляжа}
       \field{booktitle}{Экологические исследования песчаной литорали}
+      \field{langid}{russian}
       \field{title}{Приливно-отливное и волновое воздействие на отложения литоральной отмели Дальнего пляжа}
       \field{year}{1976}
       \field{pages}{26\bibrangedash 29}
@@ -790,6 +774,7 @@
       \field{labeltitle}{Краткая гидрологическая характеристика губы Чупа Белого моря}
       \field{booktitle}{Экологические исследования перспективных объектов марикультуры фауны Белого моря}
       \field{chapter}{Краткая гидрологическая характеристика губы Чупа Белого моря}
+      \field{langid}{russian}
       \field{title}{Краткая гидрологическая характеристика губы Чупа Белого моря}
       \field{year}{1982}
       \field{pages}{3\bibrangedash 16}
@@ -816,6 +801,7 @@
       \field{labelyear}{1984}
       \field{datelabelsource}{}
       \field{labeltitle}{Гидробиокомплексы Белого моря}
+      \field{langid}{russian}
       \field{title}{Гидробиокомплексы Белого моря}
       \field{year}{1984}
       \field{pages}{104}
@@ -937,6 +923,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{К вопросу об избирательности питания речной камбалы Pleuronectes flessus на литорали Кандалакшского залива Белого моря}
       \field{journaltitle}{Аничковский вестник}
+      \field{langid}{russian}
       \field{title}{К вопросу об избирательности питания речной камбалы Pleuronectes flessus на литорали Кандалакшского залива Белого моря}
       \field{volume}{1}
       \field{year}{1997}
@@ -965,6 +952,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{К изучению геохимических параметров биогеоценозов илисто-песчаной литорали Дальнего пляжа}
       \field{booktitle}{Экологические исследования песчаной литорали}
+      \field{langid}{russian}
       \field{title}{К изучению геохимических параметров биогеоценозов илисто-песчаной литорали Дальнего пляжа}
       \field{year}{1976}
       \field{pages}{40\bibrangedash 54}
@@ -1034,6 +1022,7 @@
       \field{labeltitle}{Влияние факторов среды на распределение Macoma balthica (L, 1758) и Mytilus edulis (L, 1758) в Юго-Восточной части Балтийского моря}
       \field{abstract}{Представлены результаты изучения влияния факторов среды на распределение двух массовых видов двустворчатых моллюсков Macoma balthica и Mytilus edulis в юго-восточной части Балтийского моря. Распределение этих видов двустворчатых моллюсков определялось в первую очередь типом грунтов. Распространение моллюсков в глубоководных частях моря было ограничено дефицитом кислорода в придонном слое воды.}
       \field{journaltitle}{Вестник Российского государственного университета им. И. Канта}
+      \field{langid}{russian}
       \field{title}{Влияние факторов среды на распределение Macoma balthica (L, 1758) и Mytilus edulis (L, 1758) в Юго-Восточной части Балтийского моря}
       \field{volume}{7}
       \field{year}{2010}
@@ -1087,6 +1076,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Материалы по экологии Arenicola marina L. на литорали Дальнего пляжа}
       \field{booktitle}{Бентос Баренцева моря. Распределение, экология и структура популяций}
+      \field{langid}{russian}
       \field{title}{Материалы по экологии Arenicola marina L. на литорали Дальнего пляжа}
       \field{year}{1984}
       \field{pages}{87\bibrangedash 92}
@@ -1159,6 +1149,7 @@
       \field{labelyear}{1960}
       \field{datelabelsource}{}
       \field{labeltitle}{Белое море и биологические особенности его флоры и фауны}
+      \field{langid}{russian}
       \field{note}{ЗИН: I 15836}
       \field{title}{Белое море и биологические особенности его флоры и фауны}
       \field{year}{1960}
@@ -1265,6 +1256,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Динамика структурных характеристик литоральных поселений Macoma balthica L. в губе Чупа (Белое море)}
       \field{journaltitle}{Вестник ЛГУ}
+      \field{langid}{russian}
       \field{title}{Динамика структурных характеристик литоральных поселений Macoma balthica L. в губе Чупа (Белое море)}
       \field{volume}{вып. 2, № 10}
       \field{year}{1991}
@@ -1293,6 +1285,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Продукционные свойства поселений Macoma balthica L. в губе Чупа (Белое море). II. Продукция}
       \field{journaltitle}{Вестник СПбГУ}
+      \field{langid}{russian}
       \field{number}{3}
       \field{title}{Продукционные свойства поселений Macoma balthica L. в губе Чупа (Белое море). II. Продукция}
       \field{volume}{1}
@@ -1370,6 +1363,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Анализ многолетней динамики структуры поселений Macoma balthica (L., 1758) в районе Лувеньгских шхер (Кандалакшский залив Белого моря)}
       \field{journaltitle}{Аничковский Вестник. Материалы XIII открытой научно-практической конференции Аничкова лицея. Математическая физика, биология, психология}
+      \field{langid}{russian}
       \field{title}{Анализ многолетней динамики структуры поселений Macoma balthica (L., 1758) в районе Лувеньгских шхер (Кандалакшский залив Белого моря)}
       \field{volume}{34}
       \field{year}{2003}
@@ -1397,6 +1391,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Линейный рост Macoma balthica в осушной зоне Мурманского побережья Баренцева моря}
       \field{journaltitle}{Вестник Санкт-Петербургского государственного университета. Серия 3. Биология.}
+      \field{langid}{russian}
       \field{title}{Линейный рост Macoma balthica в осушной зоне Мурманского побережья Баренцева моря}
       \field{volume}{4}
       \field{year}{2010}
@@ -1423,6 +1418,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{О флуктуациях численности Macoma balthica L. В популяциях кутовой части Кандалакшского залива (Белое море)}
       \field{booktitle}{Тезисы докладов VI научной сессии Морской биологической станции СПбГУ (8 февраля 2005 г.)}
+      \field{langid}{russian}
       \field{title}{О флуктуациях численности Macoma balthica L. В популяциях кутовой части Кандалакшского залива (Белое море)}
       \field{year}{2005}
       \field{pages}{51\bibrangedash 52}
@@ -1492,6 +1488,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Физико-химические параметры и их динамика в осадках литоральной отмели}
       \field{booktitle}{Экологические исследования песчаной литорали}
+      \field{langid}{russian}
       \field{title}{Физико-химические параметры и их динамика в осадках литоральной отмели}
       \field{year}{1976}
       \field{pages}{30\bibrangedash 39}
@@ -1612,6 +1609,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Особенности размножения беломорской Macoma balthica (L.)(Mollusca, Lamellibranchiata), позволяющие ей жить в сезонном биотопе}
       \field{booktitle}{Биология Белого моря. Труды ББС МГУ}
+      \field{langid}{russian}
       \field{title}{Особенности размножения беломорской Macoma balthica (L.)(Mollusca, Lamellibranchiata), позволяющие ей жить в сезонном биотопе}
       \field{volume}{5}
       \field{year}{1980}
@@ -1636,6 +1634,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Распределение двустворчатого моллюска Macoma balthica (L.) в некоторых губах Кандалакшского залива Белого моря}
       \field{booktitle}{Труды ББС МГУ}
+      \field{langid}{russian}
       \field{number}{4}
       \field{title}{Распределение двустворчатого моллюска Macoma balthica (L.) в некоторых губах Кандалакшского залива Белого моря}
       \field{year}{1974}
@@ -1662,6 +1661,7 @@
       \field{datelabelsource}{}
       \field{labeltitle}{Потоки биогенных веществ в зоне развития литоральных донных сообществ с преобладанием детритофагов (Баренцево море)}
       \field{journaltitle}{Океанология}
+      \field{langid}{russian}
       \field{number}{5}
       \field{title}{Потоки биогенных веществ в зоне развития литоральных донных сообществ с преобладанием детритофагов (Баренцево море)}
       \field{volume}{18}
@@ -1695,36 +1695,37 @@
       \field{pages}{129\bibrangedash 141}
     \endentry
   \endsortlist
-  \missing{Rousi_et_al_2013}
-  \missing{Parsons_Thomas_1979}
-  \missing{Aschan_1988}
-  \missing{Bachelet_1986}
-  \missing{Warwick_Price_1975}
   \missing{Beukema_1976}
-  \missing{Denisenko_et_al_2003}
-  \missing{Khaitov_et_al_2007}
-  \missing{Sneli_1968}
-  \missing{Laine_et_al_2013}
-  \missing{Jensen_et_al_1985}
-  \missing{Gusev_et_al_2013}
-  \missing{Stromgren_et_al_1973}
-  \missing{Hummel_et_al_1997}
-  \missing{Kafanov_1985}
-  \missing{Madsen_Jensen_1987}
-  \missing{Zwarts_Wanink_1993}
   \missing{Bonsdorff_et_al_1995}
-  \missing{Meehan_1985}
-  \missing{Naumov_Skorobogatov_1987}
+  \missing{Hummel_et_al_1997}
+  \missing{Khaitov_et_al_2007}
   \missing{Segerstrale_1933b}
-  \missing{Bostrom_Bonsdorff_2000}
-  \missing{Chambers_Milne_1975}
-  \missing{Stephen_1931}
-  \missing{Maximov_et_al_2009}
   \missing{Oug_2001}
+  \missing{Jensen_Jensen_1985}
+  \missing{Maximov_et_al_2009}
+  \missing{Stephen_1931}
+  \missing{Laine_et_al_2013}
+  \missing{Zwarts_Wanink_1993}
+  \missing{Stromgren_et_al_1973}
   \missing{Beukema_1979}
+  \missing{Rousi_et_al_2013}
+  \missing{Aschan_1988}
+  \missing{Jensen_et_al_1985}
+  \missing{Bachelet_1986}
+  \missing{Chambers_Milne_1975}
+  \missing{Naumov_Skorobogatov_1987}
+  \missing{Warwick_Price_1975}
   \missing{Reise_et_al_1994}
   \missing{Brady_1943}
+  \missing{Denisenko_et_al_2003}
+  \missing{Gusev_et_al_2013}
+  \missing{Sneli_1968}
+  \missing{Parsons_Thomas_1979}
   \missing{Meehan_et_al_1989}
+  \missing{Meehan_1985}
+  \missing{Madsen_Jensen_1987}
+  \missing{Bostrom_Bonsdorff_2000}
+  \missing{Kafanov_1985}
 \endrefsection
 \endinput
 

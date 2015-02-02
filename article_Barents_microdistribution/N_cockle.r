@@ -65,16 +65,17 @@ ish_tryash$area<-ordered(ish_tryash$area, levels=c("Pechenga", "Ura",
 cockle_mean <- round(as.vector(tapply(ish_tryash$N.sqmeter, INDEX=ish_tryash$area, FUN=mean, na.rm=T)))
 cockle_mean[cockle_mean==1]<-"<1"
 
-pdf(file="Ncockle_area_Barents_article.pdf", family="NimbusSan", bg = "white")
+pdf(file="Ncockle_area_Barents_article1.pdf", family="NimbusSan", bg = "white")
+par(mai = c(0.8,0.5,0.5,0.5))
 boxplot(ish_tryash$N.sqmeter ~ (ish_tryash$area),   
-        names=c("PC", "UR", "PL", "RT", "AB", "NG", "GV", "YA", "DZ", "SH", "PR", "IV"), ylim=c(0,max(ish_tryash$N.sqmeter, na.rm=T)+10), cex.axis = 1.2, ylab="N, indd./m-2", xlab = "area", cex.lab=1.2)
+        names=c("PC", "UR", "PL", "RT", "AB", "NG", "GV", "YA", "DZ", "SH", "PR", "IV"), ylim=c(0,max(ish_tryash$N.sqmeter, na.rm=T)+10), cex.axis = 1.2, ylab="N, indd./m-2", xlab = "area", cex.lab=1.2, main = "Cerastoderma edule")
 #подпишем на график средние
 for (i in 1:length(levels(ish_tryash$area))){
   text(x=seq(1:13)[i], y=460, cex=1.2,
        labels=cockle_mean[i])
 }
 dev.off()
-embedFonts("Ncockle_area_Barents_article.pdf") #встройка шрифтов в файл
+embedFonts("Ncockle_area_Barents_article1.pdf") #встройка шрифтов в файл
 
 # ggplot
 library(ggplot2)

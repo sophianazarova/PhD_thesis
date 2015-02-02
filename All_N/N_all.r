@@ -20,6 +20,7 @@ str(ishodnik)
 summary(ishodnik$area)
 summary(ishodnik$mareographic)
 
+# ============ обилие в морях =================
 pdf(file="N2_sea.pdf", family="NimbusSan")
 boxplot(ishodnik$N2.indd.sqmeter ~ ishodnik$sea)
 #подпишем на график медианы
@@ -40,7 +41,7 @@ for (i in 1:length(levels(ishodnik$region))){
 dev.off()
 embedFonts("N2_region.pdf") #встройка шрифтов в файл
 
-
+# ========== обилие на участках ========================
 pdf(file="N2_area.pdf", family="NimbusSan")
 boxplot(ishodnik$N2.indd.sqmeter ~ ishodnik$area,  names=abbreviate(levels(ishodnik$area)), ylim=c(0,10000))
 #подпишем на график медианы
@@ -78,8 +79,9 @@ embedFonts("N2_area_Barents.pdf") #встройка шрифтов в файла
 
 #рисуем со средними на белом фоне для статьи
 pdf(file="Macoma_N2_area_Barents_means.pdf", family="NimbusSan", bg = "white")
+par(mai = c(0.8,0.5,0.5,0.5))
 boxplot(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T] ~ ishodnik$area[ishodnik$sea=="Barents",drop=T],  
-        names=c("PC", "UR", "PL", "RT", "AB", "NG", "GV", "YA", "DZ", "SH", "PR", "IV"), ylim=c(0,max(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T])+10), cex.axis=1.2, ylab="N, indd./m-2", xlab = "area", cex.lab=1.2)
+        names=c("PC", "UR", "PL", "RT", "AB", "NG", "GV", "YA", "DZ", "SH", "PR", "IV"), ylim=c(0,max(ishodnik$N2.indd.sqmeter[ishodnik$sea=="Barents",drop=T])+10), cex.axis=1.2, ylab="N, indd./m-2", xlab = "area", cex.lab=1.2, main = "Macoma balthica")
 #подпишем на график средние
 for (i in 1:length(levels(ishodnik$area[ishodnik$sea=="Barents",drop=T]))){
   text(x=seq(1:12)[i], y=3920, cex=1.2,
