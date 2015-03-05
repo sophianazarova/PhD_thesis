@@ -25,6 +25,8 @@ for (i in 1:length(levels(oneyear.df$year)))
   oneyear.df$Freq[oneyear.df$year==levels(oneyear.df$year)[i]][antixxx]<-NA
 }
 
+#пишем по пробам в файл
+write.table(x = subset(oneyear.df, oneyear.df$oneyear.int == "(1.2,1.8]"), "oneyear_sample.csv", sep = ";", dec=",")
 
 
 #теперь на квадратный метр

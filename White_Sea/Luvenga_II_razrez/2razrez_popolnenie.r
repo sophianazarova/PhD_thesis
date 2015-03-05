@@ -31,6 +31,7 @@ for (i in 1:length(levels(oneyear.df$year))){
                        oneyear.df$tidal_level==levels(oneyear.df$tidal_level)[j]][antixxx]<-NA
   }}
 
+
 summary(oneyear.df)
 
 #теперь на квадратный метр
@@ -41,6 +42,9 @@ for (i in 1:length(levels(oneyear.sqmeter$year)))
     oneyear.sqmeter$Freq[oneyear.sqmeter$year==levels(oneyear.sqmeter$year)[i]] * 
     samples.squares$square[samples.squares$year==levels(oneyear.sqmeter$year)[i]]
 }
+
+#пишем по пробам в файл
+write.table(x = subset(oneyear.sqmeter, oneyear.sqmeter$oneyear.int == "(1.2,1.8]"), "oneyear_sample.csv", sep = ";", dec=",")
 
 
 for (i in 1: length(levels(oneyear.sqmeter$tidal_level)))

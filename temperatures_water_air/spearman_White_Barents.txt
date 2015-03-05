@@ -1,0 +1,10 @@
+
+	Spearman's rank correlation rho
+
+data:  White_Barents$Barents and White_Barents$White
+S = 4132.624, p-value = 3.443e-07
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.6879625 
+

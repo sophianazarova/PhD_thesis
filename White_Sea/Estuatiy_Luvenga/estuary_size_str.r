@@ -176,6 +176,13 @@ p + geom_errorbar(aes(ymin=meanN-SEM, ymax=meanN+SEM), position=dodge, width=0.2
 dev.off()
 embedFonts("Estuary_sizestr_oneplot.pdf")
 
+##рисуем с lattice
+library(lattice)
+pdf("Estuary_total_size_str.pdf", family = "NimbusSan")
+histogram(~ ishodnik$Length.mm[ishodnik$Length.mm >=1] |as.factor(ishodnik$year[ishodnik$Length.mm >=1 ]), xlab = "L, mm", breaks = seq(1, max(ishodnik$Length.mm, na.rm=T)+1, 1))
+dev.off()
+embedFonts("Estuary_total_size_str.pdf")
+
 
 # ======== динамика обилия ==============================================
 (N.sqmeter<-(t(tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum))))

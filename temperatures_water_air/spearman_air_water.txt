@@ -1,0 +1,10 @@
+
+	Spearman's rank correlation rho
+
+data:  ishodnik$Kanda_air and ishodnik$Chupa_water
+S = 11717.3, p-value < 2.2e-16
+alternative hypothesis: true rho is not equal to 0
+sample estimates:
+      rho 
+0.9153466 
+

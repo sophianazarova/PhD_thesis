@@ -30,7 +30,6 @@ for (i in 1:length(levels(oneyear.df$year))){
   }}
 
 
-
 #теперь на квадратный метр
 oneyear.sqmeter<-oneyear.df
 for (i in 1:length(levels(oneyear.sqmeter$year)))
@@ -46,7 +45,8 @@ for (i in 1: length(levels(oneyear.sqmeter$tidal_level)))
                      subset(oneyear.sqmeter, oneyear.sqmeter$tidal_level==levels(oneyear.sqmeter$tidal_level)[i])), file=paste(levels(oneyear.sqmeter$tidal_level)[i]), sep=",")
 }
 
-
+#пишем по пробам в файл
+write.table(x = subset(oneyear.sqmeter, oneyear.sqmeter$oneyear.int == "(1.2,1.8]"), "oneyear_sample.csv", sep = ";", dec=",")
 
 (n.samples<-tapply(samples.names$sample,list(samples.names$year,samples.names$tidal_level), length ))
 (n.samples.df<-as.data.frame(n.samples))

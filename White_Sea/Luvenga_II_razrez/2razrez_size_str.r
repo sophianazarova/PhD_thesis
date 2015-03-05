@@ -376,6 +376,38 @@ N2.all.sqmeter[N2.all.sqmeter==0]<-NA
 
 write.table(data.frame(N2.all.mean.sqmeter, N2.all.sem.sqmeter), file="N2all_mean.csv", dec=",", sep=";")
 
+#график без разделения на горизрнты без молоди
+pdf(file="N2_dynamic_all.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N2.all.mean.sqmeter, x=as.numeric(names(N2.all.mean.sqmeter)), type="b", main="Лувеньга, материковая литораль",
+     ylim=c(0, max(N2.all.mean.sqmeter, na.rm=T)+max(N2.all.sem.sqmeter, na.rm=T)), 
+     xlab="год", ylab="N, экз./кв.м", pch=15)
+arrows(x0 = as.numeric(names(N2.all.mean.sqmeter)), x1 = as.numeric(names(N2.all.mean.sqmeter)),
+       y0=N2.all.mean.sqmeter-N2.all.sem.sqmeter, y1=N2.all.mean.sqmeter+N2.all.sem.sqmeter, angle=90, code=3, length=.1)
+dev.off()
+embedFonts("N2_dynamic_all.pdf") #встройка шрифтов в файл
+
+## =========== анализ динамики без молоди суммарной ===========
+N2.all.sqmeter.df <- as.data.frame(as.table(N2.all.sqmeter))
+str(N2.all.sqmeter.df)
+colnames(N2.all.sqmeter.df) <- c("year", "sample", "N2.indd.sqm")
+N2.all.sqmeter.df$year <- as.numeric(as.vector(N2.all.sqmeter.df$year))
+
+# Kruskal test по периодам
+kruskal.test(N2.all.sqmeter.df$N2.indd.sqm ~ N2.all.sqmeter.df$year)
+
+kruskal.test(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1994] ~ N2.all.sqmeter.df$year[ N2.all.sqmeter.df$year < 1994])
+kruskal.test(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1998 & N2.all.sqmeter.df$year > 1993 ] ~ N2.all.sqmeter.df$year[ N2.all.sqmeter.df$year < 1998  & N2.all.sqmeter.df$year > 1993])
+kruskal.test(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1997] ~ N2.all.sqmeter.df$year[ N2.all.sqmeter.df$year > 1997])
+
+# средние численности в стабильных периодах
+mean(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999], na.rm=T)
+sd(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999], na.rm=T)/sqrt(length(na.omit(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999])))
+sd(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999], na.rm=T)/sqrt(length(na.omit(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999])))/mean(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999], na.rm=T)*100
+
+mean(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ], na.rm=T)
+sd(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ], na.rm=T)/length(na.omit((N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ])))
+sd(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ], na.rm=T)/length(na.omit((N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ])))/mean(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ], na.rm=T)*100
+
 
 
 # ======================про N2===========================
@@ -856,3 +888,20 @@ biomass8.count<-0.00016*(Length.mm[Length.mm>8.0]^2.96)
 (D.b2<-B2.sem.sqmeter/B2.mean.sqmeter*100)
 
 write.table(B8.mean.sqmeter, file="2razrez_biomass_old.csv", sep=";", dec=",")
+
+#========== РС маком без разделения на горизнты суммарная ============
+library(lattice)
+
+pdf("razrez2_total_size_str.pdf", family = "NimbusSan")
+histogram(~ ishodnik$Length.mm[ishodnik$Length.mm >=1] |as.factor(ishodnik$year[ishodnik$Length.mm >=1 ]), xlab = "L, mm", breaks = seq(1, max(ishodnik$Length.mm, na.rm=T)+1, 1))
+dev.off()
+embedFonts("razrez2_total_size_str.pdf")
+
+# считаем сводку по РС
+sizestr_all <- table(Length.int, as.factor(ishodnik$year))
+
+#РС в %
+sizestr_all_percent <- t(t(sizestr_all[2:20,])/colSums(sizestr_all[2:20,])*100)
+
+#пишем в файл
+write.table(as.data.frame(as.table(sizestr_all_percent)), "razrez2_sizestr_all_percents.csv", sep=";", dec=",")

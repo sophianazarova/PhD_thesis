@@ -13,8 +13,9 @@ ishodnik$area<-ordered(ishodnik$area, levels=c("Pechenga", "Ura",
 ishodnik$region<-ordered(ishodnik$region, levels=c("West_Murman", "Kola_bay", "East_Murman"))
 
 #======== summary по пробоотбору ==================================
-tapply(ishodnik$sample, ishodnik$area, length)
+tapply(ishodnik$sample, list(ishodnik$area, ishodnik$year), length)
 table(ishodnik$year, ishodnik$area)
+length(ishodnik$sample)
 
 # ====== сравнение регионов =======================================================
 kruskal.test(ishodnik$N.sqmeter ~ ishodnik$region)

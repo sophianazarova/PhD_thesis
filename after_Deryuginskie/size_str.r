@@ -116,6 +116,7 @@ wilcox.test(x = Macoma_5mm_mean[1:6], mu = Macoma_1973_mean)
 wilcox.test(x = cockle_5mm_mean, mu = cockle_1973_mean)
 
 
+
 ## Считаем динамику обилия с учетом всех особей.
 #####
 
@@ -194,13 +195,13 @@ Mya_SEM<-Mya_sd/sqrt(n.samples)
 #####
 
 
-## рисуем графики
+## ======= рисуем графики =================
 #на одном графике общее обилие и обилие тех кто больше 5 мм
 Macoma_means<-matrix(c(Macoma_1973_mean, Macoma_5mm_mean, NA, Macoma_mean), nrow=8,ncol=2, byrow=F)
 dimnames(Macoma_means)<-(list(c(1973, names(Macoma_mean)), c(">5mm", "all")))
 
 pdf(file="Macoma_N_dynamic_all.pdf", family="NimbusSan")
-barplot(t(Macoma_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, max(Macoma_mean)+max(Macoma_SEM)))
+barplot(t(Macoma_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, max(Macoma_mean)+max(Macoma_SEM)), col = c("grey70", "white"))
 arrows(x0=seq(1.5,24.5,3),
        y0=(c(Macoma_1973_mean, Macoma_5mm_mean) + c(Macoma_1973_SEM, Macoma_5mm_SEM)),
        x1=seq(1.5,24.5,3),
@@ -218,7 +219,7 @@ cockle_means<-matrix(c(cockle_1973_mean, cockle_5mm_mean, NA, cockle_mean), nrow
 dimnames(cockle_means)<-(list(c(1973, names(cockle_mean)), c(">5mm", "all")))
 
 pdf(file="cockle_N_dynamic_all.pdf", family="NimbusSan")
-barplot(t(cockle_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, max(cockle_mean)+max(cockle_SEM)+1))
+barplot(t(cockle_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, max(cockle_mean)+max(cockle_SEM)+1), col = c("grey70", "white"))
 arrows(x0=seq(1.5,24.5,3),
        y0=(c(cockle_1973_mean, cockle_5mm_mean) + c(cockle_1973_SEM, cockle_5mm_SEM)),
        x1=seq(1.5,24.5,3),
@@ -236,7 +237,7 @@ Mya_means<-matrix(c(Mya_1973_sqmeter, Mya_5mm_mean, NA, Mya_mean), nrow=8,ncol=2
 dimnames(Mya_means)<-(list(c(1973, names(Mya_mean)), c(">5mm", "all")))
 
 pdf(file="Mya_N_dynamic_all.pdf", family="NimbusSan")
-barplot(t(Mya_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, max(Mya_5mm_mean)+max(Mya_5mm_SEM)))
+barplot(t(Mya_means),beside=T, main=NULL, sub=NULL, xlab="год", ylab="N, экз./кв.м", ylim=c(0, max(Mya_5mm_mean)+max(Mya_5mm_SEM)), col = c("grey70", "white"))
 arrows(x0=seq(1.5,24.5,3),
        y0=(c(Mya_1973_sqmeter, Mya_5mm_mean) + c(0, Mya_5mm_SEM)),
        x1=seq(1.5,24.5,3),

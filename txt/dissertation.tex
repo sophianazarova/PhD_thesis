@@ -15,11 +15,11 @@
 %\usepackage[backend=biber,bibencoding=utf8,sorting=nyt,maxcitenames=2,style=authoryear]{biblatex}
 
 %biblatex-gost
-\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other, bibencoding=utf8, bibdoi=false, biburl=false, movenames=false]{biblatex}
+\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other, bibencoding=utf8, bibdoi=false, biburl=false,  movenames=false]{biblatex}
 %\renewcommand*{\gostmedialanguage}{}
 
-%\addbibresource{new_sophia_base.bib}
 \addbibresource{sophia_base.bib}
+%\addbibresource{disser.bib}
 
 %\includeonly{chapters/ch2,chapters/ch3}
 
@@ -79,7 +79,8 @@
 \afterpage{\clearpage}
 
 %%обсуждение
-\include{discussion}
+%\include{discussion}
+
 %%    макома как массовый элемент в сообществах литорали северных морей
 %%    об организации сообществ с участием Macoma balthica
 %%    Структура популяции Mb как отражение характеристик экотопов
@@ -94,7 +95,7 @@
 
 %печатаем список литературы
 \newpage
-\printbibliography[heading=bibintoc] %это хвост от biblatex-biber
+\printbibliography[heading=bibintoc]
 %это bibtex с Котельниковским пакетом gost
 %\bibliographystyle{gost2008}
 %\bibliography{sophia_base}

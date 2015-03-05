@@ -42,9 +42,9 @@
      fit-margin-left="2.7755576e-17"
      fit-margin-bottom="2.7755576e-17"
      fit-margin-right="2.7755576e-17"
-     inkscape:zoom="0.91010691"
-     inkscape:cx="172.04153"
-     inkscape:cy="179.03085"
+     inkscape:zoom="2.5584116"
+     inkscape:cx="195.03203"
+     inkscape:cy="73.617725"
      inkscape:window-x="0"
      inkscape:window-y="26"
      inkscape:window-maximized="1"
@@ -2270,12 +2270,10 @@
                transform="matrix(1,0,0,-1,99.2699,160.19)"
                id="text1144"><tspan
                  style="font-size:18.5695591px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
-                 x="0 16.606001 29.393999 37.053001 49.841 61.271873 67.389847 80.177849 92.965843 105.75385 113.41285 132.57185 145.35985 151.75385 164.54184 177.32985 190.11784 195.22385 208.01184 214.40585 227.19385 239.98184 252.76985 265.55786 278.34586 291.13385 303.92184 315.42184 328.20984 334.60385 340.99783 346.10385 358.89185 371.67984 384.46783 397.25586 416.41486 429.84683"
-                 y="0"
                  sodipodi:role="line"
-                 id="tspan1146">Cerastoderma edule abundance, indd.m<tspan
-   style="font-size:18.5695591px;baseline-shift:super"
-   id="tspan4125">−2</tspan></tspan><tspan
+                 id="tspan1146"
+                 x="0"
+                 y="0" /><tspan
                  style="font-size:18.5695591px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
                  x="75.699997 87.062111 99.850105 112.63811 166.46017 177.8223 190.61031 257.23004 268.59216 347.99023"
                  y="35.739799"
@@ -2294,4 +2292,21 @@
          x="11.766776"
          y="-780.9256"
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L">B</tspan></text>
+<text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
+       x="75.568665"
+       y="-538.61029"
+       id="text3557"
+       sodipodi:linespacing="125%"
+       transform="scale(1,-1)"><tspan
+         sodipodi:role="line"
+         id="tspan3559"
+         x="75.568665"
+         y="-538.61029"
+         style="font-size:8px"><tspan
+   style="font-style:italic"
+   id="tspan3563">Cerastoderma edule</tspan> N, ind.m<tspan
+   style="font-size:8px;baseline-shift:super"
+   id="tspan3561">-2</tspan></tspan></text>
 </g></svg>

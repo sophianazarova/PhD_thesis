@@ -196,3 +196,33 @@ arrows(x0=ishodnik$year[ ishodnik$area=="Lomnishniy"],
 legend(x="topleft", legend = c("Западная Ряшкова салма", "Южная губа о.Ряшкова", "о.Ломнишный"), pch=c(20,20,20), col=c(2,3,4))
 dev.off()
 embedFonts("N2_dynamic_North_all_embs.pdf") #встройка шрифтов в файл
+
+# ============ ЧБ Лувеньга ======================
+# картинка про Лувеньгу
+pdf(file="N2_dynamic_Luvenga_all_BW.pdf", family="NimbusSan") # указываем шрифт подпией
+
+plot(x=ishodnik$year[ ishodnik$area=="Goreliy"], y=ishodnik$N2.mean.sqmeter[ ishodnik$area=="Goreliy"], type="n", xlim=c(1992, 2012), ylim=c(min(ishodnik$N2.mean.sqmeter[ ishodnik$region == "Luvenga"], na.rm=T), max(ishodnik$N2.mean.sqmeter[ ishodnik$region == "Luvenga"], na.rm=T)), xlab="годы", ylab="N, экз./кв.м")
+#2 разрез
+lines(ishodnik$year[ ishodnik$area=="razrez2"], ishodnik$N2.mean.sqmeter[ ishodnik$area=="razrez2"], type="b", pch=15, lty=1)
+arrows(x0=ishodnik$year[ ishodnik$area=="razrez2"], 
+       x1=ishodnik$year[ ishodnik$area=="razrez2"], 
+       y0=ishodnik$N2.mean.sqmeter[ ishodnik$area=="razrez2"] + ishodnik$N2.sem[ ishodnik$area=="razrez2"], 
+       y1=ishodnik$N2.mean.sqmeter[ ishodnik$area=="razrez2"] - ishodnik$N2.sem[ ishodnik$area=="razrez2"], 
+       angle=90, code=3, length=.1, lty=1)
+#Горелый
+lines(ishodnik$year[ ishodnik$area=="Goreliy"], ishodnik$N2.mean.sqmeter[ ishodnik$area=="Goreliy"], type="b", pch=16, lty=2)
+arrows(x0=ishodnik$year[ ishodnik$area=="Goreliy"], 
+       x1=ishodnik$year[ ishodnik$area=="Goreliy"], 
+       y0=ishodnik$N2.mean.sqmeter[ ishodnik$area=="Goreliy"] + ishodnik$N2.sem[ ishodnik$area=="Goreliy"], 
+       y1=ishodnik$N2.mean.sqmeter[ ishodnik$area=="Goreliy"] - ishodnik$N2.sem[ ishodnik$area=="Goreliy"], 
+       angle=90, code=3, length=.1, lty=2)
+#Эстуарий
+lines(ishodnik$year[ ishodnik$area=="Estuary"], ishodnik$N2.mean.sqmeter[ ishodnik$area=="Estuary"], type="b", pch=17, lty=4)
+arrows(x0=ishodnik$year[ ishodnik$area=="Estuary"], 
+       x1=ishodnik$year[ ishodnik$area=="Estuary"], 
+       y0=ishodnik$N2.mean.sqmeter[ ishodnik$area=="Estuary"] + ishodnik$N2.sem[ ishodnik$area=="Estuary"], 
+       y1=ishodnik$N2.mean.sqmeter[ ishodnik$area=="Estuary"] - ishodnik$N2.sem[ ishodnik$area=="Estuary"], 
+       angle=90, code=3, length=.1, lty=4)
+legend(x="topleft", legend = c("материк Лувеньга", "о.Горелый", "эстуарий р.Лувеньги"), pch=c(15,16,17), lty=c(1,2,4))
+dev.off()
+embedFonts("N2_dynamic_Luvenga_all_BW.pdf") #встройка шрифтов в файл

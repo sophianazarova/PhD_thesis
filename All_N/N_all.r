@@ -176,3 +176,7 @@ c(3,  5,	4,	4,	7, 1,	2,	0,	0,	1)*30
 #======== summary по пробоотбору ==================================
 tapply(ishodnik$sample, ishodnik$area, length)
 table(ishodnik$year[ ishodnik$sea=="Barents", drop=T], ishodnik$area[ ishodnik$sea=="Barents", drop=T])
+length(ishodnik$sample)
+
+subset(ishodnik,ishodnik$area=="Pechenga")
+

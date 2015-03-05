@@ -25,6 +25,7 @@ for (i in 1:length(levels(oneyear.df$year)))
   oneyear.df$Freq[oneyear.df$year==levels(oneyear.df$year)[i]][antixxx]<-NA
 }
 
+
 #теперь на квадратный метр
 oneyear.sqmeter<-oneyear.df
 for (i in 1:length(levels(oneyear.sqmeter$year)))
@@ -34,6 +35,9 @@ for (i in 1:length(levels(oneyear.sqmeter$year)))
     samples.squares$square[samples.squares$year==levels(oneyear.sqmeter$year)[i]]
 }
 str(oneyear.sqmeter)
+
+#пишем по пробам в файл
+write.table(x = subset(oneyear.sqmeter, oneyear.sqmeter$oneyear.int == "(1.3,1.9]"), "oneyear_sample.csv", sep = ";", dec=",")
 
 
 (mean.oneyear.sqmeter<-t(tapply(oneyear.sqmeter$Freq,INDEX=list(oneyear.sqmeter$year, oneyear.sqmeter$oneyear.int),FUN=mean, na.rm=T)))

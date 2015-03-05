@@ -34,6 +34,10 @@ for (i in 1:length(levels(oneyear.sqmeter$year)))
 }
 str(oneyear.sqmeter)
 
+#пишем по пробам в файл
+write.table(x = subset(oneyear.sqmeter, oneyear.sqmeter$oneyear.int == "(1.3,1.9]"), "oneyear_sample.csv", sep = ";", dec=",")
+
+
 
 (mean.oneyear.sqmeter<-t(tapply(oneyear.sqmeter$Freq,INDEX=list(oneyear.sqmeter$year, oneyear.sqmeter$oneyear.int),FUN=mean, na.rm=T)))
 

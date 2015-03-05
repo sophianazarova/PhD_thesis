@@ -149,7 +149,7 @@ sizestr.l12.dist <- dist(t(White_sizestr_matrx_less_12), "euclidean")
 #Попробуем Канберру
 sizestr.dist <- dist(t(White_sizestr_matrx),"canberra")
 
-#Попробуем Канберру
+#Попробуем Брей-Кертиса
 sizestr.dist <- vegdist(t(White_sizestr_matrx), "bray")
 
 # ============= Белое море - считаем non-metric MDS ============
@@ -314,12 +314,14 @@ Barents_sizestr_matrx[is.na(Barents_sizestr_matrx)]<-0
 
 # ===== Баренцево море --  Principal component analisys =============
 
-Barents_sizestr_prcomp<-prcomp((Barents_sizestr_matrx))
+Barents_sizestr_prcomp<-prcomp(t(Barents_sizestr_matrx))
 plot(Barents_sizestr_prcomp)
 summary(Barents_sizestr_prcomp)
 
 Barents_sizestr_p<-predict(Barents_sizestr_prcomp)
 plot(Barents_sizestr_p[,1:2],col=as.numeric(Barents_sizestr_matrx_annotation$area)+1, pch=16)
+text(Barents_sizestr_p[,1:2],labels = rownames(Barents_sizestr_p))
+legend(col=as.numeric levels(Barents_sizestr_matrx_annotation$area))+1, pch=16, legend = levels())
 
 pdf("Barents_sizestr_PCA_biplot.pdf", family="NimbusSan")
 biplot(Barents_sizestr_prcomp, col = c("gray80", "red"), xlabs = Barents_sizestr_matrx_annotation$year)

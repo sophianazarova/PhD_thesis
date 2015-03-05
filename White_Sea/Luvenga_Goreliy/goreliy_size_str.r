@@ -30,7 +30,7 @@ for (i in 1:length(levels(size.str.df$year))){
                      size.str.df$tidal_level==levels(size.str.df$tidal_level)[j]][antixxx]<-NA
 }}
 
-
+summary(size.str.df)
 
 #subset(size.str.df, size.str.df$year=="1995" & size.str.df$sample=="mg4")
 # SUBSET - для фильтрации таблицы данных
@@ -347,6 +347,7 @@ str(size.str.sqmeter)
                         list(size.str.sqmeter$year[size.str.sqmeter$Length.int!="(0,1]"],
                              size.str.sqmeter$sample[size.str.sqmeter$Length.int!="(0,1]"]), sum, na.rm=T))
 N2.all.sqmeter[N2.all.sqmeter==0]<-NA
+
 (N2.all.mean.sqmeter<-apply(N2.all.sqmeter, na.rm=T, MARGIN=1, FUN=mean ))
 (N2.all.sd.sqmeter<-apply(N2.all.sqmeter, na.rm=T, MARGIN=1, FUN=sd))
 (N2.all.sem.sqmeter<-N2.all.sd.sqmeter/sqrt(rowSums(as.matrix(n.samples),na.rm=T)))
@@ -370,6 +371,37 @@ dev.off()
 embedFonts("N2_dynamic.pdf") #встройка шрифтов в файл
 
 #locator()
+# график про численность без разделения на горизонты
+pdf(file="N2_dynamic_all.pdf", family="NimbusSan") # указываем шрифт подпией
+plot(y=N2.all.mean.sqmeter, x=as.numeric(names(N2.all.mean.sqmeter)), type="b", main="о. Горелый (Лувеньгские шхеры)",
+     ylim=c(0, max(N2.all.mean.sqmeter, na.rm=T)+max(N2.all.sem.sqmeter, na.rm=T)), 
+     xlab="год", ylab="N, экз./кв.м", pch=15)
+arrows(x0 = as.numeric(names(N2.all.mean.sqmeter)), x1 = as.numeric(names(N2.all.mean.sqmeter)),
+       y0=N2.all.mean.sqmeter-N2.all.sem.sqmeter, y1=N2.all.mean.sqmeter+N2.all.sem.sqmeter, angle=90, code=3, length=.1)
+dev.off()
+embedFonts("N2_dynamic_all.pdf") #встройка шрифтов в файл
+
+## =========== анализ динамики без молоди суммарной ===========
+N2.all.sqmeter.df <- as.data.frame(as.table(N2.all.sqmeter))
+str(N2.all.sqmeter.df)
+colnames(N2.all.sqmeter.df) <- c("year", "sample", "N2.indd.sqm")
+N2.all.sqmeter.df$year <- as.numeric(as.vector(N2.all.sqmeter.df$year))
+
+# Kruskal test по периодам
+kruskal.test(N2.all.sqmeter.df$N2.indd.sqm ~ N2.all.sqmeter.df$year)
+kruskal.test(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999] ~ N2.all.sqmeter.df$year[ N2.all.sqmeter.df$year > 1999])
+kruskal.test(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ] ~ N2.all.sqmeter.df$year[ N2.all.sqmeter.df$year < 1999  & N2.all.sqmeter.df$year > 1993])
+kruskal.test(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1996] ~ N2.all.sqmeter.df$year[ N2.all.sqmeter.df$year < 1996])
+
+# средние численности в стабильных периодах
+mean(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999], na.rm=T)
+sd(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999], na.rm=T)/sqrt(length(na.omit(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999])))
+sd(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999], na.rm=T)/sqrt(length(na.omit(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999])))/mean(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year > 1999], na.rm=T)*100
+
+mean(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ], na.rm=T)
+sd(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ], na.rm=T)/length(na.omit((N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ])))
+sd(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ], na.rm=T)/length(na.omit((N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ])))/mean(N2.all.sqmeter.df$N2.indd.sqm[ N2.all.sqmeter.df$year < 1999 & N2.all.sqmeter.df$year > 1993 ], na.rm=T)*100
+
 
 # ======= про численность 2+ =================================================
 (N2.sqmeter.high<-(N2.sqmeter)[,,1])
@@ -923,4 +955,25 @@ write.table(B8.mean.sqmeter, file="goreliy_biomass_old.csv", sep=";", dec=",")
 ##размеры маком на разных горизонтах
 str(ishodnik)
 boxplot(Length.mm ~ tidal_level, horizontal=T)
+
+
+#========== РС маком без разделения на горизнты суммарная ============
+library(lattice)
+
+pdf("Goreliy_total_size_str.pdf", family = "NimbusSan")
+histogram(~ ishodnik$Length.mm[ishodnik$Length.mm >=1] |as.factor(ishodnik$year[ishodnik$Length.mm >=1 ]), xlab = "L, mm", breaks = seq(1, max(ishodnik$Length.mm, na.rm=T)+1, 1))
+dev.off()
+embedFonts("Goreliy_total_size_str.pdf")
+
+# считаем сводку по РС
+sizestr_all <- table(Length.int, as.factor(ishodnik$year))
+
+#РС в %
+sizestr_all_percent <- t(t(sizestr_all[2:20,])/colSums(sizestr_all[2:20,])*100)
+
+#пишем в файл
+write.table(as.data.frame(as.table(sizestr_all_percent)), "goreliy_sizestr_all_percents.csv", sep=";", dec=",")
+
+
+
 
