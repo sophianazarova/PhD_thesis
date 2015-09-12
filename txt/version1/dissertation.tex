@@ -1,0 +1,137 @@
+\documentclass[a4paper,12pt]{article}
+
+
+\input{preamble.tex} %вставляем приамбулу с подключением пакетов и параметрами
+
+%нумерация строк на полях для редактирования
+%\usepackage[left, pagewise]{lineno} %на каждой странице с нуля
+\usepackage[left]{lineno}
+
+\input{perenosy.tex} %файл с заданными частыми переносами
+
+\setcounter{tocdepth}{2}%устанавливаем "глубину" оглавления до подсекций
+
+%это движок biber
+%\usepackage[backend=biber,bibencoding=utf8,sorting=ynt,maxcitenames=2,style=authoryear]{biblatex}
+
+%biblatex-gost
+\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other, bibencoding=utf8, bibdoi=false, biburl=false,  movenames=false, sortcites = false]{biblatex}
+%\renewcommand*{\gostmedialanguage}{}
+
+\addbibresource{sophia_base.bib}
+%\addbibresource{disser.bib}
+
+%\includeonly{chapters/ch2,chapters/ch3}
+
+\begin{document} % конец преамбулы, начало документа
+
+%%титульный лист
+\include{title}
+
+\tableofcontents
+
+\linenumbers
+
+%%Введение
+\include{vvedenie}
+\afterpage{\clearpage}
+
+%%Обзор литературы - НАДО ЛИ? ИЛИ ВСЕ_ТАКИ ВСЕ ЭТО ОТПРАВИТЬ В ОБСУЖДЕНИЕ??
+%\include{litobzor}
+%\afterpage{\clearpage}
+
+%%материал и методика
+\include{matmet}
+\afterpage{\clearpage}
+
+%%описание участков
+\include{harakteristiki_rayonov_issledovaniya}
+\afterpage{\clearpage}
+
+%%роль в сообществах разнообразных местообитаний
+\include{soobshestva_barents} 
+\afterpage{\clearpage}
+
+%%микрораспределение
+%\include{microdistribution}
+%\afterpage{\clearpage}
+
+%%популяционная структура
+\include{obilie}
+%\include{size_structure.tex}
+\afterpage{\clearpage}
+
+\include{sizestr}
+\afterpage{\clearpage}
+
+%%рост в разных условиях
+\include{growth}
+\afterpage{\clearpage}
+
+%%динамика популяций
+\include{dynamic}
+%%\include{dynamic_analyse} %вставили его в dymanic.tex
+\afterpage{\clearpage}
+
+%пополнение
+\include{popolnenie}
+\include{popolnenie_dynamic}
+\afterpage{\clearpage}
+
+%%обсуждение
+\include{discussion}
+
+%%    макома как массовый элемент в сообществах литорали северных морей
+%%    об организации сообществ с участием Macoma balthica
+%%    Структура популяции Mb как отражение характеристик экотопов
+%%    скорость роста как показатель "условий жизни"
+%%    о долговременных трендах в популяции Mb
+
+\include{zaklyuchenie}
+
+%%выводы
+\include{vyvody}
+
+%%благодарности
+\include{blagodarnosti}
+
+%печатаем список литературы
+\newpage
+\printbibliography[heading=bibintoc]
+%\printbibliography
+
+%приложение
+\renewcommand{\thetable}{\Roman{table}}
+\setcounter{table}{0}
+\renewcommand{\thefigure}{\Roman{figure}}
+\setcounter{figure}{0}
+\appendix
+%\renewcommand{\thesection}{Приложение \Asbuk{section}}
+%\setcounter{section}{0}
+
+%таблица про пробы и среднее обилие
+\include{prilozhenie_NB_table}
+
+%списки видов
+\include{prilozhenie_spiski_vidov}
+
+%коррелограммы и пузырьковые диаграммы с отдельными возрастами макомы в Пале
+%\include{Pala_moran_Macoma_ages}
+ 
+%картинки с размерными структурами
+\include{prilozhenie_size_structure_pictures_White}
+\include{prilozhenie_size_structure_pictures_Barents}
+
+
+% треугольные матрицы с возрастной структурой
+\include{prilozhenie_growth}
+
+%обилие маком по литературным и авторским источникам
+\include{prilozhenie_macrodistribution}
+
+\include{prilozhenie_omega}
+
+\include{prilozhenie_growth_sources}
+
+\end{document} % конец документа
+

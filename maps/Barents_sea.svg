@@ -111,7 +111,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="0.99620679"
      inkscape:cx="361.35275"
-     inkscape:cy="127.69817"
+     inkscape:cy="230.7541"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -128,7 +128,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -524,13 +524,16 @@
            id="g3243">
           <text
              id="text3245"
-             transform="matrix(0,1,1,0,19.55,257.23)">
+             transform="matrix(0,1,1,0,0,0)"
+             x="245.77228"
+             y="19.549999"
+             style="font-size:12px">
             <tspan
                id="tspan3247"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lat</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="245.77228"
+               y="19.549999">долгота</tspan>
           </text>
         </g>
       </g>
@@ -814,13 +817,16 @@
            id="g4088">
           <text
              id="text4090"
-             transform="matrix(1,0,0,-1,264.42,50.9801)">
+             transform="scale(1,-1)"
+             x="253.56888"
+             y="-50.980099"
+             style="font-size:12px">
             <tspan
                id="tspan4092"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lon</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="253.56888"
+               y="-50.980099">широта</tspan>
           </text>
         </g>
         <g
@@ -828,13 +834,16 @@
            id="g4094">
           <text
              id="text4096"
-             transform="matrix(0,1,1,0,19.55,257.23)">
+             transform="matrix(0,1,1,0,0,0)"
+             x="246.37886"
+             y="19.549999"
+             style="font-size:12px">
             <tspan
                id="tspan4098"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lat</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="246.37886"
+               y="19.549999">долгота</tspan>
           </text>
         </g>
       </g>
@@ -1136,13 +1145,16 @@
            id="g4340">
           <text
              id="text4342"
-             transform="matrix(1,0,0,-1,261.64,10.8)">
+             transform="scale(1,-1)"
+             x="239.78879"
+             y="-10.8"
+             style="font-size:12px">
             <tspan
                id="tspan4344"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lon</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="239.78879"
+               y="-10.8">широта</tspan>
           </text>
         </g>
         <g
@@ -1150,13 +1162,16 @@
            id="g4346">
           <text
              id="text4348"
-             transform="matrix(0,1,1,0,88.9602,257.23)">
+             transform="matrix(0,1,1,0,0,0)"
+             x="244.11928"
+             y="88.960197"
+             style="font-size:12px">
             <tspan
                id="tspan4350"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lat</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="244.11928"
+               y="88.960197">долгота</tspan>
           </text>
         </g>
       </g>
@@ -1172,7 +1187,7 @@
          id="tspan4433"
          x="385.33087"
          y="110.13837"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">7</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">13</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
@@ -1184,7 +1199,7 @@
          id="tspan4433-2"
          x="460.76144"
          y="197.59676"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">8</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">14</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
@@ -1196,7 +1211,7 @@
          id="tspan4458"
          x="504.70004"
          y="178.69914"
-         style="font-style:normal;-inkscape-font-specification:Nimbus Sans L;font-size:14px">9</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">15</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
@@ -1208,7 +1223,7 @@
          id="tspan4462"
          x="537.51385"
          y="202.3835"
-         style="font-size:14px">10</tspan></text>
+         style="font-size:14px">16</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
@@ -1220,7 +1235,7 @@
          id="tspan4466"
          x="561.9082"
          y="227.36104"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">11</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">17</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
@@ -1232,7 +1247,7 @@
          id="tspan4466-6"
          x="109.3842"
          y="408.20822"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">1</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">21</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
@@ -1244,7 +1259,7 @@
          id="tspan4466-0"
          x="167.59604"
          y="447.74835"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">2</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">22</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
@@ -1256,7 +1271,7 @@
          id="tspan4466-4"
          x="448.7702"
          y="586.13879"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">12</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">18</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
@@ -1268,7 +1283,7 @@
          id="tspan4466-07"
          x="206.03783"
          y="759.67596"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">2</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">22</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
@@ -1280,31 +1295,31 @@
          id="tspan4466-7"
          x="325.7565"
          y="826.67444"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">3</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">20</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
-       x="326.85483"
+       x="324.85483"
        y="862.91956"
        id="text4464-5"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4466-9"
-         x="326.85483"
+         x="324.85483"
          y="862.91956"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">4</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">23</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
-       x="238.98792"
+       x="234.98792"
        y="956.27826"
        id="text4464-2"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4466-91"
-         x="238.98792"
+         x="234.98792"
          y="956.27826"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">5</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">19</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
@@ -1316,7 +1331,7 @@
          id="tspan4466-1"
          x="275.23303"
          y="1002.0967"
-         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">6</tspan></text>
+         style="font-size:14px;font-style:normal;-inkscape-font-specification:Nimbus Sans L">24</tspan></text>
     <rect
        style="fill:none;stroke:#000000;stroke-width:1.10000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:0;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect4583"
@@ -1367,29 +1382,31 @@
            x="40.638454"
            y="32.007458" /></flowRegion><flowPara
          id="flowPara6003"
-         style="font-style:normal;-inkscape-font-specification:Nimbus Sans L">1 - губа Печенга</flowPara><flowPara
+         style="font-style:normal;-inkscape-font-specification:Nimbus Sans L">13 - губа Гаврилово</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6005">2 - Ура-губа</flowPara><flowPara
+         id="flowPara3306">14 - губа Ярнышная</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6007">3 - Пала-губа</flowPara><flowPara
+         id="flowPara3308">15 - губа Дальне-Зеленецкая</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6009">4 - Ретинское</flowPara><flowPara
+         id="flowPara3310">16 - губа Шельпино</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6011">5 - Абрам-мыс</flowPara><flowPara
+         id="flowPara3312">17 - губа Порчниха</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6013">6 - Нагорное</flowPara><flowPara
+         id="flowPara3314">18 - губа Ивановская</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6015">7 - губа Гаврилово</flowPara><flowPara
+         id="flowPara3316">19 - Абрам-мыс</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6017">8 - губа Ярнышная</flowPara><flowPara
+         id="flowPara3318">20 - Пала-губа</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6019">9 - губа Дальне-Зеленецкая</flowPara><flowPara
+         id="flowPara3304">21 - губа Печенга</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6021">10 - губа Шельпино</flowPara><flowPara
+         id="flowPara6005">22 - Ура-губа</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6025">11 - губа Порчниха</flowPara><flowPara
+         id="flowPara6009">23 - Ретинское</flowPara><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
-         id="flowPara6027">12 - губа Ивановская</flowPara><flowPara
+         id="flowPara6013">24 - Нагорное</flowPara><flowPara
+         style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
+         id="flowPara6027" /><flowPara
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L"
          id="flowPara6023" /></flowRoot>    <text
        xml:space="preserve"

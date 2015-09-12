@@ -97,7 +97,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.614496"
      inkscape:cx="242.77288"
-     inkscape:cy="154.20298"
+     inkscape:cy="857.57977"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -381,13 +381,15 @@
            id="g6620">
           <text
              id="text6622"
-             transform="matrix(1,0,0,-1,263.68,77.0801)">
+             transform="scale(1,-1)"
+             x="255.68451"
+             y="-77.080101">
             <tspan
                id="tspan6624"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lon</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="255.68451"
+               y="-77.080101">широта</tspan>
           </text>
         </g>
         <g
@@ -395,13 +397,15 @@
            id="g6626">
           <text
              id="text6628"
-             transform="matrix(0,1,1,0,19.55,257.23)">
+             transform="matrix(0,1,1,0,0,0)"
+             x="249.23453"
+             y="19.549999">
             <tspan
                id="tspan6630"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lat</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="249.23453"
+               y="19.549999">долгота</tspan>
           </text>
         </g>
       </g>
@@ -695,9 +699,9 @@
             <tspan
                id="tspan6871"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lon</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="0"
+               y="0">широта</tspan>
           </text>
         </g>
         <g
@@ -705,13 +709,15 @@
            id="g6873">
           <text
              id="text6875"
-             transform="matrix(0,1,1,0,19.55,257.23)">
+             transform="matrix(0,1,1,0,0,0)"
+             x="241.24626"
+             y="19.549999">
             <tspan
                id="tspan6877"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lat</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="241.24626"
+               y="19.549999">долгота</tspan>
           </text>
         </g>
       </g>
@@ -1079,9 +1085,9 @@
             <tspan
                id="tspan8152"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lon</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="0"
+               y="0">широта</tspan>
           </text>
         </g>
         <g
@@ -1089,13 +1095,15 @@
            id="g8154">
           <text
              id="text8156"
-             transform="matrix(0,1,1,0,19.55,257.23)">
+             transform="matrix(0,1,1,0,0,0)"
+             x="238.30588"
+             y="19.549999">
             <tspan
                id="tspan8158"
                sodipodi:role="line"
-               y="0"
-               x="0 2.664 9.3360004"
-               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu">lat</tspan>
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               x="238.30588"
+               y="19.549999">долгота</tspan>
           </text>
         </g>
       </g>
@@ -1196,7 +1204,7 @@
          sodipodi:role="line"
          id="tspan9193"
          x="376.64764"
-         y="315.05197">7</tspan></text>
+         y="315.05197">6</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
@@ -1207,7 +1215,7 @@
          sodipodi:role="line"
          id="tspan9193-3"
          x="306.2478"
-         y="258.57245">6</tspan></text>
+         y="258.57245">4</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
@@ -1229,7 +1237,7 @@
          sodipodi:role="line"
          id="tspan9227"
          x="409.11725"
-         y="125.72906">9</tspan></text>
+         y="125.72906">1</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
@@ -1240,7 +1248,7 @@
          sodipodi:role="line"
          id="tspan9231"
          x="427.59998"
-         y="148.20805">10</tspan></text>
+         y="148.20805">3</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
@@ -1251,7 +1259,7 @@
          sodipodi:role="line"
          id="tspan9235"
          x="393.1322"
-         y="159.19777">8</tspan></text>
+         y="159.19777">2</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
@@ -1262,7 +1270,7 @@
          sodipodi:role="line"
          id="tspan9239"
          x="215.79811"
-         y="913.99725">1</tspan></text>
+         y="913.99725">7</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
@@ -1273,18 +1281,18 @@
          sodipodi:role="line"
          id="tspan9243"
          x="336.18362"
-         y="909.00189">2</tspan></text>
+         y="909.00189">8</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
-       x="167.84299"
+       x="163.84299"
        y="912.49304"
        id="text9245"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9247"
-         x="167.84299"
-         y="912.49304">3</tspan></text>
+         x="163.84299"
+         y="912.49304">10</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
@@ -1295,7 +1303,7 @@
          sodipodi:role="line"
          id="tspan9251"
          x="126.8813"
-         y="908.0047">4</tspan></text>
+         y="908.0047">9</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans"
@@ -1329,16 +1337,16 @@
            height="322.13931"
            x="43.799644"
            y="389.71594" /></flowRegion><flowPara
-         id="flowPara10229">1 - Сухая салма (литораль острова Кереть)</flowPara><flowPara
-         id="flowPara10231">2 - бухта Клющиха, остров Кереть</flowPara><flowPara
-         id="flowPara10233">3 - пролив Подпахта (материковая литораль)</flowPara><flowPara
-         id="flowPara10235">4 - бухта Лисья</flowPara><flowPara
+         id="flowPara3271">1 - эстуарий р.Лувеньги</flowPara><flowPara
+         id="flowPara10231">2 - остров Горелый (Лувеньгские шхеры)</flowPara><flowPara
+         id="flowPara10233">3 - Лувеньга, материковая литораль</flowPara><flowPara
+         id="flowPara10235">4 - Западная Ряшкова Салма (литораль острова Ряшков)</flowPara><flowPara
          id="flowPara10237">5 - Южная губа острова Ряшков</flowPara><flowPara
-         id="flowPara10239">6 - Западная Ряшкова Салма (литораль острова Ряшков)</flowPara><flowPara
-         id="flowPara10241">7 - остров Большой Ломнишный</flowPara><flowPara
-         id="flowPara10243">8 - остров Горелый</flowPara><flowPara
-         id="flowPara10245">9 - эстуарий р.Лувеньги</flowPara><flowPara
-         id="flowPara10247">10 - Лувеньга, материковая литораль</flowPara><flowPara
+         id="flowPara10239">6 - остров Большой Ломнишный</flowPara><flowPara
+         id="flowPara10241">7 - Сухая салма (литораль острова Кереть)</flowPara><flowPara
+         id="flowPara10243">8 - бухта Клющиха, остров Кереть</flowPara><flowPara
+         id="flowPara10245">9 - бухта Лисья</flowPara><flowPara
+         id="flowPara10247">10 - пролив Подпахта (материковая литораль)</flowPara><flowPara
          id="flowPara10249">11 - Сельдяная губа</flowPara><flowPara
          id="flowPara10251">12 - Медвежья губа</flowPara></flowRoot>    <text
        xml:space="preserve"

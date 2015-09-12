@@ -95,7 +95,7 @@ embedFonts("sizestr_PCA12.pdf")
 
 pdf("sizestr_PCA12_year.pdf", family="NimbusSan")
 plot(sizestr_p[,1:2],pch=as.numeric(sizestr_matrx_annotation$site))
-legend(legend=levels(sizestr_matrx_annotation$site), x="topleft", pch = seq(1:3))
+legend(legend=levels(sizestr_matrx_annotation$site), x="topleft", pch = seq(1:3), bty = "n")
 text(x=sizestr_p[,1]+1, y=sizestr_p[,2]+1, sizestr_matrx_annotation$code, col = "gray70")
 dev.off()
 embedFonts("sizestr_PCA12_year.pdf")

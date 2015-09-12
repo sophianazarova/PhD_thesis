@@ -29,9 +29,10 @@ anova(mod1, mod3)
 
 mod4 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t)
 summary(mod4)
+anova(mod1, mod4)
 
 #график
-
+library(ggplot2)
 
 pdf("Twt1_vs_logNt1.pdf", family="NimbusSan")
 ggplot(data=ishodnik, aes(x=wint_temp_t1, y=log(Nt1.sqmeter))) + geom_point(shape=1) + geom_smooth(method="lm", level=0.95) + theme_bw()

@@ -25,6 +25,9 @@ is.matrix(ish_tidal)
 #считаем simprof
 fauna_tidal_clust<-simprof(data = (ish_tidal), num.expected = 999, num.simulated = 999, method.cluster = "single", method.distance = Jaccard, alpha = 0.05)
 
+fauna_tidal_clust_average<-simprof(data = (ish_tidal), num.expected = 999, num.simulated = 999, method.cluster = "average", method.distance = Jaccard, alpha = 0.05)
+simprof.plot(fauna_tidal_clust_average)
+
 #рисуем картинку
 pdf("White_fauna_tidal_jaccard_single.pdf", family="NimbusSan")
 simprof.plot(fauna_tidal_clust)

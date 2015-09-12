@@ -1,0 +1,14 @@
+[1] Config.pm:320> INFO - This is Biber 1.9
+[1] Config.pm:323> INFO - Logfile is 'dissertation.blg'
+[185] biber:277> INFO - === Ð¡Ñ. Ð¸ÑÐ»Ñ 22, 2015, 12:51:45
+[186] Biber.pm:333> INFO - Reading 'dissertation.bcf'
+[357] Biber.pm:635> INFO - Found 146 citekeys in bib section 0
+[965] Biber.pm:3051> INFO - Processing section 0
+[1100] Biber.pm:3189> INFO - Looking for bibtex format file 'sophia_base.bib' for section 0
+[1206] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[1270] bibtex.pm:864> INFO - Found BibTeX data source 'sophia_base.bib'
+[4474] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4474] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4474] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'ru-RU'
+[5636] bbl.pm:517> INFO - Writing 'dissertation.bbl' with encoding 'UTF-8'
+[5682] bbl.pm:606> INFO - Output to dissertation.bbl

@@ -1,0 +1,33 @@
+Macoma balthica is a common bivalve with pelagic larvae, therefore recruitment is one of the most important factor influence to the population dynamic.
+Factors which impact to recruitment efficiency have investigated in detail at the Wadden Sea (Jensen&Jensen, 1985; Beukema et al., 2008; Beukema et al., 2001; Strasser&Günther, 2001; Strasser et al., 2003; Beukema&Dekker, 2014). 
+In the White Sea reasons of recruitment fluctuations have not analyse yet. 
+We observed recruitment of M. balthica populations at 6 sites in the top of Kandalaksha bay (the White Sea) during the Kandalaksha State Natere Reserve monitoring program. 
+Distances between sites was from 1 to 15 km. 
+Observation period was from 6 to 22 years for different sites (from 1992 to 2012).
+We fitted two general additive models (GAM).
+GAM1 (full model) included common smoother for all sites, 6 particuar smoothers for each site separately and site as fixed categorical predictor.
+GAM2 (reduced model) included the same predictors except 6 particuar smoothers.
+Likelyhood ratio test didn't reveal significant diffirences between models (***).
+Therefore we consider GAM2 as more simple model.
+This result means that we can observe general recruitment pattern common for all sites.
+R-squared for GAM2 is ***.
+
+Thus we conclude that global factors have a significant effect to recruitment dynamic.
+The most probably global factor is temperature. 
+We use average monthly air temperature in Kandalaksha for each generation from settlement (September before sampling year) to 1 year (August in sampling year).
+We fitted general mixed effect model with average monthly temerature as fixed predictors and site and year as random components of the model.
+After backward model selection we found that abundance of 1+ was negatively dependent on temperature of first January and first May temperature (i.e. the monthes when the White Sea covered by ice), but positively depend on December of settlement year and July of the first year. 
+We suppose that in warm winter ice conditions are unstable and storms can strongly impact to underyearling molluscs.
+
+
+Это можно трактовать что основное влияние оказывает глобальные факторы, действующие в масштабах нескольких десятков километров. 
+Наиболее вероятными факторами являются климатическими, поэтому мы рассмотрели влияние температуры.
+Мы рассматривали температуру от момента оседания (с сентября предыдущего года по август текущего года).
+We fitted general mixed effect model with average monthly temerature as fixed predictors and site and year as random components of the model.
+After backward model selection we found that abundance of 1+ was negatively dependent on temperature of first January and first May temperature (i.e. the monthes when the White Sea covered by ice), but positively depend on December of settlement year, July of first year. 
+Таким образом, температура оказывает достоверное влияние, однако действие ее изменяется со временем жизни.
+Критическое влияние оказывает первая зима. Теплая температура в первые месяцы жизни способствует выживанию спата. Однако затем положительное влияние оказывает более холодная температура, наверное
+
+
+
+But in the White Sea reasons of recruitment fluctuations have not analyse yet. 

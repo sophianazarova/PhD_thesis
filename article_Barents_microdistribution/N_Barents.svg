@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="620.07874"
-   height="318.89764"
+   width="301.18109"
+   height="624.89539"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -90,8 +90,8 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="1.2384615"
-     inkscape:cx="199.37329"
-     inkscape:cy="174.64693"
+     inkscape:cx="196.77131"
+     inkscape:cy="463.44153"
      inkscape:document-units="cm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -99,26 +99,34 @@
      showguides="true"
      inkscape:guide-bbox="true"
      inkscape:window-width="1366"
-     inkscape:window-height="768"
+     inkscape:window-height="697"
      inkscape:window-x="0"
-     inkscape:window-y="0"
-     inkscape:window-maximized="1">
+     inkscape:window-y="26"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0">
     <sodipodi:guide
        orientation="1,0"
-       position="301.1811,182.48447"
+       position="298.57912,492.60247"
        id="guide6370" />
     <sodipodi:guide
        orientation="1,0"
-       position="318.89764,166.3354"
+       position="316.29566,476.4534"
        id="guide6372" />
     <sodipodi:guide
        orientation="0,1"
-       position="168.75776,297.95031"
+       position="166.15578,608.06831"
        id="guide9023" />
     <sodipodi:guide
        orientation="0,1"
-       position="198.63354,52.484472"
+       position="196.03156,362.60247"
        id="guide9025" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="33.105591,471.55281"
+       id="guide3764" />
   </sodipodi:namedview>
   <metadata
      id="metadata7">
@@ -136,9 +144,9 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-733.46326)">
+     transform="translate(-2.6019823,-737.5835)">
     <g
-       transform="matrix(0.59758155,0,0,-0.59758155,319.71097,1039.4975)"
+       transform="matrix(0.59758155,0,0,-0.59758155,15.301022,1362.4789)"
        inkscape:label="Ncockle_area_Barents_article1"
        id="g7430">
       <g
@@ -1575,14 +1583,16 @@
            id="g8064">
           <text
              id="text8066"
-             transform="matrix(1,0,0,-1,184.79,480.9)"
-             style="font-style:italic;font-weight:bold;-inkscape-font-specification:Sans Bold Italic">
+             transform="scale(1,-1)"
+             style="font-style:italic;font-weight:bold;-inkscape-font-specification:Sans Bold Italic"
+             x="156.41475"
+             y="-479.5488">
             <tspan
                id="tspan8068"
                sodipodi:role="line"
-               style="font-size:16.73411751px;font-style:italic;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Bold Italic"
-               x="0"
-               y="0">Cerastoderma edule</tspan>
+               style="font-size:20.08094215px;font-style:italic;font-variant:normal;font-weight:bold;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Bold Italic"
+               x="156.41475"
+               y="-479.5488">Cerastoderma edule</tspan>
           </text>
           <text
              id="text8070"
@@ -1660,7 +1670,7 @@
       </g>
     </g>
     <g
-       transform="matrix(0.59758155,0,0,-0.59758155,21.906833,1038.7646)"
+       transform="matrix(0.59758155,0,0,-0.59758155,13.906833,1040.7646)"
        inkscape:label="Macoma_N2_area_Barents_means1"
        id="g8492">
       <g
@@ -2486,63 +2496,88 @@
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
-       x="125.72672"
-       y="752.6839"
+       x="110.84473"
+       y="752.41058"
        id="text9031"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9033"
-         x="125.72672"
-         y="752.6839"
-         style="font-weight:bold;-inkscape-font-specification:Nimbus Sans L Bold Italic">Macoma balthica</tspan></text>
+         x="110.84473"
+         y="752.41058"
+         style="font-size:12px;font-weight:bold;-inkscape-font-specification:Nimbus Sans L Bold Italic">Macoma balthica</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
-       x="298.33539"
-       y="1035.715"
+       x="161.87576"
+       y="1358.6962"
        id="text9035"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan9037"
-         x="298.33539"
-         y="1035.715">Sites</tspan></text>
+         x="161.87576"
+         y="1358.6962">Sites</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
        x="-921.36987"
-       y="21.664534"
+       y="15.664534"
        id="text9035-6"
        sodipodi:linespacing="125%"
        transform="matrix(0,-1,1,0,0,0)"><tspan
          sodipodi:role="line"
          id="tspan9037-2"
          x="-921.36987"
-         y="21.664534">N, ind. m<tspan
+         y="15.664534">N, ind. m<tspan
    style="font-size:10px;baseline-shift:super"
    id="tspan9060">-2</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
-       x="44.409939"
+       x="38.409939"
        y="753.18079"
        id="text3514"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3516"
-         x="44.409939"
+         x="38.409939"
          y="753.18079"
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L">A</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:10px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Sans Italic"
-       x="342.24008"
-       y="754.0556"
+       x="37.830132"
+       y="1077.0369"
        id="text3514-1"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan3516-7"
-         x="342.24008"
-         y="754.0556"
+         x="37.830132"
+         y="1077.0369"
          style="font-style:normal;-inkscape-font-specification:Nimbus Sans L">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
+       x="150.79225"
+       y="1037.3795"
+       id="text9035-8"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan9037-0"
+         x="150.79225"
+         y="1037.3795">Sites</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:Nimbus Sans L"
+       x="-1233.6216"
+       y="13.691982"
+       id="text9035-6-4"
+       sodipodi:linespacing="125%"
+       transform="matrix(0,-1,1,0,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan9037-2-1"
+         x="-1233.6216"
+         y="13.691982">N, ind. m<tspan
+   style="font-size:10px;baseline-shift:super"
+   id="tspan9060-8">-2</tspan></tspan></text>
   </g>
 </svg>

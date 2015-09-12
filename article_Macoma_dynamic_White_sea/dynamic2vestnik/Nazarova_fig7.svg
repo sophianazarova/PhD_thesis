@@ -1,0 +1,2057 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="473.67578"
+   height="249.59259"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="Nazarova_fig5.pdf">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.6696795"
+     inkscape:cx="213.18179"
+     inkscape:cy="102.361"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="mm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     fit-margin-top="2"
+     fit-margin-left="2"
+     fit-margin-right="2"
+     fit-margin-bottom="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="697"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
+     inkscape:window-maximized="1">
+    <sodipodi:guide
+       id="guide3646"
+       position="18.504608,50.45525"
+       orientation="1,0" />
+    <sodipodi:guide
+       id="guide4279"
+       position="182.60796,236.11962"
+       orientation="0,1" />
+    <sodipodi:guide
+       id="guide4290"
+       position="-59.891734,18.566437"
+       orientation="0,1" />
+    <sodipodi:guide
+       id="guide6251"
+       position="202.43406,31.143702"
+       orientation="0,1" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3024">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 357.898,375.199 4538.1,0 0,4520.8 -4538.1,0 0,-4520.8 z"
+         id="path3026" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3722">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 35.79,37.52 453.81,0 0,452.08 -453.81,0 0,-452.08 z"
+         id="path3724" />
+    </clipPath>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       inkscape:menu="Color"
+       height="1"
+       width="1"
+       y="0"
+       x="0"
+       inkscape:label="Desaturate"
+       id="filter3410">
+      <feColorMatrix
+         values="0"
+         type="saturate"
+         id="feColorMatrix3412" />
+    </filter>
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       inkscape:menu="Color"
+       height="1"
+       width="1"
+       y="0"
+       x="0"
+       inkscape:label="Desaturate"
+       id="filter3414">
+      <feColorMatrix
+         values="0"
+         type="saturate"
+         id="feColorMatrix3416" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5051">
+      <path
+         d="m 357.898,375.199 4538.1,0 0,4520.8 -4538.1,0 0,-4520.8 z"
+         id="path5053" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5694">
+      <path
+         d="m 35.79,37.52 453.81,0 0,452.08 -453.81,0 0,-452.08 z"
+         id="path5696" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(4.7295093,-620.84332)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       id="g5672"
+       inkscape:label="Twt1_vs_logNt1"
+       transform="matrix(0.45601505,0,0,-0.45601505,232.8428,857.43122)">
+      <g
+         id="g5674" />
+      <g
+         id="g5676" />
+      <g
+         id="g5678" />
+      <g
+         id="g5680">
+        <path
+           inkscape:connector-curvature="0"
+           d="M 0,0 504,0 504,504 0,504 0,0 z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.05999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5682" />
+      </g>
+      <g
+         id="g5684" />
+      <g
+         id="g5686" />
+      <g
+         id="g5688" />
+      <g
+         id="g5690">
+        <g
+           id="g5692"
+           clip-path="url(#clipPath5694)">
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,37.52 453.81,0 0,452.08 -453.81,0 0,-452.08 z"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             id="path5698" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,103.48 453.81,0"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5700" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,195.65 453.81,0"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5702" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,287.81 453.81,0"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5704" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,379.98 453.81,0"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5706" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,472.15 453.81,0"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5708" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 39.09,37.52 0,452.08"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5710" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 143.09,37.52 0,452.08"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5712" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 247.1,37.52 0,452.08"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5714" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 351.1,37.52 0,452.08"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5716" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 455.11,37.52 0,452.08"
+             style="fill:none;stroke:#fafafa;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5718" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,57.4 453.81,0"
+             style="fill:none;stroke:#e5e5e5;stroke-width:0.43000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5720" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,149.56 453.81,0"
+             style="fill:none;stroke:#e5e5e5;stroke-width:0.43000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5722" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,241.73 453.81,0"
+             style="fill:none;stroke:#e5e5e5;stroke-width:0.43000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5724" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,333.9 453.81,0"
+             style="fill:none;stroke:#e5e5e5;stroke-width:0.43000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5726" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,426.06 453.81,0"
+             style="fill:none;stroke:#e5e5e5;stroke-width:0.43000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5728" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 91.09,37.52 0,452.08"
+             style="fill:none;stroke:#e5e5e5;stroke-width:0.43000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5730" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 195.09,37.52 0,452.08"
+             style="fill:none;stroke:#e5e5e5;stroke-width:0.43000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5732" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 299.1,37.52 0,452.08"
+             style="fill:none;stroke:#e5e5e5;stroke-width:0.43000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5734" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 403.1,37.52 0,452.08"
+             style="fill:none;stroke:#e5e5e5;stroke-width:0.43000001;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5736" />
+          <text
+             transform="matrix(1,0,0,-1,466.64,56.03)"
+             id="text5738">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5740">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,334.9,175.78)"
+             id="text5742">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5744">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,275.97,300.06)"
+             id="text5746">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5748">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,289.83,254.41)"
+             id="text5750">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5752">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,282.9,223.01)"
+             id="text5754">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5756">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,229.16,180.96)"
+             id="text5758">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5760">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,54.09,296.84)"
+             id="text5762">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5764">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,121.69,390.55)"
+             id="text5766">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5768">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,317.57,383.15)"
+             id="text5770">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5772">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,307.17,411.65)"
+             id="text5774">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5776">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,215.3,383.31)"
+             id="text5778">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5780">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,236.1,396.85)"
+             id="text5782">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5784">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,296.77,434.22)"
+             id="text5786">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5788">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,378.24,368)"
+             id="text5790">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5792">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,317.57,322.73)"
+             id="text5794">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5796">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,269.03,409.51)"
+             id="text5798">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5800">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,463.17,371.35)"
+             id="text5802">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5804">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,279.43,380.55)"
+             id="text5806">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5808">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,76.62,389.81)"
+             id="text5810">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5812">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,251.7,368.76)"
+             id="text5814">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5816">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,109.56,337.82)"
+             id="text5818">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5820">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,466.64,196.04)"
+             id="text5822">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5824">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,334.9,233.32)"
+             id="text5826">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5828">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,275.97,296.25)"
+             id="text5830">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5832">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,289.83,311.51)"
+             id="text5834">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5836">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,282.9,298.12)"
+             id="text5838">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5840">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,229.16,296.65)"
+             id="text5842">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5844">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,54.09,394.01)"
+             id="text5846">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5848">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,121.69,440.33)"
+             id="text5850">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5852">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,317.57,407.06)"
+             id="text5854">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5856">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,466.64,83.84)"
+             id="text5858">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5860">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,334.9,184.76)"
+             id="text5862">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5864">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,275.97,339.96)"
+             id="text5866">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5868">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,289.83,317.89)"
+             id="text5870">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5872">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,282.9,283.29)"
+             id="text5874">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5876">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,229.16,219.76)"
+             id="text5878">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5880">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,54.09,371.85)"
+             id="text5882">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5884">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,121.69,467.01)"
+             id="text5886">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5888">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,317.57,431.77)"
+             id="text5890">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5892">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,307.17,404.42)"
+             id="text5894">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5896">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,215.3,364.34)"
+             id="text5898">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5900">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,236.1,392.5)"
+             id="text5902">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5904">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,296.77,373.6)"
+             id="text5906">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5908">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,378.24,381.66)"
+             id="text5910">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5912">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,317.57,353.04)"
+             id="text5914">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5916">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,269.03,346.28)"
+             id="text5918">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5920">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,463.17,354.53)"
+             id="text5922">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5924">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,279.43,332.14)"
+             id="text5926">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5928">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,76.62,324.72)"
+             id="text5930">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5932">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,251.7,359.17)"
+             id="text5934">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5936">●</tspan>
+          </text>
+          <text
+             transform="matrix(1,0,0,-1,109.56,347.35)"
+             id="text5938">
+            <tspan
+               style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+               x="0"
+               y="0"
+               id="tspan5940">●</tspan>
+          </text>
+          <path
+             inkscape:connector-curvature="0"
+             d="m 56.42,448.8 5.22,-2.67 5.23,-2.67 5.22,-2.66 5.22,-2.66 5.22,-2.64 5.23,-2.65 5.22,-2.63 5.22,-2.63 5.22,-2.61 5.22,-2.61 5.23,-2.6 5.22,-2.59 5.22,-2.58 5.22,-2.57 5.22,-2.55 5.23,-2.54 5.22,-2.53 5.22,-2.51 5.22,-2.49 5.23,-2.47 5.22,-2.46 5.22,-2.44 5.22,-2.41 5.22,-2.39 5.23,-2.36 5.22,-2.33 5.22,-2.31 5.22,-2.27 5.22,-2.24 5.23,-2.21 5.22,-2.16 5.22,-2.12 5.22,-2.08 5.23,-2.04 5.22,-1.99 5.22,-1.94 5.22,-1.89 5.22,-1.83 5.23,-1.79 5.22,-1.73 5.22,-1.67 5.22,-1.63 5.22,-1.56 5.23,-1.52 5.22,-1.46 5.22,-1.42 5.22,-1.36 5.23,-1.32 5.22,-1.27 5.22,-1.23 5.22,-1.19 5.22,-1.16 5.23,-1.11 5.22,-1.08 5.22,-1.06 5.22,-1.02 5.23,-0.99 5.22,-0.97 5.22,-0.95 5.22,-0.92 5.22,-0.9 5.23,-0.89 5.22,-0.86 5.22,-0.85 5.22,-0.83 5.22,-0.82 5.23,-0.81 5.22,-0.79 5.22,-0.78 5.22,-0.78 5.23,-0.76 5.22,-0.75 5.22,-0.74 5.22,-0.74 5.22,-0.72 5.23,-0.72 5.22,-0.71 5.22,-0.71 5.22,-0.7 0,-97.51 -5.22,2.66 -5.22,2.66 -5.22,2.65 -5.23,2.64 -5.22,2.64 -5.22,2.62 -5.22,2.62 -5.22,2.61 -5.23,2.6 -5.22,2.6 -5.22,2.58 -5.22,2.56 -5.23,2.56 -5.22,2.54 -5.22,2.53 -5.22,2.52 -5.22,2.49 -5.23,2.48 -5.22,2.46 -5.22,2.44 -5.22,2.42 -5.22,2.39 -5.23,2.37 -5.22,2.34 -5.22,2.31 -5.22,2.28 -5.23,2.25 -5.22,2.21 -5.22,2.17 -5.22,2.13 -5.22,2.09 -5.23,2.04 -5.22,2 -5.22,1.95 -5.22,1.9 -5.23,1.85 -5.22,1.79 -5.22,1.74 -5.22,1.69 -5.22,1.63 -5.23,1.58 -5.22,1.52 -5.22,1.48 -5.22,1.42 -5.22,1.37 -5.23,1.33 -5.22,1.28 -5.22,1.24 -5.22,1.2 -5.23,1.16 -5.22,1.12 -5.22,1.09 -5.22,1.06 -5.22,1.02 -5.23,1 -5.22,0.98 -5.22,0.95 -5.22,0.92 -5.22,0.91 -5.23,0.89 -5.22,0.87 -5.22,0.85 -5.22,0.83 -5.23,0.83 -5.22,0.8 -5.22,0.8 -5.22,0.78 -5.22,0.78 -5.23,0.76 -5.22,0.75 -5.22,0.75 -5.22,0.73 -5.22,0.73 -5.23,0.72 -5.22,0.72 -5.22,0.71 -5.22,0.7 -5.23,0.69 -5.22,0.69 0,101.09 z"
+             style="fill:#999999;fill-opacity:0.4;fill-rule:nonzero;stroke:none"
+             id="path5942" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 56.42,398.26 5.22,-1.69 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.69 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.69 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.69 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.69 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.69 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.69 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.69 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.69 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.68 5.23,-1.68 5.22,-1.68 5.22,-1.68 5.22,-1.69"
+             style="fill:none;stroke:#686868;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;stroke-dasharray:none"
+             id="path5944" />
+          <path
+             inkscape:connector-curvature="0"
+             d="m 35.79,37.52 453.81,0 0,452.08 -453.81,0 0,-452.08 z"
+             style="fill:none;stroke:#7f7f7f;stroke-width:1.05999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+             id="path5946" />
+        </g>
+      </g>
+      <g
+         id="g5948" />
+      <g
+         id="g5950" />
+      <g
+         id="g5952">
+        <text
+           transform="matrix(1,0,0,-1,23.15,53.75)"
+           id="text5954">
+          <tspan
+             style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             x="0"
+             y="0"
+             id="tspan5956" />
+        </text>
+        <text
+           transform="matrix(1,0,0,-1,23.15,145.92)"
+           id="text5958">
+          <tspan
+             style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             x="0"
+             y="0"
+             id="tspan5960" />
+        </text>
+        <text
+           transform="matrix(1,0,0,-1,23.15,238.09)"
+           id="text5962">
+          <tspan
+             style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             x="0"
+             y="0"
+             id="tspan5964" />
+        </text>
+        <text
+           transform="matrix(1,0,0,-1,23.15,330.25)"
+           id="text5966">
+          <tspan
+             style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             x="0"
+             y="0"
+             id="tspan5968" />
+        </text>
+        <text
+           transform="matrix(1,0,0,-1,23.15,422.42)"
+           id="text5970">
+          <tspan
+             style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             x="0"
+             y="0"
+             id="tspan5972" />
+        </text>
+      </g>
+      <g
+         id="g5974" />
+      <g
+         id="g5976">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 31.54,57.4 4.25,0"
+           style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5978" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 31.54,149.56 4.25,0"
+           style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5980" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 31.54,241.73 4.25,0"
+           style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5982" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 31.54,333.9 4.25,0"
+           style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5984" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 31.54,426.06 4.25,0"
+           style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5986" />
+      </g>
+      <g
+         id="g5988" />
+      <g
+         id="g5990" />
+      <g
+         id="g5992" />
+      <g
+         id="g5994" />
+      <g
+         id="g5996" />
+      <g
+         id="g5998">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 91.09,33.27 0,4.25"
+           style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path6000" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 195.09,33.27 0,4.25"
+           style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path6002" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 299.1,33.27 0,4.25"
+           style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path6004" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 403.1,33.27 0,4.25"
+           style="fill:none;stroke:#000000;stroke-width:1.05999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path6006" />
+      </g>
+      <g
+         id="g6008" />
+      <g
+         id="g6010">
+        <text
+           transform="matrix(1,0,0,-1,83.02,23.15)"
+           id="text6012">
+          <tspan
+             y="0"
+             x="0"
+             style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             sodipodi:role="line"
+             id="tspan6014" />
+        </text>
+        <text
+           transform="matrix(1,0,0,-1,186.96,23.15)"
+           id="text6016">
+          <tspan
+             y="0"
+             x="0"
+             style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             sodipodi:role="line"
+             id="tspan6018" />
+        </text>
+        <text
+           transform="matrix(1,0,0,-1,290.93,23.15)"
+           id="text6020">
+          <tspan
+             y="0"
+             x="0"
+             style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             sodipodi:role="line"
+             id="tspan6022" />
+        </text>
+        <text
+           transform="matrix(1,0,0,-1,397.4,23.15)"
+           id="text6024">
+          <tspan
+             y="0"
+             x="0"
+             style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             sodipodi:role="line"
+             id="tspan6026" />
+        </text>
+      </g>
+      <g
+         id="g6028" />
+      <g
+         id="g6030" />
+      <g
+         id="g6032" />
+      <g
+         id="g6034" />
+      <g
+         id="g6036">
+        <text
+           transform="matrix(1,0,0,-1,227.1,10.8)"
+           id="text6038">
+          <tspan
+             y="0"
+             x="0"
+             style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             sodipodi:role="line"
+             id="tspan6040" />
+        </text>
+      </g>
+      <g
+         id="g6042" />
+      <g
+         id="g6044">
+        <text
+           transform="matrix(0,1,1,0,19.55,219.47)"
+           id="text6046">
+          <tspan
+             y="0"
+             x="0"
+             style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+             sodipodi:role="line"
+             id="tspan6048" />
+        </text>
+      </g>
+      <g
+         id="g6050" />
+      <g
+         id="g6052" />
+      <g
+         id="g6054" />
+      <g
+         id="g6056" />
+    </g>
+    <g
+       id="g5039"
+       inkscape:label="lodNt_vs_logNt1"
+       transform="matrix(0.45601505,0,0,-0.45601505,6.8600045,857.43163)">
+      <g
+         id="g5041"
+         transform="scale(0.1,0.1)">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 0,0 5040,0 0,5040 L 0,5040 0,0 z"
+           style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+           id="path5043" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 0,0 5040,0 0,5040 L 0,5040 0,0 z"
+           style="fill:none;stroke:#ffffff;stroke-width:10.60000038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5045" />
+        <g
+           id="g5047">
+          <g
+             id="g5049"
+             clip-path="url(#clipPath5051)">
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,375.199 4538.1,0 0,4520.8 -4538.1,0 0,-4520.8 z"
+               style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+               id="path5055" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,1034.8 4538.102,0"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5057" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,1956.5 4538.102,0"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5059" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,2878.1 4538.102,0"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5061" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,3799.8 4538.102,0"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5063" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,4721.5 4538.102,0"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5065" />
+            <path
+               inkscape:connector-curvature="0"
+               d="M 1020,375.199 1020,4896"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5067" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 1945.2,375.199 0,4520.801"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5069" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 2870.4,375.199 0,4520.801"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5071" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 3795.6,375.199 0,4520.801"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5073" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 4720.8,375.199 0,4520.801"
+               style="fill:none;stroke:#fafafa;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5075" />
+            <path
+               inkscape:connector-curvature="0"
+               d="M 357.898,574 4896,574"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5077" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,1495.6 4538.102,0"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5079" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,2417.3 4538.102,0"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5081" />
+            <path
+               inkscape:connector-curvature="0"
+               d="M 357.898,3339 4896,3339"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5083" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,4260.6 4538.102,0"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5085" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 557.398,375.199 0,4520.801"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5087" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 1482.6,375.199 0,4520.801"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5089" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 2407.8,375.199 0,4520.801"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5091" />
+            <path
+               inkscape:connector-curvature="0"
+               d="M 3333,375.199 3333,4896"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5093" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 4258.2,375.199 0,4520.801"
+               style="fill:none;stroke:#e5e5e5;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5095" />
+            <g
+               id="g5097"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,54.0898,175.78)"
+                 id="text5099">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5101">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5103"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,174.3,300.06)"
+                 id="text5105">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5107">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5109"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,299.05,254.41)"
+                 id="text5111">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5113">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5115"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,253.23,223.01)"
+                 id="text5117">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5119">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5121"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,221.71,180.96)"
+                 id="text5123">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5125">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5127"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,179.5,296.84)"
+                 id="text5129">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5131">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5133"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,295.82,390.55)"
+                 id="text5135">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5137">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5139"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,389.89,383.15)"
+                 id="text5141">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5143">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5145"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,382.46,411.65)"
+                 id="text5147">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5149">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5151"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,411.07,383.31)"
+                 id="text5153">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5155">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5157"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,382.63,396.85)"
+                 id="text5159">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5161">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5163"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,396.22,434.22)"
+                 id="text5165">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5167">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5169"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,433.73,368)"
+                 id="text5171">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5173">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5175"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,367.26,322.73)"
+                 id="text5177">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5179">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5181"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,321.82,409.51)"
+                 id="text5183">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5185">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5187"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,408.92,371.35)"
+                 id="text5189">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5191">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5193"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,370.62,380.55)"
+                 id="text5195">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5197">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5199"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,379.85,389.81)"
+                 id="text5201">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5203">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5205"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,389.15,368.76)"
+                 id="text5207">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5209">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5211"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,368.01,337.82)"
+                 id="text5213">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5215">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5217"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,194.64,233.32)"
+                 id="text5219">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5221">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5223"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,232.06,296.25)"
+                 id="text5225">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5227">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5229"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,295.23,311.51)"
+                 id="text5231">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5233">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5235"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,310.55,298.12)"
+                 id="text5237">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5239">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5241"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,297.1,296.65)"
+                 id="text5243">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5245">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5247"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,295.63,394.01)"
+                 id="text5249">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5251">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5253"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,393.36,440.33)"
+                 id="text5255">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5257">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5259"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,439.86,407.06)"
+                 id="text5261">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5263">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5265"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,82.0102,184.76)"
+                 id="text5267">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5269">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5271"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,183.31,339.96)"
+                 id="text5273">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5275">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5277"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,339.11,317.89)"
+                 id="text5279">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5281">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5283"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,316.95,283.29)"
+                 id="text5285">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5287">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5289"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,282.22,219.76)"
+                 id="text5291">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5293">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5295"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,218.45,371.85)"
+                 id="text5297">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5299">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5301"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,371.12,467.01)"
+                 id="text5303">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5305">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5307"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,466.64,431.77)"
+                 id="text5309">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5311">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5313"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,431.27,404.42)"
+                 id="text5315">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5317">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5319"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,403.82,364.34)"
+                 id="text5321">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5323">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5325"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,363.58,392.5)"
+                 id="text5327">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5329">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5331"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,391.84,373.6)"
+                 id="text5333">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5335">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5337"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,372.88,381.66)"
+                 id="text5339">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5341">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5343"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,380.96,353.04)"
+                 id="text5345">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5347">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5349"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,352.23,346.28)"
+                 id="text5351">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5353">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5355"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,345.45,354.53)"
+                 id="text5357">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5359">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5361"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,353.73,332.14)"
+                 id="text5363">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5365">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5367"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,331.25,324.72)"
+                 id="text5369">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5371">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5373"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,323.81,359.17)"
+                 id="text5375">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5377">●</tspan>
+              </text>
+            </g>
+            <g
+               id="g5379"
+               transform="scale(10,10)">
+              <text
+                 transform="matrix(1,0,0,-1,358.39,347.35)"
+                 id="text5381">
+                <tspan
+                   style="font-size:5.88999987px;font-variant:normal;font-weight:normal;writing-mode:lr-tb;fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;font-family:ZapfDingbats;-inkscape-font-specification:ZapfDingbats"
+                   x="0"
+                   y="0"
+                   id="tspan5383">●</tspan>
+              </text>
+            </g>
+            <path
+               inkscape:connector-curvature="0"
+               d="m 564.199,2291.6 52.199,22.9 52.301,22.9 52.199,22.9 52.204,23 52.199,23 52.301,23 52.199,23 52.199,23 52.2,23.1 52.2,23 52.3,23.2 52.2,23.1 52.2,23.1 52.2,23.2 52.2,23.2 52.3,23.3 52.2,23.3 52.2,23.3 52.2,23.4 52.3,23.4 52.2,23.5 52.2,23.5 52.2,23.5 52.2,23.7 52.3,23.7 52.2,23.7 52.2,23.9 52.2,23.9 52.2,24 52.3,24.1 52.2,24.2 52.2,24.4 52.2,24.4 52.3,24.7 52.2,24.7 52.2,24.9 52.2,25.1 52.2,25.3 52.3,25.5 52.2,25.8 52.2,25.9 52.2,26.3 52.2,26.6 52.3,26.9 52.2,27.2 52.2,27.6 52.2,27.9 52.3,28.4 52.2,28.8 52.2,29.3 52.2,29.7 52.2,30.1 52.3,30.6 52.2,31.1 52.2,31.5 52.2,31.9 52.3,32.4 52.2,32.7 52.2,33.2 52.2,33.5 52.2,33.8 52.3,34.2 52.2,34.4 52.2,34.7 52.2,35 52.2,35.2 52.3,35.4 52.2,35.6 52.2,35.8 52.2,35.9 52.3,36.1 52.2,36.2 52.2,36.4 52.2,36.5 52.2,36.5 52.3,36.7 52.2,36.7 52.2,36.9 52.2,36.9 0,-501.1 -52.2,-23.8 -52.2,-23.8 -52.2,-23.9 -52.3,-24 -52.2,-24.1 -52.2,-24.2 -52.2,-24.3 -52.2,-24.5 -52.3,-24.6 -52.2,-24.7 -52.2,-24.9 -52.2,-25 -52.3,-25.3 -52.2,-25.4 -52.2,-25.7 -52.2,-26 -52.2,-26.2 -52.3,-26.5 -52.2,-26.8 -52.2,-27.2 -52.2,-27.5 -52.2,-27.9 -52.3,-28.3 -52.2,-28.7 -52.2,-29.2 -52.2,-29.6 -52.3,-30 -52.2,-30.5 -52.2,-31 -52.2,-31.4 -52.2,-31.9 -52.3,-32.3 -52.2,-32.6 -52.2,-33.1 -52.2,-33.5 -52.3,-33.7 -52.2,-34.1 -52.2,-34.4 -52.2,-34.7 -52.2,-34.9 -52.3,-35.2 -52.2,-35.3 -52.2,-35.6 -52.2,-35.8 -52.2,-35.9 -52.3,-36 -52.2,-36.2 -52.2,-36.3 -52.2,-36.5 -52.3,-36.5 -52.2,-36.7 -52.2,-36.7 -52.2,-36.8 -52.2,-36.9 -52.3,-37 -52.2,-37 -52.2,-37.1 -52.2,-37.2 -52.2,-37.2 -52.3,-37.2 -52.2,-37.3 -52.2,-37.3 -52.2,-37.4 -52.3,-37.4 -52.2,-37.5 -52.2,-37.4 -52.2,-37.5 -52.2,-37.6 -52.3,-37.5 -52.2,-37.6 -52.2,-37.6 -52.199,-37.6 -52.199,-37.7 -52.301,-37.7 -52.199,-37.6 -52.204,-37.8 -52.199,-37.7 -52.301,-37.7 -52.199,-37.8"
+               style="fill:#999999;fill-opacity:0.4;fill-rule:nonzero;stroke:none"
+               id="path5385" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 564.199,1864.2 52.199,30.3 52.301,30.4 52.199,30.3 52.204,30.3 52.199,30.4 52.301,30.3 52.199,30.3 52.199,30.4 52.2,30.3 52.2,30.3 52.3,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.2,30.4 52.3,30.3 52.2,30.3 52.2,30.4 52.2,30.3 52.3,30.3 52.2,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.3,30.4 52.2,30.3 52.2,30.3 52.2,30.4 52.2,30.3 52.3,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.3,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.2,30.4 52.3,30.3 52.2,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.3,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.3,30.4 52.2,30.3 52.2,30.3 52.2,30.4 52.2,30.3 52.3,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.3,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.2,30.4 52.3,30.3 52.2,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.3,30.3 52.2,30.4 52.2,30.3 52.2,30.3 52.3,30.4 52.2,30.3 52.2,30.3 52.2,30.4 52.2,30.3 52.3,30.3 52.2,30.4 52.2,30.3 52.2,30.3"
+               style="fill:none;stroke:#686868;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:1;stroke-opacity:1;stroke-dasharray:none"
+               id="path5387" />
+            <path
+               inkscape:connector-curvature="0"
+               d="m 357.898,375.199 4538.1,0 0,4520.8 -4538.1,0 0,-4520.8 z"
+               style="fill:none;stroke:#7f7f7f;stroke-width:10.60000038;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+               id="path5389" />
+          </g>
+        </g>
+        <g
+           id="g5391"
+           transform="scale(10,10)">
+          <text
+             transform="matrix(1,0,0,-1,23.15,53.75)"
+             id="text5393" />
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           d="m 315.398,574 42.5,0"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5405" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 315.398,1495.6 42.5,0"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5407" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 315.398,2417.3 42.5,0"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5409" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 315.398,3339 42.5,0"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5411" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 315.398,4260.6 42.5,0"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5413" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 557.398,332.699 0,42.5"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5415" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 1482.6,332.699 0,42.5"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5417" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 2407.8,332.699 0,42.5"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5419" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 3333,332.699 0,42.5"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5421" />
+        <path
+           inkscape:connector-curvature="0"
+           d="m 4258.2,332.699 0,42.5"
+           style="fill:none;stroke:#000000;stroke-width:10.60000038;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none"
+           id="path5423" />
+        <g
+           id="g5425"
+           transform="scale(10,10)">
+          <text
+             transform="matrix(1,0,0,-1,52.9602,23.15)"
+             id="text5427">
+            <tspan
+               y="0"
+               x="0"
+               style="font-size:10px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               sodipodi:role="line"
+               id="tspan5429" />
+          </text>
+        </g>
+        <g
+           id="g5431"
+           transform="scale(10,10)">
+          <text
+             transform="matrix(1,0,0,-1,221.5,10.8)"
+             id="text5433">
+            <tspan
+               y="0"
+               x="0"
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               sodipodi:role="line"
+               id="tspan5435" />
+          </text>
+        </g>
+        <g
+           id="g5437"
+           transform="scale(10,10)">
+          <text
+             transform="matrix(0,1,1,0,19.55,219.47)"
+             id="text5439">
+            <tspan
+               y="0"
+               x="0"
+               style="font-size:12px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Nimbus Sans L;-inkscape-font-specification:NimbusSanL-Regu"
+               sodipodi:role="line"
+               id="tspan5441" />
+          </text>
+        </g>
+      </g>
+    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3618"
+       y="834.55798"
+       x="12.780512"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="834.55798"
+         x="12.780512"
+         id="tspan3620"
+         sodipodi:role="line">4</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3622"
+       y="792.03485"
+       x="12.780512"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="792.03485"
+         x="12.780512"
+         id="tspan3624"
+         sodipodi:role="line">5</tspan></text>
+    <flowRoot
+       transform="translate(0,627.16382)"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       id="flowRoot3626"
+       xml:space="preserve"><flowRegion
+         id="flowRegion3628"><rect
+           y="132.92517"
+           x="16.769686"
+           height="38.330711"
+           width="29.346951"
+           id="rect3630" /></flowRegion><flowPara
+         id="flowPara3632" /></flowRoot>    <text
+       sodipodi:linespacing="125%"
+       id="text3634"
+       y="749.51172"
+       x="13.582678"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="749.51172"
+         x="13.582678"
+         id="tspan3636"
+         sodipodi:role="line">6</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3638"
+       y="709.38428"
+       x="14.181595"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="709.38428"
+         x="14.181595"
+         id="tspan3640"
+         sodipodi:role="line">7</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3642"
+       y="666.86115"
+       x="13.379429"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="666.86115"
+         x="13.379429"
+         id="tspan3644"
+         sodipodi:role="line">8</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3648"
+       y="861.29523"
+       x="110.60729"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="861.29523"
+         x="110.60729"
+         id="tspan3650"
+         sodipodi:role="line">ln(Nt)</tspan></text>
+    <text
+       transform="matrix(2.0799181e-4,-0.99999998,0.99999998,2.0799181e-4,0,0)"
+       sodipodi:linespacing="125%"
+       id="text3648-0"
+       y="9.3528004"
+       x="-758.96637"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="9.3528004"
+         x="-758.96637"
+         id="tspan3650-5"
+         sodipodi:role="line">ln(Nt1)</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3648-4"
+       y="863.22186"
+       x="338.58319"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="863.22186"
+         x="338.58319"
+         id="tspan3650-2"
+         sodipodi:role="line">Twt1</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3618-7"
+       y="834.8924"
+       x="235.13376"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="834.8924"
+         x="235.13376"
+         id="tspan3620-3"
+         sodipodi:role="line">4</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3622-9"
+       y="792.36926"
+       x="235.13376"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="792.36926"
+         x="235.13376"
+         id="tspan3624-9"
+         sodipodi:role="line">5</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3634-5"
+       y="749.84613"
+       x="235.93593"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="749.84613"
+         x="235.93593"
+         id="tspan3636-5"
+         sodipodi:role="line">6</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3638-6"
+       y="709.71869"
+       x="236.53484"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="709.71869"
+         x="236.53484"
+         id="tspan3640-6"
+         sodipodi:role="line">7</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3642-2"
+       y="667.19556"
+       x="235.73268"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="667.19556"
+         x="235.73268"
+         id="tspan3644-4"
+         sodipodi:role="line">8</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4343"
+       y="644.49792"
+       x="26.544785"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="644.49792"
+         x="26.544785"
+         id="tspan4345"
+         sodipodi:role="line">А</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4347"
+       y="645.30011"
+       x="252.53987"
+       style="font-size:9px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+       xml:space="preserve"><tspan
+         y="645.30011"
+         x="252.53987"
+         id="tspan4349"
+         sodipodi:role="line">Б</tspan></text>
+    <text
+       y="851.94775"
+       x="28.573698"
+       id="text3400-5"
+       style="font-size:5.47218037px;filter:url(#filter3410)">
+      <tspan
+         style="font-size:9px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         x="28.573698 70.764183 112.95464 155.1451 197.33556"
+         y="851.94775"
+         sodipodi:role="line"
+         id="tspan3402-9">45678</tspan>
+    </text>
+    <text
+       y="851.41254"
+       x="311.54758"
+       id="text4044"
+       style="font-size:5.47218037px;filter:url(#filter3414)">
+      <tspan
+         y="851.41254"
+         x="311.54758"
+         style="font-size:9px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         sodipodi:role="line"
+         id="tspan4046">−12</tspan>
+    </text>
+    <text
+       y="852.20392"
+       x="263.6221"
+       id="text4040"
+       style="font-size:5.47218037px;filter:url(#filter3414)">
+      <tspan
+         y="852.20392"
+         x="263.6221"
+         style="font-size:9px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         sodipodi:role="line"
+         id="tspan4042">−14</tspan>
+    </text>
+    <text
+       y="852.74994"
+       x="358.12033"
+       id="text4048"
+       style="font-size:5.47218037px;filter:url(#filter3414)">
+      <tspan
+         y="852.74994"
+         x="358.12033"
+         style="font-size:9px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         sodipodi:role="line"
+         id="tspan4050">−10</tspan>
+    </text>
+    <text
+       y="852.94232"
+       x="408.70007"
+       id="text4052"
+       style="font-size:5.47218037px;filter:url(#filter3414)">
+      <tspan
+         y="852.94232"
+         x="408.70007"
+         style="font-size:9px;font-variant:normal;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;font-family:Serif;-inkscape-font-specification:Serif"
+         sodipodi:role="line"
+         id="tspan4054">−8</tspan>
+    </text>
+  </g>
+</svg>

@@ -34,7 +34,7 @@ class(Kanda_stamen) <- c("ggmap", "raster")
 attr(Kanda_stamen, "bb") <- attr_Kanda
 
 pdf("map_Kandalaksha.pdf", family="NimbusSan")
-ggmap(Kanda_stamen) + geom_point(data=Luvenga, aes(x = long, y = lat, size=1), pch=21, col="black", fill="red") + geom_text(data=Luvenga, aes(label=Luvenga$code, x = long, y = lat, hjust=-0.5, vjust=0), size=3, position="jitter") + guides(size=FALSE)
+ggmap(Kanda_stamen) + geom_point(data=Luvenga, aes(x = long, y = lat, size=1), pch=21, col="black", fill="black") + geom_text(data=Luvenga, aes(label=Luvenga$code, x = long, y = lat, hjust=-0.5, vjust=0), size=3, position="jitter") + guides(size=FALSE)
 dev.off()
 embedFonts("map_Kandalaksha.pdf")
 
@@ -57,7 +57,7 @@ class(WS_stamen) <- c("ggmap", "raster")
 attr(WS_stamen, "bb") <- attr_WS
 
 pdf("map_White_sea.pdf", family="NimbusSan")
-ggmap(WS_stamen) + geom_point(data=Luvenga, aes(x = long, y = lat, size=1), pch=21, col="black", fill="red") + geom_text(data=Luvenga, aes(label=Luvenga$code, x = long, y = lat, hjust=-0.5, vjust=0), size=3, position="jitter") + guides(size=FALSE)
+ggmap(WS_stamen) # + geom_point(data=Luvenga, aes(x = long, y = lat, size=1), pch=21, col="black", fill="red") + geom_text(data=Luvenga, aes(label=Luvenga$code, x = long, y = lat, hjust=-0.5, vjust=0), size=3, position="jitter") + guides(size=FALSE)
 dev.off()
 embedFonts("map_White_sea.pdf")
 
@@ -65,3 +65,22 @@ pdf("map_White_sea_unlab.pdf", family="NimbusSan")
 ggmap(WS_stamen) + geom_point(data=Luvenga, aes(x = long, y = lat, size=1), pch=21, col="black", fill="red") + guides(size=FALSE)
 dev.off()
 embedFonts("map_White_sea_unlab.pdf")
+
+
+# ========= Лувеньга на гуглоспутнике ===================
+
+macoma_google <- get_map(location = c(32.699546, 67.091331),
+                         color = "bw",
+                         source = "google",
+                         maptype = "satellite",
+                         zoom = 13)
+macoma_ggmap<-ggmap(macoma_google,
+                    extent = "device",
+                    ylab = "Latitude",
+                    xlab = "Longitude")
+
+png("Luvenga.png")
+macoma_ggmap + geom_point(data=Luvenga, aes(x = long, y = lat, size=1), size=5, pch=21, col="black", fill="white") + guides(size=FALSE)
+dev.off()
+
+

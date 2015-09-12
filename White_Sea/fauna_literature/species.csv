@@ -1,0 +1,59 @@
+taxon;species;Bolshoy_Goreliy;Yakovleva;Lebyazhya;Suhaya_salma;Seldyanaya;Levaya;Kolvica;estuary2;estuary3;estuary4;estuary5;estuary7;estuary8;ZRS;MG1;MG2;MG3;MG4;Estuary;YuG;Lomnishniy;razrez2_high;reazrez2_fucus;razrez2_zostera;razrez2_low
+Amphipoda;Amphithoe rubricata;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Amphipoda;Atylus carinatus;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Amphipoda;Classicorophium(Corophium) bonelli;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Amphipoda;Gammaridae;0;0;1;1;0;0;1;1;1;0;1;1;1;1;1;1;1;0;1;1;0;1;1;1;1
+Amphipoda;Monoculodes sp.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;1;0;0;1;1
+Amphipoda;Pontoporea femorata;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1
+Amphipoda;Pontoporeia affinis;0;0;0;0;0;0;0;1;1;1;1;1;1;0;0;0;0;0;1;0;0;0;0;0;0
+Amphipoda;Priscillina armata;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+Amphipoda;Pseudalibrotus littoralis;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;1;1;0;0;1;1;1
+Bivalvia;Macoma balthica;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1
+Bivalvia;Mya arenaria;1;0;1;1;1;1;1;0;1;1;1;1;0;0;0;0;0;1;0;0;0;0;0;0;0
+Bivalvia;Mytilus edulis;1;1;1;1;1;1;1;0;0;0;0;0;0;1;1;1;1;0;1;0;0;0;0;0;0
+Bivalvia;Serripes groenlandica;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+Cirripedia;Semibalanus balanoides;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Cumacea;Diastilus sulcata;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;1;1
+Decapoda;Crangon crangon;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Dipleta;Chironomidae varia;1;0;1;0;0;0;0;1;1;1;0;0;1;0;1;0;1;0;1;1;1;0;0;0;0
+Echinodermata;Asterias rubens;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Gastropoda;Cylichna alba;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Gastropoda;Cylichna occulta;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Gastropoda;Epheria vincta;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+Gastropoda;Hydrobia ulvae;1;1;1;0;1;1;1;1;1;1;1;0;1;1;1;1;1;1;1;1;1;0;0;0;0
+Gastropoda;Littorina sp.;1;1;1;1;1;1;1;0;0;0;1;0;0;1;1;0;1;0;1;1;1;0;0;0;0
+Gastropoda;Skeneopsis planorbis;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+Gastropoda;Testudinalia tesselata;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Hydrozoa;Dynamena pumila;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Isopoda;Jaera sp.;0;0;0;1;1;0;1;0;1;0;1;0;1;0;1;0;0;0;0;0;0;0;0;0;0
+Mysida;Mysis relicta;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0
+Nematoda;Nematoda;0;0;0;1;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Nemertini;Nemertini;0;1;0;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Oligochaeta;Oligochaeta;1;1;1;1;0;0;0;0;0;0;0;0;0;1;1;0;1;0;1;1;1;0;0;0;0
+Polychaeta;Arenicola marina;0;0;0;0;1;1;1;0;0;0;0;0;0;1;0;0;1;0;1;1;1;0;0;0;0
+Polychaeta;Capitella capitata;0;0;0;0;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+Polychaeta;Castalia punctata;0;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+Polychaeta;Chaetozone setosa;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0
+Polychaeta;Eteone longa;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;1;0;1;1;1;1;1;0
+Polychaeta;Euchone analis;0;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Polychaeta;Fabricia sabella;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;1;1;0;1;1;1;1;1;1;1
+Polychaeta;Harmathoe imbricata;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+Polychaeta;Lumbriconereis sp.;0;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Polychaeta;Micronephthys minuta;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+Polychaeta;Microspio theli;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0;1;1;0;0;0;0
+Polychaeta;Nephthys sp.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+Polychaeta;Nereis pelagica;0;0;0;0;1;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Polychaeta;Nereis virens;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Polychaeta;Ophelia limacina;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Polychaeta;Pectinaria sp.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+Polychaeta;Phyllodoce groenlandica;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Polychaeta;Polychaeta varia;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0
+Polychaeta;Polydora quadrilobata;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;1
+Polychaeta;Pygospio elegans;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;1;1;1;1;1;1;1;1
+Polychaeta;Scalibregma inflatum;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Polychaeta;Scoloplos armiger;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Polychaeta;Spionidae gen. sp.;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;0;0;0
+Polychaeta;Travisia forbesii;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Polychaeta;Tubificoides benedeni;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;1;1;0;1;1;0;0;0;0
+Priapulida;Halicriptus spinulosus;0;0;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;1;0;0;0;0
+Priapulida;Priapulus caudatus;0;0;0;1;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;0;1;1

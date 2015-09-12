@@ -5,11 +5,11 @@ detach(ishodnik)
 ishodnik<-read.table("macrodistribution.csv", header=T, sep=";", dec=",")
 str(ishodnik)
 
-(lat_lim<-c(min(ishodnik$Ndec)-1, max(ishodnik$Ndec)+1))
-(long_lim<-c(min(ishodnik$Edec)-1, max(ishodnik$Edec)+1))
+(lat_lim<-c(min(ishodnik$Ndec, na.rm = T)-1, max(ishodnik$Ndec, na.rm = T)+1))
+(long_lim<-c(min(ishodnik$Edec, na.rm = T)-1, max(ishodnik$Edec, na.rm = T)+1))
 
 #подгонка границ карты
-(long_lim<-c(-10.5, max(ishodnik$Edec)+1))
+(long_lim<-c(-10.5, max(ishodnik$Edec, na.rm=T)+1))
 
 #считаем какой должен быть радиус у кружков на карте - площадь пропорциональна
 radius_Nmean <- sqrt( ishodnik$Nmean/ pi)
@@ -158,3 +158,39 @@ map("worldHires", xlim=long_lim, ylim=lat_lim, col="gray90", fill=TRUE)
 legend(horiz = T, x="bottomright", col="gray30", pch=20, legend=c("1000", "100", "10", "1"), pt.cex=(sqrt(c(1000,100,10,1)/pi)/5), bg = "white", title = "Macoma balthica abundance, indd./m-2", cex=1.9)
 dev.off()
 embedFonts("Macoma_Nmean_article.pdf")
+
+#===== русскоязычные подписи ==========
+pdf("Nmean_ru.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+map("worldHires", xlim=long_lim, ylim=lat_lim, col="gray90", fill=TRUE)
+#map("worldHires", xlim=c(30,44), ylim=c(63.8,70), col="gray90", fill=TRUE)
+points(x=ishodnik$Edec, y=ishodnik$Ndec, col="black", bg="red", pch=21, cex=radius_Nmean/5)
+legend(horiz = T, x="bottomright", col="red", pch=20, legend=c("2000","1000", "500", "100", "50", "10"), pt.cex=(sqrt(c(2000,1000,500,100,50,10)/pi)/5), bg = "white", title = "N, экз./кв.м")
+dev.off()
+embedFonts("Nmean_ru.pdf")
+
+
+pdf("Bmean_ru.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+map("worldHires", xlim=long_lim, ylim=lat_lim, col="gray90", fill=TRUE)
+#map("worldHires", xlim=c(30,44), ylim=c(63.8,70), col="gray90", fill=TRUE)
+points(x=ishodnik$Edec, y=ishodnik$Ndec, col="black", bg="red", pch=21, cex=radius_Bmean/2)
+legend(horiz = T, x="bottomright", col="red", pch=20, legend=c("300", "100", "50", "10", "5", "1"), pt.cex=(sqrt(c(300,100,50,10,5,1)/pi)/2), bg = "white", title = "B, г/кв.м")
+dev.off()
+embedFonts("Bmean_ru.pdf")
+
+# ========== корреляция широты и среднего обилия ==============
+pdf("lat_vs_Nmean.pdf", family="NimbusSan")
+plot(ishodnik$Ndec, ishodnik$Nmean, xlab = "широта", ylab = "N, экз./кв.м")
+dev.off()
+embedFonts("lat_vs_Nmean.pdf")
+
+abline(lm(ishodnik$Nmean ~ ishodnik$Ndec))
+summary((lm(ishodnik$Nmean ~ ishodnik$Ndec)))
+
+# корреляция
+cor.test(ishodnik$Ndec, ishodnik$Nmean, method = "spearman")
+
+boxplot(ishodnik$Nmean ~ cut(ishodnik$Ndec, breaks = seq(44,71, 5)))
+
+
+plot(ishodnik$Ndec, ishodnik$Bmean, xlab = "широта", ylab = "B, г/кв.м", ylim=c(0,300))
+cor.test(ishodnik$Ndec, ishodnik$Bmean, method = "spearman")

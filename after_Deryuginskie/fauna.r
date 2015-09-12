@@ -7,6 +7,7 @@ detach(ishodnik)
 ishodnik<-read.table(file="fauna_DZ_svodka.csv", sep=";", dec=",", header=TRUE)
 samples.names<-read.table(file="samples.csv", sep=";", dec=",", head=T)
 
+
 attach(ishodnik)
 
 str(ishodnik)
@@ -438,7 +439,7 @@ n.samples.fabricia<-tapply(samplenames_community$sample[samplenames_community$sq
 
 fabricia_sqmeter_SEM<-fabricia_sqmeter_sd/sqrt(n.samples.fabricia[,c(1,3:6)])
 
-Fabricia_means<-(cbind(c(dominants_1973[1,3], dominants_1973[1,2]), (fabricia_sqmeter_mean)))
+Fabricia_means<-(cbind(c(dominants_1973[1,3], dominants_1973[1,2]), fabricia_sqmeter_mean))
 colnames(Fabricia_means)<-c("1973", colnames(fabricia_sqmeter_mean))
 
 pdf(file="Fabricia_N_dynamic.pdf", family="NimbusSan")

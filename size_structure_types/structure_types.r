@@ -113,6 +113,19 @@ sizestr.dist <- vegdist(t(sizestr_matrx), "bray")
 sizestr.h <- hclust(sizestr.dist, method="ward.D")
 plot(sizestr.h, labels=abbreviate(sizestr_matrx_annotation$sea, minlength = 1, strict = T), main="")
 
+# ===== Все моря --  Principal component analisys =============
+
+all_sizestr_prcomp<-prcomp(t(sizestr_matrx_less_12))
+plot(all_sizestr_prcomp)
+summary(all_sizestr_prcomp)
+
+all_sizestr_p<-predict(all_sizestr_prcomp)
+plot(all_sizestr_p[,1:2],col=as.numeric(sizestr_matrx_annotation$sea)+1, pch=16)
+
+pdf("all_sizestr_PCA_biplot.pdf", family="NimbusSan")
+biplot(all_sizestr_prcomp, col = c("gray80", "red"))#, xlabs = abbreviate(sizestr_matrx_annotation$sea,minlength = 1))
+dev.off()
+embedFonts("White_sizestr_PCA_biplot.pdf")
 
 
 # ======= Белое море - готовим матрицу и аннотацию к ней ==========================
@@ -324,7 +337,8 @@ text(Barents_sizestr_p[,1:2],labels = rownames(Barents_sizestr_p))
 legend(col=as.numeric levels(Barents_sizestr_matrx_annotation$area))+1, pch=16, legend = levels())
 
 pdf("Barents_sizestr_PCA_biplot.pdf", family="NimbusSan")
-biplot(Barents_sizestr_prcomp, col = c("gray80", "red"), xlabs = Barents_sizestr_matrx_annotation$year)
+#biplot(Barents_sizestr_prcomp, col = c("gray80", "red"), xlabs = Barents_sizestr_matrx_annotation$year)
+biplot(Barents_sizestr_prcomp, col = c("gray80", "red"))
 dev.off()
 embedFonts("Barents_sizestr_PCA_biplot.pdf")
 

@@ -1,21 +1,20 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt,pdftex]{report}
 
 
-\input{preamble.tex} %вставляем приамбулу с подключением пакетов и параметрами
+\input{preamble}		% преамбула
+%\input{packages}
+%\input{styles}
 
-%нумерация строк на полях для редактирования
-%\usepackage[left, pagewise]{lineno} %на каждой странице с нуля
-\usepackage[left]{lineno}
 
 \input{perenosy.tex} %файл с заданными частыми переносами
 
-\setcounter{tocdepth}{2}%устанавливаем "глубину" оглавления до подсекций
+\setcounter{tocdepth}{1}%устанавливаем "глубину" оглавления до подсекций
 
 %это движок biber
-%\usepackage[backend=biber,bibencoding=utf8,sorting=nyt,maxcitenames=2,style=authoryear]{biblatex}
+%\usepackage[backend=biber,bibencoding=utf8,sorting=ynt,maxcitenames=2,style=authoryear]{biblatex}
 
 %biblatex-gost
-\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other, bibencoding=utf8, bibdoi=false, biburl=false,  movenames=false]{biblatex}
+\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other, bibencoding=utf8, bibdoi=false, biburl=false,  movenames=false, sortcites = false]{biblatex}
 %\renewcommand*{\gostmedialanguage}{}
 
 \addbibresource{sophia_base.bib}
@@ -24,24 +23,29 @@
 %\includeonly{chapters/ch2,chapters/ch3}
 
 \begin{document} % конец преамбулы, начало документа
+\input{names}			% Переопределение именований
+
 
 %%титульный лист
 \include{title}
 
 \tableofcontents
 
-\linenumbers
+%\linenumbers
 
 %%Введение
 \include{vvedenie}
 \afterpage{\clearpage}
 
-%%Обзор литературы - НАДО ЛИ? ИЛИ ВСЕ_ТАКИ ВСЕ ЭТО ОТПРАВИТЬ В ОБСУЖДЕНИЕ??
-%\include{litobzor}
-%\afterpage{\clearpage}
+%%благодарности
+\include{blagodarnosti}
 
 %%материал и методика
 \include{matmet}
+\afterpage{\clearpage}
+
+%%литобзор
+\include{litobzor}
 \afterpage{\clearpage}
 
 %%описание участков
@@ -49,12 +53,12 @@
 \afterpage{\clearpage}
 
 %%роль в сообществах разнообразных местообитаний
-\include{soobshestva_barents} 
+\include{soobshestva} 
 \afterpage{\clearpage}
 
 %%микрораспределение
-\include{microdistribution}
-\afterpage{\clearpage}
+%\include{microdistribution}
+%\afterpage{\clearpage}
 
 %%популяционная структура
 \include{obilie}
@@ -79,7 +83,7 @@
 \afterpage{\clearpage}
 
 %%обсуждение
-%\include{discussion}
+\include{discussion}
 
 %%    макома как массовый элемент в сообществах литорали северных морей
 %%    об организации сообществ с участием Macoma balthica
@@ -87,28 +91,29 @@
 %%    скорость роста как показатель "условий жизни"
 %%    о долговременных трендах в популяции Mb
 
+\include{zaklyuchenie}
+
 %%выводы
 \include{vyvody}
 
-%%благодарности
-\include{blagodarnosti}
+
 
 %печатаем список литературы
 \newpage
 \printbibliography[heading=bibintoc]
-%это bibtex с Котельниковским пакетом gost
-%\bibliographystyle{gost2008}
-%\bibliography{sophia_base}
+%\printbibliography
 
 %приложение
+
 \renewcommand{\thetable}{\Roman{table}}
 \setcounter{table}{0}
 \renewcommand{\thefigure}{\Roman{figure}}
 \setcounter{figure}{0}
 \appendix
-%\renewcommand{\thesection}{Приложение \Asbuk{section}}
-%\setcounter{section}{0}
-
+\renewcommand{\thesection}{\Asbuk{section}}
+\setcounter{section}{0}
+\chapter*{Приложение}
+\addcontentsline{toc}{chapter}{Приложение}	% Добавляем его в оглавление
 %таблица про пробы и среднее обилие
 \include{prilozhenie_NB_table}
 
@@ -116,8 +121,8 @@
 \include{prilozhenie_spiski_vidov}
 
 %коррелограммы и пузырьковые диаграммы с отдельными возрастами макомы в Пале
-\include{Pala_moran_Macoma_ages}
-
+%\include{Pala_moran_Macoma_ages}
+ 
 %картинки с размерными структурами
 \include{prilozhenie_size_structure_pictures_White}
 \include{prilozhenie_size_structure_pictures_Barents}
@@ -129,5 +134,8 @@
 %обилие маком по литературным и авторским источникам
 \include{prilozhenie_macrodistribution}
 
-\end{document} % конец документа
+\include{prilozhenie_omega}
 
+\include{prilozhenie_growth_sources}
+
+\end{document}

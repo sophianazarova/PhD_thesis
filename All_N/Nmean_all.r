@@ -1,4 +1,4 @@
-
+setwd("~/Dropbox/PhD_thesis/PhD_thesis/All_N/")
 #на всякий случай отключили исходний от предыдущего файла
 detach(ishodnik)
 
