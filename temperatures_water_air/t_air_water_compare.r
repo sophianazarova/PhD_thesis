@@ -6,6 +6,8 @@ water_air <- read.csv2("t_air_water_season_mean.csv")
 
 str(water_air)
 
+tapply(water_air$Chupa_water, water_air$season, mean, na.rm=T)
+
 # делаем вектор для раскраски точек на графике
 ish_colors <- character(length = length(water_air$season))
 ish_colors[water_air$season == "DJF"] <- "blue"
@@ -55,6 +57,9 @@ cor.test(White_temp$temp_air[ White_temp$year >=1991], White_temp$temp_water_m0_
 # ==== сезонная температура воды в Белом м Баренцевом =================
 White_Barents <- read.csv2("Barents_White_season_mean.csv")
 str(White_Barents)
+
+tapply(White_Barents$Barents, White_Barents$season, mean, na.rm=T)
+tapply(White_Barents$White, White_Barents$season, mean, na.rm=T)
 
 WB_colors <- character(length = length(White_Barents$season))
 WB_colors[White_Barents$season == "DJF"] <- "blue"
