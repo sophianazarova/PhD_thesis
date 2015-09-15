@@ -26,14 +26,17 @@
 \usepackage{multirow,makecell,array} % Улучшенное форматирование таблиц
 
 %%% Общее форматирование
-\usepackage[singlelinecheck=off,center]{caption} % Многострочные подписи
+%\usepackage[singlelinecheck=off,center]{caption} % Многострочные подписи
+\usepackage{caption2}%форматирование подписей к плавающим объектам
+\renewcommand{\captionlabeldelim}{.}% после названия объекта ставим точку.
 \usepackage{soul} % Поддержка переносоустойчивых подчёркиваний и зачёркиваний
 
 %%% Библиография %%%
-\usepackage{cite}
+%\usepackage{cite}
 
 %%% Гиперссылки %%%
-\usepackage[plainpages=false,pdfpagelabels=false]{hyperref}
+%\usepackage[plainpages=false,pdfpagelabels=false]{hyperref}
+\usepackage[linktocpage=true,plainpages=false,pdfpagelabels=false]{hyperref}
 
 %%% Изображения %%%
 \usepackage{graphicx} % Подключаем пакет работы с графикой
@@ -45,24 +48,31 @@
 % этот пакет может быть полезен для печати текста брошюрой, сама с ним не разбиралась
 %\usepackage[print]{booklet}
 
+\newcommand{\R}{R} %Rlogo
+
+\usepackage{wasysym}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%% Макет страницы %%%
-\oddsidemargin=-13pt
-\topmargin=-66pt
-\headheight=12pt
-\headsep=38pt
-\textheight=732pt
-\textwidth=484pt
-\marginparsep=14pt
-\marginparwidth=43pt
-\footskip=14pt
-\marginparpush=7pt
-\hoffset=0pt
-\voffset=0pt
+\geometry{top=2cm,bottom=2cm,left=3cm,right=1cm}
+%\oddsidemargin=-13pt
+%\topmargin=-66pt
+%\headheight=12pt
+%\headsep=38pt
+%\textheight=732pt
+%\textwidth=484pt
+%\marginparsep=14pt
+%\marginparwidth=43pt
+%\footskip=14pt
+%\marginparpush=7pt
+%\hoffset=0pt
+%\voffset=0pt
 %\paperwidth=597pt
 %\paperheight=845pt
-\parindent=1.5cm %размер табуляции (для красной строки) в начале каждого абзаца
-\renewcommand{\baselinestretch}{1.25}
-\newfloat{scheme}{tb}{sch}
+\parindent=1cm %размер табуляции (для красной строки) в начале каждого абзаца
+%\renewcommand{\baselinestretch}{1.25}
+%\newfloat{scheme}{tb}{sch}
 
 %%% Общая информация %%%
 \author{Назарова С.А.} % Фамилия И.О. автора
@@ -76,10 +86,19 @@
 \widowpenalty=10000
 
 %%% Библиография %%%
-\makeatletter
-\bibliographystyle{utf8gost705u} % Оформляем библиографию в соответствии с ГОСТ 7.0.5
-\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
-\makeatother
+%\makeatletter
+%\bibliographystyle{utf8gost705u} % Оформляем библиографию в соответствии с ГОСТ 7.0.5
+%\renewcommand{\@biblabel}[1]{#1.} % Заменяем библиографию с квадратных скобок на точку:
+%\makeatother
 
 %%% Изображения %%%
 \graphicspath{{images/}} % Пути к изображениям
+
+%%% Цвета гиперссылок %%%
+\definecolor{linkcolor}{rgb}{0.9,0,0}
+\definecolor{citecolor}{rgb}{0,0.6,0}
+\definecolor{urlcolor}{rgb}{0,0,1}
+\hypersetup{
+    colorlinks, linkcolor={linkcolor},
+    citecolor={citecolor}, urlcolor={urlcolor}
+}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.21)  12 SEP 2015 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.21)  15 SEP 2015 09:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -670,8 +670,18 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \c@nlinenum=\count110
 \TeXr@lab=\toks36
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption2.sty
+Package: caption2 2013/02/03 v2.2-62 Customising captions (AR)
+
+
+Package caption2 Warning: ****************************************************
+(caption2)                THIS PACKAGE IS OBSOLETE:
+(caption2)                This package attempts to provide an `caption2'
+(caption2)                package v2.0/2.1 author environment so that OLD
+(caption2)                documents can be successfully processed. It should
+(caption2)                NOT be used for NEW documents! New documents should
+(caption2)                use the regular `caption' package v3.x instead.
+(caption2)                ****************************************************
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
@@ -684,13 +694,15 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen134
 \caption@hangindent=\dimen135
 )
-\c@ContinuedFloat=\count111
-Package caption Info: float package is loaded.
-Package caption Info: longtable package is loaded.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
-))
+Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
+e 215.
+\captionlinewidth=\dimen136
+\realcaptionwidth=\dimen137
+Package caption2 Info: float package v1.2 (or newer) detected on input line 324
+.
+Package caption2 Info: longtable package v3.15 (or newer) detected on input lin
+e 346.
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@word=\toks37
@@ -699,14 +711,9 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@buffer=\toks40
 \SOUL@token=\toks41
 \SOUL@spaceskip=\skip56
-\SOUL@ttwidth=\dimen136
-\SOUL@uldp=\dimen137
-\SOUL@ulht=\dimen138
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/cite/cite.sty
-LaTeX Info: Redefining \cite on input line 302.
-LaTeX Info: Redefining \nocite on input line 373.
-Package: cite 2010/09/10  v 5.3
+\SOUL@ttwidth=\dimen138
+\SOUL@uldp=\dimen139
+\SOUL@ulht=\dimen140
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
@@ -760,16 +767,16 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen139
-\Hy@linkcounter=\count112
-\Hy@pagecounter=\count113
+\@linkdim=\dimen141
+\Hy@linkcounter=\count111
+\Hy@pagecounter=\count112
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count114
+\Hy@SavedSpaceFactor=\count113
 Package hyperref Info: Option `unicode' set `true' on input line 3411.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/puenc.def
@@ -780,6 +787,7 @@ Now handling font encoding PU ...
 (/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
+Package hyperref Info: Option `linktocpage' set `true' on input line 4319.
 Package hyperref Info: Option `plainpages' set `false' on input line 4319.
 Package hyperref Info: Option `pdfpagelabels' set `false' on input line 4319.
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -789,17 +797,17 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count115
+\c@Hy@tempcnt=\count114
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen140
-\Fld@menulength=\count116
-\Field@Width=\dimen141
-\Fld@charsize=\dimen142
+\XeTeXLinkMargin=\dimen142
+\Fld@menulength=\count115
+\Field@Width=\dimen143
+\Fld@charsize=\dimen144
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -809,16 +817,16 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\c@Item=\count117
-\c@Hfootnote=\count118
+\c@Item=\count116
+\c@Hfootnote=\count117
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count119
-\c@bookmark@seq@number=\count120
+\Fld@listcount=\count118
+\c@bookmark@seq@number=\count119
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -829,47 +837,325 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen143
-\Gin@req@width=\dimen144
+\Gin@req@height=\dimen145
+\Gin@req@width=\dimen146
 )
-\@float@every@scheme=\toks42
-\c@scheme=\count121
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/wasysym.sty
+Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
+\symwasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
+(Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-(./avtoreferat.aux)
+Package hyperref Info: Option `colorlinks' set `true' on input line 104.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex2.sty
+Package: biblatex2 2014/06/25 v2.9a programmable bibliographies (biber) (PK/JW/
+AB)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count120
+)
+\etb@tempcnta=\count121
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count122
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@tabx@nest=\count123
+\c@listtotal=\count124
+\c@listcount=\count125
+\c@liststart=\count126
+\c@liststop=\count127
+\c@citecount=\count128
+\c@citetotal=\count129
+\c@multicitecount=\count130
+\c@multicitetotal=\count131
+\c@instcount=\count132
+\c@maxnames=\count133
+\c@minnames=\count134
+\c@maxitems=\count135
+\c@minitems=\count136
+\c@citecounter=\count137
+\c@savedcitecounter=\count138
+\c@uniquelist=\count139
+\c@uniquename=\count140
+\c@refsection=\count141
+\c@refsegment=\count142
+\c@maxextratitle=\count143
+\c@maxextratitleyear=\count144
+\c@maxextrayear=\count145
+\c@maxextraalpha=\count146
+\c@abbrvpenalty=\count147
+\c@highnamepenalty=\count148
+\c@lownamepenalty=\count149
+\c@maxparens=\count150
+\c@parenlevel=\count151
+\blx@tempcnta=\count152
+\blx@tempcntb=\count153
+\blx@tempcntc=\count154
+\blx@maxsection=\count155
+\blx@maxsegment@0=\count156
+\blx@notetype=\count157
+\blx@parenlevel@text=\count158
+\blx@parenlevel@foot=\count159
+\blx@sectionciteorder@0=\count160
+\labelnumberwidth=\skip58
+\labelalphawidth=\skip59
+\biblabelsep=\skip60
+\bibitemsep=\skip61
+\bibnamesep=\skip62
+\bibinitsep=\skip63
+\bibparsep=\skip64
+\bibhang=\skip65
+\blx@bcfin=\read1
+\blx@bcfout=\write3
+\c@mincomprange=\count161
+\c@maxcomprange=\count162
+\c@mincompwidth=\count163
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/blx-dm.def)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'gost-authoryear.dbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/gost-authoryear.dbx
+Package biblatex Info: Trying to load biblatex-gost data model...
+Package biblatex Info: ... file 'biblatex-gost.dbx' found.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.dbx))
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count164
+\c@savedafterword=\count165
+\c@annotator=\count166
+\c@savedannotator=\count167
+\c@author=\count168
+\c@savedauthor=\count169
+\c@bookauthor=\count170
+\c@savedbookauthor=\count171
+\c@commentator=\count172
+\c@savedcommentator=\count173
+\c@editor=\count174
+\c@savededitor=\count175
+\c@editora=\count176
+\c@savededitora=\count177
+\c@editorb=\count178
+\c@savededitorb=\count179
+\c@editorc=\count180
+\c@savededitorc=\count181
+\c@foreword=\count182
+\c@savedforeword=\count183
+\c@holder=\count184
+\c@savedholder=\count185
+\c@introduction=\count186
+\c@savedintroduction=\count187
+\c@namea=\count188
+\c@savednamea=\count189
+\c@nameb=\count190
+\c@savednameb=\count191
+\c@namec=\count192
+\c@savednamec=\count193
+\c@translator=\count194
+\c@savedtranslator=\count195
+\c@shortauthor=\count196
+\c@savedshortauthor=\count197
+\c@shorteditor=\count198
+\c@savedshorteditor=\count199
+\c@booktranslator=\count200
+\c@savedbooktranslator=\count201
+\c@bookcommentator=\count202
+\c@savedbookcommentator=\count203
+\c@bookannotator=\count204
+\c@savedbookannotator=\count205
+\c@bookintroduction=\count206
+\c@savedbookintroduction=\count207
+\c@bookforeword=\count208
+\c@savedbookforeword=\count209
+\c@bookafterword=\count210
+\c@savedbookafterword=\count211
+\c@labelname=\count212
+\c@savedlabelname=\count213
+\c@institution=\count214
+\c@savedinstitution=\count215
+\c@lista=\count216
+\c@savedlista=\count217
+\c@listb=\count218
+\c@savedlistb=\count219
+\c@listc=\count220
+\c@savedlistc=\count221
+\c@listd=\count222
+\c@savedlistd=\count223
+\c@liste=\count224
+\c@savedliste=\count225
+\c@listf=\count226
+\c@savedlistf=\count227
+\c@location=\count228
+\c@savedlocation=\count229
+\c@organization=\count230
+\c@savedorganization=\count231
+\c@origlocation=\count232
+\c@savedoriglocation=\count233
+Normal \count register pool exhausted, switching to extended pool.
+\c@origpublisher=\count277
+\c@savedorigpublisher=\count278
+\c@publisher=\count279
+\c@savedpublisher=\count280
+\c@language=\count281
+\c@savedlanguage=\count282
+\c@specdata=\count283
+\c@savedspecdata=\count284
+\c@credits=\count285
+\c@savedcredits=\count286
+\c@bookcredits=\count287
+\c@savedbookcredits=\count288
+\c@editioncredits=\count289
+\c@savededitioncredits=\count290
+\c@pageref=\count291
+\c@savedpageref=\count292
+\shorthandwidth=\skip66
+\shortjournalwidth=\skip67
+\shortserieswidth=\skip68
+\shorttitlewidth=\skip69
+\shortauthorwidth=\skip70
+\shorteditorwidth=\skip71
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2014/06/25 v2.9a biblatex compatibility (PK/JW/AB)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.def
+File: biblatex.def 
+\c@textcitecount=\count293
+\c@textcitetotal=\count294
+\c@textcitemaxnames=\count295
+\c@biburlnumpenalty=\count296
+\c@biburlucpenalty=\count297
+\c@biburllcpenalty=\count298
+\c@smartand=\count299
+)
+Package biblatex Info: Trying to load bibliography style 'gost-authoryear'...
+Package biblatex Info: ... file 'gost-authoryear.bbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/gost-authoryear.bbx
+File: gost-authoryear.bbx 2014/11/28 v1.1 biblatex-gost styles
+Package biblatex Info: Trying to load bibliography style 'gost-standard'...
+Package biblatex Info: ... file 'gost-standard.bbx' found.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/gost-standard.bbx
+File: gost-standard.bbx 2014/11/28 v1.1 biblatex-gost styles
+Package biblatex Info: Trying to load biblatex-gost generic definitions...
+Package biblatex Info: ... file 'biblatex-gost.def' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/biblatex-gost.def
+File: biblatex-gost.def 2014/11/28 v1.1 biblatex-gost styles
+)
+\c@blx@gost@pointer=\count300
+\c@bbx:relatedcount=\count301
+\c@bbx:relatedtotal=\count302
+Package biblatex Info: Redefining autocite command 'footnote'.
+Package biblatex Info: Redefining autocite command 'superscript'.
+)
+\labelauthoryearsep=\skip72
+)
+Package biblatex Info: Trying to load citation style 'gost-authoryear'...
+Package biblatex Info: ... file 'gost-authoryear.cbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/gost-authoryear.cbx
+File: gost-authoryear.cbx 2014/11/28 v1.1 biblatex-gost styles
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\footcites'.
+Package biblatex Info: Redefining '\footcitetexts'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+
+Package biblatex Warning: 'babel' option is deprecated, use 'autolang' instead.
+
+
+))
+Package biblatex Info: Trying to load language 'russian' -> 'russian-gost'...
+Package biblatex Info: ... file 'russian-gost.lbx' found.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex-gost/russian-gost.lbx
+File: russian-gost.lbx 2014/11/28 v1.1 biblatex-gost styles
+Package biblatex Info: Trying to load language 'russian'...
+Package biblatex Info: ... file 'russian.lbx' found.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/lbx/russian.lbx
+File: russian.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
+))
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count303
+\@quotereset=\count304
+(./avtoreferat.aux
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2014/06/25 v2.9a biblatex localization (PK/JW/AB)
+))
 \openout1 = `avtoreferat.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 6.
-LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
-\scratchdimen=\dimen145
+\scratchcounter=\count305
+\scratchdimen=\dimen147
 \scratchbox=\box34
-\nofMPsegments=\count123
-\nofMParguments=\count124
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count125
-\MPscratchDim=\dimen146
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
-\everyMPtoPDFconversion=\toks44
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen148
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks43
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -893,21 +1179,21 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
-* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* h-part:(L,W,R)=(85.35826pt, 483.69687pt, 28.45274pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=484.0pt
-* \textheight=732.0pt
-* \oddsidemargin=-13.0pt
-* \evensidemargin=17.3571pt
-* \topmargin=-66.0pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
-* \headsep=38.0pt
+* \headsep=25.0pt
 * \topskip=12.0pt
-* \footskip=14.0pt
-* \marginparwidth=43.0pt
-* \marginparsep=14.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -920,44 +1206,61 @@ e
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 6.
+Package hyperref Info: Link coloring ON on input line 11.
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count128
+\c@section@level=\count311
 )
-LaTeX Info: Redefining \ref on input line 6.
-LaTeX Info: Redefining \pageref on input line 6.
-LaTeX Info: Redefining \nameref on input line 6.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
 
 (./avtoreferat.out) (./avtoreferat.out)
-\@outlinefile=\write3
-\openout3 = `avtoreferat.out'.
+\@outlinefile=\write4
+\openout4 = `avtoreferat.out'.
 
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout3 = `avtoreferat.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'avtoreferat.bbl' found.
+ (./avtoreferat.bbl<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
+LaTeX Font Info:    Try loading font information for U+msa on input line 3078.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3078.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+wasy on input line 3078.
+
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/uwasy.fd
+File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
+))
+Package biblatex Info: Reference section=0 on input line 11.
+Package biblatex Info: Reference segment=0 on input line 11.
  (./title.tex
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 37.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 37.
- [1
 
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]<<ot1.cm
-ap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (25.96082pt too wide) in paragraph at lines 43--69
+[1
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (26.26395pt too wide) in paragraph at lines 43--69
 [][] 
  []
 
@@ -967,7 +1270,7 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 82--88
  []
 
 
-Overfull \hbox (4.84734pt too wide) in paragraph at lines 81--97
+Overfull \hbox (5.15047pt too wide) in paragraph at lines 81--97
 [][] 
  []
 
@@ -975,97 +1278,582 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 98.
-[2]) (./content.tex
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 3.
-
-Underfull \hbox (badness 4779) in paragraph at lines 34--39
-[]$[]$ \T2A/cmr/m/n/14.4 Ос-нов-ные ре-зуль-та-ты ра-бо-ты до-кла-ды-ва-
- []
-
-
-Underfull \hbox (badness 1281) in paragraph at lines 46--47
-[]$[]$ \T2A/cmr/m/n/14.4 Дис-сер-та-ция со-сто-ит из вве-де-ния,
- []
-
-
-Underfull \hbox (badness 1789) in paragraph at lines 46--47
-\T2A/cmr/m/n/14.4 че-ты-рех глав, за-клю-че-ния и при-ло-же-ния. Пол-ный объ-ем
- дис-сер-та-ции
+[2]) (./content.tex (../txt/vvedenie.tex
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 27.
+ [3]
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 57.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 60.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 60.
+ [4]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 80.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 80.
+ [5]) (../txt/blagodarnosti.tex
+Underfull \hbox (badness 3965) in paragraph at lines 1--3
+ []\T2A/cmr/bx/n/12 Благодарности[] \T2A/cmr/m/n/10.95 Я бла-го-дар-на ад-ми-ни
+-стра-ции Кан-да-лакш-ско-го за-по-вед-ни-ка и лич-но
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 3.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 53.
-[3]
-Underfull \hbox (badness 1033) in paragraph at lines 58--59
-[]\T2A/cmr/m/n/14.4 Я бла-го-да-рю А.В. По-лос-ки-на, Д.А. Ари-сто-ва, К.В. Шун
-ь-ки-ну,
+(babel)             in language  on input line 3.
+[6]
+Underfull \hbox (badness 3417) in paragraph at lines 23--24
+[]\T2A/cmr/m/n/10.95 Данная ра-бо-та вы-пол-не-на при ча-стич-ной фи-нан-со-вой
+ под-держ-ке гран-тов Санкт-
  []
 
-
-Underfull \hbox (badness 1496) in paragraph at lines 64--66
-\T2A/cmr/m/n/14.4 то-рии эко-ло-гии мор-ско-го бен-то-са И.А. Кор-шу-но-вой, А.
-В. По-лос-ки-ну,
- []
-
-
-Underfull \hbox (badness 1147) in paragraph at lines 71--72
-\T2A/cmr/m/n/14.4 тов Санкт-Петер-бург-ского го-су-дар-ствен-но-го уни-вер-си-т
-е-та (1.0.134.2010,
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 76.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 76.
-[4] <images/latex.png, id=46, 451.6875pt x 194.7275pt>
-File: images/latex.png Graphic file (type png)
- <use images/latex.png>
-Package pdftex.def Info: images/latex.png used on input line 82.
-(pdftex.def)             Requested size: 121.95724pt x 52.57712pt.
-
-No file avtoreferat.bbl.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 31.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 11.
- [5 <./images/latex.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 11.
+(babel)             in language  on input line 31.
+ [7]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 56.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 56.
+ [8]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 79.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 79.
+ [9] <../All_N/N2_area_White1.pdf, id=184, 445.8256pt x 444.2196pt>
+File: ../All_N/N2_area_White1.pdf Graphic file (type pdf)
+
+<use ../All_N/N2_area_White1.pdf>
+Package pdftex.def Info: ../All_N/N2_area_White1.pdf used on input line 121.
+(pdftex.def)             Requested size: 232.17242pt x 231.34122pt.
+
+<../All_N/N2_area_Barents1.pdf, id=185, 445.8256pt x 444.2196pt>
+File: ../All_N/N2_area_Barents1.pdf Graphic file (type pdf)
+
+<use ../All_N/N2_area_Barents1.pdf>
+Package pdftex.def Info: ../All_N/N2_area_Barents1.pdf used on input line 128.
+(pdftex.def)             Requested size: 232.17242pt x 231.34122pt.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 139.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 139.
+ [10]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 156.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 156.
+ [11 <../All_N/N2_area_White1.pdf> <../All_N/N2_area_Barents1.pdf
+
+pdfTeX warning: pdflatex (file ../All_N/N2_area_Barents1.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 1062) in paragraph at lines 157--160
+\T2A/cmr/m/n/14.4 все воз-мож-ные ва-ри-ан-ты раз-мер-ной струк-ту-ры: мо-но-мо
+-даль-ное (участ-
+ []
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 164.
+
+
+<../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg, id=298, 423.984pt x 220.5
+4395pt>
+File: ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg Graphic file (type jp
+g)
+ <use ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg>
+Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg us
+ed on input line 165.
+(pdftex.def)             Requested size: 483.69687pt x 251.61115pt.
+
+
+LaTeX Warning: Command \cyrd invalid in math mode on input line 170.
+
+
+LaTeX Warning: Command \cyro invalid in math mode on input line 170.
+
+Missing character: There is no д in font cmr12!
+Missing character: There is no о in font cmr12!
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 175.
+
+
+<../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg, id=300, 1460.456
+25pt x 1322.9425pt>
+File: ../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg Graphic file
+ (type jpg)
+
+<use ../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg>
+Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/prirost_otklik_mareograp
+hy.jpg used on input line 181.
+(pdftex.def)             Requested size: 241.84843pt x 219.06337pt.
+
+<../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg, id=301, 1379.1525p
+t x 1325.95375pt>
+File: ../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg Graphic file (
+type jpg)
+
+<use ../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg>
+Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/prirost_otklik_geography
+.jpg used on input line 188.
+(pdftex.def)             Requested size: 241.84843pt x 232.51073pt.
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 176--191
+[][]  [] 
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 206.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 206.
+[12]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 206.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 206.
+ [13 <../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg> <../Barenc_Sea/growt
+h_from_MSc/prirost_otklik_mareography.jpg> <../Barenc_Sea/growth_from_MSc/priro
+st_otklik_geography.jpg>]
+Underfull \hbox (badness 1867) in paragraph at lines 215--218
+[]\T2A/cmr/m/n/14.4 Оседание спа-та ши-ро-ко ва-рьи-ру-ет в пре-де-лах ло-каль-
+ных ак-ва-то-
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 228.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 228.
+[14]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 235.
+
+<../macrodistribution/Nmean_ru1.pdf, id=334, 498.1458pt x 365.32487pt>
+File: ../macrodistribution/Nmean_ru1.pdf Graphic file (type pdf)
+
+<use ../macrodistribution/Nmean_ru1.pdf>
+Package pdftex.def Info: ../macrodistribution/Nmean_ru1.pdf used on input line 
+241.
+(pdftex.def)             Requested size: 241.84843pt x 177.36072pt.
+
+<../macrodistribution/Bmean_ru1.pdf, id=335, 498.1458pt x 365.32487pt>
+File: ../macrodistribution/Bmean_ru1.pdf Graphic file (type pdf)
+
+<use ../macrodistribution/Bmean_ru1.pdf>
+Package pdftex.def Info: ../macrodistribution/Bmean_ru1.pdf used on input line 
+248.
+(pdftex.def)             Requested size: 241.84843pt x 177.36072pt.
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 236--251
+[][]  [] 
+ []
+
+
+Underfull \hbox (badness 1527) in paragraph at lines 233--256
+ []\T2A/cmr/bx/n/12 Численность[] \T2A/cmr/m/n/14.4 По-лу-чен-ные для Бе-ло-го 
+и Ба-рен-це-ва дан-ные об оби-лии
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 257.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 257.
+[15 <../macrodistribution/Nmean_ru1.pdf> <../macrodistribution/Bmean_ru1.pdf
+
+pdfTeX warning: pdflatex (file ../macrodistribution/Bmean_ru1.pdf): PDF inclusi
+on: multiple pdfs with page group included in a single page
+>]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 290.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 290.
+ [16]
+<../Growth_sravnenie/Europe_clusters_usrednenie.pdf, id=428, 483.406pt x 381.42
+5pt>
+File: ../Growth_sravnenie/Europe_clusters_usrednenie.pdf Graphic file (type pdf
+)
+ <use ../Growth_sravnenie/Europe_clusters_usrednenie.pdf>
+Package pdftex.def Info: ../Growth_sravnenie/Europe_clusters_usrednenie.pdf use
+d on input line 303.
+(pdftex.def)             Requested size: 370.70427pt x 292.48987pt.
+
+
+LaTeX Warning: Reference `ris:growth_model_europe' on page 17 undefined on inpu
+t line 313.
+
+
+LaTeX Warning: Reference `ris:growth_model_europe' on page 17 undefined on inpu
+t line 317.
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 323.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 323.
+[17]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 326.
+
+<../White_Sea/dynamic_N_N1/mantel1.pdf, id=457, 795.41399pt x 430.54044pt>
+File: ../White_Sea/dynamic_N_N1/mantel1.pdf Graphic file (type pdf)
+
+<use ../White_Sea/dynamic_N_N1/mantel1.pdf>
+Package pdftex.def Info: ../White_Sea/dynamic_N_N1/mantel1.pdf used on input li
+ne 328.
+(pdftex.def)             Requested size: 483.69687pt x 261.81467pt.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 339.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 339.
+ [18 <../Growth_sravnenie/Europe_clusters_usrednenie.pdf>] (../txt/vyvody.tex
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 4.
+ [19 <../White_Sea/dynamic_N_N1/mantel1.pdf>])
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 357.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 357.
+ [20]
+Underfull \hbox (badness 2181) in paragraph at lines 364--365
+[]\T2A/cmr/m/n/10.95 Генельт-Яновский Е.А. и др. Со-об-ще-ства илисто-песчаной 
+ли-то-ра-ли гу-бы Дальне-
+ []
+
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 376.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 376.
+[21])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 16.
+ [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 16.
  (./avtoreferat.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 11.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 16.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16.
 Package rerunfilecheck Info: File `avtoreferat.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11.
- ) 
+
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'avtoreferat.run.xml'.
+\openout1 = `avtoreferat.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 16.
+ )
+(\end occurred inside a group at level 2)
+
+### simple group (level 2) entered at line 81 ({)
+### simple group (level 1) entered at line 77 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 12761 strings out of 493109
- 177456 string characters out of 6135010
- 263587 words of memory out of 5000000
- 15980 multiletter control sequences out of 15000+600000
- 18813 words of font info for 54 fonts, out of 8000000 for 9000
+ 19399 strings out of 493109
+ 303583 string characters out of 6135010
+ 961822 words of memory out of 5000000
+ 22336 multiletter control sequences out of 15000+600000
+ 29068 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,21n,38p,771b,382s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
-}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbi2074.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb>
-Output written on avtoreferat.pdf (5 pages, 180198 bytes).
+ 46i,21n,57p,9568b,3682s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.0@Kuznecov_1960} has been refe
+renced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Freestone_et_al_2011} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Pianka_1966} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Beukema_et_al_1998} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Hummel_et_al_1998} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Bachelet_1980} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Bergh_1974} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Semenova_1970} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Vogel_1959} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Kube_et_al_1996} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Olafsson_1989} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Gerasimova_1988} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Gerasimova_Maximovich_2013} has been referen
+ced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Aristov_Granovich_2011} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Segerstrale_1969} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Sagarin_Gaines_2002} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Denisenko_et_al_2003} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Reise_et_al_1994} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Zwarts_Wanink_1993} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Beukema_1979} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Madsen_Jensen_1987} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Jensen_et_al_1985} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Jensen_Jensen_1985} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Beukema_1976} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Stromgren_et_al_1973} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Sneli_1968} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Brady_1943} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Varfolomeeva_Naumov_2013} has been reference
+d but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Khaitov_et_al_2007} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Laine_et_al_2003} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Oug_2001} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Bostrom_Bonsdorff_2000} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Bonsdorff_et_al_1995} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Aschan_1988} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Stolyarov_2010} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Derevenschikov_Kravets_2010} has been refere
+nced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Gerasimova_et_al_2010} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Naumov_2006} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Chertoprud_et_al_2004} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Naumov_Fedyakov_1993} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Babkov_Golikov_1984} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Guryanova_et_al_1928} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Derugin_1915} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Guryanova_et_al_1930} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Guryanova_Ushakov_1929} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@R_2014} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Hammer_et_al_2001} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Beukema_Meehan_1985} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Appeldoorn_1983} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Maximovich_1989} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Maximovich_et_al_1993} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@pinro} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@rp5_Kandalaksha} has been referenced but doe
+s not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@KGZ_letopis} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Sagarin_et_al_2006} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Berryman_Turchin_2001} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Clarke_et_al_2008} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Hollander_et_al_2013} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Legendre_Legendre_2012} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Chambers_Hastie_1991} has been referenced bu
+t does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Mardia_et_al_1979} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Tukey_1977} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Eleftheriou_2013} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Genelt_Dalnezeleneckaya_2008} has been refer
+enced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Agarova_et_al_1976} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Nazarova_Poloskin_2005} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Nikolaeva_1998} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Poloskin_1996} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Maximovich_et_al_1991} has been referenced b
+ut does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Maximovich_Kunina_1982} has been referenced 
+but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Semenova_1974} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Nazarova_2003} has been referenced but does 
+not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Bianki_et_al_2003} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Golcev_et_al_1997} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Percov_1963} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Azarov_1963} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Beukema_et_al_2009} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Hiddink_et_al_2002_predation_infauna} has be
+en referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Hiddink_et_al_2002_predation_epifauna} has b
+een referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Vincent_et_al_1989} has been referenced but 
+does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Gilbert_1978} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Lavoie_1970} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Segerstrale_1960} has been referenced but do
+es not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Nikula_et_al_2007} has been referenced but d
+oes not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Vainola_2003} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{cite.0@Zacepin_Filatova_1968} has been referenced b
+ut does not exist, replaced by a fixed one
+
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/cm-super/sfbi2074.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2014/texm
+f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-di
+st/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist
+/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2014/texmf-dist/f
+onts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
+/public/cm-super/sfti1440.pfb>
+Output written on avtoreferat.pdf (22 pages, 1599967 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 79 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 647 PDF objects out of 1000 (max. 8388607)
+ 547 compressed objects within 6 object streams
+ 181 named destinations out of 1000 (max. 500000)
+ 66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

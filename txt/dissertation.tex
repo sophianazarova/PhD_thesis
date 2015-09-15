@@ -34,18 +34,23 @@
 %\linenumbers
 
 %%Введение
-\include{vvedenie}
-\afterpage{\clearpage}
+\chapter*{Введение}
+\addcontentsline{toc}{chapter}{Введение}	% Добавляем его в оглавление
+\input{vvedenie}
+
 
 %%благодарности
-\include{blagodarnosti}
-
-%%материал и методика
-\include{matmet}
+\section*{Благодарности}
+%\addcontentsline{toc}{chapter}{Благодарности}
+\input{blagodarnosti}
 \afterpage{\clearpage}
 
 %%литобзор
 \include{litobzor}
+\afterpage{\clearpage}
+
+%%материал и методика
+\include{matmet}
 \afterpage{\clearpage}
 
 %%описание участков
@@ -91,10 +96,14 @@
 %%    скорость роста как показатель "условий жизни"
 %%    о долговременных трендах в популяции Mb
 
-\include{zaklyuchenie}
+\chapter*{Заключение}		
+\addcontentsline{toc}{chapter}{Заключение}	% Добавляем его в оглавление
+\input{zaklyuchenie}
 
 %%выводы
-\include{vyvody}
+\chapter*{Выводы}
+\addcontentsline{toc}{chapter}{Выводы}	% Добавляем его в оглавление
+\input{vyvody}
 
 
 

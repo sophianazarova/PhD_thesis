@@ -26,7 +26,9 @@
 \usepackage{tabularx}
 
 %%% Общее форматирование
-\usepackage[singlelinecheck=off,center]{caption}	% Многострочные подписи
+%\usepackage[singlelinecheck=off,center]{caption}	% Многострочные подписи
+\usepackage{caption2}%форматирование подписей к плавающим объектам
+\renewcommand{\captionlabeldelim}{.}% после названия объекта ставим точку.
 \usepackage{soul}									% Поддержка переносоустойчивых подчёркиваний и зачёркиваний
 
 %%% Библиография %%%
@@ -38,10 +40,23 @@
 %%% Изображения %%%
 \usepackage{graphicx} % Подключаем пакет работы с графикой
 
+
 %%% Оглавление %%%
 \usepackage{tocloft}
 
 \usepackage{lastpage} % Узнать, сколько всего страниц в документе.
+
+%считаем число рисунков и таблиц
+%\usepackage{totcount} 
+%\newtotcounter{bibitems}
+%\newtotcounter{figure}
+%\regtotcounter{table}
+%\regtotcounter{chapter}
+%\newtotcounter{citnum} %From the package documentation
+%\def\oldbibitem{} \let\oldbibitem=\bibitem
+%\def\bibitem{\stepcounter{citnum}\oldbibitem}
+
+
 \usepackage[]{lscape} %подключение окружения landscape. внутри него все горизонтально, но макет страницы не меняется!
 
 \usepackage{afterpage}

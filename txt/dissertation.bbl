@@ -858,6 +858,35 @@
       \verb Denisenko_et_al_2003_Macrozoobenthos_of_the_Pechora_Sea_(SE_Barents.pdf:/home/sonya/Library/Articles/Denisenko_et_al_2003_Macrozoobenthos_of_the_Pechora_Sea_(SE_Barents.pdf:application/pdf
       \endverb
     \endentry
+    \entry{Eleftheriou_2013}{book}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=2923105426feb42487c1ac0baed1fca6}{Eleftheriou}{E\bibinitperiod}{Anastasios}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=2923105426feb42487c1ac0baed1fca6}{Eleftheriou}{E\bibinitperiod}{Anastasios}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{2923105426feb42487c1ac0baed1fca6}
+      \strng{fullhash}{2923105426feb42487c1ac0baed1fca6}
+      \field{sortinit}{E}
+      \field{sortinithash}{655e26c7438ff123e5c69c6c3f702107}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Methods for the study of marine benthos}
+      \field{title}{Methods for the study of marine benthos}
+      \field{urlday}{23}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{file}
+      \verb Eleftheriou_2013_Methods_for_the_study_of_marine_benthos.pdf:/home/sonya/Library/Articles/Eleftheriou_2013_Methods_for_the_study_of_marine_benthos.pdf:application/pdf;Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/SMIBIH9G/books.html:text/html
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books?hl=ru&lr=&id=XyCHNEB2S98C&oi=fnd&pg=PA1966&dq=Methods+for+the+Study+of+Marine+Benthos&ots=oYkztLoTpR&sig=1HesUbOdq882Eb1nHcrW2o8FWZs
+      \endverb
+    \endentry
     \entry{Elliott_1980}{article}{}
       \name{labelname}{1}{}{%
         {{uniquename=0,hash=57ed604c93c34a325bba4255d575d17b}{Elliott}{E\bibinitperiod}{Michael}{M\bibinitperiod}{}{}{}{}}%
