@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.21)  16 SEP 2015 02:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.21)  17 SEP 2015 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -530,6 +530,19 @@ File: babel.def 2014/09/25 3.9l Babel common definitions
 Language: russianb 2014/10/21 1.3f Russian support for the Babel system
 Package babel Info: Making " an active character on input line 111.
 ))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/extsizes/extsizes.sty
+Package: extsizes 1996/10/08 v1.0 Non Standard LaTeX Package
+
+
+Package ExtSizes Warning: It is better to use one of the extsizes classes,
+ if you can.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty
+Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
+)
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2009/07/02 v2.20.1
 \thm@style=\toks20
@@ -617,6 +630,9 @@ Package: amscd 1999/11/29 v2.0
 \minaw@=\dimen121
 \bigaw@=\dimen122
 \minCDarrowwidth=\dimen123
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/was/icomma.sty
+Package: icomma 2002/03/10 v2.0 (WaS)
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
@@ -846,7 +862,7 @@ Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 104.
+Package hyperref Info: Option `colorlinks' set `true' on input line 110.
 )
 (/usr/local/texlive/2014/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2014/06/25 v2.9a programmable bibliographies (PK/JW/AB)
@@ -1178,21 +1194,21 @@ e
 * paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(85.35826pt, 483.69687pt, 28.45274pt)
-* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* modes: twoside 
+* h-part:(L,W,R)=(42.67912pt, 526.376pt, 28.45274pt)
+* v-part:(T,H,B)=(42.67912pt, 759.6886pt, 42.67912pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=483.69687pt
-* \textheight=731.23584pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=-52.36449pt
+* \textwidth=526.376pt
+* \textheight=759.6886pt
+* \oddsidemargin=-29.59087pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-66.59087pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=35.0pt
+* \marginparwidth=85.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -1200,8 +1216,8 @@ e
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
+* \@twosidetrue
+* \@mparswitchtrue
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -1260,18 +1276,8 @@ Package babel Info: Redefining russian shorthand "~
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (26.26395pt too wide) in paragraph at lines 43--69
-[][] 
- []
-
-
 Overfull \hbox (12.0pt too wide) in paragraph at lines 82--88
 []|[]| 
- []
-
-
-Overfull \hbox (5.15047pt too wide) in paragraph at lines 81--97
-[][] 
  []
 
 Package babel Info: Redefining russian shorthand "|
@@ -1280,263 +1286,271 @@ Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 98.
 [2]) (./content.tex (../txt/vvedenie.tex
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 29.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 27.
+(babel)             in language  on input line 29.
  [3]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 57.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 31.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 60.
+(babel)             in language  on input line 61.
  [4]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 81.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 81.
- [5]) (../txt/blagodarnosti.tex
-Underfull \hbox (badness 3965) in paragraph at lines 1--3
- []\T2A/cmr/bx/n/12 Благодарности[] \T2A/cmr/m/n/10.95 Я бла-го-дар-на ад-ми-ни
--стра-ции Кан-да-лакш-ско-го за-по-вед-ни-ка и лич-но
+(babel)             in language  on input line 80.
+ [5]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 107.
+ [6])
+(../txt/blagodarnosti.tex
+Underfull \hbox (badness 10000) in paragraph at lines 1--3
+ []\T2A/cmr/bx/n/12 Благодарности.[] \T2A/cmr/m/n/10.95 Я бла-го-дар-на ад-ми-н
+и-стра-ции Кан-да-лакш-ско-го за-по-вед-ни-ка и лич-но
  []
 
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 3.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 3.
-[6]
-Underfull \hbox (badness 3417) in paragraph at lines 23--24
-[]\T2A/cmr/m/n/10.95 Данная ра-бо-та вы-пол-не-на при ча-стич-ной фи-нан-со-вой
- под-держ-ке гран-тов Санкт-
+
+Underfull \hbox (badness 1320) in paragraph at lines 4--5
+[]\T2A/cmr/m/n/10.95 На Ба-рен-це-вом мо-ре мы ра-бо-та-ли вме-сте с со-труд-ни
+-ка-ми Мур-ман-ско-го мор-ско-го био-ло-ги-
  []
 
 )
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 25.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 31.
+(babel)             in language  on input line 25.
  [7]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 45.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 56.
+(babel)             in language  on input line 45.
  [8]
+Underfull \vbox (badness 6927) has occurred while \output is active []
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 79.
+(babel)             in language  on input line 74.
  [9]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 102.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 114.
- [10]
-<../All_N/N2_area_White1.pdf, id=193, 445.8256pt x 444.2196pt>
+(babel)             in language  on input line 102.
+
+[10] <../All_N/N2_area_White1.pdf, id=190, 445.8256pt x 444.2196pt>
 File: ../All_N/N2_area_White1.pdf Graphic file (type pdf)
 
 <use ../All_N/N2_area_White1.pdf>
-Package pdftex.def Info: ../All_N/N2_area_White1.pdf used on input line 121.
-(pdftex.def)             Requested size: 232.17242pt x 231.34122pt.
+Package pdftex.def Info: ../All_N/N2_area_White1.pdf used on input line 123.
+(pdftex.def)             Requested size: 252.65823pt x 251.75049pt.
 
-<../All_N/N2_area_Barents1.pdf, id=194, 445.8256pt x 444.2196pt>
+<../All_N/N2_area_Barents1.pdf, id=191, 445.8256pt x 444.2196pt>
 File: ../All_N/N2_area_Barents1.pdf Graphic file (type pdf)
 
 <use ../All_N/N2_area_Barents1.pdf>
-Package pdftex.def Info: ../All_N/N2_area_Barents1.pdf used on input line 128.
-(pdftex.def)             Requested size: 232.17242pt x 231.34122pt.
+Package pdftex.def Info: ../All_N/N2_area_Barents1.pdf used on input line 130.
+(pdftex.def)             Requested size: 252.65823pt x 251.75049pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 150.
- [11 <../All_N/N2_area_White1.pdf> <../All_N/N2_area_Barents1.pdf
+(babel)             in language  on input line 154.
+ [11]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 163.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 163.
+ [12 <../All_N/N2_area_White1.pdf> <../All_N/N2_area_Barents1.pdf
 
 pdfTeX warning: pdflatex (file ../All_N/N2_area_Barents1.pdf): PDF inclusion: m
 ultiple pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 1062) in paragraph at lines 157--160
-\T2A/cmr/m/n/14.4 все воз-мож-ные ва-ри-ан-ты раз-мер-ной струк-ту-ры: мо-но-мо
--даль-ное (участ-
- []
-
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 164.
+               Default added (so using `tbp') on input line 167.
 
 
-<../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg, id=298, 423.984pt x 220.5
+<../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg, id=351, 423.984pt x 220.5
 4395pt>
 File: ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg Graphic file (type jp
 g)
  <use ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg>
 Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg us
-ed on input line 165.
-(pdftex.def)             Requested size: 483.69687pt x 251.61115pt.
+ed on input line 168.
+(pdftex.def)             Requested size: 526.376pt x 273.83173pt.
 
 
-LaTeX Warning: Command \cyrd invalid in math mode on input line 170.
+LaTeX Warning: Command \cyrd invalid in math mode on input line 173.
 
 
-LaTeX Warning: Command \cyro invalid in math mode on input line 170.
+LaTeX Warning: Command \cyro invalid in math mode on input line 173.
 
 Missing character: There is no д in font cmr12!
 Missing character: There is no о in font cmr12!
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 175.
+               Default added (so using `tbp') on input line 178.
 
 
-<../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg, id=300, 1460.456
+<../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg, id=353, 1460.456
 25pt x 1322.9425pt>
 File: ../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg Graphic file
  (type jpg)
 
 <use ../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg>
 Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/prirost_otklik_mareograp
-hy.jpg used on input line 181.
-(pdftex.def)             Requested size: 241.84843pt x 219.06337pt.
+hy.jpg used on input line 184.
+(pdftex.def)             Requested size: 263.188pt x 238.40198pt.
 
-<../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg, id=301, 1379.1525p
+<../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg, id=354, 1379.1525p
 t x 1325.95375pt>
 File: ../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg Graphic file (
 type jpg)
 
 <use ../Barenc_Sea/growth_from_MSc/prirost_otklik_geography.jpg>
 Package pdftex.def Info: ../Barenc_Sea/growth_from_MSc/prirost_otklik_geography
-.jpg used on input line 188.
-(pdftex.def)             Requested size: 241.84843pt x 232.51073pt.
+.jpg used on input line 191.
+(pdftex.def)             Requested size: 263.188pt x 253.02638pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 176--191
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 179--194
 [][]  [] 
  []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 202.
+(babel)             in language  on input line 205.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 202.
-[12]
+(babel)             in language  on input line 205.
+[13 <../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg>]
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 202.
+(babel)             in language  on input line 221.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 202.
- [13 <../Barenc_Sea/growth_from_MSc/rost_clusters_all.jpg> <../Barenc_Sea/growt
-h_from_MSc/prirost_otklik_mareography.jpg> <../Barenc_Sea/growth_from_MSc/priro
-st_otklik_geography.jpg>]
-Underfull \hbox (badness 1867) in paragraph at lines 215--218
-[]\T2A/cmr/m/n/14.4 Оседание спа-та ши-ро-ко ва-рьи-ру-ет в пре-де-лах ло-каль-
-ных ак-ва-то-
- []
-
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 227.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 227.
-[14]
+(babel)             in language  on input line 221.
+ [14 <../Barenc_Sea/growth_from_MSc/prirost_otklik_mareography.jpg> <../Barenc_
+Sea/growth_from_MSc/prirost_otklik_geography.jpg>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 235.
+               Default added (so using `tbp') on input line 238.
 
-<../macrodistribution/Nmean_ru1.pdf, id=334, 498.1458pt x 365.32487pt>
+<../macrodistribution/Nmean_ru1.pdf, id=380, 498.1458pt x 365.32487pt>
 File: ../macrodistribution/Nmean_ru1.pdf Graphic file (type pdf)
 
 <use ../macrodistribution/Nmean_ru1.pdf>
 Package pdftex.def Info: ../macrodistribution/Nmean_ru1.pdf used on input line 
-241.
-(pdftex.def)             Requested size: 241.84843pt x 177.36072pt.
+244.
+(pdftex.def)             Requested size: 263.188pt x 193.01921pt.
 
-<../macrodistribution/Bmean_ru1.pdf, id=335, 498.1458pt x 365.32487pt>
+<../macrodistribution/Bmean_ru1.pdf, id=381, 498.1458pt x 365.32487pt>
 File: ../macrodistribution/Bmean_ru1.pdf Graphic file (type pdf)
 
 <use ../macrodistribution/Bmean_ru1.pdf>
 Package pdftex.def Info: ../macrodistribution/Bmean_ru1.pdf used on input line 
-248.
-(pdftex.def)             Requested size: 241.84843pt x 177.36072pt.
+251.
+(pdftex.def)             Requested size: 263.188pt x 193.01921pt.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 236--251
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 239--254
 [][]  [] 
  []
 
-
-Underfull \hbox (badness 1527) in paragraph at lines 233--256
- []\T2A/cmr/bx/n/12 Численность[] \T2A/cmr/m/n/14.4 По-лу-чен-ные для Бе-ло-го 
-и Ба-рен-це-ва дан-ные об оби-лии
- []
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 259.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 259.
+[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 256.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 256.
-[15 <../macrodistribution/Nmean_ru1.pdf> <../macrodistribution/Bmean_ru1.pdf
+(babel)             in language  on input line 271.
+ [16 <../macrodistribution/Nmean_ru1.pdf> <../macrodistribution/Bmean_ru1.pdf
 
 pdfTeX warning: pdflatex (file ../macrodistribution/Bmean_ru1.pdf): PDF inclusi
 on: multiple pdfs with page group included in a single page
 >]
+Underfull \hbox (badness 1616) in paragraph at lines 274--276
+ []\T2A/cmr/bx/n/12 Размерная струк-ту-ра[] \T2A/cmr/m/n/14.4 В ис-сле-до-ван-н
+ых на-ми по-се-ле-ни-ях раз-мер-ная струк-ту-ра
+ []
+
+
+Underfull \vbox (badness 5504) has occurred while \output is active []
+
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 283.
+(babel)             in language  on input line 296.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 283.
- [16]
-<../Growth_sravnenie/Europe_clusters_usrednenie.pdf, id=427, 483.406pt x 381.42
+(babel)             in language  on input line 296.
+ [17]
+<../Growth_sravnenie/Europe_clusters_usrednenie.pdf, id=481, 483.406pt x 381.42
 5pt>
 File: ../Growth_sravnenie/Europe_clusters_usrednenie.pdf Graphic file (type pdf
 )
  <use ../Growth_sravnenie/Europe_clusters_usrednenie.pdf>
 Package pdftex.def Info: ../Growth_sravnenie/Europe_clusters_usrednenie.pdf use
-d on input line 304.
-(pdftex.def)             Requested size: 370.70427pt x 292.48987pt.
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 321.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 321.
- [17]
+d on input line 307.
+(pdftex.def)             Requested size: 385.13206pt x 303.87079pt.
+
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 327.
+               Default added (so using `tbp') on input line 330.
 
-<../White_Sea/dynamic_N_N1/mantel1.pdf, id=455, 795.41399pt x 430.54044pt>
+<../White_Sea/dynamic_N_N1/mantel1.pdf, id=493, 795.41399pt x 430.54044pt>
 File: ../White_Sea/dynamic_N_N1/mantel1.pdf Graphic file (type pdf)
 
 <use ../White_Sea/dynamic_N_N1/mantel1.pdf>
 Package pdftex.def Info: ../White_Sea/dynamic_N_N1/mantel1.pdf used on input li
-ne 329.
-(pdftex.def)             Requested size: 483.69687pt x 261.81467pt.
+ne 332.
+(pdftex.def)             Requested size: 526.376pt x 284.9262pt.
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 340.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 340.
- [18 <../Growth_sravnenie/Europe_clusters_usrednenie.pdf>]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 348.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 348.
- [19 <../White_Sea/dynamic_N_N1/mantel1.pdf>]
-(../txt/vyvody.tex
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 14.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 14.
- [20])
-Underfull \hbox (badness 2181) in paragraph at lines 365--366
-[]\T2A/cmr/m/n/10.95 Генельт-Яновский Е.А. и др. Со-об-ще-ства илисто-песчаной 
-ли-то-ра-ли гу-бы Дальне-
- []
+(babel)             in language  on input line 343.
+ [18]
+Underfull \vbox (badness 4391) has occurred while \output is active []
 
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 375.
+(babel)             in language  on input line 344.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 375.
-[21])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 16.
+(babel)             in language  on input line 344.
+ [19 <../Growth_sravnenie/Europe_clusters_usrednenie.pdf>] (../txt/vyvody.tex
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 5.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 5.
+ [20 <../White_Sea/dynamic_N_N1/mantel1.pdf>])
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 361.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 361.
+ [21]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 378.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 378.
  [22]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 16.
+Underfull \hbox (badness 1540) in paragraph at lines 378--379
+[]\T2A/cmr/m/n/10.95 Nazarova S.A. et al. Linear growth of \T2A/cmr/m/it/10.95 
+Macoma balthica \T2A/cmr/m/n/10.95 (North Atlantic and Arctic oceans)/
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 17.
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 17.
+ [23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 17.
  (./avtoreferat.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 16.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 16.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 17.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 17.
 Package rerunfilecheck Info: File `avtoreferat.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please rerun LaTeX.
@@ -1545,21 +1559,20 @@ Package biblatex Warning: Please rerun LaTeX.
 Package logreq Info: Writing requests to 'avtoreferat.run.xml'.
 \openout1 = `avtoreferat.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 16.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 17.
  )
-(\end occurred inside a group at level 2)
+(\end occurred inside a group at level 1)
 
-### simple group (level 2) entered at line 81 ({)
-### simple group (level 1) entered at line 77 ({)
+### simple group (level 1) entered at line 83 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 19398 strings out of 493109
- 303558 string characters out of 6135010
- 962106 words of memory out of 5000000
- 22335 multiletter control sequences out of 15000+600000
- 29068 words of font info for 75 fonts, out of 8000000 for 9000
+ 19452 strings out of 493109
+ 306362 string characters out of 6135010
+ 966718 words of memory out of 5000000
+ 22373 multiletter control sequences out of 15000+600000
+ 29984 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,21n,57p,9568b,3682s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,21n,57p,9568b,3702s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{cite.0@Kuznecov_1960} has been refe
 renced but does not exist, replaced by a fixed one
 
@@ -1844,10 +1857,10 @@ ts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2014/texmf-dist/fonts
 ype1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
 e1/public/cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1
 /public/cm-super/sfti1440.pfb>
-Output written on avtoreferat.pdf (22 pages, 1600897 bytes).
+Output written on avtoreferat.pdf (23 pages, 1603923 bytes).
 PDF statistics:
- 647 PDF objects out of 1000 (max. 8388607)
- 547 compressed objects within 6 object streams
- 181 named destinations out of 1000 (max. 500000)
+ 698 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 182 named destinations out of 1000 (max. 500000)
  66 words of extra memory for PDF output out of 10000 (max. 10000000)
 

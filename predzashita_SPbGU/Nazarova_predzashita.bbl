@@ -1,0 +1,162 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.4 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nyt}{nyt}
+    \entry{Gerasimova_Maximovich_2013}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=50446dc3b6c59d7cc653fe02f8d2dedd}{Gerasimova}{G\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fa2ed787afb27b3510bb6757c18e553e}{Maximovich}{M\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=50446dc3b6c59d7cc653fe02f8d2dedd}{Gerasimova}{G\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fa2ed787afb27b3510bb6757c18e553e}{Maximovich}{M\bibinitperiod}{N.}{N\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{dc7fe6a11387323a8dfad14d23a80640}
+      \strng{fullhash}{dc7fe6a11387323a8dfad14d23a80640}
+      \field{sortinit}{G}
+      \field{sortinithash}{480ee01f9ffd559b3258d822f54a8ac2}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Age--size structure of common bivalve mollusc populations in the White Sea: the causes of instability}
+      \field{abstract}{Inter-annual fluctuations in the recruitment rate and size–age structure are typical for marine bivalve beds. Until now there is no common opinion about the causes of this variability. One of them may be related to the adult–larval interactions in mollusk populations. To test this suggestion and to reveal the possible causes of inter-annual instability in bed recruitment level we analyzed the long-term (9–30 years) dynamics of the size–age structure of 22 populations of 9 bivalve species in the White Sea. Inter-annual variability in the successful recruitment was typical of most studied bivalve beds. This phenomenon was apparently caused, on the one hand, by the intensity of molluscs’ intraspecific interactions, and on the other (no less), by the juvenile survival in their first winter. The bivalve stationary beds in the White Sea are likely the exception from the general rule. They can be formed in case of a relatively stable level of annual recruitment with a decrease in intensity of intraspecific competition. However, in this case, the stability of the bed size–age structure can be easily disrupted under unfavourable conditions for spat survival in their first winter.}
+      \field{journaltitle}{Hydrobiologia}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Age--size structure of common bivalve mollusc populations in the White Sea: the causes of instability}
+      \field{volume}{706}
+      \field{year}{2013}
+      \field{pages}{119\bibrangedash 137}
+      \keyw{Bivalvia,Population dynamics,Recruitment,White Sea,{\it Macoma balthica},динамика,Белое море,Arctica islandica,Serripes,Mytilus edulis}
+    \endentry
+    \entry{Varfolomeeva_Naumov_2013}{article}{}
+      \name{labelname}{2}{}{%
+        {{uniquename=0,hash=82409007d0cafaa186c69d7eb03554b8}{Varfolomeeva}{V\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e4d7ad91e37accfa0aab25df3b08ad19}{Naumov}{N\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=82409007d0cafaa186c69d7eb03554b8}{Varfolomeeva}{V\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e4d7ad91e37accfa0aab25df3b08ad19}{Naumov}{N\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Netherlands}%
+      }
+      \strng{namehash}{1acd6cb9d2ef07b7625962a41e349c02}
+      \strng{fullhash}{1acd6cb9d2ef07b7625962a41e349c02}
+      \field{sortinit}{V}
+      \field{sortinithash}{63562d1af2cd68fb37e2e14e0c6d5c96}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Long-term temporal and spatial variation of macrobenthos in the intertidal soft-bottom flats of two small bights (Chupa Inlet, Kandalaksha Bay, White Sea)}
+      \field{issn}{0018-8158}
+      \field{journaltitle}{Hydrobiologia}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{Long-term temporal and spatial variation of macrobenthos in the intertidal soft-bottom flats of two small bights (Chupa Inlet, Kandalaksha Bay, White Sea)}
+      \field{volume}{706}
+      \field{year}{2013}
+      \field{pages}{175\bibrangedash 189}
+      \verb{doi}
+      \verb 10.1007/s10750-012-1341-4
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s10750-012-1341-4
+      \endverb
+      \keyw{Spatial and temporal scale; Long-term studies; Soft-bottom intertidal assemblages; The White Sea}
+    \endentry
+    \entry{Maximovich_1989}{article}{}
+      \name{labelname}{1}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{85d5b4710756c2d14d9ea9dec8fd7368}
+      \strng{fullhash}{85d5b4710756c2d14d9ea9dec8fd7368}
+      \field{sortinit}{М}
+      \field{sortinithash}{0d59d2d67dac18e4a6b75e9f56dff809}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Статистическое сравнение кривых роста}
+      \field{journaltitle}{Вестник Ленинградского университета}
+      \field{title}{Статистическое сравнение кривых роста}
+      \field{volume}{4}
+      \field{year}{1989}
+      \field{pages}{18\bibrangedash 25}
+    \endentry
+    \entry{Maximovich_et_al_1991}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=587711cb9188ec43df6bf6ae5ec58309}{Герасимова}{Г\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a7a2c6a3a745146c48c0b6235b85f08}{Кунина}{К\bibinitperiod}{Т.}{Т\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=587711cb9188ec43df6bf6ae5ec58309}{Герасимова}{Г\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a7a2c6a3a745146c48c0b6235b85f08}{Кунина}{К\bibinitperiod}{Т.}{Т\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b2e677a971474041f894f1176ebd94ec}
+      \strng{fullhash}{b2e677a971474041f894f1176ebd94ec}
+      \field{sortinit}{М}
+      \field{sortinithash}{0d59d2d67dac18e4a6b75e9f56dff809}
+      \field{labelyear}{1991}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Динамика структурных характеристик литоральных поселений {\it Macoma balthica} L. в губе Чупа (Белое море)}
+      \field{journaltitle}{Вестник ЛГУ}
+      \field{langid}{russian}
+      \field{title}{Динамика структурных характеристик литоральных поселений {\it Macoma balthica} L. в губе Чупа (Белое море)}
+      \field{volume}{вып. 2, № 10}
+      \field{year}{1991}
+      \field{pages}{23\bibrangedash 31}
+      \keyw{Macoma,{\it Macoma balthica},Белое море,губа Чупа,численность,биомасса,динамика,размерная структура}
+    \endentry
+    \entry{Maximovich_et_al_1993}{article}{}
+      \name{labelname}{3}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=587711cb9188ec43df6bf6ae5ec58309}{Герасимова}{Г\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a7a2c6a3a745146c48c0b6235b85f08}{Кунина}{К\bibinitperiod}{Т.}{Т\bibinitperiod}{}{}{}{}}%
+      }
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=587711cb9188ec43df6bf6ae5ec58309}{Герасимова}{Г\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a7a2c6a3a745146c48c0b6235b85f08}{Кунина}{К\bibinitperiod}{Т.}{Т\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b2e677a971474041f894f1176ebd94ec}
+      \strng{fullhash}{b2e677a971474041f894f1176ebd94ec}
+      \field{sortinit}{М}
+      \field{sortinithash}{0d59d2d67dac18e4a6b75e9f56dff809}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labeltitle}{Продукционные свойства поселений {\it Macoma balthica} L. в губе Чупа (Белое море). II. Продукция}
+      \field{journaltitle}{Вестник СПбГУ}
+      \field{langid}{russian}
+      \field{number}{3}
+      \field{title}{Продукционные свойства поселений {\it Macoma balthica} L. в губе Чупа (Белое море). II. Продукция}
+      \field{volume}{1}
+      \field{year}{1993}
+      \field{pages}{3\bibrangedash 10}
+      \keyw{Macoma,Bivalvia,{\it Macoma balthica},,Белое море,,продукция production}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

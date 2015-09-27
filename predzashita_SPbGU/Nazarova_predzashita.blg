@@ -1,0 +1,14 @@
+[0] Config.pm:320> INFO - This is Biber 1.9
+[0] Config.pm:323> INFO - Logfile is 'Nazarova_predzashita.blg'
+[186] biber:277> INFO - === Ð§Ñ. ÑÐµÐ½Ñ. 24, 2015, 17:15:14
+[187] Biber.pm:333> INFO - Reading 'Nazarova_predzashita.bcf'
+[325] Biber.pm:635> INFO - Found 5 citekeys in bib section 0
+[538] Biber.pm:3051> INFO - Processing section 0
+[731] Biber.pm:3189> INFO - Looking for bibtex format file '../txt/sophia_base.bib' for section 0
+[835] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
+[899] bibtex.pm:864> INFO - Found BibTeX data source '../txt/sophia_base.bib'
+[1281] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1281] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1281] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'ru-RU'
+[1305] bbl.pm:517> INFO - Writing 'Nazarova_predzashita.bbl' with encoding 'UTF-8'
+[1307] bbl.pm:606> INFO - Output to Nazarova_predzashita.bbl

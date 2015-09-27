@@ -78,8 +78,18 @@ embedFonts("Bmean_hist_Barents.pdf") #встройка шрифтов в фай�
 ## ===== сводка по численностям Белое ==========
 summary(ishodnik$B_mean.g[ishodnik$sea=="White"])
 
-boxplot(ishodnik$B_mean.g[ishodnik$sea=="White"] ~ ishodnik$area[ishodnik$sea=="White",drop=T])
+pdf("B_White_uchastki.pdf")
+boxplot(ishodnik$B_mean.g[ishodnik$sea=="White"] ~ ishodnik$area[ishodnik$sea=="White", drop=T])
+dev.off()
+embedFonts("B_White_uchastki.pdf")
 
+
+Kanda <- subset(ishodnik, ishodnik$sea=="White" & ishodnik$area!="Suhaya" & ishodnik$area!="Klushiha" & ishodnik$area!="Podpahta" & ishodnik$area!="Lisya", drop=T)
+
+pdf("B_Kanda.pdf")
+boxplot(Kanda$B_mean.g ~ Kanda$area[Kanda$sea=="White",  drop=T])
+dev.off()
+embedFonts("B_Kanda.pdf")
 
 #мин и макс - не на одном ли участке? нет
 subset(ishodnik, ishodnik$sea=="White" & ishodnik$B_mean.g==13)
@@ -151,7 +161,10 @@ subset(ishodnik, ishodnik$sea == "Barents")
 
 summary(ishodnik$B_mean.g[ishodnik$sea=="Barents"])
 
+pdf("B_Barents_uchastki.pdf")
 boxplot(ishodnik$B_mean.g[ishodnik$sea=="Barents"] ~ ishodnik$area[ishodnik$sea=="Barents",drop=T])
+dev.off()
+embedFonts("B_Barents_uchastki.pdf")
 
 pdf(file="Bmean_region_Barents.pdf", family="NimbusSan")
 boxplot(ishodnik$B_mean.g[ishodnik$sea=="Barents"] ~ ishodnik$region[ishodnik$sea=="Barents", drop=T])

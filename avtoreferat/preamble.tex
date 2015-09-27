@@ -10,8 +10,12 @@
 \usepackage[english, russian]{babel} % Языки: русский, английский
 %\usepackage{pscyr} % Нормальные шрифты
 
+\usepackage{extsizes} % Возможность сделать 14-й шрифт
+\usepackage{anyfontsize}
+
 %%% Математические пакеты %%%
 \usepackage{amsthm,amsfonts,amsmath,amssymb,amscd} % Математические дополнения от AMS
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
 
 %%% Оформление абзацев %%%
 \usepackage{indentfirst} % Красная строка
@@ -55,7 +59,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%% Макет страницы %%%
-\geometry{top=2cm,bottom=2cm,left=3cm,right=1cm}
+
+
+\geometry{top=1.5cm,bottom=1.5cm,left=1.5cm,right=1cm}
 %\oddsidemargin=-13pt
 %\topmargin=-66pt
 %\headheight=12pt
@@ -71,7 +77,7 @@
 %\paperwidth=597pt
 %\paperheight=845pt
 \parindent=1cm %размер табуляции (для красной строки) в начале каждого абзаца
-%\renewcommand{\baselinestretch}{1.25}
+\renewcommand{\baselinestretch}{1.25}
 %\newfloat{scheme}{tb}{sch}
 
 %%% Общая информация %%%
@@ -95,9 +101,9 @@
 \graphicspath{{images/}} % Пути к изображениям
 
 %%% Цвета гиперссылок %%%
-\definecolor{linkcolor}{rgb}{0.9,0,0}
-\definecolor{citecolor}{rgb}{0,0.6,0}
-\definecolor{urlcolor}{rgb}{0,0,1}
+\definecolor{linkcolor}{rgb}{0,0,0}
+\definecolor{citecolor}{rgb}{0,0,0}
+\definecolor{urlcolor}{rgb}{0,0,0}
 \hypersetup{
     colorlinks, linkcolor={linkcolor},
     citecolor={citecolor}, urlcolor={urlcolor}
