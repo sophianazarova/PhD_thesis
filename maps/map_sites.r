@@ -214,3 +214,14 @@ pdf("map_White_sea_unlab.pdf", family="NimbusSan")
 ggmap(WS_stamen) + geom_point(data=White_sites, aes(x = long, y = lat, size=1), pch=21, col="black", fill="red") + guides(size=FALSE)
 dev.off()
 embedFonts("map_White_sea_unlab.pdf")
+
+# ========== бланковка для ареала ==============
+library(maps)
+library(mapdata)
+
+
+
+pdf("world.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+map("worldHires", col="gray90", fill=TRUE)
+dev.off()
+embedFonts("world.pdf")

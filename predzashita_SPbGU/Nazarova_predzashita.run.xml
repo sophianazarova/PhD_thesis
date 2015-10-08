@@ -62,7 +62,6 @@
       <file>biblatex.cfg</file>
       <file>russian-gost.lbx</file>
       <file>russian.lbx</file>
-      <file>english.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">

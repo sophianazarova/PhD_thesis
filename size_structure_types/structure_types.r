@@ -387,3 +387,16 @@ pdf("allsea_sizestr_bray_average_BW.pdf", family="NimbusSan")
 simprof.plot(all_sizestr_clust, siglinetype = 5, leafcolors = rep("black", length(all_sizestr_clust$significantclusters)))
 dev.off()
 embedFonts("allsea_sizestr_bray_average_BW.pdf")
+
+# ========== циклограммы про типы структур ===========
+str_freq <- read.csv2(file = "types_str.csv", header = T)
+rownames(str_freq) <- str_freq$X
+str_freq <- str_freq[,2:3]
+
+pdf("White_freq_types.pdf")
+pie(str_freq$White)
+dev.off()
+
+pdf("Barents_freq_types.pdf")
+pie(str_freq$Barents)
+dev.off()    

@@ -165,16 +165,16 @@ to_plot<-subset(sizestr2_df, sizestr2_df$year%in%levels(sizestr2_df$year)[levels
 dodge <- position_dodge(width=0.9)
 p <- ggplot(data=to_plot, aes(y=meanN, x=size)) + 
   geom_bar(position=dodge, stat="identity") + 
-  facet_wrap(~year, ncol=4) + 
+  facet_wrap(~year, ncol=4, scales = "free") + 
   theme_bw() +
   xlab("длина раковины, мм") +
   ylab("N, экз./кв.м") +
   scale_x_discrete(breaks=seq(2,20,4))
 
-pdf("Estuary_sizestr_oneplot.pdf", family="NimbusSan")
+pdf("Estuary_sizestr_oneplot_nonscale.pdf", family="NimbusSan")
 p + geom_errorbar(aes(ymin=meanN-SEM, ymax=meanN+SEM), position=dodge, width=0.25)
 dev.off()
-embedFonts("Estuary_sizestr_oneplot.pdf")
+embedFonts("Estuary_sizestr_oneplot_nonscale.pdf")
 
 ##рисуем с lattice
 library(lattice)

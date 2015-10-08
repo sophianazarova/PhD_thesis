@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.21)  17 SEP 2015 20:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.21)  8 OCT 2015 09:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4017,19 +4017,14 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 105.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 105.
- (./vyvody.tex
+ (./vyvody.tex)
 Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 111.
 Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 111.
  [124
 
-])
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 111.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 111.
- [125]
+]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "~
@@ -4048,14 +4043,14 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 112.
-[126
+[125
 
 ]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 112.
- [127]
+ [126]
 Underfull \hbox (badness 1112) in paragraph at lines 112--112
 [][]\T2A/cmr/m/it/12 Максимович Н.\T2A/cmr/m/n/12 , \T2A/cmr/m/it/12 Лы-сен-ко 
 В. \T2A/cmr/m/n/12 Рост и про-дук-ция дву-створ-ча-то-го мол-люс-ка \T2A/cmr/m/
@@ -4072,7 +4067,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 112.
-[128]
+[127]
 Underfull \hbox (badness 1142) in paragraph at lines 112--112
 [][]\T2A/cmr/m/it/12 Семенова Н. \T2A/cmr/m/n/12 Осо-бен-но-сти раз-мно-же-ния 
 бе-ло-мор-ской \T2A/cmr/m/it/12 Macoma balthica \T2A/cmr/m/n/12 (L.)(Mollusca,
@@ -4082,7 +4077,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 112.
-[129]
+[128]
 Underfull \hbox (badness 2426) in paragraph at lines 112--112
 [][]\T2A/cmr/m/it/12 Хайтов В. \T2A/cmr/m/n/12 [и др.] Роль ми-ди-е-вых друз в 
 струк-ту-ри-ро-ва-нии со-об-ществ илисто-
@@ -4092,7 +4087,12 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 112.
-[130]
+[129]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 112.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 112.
+ [130]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining russian shorthand "~
@@ -4108,11 +4108,6 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 112.
  [133]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 112.
- [134]
 Underfull \hbox (badness 6741) in paragraph at lines 112--112
 [][]\OT1/cmr/m/it/12 Vogel K. \OT1/cmr/m/n/12 Wach-s-tum-sun-ter-brechun-gen be
 i Lamel-li-branchi-aten und Bra-chiopo-den []
@@ -4123,7 +4118,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 124.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 124.
- [135]
+ [134]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 125.
 Package babel Info: Redefining russian shorthand "~
@@ -4132,7 +4127,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 127.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 127.
- [136
+ [135
 
 ]
 \openout2 = `prilozhenie_NB_table.aux'.
@@ -4440,7 +4435,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 78.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 78.
-[137
+[136
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 79--79
@@ -4476,7 +4471,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 98.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 98.
-[138]
+[137]
 Underfull \hbox (badness 10000) in paragraph at lines 99--99
 []|\T2A/cmr/m/n/10 ноль глу-
  []
@@ -4625,7 +4620,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 157.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 157.
-[139]
+[138]
 Overfull \hbox (2.05377pt too wide) in alignment at lines 157--166
  [] [] [] [] [] [] [] [] [] [] 
  []
@@ -4634,7 +4629,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 166.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 166.
-[140]
+[139]
 Underfull \hbox (badness 10000) in paragraph at lines 177--177
 []|\T2A/cmr/m/n/10 ма-ре-
  []
@@ -4828,12 +4823,12 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 225.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 225.
-[141])
+[140])
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 127.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 127.
- [142]
+ [141]
 \openout2 = `prilozhenie_spiski_vidov.aux'.
 
  (./prilozhenie_spiski_vidov.tex
@@ -5190,7 +5185,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 82.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 82.
-[143
+[142
 
 
 ]
@@ -5222,7 +5217,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 91.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 91.
-[144]
+[143]
 Overfull \hbox (8.20497pt too wide) in paragraph at lines 101--101
 []|\T2A/cmr/m/n/10 Дальне-
  []
@@ -5446,7 +5441,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 151.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 151.
-[145]
+[144]
 Underfull \hbox (badness 10000) in paragraph at lines 152--152
 []|\T2A/cmr/m/it/10 Hyale
  []
@@ -5515,12 +5510,12 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 171.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 171.
-[146])
+[145])
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 130.
- [147]
+ [146]
 \openout2 = `prilozhenie_size_structure_pictures_White.aux'.
 
  (./prilozhenie_size_structure_pictures_White.tex
@@ -5529,7 +5524,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 1.
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_1992_.pdf, id=3013, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_1992_.pdf, id=3009, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_1992_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_1992_.pdf>
@@ -5542,7 +5537,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 11--12
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_1995_.pdf, id=3014, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_1995_.pdf, id=3010, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_1995_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_1995_.pdf>
@@ -5555,7 +5550,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 19--20
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_1998_.pdf, id=3015, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_1998_.pdf, id=3011, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_1998_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_1998_.pdf>
@@ -5568,7 +5563,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 27--28
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_1993_.pdf, id=3016, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_1993_.pdf, id=3012, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_1993_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_1993_.pdf>
@@ -5581,7 +5576,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 33--34
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_1996_.pdf, id=3017, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_1996_.pdf, id=3013, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_1996_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_1996_.pdf>
@@ -5594,7 +5589,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 41--42
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_1999_.pdf, id=3018, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_1999_.pdf, id=3014, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_1999_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_1999_.pdf>
@@ -5607,7 +5602,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 49--50
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_1994_.pdf, id=3019, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_1994_.pdf, id=3015, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_1994_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_1994_.pdf>
@@ -5620,7 +5615,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 57--58
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_1997_.pdf, id=3020, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_1997_.pdf, id=3016, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_1997_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_1997_.pdf>
@@ -5633,7 +5628,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 65--66
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2000_.pdf, id=3021, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2000_.pdf, id=3017, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2000_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2000_.pdf>
@@ -5646,7 +5641,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 73--74
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2001_.pdf, id=3022, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2001_.pdf, id=3018, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2001_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2001_.pdf>
@@ -5659,7 +5654,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 87--88
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2005_.pdf, id=3023, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2005_.pdf, id=3019, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2005_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2005_.pdf>
@@ -5672,7 +5667,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 95--96
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2009_.pdf, id=3024, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2009_.pdf, id=3020, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2009_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2009_.pdf>
@@ -5685,7 +5680,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 103--104
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2002_.pdf, id=3025, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2002_.pdf, id=3021, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2002_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2002_.pdf>
@@ -5698,7 +5693,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 110--111
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2006_.pdf, id=3026, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2006_.pdf, id=3022, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2006_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2006_.pdf>
@@ -5711,7 +5706,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 118--119
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2010_.pdf, id=3027, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2010_.pdf, id=3023, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2010_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2010_.pdf>
@@ -5724,7 +5719,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 126--127
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2003_.pdf, id=3028, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2003_.pdf, id=3024, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2003_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2003_.pdf>
@@ -5737,7 +5732,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 133--134
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2007_.pdf, id=3029, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2007_.pdf, id=3025, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2007_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2007_.pdf>
@@ -5750,7 +5745,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 141--142
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2011_.pdf, id=3030, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2011_.pdf, id=3026, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2011_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2011_.pdf>
@@ -5763,7 +5758,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 149--150
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2004_.pdf, id=3031, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2004_.pdf, id=3027, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2004_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2004_.pdf>
@@ -5776,7 +5771,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 156--157
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2008_.pdf, id=3032, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2008_.pdf, id=3028, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2008_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2008_.pdf>
@@ -5789,7 +5784,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 164--165
  []
 
 
-<../White_Sea/Estuatiy_Luvenga/sizestr2_2012_.pdf, id=3033, 505.89pt x 505.89pt
+<../White_Sea/Estuatiy_Luvenga/sizestr2_2012_.pdf, id=3029, 505.89pt x 505.89pt
 >
 File: ../White_Sea/Estuatiy_Luvenga/sizestr2_2012_.pdf Graphic file (type pdf)
  <use ../White_Sea/Estuatiy_Luvenga/sizestr2_2012_.pdf>
@@ -5801,7 +5796,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 172--173
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_1992_.pdf, id=3035, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_1992_.pdf, id=3031, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_1992_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_1992_.pdf>
@@ -5813,7 +5808,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 187--188
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_1996_.pdf, id=3036, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_1996_.pdf, id=3032, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_1996_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_1996_.pdf>
@@ -5825,7 +5820,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 195--196
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2000_.pdf, id=3037, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2000_.pdf, id=3033, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2000_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2000_.pdf>
@@ -5837,7 +5832,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 203--204
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_1993_.pdf, id=3038, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_1993_.pdf, id=3034, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_1993_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_1993_.pdf>
@@ -5849,7 +5844,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 209--210
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_1997_.pdf, id=3039, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_1997_.pdf, id=3035, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_1997_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_1997_.pdf>
@@ -5861,7 +5856,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 217--218
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2001_.pdf, id=3040, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2001_.pdf, id=3036, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2001_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2001_.pdf>
@@ -5873,7 +5868,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 225--226
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_1994_.pdf, id=3041, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_1994_.pdf, id=3037, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_1994_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_1994_.pdf>
@@ -5885,7 +5880,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 233--234
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_1998_.pdf, id=3042, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_1998_.pdf, id=3038, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_1998_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_1998_.pdf>
@@ -5897,7 +5892,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 241--242
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2002_.pdf, id=3043, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2002_.pdf, id=3039, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2002_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2002_.pdf>
@@ -5909,7 +5904,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 249--250
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_1995_.pdf, id=3044, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_1995_.pdf, id=3040, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_1995_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_1995_.pdf>
@@ -5921,7 +5916,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 256--257
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_1999_.pdf, id=3045, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_1999_.pdf, id=3041, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_1999_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_1999_.pdf>
@@ -5933,7 +5928,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 264--265
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2003_.pdf, id=3046, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2003_.pdf, id=3042, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2003_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2003_.pdf>
@@ -5945,7 +5940,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 272--273
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2004_.pdf, id=3047, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2004_.pdf, id=3043, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2004_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2004_.pdf>
@@ -5957,7 +5952,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 285--286
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2007_.pdf, id=3048, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2007_.pdf, id=3044, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2007_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2007_.pdf>
@@ -5969,7 +5964,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 293--294
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2010_.pdf, id=3049, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2010_.pdf, id=3045, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2010_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2010_.pdf>
@@ -5981,7 +5976,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 301--302
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2005_.pdf, id=3050, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2005_.pdf, id=3046, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2005_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2005_.pdf>
@@ -5993,7 +5988,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 308--309
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2008_.pdf, id=3051, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2008_.pdf, id=3047, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2008_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2008_.pdf>
@@ -6005,7 +6000,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 316--317
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2011_.pdf, id=3052, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2011_.pdf, id=3048, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2011_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2011_.pdf>
@@ -6017,7 +6012,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 324--325
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2006_.pdf, id=3053, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2006_.pdf, id=3049, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2006_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2006_.pdf>
@@ -6029,7 +6024,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 331--332
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2009_.pdf, id=3054, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2009_.pdf, id=3050, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2009_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2009_.pdf>
@@ -6041,7 +6036,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 339--340
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/high2_2012_.pdf, id=3055, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/high2_2012_.pdf, id=3051, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/high2_2012_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/high2_2012_.pdf>
@@ -6054,7 +6049,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 347--348
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_1992_.pdf, id=3057, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_1992_.pdf, id=3053, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_1992_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_1992_.pdf>
@@ -6067,7 +6062,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 363--364
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_1996_.pdf, id=3058, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_1996_.pdf, id=3054, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_1996_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_1996_.pdf>
@@ -6080,7 +6075,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 371--372
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2000_.pdf, id=3059, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2000_.pdf, id=3055, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2000_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2000_.pdf>
@@ -6093,7 +6088,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 379--380
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_1993_.pdf, id=3060, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_1993_.pdf, id=3056, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_1993_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_1993_.pdf>
@@ -6106,7 +6101,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 385--386
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_1997_.pdf, id=3061, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_1997_.pdf, id=3057, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_1997_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_1997_.pdf>
@@ -6119,7 +6114,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 393--394
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2001_.pdf, id=3062, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2001_.pdf, id=3058, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2001_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2001_.pdf>
@@ -6132,7 +6127,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 401--402
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_1994_.pdf, id=3063, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_1994_.pdf, id=3059, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_1994_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_1994_.pdf>
@@ -6145,7 +6140,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 409--410
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_1998_.pdf, id=3064, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_1998_.pdf, id=3060, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_1998_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_1998_.pdf>
@@ -6158,7 +6153,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 417--418
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2002_.pdf, id=3065, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2002_.pdf, id=3061, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2002_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2002_.pdf>
@@ -6171,7 +6166,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 425--426
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_1995_.pdf, id=3066, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_1995_.pdf, id=3062, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_1995_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_1995_.pdf>
@@ -6184,7 +6179,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 432--433
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_1999_.pdf, id=3067, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_1999_.pdf, id=3063, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_1999_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_1999_.pdf>
@@ -6197,7 +6192,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 440--441
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2003_.pdf, id=3068, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2003_.pdf, id=3064, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2003_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2003_.pdf>
@@ -6210,7 +6205,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 448--449
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2004_.pdf, id=3069, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2004_.pdf, id=3065, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2004_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2004_.pdf>
@@ -6223,7 +6218,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 461--462
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2007_.pdf, id=3070, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2007_.pdf, id=3066, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2007_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2007_.pdf>
@@ -6236,7 +6231,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 469--470
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2010_.pdf, id=3071, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2010_.pdf, id=3067, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2010_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2010_.pdf>
@@ -6249,7 +6244,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 477--478
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2005_.pdf, id=3072, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2005_.pdf, id=3068, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2005_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2005_.pdf>
@@ -6262,7 +6257,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 484--485
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2008_.pdf, id=3073, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2008_.pdf, id=3069, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2008_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2008_.pdf>
@@ -6275,7 +6270,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 492--493
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2011_.pdf, id=3074, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2011_.pdf, id=3070, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2011_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2011_.pdf>
@@ -6288,7 +6283,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 500--501
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2006_.pdf, id=3075, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2006_.pdf, id=3071, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2006_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2006_.pdf>
@@ -6301,7 +6296,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 507--508
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2009_.pdf, id=3076, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2009_.pdf, id=3072, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2009_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2009_.pdf>
@@ -6314,7 +6309,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 515--516
  []
 
 
-<../White_Sea/Luvenga_Goreliy/middle2_2012_.pdf, id=3077, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/middle2_2012_.pdf, id=3073, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/middle2_2012_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/middle2_2012_.pdf>
@@ -6327,7 +6322,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 523--524
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_1992_.pdf, id=3079, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_1992_.pdf, id=3075, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_1992_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_1992_.pdf>
@@ -6340,7 +6335,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 538--539
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_1996_.pdf, id=3080, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_1996_.pdf, id=3076, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_1996_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_1996_.pdf>
@@ -6353,7 +6348,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 546--547
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2000_.pdf, id=3081, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2000_.pdf, id=3077, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2000_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2000_.pdf>
@@ -6366,7 +6361,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 554--555
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_1993_.pdf, id=3082, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_1993_.pdf, id=3078, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_1993_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_1993_.pdf>
@@ -6379,7 +6374,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 560--561
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_1997_.pdf, id=3083, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_1997_.pdf, id=3079, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_1997_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_1997_.pdf>
@@ -6392,7 +6387,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 568--569
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2001_.pdf, id=3084, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2001_.pdf, id=3080, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2001_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2001_.pdf>
@@ -6405,7 +6400,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 576--577
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_1994_.pdf, id=3085, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_1994_.pdf, id=3081, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_1994_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_1994_.pdf>
@@ -6418,7 +6413,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 584--585
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_1998_.pdf, id=3086, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_1998_.pdf, id=3082, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_1998_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_1998_.pdf>
@@ -6431,7 +6426,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 592--593
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2002_.pdf, id=3087, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2002_.pdf, id=3083, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2002_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2002_.pdf>
@@ -6444,7 +6439,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 600--601
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_1995_.pdf, id=3088, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_1995_.pdf, id=3084, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_1995_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_1995_.pdf>
@@ -6457,7 +6452,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 607--608
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_1999_.pdf, id=3089, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_1999_.pdf, id=3085, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_1999_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_1999_.pdf>
@@ -6470,7 +6465,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 615--616
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2003_.pdf, id=3090, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2003_.pdf, id=3086, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2003_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2003_.pdf>
@@ -6483,7 +6478,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 623--624
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2004_.pdf, id=3091, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2004_.pdf, id=3087, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2004_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2004_.pdf>
@@ -6496,7 +6491,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 636--637
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2007_.pdf, id=3092, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2007_.pdf, id=3088, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2007_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2007_.pdf>
@@ -6509,7 +6504,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 644--645
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2010_.pdf, id=3093, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2010_.pdf, id=3089, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2010_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2010_.pdf>
@@ -6522,7 +6517,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 652--653
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2005_.pdf, id=3094, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2005_.pdf, id=3090, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2005_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2005_.pdf>
@@ -6535,7 +6530,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 659--660
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2008_.pdf, id=3095, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2008_.pdf, id=3091, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2008_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2008_.pdf>
@@ -6548,7 +6543,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 667--668
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2011_.pdf, id=3096, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2011_.pdf, id=3092, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2011_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2011_.pdf>
@@ -6561,7 +6556,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 675--676
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2006_.pdf, id=3097, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2006_.pdf, id=3093, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2006_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2006_.pdf>
@@ -6574,7 +6569,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 682--683
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2009_.pdf, id=3098, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2009_.pdf, id=3094, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2009_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2009_.pdf>
@@ -6587,7 +6582,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 690--691
  []
 
 
-<../White_Sea/Luvenga_Goreliy/midlow2_2012_.pdf, id=3099, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/midlow2_2012_.pdf, id=3095, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/midlow2_2012_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/midlow2_2012_.pdf>
@@ -6599,7 +6594,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 698--699
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_1992_.pdf, id=3101, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_1992_.pdf, id=3097, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_1992_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_1992_.pdf>
@@ -6611,7 +6606,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 716--717
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_1996_.pdf, id=3102, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_1996_.pdf, id=3098, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_1996_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_1996_.pdf>
@@ -6623,7 +6618,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 724--725
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2000_.pdf, id=3103, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2000_.pdf, id=3099, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2000_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2000_.pdf>
@@ -6635,7 +6630,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 732--733
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_1993_.pdf, id=3104, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_1993_.pdf, id=3100, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_1993_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_1993_.pdf>
@@ -6647,7 +6642,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 738--739
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_1997_.pdf, id=3105, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_1997_.pdf, id=3101, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_1997_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_1997_.pdf>
@@ -6659,7 +6654,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 746--747
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2001_.pdf, id=3106, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2001_.pdf, id=3102, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2001_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2001_.pdf>
@@ -6671,7 +6666,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 754--755
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_1994_.pdf, id=3107, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_1994_.pdf, id=3103, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_1994_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_1994_.pdf>
@@ -6683,7 +6678,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 762--763
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_1998_.pdf, id=3108, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_1998_.pdf, id=3104, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_1998_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_1998_.pdf>
@@ -6695,7 +6690,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 770--771
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2002_.pdf, id=3109, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2002_.pdf, id=3105, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2002_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2002_.pdf>
@@ -6707,7 +6702,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 778--779
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_1995_.pdf, id=3110, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_1995_.pdf, id=3106, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_1995_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_1995_.pdf>
@@ -6719,7 +6714,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 785--786
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_1999_.pdf, id=3111, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_1999_.pdf, id=3107, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_1999_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_1999_.pdf>
@@ -6731,7 +6726,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 793--794
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2003_.pdf, id=3112, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2003_.pdf, id=3108, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2003_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2003_.pdf>
@@ -6743,7 +6738,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 801--802
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2004_.pdf, id=3113, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2004_.pdf, id=3109, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2004_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2004_.pdf>
@@ -6755,7 +6750,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 814--815
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2007_.pdf, id=3114, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2007_.pdf, id=3110, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2007_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2007_.pdf>
@@ -6767,7 +6762,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 822--823
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2010_.pdf, id=3115, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2010_.pdf, id=3111, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2010_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2010_.pdf>
@@ -6779,7 +6774,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 830--831
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2005_.pdf, id=3116, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2005_.pdf, id=3112, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2005_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2005_.pdf>
@@ -6791,7 +6786,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 837--838
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2008_.pdf, id=3117, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2008_.pdf, id=3113, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2008_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2008_.pdf>
@@ -6803,7 +6798,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 845--846
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2011_.pdf, id=3118, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2011_.pdf, id=3114, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2011_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2011_.pdf>
@@ -6815,7 +6810,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 853--854
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2006_.pdf, id=3119, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2006_.pdf, id=3115, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2006_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2006_.pdf>
@@ -6827,7 +6822,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 860--861
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2009_.pdf, id=3120, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2009_.pdf, id=3116, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2009_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2009_.pdf>
@@ -6839,7 +6834,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 868--869
  [] 
  []
 
-<../White_Sea/Luvenga_Goreliy/low2_2012_.pdf, id=3121, 505.89pt x 505.89pt>
+<../White_Sea/Luvenga_Goreliy/low2_2012_.pdf, id=3117, 505.89pt x 505.89pt>
 File: ../White_Sea/Luvenga_Goreliy/low2_2012_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Luvenga_Goreliy/low2_2012_.pdf>
@@ -6852,7 +6847,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 876--877
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_1992_.pdf, id=3123, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_1992_.pdf, id=3119, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_1992_.pdf Graphic file (type 
 pdf)
@@ -6866,7 +6861,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 893--894
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_1996_.pdf, id=3124, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_1996_.pdf, id=3120, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_1996_.pdf Graphic file (type 
 pdf)
@@ -6880,7 +6875,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 901--902
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_2000_.pdf, id=3125, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_2000_.pdf, id=3121, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_2000_.pdf Graphic file (type 
 pdf)
@@ -6894,7 +6889,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 909--910
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_1993_.pdf, id=3126, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_1993_.pdf, id=3122, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_1993_.pdf Graphic file (type 
 pdf)
@@ -6908,7 +6903,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 915--916
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_1997_.pdf, id=3127, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_1997_.pdf, id=3123, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_1997_.pdf Graphic file (type 
 pdf)
@@ -6922,7 +6917,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 923--924
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_2002_.pdf, id=3128, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_2002_.pdf, id=3124, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_2002_.pdf Graphic file (type 
 pdf)
@@ -6936,7 +6931,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 931--932
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_1994_.pdf, id=3129, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_1994_.pdf, id=3125, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_1994_.pdf Graphic file (type 
 pdf)
@@ -6950,7 +6945,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 939--940
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_1998_.pdf, id=3130, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_1998_.pdf, id=3126, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_1998_.pdf Graphic file (type 
 pdf)
@@ -6964,7 +6959,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 947--948
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_2004_.pdf, id=3131, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_2004_.pdf, id=3127, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_2004_.pdf Graphic file (type 
 pdf)
@@ -6978,7 +6973,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 955--956
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_1995_.pdf, id=3132, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_1995_.pdf, id=3128, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_1995_.pdf Graphic file (type 
 pdf)
@@ -6992,7 +6987,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 962--963
  []
 
 
-<../White_Sea/Luvenga_II_razrez/high_beatch2_1999_.pdf, id=3133, 505.89pt x 505
+<../White_Sea/Luvenga_II_razrez/high_beatch2_1999_.pdf, id=3129, 505.89pt x 505
 .89pt>
 File: ../White_Sea/Luvenga_II_razrez/high_beatch2_1999_.pdf Graphic file (type 
 pdf)
@@ -7006,7 +7001,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 970--971
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_1992_.pdf, id=3134, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_1992_.pdf, id=3130, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_1992_.pdf Graphic file (type p
 df)
@@ -7020,7 +7015,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 993--994
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_1996_.pdf, id=3135, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_1996_.pdf, id=3131, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_1996_.pdf Graphic file (type p
 df)
@@ -7034,7 +7029,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1001--1002
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_2000_.pdf, id=3136, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_2000_.pdf, id=3132, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_2000_.pdf Graphic file (type p
 df)
@@ -7048,7 +7043,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1009--1010
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_1993_.pdf, id=3137, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_1993_.pdf, id=3133, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_1993_.pdf Graphic file (type p
 df)
@@ -7062,7 +7057,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1015--1016
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_1997_.pdf, id=3138, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_1997_.pdf, id=3134, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_1997_.pdf Graphic file (type p
 df)
@@ -7076,7 +7071,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1023--1024
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_2002_.pdf, id=3139, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_2002_.pdf, id=3135, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_2002_.pdf Graphic file (type p
 df)
@@ -7090,7 +7085,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1031--1032
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_1994_.pdf, id=3140, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_1994_.pdf, id=3136, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_1994_.pdf Graphic file (type p
 df)
@@ -7104,7 +7099,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1039--1040
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_1998_.pdf, id=3141, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_1998_.pdf, id=3137, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_1998_.pdf Graphic file (type p
 df)
@@ -7118,7 +7113,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1047--1048
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_2004_.pdf, id=3142, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_2004_.pdf, id=3138, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_2004_.pdf Graphic file (type p
 df)
@@ -7132,7 +7127,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1055--1056
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_1995_.pdf, id=3143, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_1995_.pdf, id=3139, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_1995_.pdf Graphic file (type p
 df)
@@ -7146,7 +7141,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1062--1063
  []
 
 
-<../White_Sea/Luvenga_II_razrez/fucus_zone2_1999_.pdf, id=3144, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/fucus_zone2_1999_.pdf, id=3140, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/fucus_zone2_1999_.pdf Graphic file (type p
 df)
@@ -7160,7 +7155,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1070--1071
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_1992_.pdf, id=3145, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_1992_.pdf, id=3141, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_1992_.pdf Graphic file (type
  pdf)
@@ -7174,7 +7169,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1093--1094
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_1996_.pdf, id=3146, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_1996_.pdf, id=3142, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_1996_.pdf Graphic file (type
  pdf)
@@ -7188,7 +7183,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1101--1102
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_2000_.pdf, id=3147, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_2000_.pdf, id=3143, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_2000_.pdf Graphic file (type
  pdf)
@@ -7202,7 +7197,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1109--1110
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_1993_.pdf, id=3148, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_1993_.pdf, id=3144, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_1993_.pdf Graphic file (type
  pdf)
@@ -7216,7 +7211,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1115--1116
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_1997_.pdf, id=3149, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_1997_.pdf, id=3145, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_1997_.pdf Graphic file (type
  pdf)
@@ -7230,7 +7225,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1123--1124
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_2002_.pdf, id=3150, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_2002_.pdf, id=3146, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_2002_.pdf Graphic file (type
  pdf)
@@ -7244,7 +7239,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1131--1132
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_1994_.pdf, id=3151, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_1994_.pdf, id=3147, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_1994_.pdf Graphic file (type
  pdf)
@@ -7258,7 +7253,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1139--1140
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_1998_.pdf, id=3152, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_1998_.pdf, id=3148, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_1998_.pdf Graphic file (type
  pdf)
@@ -7272,7 +7267,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1147--1148
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_2004_.pdf, id=3153, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_2004_.pdf, id=3149, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_2004_.pdf Graphic file (type
  pdf)
@@ -7286,7 +7281,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1155--1156
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_1995_.pdf, id=3154, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_1995_.pdf, id=3150, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_1995_.pdf Graphic file (type
  pdf)
@@ -7300,7 +7295,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1162--1163
  []
 
 
-<../White_Sea/Luvenga_II_razrez/zostera_zone2_1999_.pdf, id=3155, 505.89pt x 50
+<../White_Sea/Luvenga_II_razrez/zostera_zone2_1999_.pdf, id=3151, 505.89pt x 50
 5.89pt>
 File: ../White_Sea/Luvenga_II_razrez/zostera_zone2_1999_.pdf Graphic file (type
  pdf)
@@ -7314,7 +7309,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1170--1171
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_1992_.pdf, id=3156, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_1992_.pdf, id=3152, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_1992_.pdf Graphic file (type p
 df)
@@ -7328,7 +7323,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1192--1193
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_1996_.pdf, id=3157, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_1996_.pdf, id=3153, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_1996_.pdf Graphic file (type p
 df)
@@ -7342,7 +7337,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1200--1201
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_2000_.pdf, id=3158, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_2000_.pdf, id=3154, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_2000_.pdf Graphic file (type p
 df)
@@ -7356,7 +7351,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1208--1209
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_1993_.pdf, id=3159, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_1993_.pdf, id=3155, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_1993_.pdf Graphic file (type p
 df)
@@ -7370,7 +7365,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1214--1215
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_1997_.pdf, id=3160, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_1997_.pdf, id=3156, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_1997_.pdf Graphic file (type p
 df)
@@ -7384,7 +7379,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1222--1223
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_2002_.pdf, id=3161, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_2002_.pdf, id=3157, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_2002_.pdf Graphic file (type p
 df)
@@ -7398,7 +7393,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1230--1231
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_1994_.pdf, id=3162, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_1994_.pdf, id=3158, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_1994_.pdf Graphic file (type p
 df)
@@ -7412,7 +7407,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1238--1239
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_1998_.pdf, id=3163, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_1998_.pdf, id=3159, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_1998_.pdf Graphic file (type p
 df)
@@ -7426,7 +7421,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1246--1247
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_1995_.pdf, id=3164, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_1995_.pdf, id=3160, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_1995_.pdf Graphic file (type p
 df)
@@ -7440,7 +7435,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1261--1262
  []
 
 
-<../White_Sea/Luvenga_II_razrez/low_beatch2_1999_.pdf, id=3165, 505.89pt x 505.
+<../White_Sea/Luvenga_II_razrez/low_beatch2_1999_.pdf, id=3161, 505.89pt x 505.
 89pt>
 File: ../White_Sea/Luvenga_II_razrez/low_beatch2_1999_.pdf Graphic file (type p
 df)
@@ -7453,7 +7448,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1269--1270
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2001_.pdf, id=3166, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2001_.pdf, id=3162, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2001_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2001_.pdf>
@@ -7465,7 +7460,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1291--1292
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2005_.pdf, id=3167, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2005_.pdf, id=3163, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2005_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2005_.pdf>
@@ -7477,7 +7472,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1299--1300
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2009_.pdf, id=3168, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2009_.pdf, id=3164, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2009_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2009_.pdf>
@@ -7489,7 +7484,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1307--1308
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2002_.pdf, id=3169, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2002_.pdf, id=3165, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2002_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2002_.pdf>
@@ -7501,7 +7496,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1314--1315
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2006_.pdf, id=3170, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2006_.pdf, id=3166, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2006_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2006_.pdf>
@@ -7513,7 +7508,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1322--1323
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2010_.pdf, id=3171, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2010_.pdf, id=3167, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2010_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2010_.pdf>
@@ -7525,7 +7520,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1330--1331
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2003_.pdf, id=3172, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2003_.pdf, id=3168, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2003_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2003_.pdf>
@@ -7537,7 +7532,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1337--1338
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2007_.pdf, id=3173, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2007_.pdf, id=3169, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2007_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2007_.pdf>
@@ -7549,7 +7544,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1345--1346
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2011_.pdf, id=3174, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2011_.pdf, id=3170, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2011_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2011_.pdf>
@@ -7561,7 +7556,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1353--1354
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2004_.pdf, id=3175, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2004_.pdf, id=3171, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2004_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2004_.pdf>
@@ -7573,7 +7568,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1360--1361
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2008_.pdf, id=3176, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2008_.pdf, id=3172, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2008_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2008_.pdf>
@@ -7585,7 +7580,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1368--1369
  [] 
  []
 
-<../White_Sea/Ryashkov_YuG/YuG2_2012_.pdf, id=3177, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_YuG/YuG2_2012_.pdf, id=3173, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_YuG/YuG2_2012_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_YuG/YuG2_2012_.pdf>
@@ -7597,7 +7592,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1376--1377
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_1994_.pdf, id=3178, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_1994_.pdf, id=3174, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_1994_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_1994_.pdf>
@@ -7609,7 +7604,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1391--1392
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_1998_.pdf, id=3179, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_1998_.pdf, id=3175, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_1998_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_1998_.pdf>
@@ -7621,7 +7616,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1399--1400
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2002_.pdf, id=3180, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2002_.pdf, id=3176, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2002_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2002_.pdf>
@@ -7633,7 +7628,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1407--1408
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_1995_.pdf, id=3181, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_1995_.pdf, id=3177, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_1995_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_1995_.pdf>
@@ -7645,7 +7640,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1413--1414
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_1999_.pdf, id=3182, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_1999_.pdf, id=3178, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_1999_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_1999_.pdf>
@@ -7657,7 +7652,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1421--1422
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2003_.pdf, id=3183, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2003_.pdf, id=3179, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2003_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2003_.pdf>
@@ -7669,7 +7664,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1429--1430
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_1996_.pdf, id=3184, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_1996_.pdf, id=3180, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_1996_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_1996_.pdf>
@@ -7681,7 +7676,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1437--1438
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2000_.pdf, id=3185, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2000_.pdf, id=3181, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2000_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2000_.pdf>
@@ -7693,7 +7688,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1445--1446
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2004_.pdf, id=3186, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2004_.pdf, id=3182, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2004_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2004_.pdf>
@@ -7705,7 +7700,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1453--1454
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_1997_.pdf, id=3187, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_1997_.pdf, id=3183, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_1997_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_1997_.pdf>
@@ -7717,7 +7712,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1460--1461
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2001_.pdf, id=3188, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2001_.pdf, id=3184, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2001_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2001_.pdf>
@@ -7729,7 +7724,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1468--1469
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2005_.pdf, id=3189, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2005_.pdf, id=3185, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2005_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2005_.pdf>
@@ -7741,7 +7736,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1476--1477
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2006_.pdf, id=3190, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2006_.pdf, id=3186, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2006_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2006_.pdf>
@@ -7753,7 +7748,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1489--1490
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2009_.pdf, id=3191, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2009_.pdf, id=3187, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2009_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2009_.pdf>
@@ -7765,7 +7760,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1497--1498
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2012_.pdf, id=3192, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2012_.pdf, id=3188, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2012_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2012_.pdf>
@@ -7777,7 +7772,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1505--1506
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2007_.pdf, id=3193, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2007_.pdf, id=3189, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2007_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2007_.pdf>
@@ -7789,7 +7784,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1512--1513
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2010_.pdf, id=3194, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2010_.pdf, id=3190, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2010_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2010_.pdf>
@@ -7801,7 +7796,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1520--1521
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2008_.pdf, id=3195, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2008_.pdf, id=3191, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2008_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2008_.pdf>
@@ -7813,7 +7808,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1535--1536
  [] 
  []
 
-<../White_Sea/Ryashkov_ZRS/zrs2_2011_.pdf, id=3196, 505.89pt x 505.89pt>
+<../White_Sea/Ryashkov_ZRS/zrs2_2011_.pdf, id=3192, 505.89pt x 505.89pt>
 File: ../White_Sea/Ryashkov_ZRS/zrs2_2011_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Ryashkov_ZRS/zrs2_2011_.pdf>
@@ -7825,7 +7820,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 1543--1544
  [] 
  []
 
-<../White_Sea/Lomnishniy/Lomnishniy_2007_.pdf, id=3198, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/Lomnishniy_2007_.pdf, id=3194, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/Lomnishniy_2007_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/Lomnishniy_2007_.pdf>
@@ -7833,7 +7828,7 @@ Package pdftex.def Info: ../White_Sea/Lomnishniy/Lomnishniy_2007_.pdf used on i
 nput line 1568.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Lomnishniy/Lomnishniy_2010_.pdf, id=3199, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/Lomnishniy_2010_.pdf, id=3195, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/Lomnishniy_2010_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/Lomnishniy_2010_.pdf>
@@ -7841,7 +7836,7 @@ Package pdftex.def Info: ../White_Sea/Lomnishniy/Lomnishniy_2010_.pdf used on i
 nput line 1576.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Lomnishniy/Lomnishniy_2008_.pdf, id=3200, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/Lomnishniy_2008_.pdf, id=3196, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/Lomnishniy_2008_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/Lomnishniy_2008_.pdf>
@@ -7849,7 +7844,7 @@ Package pdftex.def Info: ../White_Sea/Lomnishniy/Lomnishniy_2008_.pdf used on i
 nput line 1582.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Lomnishniy/Lomnishniy_2011_.pdf, id=3201, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/Lomnishniy_2011_.pdf, id=3197, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/Lomnishniy_2011_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/Lomnishniy_2011_.pdf>
@@ -7857,7 +7852,7 @@ Package pdftex.def Info: ../White_Sea/Lomnishniy/Lomnishniy_2011_.pdf used on i
 nput line 1590.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Lomnishniy/Lomnishniy_2009_.pdf, id=3202, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/Lomnishniy_2009_.pdf, id=3198, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/Lomnishniy_2009_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/Lomnishniy_2009_.pdf>
@@ -7865,7 +7860,7 @@ Package pdftex.def Info: ../White_Sea/Lomnishniy/Lomnishniy_2009_.pdf used on i
 nput line 1596.
 (pdftex.def)             Requested size: 184.9429pt x 184.9455pt.
 
-<../White_Sea/Lomnishniy/Lomnishniy_2012_.pdf, id=3203, 505.89pt x 505.89pt>
+<../White_Sea/Lomnishniy/Lomnishniy_2012_.pdf, id=3199, 505.89pt x 505.89pt>
 File: ../White_Sea/Lomnishniy/Lomnishniy_2012_.pdf Graphic file (type pdf)
 
 <use ../White_Sea/Lomnishniy/Lomnishniy_2012_.pdf>
@@ -7877,7 +7872,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [148
+ [147
 
 
  <../White_Sea/Estuatiy_Luvenga/sizestr2_1992_.pdf> <../White_Sea/Estuatiy_Luve
@@ -7890,7 +7885,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [149 <../White_Sea/Estuatiy_Luvenga/sizestr2_2001_.pdf> <../White_Sea/Estuatiy
+ [148 <../White_Sea/Estuatiy_Luvenga/sizestr2_2001_.pdf> <../White_Sea/Estuatiy
 _Luvenga/sizestr2_2005_.pdf> <../White_Sea/Estuatiy_Luvenga/sizestr2_2009_.pdf>
  <../White_Sea/Estuatiy_Luvenga/sizestr2_2002_.pdf> <../White_Sea/Estuatiy_Luve
 nga/sizestr2_2006_.pdf> <../White_Sea/Estuatiy_Luvenga/sizestr2_2010_.pdf> <../
@@ -7902,7 +7897,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [150 <../White_Sea/Luvenga_Goreliy/high2_1992_.pdf> <../White_Sea/Luvenga_Gore
+ [149 <../White_Sea/Luvenga_Goreliy/high2_1992_.pdf> <../White_Sea/Luvenga_Gore
 liy/high2_1996_.pdf> <../White_Sea/Luvenga_Goreliy/high2_2000_.pdf> <../White_S
 ea/Luvenga_Goreliy/high2_1993_.pdf> <../White_Sea/Luvenga_Goreliy/high2_1997_.p
 df> <../White_Sea/Luvenga_Goreliy/high2_2001_.pdf> <../White_Sea/Luvenga_Goreli
@@ -7914,7 +7909,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [151 <../White_Sea/Luvenga_Goreliy/high2_2004_.pdf> <../White_Sea/Luvenga_Gore
+ [150 <../White_Sea/Luvenga_Goreliy/high2_2004_.pdf> <../White_Sea/Luvenga_Gore
 liy/high2_2007_.pdf> <../White_Sea/Luvenga_Goreliy/high2_2010_.pdf> <../White_S
 ea/Luvenga_Goreliy/high2_2005_.pdf> <../White_Sea/Luvenga_Goreliy/high2_2008_.p
 df> <../White_Sea/Luvenga_Goreliy/high2_2011_.pdf> <../White_Sea/Luvenga_Goreli
@@ -7924,7 +7919,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
-[152 <../White_Sea/Luvenga_Goreliy/middle2_1992_.pdf> <../White_Sea/Luvenga_Gor
+[151 <../White_Sea/Luvenga_Goreliy/middle2_1992_.pdf> <../White_Sea/Luvenga_Gor
 eliy/middle2_1996_.pdf> <../White_Sea/Luvenga_Goreliy/middle2_2000_.pdf> <../Wh
 ite_Sea/Luvenga_Goreliy/middle2_1993_.pdf> <../White_Sea/Luvenga_Goreliy/middle
 2_1997_.pdf> <../White_Sea/Luvenga_Goreliy/middle2_2001_.pdf> <../White_Sea/Luv
@@ -7936,7 +7931,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [153 <../White_Sea/Luvenga_Goreliy/middle2_2004_.pdf> <../White_Sea/Luvenga_Go
+ [152 <../White_Sea/Luvenga_Goreliy/middle2_2004_.pdf> <../White_Sea/Luvenga_Go
 reliy/middle2_2007_.pdf> <../White_Sea/Luvenga_Goreliy/middle2_2010_.pdf> <../W
 hite_Sea/Luvenga_Goreliy/middle2_2005_.pdf> <../White_Sea/Luvenga_Goreliy/middl
 e2_2008_.pdf> <../White_Sea/Luvenga_Goreliy/middle2_2011_.pdf> <../White_Sea/Lu
@@ -7946,7 +7941,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [154 <../White_Sea/Luvenga_Goreliy/midlow2_1992_.pdf> <../White_Sea/Luvenga_Go
+ [153 <../White_Sea/Luvenga_Goreliy/midlow2_1992_.pdf> <../White_Sea/Luvenga_Go
 reliy/midlow2_1996_.pdf> <../White_Sea/Luvenga_Goreliy/midlow2_2000_.pdf> <../W
 hite_Sea/Luvenga_Goreliy/midlow2_1993_.pdf> <../White_Sea/Luvenga_Goreliy/midlo
 w2_1997_.pdf> <../White_Sea/Luvenga_Goreliy/midlow2_2001_.pdf> <../White_Sea/Lu
@@ -7958,7 +7953,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [155 <../White_Sea/Luvenga_Goreliy/midlow2_2004_.pdf> <../White_Sea/Luvenga_Go
+ [154 <../White_Sea/Luvenga_Goreliy/midlow2_2004_.pdf> <../White_Sea/Luvenga_Go
 reliy/midlow2_2007_.pdf> <../White_Sea/Luvenga_Goreliy/midlow2_2010_.pdf> <../W
 hite_Sea/Luvenga_Goreliy/midlow2_2005_.pdf> <../White_Sea/Luvenga_Goreliy/midlo
 w2_2008_.pdf> <../White_Sea/Luvenga_Goreliy/midlow2_2011_.pdf> <../White_Sea/Lu
@@ -7968,7 +7963,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [156 <../White_Sea/Luvenga_Goreliy/low2_1992_.pdf> <../White_Sea/Luvenga_Gorel
+ [155 <../White_Sea/Luvenga_Goreliy/low2_1992_.pdf> <../White_Sea/Luvenga_Gorel
 iy/low2_1996_.pdf> <../White_Sea/Luvenga_Goreliy/low2_2000_.pdf> <../White_Sea/
 Luvenga_Goreliy/low2_1993_.pdf> <../White_Sea/Luvenga_Goreliy/low2_1997_.pdf> <
 ../White_Sea/Luvenga_Goreliy/low2_2001_.pdf> <../White_Sea/Luvenga_Goreliy/low2
@@ -7980,7 +7975,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [157 <../White_Sea/Luvenga_Goreliy/low2_2004_.pdf> <../White_Sea/Luvenga_Gorel
+ [156 <../White_Sea/Luvenga_Goreliy/low2_2004_.pdf> <../White_Sea/Luvenga_Gorel
 iy/low2_2007_.pdf> <../White_Sea/Luvenga_Goreliy/low2_2010_.pdf> <../White_Sea/
 Luvenga_Goreliy/low2_2005_.pdf> <../White_Sea/Luvenga_Goreliy/low2_2008_.pdf> <
 ../White_Sea/Luvenga_Goreliy/low2_2011_.pdf> <../White_Sea/Luvenga_Goreliy/low2
@@ -7990,7 +7985,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [158 <../White_Sea/Luvenga_II_razrez/high_beatch2_1992_.pdf> <../White_Sea/Luv
+ [157 <../White_Sea/Luvenga_II_razrez/high_beatch2_1992_.pdf> <../White_Sea/Luv
 enga_II_razrez/high_beatch2_1996_.pdf> <../White_Sea/Luvenga_II_razrez/high_bea
 tch2_2000_.pdf> <../White_Sea/Luvenga_II_razrez/high_beatch2_1993_.pdf> <../Whi
 te_Sea/Luvenga_II_razrez/high_beatch2_1997_.pdf> <../White_Sea/Luvenga_II_razre
@@ -8002,7 +7997,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [159 <../White_Sea/Luvenga_II_razrez/fucus_zone2_1992_.pdf> <../White_Sea/Luve
+ [158 <../White_Sea/Luvenga_II_razrez/fucus_zone2_1992_.pdf> <../White_Sea/Luve
 nga_II_razrez/fucus_zone2_1996_.pdf> <../White_Sea/Luvenga_II_razrez/fucus_zone
 2_2000_.pdf> <../White_Sea/Luvenga_II_razrez/fucus_zone2_1993_.pdf> <../White_S
 ea/Luvenga_II_razrez/fucus_zone2_1997_.pdf> <../White_Sea/Luvenga_II_razrez/fuc
@@ -8014,7 +8009,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [160 <../White_Sea/Luvenga_II_razrez/zostera_zone2_1992_.pdf> <../White_Sea/Lu
+ [159 <../White_Sea/Luvenga_II_razrez/zostera_zone2_1992_.pdf> <../White_Sea/Lu
 venga_II_razrez/zostera_zone2_1996_.pdf> <../White_Sea/Luvenga_II_razrez/zoster
 a_zone2_2000_.pdf> <../White_Sea/Luvenga_II_razrez/zostera_zone2_1993_.pdf> <..
 /White_Sea/Luvenga_II_razrez/zostera_zone2_1997_.pdf> <../White_Sea/Luvenga_II_
@@ -8027,7 +8022,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [161 <../White_Sea/Luvenga_II_razrez/low_beatch2_1992_.pdf> <../White_Sea/Luve
+ [160 <../White_Sea/Luvenga_II_razrez/low_beatch2_1992_.pdf> <../White_Sea/Luve
 nga_II_razrez/low_beatch2_1996_.pdf> <../White_Sea/Luvenga_II_razrez/low_beatch
 2_2000_.pdf> <../White_Sea/Luvenga_II_razrez/low_beatch2_1993_.pdf> <../White_S
 ea/Luvenga_II_razrez/low_beatch2_1997_.pdf> <../White_Sea/Luvenga_II_razrez/low
@@ -8039,7 +8034,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [162 <../White_Sea/Ryashkov_YuG/YuG2_2001_.pdf> <../White_Sea/Ryashkov_YuG/YuG
+ [161 <../White_Sea/Ryashkov_YuG/YuG2_2001_.pdf> <../White_Sea/Ryashkov_YuG/YuG
 2_2005_.pdf> <../White_Sea/Ryashkov_YuG/YuG2_2009_.pdf> <../White_Sea/Ryashkov_
 YuG/YuG2_2002_.pdf> <../White_Sea/Ryashkov_YuG/YuG2_2006_.pdf> <../White_Sea/Ry
 ashkov_YuG/YuG2_2010_.pdf> <../White_Sea/Ryashkov_YuG/YuG2_2003_.pdf> <../White
@@ -8051,7 +8046,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
 
-[163 <../White_Sea/Ryashkov_ZRS/zrs2_1994_.pdf> <../White_Sea/Ryashkov_ZRS/zrs2
+[162 <../White_Sea/Ryashkov_ZRS/zrs2_1994_.pdf> <../White_Sea/Ryashkov_ZRS/zrs2
 _1998_.pdf> <../White_Sea/Ryashkov_ZRS/zrs2_2002_.pdf> <../White_Sea/Ryashkov_Z
 RS/zrs2_1995_.pdf> <../White_Sea/Ryashkov_ZRS/zrs2_1999_.pdf> <../White_Sea/Rya
 shkov_ZRS/zrs2_2003_.pdf> <../White_Sea/Ryashkov_ZRS/zrs2_1996_.pdf> <../White_
@@ -8062,7 +8057,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [164 <../White_Sea/Ryashkov_ZRS/zrs2_2006_.pdf> <../White_Sea/Ryashkov_ZRS/zrs
+ [163 <../White_Sea/Ryashkov_ZRS/zrs2_2006_.pdf> <../White_Sea/Ryashkov_ZRS/zrs
 2_2009_.pdf> <../White_Sea/Ryashkov_ZRS/zrs2_2012_.pdf> <../White_Sea/Ryashkov_
 ZRS/zrs2_2007_.pdf> <../White_Sea/Ryashkov_ZRS/zrs2_2010_.pdf> <../White_Sea/Ry
 ashkov_ZRS/zrs2_2008_.pdf> <../White_Sea/Ryashkov_ZRS/zrs2_2011_.pdf>]
@@ -8070,7 +8065,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 136.
- [165 <../White_Sea/Lomnishniy/Lomnishniy_2007_.pdf> <../White_Sea/Lomnishniy/L
+ [164 <../White_Sea/Lomnishniy/Lomnishniy_2007_.pdf> <../White_Sea/Lomnishniy/L
 omnishniy_2010_.pdf> <../White_Sea/Lomnishniy/Lomnishniy_2008_.pdf> <../White_S
 ea/Lomnishniy/Lomnishniy_2011_.pdf> <../White_Sea/Lomnishniy/Lomnishniy_2009_.p
 df> <../White_Sea/Lomnishniy/Lomnishniy_2012_.pdf>]
@@ -8082,7 +8077,7 @@ Package babel Info: Redefining russian shorthand "|
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 1.
 
-<../Barenc_Sea/Abram-mys/middle_2008_.pdf, id=4399, 505.89pt x 505.89pt>
+<../Barenc_Sea/Abram-mys/middle_2008_.pdf, id=4395, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Abram-mys/middle_2008_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Abram-mys/middle_2008_.pdf>
@@ -8090,7 +8085,7 @@ Package pdftex.def Info: ../Barenc_Sea/Abram-mys/middle_2008_.pdf used on input
  line 12.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Abram-mys/low_2008_.pdf, id=4400, 505.89pt x 505.89pt>
+<../Barenc_Sea/Abram-mys/low_2008_.pdf, id=4396, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Abram-mys/low_2008_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Abram-mys/low_2008_.pdf>
@@ -8098,7 +8093,7 @@ Package pdftex.def Info: ../Barenc_Sea/Abram-mys/low_2008_.pdf used on input li
 ne 21.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Pala/middle_2007_.pdf, id=4401, 505.89pt x 505.89pt>
+<../Barenc_Sea/Pala/middle_2007_.pdf, id=4397, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Pala/middle_2007_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Pala/middle_2007_.pdf>
@@ -8106,7 +8101,7 @@ Package pdftex.def Info: ../Barenc_Sea/Pala/middle_2007_.pdf used on input line
  28.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Pala/low_2007_.pdf, id=4402, 505.89pt x 505.89pt>
+<../Barenc_Sea/Pala/low_2007_.pdf, id=4398, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Pala/low_2007_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Pala/low_2007_.pdf>
@@ -8114,7 +8109,7 @@ Package pdftex.def Info: ../Barenc_Sea/Pala/low_2007_.pdf used on input line 37
 .
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Gavrilovo/middle_2008_.pdf, id=4403, 505.89pt x 505.89pt>
+<../Barenc_Sea/Gavrilovo/middle_2008_.pdf, id=4399, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Gavrilovo/middle_2008_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Gavrilovo/middle_2008_.pdf>
@@ -8122,7 +8117,7 @@ Package pdftex.def Info: ../Barenc_Sea/Gavrilovo/middle_2008_.pdf used on input
  line 44.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Porchnikha/sizestr2007.pdf, id=4404, 505.89pt x 505.89pt>
+<../Barenc_Sea/Porchnikha/sizestr2007.pdf, id=4400, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Porchnikha/sizestr2007.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Porchnikha/sizestr2007.pdf>
@@ -8130,7 +8125,7 @@ Package pdftex.def Info: ../Barenc_Sea/Porchnikha/sizestr2007.pdf used on input
  line 53.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Yarnyshnaya/high_2008_.pdf, id=4405, 505.89pt x 505.89pt>
+<../Barenc_Sea/Yarnyshnaya/high_2008_.pdf, id=4401, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Yarnyshnaya/high_2008_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Yarnyshnaya/high_2008_.pdf>
@@ -8138,7 +8133,7 @@ Package pdftex.def Info: ../Barenc_Sea/Yarnyshnaya/high_2008_.pdf used on input
  line 68.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Yarnyshnaya/middle_2007_.pdf, id=4406, 505.89pt x 505.89pt>
+<../Barenc_Sea/Yarnyshnaya/middle_2007_.pdf, id=4402, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Yarnyshnaya/middle_2007_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Yarnyshnaya/middle_2007_.pdf>
@@ -8146,7 +8141,7 @@ Package pdftex.def Info: ../Barenc_Sea/Yarnyshnaya/middle_2007_.pdf used on inp
 ut line 77.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Yarnyshnaya/low_2008_.pdf, id=4407, 505.89pt x 505.89pt>
+<../Barenc_Sea/Yarnyshnaya/low_2008_.pdf, id=4403, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Yarnyshnaya/low_2008_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Yarnyshnaya/low_2008_.pdf>
@@ -8154,7 +8149,7 @@ Package pdftex.def Info: ../Barenc_Sea/Yarnyshnaya/low_2008_.pdf used on input
 line 85.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Ivanovskaya/sizestr2008.pdf, id=4408, 505.89pt x 505.89pt>
+<../Barenc_Sea/Ivanovskaya/sizestr2008.pdf, id=4404, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Ivanovskaya/sizestr2008.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Ivanovskaya/sizestr2008.pdf>
@@ -8162,7 +8157,7 @@ Package pdftex.def Info: ../Barenc_Sea/Ivanovskaya/sizestr2008.pdf used on inpu
 t line 94.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Shel'pino/high_2008_.pdf, id=4409, 505.89pt x 505.89pt>
+<../Barenc_Sea/Shel'pino/high_2008_.pdf, id=4405, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Shel'pino/high_2008_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Shel'pino/high_2008_.pdf>
@@ -8170,7 +8165,7 @@ Package pdftex.def Info: ../Barenc_Sea/Shel'pino/high_2008_.pdf used on input l
 ine 101.
 (pdftex.def)             Requested size: 156.49014pt x 156.49234pt.
 
-<../Barenc_Sea/Shel'pino/middle_2008_.pdf, id=4410, 505.89pt x 505.89pt>
+<../Barenc_Sea/Shel'pino/middle_2008_.pdf, id=4406, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Shel'pino/middle_2008_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Shel'pino/middle_2008_.pdf>
@@ -8181,7 +8176,7 @@ Package pdftex.def Info: ../Barenc_Sea/Shel'pino/middle_2008_.pdf used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../Barenc_Sea/Dalnezeleneckaya/DZ2_2002_.pdf, id=4412, 505.89pt x 505.89pt>
+<../Barenc_Sea/Dalnezeleneckaya/DZ2_2002_.pdf, id=4408, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/DZ2_2002_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Dalnezeleneckaya/DZ2_2002_.pdf>
@@ -8193,7 +8188,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 125--126
  [] 
  []
 
-<../Barenc_Sea/Dalnezeleneckaya/DZ2_2005_.pdf, id=4413, 505.89pt x 505.89pt>
+<../Barenc_Sea/Dalnezeleneckaya/DZ2_2005_.pdf, id=4409, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/DZ2_2005_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Dalnezeleneckaya/DZ2_2005_.pdf>
@@ -8205,7 +8200,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 133--134
  [] 
  []
 
-<../Barenc_Sea/Dalnezeleneckaya/DZ2_2008_.pdf, id=4414, 505.89pt x 505.89pt>
+<../Barenc_Sea/Dalnezeleneckaya/DZ2_2008_.pdf, id=4410, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/DZ2_2008_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Dalnezeleneckaya/DZ2_2008_.pdf>
@@ -8217,7 +8212,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 141--142
  [] 
  []
 
-<../Barenc_Sea/Dalnezeleneckaya/DZ2_2003_.pdf, id=4415, 505.89pt x 505.89pt>
+<../Barenc_Sea/Dalnezeleneckaya/DZ2_2003_.pdf, id=4411, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/DZ2_2003_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Dalnezeleneckaya/DZ2_2003_.pdf>
@@ -8229,7 +8224,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 148--149
  [] 
  []
 
-<../Barenc_Sea/Dalnezeleneckaya/DZ2_2006_.pdf, id=4416, 505.89pt x 505.89pt>
+<../Barenc_Sea/Dalnezeleneckaya/DZ2_2006_.pdf, id=4412, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/DZ2_2006_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Dalnezeleneckaya/DZ2_2006_.pdf>
@@ -8241,7 +8236,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 156--157
  [] 
  []
 
-<../Barenc_Sea/Dalnezeleneckaya/DZ2_2004_.pdf, id=4417, 505.89pt x 505.89pt>
+<../Barenc_Sea/Dalnezeleneckaya/DZ2_2004_.pdf, id=4413, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/DZ2_2004_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Dalnezeleneckaya/DZ2_2004_.pdf>
@@ -8253,7 +8248,7 @@ Overfull \hbox (25.60599pt too wide) in paragraph at lines 171--172
  [] 
  []
 
-<../Barenc_Sea/Dalnezeleneckaya/DZ2_2007_.pdf, id=4418, 505.89pt x 505.89pt>
+<../Barenc_Sea/Dalnezeleneckaya/DZ2_2007_.pdf, id=4414, 505.89pt x 505.89pt>
 File: ../Barenc_Sea/Dalnezeleneckaya/DZ2_2007_.pdf Graphic file (type pdf)
 
 <use ../Barenc_Sea/Dalnezeleneckaya/DZ2_2007_.pdf>
@@ -8270,7 +8265,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 137.
- [166
+ [165
 
 
  <../Barenc_Sea/Abram-mys/middle_2008_.pdf> <../Barenc_Sea/Abram-mys/low_2008_.
@@ -8281,7 +8276,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 137.
- [167 <../Barenc_Sea/Yarnyshnaya/high_2008_.pdf> <../Barenc_Sea/Yarnyshnaya/mid
+ [166 <../Barenc_Sea/Yarnyshnaya/high_2008_.pdf> <../Barenc_Sea/Yarnyshnaya/mid
 dle_2007_.pdf> <../Barenc_Sea/Yarnyshnaya/low_2008_.pdf> <../Barenc_Sea/Ivanovs
 kaya/sizestr2008.pdf> <../Barenc_Sea/Shel'pino/high_2008_.pdf> <../Barenc_Sea/S
 hel'pino/middle_2008_.pdf>]
@@ -8289,7 +8284,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 137.
- [168 <../Barenc_Sea/Dalnezeleneckaya/DZ2_2002_.pdf> <../Barenc_Sea/Dalnezelene
+ [167 <../Barenc_Sea/Dalnezeleneckaya/DZ2_2002_.pdf> <../Barenc_Sea/Dalnezelene
 ckaya/DZ2_2005_.pdf> <../Barenc_Sea/Dalnezeleneckaya/DZ2_2008_.pdf> <../Barenc_
 Sea/Dalnezeleneckaya/DZ2_2003_.pdf> <../Barenc_Sea/Dalnezeleneckaya/DZ2_2006_.p
 df> <../Barenc_Sea/Dalnezeleneckaya/DZ2_2004_.pdf> <../Barenc_Sea/Dalnezeleneck
@@ -8311,7 +8306,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 23.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 23.
-[169
+[168
 
 
 ]
@@ -8358,9 +8353,14 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 387.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 387.
-[170
+[169
 
 ]
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 387.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 387.
+ [170]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 387.
 Package babel Info: Redefining russian shorthand "~
@@ -8415,18 +8415,13 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 387.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 387.
- [181]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 387.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 387.
 
-[182]
+[181]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 387.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 387.
- [183])
+ [182])
 \openout2 = `prilozhenie_macrodistribution.aux'.
 
  (./prilozhenie_macrodistribution.tex
@@ -8923,7 +8918,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 75.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 75.
-[184
+[183
 
 
 
@@ -9016,17 +9011,17 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 89.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 89.
-[185])
+[184])
+Package babel Info: Redefining russian shorthand "|
+(babel)             in language  on input line 144.
+Package babel Info: Redefining russian shorthand "~
+(babel)             in language  on input line 144.
+ [185]
 Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 144.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 144.
  [186]
-Package babel Info: Redefining russian shorthand "|
-(babel)             in language  on input line 144.
-Package babel Info: Redefining russian shorthand "~
-(babel)             in language  on input line 144.
- [187]
 \openout2 = `prilozhenie_omega.aux'.
 
  (./prilozhenie_omega.tex
@@ -9348,7 +9343,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 50.
-[188
+[187
 
 
 ])
@@ -9356,7 +9351,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 146.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 146.
- [189]
+ [188]
 \openout2 = `prilozhenie_growth_sources.aux'.
 
  (./prilozhenie_growth_sources.tex
@@ -9369,7 +9364,7 @@ Package babel Info: Redefining russian shorthand "|
 (babel)             in language  on input line 148.
 Package babel Info: Redefining russian shorthand "~
 (babel)             in language  on input line 148.
- [190
+ [189
 
 
 ]
@@ -9395,11 +9390,6 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 150.
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 55EAA4CFD76722EB08847A3E2B7D873C;19279.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 150.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'dissertation.run.xml'.
 \openout1 = `dissertation.run.xml'.
 
@@ -9411,8 +9401,8 @@ Package logreq Info: Writing requests to 'dissertation.run.xml'.
 ### simple group (level 1) entered at line 356 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 22354 strings out of 493109
- 388122 string characters out of 6135010
+ 22353 strings out of 493109
+ 388114 string characters out of 6135010
  1258232 words of memory out of 5000000
  24400 multiletter control sequences out of 15000+600000
  29882 words of font info for 71 fonts, out of 8000000 for 9000
@@ -9459,10 +9449,10 @@ m-super/sftt1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvet
 ic/uhvb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/helvetic/uhvr
 8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/wasy2-ps/wasy10.p
 fb>
-Output written on dissertation.pdf (190 pages, 7288113 bytes).
+Output written on dissertation.pdf (189 pages, 7287454 bytes).
 PDF statistics:
- 5013 PDF objects out of 5155 (max. 8388607)
- 3945 compressed objects within 40 object streams
- 609 named destinations out of 1000 (max. 500000)
+ 5009 PDF objects out of 5155 (max. 8388607)
+ 3942 compressed objects within 40 object streams
+ 608 named destinations out of 1000 (max. 500000)
  1878 words of extra memory for PDF output out of 10000 (max. 10000000)
 
