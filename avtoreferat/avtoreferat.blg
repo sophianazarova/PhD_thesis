@@ -1,14 +1,14 @@
-[1] Config.pm:320> INFO - This is Biber 1.9
-[1] Config.pm:323> INFO - Logfile is 'avtoreferat.blg'
-[590] biber:277> INFO - === Ð§Ñ. Ð¾ÐºÑ.  8, 2015, 08:31:06
-[590] Biber.pm:333> INFO - Reading 'avtoreferat.bcf'
-[759] Biber.pm:635> INFO - Found 86 citekeys in bib section 0
-[1517] Biber.pm:3051> INFO - Processing section 0
-[2116] Biber.pm:3189> INFO - Looking for bibtex format file '../txt/sophia_base.bib' for section 0
-[2241] bibtex.pm:990> INFO - Decoding LaTeX character macros into UTF-8
-[2338] bibtex.pm:864> INFO - Found BibTeX data source '../txt/sophia_base.bib'
-[4642] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[4643] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
-[4643] Biber.pm:2928> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'ru-RU'
-[5238] bbl.pm:517> INFO - Writing 'avtoreferat.bbl' with encoding 'UTF-8'
-[5259] bbl.pm:606> INFO - Output to avtoreferat.bbl
+[1] Config.pm:324> INFO - This is Biber 2.1
+[2] Config.pm:327> INFO - Logfile is 'avtoreferat.blg'
+[61] biber:276> INFO - === Ð§Ñ. Ð½Ð¾ÑÐ±. 26, 2015, 10:58:12
+[62] Biber.pm:333> INFO - Reading 'avtoreferat.bcf'
+[274] Biber.pm:645> INFO - Found 87 citekeys in bib section 0
+[392] Biber.pm:2977> INFO - Processing section 0
+[411] Biber.pm:3115> INFO - Looking for bibtex format file '../txt/sophia_base.bib' for section 0
+[465] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[515] bibtex.pm:895> INFO - Found BibTeX data source '../txt/sophia_base.bib'
+[2299] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2300] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2300] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'ru-RU'
+[2730] bbl.pm:505> INFO - Writing 'avtoreferat.bbl' with encoding 'UTF-8'
+[2747] bbl.pm:596> INFO - Output to avtoreferat.bbl

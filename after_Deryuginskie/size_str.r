@@ -281,6 +281,15 @@ histogram(~ishodnik$Length.mm[ ishodnik$species!="Mytilus edulis"] | ishodnik$sp
 dev.off()
 embedFonts("size_structure_Macoma_Cerastoderma_Mya_2mmclass.pdf")
 
+
+pdf(file="size_structure_Cerastoderma_Mya_2mmclass.pdf", family="NimbusSan", width=190, height=280, paper="a4")
+histogram(~ishodnik$Length.mm[ ishodnik$species!="Mytilus edulis" & ishodnik$species!="Macoma balthica"] | ishodnik$species[ ishodnik$species!="Mytilus edulis" & ishodnik$species!="Macoma balthica"] + ordered(ishodnik$year[ ishodnik$species!="Mytilus edulis" & ishodnik$species!="Macoma balthica"], levels<-c(2008, 2007, 2006, 2005, 2004, 2003, 2002)),
+          type="percent",
+          breaks=seq(0, max(ishodnik$Length.mm+2, na.rm=T),2), 
+          xlab="L, мм", ylab="%")
+dev.off()
+embedFonts("size_structure_Cerastoderma_Mya_2mmclass.pdf")
+
 #####
 
 ## Mytilus edulis - считаем обилие в нижней литорали. Пробы M6-M11. Площадь 1/10 кв.м. 2002 год отрезаем

@@ -1,7 +1,7 @@
 setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/spat/")
 
-##СПАТ РС
-#####
+## ============ СПАТ РС ====================
+
 spat<-read.table(file="spat_2006_Chupa.csv", sep=";", dec=",", head=T)
 str(spat)
 
@@ -54,10 +54,10 @@ for (j in 1:length(colnames(spat.mean.sqmeter)))
   dev.off()
   embedFonts(paste("spat_str", colnames(spat.mean.sqmeter)[j], ".pdf",sep="_"))
 }
-#####
 
-## Взрослые макомы РС
-#####
+
+## ====== Взрослые макомы РС =================
+
 
 adult<-read.table(file="adults_Length_2006_Chupa.csv", sep=";", dec=",", head=T)
 str(adult)
@@ -107,10 +107,10 @@ for (j in 1:length(colnames(adult.mean.sqmeter)))
 #library(lattice)
 #histogram(~ spat$Length.mm[ spat$tidal_zone=="middle"] | spat$area[ spat$tidal_zone=="middle"], breaks = seq(0.1,max(spat$Length.mm)+1, 0.1))
 
-#####
 
-## Корреляция обилия молоди с обилием крупных
-#####
+
+##========= Корреляция обилия молоди с обилием крупных ==================
+
 N.adult.sqmeter<-t(N.adult)*c(20,20,10,10)
 N.adult.sqmeter[N.adult.sqmeter==0]<-NA
 Nmean.adult.sqmeter<-apply(N.adult.sqmeter, 1, mean, na.rm=T)
@@ -182,3 +182,11 @@ plot(spearman_spat_3mm$Spearman, pch=15, col=c((spearman_spat_3mm$p.level<=0.05)
 dev.off()
 embedFonts("spearman_spat_3mm.pdf")
 #####
+
+#===== боксплоты про спат =========
+N_spat_sqmeter_df <- as.data.frame(as.table(N.spat.sqmeter))
+
+pdf("N_spat.pdf", family="NimbusSan")
+boxplot(N_spat_sqmeter_df$Freq ~ N_spat_sqmeter_df$Var1, names = c("Клющиха", "Лисья", "Подпахта", "Сухая"), ylab = "N спата, экз./кв.м", cex.axis = 1.5, cex.lab=1.5)
+dev.off()
+embedFonts("N_spat.pdf")

@@ -31,6 +31,9 @@ str(samples.names)
 
 (N_sqmeter_sd<-tapply(ishodnik$N.sqmeter, INDEX=list(ishodnik$species, ishodnik$year, ishodnik$station), FUN=sd, na.rm=T))
 
+#биомасса
+(B_sqmeter_svodka<-tapply(ishodnik$B.sqmeter, INDEX=list(ishodnik$species, ishodnik$year, ishodnik$station), FUN=mean, na.rm=T))
+
 
 # пробы которые есть - сделать нули. которых нет - NA
 

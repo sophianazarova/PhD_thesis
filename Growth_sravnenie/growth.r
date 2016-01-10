@@ -130,6 +130,8 @@ embedFonts("growth_groups.pdf")
 # ============ Строим картинку широта vs omega = Lmax*k (Beukema, Meehan, 1985) =====
 ish_sites<-read.table(file="sample_sites_svodka.csv", sep=";", dec=",", head=T)
 str(ish_sites)
+levels(ish_sites$region)
+ish_sites$region <- ordered(ish_sites$region, c("Biscay", "La Manche", "Wadden", "North", "Irish", "Baltic", "White", "Barents", "Fundy bay", "Maine", "Manitoba", "Massachusetts", "Quebeck", "St_Laurence"))
 
 pdf(file="long_vs_omega.pdf", family="NimbusSan")
 plot(x = ish_sites$lat.[ ish_sites$continent!="Amerika"], y = ish_sites$omega[ ish_sites$continent!="Amerika"], col = c(as.numeric(ish_sites$author[ ish_sites$continent!="Amerika", drop=T]=="author data"))+1, pch=as.numeric(ish_sites$region[ ish_sites$continent!="Amerika", drop=T]), xlab="NL", ylab="omega")
@@ -139,8 +141,8 @@ embedFonts("long_vs_omega.pdf")
 
 
 pdf(file="long_vs_omega_big.pdf", family="NimbusSan")
-plot(x = ish_sites$lat.[ ish_sites$continent!="Amerika"], y = ish_sites$omega[ ish_sites$continent!="Amerika"], pch=16, col=4+as.numeric(ish_sites$region[ ish_sites$continent!="Amerika", drop=T]), xlab="NL", ylab="omega", cex = 1.5, cex.lab=1.5, cex.axis=1.5, cex.main=1.5, cex.sub=1.5)
-legend(x = "bottomleft", legend = c("Балтийское", "Баренцево", "Бискайский з-в", "Ирландское", "Ла Манш", "Северное", "Ваттово", "Белое"), pch=16, col=4+seq(1:8), cex=1.3)
+plot(x = ish_sites$lat.[ ish_sites$continent!="Amerika"], y = ish_sites$omega[ ish_sites$continent!="Amerika"], pch=21, bg=4+as.numeric(ish_sites$region[ ish_sites$continent!="Amerika", drop=T]), xlab="NL", ylab=expression(omega), cex = 2, cex.lab=2, cex.axis=2, cex.main=2, cex.sub=2)
+legend(x = "bottomleft", legend = c("Бискайский з-в", "Ла Манш", "Ваттовое", "Северное", "Ирландское", "Балтийское ", "Белое", "Баренцево"), pch=16, col=4+seq(1:8), cex=1.3)
 dev.off()
 embedFonts("long_vs_omega_big.pdf")
 
@@ -159,6 +161,8 @@ for (i in c(1,3,4,5)){
 }
 Eclust2 <- ishodnik[,c(F, Europe_clusters$X == 2)]
 Eclust6 <- ishodnik[,c(F, Europe_clusters$X == 6)]
+
+write.csv2(data.frame(Eclust1, Eclust2, Eclust3, Eclust4, Eclust5, Eclust6), file = "Europe_cluster_growth.csv")
 
 #рисуем график
 axe_X<-seq(1,6,1)

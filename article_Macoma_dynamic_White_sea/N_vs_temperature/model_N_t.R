@@ -107,3 +107,84 @@ Est <- subset(ishodnik, ishodnik$site == "Estuary")
 mod_est <- lm(log(Nt1.sqmeter) ~ log(Nt.sqmeter) + wint_temp_t + summ_temp_t, data = Est)
 
 summary(mod_est)
+
+# ========== весь массив вместе - с Чупинскими температурами =================
+library(car)
+scatterplotMatrix(ishodnik)
+
+
+mod1 <-lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t1_chupa + ishodnik$summ_temp_t_chupa + ishodnik$site + ishodnik$year)
+
+summary(mod1)
+
+mod2 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t1_chupa + ishodnik$summ_temp_t_chupa + ishodnik$site)
+
+summary(mod2)
+
+anova(mod1, mod2)
+
+mod3 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t1_chupa + ishodnik$summ_temp_t_chupa)
+summary(mod3)
+
+plot(mod3)
+
+anova(mod1, mod3)
+
+mod4 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t)
+summary(mod4)
+anova(mod1, mod4)
+
+#график
+library(ggplot2)
+
+pdf("Twt1_vs_logNt1.pdf", family="NimbusSan")
+ggplot(data=ishodnik, aes(x=wint_temp_t1, y=log(Nt1.sqmeter))) + geom_point(shape=1) + geom_smooth(method="lm", level=0.95) + theme_bw()
+dev.off()
+embedFonts("Twt1_vs_logNt1.pdf")
+
+pdf("lodNt_vs_logNt1.pdf", family="NimbusSan")
+ggplot(data=ishodnik, aes(x=log(Nt.sqmeter), y=log(Nt1.sqmeter))) + geom_point(shape=1) + geom_smooth(method="lm", level=0.95) + theme_bw()
+dev.off()
+embedFonts("lodNt_vs_logNt1.pdf")
+
+anova(mod1, mod4)
+
+durbinWatsonTest (mod4)
+
+#валидность:
+library(ggplot2)
+c3_diag <- fortify(mod4)
+
+pl_resid <- ggplot(c3_diag, aes(x = .fitted, y = .stdresid, size = .cooksd)) + 
+  geom_point() + 
+  geom_smooth(se=FALSE) + 
+  geom_hline(eintercept=0)
+
+pl_resid
+
+# считаем Di = 4/(N−k−1)
+4/length(ishodnik$Nt1.sqmeter-2-1)
+
+#Проверяем на нормальность
+
+qqPlot(mod4)
+
+shapiro.test(mod4$residuals)
+
+
+#Проверяем на гетероскедастичность
+
+library(lmtest)
+bptest(mod3)
+
+# мультиколлинеарность
+vif(mod3)
+
+
+# проверка допущений автоматическими средствами R
+#install.packages("gvlma")
+library(gvlma)
+gvlma(mod3)
+pdf("gvlma.pdf")
+plot.gvlma(gvlma(mod3))
+dev.off()

@@ -4,6 +4,7 @@ setwd("~/Dropbox/PhD_thesis/PhD_thesis/White_Sea/soobshestvo/")
 detach(ishodnik)
 
 #install.packages("clustsig")
+#install.packages("prabclus")
 library(clustsig)
 library(vegan)
 library(prabclus)
@@ -76,3 +77,14 @@ pdf("White_taxons_pie.pdf", family="NimbusSan")
 pie(x = sort(as.vector(taxa_svodka)), labels = names(taxa_svodka)[order(as.vector(taxa_svodka))])
 dev.off()
 embedFonts("White_taxons_pie.pdf")
+
+
+pdf("White_taxons_pie_big.pdf", family="NimbusSan")
+pie(x = sort(as.vector(taxa_svodka)), labels = names(taxa_svodka)[order(as.vector(taxa_svodka))], cex=2)
+dev.off()
+embedFonts("White_taxons_pie_big.pdf")
+
+pdf("White_taxons_pie_big.pdf", family="NimbusSan")
+pie(x = as.vector(taxa_svodka), labels = names(taxa_svodka), cex=2)
+dev.off()
+embedFonts("White_taxons_pie_big.pdf")

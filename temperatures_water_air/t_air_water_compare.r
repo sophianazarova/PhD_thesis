@@ -58,6 +58,7 @@ cor.test(White_temp$temp_air[ White_temp$year >=1991], White_temp$temp_water_m0_
 White_Barents <- read.csv2("Barents_White_season_mean.csv")
 str(White_Barents)
 
+
 tapply(White_Barents$Barents, White_Barents$season, mean, na.rm=T)
 tapply(White_Barents$White, White_Barents$season, mean, na.rm=T)
 
@@ -71,6 +72,11 @@ pdf("temp_White_Barents.pdf", family = "NimbusSan")
 plot(White_Barents$Barents, White_Barents$White, pch=15, col=WB_colors, xlab = "t воды, Баренцево море, C", ylab = "t воды, Белое море, C", xlim = c(0,max(White_Barents$Barents, White_Barents$White)), ylim = c(0,max(White_Barents$Barents, White_Barents$White)))
 dev.off()
 embedFonts("temp_White_Barents.pdf")
+
+pdf("temp_White_Barents_big.pdf", family = "NimbusSan")
+plot(White_Barents$Barents, White_Barents$White, pch=21, bg=WB_colors, xlab = "t воды, Баренцево море, C", ylab = "t воды, Белое море, C", xlim = c(0,max(White_Barents$Barents, White_Barents$White)), ylim = c(0,max(White_Barents$Barents, White_Barents$White)), cex = 1.5, cex.axis = 1.5, cex.lab = 1.5)
+dev.off()
+embedFonts("temp_White_Barents_big.pdf")
 
 #считаем корреляцию
 cor.test(White_Barents$Barents, White_Barents$White, method = "spearman")

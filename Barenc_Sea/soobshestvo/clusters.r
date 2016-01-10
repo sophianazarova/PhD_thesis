@@ -77,4 +77,12 @@ pie(x = sort(as.vector(taxa_svodka)), labels = names(taxa_svodka)[order(as.vecto
 dev.off()
 embedFonts("Barents_taxons_pie.pdf")
 
-par
+pdf("Barents_taxons_pie_big.pdf", family="NimbusSan")
+pie(x = sort(as.vector(taxa_svodka)), labels = names(taxa_svodka)[order(as.vector(taxa_svodka))], cex=2)
+dev.off()
+embedFonts("Barents_taxons_pie_big.pdf")
+
+pdf("Barents_taxons_pie_big.pdf", family="NimbusSan")
+pie(x = as.vector(taxa_svodka), labels = names(taxa_svodka), cex=2)
+dev.off()
+embedFonts("Barents_taxons_pie_big.pdf")

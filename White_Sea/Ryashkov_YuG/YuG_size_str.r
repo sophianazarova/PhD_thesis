@@ -127,6 +127,21 @@ dev.off()
 embedFonts("YuG_sizestr_oneplot.pdf")
 
 
+dodge <- position_dodge(width=0.9)
+p <- ggplot(data=sizestr2_df, aes(y=meanN, x=size)) + 
+  geom_bar(position=dodge, stat="identity") + 
+  facet_wrap(~year, ncol=4, scales = "free") + 
+  theme_bw() +
+  xlab("длина раковины, мм") +
+  ylab("N, экз./кв.м") +
+  scale_x_discrete(breaks=seq(2,20,4))
+
+pdf("YuG_sizestr_oneplot_nonscale.pdf", family="NimbusSan")
+p + geom_errorbar(aes(ymin=meanN-SEM, ymax=meanN+SEM), position=dodge, width=0.25)
+dev.off()
+embedFonts("YuG_sizestr_oneplot_nonscale.pdf")
+
+
 # ================= динамика обилия ========================================
 (N.sqmeter<-(t(tapply(size.str.sqmeter$Freq, list(size.str.sqmeter$year, size.str.sqmeter$sample), sum))))
 (N.mean.sqmeter<-colMeans(N.sqmeter, na.rm=T))

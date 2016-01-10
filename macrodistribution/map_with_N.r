@@ -176,7 +176,7 @@ points(x=ishodnik$Edec, y=ishodnik$Ndec, col="black", bg="red", pch=21, cex=radi
 legend(horiz = T, x="bottomright", col="red", pch=20, legend=c("300", "100", "50", "10", "5", "1"), pt.cex=(sqrt(c(300,100,50,10,5,1)/pi)/2), bg = "white", title = "B, г/кв.м")
 dev.off()
 embedFonts("Bmean_ru.pdf")
-
+str(ishodnik)
 # ========== корреляция широты и среднего обилия ==============
 pdf("lat_vs_Nmean.pdf", family="NimbusSan")
 plot(ishodnik$Ndec, ishodnik$Nmean, xlab = "широта", ylab = "N, экз./кв.м")
@@ -186,6 +186,12 @@ embedFonts("lat_vs_Nmean.pdf")
 abline(lm(ishodnik$Nmean ~ ishodnik$Ndec))
 summary((lm(ishodnik$Nmean ~ ishodnik$Ndec)))
 
+pdf("lat_vs_Nmean_big.pdf", family="NimbusSan")
+plot(ishodnik$Ndec, ishodnik$Nmean, xlab = "широта", ylab = "N, экз./кв.м", cex=2, pch=21, bg="blue", cex.lab=1.5, cex.axis=1.5)
+abline(lm(ishodnik$Nmean~ishodnik$Ndec))
+dev.off()
+embedFonts("lat_vs_Nmean_big.pdf")
+
 # корреляция
 cor.test(ishodnik$Ndec, ishodnik$Nmean, method = "spearman")
 
@@ -194,3 +200,45 @@ boxplot(ishodnik$Nmean ~ cut(ishodnik$Ndec, breaks = seq(44,71, 5)))
 
 plot(ishodnik$Ndec, ishodnik$Bmean, xlab = "широта", ylab = "B, г/кв.м", ylim=c(0,300))
 cor.test(ishodnik$Ndec, ishodnik$Bmean, method = "spearman")
+
+
+# ========== корреляция широты и биомассы ==============
+pdf("lat_vs_Bmean_big.pdf", family="NimbusSan")
+plot(ishodnik$Ndec, ishodnik$Bmean, xlab = "широта", ylab = "B, г/кв.м", cex=2, pch=21, bg="blue", cex.lab=1.5, cex.axis=1.5)
+#abline(lm(ishodnik$Nmean~ishodnik$Ndec))
+dev.off()
+embedFonts("lat_vs_Bmean_big.pdf")
+
+# корреляция
+cor.test(ishodnik$Ndec, ishodnik$Bmean, method = "spearman")
+
+
+#============== численность наше Белое море ==============
+library(ggplot2)
+library(ggmap)
+
+ishodnik <- cbind(ishodnik, radius_Nmean, radius_max)
+our <- subset(ishodnik, ishodnik$source=="authors data")
+
+Kandb_bord<-c(top=67.163484, left=32.133979, bottom=66.260781, right=34.102189)
+Kandb_stamen <- get_map(location = Kandb_bord,
+                        color = "color",
+                        source = "stamen",
+                        maptype = "toner",
+                        zoom = 9)
+#меняем цвета на серые: stackoverflow.com/questions/18859809/how-do-you-replace-colors-in-a-ggmap-object
+attr_Kandb <- attr(Kandb_stamen, "bb")    # save attributes from original
+
+# change color in raster
+Kandb_stamen[Kandb_stamen == "#000000"] <- "#C0C0C0" #черный на белый
+
+
+# correct class, attributes
+class(Kandb_stamen) <- c("ggmap", "raster")
+attr(Kandb_stamen, "bb") <- attr_Kandb
+
+pdf("map_Kandalaksha_monitorings.pdf", family="NimbusSan")
+ggmap(Kandb_stamen) + geom_point(data= our, aes(x = Edec, y = Ndec, size=1), pch=21, col="black", fill="red", cex=our$radius_max/3) + geom_point(data= our, aes(x = Edec, y = Ndec, size=1), pch=21, col="black", fill="blue", cex=our$radius_Nmean/3)
+  guides(size=FALSE)
+dev.off()
+embedFonts("map_Kandalaksha_monitorings.pdf")

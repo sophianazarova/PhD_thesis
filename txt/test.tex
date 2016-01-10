@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{article}
+
+
+\input{preamble.tex} %вставляем приамбулу с подключением пакетов и параметрами
+
+%нумерация строк на полях для редактирования
+%\usepackage[left, pagewise]{lineno} %на каждой странице с нуля
+\usepackage[left]{lineno}
+
+\input{perenosy.tex} %файл с заданными частыми переносами
+
+\setcounter{tocdepth}{2}%устанавливаем "глубину" оглавления до подсекций
+
+%это движок biber
+%\usepackage[backend=biber,bibencoding=utf8,sorting=nyt,maxcitenames=2,style=authoryear]{biblatex}
+
+%biblatex-gost
+\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other*, bibencoding=utf8, bibdoi=false, biburl=false, movenames=false]{biblatex}
+
+\addbibresource{sophia_base.bib}
+
+%\includeonly{chapters/ch2,chapters/ch3}
+
+\begin{document} % конец преамбулы, начало документа
+
+	\begin{table}[ht]
+	\caption{Синхронность динамики численности {\it Macoma balthica}}
+	\label{tab:Mantel_dynamic_N}
+        \begin{tabularx}{\textwidth}{|p{0.2\textwidth}|*{6}{X|}} \hline
+Mantel \textbackslash p perm & Estuary & Goreliy & Medvezhya & razrez2 & Seldyanaya & ZRS   \\
+Estuary                      &         & 0,002   & 0,009     & 0,001   & 0,264      & 0,441 \\
+Goreliy                      & 0,929   &         & 0,014     & 0,001   & 0,388      & 0,089 \\
+Medvezhya                    & 0,821   & 0,86    &           & 0,001   & 0,184      & 0,441 \\
+razrez2                      & 0,781   & 0,784   & 0,704     &         & 0,044      & 0,123 \\
+Seldyanaya                   & 0,089   & -0,009  & 0,087     & 0,364   &            & 0,818 \\
+ZRS                          & -0,045  & 0,057   & -0,05     & 0,284   & -0,141     &       \\
+	\end{tabularx}
+	   {\footnotesize Примечание: Нижняя половина таблицы --- значение теста Мантеля, верхняя половина --- уровень значимости, определенный пермутационным методом. \\
+Желтым выделены значения с уровнем значимости $< 0,1$. \\
+$NA$ --- ряды не пересекаются во времени.}
+	\end{table}
+
+\end{document} % конец документа

@@ -4,6 +4,7 @@ setwd("/home/sonya/Dropbox/PhD_thesis/PhD_thesis/maps/")
 site_coord <- read.csv2("sites_coord.csv", header=T)
 Barents_sites <- subset(site_coord, sea=="Barents")
 White_sites <- subset(site_coord, sea=="White")
+monitoring_White <- subset(site_coord, site_coord$site%in%c("Suhaya salma Keret island", "Klyushiha bay Keret island", "South bay Ryashkov island", "West Ryashkov salma Ryashkov island", "Lomnishniy island", "Goreliy island Luvenga", "Estuary Luvenga river", "razrez2", "Medvezhya inlet", "Seldyanaya inlet"))
 ## ggmap
 #####
 #install.packages("ggplot2")
@@ -225,3 +226,27 @@ pdf("world.pdf", family="NimbusSan", width=190, height=280, paper="a4")
 map("worldHires", col="gray90", fill=TRUE)
 dev.off()
 embedFonts("world.pdf")
+
+# =========== Кандалакшский залив мониторинги =============
+Kandb_bord<-c(top=67.163484, left=32.133979, bottom=66.260781, right=34.102189)
+Kandb_stamen <- get_map(location = Kandb_bord,
+                        color = "color",
+                        source = "stamen",
+                        maptype = "toner",
+                        zoom = 9)
+#меняем цвета на серые: stackoverflow.com/questions/18859809/how-do-you-replace-colors-in-a-ggmap-object
+attr_Kandb <- attr(Kandb_stamen, "bb")    # save attributes from original
+
+# change color in raster
+Kandb_stamen[Kandb_stamen == "#000000"] <- "#C0C0C0" #черный на белый
+
+
+# correct class, attributes
+class(Kandb_stamen) <- c("ggmap", "raster")
+attr(Kandb_stamen, "bb") <- attr_Kandb
+
+pdf("map_Kandalaksha_monitorings.pdf", family="NimbusSan")
+ggmap(Kandb_stamen) + geom_point(data=monitoring_White, aes(x = long, y = lat, size=1), pch=21, col="black", fill="red", cex=5) + #geom_text(data=White_sites, aes(label=monitoring_White$code, x = long, y = lat, hjust=-0.5, vjust=0), size=3, position="jitter") + 
+  guides(size=FALSE)
+dev.off()
+embedFonts("map_Kandalaksha_monitorings.pdf")
