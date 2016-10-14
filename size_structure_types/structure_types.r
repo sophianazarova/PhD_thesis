@@ -8,7 +8,7 @@ ishodnik<-read.table(file="size_str_percent_All_df.csv", sep=";", dec=",", head=
 
 # добавляем индекс
 for (i in 1:length(ishodnik$percentage)){
-  ishodnik$index[i]<-paste(abbreviate(ishodnik$area[i], minlength = 2), abbreviate(ishodnik$year[i], ), abbreviate(ishodnik$mareographic[i], minlength = 1),sep="_")  
+  ishodnik$index[i]<-paste(abbreviate(ishodnik$area[i], minlength = 2), abbreviate(ishodnik$year[i]), abbreviate(ishodnik$mareographic[i], minlength = 1),sep="_")  
 }
 ishodnik$index<-as.factor(ishodnik$index)
 

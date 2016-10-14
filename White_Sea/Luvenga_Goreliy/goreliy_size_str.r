@@ -119,6 +119,31 @@ sem.sqmeter.low[is.na(sem.sqmeter.low)]<-0
 
 length.class<-seq(1,20,1)
 
+# ======== для летописи вывод в таблицу ===============
+letopis.table<-table( sample, Length.int, year)
+
+letopis.table.2dim <- cbind(year = as.numeric(rep(dimnames(letopis.table)$year[1], dim(letopis.table)[1])), letopis.table[,,1])
+for (i in 2:dim(letopis.table)[3]) {
+  letopis.table.2dim <- rbind(letopis.table.2dim, cbind(year = as.numeric(rep(dimnames(letopis.table)$year[i], dim(letopis.table)[1])), letopis.table[,,i]))}
+
+letopis.table.2dim <- cbind(letopis.table.2dim, rowSums(letopis.table.2dim[,2:21]))
+
+
+
+#убираем те пробы которых на самом деле нету
+for (i in 1:dim(letopis.table)[3]) 
+{ (xxx <- rownames(letopis.table.2dim)[letopis.table.2dim[,1] == as.numeric(dimnames(letopis.table)$year)[i] ]%in%
+     samples.names$sample[samples.names$year == as.numeric(dimnames(letopis.table)$year)[i] ])
+  antixxx<-as.logical(1-xxx)
+  letopis.table.2dim[,22][letopis.table.2dim[,1] == as.numeric(dimnames(letopis.table)$year)[i]][antixxx]<-NA
+}
+#letopis.table.2dim[,22][letopis.table.2dim[,22] == 0] <- NA
+letopis.table.2dim <- na.omit(letopis.table.2dim)
+
+
+write.csv2(letopis.table.2dim, "Goreliy_size_str_all.csv")
+
+
 # ====== size structure >1mm =============================================
 
 #верхний горизонт

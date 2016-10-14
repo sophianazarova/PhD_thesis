@@ -54,6 +54,30 @@ mean.sqmeter.df<-as.data.frame(mean.sizestr.sqmeter)
 (sem.sizestr.sqmeter <-t(sd.sizestr.sqmeter/sqrt(as.vector(n.samples))))
 sem.sqmeter.df<-as.data.frame(sem.sizestr.sqmeter)
 
+# ======== для летописи вывод в таблицу ===============
+letopis.table<-table( sample, Length.int, year)
+
+letopis.table.2dim <- cbind(year = as.numeric(rep(dimnames(letopis.table)$year[1], dim(letopis.table)[1])), letopis.table[,,1])
+for (i in 2:dim(letopis.table)[3]) {
+  letopis.table.2dim <- rbind(letopis.table.2dim, cbind(year = as.numeric(rep(dimnames(letopis.table)$year[i], dim(letopis.table)[1])), letopis.table[,,i]))}
+
+letopis.table.2dim <- cbind(letopis.table.2dim, rowSums(letopis.table.2dim[,2:21]))
+
+
+
+#убираем те пробы которых на самом деле нету
+for (i in 1:dim(letopis.table)[3]) 
+{ (xxx <- rownames(letopis.table.2dim)[letopis.table.2dim[,1] == as.numeric(dimnames(letopis.table)$year)[i] ]%in%
+     samples.names$sample[samples.names$year == as.numeric(dimnames(letopis.table)$year)[i] ])
+  antixxx<-as.logical(1-xxx)
+  letopis.table.2dim[,22][letopis.table.2dim[,1] == as.numeric(dimnames(letopis.table)$year)[i]][antixxx]<-NA
+}
+#letopis.table.2dim[,22][letopis.table.2dim[,22] == 0] <- NA
+letopis.table.2dim <- na.omit(letopis.table.2dim)
+
+
+write.csv2(letopis.table.2dim, "Estuary_size_str_all.csv")
+
 # ====== >2mm mean size structure ===========================================
 (mean.sizestr.sqmeter2<-mean.sizestr.sqmeter[2:20,])
 mean.sqmeter.df2<-as.data.frame(mean.sizestr.sqmeter2)
@@ -725,3 +749,125 @@ meansize<-tapply(ishodnik$Length.mm, ishodnik$year, mean, na.rm=T)
 plot(x=as.numeric(names(meansize)), y=meansize)
 plot(x=mean.young.old.sqmeter[1,], y=meansize)
 cor.test(mean.young.old.sqmeter[1,], meansize, method="spearman")
+
+# ==== unimodal/bimodal distribution test =====
+#install.packages("diptest")
+library(diptest)
+dip.test(Length.mm[year == 2008])
+
+hist(Length.mm[year == 2008])
+str(ishodnik)
+
+install.packages("mclust")
+library(mclust)
+
+gmm.2008.1 <- Mclust(data = na.omit(Length.mm[year == 2008]), G=1)
+summary(gmm.2008)
+gmm.2008.2 <- Mclust(data = na.omit(Length.mm[year == 2008]), G=2)
+
+logLik(gmm.2008.1)
+
+logLik(gmm.2008.2) - logLik(gmm.2008.1)
+1-pchisq(198.5686, df=3)
+
+
+gmm.1998.1 <- Mclust(data = na.omit(Length.mm[year == 1998]), G=1)
+summary(gmm.2008)
+gmm.1998.2 <- Mclust(data = na.omit(Length.mm[year == 1998]), G=2)
+
+logLik(gmm.1998.1)
+
+logLik(gmm.1998.2) - logLik(gmm.1998.1)
+1-pchisq(198.5686, df=3)
+
+# ====== calculate modes ========
+rmode <- function(x) {
+  x <- sort(x)  
+  u <- unique(x)
+  y <- lapply(u, function(y) length(x[x==y]))
+  u[which( unlist(y) == max(unlist(y)) )]
+} 
+
+
+Mode <- function(x, na.rm = FALSE) {
+  if(na.rm){
+    x = x[!is.na(x)]
+  }
+  
+  ux <- unique(x)
+  return(ux[which.max(tabulate(match(x, ux)))])
+}
+
+
+modeav <- function (x, method = "mode", na.rm = FALSE)
+{
+  x <- unlist(x)
+  if (na.rm)
+    x <- x[!is.na(x)]
+  u <- unique(x)
+  n <- length(u)
+  #get frequencies of each of the unique values in the vector
+  frequencies <- rep(0, n)
+  for (i in seq_len(n)) {
+    if (is.na(u[i])) {
+      frequencies[i] <- sum(is.na(x))
+    }
+    else {
+      frequencies[i] <- sum(x == u[i], na.rm = TRUE)
+    }
+  }
+  #mode if a unimodal vector, else NA
+  if (method == "mode" | is.na(method) | method == "")
+  {return(ifelse(length(frequencies[frequencies==max(frequencies)])>1,NA,u[which.max(frequencies)]))}
+  #number of modes
+  if(method == "nmode" | method == "nmodes")
+  {return(length(frequencies[frequencies==max(frequencies)]))}
+  #list of all modes
+  if (method == "modes" | method == "modevalues")
+  {return(u[which(frequencies==max(frequencies), arr.ind = FALSE, useNames = FALSE)])}  
+  #error trap the method
+  warning("Warning: method not recognised.  Valid methods are 'mode' [default], 'nmodes' and 'modes'")
+  return()
+}
+
+
+mode <- function(x) {
+  unique_val <- unique(x)
+  counts <- vector()
+  for (i in 1:length(unique_val)) {
+    counts[i] <- length(which(x==unique_val[i]))
+  }
+  position <- c(which(counts==max(counts)))
+  if (mean(counts)==max(counts)) 
+    mode_x <- 'Mode does not exist'
+  else 
+    mode_x <- unique_val[position]
+  return(mode_x)
+}
+
+
+(Length.mm[year == 2008])
+hist(Length.mm[year == 2008])
+plot(density(na.omit(Length.mm[year == 2008])))
+
+rmode(Length.mm[year == 2008])
+Mode(Length.mm[year == 2008])
+modeav(Length.mm[year == 2008])
+mode(Length.mm[year == 2008])
+
+
+find_modes<- function(x) {
+  modes <- NULL
+  for ( i in 2:(length(x)-1) ){
+    if ( (x[i] > x[i-1]) & (x[i] > x[i+1]) ) {
+      modes <- c(modes,i)
+    }
+  }
+  if ( length(modes) == 0 ) {
+    modes = 'This is a monotonic distribution'
+  }
+  return(modes)
+}
+
+mymodes_indices <- find_modes((density(na.omit(Length.mm[year == 2008]))$y))
+density(na.omit(Length.mm[year == 2008]))$x[mymodes_indices]

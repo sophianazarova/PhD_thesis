@@ -92,33 +92,6 @@
       \field{pages}{9\bibrangedash 18}
       \range{pages}{10}
     \endentry
-    \entry{Azarov_1963}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=cb5a9d7b5f3ad552fc8402fb5238c274}{Азаров}{А\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Воронеж}%
-      }
-      \list{organization}{1}{%
-        {ББС МГУ, КГЗ}%
-      }
-      \strng{namehash}{cb5a9d7b5f3ad552fc8402fb5238c274}
-      \strng{fullhash}{cb5a9d7b5f3ad552fc8402fb5238c274}
-      \field{sortinit}{А}
-      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
-      \field{labelyear}{1963}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Труды ББС МГУ --- Труды Кандалакшского государственного заповедника}
-      \field{number}{4}
-      \field{title}{Питание рыб на литорали островов Ряжкова и Лодейного в Белом море (Кандалакшский залив)}
-      \field{volume}{2}
-      \field{year}{1963}
-      \field{pages}{35\bibrangedash 53}
-      \range{pages}{19}
-      \keyw{{\it Macoma balthica},питание,рыбы,птицы,Белое море,Кандалакшский заповедник}
-    \endentry
     \entry{Alexeev_1976}{inproceedings}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=f9d3492b1ddf3af1a59e29240888430b}{Алексеев}{А\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
@@ -256,29 +229,6 @@
       \field{type}{магистерская диссертация}
       \field{year}{2004}
     \endentry
-    \entry{Bezrukov_Lisicyn_1960}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=83abcdd707e1775c63ae54a290e90edb}{Безруков}{Б\bibinitperiod}{П.}{П\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=fcee9cc6fcb71390d05872a3f55dba78}{Лисицын}{Л\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {russian}%
-      }
-      \strng{namehash}{8e9403010367e3cc71747525a206e962}
-      \strng{fullhash}{8e9403010367e3cc71747525a206e962}
-      \field{sortinit}{Б}
-      \field{sortinithash}{161dbde41bd990699d9b7ff419202d50}
-      \field{labelyear}{1960}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Тр. ИО АН СССР}
-      \field{title}{Классификация осадков современных морских водоемов}
-      \field{volume}{32}
-      \field{year}{1960}
-      \field{pages}{3\bibrangedash 14}
-      \range{pages}{12}
-    \endentry
     \entry{Bianki_et_al_2003}{article}{}
       \name{author}{3}{}{%
         {{uniquename=0,hash=0b8bb4b68aeaa20d25746c7349b36939}{Бианки}{Б\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
@@ -351,30 +301,6 @@
       \field{pages}{1229\bibrangedash 1241}
       \range{pages}{13}
     \endentry
-    \entry{Voronkov_et_al_1948}{article}{}
-      \name{author}{3}{}{%
-        {{uniquename=0,hash=e49877e11c45abad7fe39bb323302afa}{Воронков}{В\bibinitperiod}{П.}{П\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=83108c263690a076b02d7881357845db}{Уралов}{У\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=1079e286a02203e1ed3fd55f6777c99a}{Черновская}{Ч\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {russian}%
-      }
-      \strng{namehash}{059ea4e08d2a402ca55bf0fa7b682db3}
-      \strng{fullhash}{059ea4e08d2a402ca55bf0fa7b682db3}
-      \field{sortinit}{В}
-      \field{sortinithash}{24d293a58f46db520eaa3906884fdb82}
-      \field{labelyear}{1948}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Труды Мурманского морского биол. ин-та АН СССР}
-      \field{title}{Основные черты гидрохимического режима прибрежной зоны Баренцева моря в районе Центрального Мурмана}
-      \field{volume}{1}
-      \field{year}{1948}
-      \field{pages}{39\bibrangedash 101}
-      \range{pages}{63}
-    \endentry
     \entry{Gagaev_et_al_1994}{inproceedings}{}
       \name{author}{4}{}{%
         {{uniquename=0,hash=46f776c9a1513ec7322bb3e8f53843b5}{Гагаев}{Г\bibinitperiod}{С.}{С\bibinitperiod}{}{}{}{}}%
@@ -401,48 +327,6 @@
       \range{pages}{10}
       \verb{file}
       \verb Гагаев_et_al_1994_Экология_и_распределение_мидии_Mytilus_trossulus.PDF:/home/sonya/Library/Articles/Гагаев_et_al_1994_Экология_и_распределение_мидии_Mytilus_trossulus.PDF:application/pdf
-      \endverb
-    \endentry
-    \entry{Genelt_Dalnezeleneckaya_2008}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=61d8517d0aa6a14a3d18cd579238aae4}{Генельт-Яновский}{Г\bibinithyphendelim Я\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=899fd0e3702645eb0af2680be701d0f2}{Назарова}{Н\bibinitperiod}{С.}{С\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{fbde069be5ed149ec71f4e86458b1649}
-      \strng{fullhash}{fbde069be5ed149ec71f4e86458b1649}
-      \field{sortinit}{Г}
-      \field{sortinithash}{6440d7cc23121a3e10a748f597dd1eae}
-      \field{labelyear}{2008}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Материалы X научного семинара "Чтения памяти К.М. Дерюгина"}
-      \field{title}{Сообщества илисто-песчаной литорали губы Дальне-Зеленецкая (Восточный Мурман) в 2002-2007 гг}
-      \field{year}{2008}
-      \field{pages}{16\bibrangedash 28}
-      \range{pages}{13}
-    \endentry
-    \entry{Gerasimova_Maximovich_2009}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=1,hash=587711cb9188ec43df6bf6ae5ec58309}{Герасимова}{Г\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{b8364fa6e2e7e423d26bb7ac35588a46}
-      \strng{fullhash}{b8364fa6e2e7e423d26bb7ac35588a46}
-      \field{sortinit}{Г}
-      \field{sortinithash}{6440d7cc23121a3e10a748f597dd1eae}
-      \field{labelyear}{2009}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Вестник Санкт-Петербургского университета}
-      \field{shortjournal}{Вестник Санкт-Петербургского Университета}
-      \field{title}{О закономерностях орагнизации поселений массовых видов двустворчатых моллюсков Белого моря}
-      \field{year}{2009}
-      \field{pages}{82\bibrangedash 97}
-      \range{pages}{16}
-      \verb{file}
-      \verb Герасимова_Максимович_2009_О_ЗАКОНОМЕРНОСТЯХ_ОРГАНИЗАЦИИ_ПОСЕЛЕНИЙ_МАССОВЫХ.pdf:/home/sonya/Library/Articles/Герасимова_Максимович_2009_О_ЗАКОНОМЕРНОСТЯХ_ОРГАНИЗАЦИИ_ПОСЕЛЕНИЙ_МАССОВЫХ.pdf:application/pdf
       \endverb
     \endentry
     \entry{Gerasimova_et_al_2010}{inproceedings}{}
@@ -573,53 +457,6 @@
       \field{pages}{17\bibrangedash 107}
       \range{pages}{91}
     \endentry
-    \entry{Guryanova_et_al_1930}{article}{}
-      \name{author}{3}{}{%
-        {{uniquename=0,hash=a4aa58ee7b469460d021c8295a1956a5}{Гурьянова}{Г\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=b463103f7a3f54a87fbd0fb60d6e859a}{Закс}{З\bibinitperiod}{И.}{И\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=8b1ceeb21f3dd668671150e94bda8171}{Ушаков}{У\bibinitperiod}{П.}{П\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {russian}%
-      }
-      \strng{namehash}{c58dd463547f6c32af7362e18f00be48}
-      \strng{fullhash}{c58dd463547f6c32af7362e18f00be48}
-      \field{sortinit}{Г}
-      \field{sortinithash}{6440d7cc23121a3e10a748f597dd1eae}
-      \field{labelyear}{1930}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Исслед. морей СССР}
-      \field{title}{Литораль Западного Мурмана}
-      \field{volume}{11}
-      \field{year}{1930}
-      \field{pages}{47\bibrangedash 162}
-      \range{pages}{116}
-    \endentry
-    \entry{Guryanova_Ushakov_1929}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=a4aa58ee7b469460d021c8295a1956a5}{Гурьянова}{Г\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=8b1ceeb21f3dd668671150e94bda8171}{Ушаков}{У\bibinitperiod}{П.}{П\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {russian}%
-      }
-      \strng{namehash}{6c329dde84855f03fe0b65efec338750}
-      \strng{fullhash}{6c329dde84855f03fe0b65efec338750}
-      \field{sortinit}{Г}
-      \field{sortinithash}{6440d7cc23121a3e10a748f597dd1eae}
-      \field{labelyear}{1929}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Исслед. морей СССР}
-      \field{title}{Литораль Восточного Мурмана}
-      \field{volume}{10}
-      \field{year}{1929}
-      \field{pages}{5\bibrangedash 40}
-      \range{pages}{36}
-    \endentry
     \entry{Gusev_2010}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=2a49e6fec4fb0003b02d9d1857669b6c}{Гусев}{Г\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
@@ -675,28 +512,6 @@
       \verb http://lib.znate.ru/pars_docs/refs/280/279656/279656.pdf#page=183
       \endverb
     \endentry
-    \entry{Derugin_1915}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=0cd6c864ae16857f780154af6f019389}{Дерюгин}{Д\bibinitperiod}{К.}{К\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {russian}%
-      }
-      \strng{namehash}{0cd6c864ae16857f780154af6f019389}
-      \strng{fullhash}{0cd6c864ae16857f780154af6f019389}
-      \field{sortinit}{Д}
-      \field{sortinithash}{4117104fe8917c68332940e25f7656f8}
-      \field{labelyear}{1915}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Зап. Имп. Акад. наук. Сер}
-      \field{title}{Фауна Кольского залива и условия ее существования}
-      \field{volume}{8}
-      \field{year}{1915}
-      \field{pages}{1\bibrangedash 929}
-      \range{pages}{929}
-    \endentry
     \entry{Dobrovolskiy_Zalogin_1982}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=521bcc1c23ee3e9e7d6fc49968ac6438}{Добровольский}{Д\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
@@ -749,47 +564,6 @@
       \field{year}{1984}
       \field{pages}{87\bibrangedash 92}
       \range{pages}{6}
-    \endentry
-    \entry{Zacepin_Filatova_1968}{inbook}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=3b0a75b94e53d8bfea1f83b3e5061f89}{Зацепин}{З\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=a4b370d9c022a9db72aa95ce34ed07af}{Филатова}{Ф\bibinitperiod}{З.}{З\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {М.}%
-      }
-      \strng{namehash}{cc97153b2714ba43eac76345f1d6fc1a}
-      \strng{fullhash}{cc97153b2714ba43eac76345f1d6fc1a}
-      \field{sortinit}{З}
-      \field{sortinithash}{b107e7f7e3996b27bdd85d35c5cebd4b}
-      \field{labelyear}{1968}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{chapter}{Класс двустворчатые (Bivalvia)}
-      \field{title}{Жизнь животных}
-      \field{year}{1968}
-      \field{pages}{95\bibrangedash 155}
-      \range{pages}{61}
-      \keyw{Bivalvia,general zoology}
-    \endentry
-    \entry{Zenkevich_1963}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=816ee552f210949e5875e957a6b8bef3}{Зенкевич}{З\bibinitperiod}{Л.}{Л\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Изд-во Академии наук СССР}%
-      }
-      \strng{namehash}{816ee552f210949e5875e957a6b8bef3}
-      \strng{fullhash}{816ee552f210949e5875e957a6b8bef3}
-      \field{sortinit}{З}
-      \field{sortinithash}{b107e7f7e3996b27bdd85d35c5cebd4b}
-      \field{labelyear}{1963}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Биология морей СССР.}
-      \field{year}{1963}
     \endentry
     \entry{Zolotarev_1989}{book}{}
       \name{author}{1}{}{%
@@ -940,21 +714,6 @@
       \range{pages}{1}
       \keyw{Белое море White sea}
     \endentry
-    \entry{KGZ_letopis}{book}{}
-      \name{editor}{1}{}{%
-        {{hash=d3734c278dbbe8c801707f32ea9a54f2}{Корякин}{К\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Кандалакша}%
-      }
-      \field{sortinit}{Л}
-      \field{sortinithash}{5fa4657b5149f4e3c3b053553f73d3a6}
-      \field{labelyear}{1991--2000}
-      \field{datelabelsource}{}
-      \field{labeltitlesource}{title}
-      \field{title}{Летопись природы Кандалакшского заповедника}
-      \field{year}{1991--2000}
-    \endentry
     \entry{Maximov_2009}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=f11a6cb3537653bf065cdf95b40a3c0c}{Максимов}{М\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
@@ -984,80 +743,6 @@
       \verb{url}
       \verb http://www.zin.ru/Labs/freshwater/PDF/Maximov/Maximov_09_2.pdf
       \endverb
-    \endentry
-    \entry{Maximovich_1985}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Л}%
-      }
-      \strng{namehash}{85d5b4710756c2d14d9ea9dec8fd7368}
-      \strng{fullhash}{85d5b4710756c2d14d9ea9dec8fd7368}
-      \field{sortinit}{М}
-      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
-      \field{labelyear}{1985}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Биоценозы губы Чупа Белого моря и их сезонная динамика. Исследования фауны морей}
-      \field{title}{Особенности экологии и репродуктивный цикл {\it Macoma balthica} L. в губе Чупа}
-      \field{volume}{31 (39)}
-      \field{year}{1985}
-      \field{pages}{230\bibrangedash 243}
-      \range{pages}{14}
-    \endentry
-    \entry{Maximovich_1989}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{85d5b4710756c2d14d9ea9dec8fd7368}
-      \strng{fullhash}{85d5b4710756c2d14d9ea9dec8fd7368}
-      \field{sortinit}{М}
-      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
-      \field{labelyear}{1989}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Вестник Ленинградского университета}
-      \field{title}{Статистическое сравнение кривых роста}
-      \field{volume}{4}
-      \field{year}{1989}
-      \field{pages}{18\bibrangedash 25}
-      \range{pages}{8}
-    \endentry
-    \entry{Maximovich_Gerasimova_2004}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=587711cb9188ec43df6bf6ae5ec58309}{Герасимова}{Г\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=f780605fde9176d175a25da80adad49b}{Раилкин}{Р\bibinitperiod}{А.И.}{А\bibinitperiod}{}{}{}{}}%
-      }
-      \list{organization}{1}{%
-        {СПбГУ}%
-      }
-      \list{publisher}{1}{%
-        {Издательство СПбГУ}%
-      }
-      \strng{namehash}{60ea5c2e6435ffbc166e0ae2403c20d1}
-      \strng{fullhash}{60ea5c2e6435ffbc166e0ae2403c20d1}
-      \field{sortinit}{М}
-      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
-      \field{labelyear}{2004}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Морские и пресноводные биосистемы севера Карелии. Труды БиНИИ}
-      \field{title}{Долговременный мониторинг литоральных поселений двустворчатых моллюсков (Mollsca, Bivalvia) в губе Чупа (Белое море)}
-      \field{volume}{51}
-      \field{year}{2004}
-      \field{pages}{95\bibrangedash 120}
-      \range{pages}{26}
-      \verb{file}
-      \verb :/home/sonya/Library/Hydrobiology/Marine/Max/2004 Max_Gerasimova.pdf:PDF
-      \endverb
-      \keyw{{\it Macoma balthica},{\it Mya arenaria},Mytilus edulis,Чупа,Белое море,динамика поселений}
     \endentry
     \entry{Maximovich_et_al_1991}{article}{}
       \name{author}{3}{}{%
@@ -1132,32 +817,6 @@
       \range{pages}{8}
       \keyw{Macoma,Bivalvia,{\it Macoma balthica},,Белое море,,продукция production}
     \endentry
-    \entry{Maximovich_Kunina_1982}{inbook}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=1a7a2c6a3a745146c48c0b6235b85f08}{Кунина}{К\bibinitperiod}{Т.}{Т\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Владивосток}%
-      }
-      \list{publisher}{1}{%
-        {Владивосток}%
-      }
-      \strng{namehash}{4bf837476eaf313af589fa0b07254a12}
-      \strng{fullhash}{4bf837476eaf313af589fa0b07254a12}
-      \field{sortinit}{М}
-      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
-      \field{labelyear}{1982}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{chapter}{Структура поселений и рост {\it Macoma balthica} на литорали губы Чупа (Белое море).}
-      \field{number}{1}
-      \field{title}{Биология шельфовых зон мирового океана, тезисы докладов}
-      \field{year}{1982}
-      \field{pages}{148\bibrangedash 150}
-      \range{pages}{3}
-    \endentry
     \entry{Maximovich_Lysenko_1986}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
@@ -1208,26 +867,6 @@
       \verb{file}
       \verb Максимович_Шилин_2012_ПРОСТРАНСТВЕННО-ВРЕМЕННОЕ_РАСПРЕДЕЛЕНИЕ.pdf:/home/sonya/Library/Articles/Максимович_Шилин_2012_ПРОСТРАНСТВЕННО-ВРЕМЕННОЕ_РАСПРЕДЕЛЕНИЕ.pdf:application/pdf
       \endverb
-    \endentry
-    \entry{Matveeva_et_al_1955}{article}{}
-      \name{author}{3}{}{%
-        {{uniquename=0,hash=9daf0714c37a3e2a7324dc7e74e0474c}{Матвеева}{М\bibinitperiod}{Т.}{Т\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=4d9d40bef44359babe6db0ae92ca3bd8}{Никитина}{Н\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=1079e286a02203e1ed3fd55f6777c99a}{Черновская}{Ч\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{39d168d873d75ff290aa6a782447bd62}
-      \strng{fullhash}{39d168d873d75ff290aa6a782447bd62}
-      \field{sortinit}{М}
-      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
-      \field{labelyear}{1955}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Доклады АН СССР}
-      \field{number}{2}
-      \field{title}{Причины и следствия неравномерности распределения червей \textit{Fabricia sabella} Ehr. и \textit{Arenicola marina} L. на литорали}
-      \field{volume}{105}
-      \field{year}{1955}
     \endentry
     \entry{Nazarova_2003}{article}{}
       \name{author}{1}{}{%
@@ -1327,63 +966,6 @@
       \verb http://ir.nmu.org.ua/handle/123456789/71194
       \endverb
     \endentry
-    \entry{Naumov_Fedyakov_1993}{book}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=9dfc3cc0e6b9a3fbc6cf28cc54f33e24}{Наумов}{Н\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=e6b6a4d6ec7462dda5f849245a8b9c0b}{Федяков}{Ф\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Изд-во Санкт-Петербургского гор. дворца творчества юных}%
-      }
-      \strng{namehash}{3ffc2a4091e922ce6236dbbfca2b7b15}
-      \strng{fullhash}{3ffc2a4091e922ce6236dbbfca2b7b15}
-      \field{sortinit}{Н}
-      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
-      \field{labelyear}{1993}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Вечно живое Белое море}
-      \field{year}{1993}
-    \endentry
-    \entry{Nikolaeva_1997}{report}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=648b164efa93a4009a9b19ef4ab2cbf2}{Николаева}{Н\bibinitperiod}{Д.}{Д\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {Лаборатория экологии морского бентоса (гидробиологии) СПбГДТЮ}%
-      }
-      \strng{namehash}{648b164efa93a4009a9b19ef4ab2cbf2}
-      \strng{fullhash}{648b164efa93a4009a9b19ef4ab2cbf2}
-      \field{sortinit}{Н}
-      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
-      \field{labelyear}{1997}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Некоторые закономерности микрораспределения двустворчатого моллюска {\it Macoma balthica} (L.) на литорали Белого моря}
-      \field{type}{techreport}
-      \field{year}{1997}
-    \endentry
-    \entry{Nikolaeva_1998}{report}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=648b164efa93a4009a9b19ef4ab2cbf2}{Николаева}{Н\bibinitperiod}{Д.}{Д\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {Лаборатория экологии морского бентоса (гидробиологии) СПбГДТЮ}%
-      }
-      \strng{namehash}{648b164efa93a4009a9b19ef4ab2cbf2}
-      \strng{fullhash}{648b164efa93a4009a9b19ef4ab2cbf2}
-      \field{sortinit}{Н}
-      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
-      \field{labelyear}{1998}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Структура поселения двустворчатого моллюска {\it Macoma balthica} (L.) на литорали и в сублиторали Илистой губы острова Горелого (Лувеньгский архипелаг, Кандалакшский залив, Белое море).}
-      \field{type}{techreport}
-      \field{year}{1998}
-    \endentry
     \entry{Pavlova_1976}{inproceedings}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=51885701b89b60bc6b310ebc9080984d}{Павлова}{П\bibinitperiod}{Л.}{Л\bibinitperiod}{}{}{}{}}%
@@ -1405,93 +987,6 @@
       \field{year}{1976}
       \field{pages}{30\bibrangedash 39}
       \range{pages}{10}
-    \endentry
-    \entry{Percov_1963}{inproceedings}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=a8ace39aae29e536e1b1d6281d3f644f}{Перцов}{П\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Воронеж}%
-      }
-      \list{organization}{1}{%
-        {ББС МГУ, КГЗ}%
-      }
-      \strng{namehash}{a8ace39aae29e536e1b1d6281d3f644f}
-      \strng{fullhash}{a8ace39aae29e536e1b1d6281d3f644f}
-      \field{sortinit}{П}
-      \field{sortinithash}{d0b45b192ada7202bf2b351262d647dc}
-      \field{labelyear}{1963}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Труды ББС МГУ – Труды Кандалакшского государственного заповедника}
-      \field{number}{4}
-      \field{title}{Некоторые данные о питании птиц, населяющих острова Северного архипелага Кандалакшского заповедника}
-      \field{volume}{2}
-      \field{year}{1963}
-      \field{pages}{29\bibrangedash 34}
-      \range{pages}{6}
-    \endentry
-    \entry{Poloskin_1996}{thesis}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=eff4f79ea5f267cc08555d0097787aec}{Полоскин}{П\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
-      }
-      \list{institution}{1}{%
-        {ЛГУ}%
-      }
-      \strng{namehash}{eff4f79ea5f267cc08555d0097787aec}
-      \strng{fullhash}{eff4f79ea5f267cc08555d0097787aec}
-      \field{sortinit}{П}
-      \field{sortinithash}{d0b45b192ada7202bf2b351262d647dc}
-      \field{labelyear}{1996}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Макробентос литорали Лувеньгских шхер Кандалакшского залива Белого моря и некоторые аспекты его динамики}
-      \field{type}{mathesis}
-      \field{year}{1996}
-    \endentry
-    \entry{Prigorovskiy_1948}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=1cd87ebde37f3abb517fdacef5be4fed}{Пригоровский}{П\bibinitperiod}{Б.}{Б\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{1cd87ebde37f3abb517fdacef5be4fed}
-      \strng{fullhash}{1cd87ebde37f3abb517fdacef5be4fed}
-      \field{sortinit}{П}
-      \field{sortinithash}{d0b45b192ada7202bf2b351262d647dc}
-      \field{labelyear}{1948}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Труды Мурманской биологической станции АН СССР}
-      \field{title}{Фауна мягких грунтов литорали губы Дальне-Зеленецкой}
-      \field{volume}{1}
-      \field{year}{1948}
-      \field{pages}{146\bibrangedash 154}
-      \range{pages}{9}
-    \endentry
-    \entry{Propp_1971}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=4265a72e2642b92b758bdca44b16450d}{Пропп}{П\bibinitperiod}{М.}{М\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Л.}%
-      }
-      \list{publisher}{1}{%
-        {Наука}%
-      }
-      \strng{namehash}{4265a72e2642b92b758bdca44b16450d}
-      \strng{fullhash}{4265a72e2642b92b758bdca44b16450d}
-      \field{sortinit}{П}
-      \field{sortinithash}{d0b45b192ada7202bf2b351262d647dc}
-      \field{labelyear}{1971}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Экология прибрежных донных сообществ Мурманского побережья Баренцева моря. По материалам водолазных гидробиологических работ}
-      \field{year}{1971}
-      \field{pages}{128}
-      \range{pages}{1}
     \endentry
     \entry{pinro}{online}{}
       \list{organization}{1}{%
@@ -1689,29 +1184,6 @@
       \field{pages}{918\bibrangedash 925}
       \range{pages}{8}
     \endentry
-    \entry{Streltsov_et_al_1974}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{uniquename=0,hash=af4b7f8744971895a5e9ad412d66f328}{Стрельцов}{С\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=75421cd11fb4af0838c6a6ae2c514fba}{Агарова}{А\bibinitperiod}{И.}{И\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=ef8afe0ac08b3b10f1d900bb5448b9eb}{Петухов}{П\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
-      }
-      \list{location}{1}{%
-        {Апатиты}%
-      }
-      \strng{namehash}{0807ddc8217bc4dc0a080e6b70a63ac1}
-      \strng{fullhash}{0807ddc8217bc4dc0a080e6b70a63ac1}
-      \field{sortinit}{С}
-      \field{sortinithash}{828a68b06801707da89c2b2df9e27ee9}
-      \field{labelyear}{1974}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Донные отложения и биогеоценозы Баренцева и Белого морей.}
-      \field{title}{Зообентос и оценка органического вещества в морских донных осадках песчаной литорали Дальнего Пляжа (Баренцево море)}
-      \field{year}{1974}
-      \field{pages}{129\bibrangedash 141}
-      \range{pages}{13}
-    \endentry
     \entry{Tabunkov_1974}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=5b8d902f4a13c37ac91db8058a8de869}{Табунков}{Т\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
@@ -1874,6 +1346,848 @@
       \verb{url}
       \verb http://www.sciencedirect.com/science/article/pii/007775799290076Q
       \endverb
+    \endentry
+    \entry{Beukema_Dekker_2014}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=4af3bd59d042920708f6afefefe7376f}{Beukema}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=c71fb1dd985a5ed33f0c6161cc71d6be}{Dekker}{D\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{a088caf037dedc2e5da19d1bd3d4d36f}
+      \strng{fullhash}{a088caf037dedc2e5da19d1bd3d4d36f}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Mar Ecol Prog Ser}
+      \field{shortjournal}{Mar Ecol Prog Ser}
+      \field{shorttitle}{Variability in predator abundance links winter temperatures and bivalve recruitment}
+      \field{title}{Variability in predator abundance links winter temperatures and bivalve recruitment: correlative evidence from long-term data in a tidal flat}
+      \field{urlday}{25}
+      \field{urlmonth}{02}
+      \field{urlyear}{2015}
+      \field{volume}{513}
+      \field{year}{2014}
+      \field{pages}{1\bibrangedash 15}
+      \range{pages}{15}
+      \verb{file}
+      \verb Beukema_Dekker_2014_Variability_in_predator_abundance_links_winter.pdf:/home/sonya/Library/Articles/Beukema_Dekker_2014_Variability_in_predator_abundance_links_winter.pdf:application/pdf
+      \endverb
+      \verb{url}
+      \verb http://www.vliz.be/imisdocs/publications/94/265694.pdf
+      \endverb
+    \endentry
+    \entry{Cloern_Nichols_1978}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=25a7ab8d1664754f82234ab3ceecc8fd}{Cloern}{C\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a387e2a9457b155b23741bcac7f594cc}{Nichols}{N\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8e2c9899fd7cd7ebb022c6444e83d0e}
+      \strng{fullhash}{b8e2c9899fd7cd7ebb022c6444e83d0e}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelyear}{1978}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of the Fisheries Board of Canada}
+      \field{number}{11}
+      \field{shortjournal}{J. Fish. Board Can.}
+      \field{title}{A von Bertalanffy growth model with a seasonally varying coefficient}
+      \field{urlday}{28}
+      \field{urlmonth}{03}
+      \field{urlyear}{2015}
+      \field{volume}{35}
+      \field{year}{1978}
+      \field{pages}{1479\bibrangedash 1482}
+      \range{pages}{4}
+      \verb{file}
+      \verb Cloern_Nichols_1978_A_von_Bertalanffy_growth_model_with_a_seasonally.pdf:/home/sonya/Library/Articles/Cloern_Nichols_1978_A_von_Bertalanffy_growth_model_with_a_seasonally.pdf:application/pdf;Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/MCK4FPS8/f78-231.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.nrcresearchpress.com/doi/abs/10.1139/f78-231
+      \endverb
+    \endentry
+    \entry{Dekker_Beukema_2014}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=c71fb1dd985a5ed33f0c6161cc71d6be}{Dekker}{D\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4af3bd59d042920708f6afefefe7376f}{Beukema}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{e3722a83c4ff065358ecc54cd01da533}
+      \strng{fullhash}{e3722a83c4ff065358ecc54cd01da533}
+      \field{sortinit}{D}
+      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
+      \field{labelyear}{2014}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{journaltitle}{Marine Ecology Progress Series}
+      \field{shortjournal}{Mar. Ecol. Prog. Ser.}
+      \field{shorttitle}{Phenology of abundance of bivalve spat and of their epibenthic predators}
+      \field{title}{Phenology of abundance of bivalve spat and of their epibenthic predators: limited evidence for mismatches after cold winters}
+      \field{urlday}{25}
+      \field{urlmonth}{02}
+      \field{urlyear}{2015}
+      \field{volume}{513}
+      \field{year}{2014}
+      \field{pages}{17\bibrangedash 27}
+      \range{pages}{11}
+      \verb{file}
+      \verb Dekker_Beukema_2014_Phenology_of_abundance_of_bivalve_spat_and_of_their_epibenthic_predators.pdf:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/88AUXNVP/Dekker_Beukema_2014_Phenology_of_abundance_of_bivalve_spat_and_of_their_epibenthic_predators.pdf:application/pdf;Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/EMK2VF7S/p17-27.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.int-res.com/abstracts/meps/v513/p17-27/
+      \endverb
+    \endentry
+    \entry{Eleftheriou_2013}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=1420a2024e27f480808ef4fc8b0b266b}{Eleftheriou}{E\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons}%
+      }
+      \strng{namehash}{1420a2024e27f480808ef4fc8b0b266b}
+      \strng{fullhash}{1420a2024e27f480808ef4fc8b0b266b}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelyear}{2013}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Methods for the study of marine benthos}
+      \field{urlday}{23}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{2013}
+      \verb{file}
+      \verb Eleftheriou_2013_Methods_for_the_study_of_marine_benthos.pdf:/home/sonya/Library/Articles/Eleftheriou_2013_Methods_for_the_study_of_marine_benthos.pdf:application/pdf;Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/SMIBIH9G/books.html:text/html
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books?hl=ru&lr=&id=XyCHNEB2S98C&oi=fnd&pg=PA1966&dq=Methods+for+the+Study+of+Marine+Benthos&ots=oYkztLoTpR&sig=1HesUbOdq882Eb1nHcrW2o8FWZs
+      \endverb
+    \endentry
+    \entry{Hammer_et_al_2001}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=790cce4c59f8af58cb52304346150493}{Hammer}{H\bibinitperiod}{Ö.}{Ö\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=52dbcf753f401b37e04cc47f25fe03ce}{Harper}{H\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b0991e545fd8ccecc08d3d336e72726e}{Ryan}{R\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {english}%
+      }
+      \strng{namehash}{12973652de0429c3ae9cc25398e1af09}
+      \strng{fullhash}{12973652de0429c3ae9cc25398e1af09}
+      \field{sortinit}{H}
+      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
+      \field{labelyear}{2001}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Palaeontologia Electronica}
+      \field{number}{9}
+      \field{title}{PAS: Palaeontological Statistical package for education and data analysis}
+      \field{volume}{4}
+      \field{year}{2001}
+      \field{pages}{9}
+      \range{pages}{1}
+    \endentry
+    \entry{Jensen_et_al_1985}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=1,hash=14e2dc2000ccabcf0ad5f2c38f844803}{Jensen}{J\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1e79c591ed1c3dec881748c12a8ba988}{N{ø}st}{N\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ff36b05524af3389e00e88adbd3604f2}{Stokland}{S\bibinitperiod}{{Ø}.}{Ø\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{fcd45539b568e3451df9e3e078316102}
+      \strng{fullhash}{fcd45539b568e3451df9e3e078316102}
+      \field{sortinit}{J}
+      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
+      \field{labelyear}{1985}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sarsia}
+      \field{number}{1}
+      \field{title}{The invertebrate fauna of a small fjord subject to wide ranges of salinity and oxygen content}
+      \field{volume}{70}
+      \field{year}{1985}
+      \field{pages}{33\bibrangedash 43}
+      \range{pages}{11}
+    \endentry
+    \entry{Lammens_1967}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=609235eefdce72f077fad0262772219c}{Lammens}{L\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{609235eefdce72f077fad0262772219c}
+      \strng{fullhash}{609235eefdce72f077fad0262772219c}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{1967}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Netherlands Journal of Sea Research}
+      \field{number}{3}
+      \field{shortjournal}{Neth. J. Sea Res.}
+      \field{title}{Growth and reproduction in a tidal flat population of {\it Macoma balthica}(L.)}
+      \field{urlday}{25}
+      \field{urlmonth}{04}
+      \field{urlyear}{2015}
+      \field{volume}{3}
+      \field{year}{1967}
+      \field{pages}{315\bibrangedash 382}
+      \range{pages}{68}
+      \verb{file}
+      \verb Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/DG55FRIR/0077757967900105.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/0077757967900105
+      \endverb
+    \endentry
+    \entry{Legendre_Legendre_2012}{mvbook}{}
+      \name{author}{2}{}{%
+        {{uniquename=1,hash=b810a42e1ccf4ed4b0b43222050d4ff1}{Legendre}{L\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=9f253ff035563fd38af4bab5b9319935}{Legendre}{L\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{cf58afe4fbd4cb213d72ba8f861d1be0}
+      \strng{fullhash}{cf58afe4fbd4cb213d72ba8f861d1be0}
+      \field{sortinit}{L}
+      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
+      \field{labelyear}{2012}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Numerical ecology}
+      \field{urlday}{23}
+      \field{urlmonth}{02}
+      \field{urlyear}{2015}
+      \field{volume}{24}
+      \field{year}{2012}
+      \verb{file}
+      \verb Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/D4CVS3WN/books.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://books.google.com/books?hl=ru%5C&lr=%5C&id=6ZBOA-iDviQC%5C&oi=fnd%5C&pg=PP2%5C&dq=Legendre,+P.+and+Legendre,+L.+(2012)+_Numerical+Ecology_.+%5C&ots=ux7m-7V7Ym%5C&sig=pdvzgbUy14W3G5pAv4EijhjPUb8
+      \endverb
+    \endentry
+    \entry{Mardia_et_al_1979}{book}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=42c1b94ada2784615c7b7966aeef0a41}{Mardia}{M\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=950905624f82ecf1a07348f7e7df8646}{Kent}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=cc2d1db1d920396cdd259a851eb4eeca}{Bibby}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Academic press}%
+      }
+      \strng{namehash}{bb983797bcc75d325709fbcbb0a4b751}
+      \strng{fullhash}{bb983797bcc75d325709fbcbb0a4b751}
+      \field{sortinit}{M}
+      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
+      \field{labelyear}{1979}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Multivariate analysis}
+      \field{urlday}{16}
+      \field{urlmonth}{07}
+      \field{urlyear}{2015}
+      \field{year}{1979}
+      \verb{file}
+      \verb Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/9FRC85QS/104910.html:text/html
+      \endverb
+      \verb{url}
+      \verb http://cds.cern.ch/record/104910
+      \endverb
+    \endentry
+    \entry{Pianka_1966}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=927e1eda7bdc9e58ab6020e592e1aa7f}{Pianka}{P\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{927e1eda7bdc9e58ab6020e592e1aa7f}
+      \strng{fullhash}{927e1eda7bdc9e58ab6020e592e1aa7f}
+      \field{sortinit}{P}
+      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
+      \field{labelyear}{1966}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{eprinttype}{jstor}
+      \field{journaltitle}{American Naturalist}
+      \field{shortjournal}{Am. Nat.}
+      \field{shorttitle}{Latitudinal gradients in species diversity}
+      \field{title}{Latitudinal gradients in species diversity: a review of concepts}
+      \field{year}{1966}
+      \field{pages}{33\bibrangedash 46}
+      \range{pages}{14}
+      \verb{eprint}
+      \verb 2459377
+      \endverb
+    \endentry
+    \entry{Vincent_et_al_1989}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=3d23bc3a6f8c3a3278b2305075a9bf13}{Vincent}{V\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=468daee4c6b3b22be411dac9b3d049bf}{Joly}{J\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=39605c1e28bf1a4df6875d3fd124595c}{Brassard}{B\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {french}%
+      }
+      \strng{namehash}{2fcab59a3375b5135a442dbbd37acdda}
+      \strng{fullhash}{2fcab59a3375b5135a442dbbd37acdda}
+      \field{sortinit}{V}
+      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Experimental and descriptive field studies were conducted on an intertidal population of the infaunal bivalve {\it Macoma balthica} (L.) in the St Lawrence estuary in order to investigate the effect of density on growth and recruitment. The study of spatial variations in density and shell growth on the tidal flat was based on a stratified random sampling using three tidal level zones as strata. Mean population density over the whole area was 1302 · m −2; densities were higher and more variable near mean water level. Shell-growth rate and mean shell length of each generation increased with immersion time. There was a strong density effect on shell growth which increased with tidal level. The population was food limited in the upper two-thirds of the flat. The effect of density on shell growth was confirmed by a completely randomized block design experiment in the upper intertidal level. There was also a density effect on total tissue dry weight and on gonad size, but there was no significant effect of adult density on recruitment.}
+      \field{journaltitle}{Journal of Experimental Marine Biology and Ecology}
+      \field{title}{Effets de la densité sur la croissance du bivalve {\it Macoma balthica} (L.) en zone intertidale}
+      \field{volume}{126}
+      \field{year}{1989}
+      \field{pages}{145\bibrangedash 162}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1016/0022-0981(89)90086-5
+      \endverb
+      \verb{file}
+      \verb growth and density data:/home/sonya/Documents/Data/Vincent_et_al_1989:Rich Text Format
+      \endverb
+      \keyw{влияние плотности Dencity effect,{\it Macoma balthica},полевой эксперимент field experiment,гонады gonad,литораль intertidal zone,рост growth}
+    \endentry
+    \entry{Azarov_1963}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=cb5a9d7b5f3ad552fc8402fb5238c274}{Азаров}{А\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Воронеж}%
+      }
+      \list{organization}{1}{%
+        {ББС МГУ, КГЗ}%
+      }
+      \strng{namehash}{cb5a9d7b5f3ad552fc8402fb5238c274}
+      \strng{fullhash}{cb5a9d7b5f3ad552fc8402fb5238c274}
+      \field{sortinit}{А}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelyear}{1963}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Труды ББС МГУ --- Труды Кандалакшского государственного заповедника}
+      \field{number}{4}
+      \field{title}{Питание рыб на литорали островов Ряжкова и Лодейного в Белом море (Кандалакшский залив)}
+      \field{volume}{2}
+      \field{year}{1963}
+      \field{pages}{35\bibrangedash 53}
+      \range{pages}{19}
+      \keyw{{\it Macoma balthica},питание,рыбы,птицы,Белое море,Кандалакшский заповедник}
+    \endentry
+    \entry{Bezrukov_Lisicyn_1960}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=83abcdd707e1775c63ae54a290e90edb}{Безруков}{Б\bibinitperiod}{П.}{П\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=fcee9cc6fcb71390d05872a3f55dba78}{Лисицын}{Л\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \strng{namehash}{8e9403010367e3cc71747525a206e962}
+      \strng{fullhash}{8e9403010367e3cc71747525a206e962}
+      \field{sortinit}{Б}
+      \field{sortinithash}{161dbde41bd990699d9b7ff419202d50}
+      \field{labelyear}{1960}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Тр. ИО АН СССР}
+      \field{title}{Классификация осадков современных морских водоемов}
+      \field{volume}{32}
+      \field{year}{1960}
+      \field{pages}{3\bibrangedash 14}
+      \range{pages}{12}
+    \endentry
+    \entry{Voronkov_et_al_1948}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=e49877e11c45abad7fe39bb323302afa}{Воронков}{В\bibinitperiod}{П.}{П\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=83108c263690a076b02d7881357845db}{Уралов}{У\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1079e286a02203e1ed3fd55f6777c99a}{Черновская}{Ч\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \strng{namehash}{059ea4e08d2a402ca55bf0fa7b682db3}
+      \strng{fullhash}{059ea4e08d2a402ca55bf0fa7b682db3}
+      \field{sortinit}{В}
+      \field{sortinithash}{24d293a58f46db520eaa3906884fdb82}
+      \field{labelyear}{1948}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Труды Мурманского морского биол. ин-та АН СССР}
+      \field{title}{Основные черты гидрохимического режима прибрежной зоны Баренцева моря в районе Центрального Мурмана}
+      \field{volume}{1}
+      \field{year}{1948}
+      \field{pages}{39\bibrangedash 101}
+      \range{pages}{63}
+    \endentry
+    \entry{Genelt_Dalnezeleneckaya_2008}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=61d8517d0aa6a14a3d18cd579238aae4}{Генельт-Яновский}{Г\bibinithyphendelim Я\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=899fd0e3702645eb0af2680be701d0f2}{Назарова}{Н\bibinitperiod}{С.}{С\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{fbde069be5ed149ec71f4e86458b1649}
+      \strng{fullhash}{fbde069be5ed149ec71f4e86458b1649}
+      \field{sortinit}{Г}
+      \field{sortinithash}{6440d7cc23121a3e10a748f597dd1eae}
+      \field{labelyear}{2008}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Материалы X научного семинара "Чтения памяти К.М. Дерюгина"}
+      \field{title}{Сообщества илисто-песчаной литорали губы Дальне-Зеленецкая (Восточный Мурман) в 2002-2007 гг}
+      \field{year}{2008}
+      \field{pages}{16\bibrangedash 28}
+      \range{pages}{13}
+    \endentry
+    \entry{Gerasimova_Maximovich_2009}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=1,hash=587711cb9188ec43df6bf6ae5ec58309}{Герасимова}{Г\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{b8364fa6e2e7e423d26bb7ac35588a46}
+      \strng{fullhash}{b8364fa6e2e7e423d26bb7ac35588a46}
+      \field{sortinit}{Г}
+      \field{sortinithash}{6440d7cc23121a3e10a748f597dd1eae}
+      \field{labelyear}{2009}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Вестник Санкт-Петербургского университета}
+      \field{shortjournal}{Вестник Санкт-Петербургского Университета}
+      \field{title}{О закономерностях орагнизации поселений массовых видов двустворчатых моллюсков Белого моря}
+      \field{year}{2009}
+      \field{pages}{82\bibrangedash 97}
+      \range{pages}{16}
+      \verb{file}
+      \verb Герасимова_Максимович_2009_О_ЗАКОНОМЕРНОСТЯХ_ОРГАНИЗАЦИИ_ПОСЕЛЕНИЙ_МАССОВЫХ.pdf:/home/sonya/Library/Articles/Герасимова_Максимович_2009_О_ЗАКОНОМЕРНОСТЯХ_ОРГАНИЗАЦИИ_ПОСЕЛЕНИЙ_МАССОВЫХ.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{Guryanova_et_al_1930}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=a4aa58ee7b469460d021c8295a1956a5}{Гурьянова}{Г\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=b463103f7a3f54a87fbd0fb60d6e859a}{Закс}{З\bibinitperiod}{И.}{И\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8b1ceeb21f3dd668671150e94bda8171}{Ушаков}{У\bibinitperiod}{П.}{П\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \strng{namehash}{c58dd463547f6c32af7362e18f00be48}
+      \strng{fullhash}{c58dd463547f6c32af7362e18f00be48}
+      \field{sortinit}{Г}
+      \field{sortinithash}{6440d7cc23121a3e10a748f597dd1eae}
+      \field{labelyear}{1930}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Исслед. морей СССР}
+      \field{title}{Литораль Западного Мурмана}
+      \field{volume}{11}
+      \field{year}{1930}
+      \field{pages}{47\bibrangedash 162}
+      \range{pages}{116}
+    \endentry
+    \entry{Guryanova_Ushakov_1929}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=a4aa58ee7b469460d021c8295a1956a5}{Гурьянова}{Г\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=8b1ceeb21f3dd668671150e94bda8171}{Ушаков}{У\bibinitperiod}{П.}{П\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \strng{namehash}{6c329dde84855f03fe0b65efec338750}
+      \strng{fullhash}{6c329dde84855f03fe0b65efec338750}
+      \field{sortinit}{Г}
+      \field{sortinithash}{6440d7cc23121a3e10a748f597dd1eae}
+      \field{labelyear}{1929}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Исслед. морей СССР}
+      \field{title}{Литораль Восточного Мурмана}
+      \field{volume}{10}
+      \field{year}{1929}
+      \field{pages}{5\bibrangedash 40}
+      \range{pages}{36}
+    \endentry
+    \entry{Derugin_1915}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=0cd6c864ae16857f780154af6f019389}{Дерюгин}{Д\bibinitperiod}{К.}{К\bibinitperiod}{}{}{}{}}%
+      }
+      \list{language}{1}{%
+        {russian}%
+      }
+      \strng{namehash}{0cd6c864ae16857f780154af6f019389}
+      \strng{fullhash}{0cd6c864ae16857f780154af6f019389}
+      \field{sortinit}{Д}
+      \field{sortinithash}{4117104fe8917c68332940e25f7656f8}
+      \field{labelyear}{1915}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Зап. Имп. Акад. наук. Сер}
+      \field{title}{Фауна Кольского залива и условия ее существования}
+      \field{volume}{8}
+      \field{year}{1915}
+      \field{pages}{1\bibrangedash 929}
+      \range{pages}{929}
+    \endentry
+    \entry{Zacepin_Filatova_1968}{inbook}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=3b0a75b94e53d8bfea1f83b3e5061f89}{Зацепин}{З\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=a4b370d9c022a9db72aa95ce34ed07af}{Филатова}{Ф\bibinitperiod}{З.}{З\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {М.}%
+      }
+      \strng{namehash}{cc97153b2714ba43eac76345f1d6fc1a}
+      \strng{fullhash}{cc97153b2714ba43eac76345f1d6fc1a}
+      \field{sortinit}{З}
+      \field{sortinithash}{b107e7f7e3996b27bdd85d35c5cebd4b}
+      \field{labelyear}{1968}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Класс двустворчатые (Bivalvia)}
+      \field{title}{Жизнь животных}
+      \field{year}{1968}
+      \field{pages}{95\bibrangedash 155}
+      \range{pages}{61}
+      \keyw{Bivalvia,general zoology}
+    \endentry
+    \entry{Zenkevich_1963}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=816ee552f210949e5875e957a6b8bef3}{Зенкевич}{З\bibinitperiod}{Л.}{Л\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Изд-во Академии наук СССР}%
+      }
+      \strng{namehash}{816ee552f210949e5875e957a6b8bef3}
+      \strng{fullhash}{816ee552f210949e5875e957a6b8bef3}
+      \field{sortinit}{З}
+      \field{sortinithash}{b107e7f7e3996b27bdd85d35c5cebd4b}
+      \field{labelyear}{1963}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Биология морей СССР.}
+      \field{year}{1963}
+    \endentry
+    \entry{KGZ_letopis}{book}{}
+      \name{editor}{1}{}{%
+        {{hash=d3734c278dbbe8c801707f32ea9a54f2}{Корякин}{К\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Кандалакша}%
+      }
+      \field{sortinit}{Л}
+      \field{sortinithash}{5fa4657b5149f4e3c3b053553f73d3a6}
+      \field{labelyear}{1991--2000}
+      \field{datelabelsource}{}
+      \field{labeltitlesource}{title}
+      \field{title}{Летопись природы Кандалакшского заповедника}
+      \field{year}{1991--2000}
+    \endentry
+    \entry{Maximovich_1985}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Л}%
+      }
+      \strng{namehash}{85d5b4710756c2d14d9ea9dec8fd7368}
+      \strng{fullhash}{85d5b4710756c2d14d9ea9dec8fd7368}
+      \field{sortinit}{М}
+      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
+      \field{labelyear}{1985}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Биоценозы губы Чупа Белого моря и их сезонная динамика. Исследования фауны морей}
+      \field{title}{Особенности экологии и репродуктивный цикл {\it Macoma balthica} L. в губе Чупа}
+      \field{volume}{31 (39)}
+      \field{year}{1985}
+      \field{pages}{230\bibrangedash 243}
+      \range{pages}{14}
+    \endentry
+    \entry{Maximovich_1989}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{85d5b4710756c2d14d9ea9dec8fd7368}
+      \strng{fullhash}{85d5b4710756c2d14d9ea9dec8fd7368}
+      \field{sortinit}{М}
+      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
+      \field{labelyear}{1989}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Вестник Ленинградского университета}
+      \field{title}{Статистическое сравнение кривых роста}
+      \field{volume}{4}
+      \field{year}{1989}
+      \field{pages}{18\bibrangedash 25}
+      \range{pages}{8}
+    \endentry
+    \entry{Maximovich_Gerasimova_2004}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=1,hash=587711cb9188ec43df6bf6ae5ec58309}{Герасимова}{Г\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+      }
+      \name{editor}{1}{}{%
+        {{hash=f780605fde9176d175a25da80adad49b}{Раилкин}{Р\bibinitperiod}{А.И.}{А\bibinitperiod}{}{}{}{}}%
+      }
+      \list{organization}{1}{%
+        {СПбГУ}%
+      }
+      \list{publisher}{1}{%
+        {Издательство СПбГУ}%
+      }
+      \strng{namehash}{60ea5c2e6435ffbc166e0ae2403c20d1}
+      \strng{fullhash}{60ea5c2e6435ffbc166e0ae2403c20d1}
+      \field{sortinit}{М}
+      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
+      \field{labelyear}{2004}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Морские и пресноводные биосистемы севера Карелии. Труды БиНИИ}
+      \field{title}{Долговременный мониторинг литоральных поселений двустворчатых моллюсков (Mollsca, Bivalvia) в губе Чупа (Белое море)}
+      \field{volume}{51}
+      \field{year}{2004}
+      \field{pages}{95\bibrangedash 120}
+      \range{pages}{26}
+      \verb{file}
+      \verb :/home/sonya/Library/Hydrobiology/Marine/Max/2004 Max_Gerasimova.pdf:PDF
+      \endverb
+      \keyw{{\it Macoma balthica},{\it Mya arenaria},Mytilus edulis,Чупа,Белое море,динамика поселений}
+    \endentry
+    \entry{Maximovich_Kunina_1982}{inbook}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=85d5b4710756c2d14d9ea9dec8fd7368}{Максимович}{М\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1a7a2c6a3a745146c48c0b6235b85f08}{Кунина}{К\bibinitperiod}{Т.}{Т\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Владивосток}%
+      }
+      \list{publisher}{1}{%
+        {Владивосток}%
+      }
+      \strng{namehash}{4bf837476eaf313af589fa0b07254a12}
+      \strng{fullhash}{4bf837476eaf313af589fa0b07254a12}
+      \field{sortinit}{М}
+      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
+      \field{labelyear}{1982}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{chapter}{Структура поселений и рост {\it Macoma balthica} на литорали губы Чупа (Белое море).}
+      \field{number}{1}
+      \field{title}{Биология шельфовых зон мирового океана, тезисы докладов}
+      \field{year}{1982}
+      \field{pages}{148\bibrangedash 150}
+      \range{pages}{3}
+    \endentry
+    \entry{Matveeva_et_al_1955}{article}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=9daf0714c37a3e2a7324dc7e74e0474c}{Матвеева}{М\bibinitperiod}{Т.}{Т\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=4d9d40bef44359babe6db0ae92ca3bd8}{Никитина}{Н\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=1079e286a02203e1ed3fd55f6777c99a}{Черновская}{Ч\bibinitperiod}{Е.}{Е\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{39d168d873d75ff290aa6a782447bd62}
+      \strng{fullhash}{39d168d873d75ff290aa6a782447bd62}
+      \field{sortinit}{М}
+      \field{sortinithash}{2af454f8f30d4c5612d7d621259cc831}
+      \field{labelyear}{1955}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Доклады АН СССР}
+      \field{number}{2}
+      \field{title}{Причины и следствия неравномерности распределения червей \textit{Fabricia sabella} Ehr. и \textit{Arenicola marina} L. на литорали}
+      \field{volume}{105}
+      \field{year}{1955}
+    \endentry
+    \entry{Naumov_Fedyakov_1993}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=9dfc3cc0e6b9a3fbc6cf28cc54f33e24}{Наумов}{Н\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=e6b6a4d6ec7462dda5f849245a8b9c0b}{Федяков}{Ф\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{1}{%
+        {Изд-во Санкт-Петербургского гор. дворца творчества юных}%
+      }
+      \strng{namehash}{3ffc2a4091e922ce6236dbbfca2b7b15}
+      \strng{fullhash}{3ffc2a4091e922ce6236dbbfca2b7b15}
+      \field{sortinit}{Н}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelyear}{1993}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Вечно живое Белое море}
+      \field{year}{1993}
+    \endentry
+    \entry{Nikolaeva_1997}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=648b164efa93a4009a9b19ef4ab2cbf2}{Николаева}{Н\bibinitperiod}{Д.}{Д\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Лаборатория экологии морского бентоса (гидробиологии) СПбГДТЮ}%
+      }
+      \strng{namehash}{648b164efa93a4009a9b19ef4ab2cbf2}
+      \strng{fullhash}{648b164efa93a4009a9b19ef4ab2cbf2}
+      \field{sortinit}{Н}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelyear}{1997}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Некоторые закономерности микрораспределения двустворчатого моллюска {\it Macoma balthica} (L.) на литорали Белого моря}
+      \field{type}{techreport}
+      \field{year}{1997}
+    \endentry
+    \entry{Nikolaeva_1998}{report}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=648b164efa93a4009a9b19ef4ab2cbf2}{Николаева}{Н\bibinitperiod}{Д.}{Д\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Лаборатория экологии морского бентоса (гидробиологии) СПбГДТЮ}%
+      }
+      \strng{namehash}{648b164efa93a4009a9b19ef4ab2cbf2}
+      \strng{fullhash}{648b164efa93a4009a9b19ef4ab2cbf2}
+      \field{sortinit}{Н}
+      \field{sortinithash}{c15bc8eb6936bc6b3c8baa9e8575af53}
+      \field{labelyear}{1998}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Структура поселения двустворчатого моллюска {\it Macoma balthica} (L.) на литорали и в сублиторали Илистой губы острова Горелого (Лувеньгский архипелаг, Кандалакшский залив, Белое море).}
+      \field{type}{techreport}
+      \field{year}{1998}
+    \endentry
+    \entry{Percov_1963}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=a8ace39aae29e536e1b1d6281d3f644f}{Перцов}{П\bibinitperiod}{Н.}{Н\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Воронеж}%
+      }
+      \list{organization}{1}{%
+        {ББС МГУ, КГЗ}%
+      }
+      \strng{namehash}{a8ace39aae29e536e1b1d6281d3f644f}
+      \strng{fullhash}{a8ace39aae29e536e1b1d6281d3f644f}
+      \field{sortinit}{П}
+      \field{sortinithash}{d0b45b192ada7202bf2b351262d647dc}
+      \field{labelyear}{1963}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Труды ББС МГУ – Труды Кандалакшского государственного заповедника}
+      \field{number}{4}
+      \field{title}{Некоторые данные о питании птиц, населяющих острова Северного архипелага Кандалакшского заповедника}
+      \field{volume}{2}
+      \field{year}{1963}
+      \field{pages}{29\bibrangedash 34}
+      \range{pages}{6}
+    \endentry
+    \entry{Poloskin_1996}{thesis}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=eff4f79ea5f267cc08555d0097787aec}{Полоскин}{П\bibinitperiod}{А.}{А\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {ЛГУ}%
+      }
+      \strng{namehash}{eff4f79ea5f267cc08555d0097787aec}
+      \strng{fullhash}{eff4f79ea5f267cc08555d0097787aec}
+      \field{sortinit}{П}
+      \field{sortinithash}{d0b45b192ada7202bf2b351262d647dc}
+      \field{labelyear}{1996}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Макробентос литорали Лувеньгских шхер Кандалакшского залива Белого моря и некоторые аспекты его динамики}
+      \field{type}{mathesis}
+      \field{year}{1996}
+    \endentry
+    \entry{Prigorovskiy_1948}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=1cd87ebde37f3abb517fdacef5be4fed}{Пригоровский}{П\bibinitperiod}{Б.}{Б\bibinitperiod}{}{}{}{}}%
+      }
+      \strng{namehash}{1cd87ebde37f3abb517fdacef5be4fed}
+      \strng{fullhash}{1cd87ebde37f3abb517fdacef5be4fed}
+      \field{sortinit}{П}
+      \field{sortinithash}{d0b45b192ada7202bf2b351262d647dc}
+      \field{labelyear}{1948}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Труды Мурманской биологической станции АН СССР}
+      \field{title}{Фауна мягких грунтов литорали губы Дальне-Зеленецкой}
+      \field{volume}{1}
+      \field{year}{1948}
+      \field{pages}{146\bibrangedash 154}
+      \range{pages}{9}
+    \endentry
+    \entry{Propp_1971}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,hash=4265a72e2642b92b758bdca44b16450d}{Пропп}{П\bibinitperiod}{М.}{М\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Л.}%
+      }
+      \list{publisher}{1}{%
+        {Наука}%
+      }
+      \strng{namehash}{4265a72e2642b92b758bdca44b16450d}
+      \strng{fullhash}{4265a72e2642b92b758bdca44b16450d}
+      \field{sortinit}{П}
+      \field{sortinithash}{d0b45b192ada7202bf2b351262d647dc}
+      \field{labelyear}{1971}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Экология прибрежных донных сообществ Мурманского побережья Баренцева моря. По материалам водолазных гидробиологических работ}
+      \field{year}{1971}
+      \field{pages}{128}
+      \range{pages}{1}
+    \endentry
+    \entry{Streltsov_et_al_1974}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{uniquename=0,hash=af4b7f8744971895a5e9ad412d66f328}{Стрельцов}{С\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=75421cd11fb4af0838c6a6ae2c514fba}{Агарова}{А\bibinitperiod}{И.}{И\bibinitperiod}{}{}{}{}}%
+        {{uniquename=0,hash=ef8afe0ac08b3b10f1d900bb5448b9eb}{Петухов}{П\bibinitperiod}{В.}{В\bibinitperiod}{}{}{}{}}%
+      }
+      \list{location}{1}{%
+        {Апатиты}%
+      }
+      \strng{namehash}{0807ddc8217bc4dc0a080e6b70a63ac1}
+      \strng{fullhash}{0807ddc8217bc4dc0a080e6b70a63ac1}
+      \field{sortinit}{С}
+      \field{sortinithash}{828a68b06801707da89c2b2df9e27ee9}
+      \field{labelyear}{1974}
+      \field{datelabelsource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Донные отложения и биогеоценозы Баренцева и Белого морей.}
+      \field{title}{Зообентос и оценка органического вещества в морских донных осадках песчаной литорали Дальнего Пляжа (Баренцево море)}
+      \field{year}{1974}
+      \field{pages}{129\bibrangedash 141}
+      \range{pages}{13}
     \endentry
     \entry{Aschan_1988}{inproceedings}{}
       \name{author}{1}{}{%
@@ -2197,37 +2511,6 @@
       \field{pages}{117\bibrangedash 122}
       \range{pages}{6}
     \endentry
-    \entry{Beukema_Dekker_2014}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=4af3bd59d042920708f6afefefe7376f}{Beukema}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=c71fb1dd985a5ed33f0c6161cc71d6be}{Dekker}{D\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{a088caf037dedc2e5da19d1bd3d4d36f}
-      \strng{fullhash}{a088caf037dedc2e5da19d1bd3d4d36f}
-      \field{sortinit}{B}
-      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
-      \field{labelyear}{2014}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{journaltitle}{Mar Ecol Prog Ser}
-      \field{shortjournal}{Mar Ecol Prog Ser}
-      \field{shorttitle}{Variability in predator abundance links winter temperatures and bivalve recruitment}
-      \field{title}{Variability in predator abundance links winter temperatures and bivalve recruitment: correlative evidence from long-term data in a tidal flat}
-      \field{urlday}{25}
-      \field{urlmonth}{02}
-      \field{urlyear}{2015}
-      \field{volume}{513}
-      \field{year}{2014}
-      \field{pages}{1\bibrangedash 15}
-      \range{pages}{15}
-      \verb{file}
-      \verb Beukema_Dekker_2014_Variability_in_predator_abundance_links_winter.pdf:/home/sonya/Library/Articles/Beukema_Dekker_2014_Variability_in_predator_abundance_links_winter.pdf:application/pdf
-      \endverb
-      \verb{url}
-      \verb http://www.vliz.be/imisdocs/publications/94/265694.pdf
-      \endverb
-    \endentry
     \entry{Beukema_et_al_2001}{article}{}
       \name{author}{4}{uniquelist=3}{%
         {{uniquename=0,hash=4af3bd59d042920708f6afefefe7376f}{Beukema}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
@@ -2550,68 +2833,6 @@
       \field{pages}{56\bibrangedash 69}
       \range{pages}{14}
     \endentry
-    \entry{Cloern_Nichols_1978}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=25a7ab8d1664754f82234ab3ceecc8fd}{Cloern}{C\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=a387e2a9457b155b23741bcac7f594cc}{Nichols}{N\bibinitperiod}{F.}{F\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{b8e2c9899fd7cd7ebb022c6444e83d0e}
-      \strng{fullhash}{b8e2c9899fd7cd7ebb022c6444e83d0e}
-      \field{sortinit}{C}
-      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
-      \field{labelyear}{1978}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Journal of the Fisheries Board of Canada}
-      \field{number}{11}
-      \field{shortjournal}{J. Fish. Board Can.}
-      \field{title}{A von Bertalanffy growth model with a seasonally varying coefficient}
-      \field{urlday}{28}
-      \field{urlmonth}{03}
-      \field{urlyear}{2015}
-      \field{volume}{35}
-      \field{year}{1978}
-      \field{pages}{1479\bibrangedash 1482}
-      \range{pages}{4}
-      \verb{file}
-      \verb Cloern_Nichols_1978_A_von_Bertalanffy_growth_model_with_a_seasonally.pdf:/home/sonya/Library/Articles/Cloern_Nichols_1978_A_von_Bertalanffy_growth_model_with_a_seasonally.pdf:application/pdf;Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/MCK4FPS8/f78-231.html:text/html
-      \endverb
-      \verb{url}
-      \verb http://www.nrcresearchpress.com/doi/abs/10.1139/f78-231
-      \endverb
-    \endentry
-    \entry{Dekker_Beukema_2014}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=c71fb1dd985a5ed33f0c6161cc71d6be}{Dekker}{D\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=4af3bd59d042920708f6afefefe7376f}{Beukema}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{e3722a83c4ff065358ecc54cd01da533}
-      \strng{fullhash}{e3722a83c4ff065358ecc54cd01da533}
-      \field{sortinit}{D}
-      \field{sortinithash}{78f7c4753a2004675f316a80bdb31742}
-      \field{labelyear}{2014}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{journaltitle}{Marine Ecology Progress Series}
-      \field{shortjournal}{Mar. Ecol. Prog. Ser.}
-      \field{shorttitle}{Phenology of abundance of bivalve spat and of their epibenthic predators}
-      \field{title}{Phenology of abundance of bivalve spat and of their epibenthic predators: limited evidence for mismatches after cold winters}
-      \field{urlday}{25}
-      \field{urlmonth}{02}
-      \field{urlyear}{2015}
-      \field{volume}{513}
-      \field{year}{2014}
-      \field{pages}{17\bibrangedash 27}
-      \range{pages}{11}
-      \verb{file}
-      \verb Dekker_Beukema_2014_Phenology_of_abundance_of_bivalve_spat_and_of_their_epibenthic_predators.pdf:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/88AUXNVP/Dekker_Beukema_2014_Phenology_of_abundance_of_bivalve_spat_and_of_their_epibenthic_predators.pdf:application/pdf;Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/EMK2VF7S/p17-27.html:text/html
-      \endverb
-      \verb{url}
-      \verb http://www.int-res.com/abstracts/meps/v513/p17-27/
-      \endverb
-    \endentry
     \entry{Denisenko_et_al_2003}{article}{}
       \name{author}{5}{}{%
         {{uniquename=0,hash=f1506c09a4b434985d660f164651241a}{Denisenko}{D\bibinitperiod}{S.}{S\bibinitperiod}{}{}{}{}}%
@@ -2639,33 +2860,6 @@
       \range{pages}{15}
       \verb{file}
       \verb Denisenko_et_al_2003_Macrozoobenthos_of_the_Pechora_Sea_(SE_Barents.pdf:/home/sonya/Library/Articles/Denisenko_et_al_2003_Macrozoobenthos_of_the_Pechora_Sea_(SE_Barents.pdf:application/pdf
-      \endverb
-    \endentry
-    \entry{Eleftheriou_2013}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=1420a2024e27f480808ef4fc8b0b266b}{Eleftheriou}{E\bibinitperiod}{A.}{A\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {John Wiley \& Sons}%
-      }
-      \strng{namehash}{1420a2024e27f480808ef4fc8b0b266b}
-      \strng{fullhash}{1420a2024e27f480808ef4fc8b0b266b}
-      \field{sortinit}{E}
-      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
-      \field{labelyear}{2013}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Methods for the study of marine benthos}
-      \field{urlday}{23}
-      \field{urlmonth}{07}
-      \field{urlyear}{2015}
-      \field{year}{2013}
-      \verb{file}
-      \verb Eleftheriou_2013_Methods_for_the_study_of_marine_benthos.pdf:/home/sonya/Library/Articles/Eleftheriou_2013_Methods_for_the_study_of_marine_benthos.pdf:application/pdf;Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/SMIBIH9G/books.html:text/html
-      \endverb
-      \verb{url}
-      \verb https://books.google.com/books?hl=ru&lr=&id=XyCHNEB2S98C&oi=fnd&pg=PA1966&dq=Methods+for+the+Study+of+Marine+Benthos&ots=oYkztLoTpR&sig=1HesUbOdq882Eb1nHcrW2o8FWZs
       \endverb
     \endentry
     \entry{Elliott_1980}{article}{}
@@ -2942,31 +3136,6 @@
       \verb Gusev_Jurgens-Markina_2012_Growth_and_production_of_the_bivalve_Macoma.pdf:/home/sonya/Library/Articles/Gusev_Jurgens-Markina_2012_Growth_and_production_of_the_bivalve_Macoma.pdf:application/pdf
       \endverb
     \endentry
-    \entry{Hammer_et_al_2001}{article}{}
-      \name{author}{3}{}{%
-        {{uniquename=0,hash=790cce4c59f8af58cb52304346150493}{Hammer}{H\bibinitperiod}{Ö.}{Ö\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=52dbcf753f401b37e04cc47f25fe03ce}{Harper}{H\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=b0991e545fd8ccecc08d3d336e72726e}{Ryan}{R\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {english}%
-      }
-      \strng{namehash}{12973652de0429c3ae9cc25398e1af09}
-      \strng{fullhash}{12973652de0429c3ae9cc25398e1af09}
-      \field{sortinit}{H}
-      \field{sortinithash}{82012198d5dfa657b8c4a168793268a6}
-      \field{labelyear}{2001}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Palaeontologia Electronica}
-      \field{number}{9}
-      \field{title}{PAS: Palaeontological Statistical package for education and data analysis}
-      \field{volume}{4}
-      \field{year}{2001}
-      \field{pages}{9}
-      \range{pages}{1}
-    \endentry
     \entry{Harvey_Vincent_1990}{article}{}
       \name{author}{2}{}{%
         {{uniquename=0,hash=938968bdedd16040c9d2bb99657224c3}{Harvey}{H\bibinitperiod}{M.}{M\bibinitperiod}{}{}{}{}}%
@@ -3180,31 +3349,6 @@
       \verb Huxham_Richards_2003_Can_postlarval_bivalves_select_sediment_type.pdf:/home/sonya/Library/Articles/Huxham_Richards_2003_Can_postlarval_bivalves_select_sediment_type.pdf:application/pdf
       \endverb
     \endentry
-    \entry{Jensen_et_al_1985}{article}{}
-      \name{author}{3}{}{%
-        {{uniquename=1,hash=14e2dc2000ccabcf0ad5f2c38f844803}{Jensen}{J\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=1e79c591ed1c3dec881748c12a8ba988}{N{ø}st}{N\bibinitperiod}{T.}{T\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=ff36b05524af3389e00e88adbd3604f2}{Stokland}{S\bibinitperiod}{{Ø}.}{Ø\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Taylor \& Francis}%
-      }
-      \strng{namehash}{fcd45539b568e3451df9e3e078316102}
-      \strng{fullhash}{fcd45539b568e3451df9e3e078316102}
-      \field{sortinit}{J}
-      \field{sortinithash}{ec3950a647c092421b9fcca6d819504a}
-      \field{labelyear}{1985}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Sarsia}
-      \field{number}{1}
-      \field{title}{The invertebrate fauna of a small fjord subject to wide ranges of salinity and oxygen content}
-      \field{volume}{70}
-      \field{year}{1985}
-      \field{pages}{33\bibrangedash 43}
-      \range{pages}{11}
-    \endentry
     \entry{Jensen_1993}{article}{}
       \name{author}{1}{}{%
         {{uniquename=1,hash=418a1e93abb2a00e6206568c02ced107}{Jensen}{J\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
@@ -3310,36 +3454,6 @@
       \verb [HTML] с сайта google.com:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/IWT238XV/books.html:text/html
       \endverb
     \endentry
-    \entry{Lammens_1967}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=609235eefdce72f077fad0262772219c}{Lammens}{L\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{609235eefdce72f077fad0262772219c}
-      \strng{fullhash}{609235eefdce72f077fad0262772219c}
-      \field{sortinit}{L}
-      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
-      \field{labelyear}{1967}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Netherlands Journal of Sea Research}
-      \field{number}{3}
-      \field{shortjournal}{Neth. J. Sea Res.}
-      \field{title}{Growth and reproduction in a tidal flat population of {\it Macoma balthica}(L.)}
-      \field{urlday}{25}
-      \field{urlmonth}{04}
-      \field{urlyear}{2015}
-      \field{volume}{3}
-      \field{year}{1967}
-      \field{pages}{315\bibrangedash 382}
-      \range{pages}{68}
-      \verb{file}
-      \verb Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/DG55FRIR/0077757967900105.html:text/html
-      \endverb
-      \verb{url}
-      \verb http://www.sciencedirect.com/science/article/pii/0077757967900105
-      \endverb
-    \endentry
     \entry{Lavoie_1970}{thesis}{}
       \name{author}{1}{}{%
         {{uniquename=0,hash=0c4b684acf0bc782a04028a144b3e117}{Lavoie}{L\bibinitperiod}{R.}{R\bibinitperiod}{}{}{}{}}%
@@ -3359,35 +3473,6 @@
       \field{title}{Contribution á la biologie et á l'écologie de {\it Macoma balthica} L. de l'estuaire du Saint-Laurent}
       \field{type}{phdthesis}
       \field{year}{1970}
-    \endentry
-    \entry{Legendre_Legendre_2012}{mvbook}{}
-      \name{author}{2}{}{%
-        {{uniquename=1,hash=b810a42e1ccf4ed4b0b43222050d4ff1}{Legendre}{L\bibinitperiod}{P.}{P\bibinitperiod}{}{}{}{}}%
-        {{uniquename=1,hash=9f253ff035563fd38af4bab5b9319935}{Legendre}{L\bibinitperiod}{L.}{L\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{cf58afe4fbd4cb213d72ba8f861d1be0}
-      \strng{fullhash}{cf58afe4fbd4cb213d72ba8f861d1be0}
-      \field{sortinit}{L}
-      \field{sortinithash}{872351f18d0f736066eda0bf18bfa4f7}
-      \field{labelyear}{2012}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Numerical ecology}
-      \field{urlday}{23}
-      \field{urlmonth}{02}
-      \field{urlyear}{2015}
-      \field{volume}{24}
-      \field{year}{2012}
-      \verb{file}
-      \verb Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/D4CVS3WN/books.html:text/html
-      \endverb
-      \verb{url}
-      \verb http://books.google.com/books?hl=ru%5C&lr=%5C&id=6ZBOA-iDviQC%5C&oi=fnd%5C&pg=PP2%5C&dq=Legendre,+P.+and+Legendre,+L.+(2012)+_Numerical+Ecology_.+%5C&ots=ux7m-7V7Ym%5C&sig=pdvzgbUy14W3G5pAv4EijhjPUb8
-      \endverb
     \endentry
     \entry{Madsen_Jensen_1987}{article}{}
       \name{author}{2}{}{%
@@ -3411,35 +3496,6 @@
       \field{year}{1987}
       \field{pages}{197\bibrangedash 208}
       \range{pages}{12}
-    \endentry
-    \entry{Mardia_et_al_1979}{book}{}
-      \name{author}{3}{}{%
-        {{uniquename=0,hash=42c1b94ada2784615c7b7966aeef0a41}{Mardia}{M\bibinitperiod}{K.}{K\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=950905624f82ecf1a07348f7e7df8646}{Kent}{K\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=cc2d1db1d920396cdd259a851eb4eeca}{Bibby}{B\bibinitperiod}{J.}{J\bibinitperiod}{}{}{}{}}%
-      }
-      \list{publisher}{1}{%
-        {Academic press}%
-      }
-      \strng{namehash}{bb983797bcc75d325709fbcbb0a4b751}
-      \strng{fullhash}{bb983797bcc75d325709fbcbb0a4b751}
-      \field{sortinit}{M}
-      \field{sortinithash}{2684bec41e9697b92699b46491061da2}
-      \field{labelyear}{1979}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Multivariate analysis}
-      \field{urlday}{16}
-      \field{urlmonth}{07}
-      \field{urlyear}{2015}
-      \field{year}{1979}
-      \verb{file}
-      \verb Snapshot:/home/sonya/.mozilla/firefox/guyu6igw.default-1406452967294/zotero/storage/9FRC85QS/104910.html:text/html
-      \endverb
-      \verb{url}
-      \verb http://cds.cern.ch/record/104910
-      \endverb
     \endentry
     \entry{Nikula_et_al_2007}{article}{}
       \name{author}{3}{}{%
@@ -3557,30 +3613,6 @@
       \field{year}{1979}
       \field{pages}{725\bibrangedash 734}
       \range{pages}{10}
-    \endentry
-    \entry{Pianka_1966}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=927e1eda7bdc9e58ab6020e592e1aa7f}{Pianka}{P\bibinitperiod}{E.}{E\bibinitperiod}{}{}{}{}}%
-      }
-      \strng{namehash}{927e1eda7bdc9e58ab6020e592e1aa7f}
-      \strng{fullhash}{927e1eda7bdc9e58ab6020e592e1aa7f}
-      \field{sortinit}{P}
-      \field{sortinithash}{c0a4896d0e424f9ca4d7f14f2b3428e7}
-      \field{labelyear}{1966}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{shorttitle}
-      \field{eprinttype}{jstor}
-      \field{journaltitle}{American Naturalist}
-      \field{shortjournal}{Am. Nat.}
-      \field{shorttitle}{Latitudinal gradients in species diversity}
-      \field{title}{Latitudinal gradients in species diversity: a review of concepts}
-      \field{year}{1966}
-      \field{pages}{33\bibrangedash 46}
-      \range{pages}{14}
-      \verb{eprint}
-      \verb 2459377
-      \endverb
     \endentry
     \entry{R_2014}{manual}{}
       \name{author}{1}{}{%
@@ -4154,38 +4186,6 @@
       \verb http://dx.doi.org/10.1007/s10750-012-1341-4
       \endverb
       \keyw{Spatial and temporal scale; Long-term studies; Soft-bottom intertidal assemblages; The White Sea}
-    \endentry
-    \entry{Vincent_et_al_1989}{article}{}
-      \name{author}{3}{}{%
-        {{uniquename=0,hash=3d23bc3a6f8c3a3278b2305075a9bf13}{Vincent}{V\bibinitperiod}{B.}{B\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=468daee4c6b3b22be411dac9b3d049bf}{Joly}{J\bibinitperiod}{D.}{D\bibinitperiod}{}{}{}{}}%
-        {{uniquename=0,hash=39605c1e28bf1a4df6875d3fd124595c}{Brassard}{B\bibinitperiod}{C.}{C\bibinitperiod}{}{}{}{}}%
-      }
-      \list{language}{1}{%
-        {french}%
-      }
-      \strng{namehash}{2fcab59a3375b5135a442dbbd37acdda}
-      \strng{fullhash}{2fcab59a3375b5135a442dbbd37acdda}
-      \field{sortinit}{V}
-      \field{sortinithash}{d18f5ce25ce0b5ca7f924e3f6c04870e}
-      \field{labelyear}{1989}
-      \field{datelabelsource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{abstract}{Experimental and descriptive field studies were conducted on an intertidal population of the infaunal bivalve {\it Macoma balthica} (L.) in the St Lawrence estuary in order to investigate the effect of density on growth and recruitment. The study of spatial variations in density and shell growth on the tidal flat was based on a stratified random sampling using three tidal level zones as strata. Mean population density over the whole area was 1302 · m −2; densities were higher and more variable near mean water level. Shell-growth rate and mean shell length of each generation increased with immersion time. There was a strong density effect on shell growth which increased with tidal level. The population was food limited in the upper two-thirds of the flat. The effect of density on shell growth was confirmed by a completely randomized block design experiment in the upper intertidal level. There was also a density effect on total tissue dry weight and on gonad size, but there was no significant effect of adult density on recruitment.}
-      \field{journaltitle}{Journal of Experimental Marine Biology and Ecology}
-      \field{title}{Effets de la densité sur la croissance du bivalve {\it Macoma balthica} (L.) en zone intertidale}
-      \field{volume}{126}
-      \field{year}{1989}
-      \field{pages}{145\bibrangedash 162}
-      \range{pages}{18}
-      \verb{doi}
-      \verb 10.1016/0022-0981(89)90086-5
-      \endverb
-      \verb{file}
-      \verb growth and density data:/home/sonya/Documents/Data/Vincent_et_al_1989:Rich Text Format
-      \endverb
-      \keyw{влияние плотности Dencity effect,{\it Macoma balthica},полевой эксперимент field experiment,гонады gonad,литораль intertidal zone,рост growth}
     \endentry
     \entry{Vogel_1959}{article}{}
       \name{author}{1}{}{%

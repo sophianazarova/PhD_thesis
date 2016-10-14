@@ -11,7 +11,7 @@ attach(ishodnik)
 #year<-factor(year)
 
 
-## размерная структура суммарно по годам по горизонтам
+## ===== размерная структура суммарно по годам по горизонтам =====
 Length.int<-cut(Length.mm, breaks=seq(0,20,1))
 
 (size.str.table<-table(Length.int,year,sample))
@@ -52,7 +52,31 @@ sem.sqmeter.df<-as.data.frame(sem.sizestr.sqmeter)
 
 length.class<-seq(1,20,1)
 
-##>2mm mean size structure
+# ======== для летописи вывод в таблицу ===============
+letopis.table<-table( sample, Length.int, year)
+
+letopis.table.2dim <- cbind(year = as.numeric(rep(dimnames(letopis.table)$year[1], dim(letopis.table)[1])), letopis.table[,,1])
+for (i in 2:dim(letopis.table)[3]) {
+  letopis.table.2dim <- rbind(letopis.table.2dim, cbind(year = as.numeric(rep(dimnames(letopis.table)$year[i], dim(letopis.table)[1])), letopis.table[,,i]))}
+
+letopis.table.2dim <- cbind(letopis.table.2dim, rowSums(letopis.table.2dim[,2:21]))
+
+
+
+#убираем те пробы которых на самом деле нету
+for (i in 1:dim(letopis.table)[3]) 
+{ (xxx <- rownames(letopis.table.2dim)[letopis.table.2dim[,1] == as.numeric(dimnames(letopis.table)$year)[i] ]%in%
+     samples.names$sample[samples.names$year == as.numeric(dimnames(letopis.table)$year)[i] ])
+  antixxx<-as.logical(1-xxx)
+  letopis.table.2dim[,22][letopis.table.2dim[,1] == as.numeric(dimnames(letopis.table)$year)[i]][antixxx]<-NA
+}
+#letopis.table.2dim[,22][letopis.table.2dim[,22] == 0] <- NA
+letopis.table.2dim <- na.omit(letopis.table.2dim)
+
+
+write.csv2(letopis.table.2dim, "ZRS_size_str_all.csv")
+
+## ===== >2mm mean size structure ======
 (mean.sizestr.sqmeter2<-mean.sizestr.sqmeter[2:20,])
 mean.sqmeter.df2<-as.data.frame(mean.sizestr.sqmeter2)
 (sd.sizestr.sqmeter2<-sd.sizestr.sqmeter[,2:20])

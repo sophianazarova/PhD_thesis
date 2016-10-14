@@ -391,6 +391,9 @@ rownames(distance_N2_km)<-distance_N2_km[,1]
 distance_N2_km<-as.matrix(distance_N2_km[,2:9])
 colnames(distance_N2_km)<-rownames(distance_N2_km)
 
+# все участки
+
+
 # считаем мантеля между матрицей расстояний и корреляциями динамики
 mantel(xdis=distance_N_km, N.mantel.statistic, na.rm=T)
 mantel(xdis=distance_N2_km, N2.mantel.statistic, na.rm=T)

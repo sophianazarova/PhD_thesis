@@ -14,13 +14,26 @@
 %\usepackage[backend=biber,bibencoding=utf8,sorting=ynt,maxcitenames=2,style=authoryear]{biblatex}
 
 %biblatex-gost
-\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other, bibencoding=utf8, bibdoi=false, biburl=false,  movenames=false, sortcites = false, maxcitenames=3]{biblatex}
+\usepackage[backend=biber, style=gost-authoryear, bibstyle=gost-authoryear, language=auto, babel=other, bibencoding=utf8, bibdoi=false, biburl=false,  maxcitenames=3,maxbibnames=12, minnames=1,movenames=false, autolang=other, ibidtracker=false]{biblatex}
 %\renewcommand*{\gostmedialanguage}{}
 
 \addbibresource{sophia_base.bib}
 %\addbibresource{disser.bib}
 
 %\includeonly{chapters/ch2,chapters/ch3}
+
+\DeclareSourcemap{
+\maps[datatype=bibtex]{
+\map{
+\step[fieldsource=langid, match=russian, final]
+\step[fieldset=presort, fieldvalue={a}]
+}
+\map{
+\step[fieldsource=langid, notmatch=russian, final]
+\step[fieldset=presort, fieldvalue={z}]
+}
+}
+}
 
 \begin{document} % конец преамбулы, начало документа
 \input{names}			% Переопределение именований

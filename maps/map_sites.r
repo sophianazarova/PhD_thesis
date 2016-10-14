@@ -14,7 +14,7 @@ library(ggplot2)
 library(ggmap)
 
 ## =========Barents sea =====================
-BS_bord<-c(top=70.041678, left=31.157318, bottom=67.8, right=40.891692)
+BS_bord<-c(top=7.041678, left=31.157318, bottom=67.8, right=40.891692)
 BS_stamen <- get_map(location = BS_bord,
                      color = "color",
                      source = "stamen",
@@ -250,3 +250,26 @@ ggmap(Kandb_stamen) + geom_point(data=monitoring_White, aes(x = long, y = lat, s
   guides(size=FALSE)
 dev.off()
 embedFonts("map_Kandalaksha_monitorings.pdf")
+
+#================= Белое + Баренцево ===============
+Seas_bord<-c(top=72.628, left=28.466, bottom=63.61, right=61.332)
+Seas_stamen <- get_map(location = Seas_bord,
+                       color = "color",
+                       source = "stamen",
+                       maptype = "toner",
+                       zoom = 6)
+#меняем цвета на серые: stackoverflow.com/questions/18859809/how-do-you-replace-colors-in-a-ggmap-object
+attr_Seas <- attr(Seas_stamen, "bb")    # save attributes from original
+
+# change color in raster
+Seas_stamen[Seas_stamen == "#000000"] <- "#C0C0C0" #черный на белый
+
+
+# correct class, attributes
+class(Seas_stamen) <- c("ggmap", "raster")
+attr(Seas_stamen, "bb") <- attr_Seas
+
+pdf("map_White_Barents.pdf", family="NimbusSan")
+ggmap(Seas_stamen) +  guides(size=FALSE) + geom_point(data=site_coord, aes(x = long, y = lat, size=1), pch=21, col="black", fill="red") + theme(axis.text=element_text(size=14), axis.title=element_text(size=15))
+dev.off()
+embedFonts("map_White_Barents.pdf")

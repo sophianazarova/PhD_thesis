@@ -38,6 +38,25 @@ dev.off()
 embedFonts("t_mean_month.pdf")
 
 
+# ========== выясняем про самые холодные месяцы =========
+str(m0_month_mean)
+#делаем колонку месяц
+m0_month_mean$month <- format(m0_month_mean$date,"%m")
+
+# смотрим на график по месяцам - вроде как холодные самые январь-февраль
+plot(m0_month_mean$date[m0_month_mean$month == "01"], m0_month_mean$m0[m0_month_mean$month == "01"], type="l", xlab = "year", ylab = "t, C", ylim = c(-2,2))
+lines(m0_month_mean$date[m0_month_mean$month == "03"], m0_month_mean$m0[m0_month_mean$month == "03"], col = "cyan")
+lines(m0_month_mean$date[m0_month_mean$month == "04"], m0_month_mean$m0[m0_month_mean$month == "04"], col = "orange")
+lines(m0_month_mean$date[m0_month_mean$month == "12"], m0_month_mean$m0[m0_month_mean$month == "12"], col = "red")
+
+#считаем средние за два самых холодных месяца - январь и февраль
+
+mo_coldest_monthes <- subset(m0_month_mean, subset = m0_month_mean$month%in%c("01", "02"))
+mo_coldest_monthes$y <- format(mo_coldest_monthes$date,"%Y")
+
+m0_coldest_mean <- aggregate(m0 ~ y, data = mo_coldest_monthes, FUN = mean, na.rm=T)
+write.table(m0_coldest_mean, file = "Chupa_mean_temp_Jan_Feb.csv", dec = ",", sep = ";")
+
 # ============= среднегодовые температуры ================
 
 #считаем средние

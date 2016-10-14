@@ -9,25 +9,25 @@ library(car)
 scatterplotMatrix(ishodnik)
 
 
-mod1 <-lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t + ishodnik$summ_temp_t + ishodnik$site + ishodnik$year)
+mod1 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t1 + ishodnik$summ_temp_t + ishodnik$site + ishodnik$year)
 
 summary(mod1)
 
-mod2 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t + ishodnik$summ_temp_t + ishodnik$site)
+mod2 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t1 + ishodnik$summ_temp_t + ishodnik$site)
 
 summary(mod2)
 
 anova(mod1, mod2)
 
-mod3 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t + ishodnik$summ_temp_t)
+mod3 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t1 + ishodnik$summ_temp_t)
 summary(mod3)
-anova(mod4)
+
 
 plot(mod3)
 
 anova(mod1, mod3)
 
-mod4 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t)
+mod4 <- lm(log(ishodnik$Nt1.sqmeter) ~ log(ishodnik$Nt.sqmeter) + ishodnik$wint_temp_t1)
 summary(mod4)
 anova(mod1, mod4)
 
@@ -90,21 +90,21 @@ dev.off()
 # =============== Горелый =================
 Gor <- subset(ishodnik, ishodnik$site == "Goreliy")
 
-mod_gor <- lm(log(Nt1.sqmeter) ~ log(Nt.sqmeter) + wint_temp_t + summ_temp_t, data = Gor)
+mod_gor <- lm(log(Nt1.sqmeter) ~ log(Nt.sqmeter) + wint_temp_t1 + summ_temp_t, data = Gor)
 
 summary(mod_gor)
 
-# =============== Горелый =================
+# =============== 2 Разрез =================
 Luv <- subset(ishodnik, ishodnik$site == "razrez2")
 
-mod_luv <- lm(log(Nt1.sqmeter) ~ log(Nt.sqmeter) + wint_temp_t + summ_temp_t, data = Luv)
+mod_luv <- lm(log(Nt1.sqmeter) ~ log(Nt.sqmeter) + wint_temp_t1 + summ_temp_t, data = Luv)
 
 summary(mod_luv)
 
 # =============== Эстуарий =================
 Est <- subset(ishodnik, ishodnik$site == "Estuary")
 
-mod_est <- lm(log(Nt1.sqmeter) ~ log(Nt.sqmeter) + wint_temp_t + summ_temp_t, data = Est)
+mod_est <- lm(log(Nt1.sqmeter) ~ log(Nt.sqmeter) + wint_temp_t1 + summ_temp_t, data = Est)
 
 summary(mod_est)
 

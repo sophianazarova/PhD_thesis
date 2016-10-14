@@ -393,3 +393,31 @@ rownames(distance_N1_km)<-distance_N1_km[,1]
 
 # считаем мантеля между матрицей расстояний и корреляциями динамики
 mantel(xdis=distance_N1_km[,2:7], N.1year.mantel.statistic, na.rm=T)
+
+# ======= Динамика попоплнений ========
+(N.1year.matrix_summ<-tapply(X=N.1year, list(year,area), max))
+colnames(N.1year.matrix_summ)
+
+# северный архипелаг
+cairo_pdf(file="N2_recruitment_North_big.pdf", family="RU")
+plot(x=as.numeric(rownames(N.1year.matrix_summ)), y=N.1year.matrix_summ[,4], type="n", main="Северный архипелаг", xlab="годы", ylab="N1+, экз./кв.м",  cex = 2, cex.lab=2, cex.axis=2, cex.main=2, cex.sub=2)
+#ЗРС
+lines(x=as.numeric(rownames(N.1year.matrix_summ)), y=N.1year.matrix_summ[,6], type="b", pch=20, col=2, cex=2)
+#ЮГ
+lines(x=as.numeric(rownames(N.1year.matrix_summ)), y=N.1year.matrix_summ[,5], type="b", pch=20, col=3, cex=2)
+#Ломнишный
+lines(x=as.numeric(rownames(N.1year.matrix_summ)), y=N.1year.matrix_summ[,3], type="b", pch=20, col=4, cex=2)
+legend(x="topright", legend = c("Западная Ряшкова салма", "Южная губа о.Ряшкова", "о.Ломнишный"), pch=c(20,20,20), col=c(2,3,4), cex=1.5)
+dev.off()
+
+# картинка про Лувеньгу
+cairo_pdf(file="N2_recruitment_Luvenga_big.pdf", family="RU")
+plot(x=as.numeric(rownames(N.1year.matrix_summ)), y=N.1year.matrix_summ[,4], type="n", main="Лувеньгские шхеры", xlab="годы", ylab="N, экз./кв.м", cex = 2, cex.lab=2, cex.axis=2, cex.main=2, cex.sub=2)
+#Горелый
+lines(x=as.numeric(rownames(N.1year.matrix_summ)), y=N.1year.matrix_summ[,2], type="b", pch=20, col=3, cex=2)
+#2 разрез
+lines(x=as.numeric(rownames(N.1year.matrix_summ)), y=N.1year.matrix_summ[,4], type="b", pch=20, col=2, cex=2)
+#Эстуарий
+lines(x=as.numeric(rownames(N.1year.matrix_summ)), y=N.1year.matrix_summ[,1], type="b", pch=20, col=4, cex=2)
+legend(x="topright", legend = c("материк Лувеньга", "о.Горелый", "эстуарий р.Лувеньги"), pch=c(20,20,20), col=c(2,3,4), cex=1.5)
+dev.off()

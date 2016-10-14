@@ -29,6 +29,7 @@ str(samples.names)
 # TODO надо учесть какие пробы где брали!
 (N_sqmeter_svodka<-tapply(ishodnik$N.sqmeter, INDEX=list(ishodnik$species, ishodnik$year, ishodnik$station), FUN=mean, na.rm=T))
 
+
 (N_sqmeter_sd<-tapply(ishodnik$N.sqmeter, INDEX=list(ishodnik$species, ishodnik$year, ishodnik$station), FUN=sd, na.rm=T))
 
 #биомасса
@@ -411,7 +412,6 @@ samplenames_community<-cbind(comm=comm, samples.names)
 str(samplenames_community)
 summary(samplenames_community)
 
-
 # ========== рисуем картинки по эдификаторам в выделенных зонах ===============
 pdf("Arenicola_in_zones.pdf", family="NimbusSan")
 boxplot(ishodnik_community$N.sqmeter[ishodnik_community$species=="Arenicola marina" & ishodnik_community$year==2002] ~ ishodnik_community$comm[ishodnik_community$species=="Arenicola marina" & ishodnik_community$year==2002])
@@ -457,7 +457,7 @@ arrows(x0=seq(2.5,17.5,3),
        x1=seq(2.5,17.5,3),
        y1=(c(NA, fabricia_sqmeter_mean[2,]) - c(NA, fabricia_sqmeter_SEM[2,])),
        angle=90, code=3, length=.06)
-#legend(x=21, y=240000, fill=gray(c(0.3,0.5,0.7)),legend=rownames(Fabricia_means))
+#legend(x="topright", fill=gray(c(0.3,0.5,0.7)),legend=rownames(Fabricia_means))
 dev.off()
 embedFonts("Fabricia_N_dynamic.pdf") #встройка шрифтов в файл
 #locator()
@@ -715,3 +715,50 @@ quantile(ishodnik_community$N.sqmeter[ ishodnik_community$comm == "arenicola" & 
 #Oligochaeta arenicola
 str(oligochaeta_ish2)
 quantile(oligochaeta_ish2$N.sqmeter[ ishodnik_community$comm == "arenicola"], probs = c(0.025,0.5,0.975),na.rm = T)
+
+# ======= смотрим кросскорреляцию между фабрицией и пескожилами =======
+# по средней численности на станцию
+
+str(N_sqmeter_svodka)
+
+Arenicola_Fabricia <- data.frame(as.data.frame(as.table(N_sqmeter_svodka["Arenicola marina", , ])), as.data.frame(as.table(N_sqmeter_svodka["Fabricia sabella", , ]))[,3])
+colnames(Arenicola_Fabricia) <- c("year", "station", "Arenicola_N", "Fabricia_N")
+
+plot(log10(Arenicola_Fabricia$Arenicola_N), log10(Arenicola_Fabricia$Fabricia_N))
+
+cor.test(Arenicola_Fabricia$Arenicola_N, Arenicola_Fabricia$Fabricia_N, method = "spearman")
+
+#ccf(Arenicola_Fabricia$Arenicola_N, Arenicola_Fabricia$Fabricia_N, na.action = "na.omit")
+
+# ====== Arenicola и  Fabricia ======
+
+# в пескожильнике
+cairo_pdf("Arenicola_Fabricia_peskozhilnik.pdf", family = "RU")
+par(mar=c(5,4,4,5)+.1)
+#plot the first variable
+plot(x= as.numeric(colnames(Fabricia_means)[-1]), y=Fabricia_means[1,-1], ylab = "Fabricia N", pch = 15, col = "blue", t = "b", xlab = "year")
+#command par is a graphical parametr. If the argument "new" become TRUE (defaultis FALSE), new plot will paint at the same frame.
+par(new = TRUE)
+#plot the second variable. We use the argument axes=FALSE and add axes in the nexst line
+plot(x= as.numeric(colnames(Arenicola_means)[-1]), y = Arenicola_means[1,-1], col = "green", xlab ="", ylab="", pch=16, axes=F, t = "b")
+#add the second Y-axe and label for it
+axis(side = 4, ylim=range(Arenicola_means[1,]))
+mtext(text = "Arenicola N", side=4, line=3)
+legend(x = "bottomright", col = c("blue", "green"), pch = c(15, 16), legend = c("Fabricia sabella", "Arenicola marina"))
+dev.off()
+
+# в пескожильнике
+cairo_pdf("Arenicola_Fabricia_trubkostroiteli.pdf", family = "RU")
+par(mar=c(5,4,4,5)+.1)
+#plot the first variable
+plot(x= as.numeric(colnames(Fabricia_means)[-1]), y=Fabricia_means[2,-1], ylab = "Fabricia N", pch = 15, col = "blue", t = "b", xlab = "year")
+#command par is a graphical parametr. If the argument "new" become TRUE (defaultis FALSE), new plot will paint at the same frame.
+par(new = TRUE)
+#plot the second variable. We use the argument axes=FALSE and add axes in the nexst line
+plot(x= as.numeric(colnames(Arenicola_means)[-1]), y = Arenicola_means[2,-1], col = "green", xlab ="", ylab="", pch=16, axes=F, t = "b")
+#add the second Y-axe and label for it
+axis(side = 4, ylim=range(Arenicola_means[1,]))
+mtext(text = "Arenicola N", side=4, line=3)
+legend(x = "top", col = c("blue", "green"), pch = c(15, 16), legend = c("Fabricia sabella", "Arenicola marina"))
+dev.off()
+

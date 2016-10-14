@@ -1,14 +1,14 @@
 [0] Config.pm:324> INFO - This is Biber 2.1
-[1] Config.pm:327> INFO - Logfile is 'dissertation.blg'
-[53] biber:276> INFO - === Ð§Ñ. Ð½Ð¾ÑÐ±. 26, 2015, 10:53:40
-[54] Biber.pm:333> INFO - Reading 'dissertation.bcf'
-[306] Biber.pm:645> INFO - Found 175 citekeys in bib section 0
-[337] Biber.pm:2977> INFO - Processing section 0
-[356] Biber.pm:3115> INFO - Looking for bibtex format file 'sophia_base.bib' for section 0
-[404] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
-[454] bibtex.pm:895> INFO - Found BibTeX data source 'sophia_base.bib'
-[3971] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3971] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3971] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'ru-RU'
-[4872] bbl.pm:505> INFO - Writing 'dissertation.bbl' with encoding 'UTF-8'
-[4911] bbl.pm:596> INFO - Output to dissertation.bbl
+[33] Config.pm:327> INFO - Logfile is 'dissertation.blg'
+[342] biber:276> INFO - === Ð§Ñ. Ð¼Ð°ÑÑÐ° 10, 2016, 00:10:18
+[342] Biber.pm:333> INFO - Reading 'dissertation.bcf'
+[691] Biber.pm:645> INFO - Found 175 citekeys in bib section 0
+[995] Biber.pm:2977> INFO - Processing section 0
+[1921] Biber.pm:3115> INFO - Looking for bibtex format file 'sophia_base.bib' for section 0
+[2286] bibtex.pm:1021> INFO - Decoding LaTeX character macros into UTF-8
+[2336] bibtex.pm:895> INFO - Found BibTeX data source 'sophia_base.bib'
+[6226] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[6226] UCollate.pm:66> INFO - Overriding locale 'ru-RU' defaults 'variable = shifted' with 'variable = non-ignorable'
+[6226] Biber.pm:2854> INFO - Sorting list 'nyt' of type 'entry' with scheme 'nyt' and locale 'ru-RU'
+[7080] bbl.pm:505> INFO - Writing 'dissertation.bbl' with encoding 'UTF-8'
+[7148] bbl.pm:596> INFO - Output to dissertation.bbl
